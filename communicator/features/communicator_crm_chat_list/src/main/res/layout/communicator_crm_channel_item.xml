@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import
+            alias="view"
+            type="android.view.View"/>
+
+        <import
+            alias="itemType"
+            type="ru.tensor.sbis.consultations.generated.ChannelHeirarchyItemType"/>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.communicator_crm_chat_list.filter.channels.mapper.CRMChannelsViewModelBinding"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="?offset_m"
+        android:paddingStart="?offset_m">
+
+        <!-- Новый элемент для отображения иконки родителя -->
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_reassign_parent_icon"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="?offset_2xs"
+            android:text="@string/design_mobile_icon_arrow_day_forward"
+            android:textColor="?textColor"
+            android:textSize="?iconSize_xl"
+            android:visibility="@{viewModel.isParentVisible ? view.VISIBLE : view.GONE}"
+            app:layout_constraintStart_toEndOf="@id/crm_reassign_parent_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/crm_reassign_title"/>
+
+        <!-- Новый элемент для отображения заголовка родителя -->
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_reassign_parent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="?offset_2xs"
+            android:paddingEnd="?offset_2xs"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{viewModel.rootName}"
+            android:textColor="?textColor"
+            android:textSize="?fontSize_xs_scaleOn"
+            android:visibility="@{viewModel.isParentVisible ? view.VISIBLE : view.GONE}"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/crm_reassign_title"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_channel_icon"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="?offset_st"
+            android:text="@{viewModel.icon}"
+            android:textColor="@{viewModel.iconColor}"
+            android:textSize="?iconSize_xl"
+            android:visibility="@{viewModel.isConsultationCase() ? view.VISIBLE : view.GONE}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/crm_reassign_parent_title"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_reassign_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{viewModel.name}"
+            android:textColor="?textColor"
+            android:textSize="?fontSize_xl_scaleOn"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/crm_reassign_barrier"
+            app:layout_constraintStart_toEndOf="@+id/crm_channel_icon"
+            app:layout_constraintTop_toBottomOf="@id/crm_reassign_parent_title"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/crm_reassign_barrier"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:barrierDirection="left"
+            app:constraint_referenced_ids="crm_reassign_arrow_icon, crm_reassign_frameLayout, crm_reassign_checkbox"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/crm_reassign_barrier_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:barrierDirection="left"
+            app:constraint_referenced_ids="crm_reassign_frameLayout, crm_reassign_checkbox"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_reassign_arrow_icon"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/design_mobile_icon_arrow_narrow_right"
+            android:textColor="?labelIconColor"
+            android:textSize="?iconSize_m"
+            android:visibility="@{viewModel.arrowIconIsVisible ? view.VISIBLE : view.GONE}"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/crm_reassign_barrier_frame"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/crm_reassign_title"
+            app:layout_constraintTop_toBottomOf="@id/crm_reassign_parent_title"/>
+
+        <ru.tensor.sbis.design.checkbox.SbisCheckboxView
+            android:id="@+id/crm_reassign_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="?offset_st"
+            android:layout_marginEnd="?offset_m"
+            app:SbisCheckbox_size="s"
+            app:SbisCheckbox_textColor="?textColor"
+            android:checked="@{viewModel.selectedItems.contains(viewModel.id)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/crm_reassign_arrow_icon"
+            android:visibility="@{viewModel.isFilterRegistryCase() ? view.VISIBLE : view.GONE}"
+            android:onClick="@{(v) -> viewModel.onCheckedClick()}"/>
+
+        <FrameLayout
+            android:id="@+id/crm_reassign_frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/crm_reassign_success_icon_drawable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/crm_reassign_arrow_icon"
+            android:visibility="@{(viewModel.itemType == itemType.CHANNEL_FOLDER &amp;&amp; viewModel.isGroup &amp;&amp; viewModel.isReassignCase()) || (viewModel.isFilterOperatorCase() &amp;&amp; viewModel.isGroup &amp;&amp; viewModel.itemType == itemType.CHANNEL_FOLDER_GROUP) ? view.VISIBLE : view.GONE}"
+            android:onClick="@{(v) -> viewModel.onSuccessIconClick()}">
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/crm_reassign_success_icon"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/design_mobile_icon_checkmark_small"
+                android:textColor="?secondaryIconColor"
+                android:textSize="?iconSize_s"/>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

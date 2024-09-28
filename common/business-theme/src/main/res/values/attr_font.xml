@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- стиль шрифтов в Отчетах продаж [businessRetailTheme] -->
+    <attr name="business_font_family" format="reference" />
+    <attr name="business_medium_font_family" format="reference" />
+    <attr name="business_bold_font_family" format="reference" />
+
+    <!--scaleOn text size-->
+    <attr name="business_font_size_display1" format="reference|dimension" />
+    <attr name="business_font_size_title1" format="reference|dimension" />
+    <attr name="business_font_size_title2" format="reference|dimension" />
+    <attr name="business_font_size_title3" format="reference|dimension" />
+    <attr name="business_font_size_body1" format="reference|dimension" />
+    <attr name="business_font_size_body2" format="reference|dimension" />
+    <attr name="business_font_size_caption1" format="reference|dimension" />
+
+    <!--scaleOff text size-->
+    <attr name="business_font_size_Body_2_scale_off" format="reference|dimension" />
+    <attr name="business_font_size_display1_scaleOff" format="reference|dimension" />
+    <attr name="business_font_size_title1_scaleOff" format="reference|dimension" />
+    <attr name="business_font_size_title2_scaleOff" format="reference|dimension" />
+    <attr name="business_font_size_title3_scaleOff" format="reference|dimension" />
+    <attr name="business_font_size_body1_scaleOff" format="reference|dimension" />
+    <attr name="business_font_size_body2_scaleOff" format="reference|dimension" />
+    <attr name="business_font_size_caption1_scaleOff" format="reference|dimension" />
+    <attr name="business_font_size_caption2_scaleOff" format="reference|dimension" />
+</resources>

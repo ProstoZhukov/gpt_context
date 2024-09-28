@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PeriodPickerEditTextStyle" parent="SbisInputFieldEditText">
+        <item name="android:fontFamily">@font/roboto_mono_regular</item>
+    </style>
+
+    <style name="PickerStyle" parent="Theme.AppCompat.Dialog">
+        <item name="date_picker_status_bar_color">@color/color_primary_dark</item>
+        <item name="date_picker_mode_icon_color">@color/color_accent</item>
+        <item name="date_picker_buttons_color">@color/date_picker_buttons_color</item>
+        <item name="date_picker_labels_color">@color/date_picker_labels_color</item>
+        <item name="date_picker_divider_color">@color/date_picker_divider_color</item>
+        <item name="date_picker_edit_text_border_color_valid">@color/date_picker_edit_text_border_color_valid</item>
+        <item name="date_picker_edit_text_border_color_invalid">@color/date_picker_edit_text_border_color_invalid</item>
+        <item name="date_picker_item_title_background">@color/date_picker_item_title_background</item>
+        <item name="date_picker_items_text_color">@color/date_picker_items_text_color</item>
+        <item name="date_picker_item_selected_background_color">@color/date_picker_item_selected_background_color</item>
+        <item name="date_picker_item_selected_marker_color">@color/date_picker_item_selected_marker_color</item>
+        <item name="date_picker_item_recent_period_text_color">@color/date_picker_item_recent_period_text_color</item>
+        <item name="date_picker_weekend_color">@color/date_picker_weekend_color</item>
+        <item name="date_picker_current_month_color">@color/color_accent_4</item>
+        <item name="date_picker_current_day_text_color">@color/palette_color_white0</item>
+        <item name="date_picker_unavailable_color">@color/palette_color_white4</item>
+        <item name="date_picker_fixed_month_color">@color/date_picker_fixed_month_color</item>
+        <item name="date_picker_default_checkbox_color">@color/text_color_black_4</item>
+        <item name="date_picker_ok_button_background">@drawable/date_picker_ok_button_background</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/PickerWindowAnimation</item>
+    </style>
+
+    <style name="PickerWindowAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/date_picker_dialog_enter_animation</item>
+        <item name="android:windowExitAnimation">@anim/date_picker_dialog_exit_animation</item>
+    </style>
+
+    <style name="SbisContainer.PeriodPicker">
+        <item name="sbisHeaderViewTheme">@style/ContainerHeader.PeriodPicker</item>
+    </style>
+
+    <style name="ContainerHeader.PeriodPicker">
+        <item name="SbisHeaderTitle_theme">@style/HeaderTitle.PeriodPicker</item>
+    </style>
+
+    <style name="HeaderTitle.PeriodPicker">
+        <item name="android:textColor">?primaryTextColor</item>
+    </style>
+
+</resources>

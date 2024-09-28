@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/attachments_container_list_item"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/attachments_item_height_message"
+    android:background="@drawable/common_attachments_message_input_attachment_drawable"
+    tools:ignore="ResourceName">
+
+    <include layout="@layout/attachments_container_item_content"/>
+
+</FrameLayout>

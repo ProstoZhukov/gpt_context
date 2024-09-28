@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/color_accent">
+
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape>
+                    <solid android:color="@color/toolbar_action_button_disabled_color"/>
+                    <corners android:radius="@dimen/toolbar_action_button_corner_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/sbis_orange_dark"/>
+                    <corners android:radius="@dimen/toolbar_action_button_corner_radius"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+
+</ripple>

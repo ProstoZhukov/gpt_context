@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SearchInput-->
+    <color name="input_view_filter_color_applied">@color/palette_color_blue8</color>
+    <color name="input_view_filter_color_disabled">#5C5C5C</color>
+    <color name="input_view_divider_color">#e4e4e4</color>
+    <color name="input_view_vertical_divider_color">#0a000000</color>
+    <color name="input_view_filter_color">@color/text_color_accent_2</color>
+</resources>

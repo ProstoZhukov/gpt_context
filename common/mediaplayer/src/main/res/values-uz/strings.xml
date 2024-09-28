@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="media_sbis_tube_cleartext_traffic_not_permitted_error">Xavfsizlik siyosati tufayli media faylni o‘ynatib bo‘lmadi</string>
+    <string name="media_sbis_tube_data_source_error">Manbadan media faylni o‘qib bo‘lmadi</string>
+    <string name="media_sbis_tube_denied_reading_external_storage">Ijro qilish uchun qurilmadagi fayllarni o‘qish uchun ruxsat talab qilinadi</string>
+    <string name="media_sbis_tube_instantiating_decoder_error">Media fayl uchun dekoder yaratib bo‘lmadi</string>
+    <string name="media_sbis_tube_network_data_source_error">Media faylni yuklab boʻlmadi\nInternet ulanishingizni tekshiring</string>
+    <string name="media_sbis_tube_no_decoder_error">Media faylni o‘ynatib bo‘lmadi\nQurilmangizda uning uchun dekoder yo‘q</string>
+    <string name="media_sbis_tube_no_secure_decoder_error">Media faylni o‘ynatib bo‘lmadi\nQurilmangiz uning uchun xavfsiz dekoderni ta’minlamaydi</string>
+    <string name="media_sbis_tube_querying_decoders_error">Qurilmadan media dekoderlarini so‘rash amalga oshmadi</string>
+    <string name="media_sbis_tube_unknown_error">Media faylni o‘ynatib bo‘lmadi</string>
+    <string name="media_sbis_tube_unrecognized_data_source_error">Qo\'llab-quvvatlanmaydigan media turi</string>
+</resources>

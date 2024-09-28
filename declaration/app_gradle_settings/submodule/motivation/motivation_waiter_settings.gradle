@@ -1,0 +1,26 @@
+include ':motivation'
+project(':motivation').projectDir = new File(motivationDir, 'motivation')
+
+include ':motivation_impl'
+project(':motivation_impl').projectDir = new File(motivationDir, 'motivation_impl')
+
+include ':motivation_screens'
+project(':motivation_screens').projectDir = new File(motivationDir, 'motivation_screens')
+
+include ':motivation_ui_resources'
+project(':motivation_ui_resources').projectDir = new File(motivationDir, 'motivation-common/motivation_ui_resources')
+
+include ':motivation_main_screen_addon'
+project(':motivation_main_screen_addon').projectDir = new File(motivationDir, 'motivation_main_screen_addon')
+
+include ':tips_declaration'
+project(':tips_declaration').projectDir = new File(motivationDir, 'tips2/tips_declaration')
+
+include ':tips'
+project(':tips').projectDir = new File(motivationDir, 'tips2/tips')
+
+include ':tips_main_screen_addon'
+project(':tips_main_screen_addon').projectDir = new File(motivationDir, 'tips2/tips_main_screen_addon')
+
+include ':tips_detail'
+project(':tips_detail').projectDir = new File(motivationDir, 'tips2/tips_detail')

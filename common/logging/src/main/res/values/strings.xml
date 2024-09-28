@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Хост -->
+    <string name="logging_host_toolbar_title">Logs</string>
+
+    <!-- Логгирование -->
+    <string name="logging_log_package_size_megabytes">%.1f Mb</string>
+    <string name="logging_log_package_size_kilobytes">%.1f Kb</string>
+
+    <string name="logging_preparing_sending_logs">Analysing logging package</string>
+    <string name="logging_waiting_sending_logs">Waiting for sending</string>
+    <string name="logging_waiting_wifi_sending_logs">Waiting for Wi-Fi</string>
+    <string name="logging_waiting_inet_sending_logs">Waiting for network</string>
+    <string name="logging_sending_logs_in_progress">Sending logs to server</string>
+    <string name="logging_floating_send_btn_text">Send all</string>
+    <string name="logging_slider_label">Enable logging</string>
+    <string name="logging_disable_log_stub_title">No data</string>
+    <string name="logging_disable_log_stub_description">Allow collecting the device data\nfor further analysis.</string>
+    <string name="logging_copy_to_clipboard">Incident number copied to clipboard</string>
+
+    <string name="logging_confirmation_text">I agree to send information from the device to analyze and improve the application.</string>
+    <string name="logging_confirmation_total_size_text">Changed %1$s</string>
+    <string name="logging_confirmation_success">Confirm</string>
+    <string name="logging_confirmation_dismiss">Cancel</string>
+
+    <!-- Настройки логгирования -->
+    <string name="logging_settings_header_title_root">Logging setting</string>
+    <string name="logging_settings_header_title_level">Logging level</string>
+    <string name="logging_settings_header_title_writing_mode">Logging</string>
+    <string name="logging_settings_header_title_storage_interval">Package retention period</string>
+    <string name="logging_settings_header_title_diagnostic_settings">Data for diagnostics</string>
+
+    <string name="logging_settings_level_label">Level</string>
+    <string name="logging_settings_delay_label">Logging</string>
+    <string name="logging_settings_storage_interval_label">Retention period</string>
+    <string name="logging_settings_wifi_label">Wi-Fi send only</string>
+    <string name="logging_settings_log_query_to_db">Log query plan to database</string>
+
+    <string name="logging_settings_log_level_minimal">Minimum</string>
+    <string name="logging_settings_log_level_standart">Standard</string>
+    <string name="logging_settings_log_level_extended">Advanced</string>
+    <string name="logging_settings_log_level_debug">Debug</string>
+    <string name="logging_settings_log_level_disabled">Disabled</string>
+
+    <string name="logging_settings_log_delay_delayed">Delayed</string>
+    <string name="logging_settings_log_delay_immediate">Immediate</string>
+
+    <string name="logging_settings_log_storage_interval_day">1 day</string>
+    <string name="logging_settings_log_storage_interval_two_days">2 days</string>
+    <string name="logging_settings_log_storage_interval_three_days">3 days</string>
+    <string name="logging_settings_log_storage_interval_week">1 week</string>
+
+    <string name="logging_settings_diagnostic_settings_only_logs">Only logs</string>
+    <string name="logging_settings_diagnostic_settings_full">Logs + DB</string>
+    <string name="logging_settings_diagnostic_settings_selective">Selective</string>
+
+    <string name="logging_mobile_icon_clock">&#xeba0;</string>
+    <string name="logging_mobile_icon_check">&#xe990;</string>
+
+    <string name="logging_force_log_delivery_launcher_label">Sending logs</string>
+</resources>

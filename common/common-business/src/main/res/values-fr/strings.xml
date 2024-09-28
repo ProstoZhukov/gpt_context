@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_error_check_permission">Erreur de vérification des droits d\'accès</string>
+    <string name="business_error_network_header">Échec du chargement des données</string>
+    <string name="business_error_network_info">Vérifiez votre connexion réseau</string>
+    <string name="business_error_no_cashbox">Pas de caisses connectées</string>
+    <string name="business_error_no_data">Pas de données</string>
+    <string name="business_error_no_data_for_filter">Essayez de modifier les paramètres de filtrage</string>
+    <string name="business_error_no_data_for_period">Aucune donnée pour la période sélectionnée</string>
+    <string name="business_error_no_data_found">Rien trouvé pour cette recherche</string>
+    <string name="business_error_permission">Vous ne disposez pas des autorisations requises pour effectuer cette action</string>
+    <string name="business_error_receiving_data">Erreur lors de la réception des données</string>
+    <string name="business_error_unknown">Erreur inconnue</string>
+    <string name="business_no_permission_comment">Les revenus des produits et services seront affichés ici</string>
+    <string name="business_try_change_period">Essayez de changer la période</string>
+    <string name="business_try_change_period_active">changer la période</string>
+    <string name="business_try_check_connection_and_update_again">Vérifiez votre connexion Internet et réessayez</string>
+    <string name="business_error_popup_network_header">Pas de connexion réseau</string>
+</resources>

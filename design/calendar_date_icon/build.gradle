@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.calendar_date_icon"
+
+    testOptions.unitTests {
+        returnDefaultValues = true
+        includeAndroidResources = true
+    }
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_utils')
+
+    testImplementation project(':testing')
+}

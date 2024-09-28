@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Все прикладные цвета согласованы:
+        https://online.sbis.ru/opendoc.html?guid=db93aaa7-0866-46c1-9edd-9f7a5d68facb
+    -->
+
+    <color name="hall_scheme_table_empty_contour_dark">@color/hall_scheme_gray_empty</color>
+    <color name="hall_scheme_table_occupied_contour_dark">#E3E3E3</color>
+
+    <color name="hall_scheme_table_occupied_background_dark">#B7BCC6</color>
+    <color name="hall_scheme_table_empty_background_pressed_dark">#60FFFFFF</color>
+    <color name="hall_scheme_table_occupied_background_pressed_dark">#C7CCD6</color>
+
+    <color name="hall_scheme_table_empty_primary_text_color_dark">@color/hall_scheme_gray_empty</color>
+    <color name="hall_scheme_table_occupied_primary_text_color_dark">#1E2F48</color>
+
+    <color name="hall_scheme_table_empty_secondary_text_color_dark">#B7BEC8</color>
+    <color name="hall_scheme_table_occupied_secondary_text_color_dark">#B7BCC6</color>
+
+    <color name="hall_scheme_table_ready_name_background_dark">#F97739</color>
+</resources>

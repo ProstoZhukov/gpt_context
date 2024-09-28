@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-kapt'
+
+submoduleConfig { cfg ->
+    cfg.enableViewBindingCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.view_ext"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    sourceSets {
+        main {
+            List<String> extraSources = []
+            if (rootProject.ext.compileSdkVersion > 33) {
+                extraSources = ["src/sdk_34/kotlin"]
+            } else {
+                extraSources = ["src/sdk_33/kotlin"]
+            }
+            kotlin.srcDirs += extraSources
+        }
+    }
+}
+
+dependencies {
+    implementation project(':design_utils')
+    implementation project(':design')
+    implementation project(':design_custom_view_tools')
+    implementation project(':fresco_view')
+
+    implementation libs.zxing.core
+
+    api libs.android.view.layout.swiperefreshLayout
+    api libs.android.core.ktx
+    api libs.android.appcompat
+    api libs.android.view.recyclerView
+    api libs.android.view.iconics.core
+    api libs.android.view.iconics.views
+}

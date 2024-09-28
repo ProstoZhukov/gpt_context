@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_span_collapse_text">Жыйрату</string>
+    <string name="text_span_dialog_title_counter">… (+%d)</string>
+    <string name="text_span_expand_text">Кеңейту</string>
+    <string name="text_span_task_text_collapse">\u0020құлақ</string>
+    <string name="text_span_task_text_ellipsis">…</string>
+    <string name="text_span_task_text_expand">\u0020толығырақ</string>
+</resources>

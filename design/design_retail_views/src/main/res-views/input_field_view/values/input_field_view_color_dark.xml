@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Цвет фона поля ввода -->
+    <color name="retail_views_input_field_background_main_color_dark">#0D6D8DB0</color>
+    <!-- Цвет фона поля ввода при ошибке -->
+    <color name="retail_views_input_field_background_error_color_dark">#574657</color>
+    <!-- Цвет обводки поля ввода -->
+    <color name="retail_views_input_field_background_main_stroke_color_dark">#666D8DB0</color>
+    <!-- Цвет нижней обводки поля ввода -->
+    <color name="retail_views_input_field_background_bottom_stroke_color_dark">#6D8DB0</color>
+    <!-- Цвет обводки поля ввода в режиме поиска -->
+    <color name="retail_views_input_field_background_searchable_stroke_color_dark">#996D8DB0</color>
+    <!-- Цвет текста у метки поля ввода -->
+    <color name="retail_views_input_field_label_text_color_dark">@color/palette_color_dark_gray1</color>
+
+    <!-- Цвет текста на основном фоне -->
+    <color name="retail_views_main_background_text_color_dark">#E4E4E4</color>
+    <!-- Цвет недоступного текста на основном фоне -->
+    <color name="retail_views_main_background_disabled_text_color_dark">#4B688B</color>
+    <!-- Цвет иконок на основном фоне -->
+    <color name="retail_views_main_background_icon_color_dark">#839EBC</color>
+    <!-- Цвет основного фона -->
+    <color name="retail_views_main_background_color_dark">#1D2834</color>
+
+</resources>

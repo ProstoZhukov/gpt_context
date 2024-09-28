@@ -1,0 +1,30 @@
+import ru.tensor.gradle.subconfig.ktlint.KtLintConfig
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableKtLintCfg(KtLintConfig.KOTLIN_1_8_0)
+}
+
+android {
+    namespace "ru.tensor.sbis.video_monitoring_decl"
+    resourcePrefix "video_monitoring_decl"
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+    }
+}
+
+dependencies {
+    implementation project(':plugin_struct')
+    implementation project(':verification-decl')
+
+    implementation libs.android.appcompat
+    implementation libs.rx.java
+}

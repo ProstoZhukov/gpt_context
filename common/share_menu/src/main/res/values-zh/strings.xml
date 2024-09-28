@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_menu_authorization_required_message">请登录您的帐户并重试</string>
+    <string name="share_menu_no_available_options">没有可供共享的可用选项</string>
+    <string name="share_menu_header_view_title_default">发送%1$s</string>
+    <string name="share_menu_header_view_title_sending">正在发送%1$s</string>
+    <string name="share_menu_header_view_title_completed">已发送%1$s</string>
+    <string name="share_menu_attachments_count_restriction">您不能发送超过 25 个文件</string>
+    <string name="share_menu_attachment_big_size_restriction">上传的文件不得超过 1 GB</string>
+    <string name="share_menu_text_restriction">文本增加一条消息允许的最大字符数</string>
+</resources>

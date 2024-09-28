@@ -1,0 +1,5 @@
+include ':meeting'
+project(':meeting').projectDir = new File(meetingDir, "meeting")
+
+include ':meetings_common'
+project(':meetings_common').projectDir = new File(meetingDir, "meetings_common")

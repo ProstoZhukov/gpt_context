@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="link_opener_scheme" translatable="false">http</string>
+    <string name="link_opener_safe_scheme" translatable="false">https</string>
+
+    <string name="link_opener_host_go_path_prefix" translatable="false">/go/</string>
+    <string name="link_opener_host_meeting_1_prefix" translatable="false">/meeting/.*</string>
+    <string name="link_opener_host_videoconf_prefix" translatable="false">/videoconf/</string>
+    <string name="link_opener_host_dialog_1_prefix" translatable="false">/page/dialog/.*</string>
+    <string name="link_opener_host_dialog_2_prefix" translatable="false">/dialog/.*</string>
+    <string name="link_opener_host_chat_1_prefix" translatable="false">/page/chat/.*</string>
+    <string name="link_opener_host_chat_2_prefix" translatable="false">/chat/.*</string>
+    <string name="link_opener_host_person_prefix" translatable="false">/person/.*</string>
+    <string name="link_opener_host_document_disk_1_prefix" translatable="false">/shared/disk/.*</string>
+    <string name="link_opener_host_document_disk_2_prefix" translatable="false">/disk/.*</string>
+    <string name="link_opener_host_webinar_1_prefix" translatable="false">/webinar/.*</string>
+    <string name="link_opener_host_webinar_2_prefix" translatable="false">/webinar-bl/.*</string>
+    <string name="link_opener_host_event_prefix" translatable="false">/event/.*</string>
+    <string name="link_opener_host_call_prefix" translatable="false">/meet/.*</string>
+    <string name="link_opener_host_wiki_article_prefix" translatable="false">/article/</string>
+    <string name="link_opener_host_wiki_knowledge_prefix" translatable="false">/knowledge-bases/</string>
+    <string name="link_opener_host_wiki_knowledge_page_prefix" translatable="false">/page/knowledge-bases</string>
+    <string name="link_opener_host_wiki_knowledge_group_pattern" translatable="false">/.*/knowledge</string>
+    <string name="link_opener_host_wiki_knowledge_base_pattern" translatable="false">/.*/knowledge-base.*</string>
+    <string name="link_opener_host_wiki_knowledge_folder_patter" translatable="false">/page/knowledge-base-folder/.*</string>
+    <string name="link_opener_host_forum_prefix" translatable="false">/forum/</string>
+    <string name="link_opener_host_contractors_card_prefix" translatable="false">/contractors-mobile-api/</string>
+    <string name="link_opener_host_document_card_prefix" translatable="false">/opendoc.html.*</string>
+    <string name="link_opener_host_document_card_alias_prefix" translatable="false">/doc/.*</string>
+    <string name="link_opener_host_news_prefix" translatable="false">/news/</string>
+    <string name="link_opener_host_application_for_unqualified_signature_prefix" translatable="false">/page/application-for-unqualified-signature</string>
+    <string name="link_opener_host_setting_certificate_password_prefix" translatable="false">/page/setting-certificate-password</string>
+    <string name="link_opener_host_qr_auth_and_install" translatable="false">/auth/qrcode/</string>
+    <string name="link_opener_host_qr_auth_to_web" translatable="false">/auth/toweb/</string>
+    <string name="link_opener_host_cl_saby_retail_order_card_prefix" translatable="false">/page/retailOrderCard/.*</string>
+    <string name="link_opener_host_cl_saby_retail_order_salon_prefix" translatable="false">/page/record-list*</string>
+    <string name="link_opener_host_cl_saby_queues_schedules_prefix" translatable="false">/page/queues-schedule</string>
+
+    <string name="link_opener_please_wait">Please wait</string>
+</resources>

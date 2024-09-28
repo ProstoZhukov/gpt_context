@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="access_code_input_view_title">Telefonning oxirgi 4 ta raqamini kiriting</string>
+    <string name="date_input_view_validation_min_max_date">Qiymat %s dan katta va %s dan kichik bo‘lishi kerak</string>
+    <string name="date_input_view_validation_min_date">Qiymat %s dan katta bo‘lishi kerak</string>
+    <string name="date_input_view_validation_max_date">Qiymat %s dan kichik boʻlishi kerak</string>
+    <string name="phone_input_view_placeholder_mobile_default">Telefon</string>
+    <string name="phone_input_view_ext_number">доб.</string>
+</resources>

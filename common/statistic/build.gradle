@@ -1,0 +1,31 @@
+import ru.tensor.gradle.subconfig.ktlint.KtLintConfig
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableLintCfg()
+    cfg.enableKtLintCfg(KtLintConfig.KOTLIN_1_8_0)
+}
+
+android {
+    namespace "ru.tensor.sbis.statistic"
+
+    resourcePrefix 'statistic_'
+
+    lintOptions {
+        baseline project.file("config/androidLint/baseline.xml")
+        disable 'GradleDependency', 'TrustAllX509TrustManager'
+    }
+}
+
+dependencies {
+    api "androidx.annotation:annotation:$rootProject.ext.annotationVersion"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.ext.kotlinxCoroutinesCoreVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+}

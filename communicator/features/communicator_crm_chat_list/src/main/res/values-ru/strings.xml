@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_chat_list_screen_addon_menu_item">Чаты</string>
+    <string name="communicator_crm_chats_tab_title">Чаты</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_message">Список чатов пуст</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_details">При обращении клиента вы получите уведомление</string>
+    <string name="communicator_crm_chat_list_bad_filter_list_stub_details">Попробуйте изменить\nпараметры поиска или фильтрации</string>
+    <string name="communicator_crm_chat_list_swipe_delete">Удалить</string>
+    <string name="communicator_crm_chat_list_swipe_take">Взять себе</string>
+    <string name="communicator_crm_chat_list_swipe_complete">Завершить</string>
+    <string name="communicator_crm_chat_list_channel_group_title_support">Поддержка СБИС</string>
+    <string name="communicator_crm_chat_list_channel_group_title_site">Сайт</string>
+    <string name="communicator_crm_chat_list_channel_group_title_sabyget">SabyGet</string>
+    <string name="communicator_crm_chat_list_channel_group_title_saby">СБИС</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_app">Приложение</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_vk">Вконтакте</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_telegram">Telegram</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_email">E-mail</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_viber">Viber</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_ok">Одноклассники</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_whatsapp">WhatsApp</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_facebook">Facebook</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_yandex">Яндекс</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_instagram">Instagram</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_avito">Авито</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_unknown">Неизвестный</string>
+    <string name="communicator_crm_chat_list_chat_no_access">У вас нет доступа на просмотр этого чата</string>
+</resources>

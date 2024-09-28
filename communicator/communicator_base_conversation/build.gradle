@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBuildConfigGeneration()
+}
+
+android {
+    namespace "ru.tensor.sbis.communicator.base.conversation"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+    }
+}
+
+dependencies {
+    // communicator
+    implementation project(':communicator_common')
+    implementation project(':communicator_core')
+    implementation project(':communicator_declaration')
+    implementation project(':communicator_design')
+    // controller
+    implementation project(':controller')
+    // design
+    implementation project(':cloud_view')
+    implementation project(':container')
+    implementation project(':context_menu')
+    implementation project(':design')
+    implementation project(':design_buttons')
+    implementation project(':design_chips')
+    implementation project(':design_collection_view')
+    implementation project(':design_confirmation_dialog')
+    implementation project(':design_counters')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_list_header')
+    implementation project(':design_message_view')
+    implementation project(':design_notification')
+    implementation project(':design_profile')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_stubview')
+    implementation project(':design_top_navigation')
+    implementation project(':design_utils')
+    implementation project(':design_video_player_view')
+    implementation project(':input_view')
+    implementation project(':list_utils')
+    implementation project(':text_span')
+    // common
+    implementation project(':base_components')
+    implementation project(':common')
+    implementation project(':crud4')
+    implementation project(':message_panel')
+    implementation project(':modalwindows')
+    implementation project(':mvp')
+    implementation project(':persons')
+    implementation project(':richtext')
+}

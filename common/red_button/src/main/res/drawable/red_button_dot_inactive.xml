@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:endColor="@color/palette_color_gray4"
+        android:startColor="@color/palette_color_gray4"/>
+    <size
+        android:width="@dimen/red_button_padding"
+        android:height="@dimen/red_button_padding"/>
+</shape>

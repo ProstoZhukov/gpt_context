@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Стандартная тема Чека-->
+    <style name="ReceiptTheme" parent="BaseBusinessTheme">
+
+        <item name="receiptBackgroundColor">@color/receipt_white</item>
+        <item name="receiptContainerBackgroundColor">@color/palette_color_white16</item>
+
+        <item name="receiptHeaderTextColor">@color/palette_color_black1</item>
+        <item name="receiptHeaderDayTextColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptHeaderDayMonthTextSize">?attr/business_font_size_body1_scaleOff</item>
+        <item name="receiptHeaderDateTextSize">?attr/business_font_size_display1_scaleOff</item>
+        <item name="receiptHeaderTimeTextSize">?attr/business_font_size_display1_scaleOff</item>
+        <item name="receiptHeaderTimeTextSizeSmall">?attr/business_font_size_display1_scaleOff</item>
+        <item name="receiptHeaderStatusTextSize">?attr/business_font_size_body2_scaleOff</item>
+        <item name="receiptHeaderStatusLightTextSize">?attr/business_font_size_title2_scaleOff</item>
+        <item name="receiptHeaderStatusIconTextSize">?attr/business_font_size_body1_scaleOff</item>
+
+        <item name="receiptSummaryPaymentSumColor">@color/text_color_accent_4</item>
+        <item name="receiptSummaryPaymentSumSize">?attr/business_font_size_display1_scaleOff</item>
+
+        <item name="receiptSummaryToPaySumColor">@color/text_color_black_3</item>
+        <item name="receiptSummaryToPaySumSize">?attr/business_font_size_title2_scaleOff</item>
+
+        <item name="receiptSummaryPaymentCommentSumColor">@color/text_color_accent_1</item>
+        <item name="receiptSummaryPaymentCommentSumSize">
+            ?attr/business_font_size_display1_scaleOff
+        </item>
+
+        <item name="receiptSummaryPaymentIconColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptSummaryPaymentIconSize">?attr/business_font_size_title1_scaleOff</item>
+        <item name="receiptSummaryPaymentIconTopPadding">0dp</item>
+
+        <item name="receiptSummaryBuyerTextColor">@color/palette_color_black1</item>
+        <item name="receiptSummaryBuyerTextSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptSummaryCorrectionCommentTextColor">@color/palette_color_black1</item>
+        <item name="receiptSummaryCorrectionCommentTextSize">
+            ?attr/business_font_size_body1
+        </item>
+
+        <item name="receiptSummaryBonusDiscountColor">@color/text_color_link_2</item>
+        <item name="receiptSummaryBonusDiscountSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptSummaryKopeckColor">@color/text_color_link_1</item>
+        <item name="receiptSummaryDiscountKopeckColor">@color/text_color_link_2</item>
+
+        <item name="receiptPurchaseFolderArrowColor">@color/text_color_black_3</item>
+
+        <item name="receiptPurchaseNameColor">@color/palette_color_black1</item>
+        <item name="receiptPurchaseNameSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptPurchaseAmountUnitColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptPurchaseUnitColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptPurchaseAmountUnitSize">?attr/business_font_size_body2</item>
+
+        <item name="receiptSpecificationsColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptSpecificationsSize">?attr/business_font_size_body2</item>
+
+        <item name="receiptPurchaseUnitPriceColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptPurchaseUnitPriceAccentColor">?attr/receiptPurchaseUnitPriceColor</item>
+        <item name="receiptPurchaseUnitPriceSize">?attr/business_font_size_body2</item>
+
+        <item name="receiptPurchaseSumColor">@color/text_color_accent_1</item>
+        <item name="receiptPurchaseSumSize">?attr/business_font_size_title2</item>
+
+        <item name="receiptPurchaseCrossIconColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptPurchaseArrowsIconColor">@color/palette_alpha_color_black4</item>
+
+        <item name="receiptWorkerImage">@drawable/business_receipt_image_circle_white</item>
+        <item name="receiptWorkerNameColor">@color/palette_alpha_color_black8</item>
+        <item name="receiptWorkerNameSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptWorkerPositionColor">@color/palette_alpha_color_black6</item>
+        <item name="receiptWorkerPositionSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptWorkerTipsPercentColor">@color/palette_alpha_color_black6</item>
+        <item name="receiptWorkerTipsPercentSize">?attr/business_font_size_body1</item>
+        <item name="receiptWorkerTipsSumColor">@color/text_color_accent_1</item>
+        <item name="receiptWorkerTipsSumSize">?attr/business_font_size_body1</item>
+        <item name="receiptWorkerTipsKopeckColor">?attr/receiptSecondaryTextColor</item>
+        <item name="receiptWorkerTipsKopeckSize">?attr/business_font_size_caption1_scaleOff</item>
+        <item name="receiptWorkerTipsCommentColor">@color/palette_alpha_color_black6</item>
+        <item name="receiptWorkerTipsCommentSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptPurchaseImage">@drawable/business_receipt_image_circle_white</item>
+        <item name="receiptPurchaseIconColor">@color/text_color_black_4</item>
+        <item name="receiptStrokeDrawable">@drawable/business_receipt_image_circle_grey_stroke</item>
+
+        <item name="receiptDetailsLabelColor">@color/colorLink3</item>
+        <item name="receiptDetailsLabelSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptDetailsNdsSalaryValueColor">@color/text_color_accent_1</item>
+        <item name="receiptDetailsNdsSalaryValueSize">?attr/business_font_size_body2_scaleOff</item>
+
+        <item name="receiptDetailsPaymentValueColor">@color/text_color_accent_1</item>
+        <item name="receiptDetailsPaymentValueSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptDetailsNameLabelColor">@color/palette_color_gray4</item>
+        <item name="receiptDetailsValueLabelColor">@color/palette_color_gray4</item>
+        <item name="receiptDetailsKopeckaColor">@color/palette_alpha_color_black4</item>
+
+        <item name="receiptSecondaryTextColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptMainTextColor">@color/palette_color_black1</item>
+        <item name="receiptLinkTextColor">@color/text_color_link_1</item>
+        <item name="receiptAccentTextColor">@color/text_color_accent_1</item>
+        <item name="receiptKopeckTextColor">@color/colorLink3</item>
+        <item name="receiptIconColor">@color/text_color_link_2</item>
+
+        <item name="itemPanelRecordSum">@color/text_color_accent_1</item>
+        <item name="itemPanelRecordSumReturn">@color/colorError</item>
+
+        <item name="receiptExpandArrowColor">@color/text_color_gray_4</item>
+
+        <item name="receiptStubMessageColor">@color/palette_color_black2</item>
+
+        <item name="receiptErrorColor">@color/colorError</item>
+
+        <item name="receiptPullToRefreshIndicatorColor">@color/text_color_accent_3</item>
+
+        <!--Ссылка на семейство шрифтов в отчетах-->
+        <item name="business_font_family">@font/roboto_regular</item>
+        <item name="business_medium_font_family">@font/roboto_medium</item>
+        <item name="business_bold_font_family">@font/roboto_bold</item>
+        <!--Размеры шрифтов в отчетах-->
+        <!--TODO https://online.sbis.ru/opendoc.html?guid=4941283d-1736-4ac3-bbd8-ad8f9a7d211c
+        Привести размеры шрифтов в соответствии с общепринятыми в рознице размерами.-->
+        <item name="business_font_size_display1">@dimen/size_display1_scaleOn</item>
+        <item name="business_font_size_title1">@dimen/size_title1_scaleOn</item>
+        <item name="business_font_size_title2">@dimen/size_title2_scaleOn</item>
+        <item name="business_font_size_title3">@dimen/size_title3_scaleOn</item>
+        <item name="business_font_size_body1">@dimen/size_body1_scaleOn</item>
+        <item name="business_font_size_body2">@dimen/size_body2_scaleOn</item>
+        <item name="business_font_size_caption1">@dimen/size_caption1_scaleOn</item>
+
+        <item name="business_font_size_Body_2_scale_off">@dimen/size_Body_2_scale_off</item>
+        <item name="business_font_size_display1_scaleOff">@dimen/size_display1_scaleOff</item>
+        <item name="business_font_size_title1_scaleOff">@dimen/size_title1_scaleOff</item>
+        <item name="business_font_size_title2_scaleOff">@dimen/size_title2_scaleOff</item>
+        <item name="business_font_size_title3_scaleOff">@dimen/size_title3_scaleOff</item>
+        <item name="business_font_size_body1_scaleOff">@dimen/size_body1_scaleOff</item>
+        <item name="business_font_size_body2_scaleOff">@dimen/size_body2_scaleOff</item>
+        <item name="business_font_size_caption1_scaleOff">@dimen/size_caption1_scaleOff</item>
+        <item name="business_font_size_caption2_scaleOff">@dimen/size_caption2_scaleOff</item>
+    </style>
+
+    <!-- Масштабированная тема для МП Розница (семейство и размеры шрифтов)-->
+    <style name="ReceiptResizeTheme" parent="ReceiptTheme">
+        <!--Ссылка на семейство шрифтов в отчетах-->
+        <item name="business_font_family">@font/business_tensor_font</item>
+        <item name="business_medium_font_family">@font/business_tensor_font</item>
+        <item name="business_bold_font_family">@font/business_tensor_font</item>
+        <!--Размеры шрифтов в отчетах-->
+        <!--Все размеры в рознице должны быть в dp, т.к. смена размера идет через изменение density-->
+        <item name="business_font_size_display1">@dimen/size_display1_scaleOff</item>
+        <item name="business_font_size_title1">@dimen/size_title1_scaleOff</item>
+        <item name="business_font_size_title2">@dimen/size_title2_scaleOff</item>
+        <item name="business_font_size_title3">@dimen/size_title3_scaleOff</item>
+        <item name="business_font_size_body1">@dimen/size_body1_scaleOff</item>
+        <item name="business_font_size_body2">@dimen/size_body2_scaleOff</item>
+        <item name="business_font_size_caption1">@dimen/size_caption1_scaleOff</item>
+
+        <item name="business_font_size_Body_2_scale_off">@dimen/size_Body_2_scale_off</item>
+        <item name="business_font_size_display1_scaleOff">@dimen/size_display1_scaleOff</item>
+        <item name="business_font_size_title1_scaleOff">@dimen/size_title1_scaleOff</item>
+        <item name="business_font_size_title2_scaleOff">@dimen/size_title2_scaleOff</item>
+        <item name="business_font_size_title3_scaleOff">@dimen/size_title3_scaleOff</item>
+        <item name="business_font_size_body1_scaleOff">@dimen/size_body1_scaleOff</item>
+        <item name="business_font_size_body2_scaleOff">@dimen/size_body2_scaleOff</item>
+        <item name="business_font_size_caption1_scaleOff">@dimen/size_caption1_scaleOff</item>
+        <item name="business_font_size_caption2_scaleOff">@dimen/size_caption2_scaleOff</item>
+    </style>
+
+    <!--Светлая тема Чека-->
+    <style name="ReceiptLightTheme" parent="ReceiptResizeTheme">
+
+        <item name="receiptBackgroundColor">@color/receipt_white</item>
+        <item name="receiptContainerBackgroundColor">@color/palette_color_white16</item>
+
+        <item name="receiptHeaderTextColor">@color/palette_color_black1</item>
+        <item name="receiptHeaderDayTextColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptHeaderDayMonthTextSize">?attr/business_font_size_body1_scaleOff</item>
+        <item name="receiptHeaderDateTextSize">?attr/business_font_size_display1_scaleOff</item>
+        <item name="receiptHeaderTimeTextSize">?attr/business_font_size_display1_scaleOff</item>
+        <item name="receiptHeaderTimeTextSizeSmall">?attr/business_font_size_display1_scaleOff</item>
+
+        <item name="receiptSummaryPaymentSumColor">@color/text_color_accent_4</item>
+        <item name="receiptSummaryPaymentSumSize">?attr/business_font_size_display1_scaleOff</item>
+
+        <item name="receiptSummaryPaymentCommentSumColor">@color/text_color_accent_1</item>
+        <item name="receiptSummaryPaymentCommentSumSize">
+            ?attr/business_font_size_display1_scaleOff
+        </item>
+
+        <item name="receiptSummaryPaymentIconColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptSummaryPaymentIconSize">?attr/business_font_size_title1_scaleOff</item>
+        <item name="receiptSummaryPaymentIconTopPadding">0dp</item>
+
+        <item name="receiptSummaryBuyerTextColor">@color/palette_color_black1</item>
+        <item name="receiptSummaryBuyerTextSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptSummaryCorrectionCommentTextColor">@color/palette_color_black1</item>
+        <item name="receiptSummaryCorrectionCommentTextSize">
+            ?attr/business_font_size_body1
+        </item>
+
+        <item name="receiptSummaryBonusDiscountColor">@color/text_color_link_2</item>
+        <item name="receiptSummaryBonusDiscountSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptSummaryKopeckColor">@color/text_color_link_1</item>
+        <item name="receiptSummaryDiscountKopeckColor">@color/text_color_link_2</item>
+
+        <item name="receiptPurchaseFolderArrowColor">@color/text_color_black_3</item>
+
+        <item name="receiptPurchaseNameColor">@color/palette_color_black1</item>
+        <item name="receiptPurchaseNameSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptPurchaseAmountUnitColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptPurchaseUnitColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptPurchaseAmountUnitSize">?attr/business_font_size_body2</item>
+
+        <item name="receiptSpecificationsColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptSpecificationsSize">?attr/business_font_size_body2</item>
+
+        <item name="receiptPurchaseUnitPriceColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptPurchaseUnitPriceSize">?attr/business_font_size_body2</item>
+
+        <item name="receiptPurchaseSumColor">@color/text_color_accent_1</item>
+        <item name="receiptPurchaseSumSize">?attr/business_font_size_title2</item>
+
+        <item name="receiptPurchaseCrossIconColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptPurchaseArrowsIconColor">@color/palette_alpha_color_black4</item>
+
+        <item name="receiptWorkerImage">@drawable/business_receipt_image_circle_white</item>
+        <item name="receiptWorkerNameColor">@color/palette_alpha_color_black8</item>
+        <item name="receiptWorkerNameSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptWorkerPositionColor">@color/palette_alpha_color_black6</item>
+        <item name="receiptWorkerPositionSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptPurchaseImage">@drawable/business_receipt_image_circle_white</item>
+        <item name="receiptPurchaseIconColor">@color/text_color_black_4</item>
+        <item name="receiptStrokeDrawable">@drawable/business_receipt_image_circle_grey_stroke</item>
+
+        <item name="receiptDetailsLabelColor">@color/colorLink3</item>
+        <item name="receiptDetailsLabelSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptDetailsNdsSalaryValueColor">@color/text_color_accent_1</item>
+        <item name="receiptDetailsNdsSalaryValueSize">?attr/business_font_size_body2_scaleOff</item>
+
+        <item name="receiptDetailsPaymentValueColor">@color/text_color_accent_1</item>
+        <item name="receiptDetailsPaymentValueSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptDetailsNameLabelColor">@color/palette_color_gray4</item>
+        <item name="receiptDetailsValueLabelColor">@color/palette_color_gray4</item>
+        <item name="receiptDetailsKopeckaColor">@color/palette_alpha_color_black4</item>
+
+        <item name="receiptSecondaryTextColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptMainTextColor">@color/palette_color_black1</item>
+        <item name="receiptLinkTextColor">@color/text_color_link_1</item>
+        <item name="receiptAccentTextColor">@color/text_color_accent_1</item>
+        <item name="receiptKopeckTextColor">@color/colorLink3</item>
+        <item name="receiptIconColor">@color/text_color_link_2</item>
+
+        <item name="itemPanelRecordSum">@color/text_color_accent_1</item>
+        <item name="itemPanelRecordSumReturn">@color/colorError</item>
+
+        <item name="receiptExpandArrowColor">@color/text_color_gray_4</item>
+
+        <item name="receiptStubMessageColor">@color/palette_color_black2</item>
+
+        <item name="receiptErrorColor">@color/colorError</item>
+
+        <item name="receiptPullToRefreshIndicatorColor">@color/text_color_accent_3</item>
+    </style>
+
+    <!--Темная тема Чека-->
+    <style name="ReceiptDarkTheme" parent="ReceiptResizeTheme">
+
+        <item name="receiptBackgroundColor">@color/receipt_dark_background_color</item>
+        <item name="receiptContainerBackgroundColor">@color/business_dark_container_background_color</item>
+
+        <item name="receiptHeaderTextColor">@color/palette_color_gray12</item>
+        <item name="receiptHeaderDayTextColor">@color/palette_color_blue4</item>
+        <item name="receiptHeaderDayMonthTextSize">?attr/business_font_size_body1_scaleOff</item>
+        <item name="receiptHeaderDateTextSize">?attr/business_font_size_display1_scaleOff</item>
+        <item name="receiptHeaderTimeTextSize">?attr/business_font_size_display1_scaleOff</item>
+        <item name="receiptHeaderTimeTextSizeSmall">?attr/business_font_size_display1_scaleOff</item>
+
+        <item name="receiptSummaryPaymentSumColor">@color/receipt_dark_accent_color</item>
+        <item name="receiptSummaryPaymentSumSize">?attr/business_font_size_display1_scaleOff</item>
+
+        <item name="receiptSummaryPaymentCommentSumColor">@color/receipt_dark_accent_color</item>
+        <item name="receiptSummaryPaymentCommentSumSize">
+            ?attr/business_font_size_display1_scaleOff
+        </item>
+
+        <item name="receiptSummaryPaymentIconColor">@color/receipt_dark_icon_color</item>
+        <item name="receiptSummaryPaymentIconSize">?attr/business_font_size_title1_scaleOff</item>
+        <item name="receiptSummaryPaymentIconTopPadding">0dp</item>
+
+        <item name="receiptSummaryBuyerTextColor">@color/palette_color_blue4</item>
+        <item name="receiptSummaryBuyerTextSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptSummaryCorrectionCommentTextColor">@color/palette_color_gray12</item>
+        <item name="receiptSummaryCorrectionCommentTextSize">
+            ?attr/business_font_size_body1
+        </item>
+
+        <item name="receiptSummaryBonusDiscountColor">@color/palette_color_blue4</item>
+        <item name="receiptSummaryBonusDiscountSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptSummaryKopeckColor">@color/palette_color_blue4</item>
+        <item name="receiptSummaryDiscountKopeckColor">@color/palette_color_blue4</item>
+
+        <item name="receiptPurchaseFolderArrowColor">@color/receipt_dark_arrows_icon_color</item>
+
+        <item name="receiptPurchaseNameColor">@color/palette_color_gray12</item>
+        <item name="receiptPurchaseNameSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptPurchaseAmountUnitColor">@color/palette_color_blue4</item>
+        <item name="receiptPurchaseUnitColor">@color/palette_color_blue4</item>
+        <item name="receiptPurchaseAmountUnitSize">?attr/business_font_size_body2</item>
+
+        <item name="receiptSpecificationsColor">@color/palette_alpha_color_black4</item>
+        <item name="receiptSpecificationsSize">?attr/business_font_size_body2</item>
+
+        <item name="receiptPurchaseUnitPriceColor">@color/palette_color_blue4</item>
+        <item name="receiptPurchaseUnitPriceSize">?attr/business_font_size_body2</item>
+
+        <item name="receiptPurchaseSumColor">@color/palette_color_gray12</item>
+        <item name="receiptPurchaseSumSize">?attr/business_font_size_title2</item>
+
+        <item name="receiptPurchaseCrossIconColor">@color/palette_color_blue4</item>
+        <item name="receiptPurchaseArrowsIconColor">@color/receipt_dark_arrows_icon_color</item>
+
+        <item name="receiptWorkerImage">@drawable/business_receipt_image_circle_white</item>
+        <item name="receiptWorkerNameColor">@color/palette_alpha_color_black8</item>
+        <item name="receiptWorkerNameSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptWorkerPositionColor">@color/palette_alpha_color_black6</item>
+        <item name="receiptWorkerPositionSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptPurchaseImage">@drawable/business_receipt_image_circle_white</item>
+        <item name="receiptPurchaseIconColor">@color/receipt_dark_icon_color</item>
+        <item name="receiptStrokeDrawable">@drawable/business_receipt_image_circle_grey_stroke</item>
+
+        <item name="receiptDetailsLabelColor">@color/palette_color_gray12</item>
+        <item name="receiptDetailsLabelSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptDetailsNdsSalaryValueColor">@color/receipt_dark_accent_color</item>
+        <item name="receiptDetailsNdsSalaryValueSize">?attr/business_font_size_body2_scaleOff</item>
+
+        <item name="receiptDetailsPaymentValueColor">@color/receipt_dark_accent_color</item>
+        <item name="receiptDetailsPaymentValueSize">?attr/business_font_size_body1</item>
+
+        <item name="receiptDetailsNameLabelColor">@color/business_dark_secondary_text_color</item>
+        <item name="receiptDetailsValueLabelColor">@color/business_dark_secondary_text_color</item>
+        <item name="receiptDetailsKopeckaColor">@color/palette_color_blue4</item>
+
+        <item name="receiptSecondaryTextColor">@color/palette_color_blue4</item>
+        <item name="receiptMainTextColor">@color/palette_color_gray12</item>
+        <item name="receiptLinkTextColor">@color/milestone_list_item_state_icon_blue</item>
+        <item name="receiptAccentTextColor">@color/receipt_dark_accent_color</item>
+        <item name="receiptKopeckTextColor">@color/palette_color_blue4</item>
+        <item name="receiptIconColor">@color/receipt_dark_icon_color</item>
+
+        <item name="itemPanelRecordSum">@color/text_color_accent_1</item>
+        <item name="itemPanelRecordSumReturn">@color/colorError</item>
+
+        <item name="receiptExpandArrowColor">@color/text_color_gray_4</item>
+
+        <item name="receiptStubMessageColor">@color/palette_color_white0</item>
+
+        <item name="receiptErrorColor">@color/colorError</item>
+
+        <item name="receiptPullToRefreshIndicatorColor">@color/receipt_dark_accent_color</item>
+    </style>
+
+</resources>

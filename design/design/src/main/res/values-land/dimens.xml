@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--deprecated используй design_tablet_master_width-->
+    <dimen name="toolbar_left_part">@dimen/design_tablet_master_width</dimen>
+</resources>

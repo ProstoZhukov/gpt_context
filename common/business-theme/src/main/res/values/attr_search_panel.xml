@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="searchPanelTheme" format="reference"/>
+
+    <attr name="search_panel_background" format="reference"/>
+    <attr name="search_panel_background_simple" format="reference"/>
+</resources>

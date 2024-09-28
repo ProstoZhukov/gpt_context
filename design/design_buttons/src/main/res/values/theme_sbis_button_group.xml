@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="SbisButtonGroupDefaultPaleTheme" parent="SbisButtonGroupBaseTheme">
+        <item name="SbisButtonGroup_backgroundColor">?unaccentedContrastBackgroundColor</item>
+        <item name="SbisButtonGroup_backgroundColorPressed">?unaccentedContrastBackgroundColor</item>
+        <item name="SbisButtonGroup_backgroundColorDisabled">?backgroundColor</item>
+
+        <item name="SbisButtonGroup_borderColor">?unaccentedBorderColor</item>
+        <item name="SbisButtonGroup_borderColorPressed">?unaccentedBorderColor</item>
+        <item name="SbisButtonGroup_borderColorDisabled">?readonlyBorderColor</item>
+    </style>
+
+    <style name="SbisButtonGroupBaseTheme">
+        <item name="SbisButtonGroup_borderWidth">@dimen/design_buttons_button_group_border_size</item>
+        <item name="SbisButtonGroup_secondaryButtonProgressColor">?iconColor</item>
+        <item name="android:elevation">@dimen/elevation_none</item>
+    </style>
+
+</resources>

@@ -1,0 +1,2 @@
+include ":videocall"
+project(':videocall').projectDir = new File(videocallDir, "videocall")

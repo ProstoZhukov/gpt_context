@@ -1,0 +1,70 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Доступ в интернет для контроллера -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Доступ на регистрацию и получение сообщений от Google Cloud Messaging -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <!-- Разрешение на звонки -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false"/>
+
+    <application android:allowBackup="false">
+
+        <activity
+            android:name=".ui.messageinfo.presentation.MessageInformationActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Swipe.Back"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="ru.tensor.sbis.communicator.sbis_conversation.ConversationActivity"
+            android:theme="@style/AppTheme.Swipe.Back"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true">
+
+            <intent-filter android:label="@string/communicator_conversation_activity_title">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="${applicationId}.CONVERSATION_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="ru.tensor.sbis.communicator.sbis_conversation.DialogCreationActivity"
+            android:theme="@style/AppTheme.Swipe.Back"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true">
+
+            <intent-filter android:label="@string/communicator_conversation_activity_title">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+ext.communicator_dir = "communicator"
+apply from: "$communicatorDir/settings.gradle"
+
+include ':messages_main_screen_addon'
+project(':messages_main_screen_addon').projectDir = new File(communicatorDir, 'messages_main_screen_addon')
+
+include ':communicator_support_channel_list'
+project(':communicator_support_channel_list').projectDir = new File(communicatorDir, "features/communicator_support_channel_list")
+
+include ':communicator_crm_conversation'
+project(':communicator_crm_conversation').projectDir = new File(communicatorDir, "features/communicator_crm_conversation")
+
+include ':communicator_support_consultation_list'
+project(':communicator_support_consultation_list').projectDir = new File(communicatorDir, "features/communicator_support_consultation_list")
+
+include ':communicator_files'
+project(':communicator_files').projectDir = new File(communicatorDir, "features/communicator_files")

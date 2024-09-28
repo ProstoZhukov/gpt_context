@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="short_currency_RU">擦。</string>
+    <string name="super_short_currency_RU">河</string>
+    <string name="short_subunit_RU">科普。</string>
+    <string name="super_short_subunit_RU">k.</string>
+    <string name="symbol_RU">₽</string>
+    <string name="short_currency_KZ">tng。</string>
+    <string name="super_short_currency_KZ">t。</string>
+    <string name="short_subunit_KZ">蒂因</string>
+    <string name="super_short_subunit_KZ">蒂因</string>
+    <string name="symbol_KZ">₸</string>
+    <string name="short_currency_UZ">苏姆</string>
+    <string name="super_short_currency_UZ">s。</string>
+    <string name="short_subunit_UZ">体音</string>
+    <string name="super_short_subunit_UZ">t。</string>
+    <string name="symbol_UZ">索姆</string>
+    <string name="short_currency_US">多尔。</string>
+    <string name="super_short_currency_US">d.</string>
+    <string name="short_subunit_US">分</string>
+    <string name="super_short_subunit_US">C。</string>
+    <string name="symbol_US">$</string>
+    <plurals name="currency_plural_RU">
+        <item quantity="zero">卢布</item>
+        <item quantity="one">卢布尔</item>
+        <item quantity="two">卢布</item>
+        <item quantity="few">卢布</item>
+        <item quantity="many">卢布</item>
+        <item quantity="other">卢布</item>
+    </plurals>
+    <plurals name="subunit_plural_RU">
+        <item quantity="zero">科比</item>
+        <item quantity="one">科比</item>
+        <item quantity="two">科比</item>
+        <item quantity="few">科比</item>
+        <item quantity="many">科比</item>
+        <item quantity="other">科比</item>
+    </plurals>
+    <plurals name="currency_plural_KZ">
+        <item quantity="zero">坚戈</item>
+        <item quantity="one">坚戈</item>
+        <item quantity="two">坚戈</item>
+        <item quantity="few">坚戈</item>
+        <item quantity="many">坚戈</item>
+        <item quantity="other">坚戈</item>
+    </plurals>
+    <plurals name="subunit_plural_KZ">
+        <item quantity="zero">蒂因</item>
+        <item quantity="one">蒂因</item>
+        <item quantity="two">蒂因</item>
+        <item quantity="few">蒂因</item>
+        <item quantity="many">蒂因</item>
+        <item quantity="other">蒂因</item>
+    </plurals>
+    <plurals name="currency_plural_UZ">
+        <item quantity="zero">苏姆斯</item>
+        <item quantity="one">苏姆</item>
+        <item quantity="two">苏姆斯</item>
+        <item quantity="few">苏姆斯</item>
+        <item quantity="many">苏姆斯</item>
+        <item quantity="other">苏姆斯</item>
+    </plurals>
+    <plurals name="subunit_plural_UZ">
+        <item quantity="zero">体音</item>
+        <item quantity="one">体音</item>
+        <item quantity="two">体音</item>
+        <item quantity="few">体音</item>
+        <item quantity="many">体音</item>
+        <item quantity="other">体音</item>
+    </plurals>
+    <plurals name="currency_plural_US">
+        <item quantity="zero">美元</item>
+        <item quantity="one">美元</item>
+        <item quantity="two">美元</item>
+        <item quantity="few">美元</item>
+        <item quantity="many">美元</item>
+        <item quantity="other">美元</item>
+    </plurals>
+    <plurals name="subunit_plural_US">
+        <item quantity="zero">美分</item>
+        <item quantity="one">分</item>
+        <item quantity="two">美分</item>
+        <item quantity="few">美分</item>
+        <item quantity="many">美分</item>
+        <item quantity="other">美分</item>
+    </plurals>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="onboarding_tour_content_guideline_percent" type="dimen">0.5</item>
+</resources>

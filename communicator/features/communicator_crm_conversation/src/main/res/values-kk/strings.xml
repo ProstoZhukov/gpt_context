@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_reassign_to_queue_option">Кезекке оралу</string>
+    <string name="communicator_crm_reassign_to_group_option">Қайта тағайындау</string>
+    <string name="communicator_crm_reassign_to_operator_option">Басқа қызметкерге</string>
+    <string name="communicator_crm_copy_link_option">Сілтемені көшіру</string>
+    <string name="communicator_crm_request_contacts_option">Байланысты сұрау</string>
+    <string name="communicator_crm_write_to_client_option">Клиентке жазыңыз</string>
+    <string name="communicator_crm_complete_option">Аяқталды</string>
+    <string name="communicator_crm_delete_option">Жою</string>
+    <string name="communicator_crm_take_button_text">Чатты алу</string>
+    <string name="communicator_crm_brand_title">Чат</string>
+    <string name="communicator_crm_service_message_rate_request_button_title">Бағалау</string>
+    <string name="communicator_crm_rate_title">Біздің жұмысымызды бағалаңыз</string>
+    <string name="communicator_crm_rate_comment_placeholder">Пікір</string>
+    <string name="communicator_crm_rate_send_button_title">Жіберу</string>
+    <string name="communicator_crm_quick_reply_empty_stub">Жылдам жауаптар тізімі бос</string>
+    <string name="communicator_crm_sabyget_stub_message">Байланыс</string>
+    <string name="communicator_crm_conversation_stub_subtitle">Мұнда сіздің диалогыңыз болады \ пс мекеме және мамандар</string>
+    <string name="communicator_crm_chat_cant_view_permisshion">Сізде қол жетімділік жоқ \ пбұл чатты көру</string>
+    <string name="communicator_crm_rate_validation_error">Өріс міндетті түрде толтырылады</string>
+    <string name="communicator_crm_reopen_button_text">Чатты жалғастыру</string>
+    <string name="communicator_crm_brand_stub_message">Бізге жазыңыз</string>
+    <string name="communicator_crm_reassign_to_operator_edit_hint">Қызметкерге түсініктеме жазыңыз</string>
+</resources>

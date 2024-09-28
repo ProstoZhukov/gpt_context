@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order_message_company_description">Käbir zatlar a&#xfd;ratyn sargyt edilmeli</string>
+    <string name="order_message_company_title">Dürli guramalardan sa&#xfd;lanan önümler</string>
+    <string name="order_message_queue_description">Käbir zatlar a&#xfd;ratyn &#xfd;azgy hökmünde &#xfd;azylmalydyr.</string>
+    <string name="order_message_queue_no_specialist">Hünärmen &#xfd;ok</string>
+    <string name="order_message_queue_title">Dürli hünärmenlerden sa&#xfd;lanan hyzmatlar</string>
+    <string name="order_message_nomenclature_changed_price_description">Araba täze bahadan önümler go&#x15f;uldy. Jemi bahasy täzelendi</string>
+    <string name="order_message_nomenclature_changed_price_title">Bahalar ü&#xfd;tgedi</string>
+    <string name="order_message_nomenclature_not_published_description">Araba önümler a&#xfd;ryldy. \ n Jemi bahasy täzelendi</string>
+    <string name="order_message_nomenclature_not_published_title">Bu zatlar indi sargyt üçin el&#xfd;eterli däl.</string>
+    <string name="order_message_salon_nomenclature_changed_price_description">Hyzmatlar täze bahadan araba go&#x15f;uldy. Jemi bahasy täzelendi</string>
+    <string name="order_message_salon_nomenclature_not_published_title">Bu hyzmatlar indi sargyt üçin el&#xfd;eterli däl.</string>
+    <string name="order_message_nomenclature_has_changes_title">Ü&#xfd;tge&#x15f;meler bar</string>
+    <string name="order_message_nomenclature_has_changes_description">El&#xfd;eterli zatlar arabadan a&#xfd;ryldy. Jemi bahasy täzelendi</string>
+    <string name="order_message_nomenclature_price_has_changed_title">Bahalar ü&#xfd;tgedi</string>
+    <string name="order_message_nomenclature_not_available_for_order_title">Sargyt üçin el&#xfd;eterli däl</string>
+    <string name="order_message_stop_list_title">Durmak sanawyndaky önümler</string>
+    <string name="order_message_stop_list_description">Araba önümler a&#xfd;ryldy \ &#xfd;a-da mukdary çäkli däl</string>
+    <string name="order_message_stop_list_available">El&#xfd;eterli</string>
+    <string name="order_message_different_nom_taxes_title">Sa&#xfd;lanan önümler \ kwitansi&#xfd;a go&#x15f;up bolma&#xfd;ar</string>
+    <string name="order_message_different_nom_taxes_description">Araba&#x148;yzdaky käbir zatlary a&#xfd;yry&#x148; we a&#xfd;ratyn sargyt hökmünde &#xfd;erle&#x15f;diri&#x148;.</string>
+    <string name="order_message_different_nom_taxes_order_number">Sargyt% d</string>
+</resources>

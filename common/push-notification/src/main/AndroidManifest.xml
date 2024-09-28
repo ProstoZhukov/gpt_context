@@ -1,0 +1,84 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Разрешение на отправку уведомлений для Android 13 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+     Начиная с 30 Api, система ограничивает видимость установленных пакетов
+     на устройстве. В связи с этим необходимо явно указывать те Intent'ы,
+     которые могут потребоваться приложению в процессе работы.
+
+     https://developer.android.com/training/package-visibility?hl=ru
+    -->
+    <queries>
+        <intent>
+            <!-- UserStory: обновление счетчика уведомлений на иконке приложения. (AdwHomeBadger) -->
+            <action android:name="org.adw.launcher.counter.SEND"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: обновление счетчика уведомлений на иконке приложения. (ApexHomeBadger) -->
+            <action android:name="com.anddoes.launcher.COUNTER_CHANGED"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: обновление счетчика уведомлений на иконке приложения. (AsusHomeBadger) -->
+            <action android:name="android.intent.action.BADGE_COUNT_UPDATE"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: обновление счетчика уведомлений на иконке приложения. (DefaultBadger) -->
+            <action android:name="android.intent.action.BADGE_COUNT_UPDATE"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: обновление счетчика уведомлений на иконке приложения. (NewHtcHomeBadger) -->
+            <action android:name="com.htc.launcher.action.UPDATE_SHORTCUT"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: обновление счетчика уведомлений на иконке приложения. (NewHtcHomeBadger) -->
+            <action android:name="com.htc.launcher.action.SET_NOTIFICATION"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: обновление счетчика уведомлений на иконке приложения. (SonyHomeBadger) -->
+            <action android:name="com.sonyericsson.home.action.UPDATE_BADGE"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: обновление счетчика уведомлений на иконке приложения. (XiaomiHomeBadger) -->
+            <action android:name="android.intent.action.APPLICATION_MESSAGE_UPDATE"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: обновление счетчика уведомлений на иконке приложения. (VivoHomeBadger) -->
+            <action android:name="launcher.action.CHANGE_APPLICATION_NOTIFICATION_NUM"/>
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="false">
+
+        <service
+            android:name="ru.tensor.sbis.pushnotification.service.KeepAliveForegroundService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <receiver
+            android:name=".receiver.DismissNotificationReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <receiver
+            android:name="ru.tensor.sbis.pushnotification.receiver.DeviceBootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

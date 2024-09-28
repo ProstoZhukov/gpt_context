@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+apply from: "../code_quality_check.gradle"
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.viewer.decl"
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+    }
+}
+
+dependencies {
+    implementation project(':toolbox-decl')
+    api project(':plugin_struct')
+    api project(':crud3')
+    api project(':commonviews')
+
+    implementation libs.rx.android
+    implementation libs.android.appcompat
+    implementation libs.timber
+}

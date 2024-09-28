@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--region unaccented buttons (recommended update) -->
+    <!--http://axure.tensor.ru/MobileStandart8/%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B8.html -->
+    <!--Sabyget и Бренды-->
+    <style name="BaseAppComponentsContrastUnaccentedSabyClientsButton" parent="SbisButtonDefaultUnaccentedTheme">
+        <item name="SbisButton_backgroundType">contrast</item>
+    </style>
+    <!--Presto-->
+    <style name="BaseAppComponentsContrastUnaccentedButton" parent="SbisButtonDefaultUnaccentedTheme">
+        <item name="SbisButton_backgroundType">contrast</item>
+        <item name="SbisButton_contrastBackgroundColor">#3E4956</item>
+        <item name="SbisButton_contrastBackgroundColorPressed">#263241</item>
+        <item name="SbisButton_titleContrastColor">@color/palette_color_dark_gray1</item>
+    </style>
+    <!--region accented buttons -->
+    <!--Sabyget и Бренды-->
+    <style name="BaseAppComponentsContrastSabyClientsButton" parent="SbisButtonDefaultPrimaryTheme">
+        <item name="SbisButton_backgroundType">contrast</item>
+    </style>
+
+    <!--Presto-->
+    <style name="BaseAppComponentsContrastPrimaryButton" parent="SbisButtonDefaultPrimaryTheme">
+        <item name="SbisButton_backgroundType">contrast</item>
+    </style>
+    <!-- endregion -->
+</resources>

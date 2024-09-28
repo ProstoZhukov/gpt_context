@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  TODO 16.03.2021 будет удалено https://online.sbis.ru/opendoc.html?guid=59e8ef3f-7fff-4331-8127-96a39a714216 -->
+
+    <!--  Стандартные сообщения для заглушек  -->
+
+    <string name="stub_view_no_messages_title">Начните общение первым</string>
+    <string name="stub_view_no_messages_description">Просто нажмите на плюс и выберите собеседника</string>
+
+    <string name="stub_view_not_found_title">Нет результатов</string>
+    <string name="stub_view_not_found_description">Попробуйте изменить параметры поиска</string>
+
+    <string name="stub_view_no_filter_description">Попробуйте изменить\nпараметры фильтрации</string>
+
+    <string name="stub_view_no_connection_title">Нет сети</string>
+    <string name="stub_view_no_connection_description_static">Ой, кажется пропало соединение. Попробуйте обновить страницу</string>
+    <string name="stub_view_no_connection_description_1">"Ой, кажется пропало соединение. Попробуйте "</string>
+    <string name="stub_view_no_connection_description_2">обновить страницу</string>
+
+    <string name="stub_view_error_description_static">Мы уже знаем об этом и пытаемся исправить. Обновите страницу через некоторое время</string>
+    <string name="stub_view_error_description_1">"Мы уже знаем об этом и пытаемся исправить. "</string>
+    <string name="stub_view_error_description_2">Обновите страницу</string>
+    <string name="stub_view_error_description_3">" через некоторое время"</string>
+
+    <string name="stub_view_no_page_title">Такой страницы нет</string>
+    <string name="stub_view_no_page_description">Возможно, она была удалена, или Вы перешли по неверной ссылке</string>
+</resources>

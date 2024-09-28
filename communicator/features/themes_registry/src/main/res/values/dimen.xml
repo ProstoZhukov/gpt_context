@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="communicator_chat_settings_checkbox_start_offset">44dp</dimen>
+    <dimen name="themes_registry_dialog_information_done_button_horizontal_margin">12dp</dimen>
+</resources>

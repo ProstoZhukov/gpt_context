@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_folders_enter_folder_name_message">Entrez le nom du dossier</string>
+    <string name="design_folders_yes_action">Oui</string>
+    <string name="design_folders_no_action">Non</string>
+    <string name="design_folder_more">Suite…</string>
+    <string name="design_folders_edit_dialog_confirm">SAUVEGARDER</string>
+    <string name="design_folders_create_dialog_confirm">CRÉER</string>
+    <string name="design_folders_dialog_decline">ANNULER</string>
+    <string name="design_folders_delete_dialog_confirm">EFFACER</string>
+    <string name="design_folders_delete_title_template">Supprimer le dossier \'%1$s\'&#160;?</string>
+    <string name="design_folders_cancel_folder_sharing_message">@string/design_hide_shared_tasks_confirmation</string>
+    <string name="design_folders_delete_message">Tout le contenu sera déplacé vers le dossier parent</string>
+    <string name="design_folders_enter_new_folder_name_message">Nouveau dossier</string>
+    <string name="design_folders_enter_new_folder_name_message_only_root_folder">Vous n\'avez aucun dossier.\nVoulez-vous en créer un nouveau&#160;?</string>
+</resources>

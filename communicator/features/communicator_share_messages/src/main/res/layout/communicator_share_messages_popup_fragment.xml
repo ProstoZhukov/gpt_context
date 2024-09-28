@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/communicator_share_popup_message_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/communicator_share_popup_message_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/communicator_share_messages_confirmation_background"
+        android:outlineProvider="background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_min="@dimen/communicator_share_messages_confirmation_container_min_height"
+        app:layout_constraintWidth_max="@dimen/communicator_share_messages_confirmation_container_max_width">
+
+        <View
+            android:id="@+id/communicator_share_popup_message_error_indicator"
+            android:layout_width="@dimen/communicator_share_messages_confirmation_indicator_width"
+            android:layout_height="@dimen/communicator_share_messages_confirmation_indicator_height"
+            android:background="@drawable/communicator_share_messages_error_indicator_background"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/communicator_share_popup_message_title"
+            tools:visibility="visible"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/communicator_share_popup_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="?fontSize_2xl_scaleOff"
+            android:textColor="?textColor"
+            android:visibility="gone"
+            android:paddingHorizontal="?offset_2xl"
+            app:layout_constraintBottom_toTopOf="@+id/communicator_share_popup_message_positive_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"/>
+
+        <ru.tensor.sbis.design.buttons.SbisButton
+            android:id="@+id/communicator_share_popup_message_positive_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?offset_2xl"
+            android:layout_marginBottom="?offset_2xl"
+            android:visibility="gone"
+            app:layout_constraintHeight_max="@dimen/communicator_share_messages_confirmation_button_max_height"
+            app:layout_constraintWidth_min="@dimen/communicator_share_messages_confirmation_button_min_width"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

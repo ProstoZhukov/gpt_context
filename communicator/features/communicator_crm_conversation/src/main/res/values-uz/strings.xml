@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_reassign_to_queue_option">Navbatga qaytish</string>
+    <string name="communicator_crm_reassign_to_group_option">Qayta tayinlash</string>
+    <string name="communicator_crm_reassign_to_operator_option">Boshqa xodimga</string>
+    <string name="communicator_crm_copy_link_option">Havolani nusxalash</string>
+    <string name="communicator_crm_request_contacts_option">Kontaktni so\'rash</string>
+    <string name="communicator_crm_write_to_client_option">Mijozga yozing</string>
+    <string name="communicator_crm_complete_option">Bajarildi</string>
+    <string name="communicator_crm_delete_option">O\'chirish</string>
+    <string name="communicator_crm_take_button_text">Chatni oling</string>
+    <string name="communicator_crm_brand_title">Suhbat</string>
+    <string name="communicator_crm_service_message_rate_request_button_title">Baholash</string>
+    <string name="communicator_crm_rate_title">Bizning ishimizni baholang</string>
+    <string name="communicator_crm_rate_comment_placeholder">Sharh</string>
+    <string name="communicator_crm_rate_send_button_title">Yuborish</string>
+    <string name="communicator_crm_quick_reply_empty_stub">Tezkor javoblar ro\'yxati bo\'sh</string>
+    <string name="communicator_crm_sabyget_stub_message">Muloqot qiling</string>
+    <string name="communicator_crm_conversation_stub_subtitle">Bu erda sizning suhbatlaringiz \ PS muassasa va mutaxassislar bo\'ladi</string>
+    <string name="communicator_crm_chat_cant_view_permisshion">Siz kirish imkoniga ega emassiz \nUshbu suhbatni ko\'rish</string>
+    <string name="communicator_crm_rate_validation_error">To\'ldirish uchun maydon majburiydir</string>
+    <string name="communicator_crm_reopen_button_text">Suhbatni davom ettiring</string>
+    <string name="communicator_crm_brand_stub_message">Bizga yozing</string>
+    <string name="communicator_crm_reassign_to_operator_edit_hint">Xodimga sharh yozing</string>
+</resources>

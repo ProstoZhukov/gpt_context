@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_share_messages_confirmation_input_hint">Agregar comentario</string>
+    <string name="communicator_share_message_confirmation_title_without_files">Enviar</string>
+    <string name="communicator_share_message_contact_name_row">Nombre:</string>
+    <string name="communicator_share_message_contact_error_text">Sin acceso a los contactos del dispositivo.</string>
+    <string name="communicator_share_message_attachments_count_restriction">No puedes enviar m&#xe1;s de 25 archivos.</string>
+    <string name="communicator_share_message_attachment_big_size_restriction">El archivo cargado no debe exceder 1 GB</string>
+    <string name="communicator_share_message_popup_default_positive">OK</string>
+    <plurals name="communicator_share_message_confirmation_title">
+        <item quantity="zero">Enviar %d archivos</item>
+        <item quantity="one">Enviar %d archivo</item>
+        <item quantity="two">Enviar %d archivos</item>
+        <item quantity="few">Enviar %d archivos</item>
+        <item quantity="many">Enviar %d archivos</item>
+        <item quantity="other">Enviar %d archivos</item>
+    </plurals>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/communicator_conversation_information_root"
+    android:background="?unaccentedAdaptiveBackgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- Toolbar -->
+    <ru.tensor.sbis.design.topNavigation.view.SbisTopNavigationView
+        android:id="@+id/communicator_conversation_information_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:SbisTopNavigation_backBtnColor="?primaryColor"
+        app:SbisTopNavigation_showBackButton="true"
+        app:SbisTopNavigation_smallTitleMaxLines="1"
+        android:layout_alignParentTop="true"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/communicator_conversation_information_coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/communicator_conversation_information_toolbar">
+
+        <RelativeLayout
+            android:id="@+id/communicator_conversation_information_tabs_container"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?unaccentedAdaptiveBackgroundColor"
+            android:layout_alignParentBottom="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ru.tensor.sbis.design.tabs.view.SbisTabsView
+                android:id="@+id/communicator_conversation_information_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="?inlineHeight_m"
+                android:clickable="true"
+                android:focusable="true"
+                app:sbisTabsView_style="unaccented"
+                android:layout_alignParentTop="true"/>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/communicator_conversation_information_tabs_content_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_below="@+id/communicator_conversation_information_tabs"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/communicator_conversation_information_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:scrollview_id="@id/communicator_conversation_information_tabs_container">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/communicator_conversation_information_collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:layout_scrollFlags="scroll">
+
+                <ru.tensor.sbis.communicator.themes_registry.ui.communication.conversations.information.ui.participant_view.ConversationInformationParticipantView
+                    android:id="@+id/communicator_conversation_information_single_participant"
+                    android:background="?unaccentedAdaptiveBackgroundColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ru.tensor.sbis.design.buttons.SbisFloatingButtonPanel
+        android:id="@+id/communicator_conversation_information_floating_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RelativeOverlap">
+
+        <ru.tensor.sbis.design.buttons.SbisRoundButton
+            android:id="@+id/communicator_conversation_information_button_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:SbisRoundButton_icon="@string/design_mobile_icon_call"
+            app:SbisRoundButton_style="navigation"/>
+
+        <ru.tensor.sbis.design.buttons.SbisRoundButton
+            android:id="@+id/communicator_conversation_information_button_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:SbisRoundButton_icon="@string/design_mobile_icon_video"
+            app:SbisRoundButton_style="navigation"/>
+
+        <ru.tensor.sbis.design.buttons.SbisRoundButton
+            android:id="@+id/communicator_conversation_information_button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:SbisRoundButton_icon="@string/design_mobile_icon_action_add"
+            app:SbisRoundButton_style="navigation"/>
+    </ru.tensor.sbis.design.buttons.SbisFloatingButtonPanel>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="selection_person_item_photo" type="id"/>
+    <item name="selection_person_item_selection_icon_click_area" type="id"/>
+    <item name="selection_person_item_view" type="id"/>
+    <item name="selection_person_item_title" type="id"/>
+    <item name="selection_person_item_subtitle" type="id"/>
+    <item name="selection_additional_search_input" type="id"/>
+    <item name="selection_app_bar_layout" type="id"/>
+    <item name="selection_collapsing_toolbar_layout" type="id"/>
+    <item name="selection_done_button" type="id"/>
+    <item name="selection_folder_icon" type="id"/>
+    <item name="selection_folder_title" type="id"/>
+    <item name="selection_folder_subtitle" type="id"/>
+    <item name="selection_folder_counter" type="id"/>
+    <item name="selection_folder_fall_inside_icon" type="id"/>
+</resources>
+

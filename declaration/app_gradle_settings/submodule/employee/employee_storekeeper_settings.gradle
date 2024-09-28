@@ -1,0 +1,23 @@
+include ':employee'
+project(':employee').projectDir = new File(employeeDir, "employee")
+
+include ':employee_common'
+project(':employee_common').projectDir = new File(employeeDir, "employee_common")
+
+include ':employees_declaration'
+project(':employees_declaration').projectDir = new File(employeeDir, 'employees_declaration')
+
+include ':employees_registry'
+project(':employees_registry').projectDir = new File(employeeDir, "employees_registry")
+
+include ':employees_and_contacts_host'
+project(':employees_and_contacts_host').projectDir = new File(employeeDir, "employees_and_contacts_host")
+
+include ':my_profile'
+project(':my_profile').projectDir = new File(employeeDir, "my_profile")
+
+include ':person_card'
+project(':person_card').projectDir = new File(employeeDir, "person_card")
+
+include ':city_selector'
+project(':city_selector').projectDir = new File(employeeDir, "city_selector")

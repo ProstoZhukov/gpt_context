@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SbisRadioGroupDefaultTheme">
+        <item name="SbisRadioGroupView_borderCircleRadius">@dimen/sbis_radio_group_border_circle_radius</item>
+        <item name="SbisRadioGroupView_selectedCircleRadius">@dimen/sbis_radio_group_selected_circle_radius</item>
+        <item name="SbisRadioGroupView_borderWidth">?borderThickness_m</item>
+        <item name="SbisRadioGroupView_defaultMarkerPadding">?offset_s</item>
+        <item name="SbisRadioGroupView_defaultHorizontalPadding">?offset_m</item>
+        <item name="SbisRadioGroupView_defaultContentTextSize">?fontSizeDefault_scaleOn</item>
+        <item name="SbisRadioGroupView_selectedCircleColor">?primaryColor</item>
+        <item name="SbisRadioGroupView_unselectedCircleColor">?unaccentedBorderColor</item>
+        <item name="SbisRadioGroupView_readOnlySelectedCircleColor">?readonlyMarkerColor</item>
+        <item name="SbisRadioGroupView_readOnlyUnselectedCircleColor">?readonlyBorderColor</item>
+        <item name="SbisRadioGroupView_defaultContentTextColorReadOnly">?readonlyTextColor</item>
+        <item name="SbisRadioGroupView_defaultContentTextColorSelected">?selectedTextColorSwitcher</item>
+        <item name="SbisRadioGroupView_defaultContentTextColor">?textColorSwitcher</item>
+        <item name="SbisRadioGroupView_topPadding">@dimen/sbis_radio_group_default_top_padding</item>
+        <item name="SbisRadioGroupView_bottomPadding">@dimen/sbis_radio_group_default_bottom_padding</item>
+        <item name="SbisRadioGroupView_circleTopPadding">@dimen/sbis_radio_group_circle_top_padding</item>
+        <item name="SbisRadioGroupView_validationBorderRadius">?borderRadius_xs</item>
+        <item name="SbisRadioGroupView_validationBorderColor">?dangerBorderColor</item>
+        <item name="SbisRadioGroupView_validationBorderWidth">?borderThickness_s</item>
+        <item name="SbisRadioGroupView_validationPadding">?offset_xs</item>
+    </style>
+</resources>

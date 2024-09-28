@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="SettingsFontCheckVM"
+            type="ru.tensor.sbis.application_tools.fontcheck.vm.SettingsFontCheckVM"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?backgroundColor"
+        android:orientation="vertical"
+        android:padding="@dimen/application_tools_debug_font_check_item_padding">
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/title"
+            style="@style/BoldStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{SettingsFontCheckVM.fontSizeAndColorText}"
+            app:textColorRes="@{SettingsFontCheckVM.color}"
+            app:textSizeRes="@{SettingsFontCheckVM.fontSize}"
+            tools:text="Regular 24 (sizeDisplay1)"
+            tools:textColor="@color/palette_color_black1"
+            tools:textSize="@dimen/size_display1_scaleOn"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/subtitle"
+            style="@style/RegularStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="@string/application_tools_font_check_main_text"
+            app:textColorRes="@{SettingsFontCheckVM.color}"
+            app:textSizeRes="@{SettingsFontCheckVM.fontSize}"
+            tools:textColor="@color/palette_color_black1"
+            tools:textSize="@dimen/size_display1_scaleOn"/>
+
+    </LinearLayout>
+</layout>

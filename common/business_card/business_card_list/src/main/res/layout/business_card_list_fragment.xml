@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ru.tensor.sbis.design.topNavigation.view.SbisTopNavigationView
+            android:id="@+id/business_card_list_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:SbisTopNavigation_showBackButton="true"/>
+
+        <ru.tensor.sbis.crud3.ListComponentView
+            android:id="@+id/business_card_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ListComponentView_forceBackgroundColor="dark"
+            app:ListComponentView_forceScrollToInitialPosition="false"
+            app:ListComponentView_isUsedSwipeRefreshLayout="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/business_card_list_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

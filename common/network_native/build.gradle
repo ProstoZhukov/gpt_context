@@ -1,0 +1,84 @@
+import com.android.build.api.dsl.BaseFlavor
+import ru.tensor.gradle.subconfig.customization.feature.BinaryMode
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableRegionSplit()
+    cfg.enableFeatureSplit()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+regionConfig {
+    regions {
+        ru {
+            main {
+                android {
+                    defaultConfig {
+                        createRegionBuildFields(delegate, "online.sbis.ru", "online.saby.ru")
+                    }
+                }
+            }
+        }
+        kz {
+            main {
+                android {
+                    defaultConfig {
+                        createRegionBuildFields(delegate, "online.setty.kz", "online.setty.kz")
+                    }
+                }
+            }
+        }
+    }
+}
+
+features {
+    binaryFeature("controller", BinaryMode.ON)
+}
+
+android {
+    namespace "ru.tensor.sbis.network_native"
+}
+
+dependencies {
+    implementation project(':controller')
+
+    api project(':plugin_struct')
+    api project(':entrypoint_guard')
+    implementation project(':event_bus')
+
+    implementation "androidx.annotation:annotation:$rootProject.ext.annotationVersion"
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttpVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+}
+
+private static void createRegionBuildFields(BaseFlavor flavor,
+                                            String serverUrl,
+                                            String mirrorUrl) {
+    flavor.buildConfigField "String", "PROD_SERVER_URL", "\"$serverUrl\""
+    flavor.buildConfigField "String", "RC_SERVER_URL", "\"rc-$serverUrl\""
+    flavor.buildConfigField "String", "FIX_SERVER_URL", "\"fix-$serverUrl\""
+    flavor.buildConfigField "String", "TEST_SERVER_URL", "\"test-$serverUrl\""
+    flavor.buildConfigField "String", "PRETEST_SERVER_URL", "\"pre-test-$serverUrl\""
+    flavor.buildConfigField "String", "DEV_SERVER_URL", "\"dev-$serverUrl\""
+    flavor.buildConfigField "String", "CUSTOM_SERVER_URL", "\"$serverUrl\""
+
+    flavor.buildConfigField "String", "PROD_MIRROR_URL", "\"$mirrorUrl\""
+    flavor.buildConfigField "String", "RC_MIRROR_URL", "\"rc-$mirrorUrl\""
+    flavor.buildConfigField "String", "FIX_MIRROR_URL", "\"fix-$mirrorUrl\""
+    flavor.buildConfigField "String", "TEST_MIRROR_URL", "\"test-$mirrorUrl\""
+    flavor.buildConfigField "String", "PRETEST_MIRROR_URL", "\"pre-test-$mirrorUrl\""
+    flavor.buildConfigField "String", "DEV_MIRROR_URL", "\"dev-$mirrorUrl\""
+    flavor.buildConfigField "String", "CUSTOM_MIRROR_URL", "\"$mirrorUrl\""
+}

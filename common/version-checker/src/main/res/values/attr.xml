@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Атрибут для определения темы компонента версионирования в составе темы приложения -->
+    <attr name="versioningTheme" format="reference"/>
+
+    <!-- Id разметки контента заглушки рекомендуемого обновления -->
+    <item name="versioning_movable_content_view_container_id" type="id"/>
+    <!-- Цвет заголовка на экране блокировки -->
+    <attr name="versioning_lock_title_text_color" format="reference|color"/>
+    <!-- Цвет комментария на экране блокировки -->
+    <attr name="versioning_lock_comment_text_color" format="reference|color"/>
+</resources>

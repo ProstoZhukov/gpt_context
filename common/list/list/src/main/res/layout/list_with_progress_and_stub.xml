@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.list.base.presentation.ListScreenVM"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/list_screen"
+            layout="@layout/list_screen"
+            app:viewModel="@{viewModel}"
+            app:visibility="@{viewModel.listVisibility}"/>
+
+        <ru.tensor.sbis.design.stubview.StubView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:setContentFactory="@{viewModel.stubContent}"
+            app:visibility="@{viewModel.stubViewVisibility}"/>
+
+        <ru.tensor.sbis.design.view_ext.SbisProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:progressDelayMillis="0"
+            app:visibility="@{viewModel.progressVisibility}"/>
+    </FrameLayout>
+</layout>

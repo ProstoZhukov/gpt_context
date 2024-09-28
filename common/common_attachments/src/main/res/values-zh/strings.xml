@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_attachments_attach_file_error">添加附件时出错</string>
+    <string name="common_attachments_generating_snapshot_error">创建照片文件时出错</string>
+    <string name="common_attachments_starting_camera_error">运行相机时出错</string>
+    <string name="common_attachments_opening_gallery_error">打开图库时出错</string>
+    <string name="common_attachments_opening_file_explorer_error">运行文件选择组件时出错</string>
+</resources>

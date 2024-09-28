@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        FIXME: Атрибуты вынесены в Feature модуль, по причине того, что в Рознице
+        темы приложения определены в Common модуле, что делает невозможным подключение
+        к RetailCommon'у implementation модуля для определения темы, в случае, если
+        implementation модулю требуются какие-либо зависимости из RetailCommon'a.
+    -->
+
+    <!-- From Waiter App module -->
+    <attr name="compositions_overlay_background_color" format="color"/>
+
+</resources>

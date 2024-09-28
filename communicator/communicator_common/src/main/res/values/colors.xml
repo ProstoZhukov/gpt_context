@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TypefaceTextAppearanceSpan не вывозит глобальные переменные -->
+    <!-- successIconColor -->
+    <color name="communicator_common_emotion_text_like">#069922</color>
+    <!-- warningIconColor -->
+    <color name="communicator_common_emotion_text_laugh">#E6A119</color>
+    <!-- secondaryIconColor -->
+    <color name="communicator_common_emotion_text_shocked">#757D89</color>
+    <!-- dangerIconColor -->
+    <color name="communicator_common_emotion_text_angry">#C2140A</color>
+
+</resources>

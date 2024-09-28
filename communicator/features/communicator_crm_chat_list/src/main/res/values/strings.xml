@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_chat_list_screen_addon_menu_item">Chats</string>
+    <string name="communicator_crm_chats_tab_title">Chats</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_message">Your chat list is empty</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_details">When a client submits an inquiry, you will get a notification</string>
+    <string name="communicator_crm_chat_list_bad_filter_list_stub_details">Try changing your search or filtering options</string>
+    <string name="communicator_crm_chat_list_swipe_delete">Delete</string>
+    <string name="communicator_crm_chat_list_swipe_take">Take</string>
+    <string name="communicator_crm_chat_list_swipe_complete">Complete</string>
+    <string name="communicator_crm_chat_list_channel_group_title_support">Saby Support</string>
+    <string name="communicator_crm_chat_list_channel_group_title_site">Website</string>
+    <string name="communicator_crm_chat_list_channel_group_title_sabyget">SabyGet</string>
+    <string name="communicator_crm_chat_list_channel_group_title_saby">Saby</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_app">Application</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_vk">Vkontakte</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_telegram">Telegram</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_email">Email</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_viber">Viber</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_ok">Odnoklassniki</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_whatsapp">WhatsApp</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_facebook">Facebook</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_yandex">Yandex</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_instagram">Instagram</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_avito">Avito</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_unknown">Unknown</string>
+    <string name="communicator_crm_chat_list_chat_no_access">You don\'t have permission to access this chat</string>
+</resources>

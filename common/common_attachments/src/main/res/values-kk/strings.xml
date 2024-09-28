@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_attachments_attach_file_error">Қосымшаны қосу қатесі</string>
+    <string name="common_attachments_generating_snapshot_error">Фото файлды жасау қатесі</string>
+    <string name="common_attachments_opening_file_explorer_error">Файл таңдау құралы компонентін іске қосу кезіндегі қате</string>
+    <string name="common_attachments_opening_gallery_error">Галереяны ашу қатесі</string>
+    <string name="common_attachments_starting_camera_error">Камераны іске қосу қатесі</string>
+</resources>

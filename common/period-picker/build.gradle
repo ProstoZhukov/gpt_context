@@ -1,0 +1,70 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.date_picker"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions.unitTests.all {
+        testLogging {
+            events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            exceptionFormat 'full'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':design_progress')
+    implementation project(':mvp')
+    implementation project(':base_components')
+    implementation project(':common_filters')
+    implementation project(':design_dialogs')
+    implementation project(':design_sbis_text_view')
+    implementation project(':list_utils')
+    implementation project(':text_span')
+    implementation project(':design_utils')
+    implementation project(':design_buttons')
+    // BindingAdapter-ы попали в публичное api
+    // period-picker/src/main/java/ru/tensor/sbis/date_picker/BindingAdapters.kt
+    // https://online.sbis.ru/opendoc.html?guid=56732ec7-de10-49b4-8d9b-d780b9c77db3
+    api project(':design_view_ext')
+    implementation project(':design_custom_view_tools')
+    implementation project(':modalwindows')
+    implementation project(':container')
+    implementation project(':design_notification')
+
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    implementation "com.jakewharton.rxbinding2:rxbinding:$rootProject.ext.rxBindingVersion"
+    implementation "org.apache.commons:commons-lang3:$rootProject.ext.apacheCommonsVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+
+    testImplementation project(':testing')
+}

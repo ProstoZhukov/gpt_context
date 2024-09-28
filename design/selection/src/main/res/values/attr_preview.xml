@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="selectionPreviewViewTheme" format="reference"/>
+
+    <declare-styleable name="SelectionPreviewView">
+        <attr name="SelectionPreviewView_itemBodyStyle" format="reference"/>
+        <attr name="SelectionPreviewView_itemTitleStyle" format="reference"/>
+        <attr name="SelectionPreviewView_removeIconStyle" format="reference"/>
+        <attr name="SelectionPreviewView_markIconStyle" format="reference"/>
+        <attr name="SelectionPreviewView_itemDividerStyle" format="reference"/>
+        <attr name="SelectionPreviewView_totalCountStyle" format="reference"/>
+        <attr name="SelectionPreviewView_suggestionHeaderTitleStyle" format="reference"/>
+        <attr name="SelectionPreviewView_suggestionArrowIconStyle" format="reference"/>
+        <attr name="SelectionPreviewView_counterStyle" format="reference"/>
+        <attr name="SelectionPreviewView_moreTextStyle" format="reference"/>
+    </declare-styleable>
+
+</resources>

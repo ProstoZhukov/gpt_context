@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_share_messages_confirmation_input_hint">Πρόσθεσε σχόλιο</string>
+    <string name="communicator_share_message_confirmation_title_without_files">Στείλετε</string>
+    <string name="communicator_share_message_contact_name_row">Ονομα:</string>
+    <string name="communicator_share_message_contact_error_text">Δεν υπάρχει πρόσβαση στις επαφές της συσκευής.</string>
+    <string name="communicator_share_message_attachments_count_restriction">Δεν μπορείτε να στείλετε περισσότερα από 25 αρχεία</string>
+    <string name="communicator_share_message_attachment_big_size_restriction">Το μεταφορτωμένο αρχείο δεν πρέπει να υπερβαίνει το 1 GB</string>
+    <string name="communicator_share_message_popup_default_positive">OK</string>
+    <plurals name="communicator_share_message_confirmation_title">
+        <item quantity="zero">Αποστολή %d αρχείων</item>
+        <item quantity="one">Αποστολή %d αρχείου</item>
+        <item quantity="two">Αποστολή %d αρχείων</item>
+        <item quantity="few">Αποστολή %d αρχείων</item>
+        <item quantity="many">Αποστολή %d αρχείων</item>
+        <item quantity="other">Αποστολή %d αρχείων</item>
+    </plurals>
+</resources>

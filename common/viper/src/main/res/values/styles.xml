@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="ViperShadowBelow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:background">@drawable/viper_shadow_top_to_bottom</item>
+    </style>
+
+
+    <!-- Applied Button -->
+    <style name="ViperAppliedButton.Container" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/viper_floating_btn_height</item>
+        <item name="android:stateListAnimator">@animator/viper_fab_press_anim</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:background">
+            @drawable/viper_square_rounded_fill_floating_button_enabled_state_bg
+        </item>
+    </style>
+
+    <style name="ViperAppliedButton.Text" parent="@style/RegularStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize" tools:ignore="SpUsage">18dp</item>
+        <item name="android:textColor">@color/viper_floating_button_text_color_selector</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:freezesText">true</item>
+    </style>
+
+    <style name="ViperAppliedButton.Icon" parent="MobileFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize" tools:ignore="SpUsage">20dp</item>
+        <item name="android:textColor">@color/viper_floating_button_text_color_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="ViperCatalogItemList.Price" parent="@style/RegularStyle">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="android:textSize" tools:ignore="SpUsage">18dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:freezesText">true</item>
+    </style>
+
+    <style name="ViperCatalogItemList.PriceFraction" parent="@style/RegularStyle">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:freezesText">true</item>
+    </style>
+</resources>

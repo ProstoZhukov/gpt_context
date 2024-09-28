@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableViewBindingCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.share_menu"
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions.unitTests.all {
+        testLogging {
+            events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            exceptionFormat 'full'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':base_components')
+    implementation project(':common')
+    implementation project(':communication-decl')
+    implementation project(':design')
+    implementation project(':disk-decl')
+    implementation project(':design_buttons')
+    implementation project(':design_dialogs')
+    implementation project(':design_change_theme')
+    implementation project(':design_progress')
+    implementation project(':design_utils')
+    implementation project(':design_tab_panel')
+    implementation project(':toolbox-decl')
+    implementation project(':toolbar')
+    implementation project(':modalwindows')
+    implementation project(':navigation_service')
+    implementation project(':verification-decl')
+    implementation project(':mvi_extension')
+    implementation project(':statistic')
+    implementation project(':design_notification')
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel:${rootProject.ext.androidLifecycleViewmodel}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.androidLifecycleExtensions}"
+
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+
+    testImplementation project(':testing')
+    testImplementation project(':plugin_manager')
+}

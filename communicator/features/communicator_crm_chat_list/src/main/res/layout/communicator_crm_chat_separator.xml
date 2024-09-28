@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import
+            alias="view"
+            type="android.view.View"/>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.communicator_crm_chat_list.mapper.CRMChatListSeparatorModel"/>
+    </data>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/communicator_support_consultation_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="?offset_m"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@{viewModel.text}"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="@dimen/size_title3_scaleOn"
+        tools:layout_marginTop="12dp"
+        tools:text="@tools:sample/lorem/random"
+        tools:textColor="#999999"/>
+
+</layout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="manage_features_title">Test</string>
+    <string name="manage_features_user">User</string>
+    <string name="manage_features_account">Account</string>
+    <string name="manage_features_feature_id">Identificator</string>
+    <string name="manage_features_state">Status</string>
+    <string name="manage_features_value">Value</string>
+    <string name="manage_features_state_enabled">Enabled</string>
+    <string name="manage_features_state_disabled">Disabled</string>
+</resources>

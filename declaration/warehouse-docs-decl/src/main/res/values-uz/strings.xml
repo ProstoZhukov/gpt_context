@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wrhdoc_nom_in_order_on_addition_title">Qo\'shish tartibida</string>
+    <string name="wrhdoc_nom_alphabetically_asc_title">A dan Ya gacha</string>
+    <string name="wrhdoc_nom_alphabetically_desc_title">Ya dan A gacha</string>
+    <string name="wrhdoc_nom_by_number_of_deviations_title">Og\'ishlar soni bo\'yicha</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_title">Og\'ishlar summasi bo\'yicha</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_asc_title">o\'sish bo\'yicha</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_desc_title">kamayish bo\'yicha</string>
+    <string name="wrhdoc_nom_without_filters_title">Barcha nomlar</string>
+    <string name="wrhdoc_nom_non_zero_balances_title">Nolga teng bo\'lmagan qoldiqlar</string>
+    <string name="wrhdoc_nom_zero_balances_title">Nolinchi qoldiqlar</string>
+    <string name="wrhdoc_nom_negative_balances_title">Salbiy qoldiqlar</string>
+    <string name="wrhdoc_nom_with_deviations_balances_title">Og\'ishlar bilan</string>
+    <string name="wrhdoc_nom_deviation_negative_title">Kamchilik bilan</string>
+    <string name="wrhdoc_nom_filter_not_confirmed">Tasdiqlanmagan</string>
+    <string name="wrhdoc_nom_filter_confirmed">Tasdiqlangan</string>
+    <string name="wrhdoc_nom_deviation_positive_title">Ortiqg\'i bilan</string>
+    <string name="wrhdoc_nom_unfilled_balances_title">To\'ldirilmagan</string>
+</resources>

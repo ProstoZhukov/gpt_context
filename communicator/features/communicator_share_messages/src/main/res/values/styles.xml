@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShareMessagesEditText">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_m_scaleOn</item>
+        <item name="android:textCursorDrawable">@drawable/search_field_edit_text_cursor_drawable
+        </item>
+    </style>
+
+    <style name="ShareDangerButtonTheme" parent="SbisButtonDefaultDangerTheme">
+        <item name="SbisButton_borderWidth">?borderThickness_m</item>
+        <item name="SbisButton_borderColor">?dangerColor</item>
+    </style>
+
+</resources>

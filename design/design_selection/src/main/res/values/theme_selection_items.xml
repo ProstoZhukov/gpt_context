@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SelectionItemsTheme" parent="StubViewDefaultTheme">
+        <item name="list_theme">@style/SelectionListTheme</item>
+
+        <item name="SelectionItem_itemContainerStyle">@style/SelectionItemContainerStyle</item>
+        <item name="SelectionItem_itemTheme">@style/SelectionItemTheme</item>
+
+        <item name="SelectionItem_personContainerStyle">@style/SelectionItemContainerStyle.Person</item>
+        <item name="SelectionItem_personTheme">@style/SelectionItemTheme.Person</item>
+
+        <item name="SelectionItem_folderContainerStyle">@style/SelectionItemContainerStyle.Folder</item>
+        <item name="SelectionItem_folderTheme">@style/SelectionItemTheme.Folder</item>
+    </style>
+
+    <style name="SelectionListTheme" parent="List">
+        <item name="list_content_background">?backgroundColor</item>
+    </style>
+
+    <style name="SelectionItemTheme">
+        <item name="SelectionItem_titleStyle">@style/SelectionItemTitleStyle</item>
+        <item name="SelectionItem_subtitleStyle">@style/SelectionItemSubtitleStyle</item>
+        <item name="SelectionItem_selectionIconStyle">@style/SelectionItemSelectIconStyle</item>
+    </style>
+
+    <style name="SelectionItemTheme.Person">
+        <item name="SelectionItem_photoStyle">@style/SelectionItemPhotoStyle.Person</item>
+        <item name="SelectionItem_titleIconStyle">@style/SelectionItemTitleIconStyle.Person</item>
+    </style>
+
+    <style name="SelectionItemTheme.Folder">
+        <item name="SelectionItem_photoStyle">@style/SelectionItemPhotoStyle.Folder</item>
+        <item name="SelectionItem_folderIconStyle">@style/SelectionItemFolderIconStyle</item>
+        <item name="SelectionItem_titleIconStyle">@style/SelectionItemTitleIconStyle.Folder</item>
+    </style>
+
+    <style name="SelectionItemContainerStyle">
+        <item name="android:minHeight">@dimen/selection_folder_item_min_height</item>
+    </style>
+
+    <style name="SelectionItemContainerStyle.Person">
+        <item name="android:minHeight">@dimen/selection_person_item_min_height</item>
+    </style>
+
+    <style name="SelectionItemContainerStyle.Folder">
+        <item name="android:minHeight">@dimen/selection_folder_item_min_height</item>
+    </style>
+
+    <style name="SelectionItemTextStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="SelectionItemTitleStyle" parent="SelectionItemTextStyle">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_xl_scaleOn</item>
+    </style>
+
+    <style name="SelectionItemSubtitleStyle" parent="SelectionItemTextStyle">
+        <item name="android:textSize">?fontSize_m_scaleOn</item>
+        <item name="android:textColor">?readonlyTextColor</item>
+    </style>
+
+    <style name="SelectionItemTitleIconStyle" parent="MobileFontStyle">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="SelectionItemTitleIconStyle.Person">
+        <item name="android:text">@string/design_mobile_icon_company</item>
+        <item name="android:textSize">?iconSize_2xl</item>
+        <item name="android:textColor">?unaccentedIconColor</item>
+        <item name="android:paddingStart">?offset_xs</item>
+    </style>
+
+    <style name="SelectionItemTitleIconStyle.Folder">
+        <item name="android:text">@string/design_mobile_icon_arrow_narrow_right</item>
+        <item name="android:textSize">?iconSize_m</item>
+        <item name="android:textColor">?labelIconColor</item>
+        <item name="android:paddingTop">@dimen/selection_item_folder_title_icon_baseline</item>
+    </style>
+
+    <style name="SelectionItemPhotoStyle"/>
+
+    <style name="SelectionItemPhotoStyle.Person">
+        <item name="PersonView_size">m</item>
+    </style>
+
+    <style name="SelectionItemPhotoStyle.Folder">
+        <item name="android:layout_width">?size_m_image</item>
+        <item name="android:layout_height">?size_m_image</item>
+    </style>
+
+    <style name="SelectionItemFolderIconStyle" parent="MobileFontStyle">
+        <item name="android:textColor">?unaccentedIconColor</item>
+        <item name="android:textSize">?iconSize_5xl</item>
+    </style>
+
+    <style name="SelectionItemSelectIconStyle" parent="MobileFontStyle">
+        <item name="android:text">@string/design_mobile_icon_action_add</item>
+        <item name="android:textColor">?iconColor</item>
+        <item name="android:textSize">?iconSize_s</item>
+        <item name="android:background">@drawable/selection_plus_icon_drawable</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

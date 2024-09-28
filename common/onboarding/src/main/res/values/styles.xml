@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Стили пейджера фич-->
+    <style name="PagerStyle">
+        <item name="android:background">?backgroundColor</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="PagerStyle.Dialog">
+        <item name="android:layout_height">@dimen/onboarding_dialog_page_height</item>
+        <item name="android:layout_width">@dimen/onboarding_dialog_page_width</item>
+    </style>
+
+    <!--Стили Контейнера фичи-->
+    <style name="FeatureContainerStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="FeatureContainerStyle.Dialog">
+        <item name="android:layout_height">@dimen/onboarding_dialog_page_height</item>
+        <item name="android:layout_width">@dimen/onboarding_dialog_page_width</item>
+    </style>
+
+    <!--Стили Заголовока-->
+    <style name="OnboardingTitleStyle"
+           parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/size_title1_scaleOff</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+    <!--Стили Иконки-->
+    <style name="OnboardingCloseIconStyle"
+           parent="MobileFontStyle">
+        <item name="android:layout_width">?iconSize_2xl</item>
+        <item name="android:layout_height">?iconSize_2xl</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">?iconSize_2xl</item>
+        <item name="android:text">@string/onboarding_close_icon</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:color">?unaccentedIconColor</item>
+        <item name="android:textColor">?unaccentedIconColor</item>
+    </style>
+
+    <!--Стили Логотипа-->
+    <style name="OnboardingLogoStyle"
+           parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?inlineHeight_2xs</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <!--Стили Описания-->
+    <style name="OnboardingDescriptionStyle"
+           parent="@android:style/TextAppearance">
+        <item name="android:textSize">?fontSize_2xl_scaleOff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:minLines">3</item>
+    </style>
+
+    <!--Стили липкого Индикатора-->
+    <style name="OnboardingIndicatorStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?offset_s</item>
+        <item name="tabBackground">@drawable/onboarding_page_indicator</item>
+        <item name="tabPaddingEnd">?offset_xs</item>
+        <item name="tabPaddingStart">?offset_xs</item>
+    </style>
+
+    <!--Стили Изображения-->
+    <style name="OnboardingImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:cropToPadding">false</item>
+        <item name="android:layout_gravity">center_horizontal|bottom</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!--Стили Кнопки-->
+    <style name="OnboardingFinishButton"
+           parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/size_title2_scaleOff</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/palette_color_white1</item>
+        <item name="android:paddingLeft">?offset_2xl</item>
+        <item name="android:paddingRight">?offset_2xl</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!--Стили ПрогрессБара для таймера -->
+    <style name="OnboardingFlipProgressbar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/onboarding_flip_progress_bar_height</item>
+        <item name="android:indeterminate">false</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:progressDrawable">@drawable/onboarding_flip_progress_background</item>
+    </style>
+
+</resources>

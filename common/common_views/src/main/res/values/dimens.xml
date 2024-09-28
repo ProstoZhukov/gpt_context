@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Header View -->
+    <dimen name="common_views_date_header_additional_padding">5dp</dimen>
+    <dimen name="common_views_date_header_day_padding_right">4dp</dimen>
+
+    <!-- Motivation -->
+    <dimen name="common_views_top_divider_height">3dp</dimen>
+
+    <dimen name="common_views_sbis_title_view_title_text_size_large">@dimen/size_title2_scaleOff</dimen>
+    <dimen name="common_views_sbis_title_view_title_text_size_medium">@dimen/size_title3_scaleOff</dimen>
+    <dimen name="common_views_sbis_title_view_title_text_size_small">@dimen/size_body2_scaleOff</dimen>
+    <dimen name="common_views_sbis_title_view_subtitle_text_size_large">@dimen/size_caption1_scaleOff</dimen>
+</resources>

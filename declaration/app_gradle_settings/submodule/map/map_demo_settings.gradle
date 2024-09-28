@@ -1,0 +1,2 @@
+include ":address_chooser"
+project(":address_chooser").projectDir = new File(mapDir, "address_chooser")

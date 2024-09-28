@@ -1,0 +1,178 @@
+apply plugin: 'rootproject-cfg-plugin'
+apply plugin: 'social-integration'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableKaptSubprojectsCfg()
+    cfg.enableDokkaCfg()
+    cfg.enableSabyLinkCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableTaskFilterCfg()
+    }
+}
+
+project.ext {
+    brandName = System.getenv("BRAND_APPLICATION_ID_SUFFIX") as String ?: "mili"
+    brandCloud = System.getenv("BRAND_CLOUD") as String ?: "RU"
+
+    brandPrivacyPolice = System.getenv("BRAND_PRIVACY_POLICE") as String ?: "https://sabyget.ru/service/?id=0&method=ShowcasePublic.GetDocumentForBrand&args=eyJFc3RVVUlEIjogIjYyZWZlMWRjLWZmZjItNDU3OC1hMDQyLTNmNzQ0YmJiOWQwYSIsICJEb2NUeXBlIjogItCf0L7Qu9C40YLQuNC60LAg0LrQvtC90YTQuNC00LXRhtC40LDQu9GM0L3QvtGB0YLQuCDQtNC70Y8g0LzQvtCx0LjQu9GM0L3Ri9GFINC/0YDQuNC70L7QttC10L3QuNC5In0="
+    brandUserAgreement = System.getenv("BRAND_USER_AGREEMENT") as String ?: "https://sabyget.ru/service/?id=0&method=ShowcasePublic.GetDocumentForBrand&args=eyJFc3RVVUlEIjogIjYyZWZlMWRjLWZmZjItNDU3OC1hMDQyLTNmNzQ0YmJiOWQwYSIsICJEb2NUeXBlIjogItCf0YPQsdC70LjRh9C90LDRjyDQvtGE0LXRgNGC0LAg0LTQu9GPINC80L7QsdC40LvRjNC90YvRhSDQv9GA0LjQu9C+0LbQtdC90LjQuSJ9"
+
+    yandexAppMetrica = "55ad92be-db91-45b4-bb89-5441b5e8a0af"
+    yandexAppMetricaDebug = "2c822b47-708c-4a1d-8224-f0990a68608c"
+
+    app_system_name = System.getenv("BRAND_APP_NAME") as String ?: "SabyBrandMiliMobile"
+    spp_uuid = System.getenv("BRAND_SPP_UUID") as String ?: "1a4d4800-ae17-11e3-b269-02b362ec2283"
+    vk_auth_enabled = System.getenv("VK_AUTH_ENABLED") as String ?: "true"
+
+    String appPackageName = "ru.saby.clients.brand"
+    applicationId = "${appPackageName}.${brandName}"
+
+    /* :link_opener */
+    sabyLinks.setup { set ->
+        set.component = "${appPackageName}.presentation.main.MainActivity"
+        set.enableLinkSabyBrand = true
+        set.enableLinkSabyGetBrandCommon = true
+        set.newsFeature = true
+        set.videoCallFeature = true
+        set.brandSabyClientsFeature = true
+        set.enableQrAuthAndInstallApp = false
+        set.enableLinkSabyMyPageLink = false
+    }
+
+    enableBuildStatistic = true
+}
+
+// Настройки соц. сетей
+socialServices {
+    // VK
+    def vkAppId = System.getenv("BRAND_VK_APP_ID") as String ?: "8090126"
+    def vkAppIdDebug = System.getenv("BRAND_VK_APP_ID_DEBUG") as String ?: "8090133"
+    def vkIdSecretKey = System.getenv("BRAND_VK_PROTECT_KEY") as String ?: ""
+    if (vkIdSecretKey.isEmpty()) {
+        VK = vkKeyOld(vkAppIdDebug, vkAppId)
+    } else {
+        VK = vkKey(vkAppId, vkIdSecretKey)
+    }
+
+    // Yandex
+    def yandexId = System.getenv("BRAND_YANDEX_ID") as String ?: "8822ce678d564bfdb0f8d2b16a487c42"
+    def yandexIdDebug = System.getenv("BRAND_YANDEX_ID_DEBUG") as String ?: "b6c1a604a5744b18b2b7e8fc9876d5cb"
+    yandex = yandexKey(yandexIdDebug, yandexId)
+
+    googleEnabled = true
+}
+
+String brandName = project.ext.brandName
+String rootDir = "module/brand_config"
+String androidRootDir = "module/brand_config/android"
+String commonAndroidRootDir = "module/brand_config/android/common"
+
+tasks.register('copyBrandGoogleServices', Copy) {
+    from layout.projectDirectory.dir("$androidRootDir/$brandName/google-services.json")
+    into layout.projectDirectory.dir("app")
+}
+
+tasks.register('copyBrandHuaweiServices', Copy) {
+    from layout.projectDirectory.dir("$androidRootDir/$brandName/agconnect-services.json")
+    into layout.projectDirectory.dir("app")
+}
+
+tasks.register('removeBrandHuaweiServices') {
+    project.delete("app/agconnect-services.json")
+}
+
+tasks.register('copyBrandString_App_Name_Release', Copy) {
+    from layout.projectDirectory.dir("$commonAndroidRootDir/release")
+    into layout.projectDirectory.dir("app/src/release")
+}
+
+tasks.register('copyBrandString_App_Name_Local', Copy) {
+    from layout.projectDirectory.dir("$commonAndroidRootDir/release/res/values/strings.xml")
+    into layout.projectDirectory.dir("app/src/main/res/values")
+}
+
+tasks.register('copyBrandString_App_Name_Debug', Copy) {
+    from layout.projectDirectory.dir("$commonAndroidRootDir/debug")
+    into layout.projectDirectory.dir("app/src/debug")
+}
+
+tasks.register('copyPageLinkFiles', Copy) {
+    from layout.projectDirectory.dir("$commonAndroidRootDir/main/res/values/link_opener_strings.xml")
+    into layout.projectDirectory.dir("app/src/main/res/values")
+    from layout.projectDirectory.dir("$commonAndroidRootDir/main/res/values/link_opener_arrays.xml")
+    into layout.projectDirectory.dir("app/src/main/res/values")
+}
+
+tasks.register('renamePageLink') {
+    dependsOn 'copyPageLinkFiles'
+    String replacement = "sabybrand${brandName}.page.link"
+
+    doLast {
+        String arraysFileDir = "app/src/main/res/values/link_opener_arrays.xml"
+        String arraysTarget = "sabybrand.page.link"
+
+        def arraysDest = file(arraysFileDir)
+        def arraysText = new File(arraysFileDir).text
+        arraysText = arraysText.replace(arraysTarget, replacement)
+        arraysDest.write(arraysText, "UTF-8")
+
+        String stringsFileDir = "app/src/main/res/values/link_opener_strings.xml"
+        String stringsTarget = "sabybrand.page.link"
+        def stringsDest = file(stringsFileDir)
+        def stringsText = new File(stringsFileDir).text
+        stringsText = stringsText.replace(stringsTarget, replacement)
+        stringsDest.write(stringsText, "UTF-8")
+    }
+}
+
+tasks.register('copyBrandRes', Copy) {
+    from layout.projectDirectory.dir("$commonAndroidRootDir/main/res")
+    into layout.projectDirectory.dir("app/src/main/res")
+}
+
+tasks.register('copyBrandLogo', Copy) {
+    from layout.projectDirectory.dir("$androidRootDir/$brandName/main/res/drawable")
+    into layout.projectDirectory.dir("app/src/main/res/drawable")
+}
+
+tasks.register('addMiliSplashScreenBackground', Copy) {
+    from layout.projectDirectory.dir("$androidRootDir/mili/main/res")
+    into layout.projectDirectory.dir("app/src/main/res")
+}
+
+tasks.register('prepareBrandFiles') {
+
+    println("GetEnvLog brandName ${project.ext.brandName}")
+    println("GetEnvLog VK ${project.extensions.socialServices.getVK().get().toString()}")
+    println("GetEnvLog YANDEX ${project.extensions.socialServices.getYandex().get().toString()}")
+    println("GetEnvLog app_system_name ${project.ext.app_system_name}")
+    println("GetEnvLog spp_uuid ${project.ext.spp_uuid}")
+
+    it.dependsOn('copyBrandGoogleServices')
+    it.dependsOn('copyBrandString_App_Name_Release')
+    it.dependsOn('copyBrandString_App_Name_Debug')
+    it.dependsOn('copyBrandString_App_Name_Local')
+    it.dependsOn('renamePageLink')
+
+    it.dependsOn('copyBrandRes')
+
+    /*Бренды, собирающиеся для Huawei*/
+    def huaweiBuild = System.getenv("huawei_build") as Boolean ?: false
+    if (huaweiBuild) {
+        it.dependsOn('copyBrandHuaweiServices')
+    } else {
+        it.dependsOn('removeBrandHuaweiServices')
+    }
+
+    if (brandName == "mili") {
+        it.dependsOn('addMiliSplashScreenBackground')
+    } else {
+        it.dependsOn('copyBrandLogo')
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

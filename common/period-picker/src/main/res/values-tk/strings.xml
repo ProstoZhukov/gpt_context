@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="date_picker_date_date_picker_month_icon">&#xe948;</string>
+    <string name="date_picker_date_date_picker_year_icon">&#xea29;</string>
+    <string name="date_picker_day_label">Gün</string>
+    <string name="date_picker_month_label">A&#xfd;</string>
+    <string name="date_picker_quarter_label">Çär&#xfd;ek</string>
+    <string name="date_picker_half_year_label">Halfarym &#xfd;yl</string>
+    <string name="date_picker_year_label">.Yl</string>
+    <string name="date_picker_current_day_label">Bu gün</string>
+    <string name="date_picker_current_month_label">Häzirki a&#xfd;</string>
+    <string name="date_picker_current_quarter_label">häzirki çär&#xfd;ek</string>
+    <string name="date_picker_current_half_year_label">Häzirki &#xfd;arym &#xfd;yl</string>
+    <string name="date_picker_current_year_label">Bu &#xfd;yl</string>
+    <string name="date_picker_history">Döwri sa&#xfd;lamagy&#x148; taryhy:</string>
+    <string name="date_picker_history_empty_text">Ö&#x148; sa&#xfd;lanan döwürler &#x15f;u &#xfd;erde görkeziler.</string>
+    <string name="date_picker_period_invalid">Nädogry döwür girdi</string>
+    <string name="date_picker_date_invalid">Nädogry senesi girizildi</string>
+    <string name="date_picker_period_unavailable">Häzirki döwür sa&#xfd;lamak üçin el&#xfd;eterli däl</string>
+    <string name="date_picker_title">Döwri sa&#xfd;la&#x148;</string>
+    <string name="date_picker_date_picker_title">Sene sa&#xfd;la&#x148;</string>
+    <string name="date_picker_select_current_period_title">Häzirki</string>
+    <string name="date_picker_reset_title">Täzeden düzmek</string>
+</resources>

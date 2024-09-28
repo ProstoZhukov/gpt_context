@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_error_network_header">Αποτυχία φόρτωσης δεδομένων</string>
+    <string name="business_error_network_info">Ελέγξτε τη σύνδεση δικτύου σας</string>
+    <string name="business_error_receiving_data">Σφάλμα λήψης δεδομένων</string>
+    <string name="business_error_no_data_for_period">Δεν υπάρχουν δεδομένα για την επιλεγμένη περίοδο</string>
+    <string name="business_error_no_data">Χωρίς δεδομένα</string>
+    <string name="business_error_no_data_found">Δεν βρέθηκε τίποτα για αυτήν την αναζήτηση</string>
+    <string name="business_error_unknown">Αγνωστο σφάλμα</string>
+    <string name="business_error_permission">Δεν έχετε επαρκή δικαιώματα για αυτήν την ενέργεια</string>
+    <string name="business_error_check_permission">Σφάλμα επαλήθευσης δικαιωμάτων πρόσβασης</string>
+    <string name="business_try_change_period">Δοκιμάστε να αλλάξετε την περίοδο</string>
+    <string name="business_try_change_period_active">αλλάξτε την περίοδο</string>
+    <string name="business_no_permission_comment">Τα έσοδα για προϊόντα και υπηρεσίες θα εμφανίζονται εδώ</string>
+    <string name="business_try_check_connection_and_update_again">Ελέγξτε τη σύνδεσή σας στο Διαδίκτυο και δοκιμάστε ξανά</string>
+    <string name="business_error_no_data_for_filter">Δοκιμάστε να αλλάξετε τις παραμέτρους φιλτραρίσματος</string>
+    <string name="business_error_no_cashbox">Δεν υπάρχουν συνδεδεμένα ταμεία</string>
+    <string name="business_error_popup_network_header">Δεν υπάρχει σύνδεση δικτύου</string>
+</resources>

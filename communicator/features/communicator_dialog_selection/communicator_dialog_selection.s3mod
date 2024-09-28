@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ui_module id="9a95c1af-e1c4-457f-87be-dc03a5470803" kaizen_zone="05230eeb-9cb3-4297-99ae-acecdd8e95fa" name="communicator_dialog_selection" version="1.0">
+
+    <description>Module communicator_dialog_selection</description>
+
+    <depends/>
+
+    <load_after/>
+
+    <parameters/>
+
+    <resources/>
+
+    <preload/>
+
+</ui_module>

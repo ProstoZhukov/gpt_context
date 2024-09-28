@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.business.common.ui.base.contract.MoneyTopNavigationContract"/>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/host_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/business_app_background"
+        android:focusableInTouchMode="true">
+
+        <ru.tensor.sbis.design.topNavigation.view.SbisTopNavigationView
+            android:id="@+id/host_top_navigation_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationContent="@{viewModel.state}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/host_top_navigation_container"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

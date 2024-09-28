@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_chats_tab_title">Söhbetler</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_message">Söhbet sanawy bo&#x15f;</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_details">Mü&#x15f;deri sizi&#x148; bilen habarla&#x15f;sa, size habar geler</string>
+    <string name="communicator_crm_chat_list_swipe_delete">Öçür</string>
+    <string name="communicator_crm_chat_list_swipe_take">Özü&#x148; al</string>
+    <string name="communicator_crm_chat_list_swipe_complete">Doly</string>
+    <string name="communicator_crm_chat_list_screen_addon_menu_item">Söhbetler</string>
+    <string name="communicator_crm_chat_list_channel_group_title_support">Saby goldawy</string>
+    <string name="communicator_crm_chat_list_channel_group_title_site">Sahypa</string>
+    <string name="communicator_crm_chat_list_channel_group_title_sabyget">SabyGet</string>
+    <string name="communicator_crm_chat_list_channel_group_title_saby">Saby</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_app">Arza</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_vk">Aragatna&#x15f;ykda</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_telegram">Telegramma</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_email">E-poçta iberi&#x148;</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_viber">Viber</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_ok">Klasda&#x15f;lar</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_whatsapp">Whatsapp</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_facebook">Facebook</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_yandex">Yandex</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_instagram">Instagram</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_avito">Avito</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_unknown">Näbelli</string>
+    <string name="communicator_crm_chat_list_bad_filter_list_stub_details">\ Gözleg &#xfd;a-da süzgüç parametrlerini ü&#xfd;tgedip görü&#x148;</string>
+    <string name="communicator_crm_chat_list_chat_no_access">Bu söhbetde&#x15f;ligi görüp bilmersi&#x148;iz</string>
+</resources>

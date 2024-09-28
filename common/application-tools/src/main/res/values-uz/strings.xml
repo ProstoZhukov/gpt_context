@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_tools_build_config">Qurilish konfiguratsiyasi</string>
+    <string name="application_tools_clear_all">Hammasini tozalamoq</string>
+    <string name="application_tools_clear_crashes">Xatolarni tozalash (xatolar)</string>
+    <string name="application_tools_clear_logs">Jurnallarni tozalash</string>
+    <string name="application_tools_crashes_direction_name">qulab tushadi</string>
+    <string name="application_tools_crashes_list_title">Xatolar</string>
+    <string name="application_tools_crashes_not_exist">Xatolar yoʻq</string>
+    <string name="application_tools_crash_info_about_app">Ilova haqida ma\'lumot</string>
+    <string name="application_tools_crash_info_about_phone">@string/application_tools_device_information</string>
+    <string name="application_tools_crash_info_android_api_version">Android API</string>
+    <string name="application_tools_crash_info_app_version">Versiya</string>
+    <string name="application_tools_crash_info_brand">Ishlab chiqaruvchi</string>
+    <string name="application_tools_crash_info_phone_name">Model nomi</string>
+    <string name="application_tools_crash_info_share">Ulashish</string>
+    <string name="application_tools_crash_info_share_dialog_message">Xato yuboring</string>
+    <string name="application_tools_crash_info_stack_trace">Stek izi</string>
+    <string name="application_tools_crash_info_title">Xato tavsifi</string>
+    <string name="application_tools_debug_font_check_title">Shrift tekshiruvi</string>
+    <string name="application_tools_device_information">Qurilma haqida ma\'lumot</string>
+    <string name="application_tools_font_check_main_text">Kunning davomiyligi 11 soat 59 daqiqa. Quyosh botishidan oldingi vaqt 2 soat 10 minut</string>
+    <string name="application_tools_font_check_sizeBody1">Oddiy 16 (sizeBody1)</string>
+    <string name="application_tools_font_check_sizeBody2">Oddiy 14 (sizeBody2)</string>
+    <string name="application_tools_font_check_sizeCaption1">Oddiy 12 (sizeCaption1)</string>
+    <string name="application_tools_font_check_sizeDisplay0">Oddiy 30 (sizeDisplay0)</string>
+    <string name="application_tools_font_check_sizeDisplay1">Oddiy 24 (sizeDisplay1)</string>
+    <string name="application_tools_font_check_sizeTitle1">Oddiy 20 (sizeTitle1)</string>
+    <string name="application_tools_font_check_sizeTitle2">Oddiy 18 (sizeTitle2)</string>
+    <string name="application_tools_font_check_sizeTitle3">Oddiy 17 (sizeTitle3)</string>
+    <string name="application_tools_logs_crashes_clear_button_title">Toza</string>
+    <string name="application_tools_logs_crashes_clear_dialog_title">Nimani tozalamoqchi bo\'lganingizni tanlang</string>
+    <string name="application_tools_logs_list_title">Jurnallar</string>
+    <string name="application_tools_logs_not_exist">Jurnallar yo\'q</string>
+    <string name="application_tools_network_information">Net</string>
+    <string name="application_tools_screen_information">Ekran</string>
+    <string name="application_tools_settings_log_crashes_title">Ro\'yxatga olish va xatolar</string>
+</resources>

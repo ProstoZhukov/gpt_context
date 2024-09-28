@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="link_opener_host_online_prod" translatable="false">online.setty.kz</string>
+    <string name="link_opener_host_online_fix" translatable="false">fix-online.setty.kz</string>
+    <string name="link_opener_host_online_test" translatable="false">test-online.setty.kz</string>
+    <string name="link_opener_host_online_pre_test" translatable="false">pre-test-online.setty.kz</string>
+
+    <string name="link_opener_host_online_mirror_prod" translatable="false">online.setty.kz</string>
+    <string name="link_opener_host_online_mirror_fix" translatable="false">fix-online.setty.kz</string>
+    <string name="link_opener_host_online_mirror_test" translatable="false">test-online.setty.kz</string>
+    <string name="link_opener_host_online_mirror_pre_test" translatable="false">pre-test-online.setty.kz</string>
+
+    <string name="link_opener_host_online_dev_prod" translatable="false">dev.setty.kz</string>
+    <string name="link_opener_host_online_dev_fix" translatable="false">fix-dev.setty.kz</string>
+    <string name="link_opener_host_online_dev_test" translatable="false">test-dev.setty.kz</string>
+    <string name="link_opener_host_online_dev_pre_test" translatable="false">pre-test-dev.setty.kz</string>
+
+    <string name="link_opener_host_saby_dev_prod" translatable="false">dev.setty.kz</string>
+    <string name="link_opener_host_saby_dev_fix" translatable="false">fix-dev.setty.kz</string>
+    <string name="link_opener_host_saby_dev_test" translatable="false">test-dev.setty.kz</string>
+    <string name="link_opener_host_saby_dev_pre_test" translatable="false">pre-test-dev.setty.kz</string>
+
+    <string name="link_opener_host_n_prod" translatable="false">n.setty.kz</string>
+    <string name="link_opener_host_n_fix" translatable="false">fix-n.setty.kz</string>
+    <string name="link_opener_host_n_test" translatable="false">test-n.setty.kz</string>
+
+    <string name="link_opener_host_n_mirror_prod" translatable="false">n.setty.kz</string>
+    <string name="link_opener_host_n_mirror_fix" translatable="false">fix-n.setty.kz</string>
+    <string name="link_opener_host_n_mirror_test" translatable="false">test-n.setty.kz</string>
+
+    <string name="link_opener_reg_host_prod" translatable="false">reg.setty.kz</string>
+    <string name="link_opener_reg_host_fix" translatable="false">fix-reg.setty.kz</string>
+    <string name="link_opener_reg_host_test" translatable="false">test-reg.setty.kz</string>
+
+    <string name="link_opener_host_webinars_prod" translatable="false">w.setty.kz</string>
+    <string name="link_opener_host_webinars_fix" translatable="false">fix-w.setty.kz</string>
+    <string name="link_opener_host_webinars_test" translatable="false">test-w.setty.kz</string>
+
+    <string name="link_opener_host_webinars_mirror_prod" translatable="false">w.setty.kz</string>
+    <string name="link_opener_host_webinars_mirror_fix" translatable="false">fix-w.setty.kz</string>
+    <string name="link_opener_host_webinars_mirror_test" translatable="false">test-w.setty.kz</string>
+
+    <string name="link_opener_go_saby_host_prod" translatable="false">go.setty.kz</string>
+    <string name="link_opener_go_saby_host_fix" translatable="false">fix-go.setty.kz</string>
+    <string name="link_opener_go_saby_host_test" translatable="false">test-go.setty.kz</string>
+    <string name="link_opener_go_saby_host_pre_test" translatable="false">pre-test-go.setty.kz</string>
+
+    <string name="link_opener_sabyget_host_prod" translatable="false">sabyget.ru</string>
+    <string name="link_opener_sabyget_host_fix" translatable="false">fix.sabyget.ru</string>
+    <string name="link_opener_sabyget_host_test" translatable="false">test.sabyget.ru</string>
+    <string name="link_opener_sabyget_host_pre_test" translatable="false">pre-test.sabyget.ru</string>
+
+    <string name="link_opener_sabyget_page_link_host_prod" translatable="false">sabyget.page.link</string>
+
+    <string name="link_opener_communicator_page_link" translatable="false">sbis.page.link</string>
+    <string name="link_opener_sabymy_page_link" translatable="false">mysaby.page.link</string>
+    <string name="link_opener_sabymy_host_prod" translatable="false">my.setty.kz</string>
+    <string name="link_opener_sabymy_host_fix" translatable="false">fix-my.setty.kz</string>
+
+    <string name="link_opener_sabylite_page_link" translatable="false">sabylite.page.link</string>
+
+    <string name="link_opener_sabyclients_page_link" translatable="false">sbissabyclients.page.link</string>
+    <string name="link_opener_cl_saby_host_prod" translatable="false">cl.setty.kz</string>
+    <string name="link_opener_cl_saby_host_fix" translatable="false">fix-cl.setty.kz</string>
+    <string name="link_opener_cl_saby_host_test" translatable="false">test-cl.setty.kz</string>
+    <string name="link_opener_cl_saby_host_pre_test" translatable="false">pre-test-cl.setty.kz</string>
+
+    <string name="link_opener_meet_saby_host_prod" translatable="false">meet.saby.ru</string>
+    <string name="link_opener_meet_saby_host_fix" translatable="false">fix-meet.saby.ru</string>
+    <string name="link_opener_meet_saby_host_test" translatable="false">test-meet.saby.ru</string>
+    <string name="link_opener_meet_saby_host_pre_test" translatable="false">pre-meet.saby.ru</string>
+
+</resources>

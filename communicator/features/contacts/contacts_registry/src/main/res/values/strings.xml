@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_message">You don\'t have any contacts yet</string>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_details">Import a contact list from your device to find your friends.</string>
+</resources>

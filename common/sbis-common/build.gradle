@@ -1,0 +1,115 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableLintCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableResValuesInjecting()
+    cfg.enableRegionSplit()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+regionConfig {
+    regions {
+        ru
+        kz
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.common"
+
+    def appId = "${rootProject.ext.applicationId}"
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+
+        // добавлен buildConfigField, т.к. существует проблема с импортом генерируемых ресурсов
+        buildConfigField "String", "SETTINGS_OPEN_ACTION", "\"${appId}.SETTINGS\""
+        resValue "string", "settings_open_action", "${appId}.SETTINGS"
+    }
+
+    buildTypes {
+        debug {
+            def mainAppId = "$appId${rootProject.ext.applicationDebugSuffix}"
+            buildConfigField "String", "FILE_AUTHORITY", "\"${mainAppId}.fileprovider\""
+        }
+        release {
+            def mainAppId = appId
+            buildConfigField "String", "FILE_AUTHORITY", "\"${mainAppId}.fileprovider\""
+        }
+    }
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+        all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+                exceptionFormat 'full'
+            }
+        }
+    }
+
+    android.sourceSets {
+        debug {
+            java {
+                srcDirs = ['src/debug/java']
+            }
+        }
+        release {
+            java {
+                srcDirs = ['src/release/java']
+            }
+        }
+        main.res.srcDirs = [
+                'src/main/res',
+        ]
+    }
+}
+
+dependencies {
+
+    api project(':info-decl')
+    api project(':person-decl')
+    api project(':toolbox-decl')
+    api project(':android-ext-decl')
+
+    implementation project(':design')
+    implementation project(':design_buttons')
+    implementation project(':design_dialogs')
+    implementation project(':design_profile')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_stubview')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':event_bus')
+    implementation project(':list_utils')
+    implementation project(':navigation')
+    implementation project(':network_native')
+    implementation project(':input_view')
+    api project(':plugin_struct')
+    implementation project(':text_span')
+    implementation project(':verification-decl')
+    implementation project(':design_notification')
+    implementation project(':entrypoint_guard')
+
+    api project(':user_activity_track')
+
+    implementation "androidx.fragment:fragment:$rootProject.ext.fragmentVersion"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$rootProject.ext.androidLifecycleReactivestreams"
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+
+    testImplementation project(':testing')
+}

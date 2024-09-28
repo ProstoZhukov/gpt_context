@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="viper_no_items_placeholder">Bu erda hali hech narsa yo\'q</string>
+    <string name="viper_no_items_found_placeholder">Natija yoʻq</string>
+    <string name="viper_try_another_search">Qidiruv opsiyalaringizni oʻzgartirib koʻring</string>
+
+    <string name="viper_network_error">Tarmoqqa ulanish yo‘q</string>
+
+    <string name="viper_unavailable_service_error">Xizmat vaqtincha ishlamayapti. Keyinroq urinib koʻring.</string>
+</resources>

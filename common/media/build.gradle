@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.media"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions.unitTests.all {
+        testLogging {
+            events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            exceptionFormat 'full'
+        }
+    }
+}
+
+dependencies {
+
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':mediaplayer')
+    implementation project(':commonviews')
+    implementation project(':mvp')
+    implementation project(':base_components')
+    implementation project(':toolbar')
+    implementation project(':storage_utils')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_utils')
+    implementation project(':verification-decl')
+    implementation project(':attachments-loading-decl')
+    api project(':storage')
+
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "org.apache.commons:commons-lang3:$rootProject.ext.apacheCommonsVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+
+    //processors
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+}

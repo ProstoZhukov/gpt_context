@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/navItemTheme"
+    android:layout_width="@dimen/navigation_menu_width"
+    android:layout_height="100dp"
+    tools:background="@color/palette_colorSidebar2"
+    tools:ignore="RtlSymmetry"
+    tools:theme="@style/NavViewBase">
+
+    <View
+        android:id="@+id/navigation_header_marker"
+        style="?attr/navItemSelectedBorderTheme"
+        android:layout_width="@dimen/navigation_menu_selection_border_width"
+        android:layout_height="0dp"
+        android:layout_marginVertical="?offset_xs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ru.tensor.sbis.design.navigation.view.view.navmenu.view.FadeableFrameLayout
+        android:id="@+id/logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_s"
+        android:layout_marginEnd="?offset_m"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/badge_left"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/navigation_header_marker"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ru.tensor.sbis.design.logo.SbisLogoView
+            android:id="@+id/logo_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:SbisLogo_style="navigation"
+            app:SbisLogo_type="iconText"/>
+
+    </ru.tensor.sbis.design.navigation.view.view.navmenu.view.FadeableFrameLayout>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/badge_left"
+        style="?attr/navItemNewCounterTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="?offset_2xs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/badge_divider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="@dimen/navigation_menu_counter_margin_end"
+        tools:ignore="SpUsage"
+        tools:text="5"/>
+
+    <View
+        android:id="@+id/badge_divider"
+        style="?attr/navItemCounterDividerTheme"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/navigation_menu_divider_height"
+        android:layout_marginEnd="?offset_2xs"
+        app:layout_constraintBottom_toBottomOf="@+id/badge_right"
+        app:layout_constraintEnd_toStartOf="@+id/badge_right"
+        app:layout_constraintTop_toTopOf="@+id/badge_right"
+        tools:visibility="visible"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/badge_right"
+        style="?attr/navItemTotalCounterTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/navigation_menu_counter_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage"
+        tools:text="999"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

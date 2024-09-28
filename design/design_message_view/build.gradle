@@ -1,0 +1,51 @@
+import ru.tensor.gradle.subconfig.ktlint.KtLintConfig
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig {
+    enableBaseModuleCfg()
+    enableFlavorsCfg()
+    enableDataBindingCfg()
+    enableViewBindingCfg()
+    enableBuildConfigGeneration()
+    enableOptimizeCodeCfg()
+    enableKtLintCfg(KtLintConfig.KOTLIN_1_8_0)
+}
+
+android {
+    namespace "ru.tensor.sbis.design.message_view"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation project(':attachments-decl')
+    implementation project(':attachments_models')
+    implementation project(':attachments-ui')
+    implementation project(':base_components')
+    implementation project(':cloud_view')
+    implementation project(':cloud_view_integration')
+    implementation project(':common')
+    implementation project(':communication-decl')
+    implementation project(':commonviews')
+    implementation project(':container')
+    implementation project(':controller')
+    implementation project(':design')
+    implementation project(':design_audio_player_view')
+    implementation project(':design_buttons')
+    implementation project(':design_chips')
+    implementation project(':design_list_header')
+    implementation project(':design_profile_decl')
+    implementation project(':design_rating')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_utils')
+    implementation project(':design_video_player_view')
+    implementation project(':edo-decl')
+    implementation project(':richtext')
+    implementation project(':text_span')
+}

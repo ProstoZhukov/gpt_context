@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_declaration_filter_sort_by_all">全部</string>
+    <string name="communicator_declaration_filter_sort_by_unread">未读</string>
+    <string name="communicator_declaration_filter_sort_by_income">传入</string>
+    <string name="communicator_declaration_filter_sort_by_not_answered">未答复</string>
+    <string name="communicator_declaration_filter_sort_by_deleted">已删除</string>
+    <string name="communicator_crm_chat_filter_overdue">逾期</string>
+    <string name="communicator_crm_chat_filter_all">全部</string>
+    <string name="communicator_crm_chat_filter_my">我的</string>
+    <string name="communicator_crm_chat_filter_from_my_channels">来自我的频道</string>
+    <string name="communicator_crm_chat_filter_responsible">负责人</string>
+    <string name="communicator_crm_chat_filter_client">客户</string>
+    <string name="communicator_crm_chat_filter_channel">联系</string>
+    <string name="communicator_crm_chat_filter_source">来源</string>
+    <string name="communicator_crm_chat_operator_filter_not_chosen">未选择</string>
+</resources>

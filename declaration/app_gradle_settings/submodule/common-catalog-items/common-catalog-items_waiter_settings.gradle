@@ -1,0 +1,8 @@
+include ':menu-decl'
+project(':menu-decl').projectDir = new File(commonCatalogItemsDir, "plain_menu/menu-decl")
+
+include ':menu-impl'
+project(':menu-impl').projectDir = new File(commonCatalogItemsDir, "plain_menu/menu-impl")
+
+include ':menu_composition'
+project(':menu_composition').projectDir = new File(commonCatalogItemsDir, "plain_menu/menu_composition")

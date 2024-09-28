@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="complain_service_report_message_text">Отправить жалобу на\nрассмотрение модератору?</string>
+    <string name="complain_service_report_hint_text">Введите комментарий</string>
+    <string name="complain_service_dialog_positive">ОК</string>
+    <string name="complain_service_dialog_negative">ОТМЕНА</string>
+
+</resources>

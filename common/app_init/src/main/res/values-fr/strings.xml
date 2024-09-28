@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_init_unknown_error">Erreur inconnue</string>
+    <string name="app_init_no_memory_button_title">Fermer</string>
+    <string name="app_init_no_memory_details_msg">Mémoire insuffisante sur votre appareil, veuillez libérer de l\'espace et réessayer</string>
+    <string name="app_init_no_memory_title_msg">Pas de mémoire</string>
+    <string name="app_init_no_memory_toast_msg">Pas de mémoire&#160;! Veuillez libérer et réessayer</string>
+</resources>

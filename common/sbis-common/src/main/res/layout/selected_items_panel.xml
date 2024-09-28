@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:animateLayoutChanges="false">
+
+    <TextView
+        android:id="@+id/roll_up_arrow"
+        style="@style/MobileFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/recipient_selection_background_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/design_mobile_icon_roll_up_arrow"
+        android:textColor="@color/palette_colorHeader"
+        android:textSize="@dimen/size_display1_scaleOff"
+        android:visibility="gone"
+        tools:ignore="SpUsage" />
+
+    <RelativeLayout
+        android:id="@+id/checked_items_panel"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/palette_color_white1"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/selected_items_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/selected_panel_left_margin"
+            android:layout_marginStart="@dimen/selected_panel_left_margin"
+            android:layout_toLeftOf="@+id/selector_counter"
+            android:layout_toStartOf="@+id/selector_counter"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:scrollbars="none"/>
+
+        <ru.tensor.sbis.design.view_ext.horizontalpatch.HorizontalPatchTextView
+            android:id="@+id/selector_counter"
+            style="@style/RegularStyle"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/selected_panel_counter_height"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minWidth="@dimen/selected_panel_counter_height"
+            android:paddingStart="@dimen/selected_panel_counter_padding"
+            android:paddingEnd="@dimen/selected_panel_counter_padding"
+            android:singleLine="true"
+            android:clickable="false"
+            android:enabled="false"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/selected_panel_counter_right_margin"
+            android:layout_marginRight="@dimen/selected_panel_counter_right_margin"
+            android:layout_toLeftOf="@+id/selector_toggle"
+            android:layout_toStartOf="@+id/selector_toggle"
+            android:textColor="@color/text_color_black_3"
+            android:textSize="@dimen/size_caption1_scaleOff"
+            app:leftPatch="@drawable/super_ellipse_left"
+            app:rightPatch="@drawable/super_ellipse_right"
+            app:shapeColor="@color/palette_color_gray3"
+            tools:text="+99"
+            tools:visibility="visible"
+            tools:ignore="SpUsage"/>
+
+        <TextView
+            android:id="@+id/selector_toggle"
+            style="@style/MobileFontStyle"
+            android:layout_width="@dimen/selected_panel_toggle_width"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/selected_panel_right_margin"
+            android:layout_marginRight="@dimen/selected_panel_right_margin"
+            android:gravity="center"
+            android:text="@string/design_mobile_icon_arrow_narrow_right"
+            android:textColor="@drawable/selected_panel_toggle_selector"
+            android:textSize="@dimen/size_title1_scaleOff"
+            android:includeFontPadding="false"
+            tools:visibility="visible"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+

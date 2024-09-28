@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="crud_sale_not_supported_tax_system">AtoN qo\'llab-quvvatlanmaydi</string>
+    <string name="crud_sale_general_tax_system">ASOSIY</string>
+    <string name="crud_sale_patent_tax_system">PSN</string>
+    <string name="crud_sale_simplified_income_tax_system">USN D</string>
+    <string name="crud_sale_simplified_income_expenditure_tax_system">USN Dr.</string>
+    <string name="crud_sale_unified_agricultural_tax_system">ESHN</string>
+    <string name="crud_sale_unified_on_imputed_income_tax_system" tools:ignore="UnusedResources">UTII</string>
+</resources>

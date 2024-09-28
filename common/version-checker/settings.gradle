@@ -1,0 +1,5 @@
+include ':version-checker'
+project(':version-checker').projectDir = new File(settingsDir, 'common/version-checker')
+
+include ':version_checker_decl'
+project(':version_checker_decl').projectDir = new File(settingsDir, 'common/version_checker_decl')

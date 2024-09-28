@@ -1,0 +1,8 @@
+
+//Требутся для cloud_view
+include ":attachments_models"
+project(":attachments_models").projectDir = new File(diskDir, "attachments_models")
+
+//Требутся для attachments-ui
+include ":attachments-loading-decl"
+project(":attachments-loading-decl").projectDir = new File(diskDir, "attachments-loading-decl")

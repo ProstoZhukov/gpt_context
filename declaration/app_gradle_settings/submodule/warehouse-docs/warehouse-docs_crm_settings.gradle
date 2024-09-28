@@ -1,0 +1,5 @@
+include ':wrhdoc'
+project(':wrhdoc').projectDir = new File(warehouseDocsDir, "wrhdoc")
+
+include ':generic_filter'
+project(':generic_filter').projectDir = new File(warehouseDocsDir, "generic_filter")

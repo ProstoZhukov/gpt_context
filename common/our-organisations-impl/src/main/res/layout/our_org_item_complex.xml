@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.our_organisations.presentation.list.ui.adapter.OrganisationVM" />
+
+        <variable
+            name="clickHandler"
+            type="ru.tensor.sbis.base_components.adapter.universal.ItemClickHandler" />
+
+        <variable
+            name="checkboxClickHandler"
+            type="ru.tensor.sbis.base_components.adapter.universal.ItemClickHandler" />
+
+        <variable
+            name="isMultipleChoice"
+            type="java.lang.Boolean" />
+
+        <import type="android.view.View"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?backgroundColor"
+        android:paddingTop="?offset_m"
+        android:paddingEnd="?offset_m"
+        android:paddingBottom="?offset_m"
+        app:setClickListener="@{clickHandler}"
+        app:viewModel="@{viewModel}"
+        tools:ignore="RtlSymmetry">
+
+        <View
+            android:id="@+id/selection_mark"
+            android:layout_width="?offset_s"
+            android:layout_height="?offset_m"
+            android:background="?markerColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:selected="@{viewModel.isSelected}"
+            app:is_multiple_choice="@{isMultipleChoice}"
+            tools:visibility="visible" />
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="?offset_2xs"
+            android:layout_marginEnd="?offset_xs"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="?fontSize_xl_scaleOff"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/city"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/selection_mark"
+            app:layout_constraintTop_toTopOf="parent"
+            app:set_text="@{viewModel.organisation.name}"
+            app:set_search_text="@{viewModel.searchText}"
+            app:bind_color_organisation_name="@{viewModel.organisation.eliminated}"
+            tools:ignore="SpUsage"
+            tools:text="Все наименования"
+            tools:textColor="?textColor" />
+
+        <ru.tensor.sbis.design.text_span.SmartTextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="?offset_xs"
+            android:layout_weight="1"
+            android:text="@{null}"
+            android:textColor="?unaccentedTextColor"
+            android:textSize="?fontSize_xl_scaleOff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/checkbox"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage"
+            tools:text="Ярославль" />
+
+        <ru.tensor.sbis.design.checkbox.SbisCheckboxView
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="?offset_xs"
+            android:layout_gravity="center_vertical"
+            android:checked="@{viewModel.isSelected}"
+            android:visibility="@{isMultipleChoice ? View.VISIBLE : View.GONE}"
+            app:setClickListener="@{checkboxClickHandler}"
+            app:viewModel="@{viewModel}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

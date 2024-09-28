@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/communicator_bottom_border_shadow"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/communicator_item_contact_list_segment_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="?inlineHeight_xs"
+        android:text="@string/communicator_item_contact_list_segment_divider_label"
+        android:textSize="?fontSize_l_scaleOn"
+        android:textColor="?primaryTextColor"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/communicator_contact_list_segment_divider_margin_left"
+        android:layout_marginRight="@dimen/communicator_contact_list_segment_divider_margin_right"
+        android:layout_marginStart="@dimen/communicator_contact_list_segment_divider_margin_left"
+        android:layout_marginEnd="@dimen/communicator_contact_list_segment_divider_margin_right"
+        tools:background="@color/palette_color_orange8"
+        tools:visibility="visible"
+        tools:ignore="RtlHardcoded,SpUsage" />
+</LinearLayout>

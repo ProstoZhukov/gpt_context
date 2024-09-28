@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<!-- TODO удалить и перейти на ГП после https://online.sbis.ru/opendoc.html?guid=644f3e8e-0a02-41e1-9cf5-7dbcf086410c&client=3-->
+    <dimen name="payment_custom_menu_margin" tools:ignore="ResourceName">4dp</dimen>
+</resources>

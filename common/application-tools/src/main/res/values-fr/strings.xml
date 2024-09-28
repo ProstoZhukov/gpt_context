@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_tools_logs_crashes_clear_button_title">Effacer</string>
+    <string name="application_tools_build_config">Construire la configuration</string>
+    <string name="application_tools_clear_all">Tout effacer</string>
+    <string name="application_tools_clear_crashes">Effacer les erreurs</string>
+    <string name="application_tools_clear_logs">Effacer les journaux</string>
+    <string name="application_tools_crashes_direction_name">accidents</string>
+    <string name="application_tools_crashes_list_title">Les erreurs</string>
+    <string name="application_tools_crashes_not_exist">Aucune erreur</string>
+    <string name="application_tools_crash_info_about_app">Informations sur la candidature</string>
+    <string name="application_tools_crash_info_about_phone">@string/application_tools_device_information</string>
+    <string name="application_tools_crash_info_android_api_version">API Android</string>
+    <string name="application_tools_crash_info_app_version">Version</string>
+    <string name="application_tools_crash_info_brand">Fabricant</string>
+    <string name="application_tools_crash_info_phone_name">Nom du modèle</string>
+    <string name="application_tools_crash_info_share">Partager</string>
+    <string name="application_tools_crash_info_share_dialog_message">Erreur d\'envoi</string>
+    <string name="application_tools_crash_info_stack_trace">Trace de la pile</string>
+    <string name="application_tools_crash_info_title">Erreur de description</string>
+    <string name="application_tools_debug_font_check_title">Valider les polices</string>
+    <string name="application_tools_device_information">Info appareil</string>
+    <string name="application_tools_font_check_main_text">La journée dure 11 heures 59 minutes. Temps avant le coucher du soleil 2 heures 10 minutes</string>
+    <string name="application_tools_font_check_sizeBody1">Régulier 16 (tailleCorps1)</string>
+    <string name="application_tools_font_check_sizeBody2">Régulier 14 (tailleCorps2)</string>
+    <string name="application_tools_font_check_sizeCaption1">Régulier 12 (sizeCaption1)</string>
+    <string name="application_tools_font_check_sizeDisplay0">Régulier 30 (sizeDisplay0)</string>
+    <string name="application_tools_font_check_sizeDisplay1">Régulier 24 (tailleDisplay1)</string>
+    <string name="application_tools_font_check_sizeTitle1">Régulier 20 (sizeTitle1)</string>
+    <string name="application_tools_font_check_sizeTitle2">Régulier 18 (sizeTitle2)</string>
+    <string name="application_tools_font_check_sizeTitle3">Régulier 17 (sizeTitle3)</string>
+    <string name="application_tools_logs_crashes_clear_dialog_title">Choisissez ce que vous voulez effacer</string>
+    <string name="application_tools_logs_list_title">Journaux</string>
+    <string name="application_tools_logs_not_exist">Aucun journal</string>
+    <string name="application_tools_network_information">Réseau</string>
+    <string name="application_tools_screen_information">Écran</string>
+    <string name="application_tools_settings_log_crashes_title">Journalisation et erreurs.</string>
+</resources>

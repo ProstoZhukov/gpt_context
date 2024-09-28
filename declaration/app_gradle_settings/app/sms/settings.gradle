@@ -1,0 +1,35 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+def appName = "sms"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "common",
+        "declaration",
+        "design"
+)
+
+include ':app', ':controller'
+
+include ':sms-common'
+project(':sms-common').projectDir = new File(settingsDir, 'feature/sms-common')
+
+include ':sms-sender-feature'
+project(':sms-sender-feature').projectDir = new File(settingsDir, 'feature/sms-sender/sms-sender-feature')
+
+include ':sms-sender-impl'
+project(':sms-sender-impl').projectDir = new File(settingsDir, 'feature/sms-sender/sms-sender-impl')
+
+include ':sms-ui-feature'
+project(':sms-ui-feature').projectDir = new File(settingsDir, 'feature/sms-ui/sms-ui-feature')
+
+include ':sms-ui-impl'
+project(':sms-ui-impl').projectDir = new File(settingsDir, 'feature/sms-ui/sms-ui-impl')
+
+setupControllerModule(settings, appName)

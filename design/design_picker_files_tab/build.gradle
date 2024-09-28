@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.picker_files_tab"
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += 'src/main/kotlin'
+        }
+    }
+}
+
+dependencies {
+
+    implementation project(":common")
+    implementation project(':mvi_extension')
+    implementation project(":base_components")
+    implementation project(":design_files_picker")
+    implementation project(":design_stubview")
+    implementation project(":design_gallery")
+
+    implementation libs.android.appcompat
+    implementation libs.android.core.ktx
+    implementation libs.android.fragment.ktx
+    implementation libs.android.lifecycle.common.java8
+    implementation libs.android.lifecycle.extensions
+
+    implementation libs.dagger
+    kapt libs.dagger.compiler
+}

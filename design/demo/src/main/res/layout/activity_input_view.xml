@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <!-- Обычное поле -->
+
+            <ru.tensor.sbis.design.view.input.text.TextInputView
+                android:id="@+id/input_view_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/input_view_text_read_only"
+                app:inputView_title="@string/input_view_single_line_simple_title"
+                app:inputView_placeholder="@string/input_view_single_line_simple_placeholder"
+                android:imeOptions="actionGo"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/input_view_text_read_only"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/input_view_text_is_clear"
+                app:layout_constraintTop_toBottomOf="@id/input_view_text"
+                app:layout_constraintBottom_toTopOf="@id/input_view_text_read_only"
+                android:text="@string/input_view_single_line_simple_read_only"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/input_view_text_is_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/input_view_text_read_only"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/input_view_text_read_only"
+                app:layout_constraintBottom_toBottomOf="@id/input_view_text_read_only"
+                android:layout_marginStart="5dp"
+                android:text="@string/input_view_single_line_simple_clear"/>
+
+            <ru.tensor.sbis.design.view.input.number.NumberInputView
+                android:id="@+id/input_view_text_length"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_view_text_read_only"
+                app:layout_constraintBottom_toTopOf="@id/input_view_password"
+                app:inputView_title="@string/input_view_single_line_simple_length_title"
+                app:inputView_showPlaceholderAsTitle="false"
+                app:inputView_linkText="@string/input_view_single_line_simple_length_link"
+                app:inputView_maxLength="2"
+                app:inputView_value="0"/>
+
+            <!-- Пароль -->
+
+            <ru.tensor.sbis.design.view.input.password.PasswordInputView
+                android:id="@+id/input_view_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_view_text_length"
+                app:layout_constraintBottom_toTopOf="@id/input_view_password_validation_default"
+                app:inputView_title="@string/input_view_password_title"
+                app:inputView_placeholder="@string/input_view_password_placeholder"
+                app:inputView_linkText="@string/input_view_password_link"
+                app:inputView_isClearVisible="true"
+                android:importantForAutofill="yes"
+                android:autofillHints="password"
+                android:layout_marginTop="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/input_view_password_validation_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/input_view_password_validation_error"
+                app:layout_constraintTop_toBottomOf="@id/input_view_password"
+                app:layout_constraintBottom_toTopOf="@id/input_view_money"
+                android:textAllCaps="false"
+                android:minWidth="50dp"
+                android:minHeight="40dp"
+                android:padding="5dp"
+                android:text="@string/input_view_password_validation_default_title"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/input_view_password_validation_error"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/input_view_password_validation_default"
+                app:layout_constraintEnd_toStartOf="@id/input_view_password_validation_warning"
+                app:layout_constraintTop_toTopOf="@id/input_view_password_validation_default"
+                app:layout_constraintBottom_toBottomOf="@id/input_view_password_validation_default"
+                android:layout_marginStart="5dp"
+                android:textAllCaps="false"
+                android:minWidth="50dp"
+                android:padding="5dp"
+                android:text="@string/input_view_password_validation_error_title"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/input_view_password_validation_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/input_view_password_validation_error"
+                app:layout_constraintEnd_toStartOf="@id/input_view_password_validation_success"
+                app:layout_constraintTop_toTopOf="@id/input_view_password_validation_default"
+                app:layout_constraintBottom_toBottomOf="@id/input_view_password_validation_default"
+                android:layout_marginStart="5dp"
+                android:textAllCaps="false"
+                android:minWidth="50dp"
+                android:padding="5dp"
+                android:text="@string/input_view_password_validation_warning_title"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/input_view_password_validation_success"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/input_view_password_validation_warning"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/input_view_password_validation_default"
+                app:layout_constraintBottom_toBottomOf="@id/input_view_password_validation_default"
+                android:layout_marginStart="5dp"
+                android:textAllCaps="false"
+                android:minWidth="50dp"
+                android:padding="5dp"
+                android:text="@string/input_view_password_validation_success_title"/>
+
+            <!-- Деньги -->
+
+            <ru.tensor.sbis.design.view.input.money.MoneyInputView
+                android:id="@+id/input_view_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_view_password_validation_default"
+                app:layout_constraintBottom_toTopOf="@id/input_view_money_decorated"
+                android:layout_marginTop="5dp"
+                app:inputView_isDecorated="true"
+                app:inputView_title="@string/input_view_money_title"
+                app:inputView_placeholder="@string/input_view_money_placeholder"
+                app:inputView_fontIcon="true"
+                app:inputView_linkText="@string/design_mobile_icon_video"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/input_view_money_decorated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/input_view_money_zero_fraction"
+                app:layout_constraintTop_toBottomOf="@id/input_view_money"
+                app:layout_constraintBottom_toTopOf="@id/input_view_date_and_time"
+                android:checked="true"
+                android:text="@string/input_view_money_decorated"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/input_view_money_zero_fraction"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/input_view_money_decorated"
+                app:layout_constraintEnd_toStartOf="@id/input_view_money_one_fraction"
+                app:layout_constraintTop_toTopOf="@id/input_view_money_decorated"
+                app:layout_constraintBottom_toBottomOf="@id/input_view_money_decorated"
+                android:layout_marginStart="5dp"
+                android:textAllCaps="false"
+                android:minWidth="50dp"
+                android:padding="5dp"
+                android:text="@string/input_view_money_zero_fraction_title"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/input_view_money_one_fraction"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/input_view_money_zero_fraction"
+                app:layout_constraintEnd_toStartOf="@id/input_view_money_two_fraction"
+                app:layout_constraintTop_toTopOf="@id/input_view_money_decorated"
+                app:layout_constraintBottom_toBottomOf="@id/input_view_money_decorated"
+                android:layout_marginStart="5dp"
+                android:textAllCaps="false"
+                android:minWidth="50dp"
+                android:padding="5dp"
+                android:text="@string/input_view_money_one_fraction_title"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/input_view_money_two_fraction"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/input_view_money_one_fraction"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/input_view_money_decorated"
+                app:layout_constraintBottom_toBottomOf="@id/input_view_money_decorated"
+                android:layout_marginStart="5dp"
+                android:textAllCaps="false"
+                android:minWidth="50dp"
+                android:padding="5dp"
+                android:checked="true"
+                android:text="@string/input_view_money_two_fraction_title"/>
+
+            <!-- Ввод даты и времени -->
+
+            <ru.tensor.sbis.design.view.input.mask.date.DateInputView
+                android:id="@+id/input_view_date_and_time"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/input_view_date_only"
+                app:layout_constraintTop_toBottomOf="@id/input_view_money_zero_fraction"
+                app:layout_constraintBottom_toTopOf="@id/input_view_phone"
+                android:layout_marginTop="5dp"
+                app:inputView_showPlaceholderAsTitle="false"
+                app:inputView_title="@string/input_view_date_and_time_title"
+                app:inputView_format="both"/>
+
+            <ru.tensor.sbis.design.view.input.mask.date.DateInputView
+                android:id="@+id/input_view_date_only"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toEndOf="@id/input_view_date_and_time"
+                app:layout_constraintEnd_toStartOf="@id/input_view_time_only"
+                app:layout_constraintTop_toBottomOf="@id/input_view_date_and_time"
+                app:layout_constraintBottom_toTopOf="@id/input_view_date_and_time"
+                app:inputView_showPlaceholderAsTitle="false"
+                app:inputView_title="@string/input_view_date_only_title"
+                app:inputView_format="date"/>
+
+            <ru.tensor.sbis.design.view.input.mask.date.DateInputView
+                android:id="@+id/input_view_time_only"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toEndOf="@id/input_view_date_only"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_view_date_and_time"
+                app:layout_constraintBottom_toTopOf="@id/input_view_date_and_time"
+                app:inputView_showPlaceholderAsTitle="false"
+                app:inputView_title="@string/input_view_time_only_title"
+                app:inputView_format="time"/>
+
+            <!-- Номер телефона -->
+
+            <ru.tensor.sbis.design.view.input.mask.phone.PhoneInputView
+                android:id="@+id/input_view_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_view_date_and_time"
+                app:layout_constraintBottom_toTopOf="@id/input_view_number"
+                android:layout_marginTop="5dp"
+                app:inputView_phoneType="russian11Digits4Code"
+                app:inputView_title="@string/input_view_phone_title"
+                app:inputView_placeholder="@string/input_view_phone_placeholder"/>
+
+            <!-- Ввод числа -->
+
+            <ru.tensor.sbis.design.view.input.number.NumberInputView
+                android:id="@+id/input_view_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_view_phone"
+                app:layout_constraintBottom_toTopOf="@id/input_view_mask"
+                android:layout_marginTop="5dp"
+                app:inputView_title="@string/input_view_number_title"
+                app:inputView_placeholder="@string/input_view_number_placeholder"/>
+
+            <!-- Произвольная маска -->
+
+            <ru.tensor.sbis.design.view.input.mask.MaskInputView
+                android:id="@+id/input_view_mask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_view_number"
+                app:layout_constraintBottom_toTopOf="@id/input_view_value_selection"
+                android:layout_marginTop="5dp"
+                app:inputView_mask="@string/input_view_mask_mask"
+                app:inputView_title="@string/input_view_mask_title"
+                app:inputView_placeholder="@string/input_view_mask_mask"/>
+
+            <!-- Выбор значения -->
+
+            <ru.tensor.sbis.design.view.input.selection.ValueSelectionInputView
+                android:id="@+id/input_view_value_selection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_view_mask"
+                app:layout_constraintBottom_toTopOf="@id/input_view_multiline"
+                android:layout_marginTop="5dp"
+                app:inputView_title="@string/input_view_value_selection_title"
+                app:inputView_showPlaceholderAsTitle="false"/>
+
+            <!-- Многострочный текст -->
+
+            <ru.tensor.sbis.design.view.input.text.MultilineInputView
+                android:id="@+id/input_view_multiline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:layout_height="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_view_value_selection"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="5dp"
+                app:inputView_title="@string/input_view_multiline_title"
+                app:inputView_placeholder="@string/input_view_multiline_placeholder"
+                app:inputView_minLines="2"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

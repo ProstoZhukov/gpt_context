@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payment_qr_code_button_text">QR коды бойынша</string>
+    <string name="payment_comment_button_text">Түсініктеме</string>
+    <string name="payment_send_invoice_button_text">Шот-фактураны жіберу</string>
+</resources>

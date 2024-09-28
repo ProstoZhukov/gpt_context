@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Recorder view -->
+    <dimen name="recorder_view_icon_dot_size">8dp</dimen>
+
+    <dimen name="recorder_view_container_start_margin">12dp</dimen>
+
+    <!--  радиус круга + @dimen/gap_between_buttons -->
+    <dimen name="recorder_view_container_timer_right_margin">60dp</dimen>
+    <dimen name="recorder_view_inner_margin">6dp</dimen>
+    <dimen name="recorder_view_microphone_start_padding">8dp</dimen>
+    <dimen name="recorder_view_microphone_end_padding">12dp</dimen>
+    <dimen name="recorder_view_microphone_vertical_padding">6dp</dimen>
+    <dimen name="recorder_view_circle_inner">35dp</dimen>
+    <dimen name="recorder_view_outer_ring_thickness">26dp</dimen>
+    <dimen name="recorder_view_circle_size">96dp</dimen>
+</resources>

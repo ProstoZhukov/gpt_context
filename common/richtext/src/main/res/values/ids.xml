@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="richtext_rich_text_view" type="id"/>
+
+    <item name="richtext_table_view" type="id"/>
+    <item name="richtext_table_expand_button" type="id"/>
+</resources>

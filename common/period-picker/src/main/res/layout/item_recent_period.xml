@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.date_picker.free.items.RecentPeriodVM"/>
+    </data>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/recent_period"
+        onClick="@{viewModel.onClick}"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/date_picker_item_recent_period_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/date_picker_item_recent_period_left_right_padding"
+        android:paddingRight="@dimen/date_picker_item_recent_period_left_right_padding"
+        android:text="@{viewModel.title}"
+        android:textColor="?attr/date_picker_item_recent_period_text_color"
+        android:textSize="@dimen/date_picker_item_recent_period_text_size"
+        tools:ignore="SpUsage"
+        tools:text="3 мая 2017 - 12 мая 2017"/>
+
+</layout>

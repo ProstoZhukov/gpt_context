@@ -1,0 +1,30 @@
+ext.auth_dir = "module/auth"
+
+apply from: "$authDir/auth_saby_clients/settings_lite.gradle"
+
+include ':auth_devices'
+project(':auth_devices').projectDir = new File(auth_dir, 'auth_devices')
+
+include ':auth_saby_clients'
+project(':auth_saby_clients').projectDir = new File(auth_dir, 'auth_saby_clients')
+
+include ':auth_content'
+project(':auth_content').projectDir = new File(authDir, 'auth_content')
+
+include ':permission'
+project(':permission').projectDir = new File(auth_dir, 'permission')
+
+include ':language'
+project(':language').projectDir = new File(auth_dir, 'language')
+
+include ':settings-screen'
+project(':settings-screen').projectDir = new File(auth_dir, 'settings-screen')
+
+include ':settings-screen-common'
+project(':settings-screen-common').projectDir = new File(auth_dir, 'settings-screen-common')
+
+include ':settings-screen-decl'
+project(':settings-screen-decl').projectDir = new File(auth_dir, 'settings-screen-decl')
+
+include ':auth_security_list'
+project(':auth_security_list').projectDir = new File(authDir, 'auth_security_list')

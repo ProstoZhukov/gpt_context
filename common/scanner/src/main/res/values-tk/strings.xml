@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scanner_take_snapshot_error">Surata dü&#x15f;ürilende säwlik &#xfd;üze çykdy.</string>
+    <string name="scanner_open_camera_error">Kamera açylanda säwlik &#xfd;üze çykdy</string>
+    <string name="scanner_image_processing_error">Suraty ga&#xfd;tadan i&#x15f;lemekde &#xfd;al&#x148;y&#x15f;lyk &#xfd;üze çykdy</string>
+    <string name="scanner_image_deleting_error">Suraty pozanda säwlik &#xfd;üze çykdy</string>
+    <string name="scanner_image_loading_error">Suraty &#xfd;üklemekde &#xfd;al&#x148;y&#x15f;lyk boldy</string>
+    <string name="scanner_next_page">% d sahypa</string>
+    <string name="scanner_close_screen">.Akyn</string>
+    <string name="scanner_multi_snapshot_button_text">Gowy</string>
+    <string name="scanner_multi_snapshot_fast_button_text">Çalt</string>
+    <string name="scanner_edit_image_cancel">Elatyr</string>
+    <string name="scanner_edit_image_done">Ta&#xfd;&#xfd;ar</string>
+    <string name="scanner_empty_scanned_image_list">Skanirlenen suratlary&#x148; sanawy bo&#x15f;</string>
+    <string name="scanner_load_scanned_images_error">Skanirlenen suratlary&#x148; sanawyny &#xfd;ükläp bilmedi</string>
+    <string name="scanner_save_scanned_images_menu_title">Sakla&#x148;</string>
+    <string name="scanner_input_new_pdf_file_name_dialog_title">Täze PDF fa&#xfd;ly&#x148; ady</string>
+    <string name="scanner_saving_to_pdf_error">PDF görnü&#x15f;inde &#xfd;azdyryp bilmedi</string>
+    <string name="scanner_saving_to_gallery_error">Galere&#xfd;a &#xfd;azdyryp bilmedi</string>
+    <string name="scanner_saving_to_gallery_success">Tyg&#x15f;ytlamak üstünlikli tamamlandy</string>
+    <string name="scanner_save_scanned_docs_offline_error">Skanirlenen resminamalary tyg&#x15f;ytlamak mümkin däl</string>
+    <string name="scanner_flash_state_auto">Awto</string>
+    <string name="scanner_flash_state_on">I&#x15f;ledi&#x148;</string>
+    <string name="scanner_flash_state_off">Öçürilen</string>
+    <string name="scanner_save_as_image">Surat görnü&#x15f;inde &#xfd;azdyry&#x148;</string>
+    <string name="scanner_save_to_pdf">PDF görnü&#x15f;inde &#xfd;azdyry&#x148;</string>
+    <string name="scanner_save_to_gallery">Galere&#xfd;a &#xfd;azdyry&#x148;</string>
+    <string name="scanner_files_selection_pane_option_scan_document">Skaner</string>
+    <string name="scanner_permission_dialog_title">Kamera girmek gadagan</string>
+    <string name="scanner_permission_dialog_text">Sazlamalarda kamera girmäge mümkinçilik beri&#x148;</string>
+    <string name="scanner_permission_dialog_positive">Sazlamalar</string>
+    <string name="scanner_no_internet_connection_message">Tor birikmesi &#xfd;ok</string>
+    <string name="scanner_files_picker_tab_title">Skaner</string>
+</resources>

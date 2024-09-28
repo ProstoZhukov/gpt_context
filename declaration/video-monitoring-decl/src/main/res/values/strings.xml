@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="video_monitoring_decl_sub_dir_name_business" translatable="false">Business</string>
+    <string name="video_monitoring_decl_sub_dir_name_retail" translatable="false">Retail</string>
+    <string name="video_monitoring_decl_sub_dir_name_sabyclients" translatable="false">Sabyclients</string>
+    <string name="video_monitoring_decl_sub_dir_name_sabycam" translatable="false">Sabycam</string>
+</resources>

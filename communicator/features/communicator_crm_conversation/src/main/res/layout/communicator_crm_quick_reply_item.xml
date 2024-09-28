@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.text.TextUtils"/>
+
+        <import
+            alias="view"
+            type="android.view.View"/>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.crm.conversation.presentation.ui.quick_reply.data.QuickReplyViewModelBindingModel"/>
+    </data>
+
+    <ru.tensor.sbis.swipeablelayout.SwipeableLayout
+        android:id="@+id/communicator_crm_quick_reply_swipe_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:swipeableVm="@{viewModel.swipeableVm}">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="?offset_m"
+            android:onClick="@{(v) -> viewModel.onClick()}">
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/communicator_crm_quick_reply_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.text}"
+                android:textColor="?textColor"
+                android:textSize="?fontSize_l_scaleOff"
+                android:includeFontPadding="false"
+                android:gravity="center_vertical"
+                android:paddingVertical="?offset_m"
+                android:maxLines="2"
+                android:ellipsize="end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/communicator_crm_quick_reply_arrow"
+                app:setSearchHighlight="@{viewModel.searchResult}"
+                app:setQuickReplyFontFamily="@{viewModel.needMediumFont}"
+                app:setQuickReplyTextStyle="@{viewModel.isTitle}"
+                app:setQuickReplyLeftPadding="@{viewModel.path.size()}"/>
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/communicator_crm_quick_reply_arrow"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="?offset_xs"
+                android:paddingEnd="0dp"
+                android:text = "@string/design_mobile_icon_btn_forward"
+                android:textSize="?fontSize_m_scaleOff"
+                android:textColor="?labelIconColor"
+                app:layout_constraintBaseline_toBaselineOf="@+id/communicator_crm_quick_reply_title"
+                app:layout_marginBaseline="@dimen/communicator_crm_conversation_quick_reply_folder_arrow_margin_baseline"
+                app:layout_constraintStart_toEndOf="@+id/communicator_crm_quick_reply_title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:isVisible="@{viewModel.group}"/>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/communicator_crm_quick_reply_barrier"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="communicator_crm_quick_reply_title, communicator_crm_quick_reply_arrow" />
+
+            <View
+                android:id="@+id/communicator_crm_quick_reply_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="?infoActiveBackgroundColor"
+                app:isVisible="@{viewModel.separator}"
+                app:layout_constraintTop_toBottomOf="@+id/communicator_crm_quick_reply_barrier"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ru.tensor.sbis.swipeablelayout.SwipeableLayout>
+
+</layout>

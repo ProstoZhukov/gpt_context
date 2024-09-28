@@ -1,0 +1,36 @@
+ext.auth_dir = "module/auth"
+
+apply from: "$authDir/settings.gradle"
+
+include ':language'
+project(':language').projectDir = new File(authDir, "language")
+
+include ':permission'
+project(':permission').projectDir = new File(authDir, "permission")
+
+include ':settings-screen'
+project(':settings-screen').projectDir = new File(authDir, "settings-screen")
+
+include ':settings-screen-common'
+project(':settings-screen-common').projectDir = new File(authDir, "settings-screen-common")
+
+include ':settings-screen-decl'
+project(':settings-screen-decl').projectDir = new File(authDir, "settings-screen-decl")
+
+include 'discovery-impl'
+project(':discovery-impl').projectDir = new File(authDir, "discovery-impl")
+
+include 'auth_devices'
+project(':auth_devices').projectDir = new File(authDir, "auth_devices")
+
+include ':auth_content'
+project(':auth_content').projectDir = new File(authDir, "auth_content")
+
+include ':auth_lock'
+project(':auth_lock').projectDir = new File(authDir, "auth_lock")
+
+include ':auth_lock_common'
+project(':auth_lock_common').projectDir = new File(authDir, "auth_lock_common")
+
+include ':settings_main_screen_addon'
+project(':settings_main_screen_addon').projectDir = new File(authDir, "settings-main-screen-addon")

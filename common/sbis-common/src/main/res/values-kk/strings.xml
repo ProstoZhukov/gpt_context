@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="attach_photo_error">Фотосуретті жүктеп салу қатесі</string>
+    <string name="chat_admin">Админ.</string>
+    <string name="common_access_error">Қол жеткізу қатесі</string>
+    <string name="common_access_error_description">Ағымдағы бөлімге кіру құқықтарыңыз жоқ. Жүйе әкімшісіне хабарласыңыз</string>
+    <string name="common_another_user_call">Қоңырау шалу</string>
+    <string name="common_auth_segment_title">Авторизация</string>
+    <string name="common_bottom_menu_name">NNP</string>
+    <string name="common_bottom_sheet_dialog_close">Жабық</string>
+    <string name="common_byte_short">Б</string>
+    <string name="common_calendar_segment_title">@string/common_navigation_menu_item_calendar</string>
+    <string name="common_catalog_segment_title">Каталог</string>
+    <string name="common_communicator_segment_title">Хабарламалар/Контактілер</string>
+    <string name="common_confirmation_expiring_time_message">Растау үшін %1$s</string>
+    <string name="common_confirmation_overdue_message">Растау мерзімі аяқталды</string>
+    <string name="common_contractors_segment_title">Компаниялар</string>
+    <string name="common_data_loading_error">Деректерді жүктеу қатесі!</string>
+    <string name="common_date_format_today">Бүгін</string>
+    <string name="common_date_format_tomorrow">Ертең</string>
+    <string name="common_date_format_yesterday">Кеше</string>
+    <string name="common_delete_dialog_negative">Жоқ</string>
+    <string name="common_delete_dialog_positive">Иә</string>
+    <string name="common_dialogs_move_to_folder_cancel">Болдырмау</string>
+    <string name="common_dialogs_move_to_folder_contextual_menu_title">Қалтаны таңдаңыз</string>
+    <string name="common_disk_segment_title">@string/common_navigation_menu_item_cloud</string>
+    <string name="common_employee_segment_title">Қызметкерлер</string>
+    <string name="common_enter_message">Хабарлама</string>
+    <string name="common_failed_to_open_file">Файлды ашу мүмкін болмады</string>
+    <string name="common_feature_manage_segment_title">Сынақ</string>
+    <string name="common_file_loading_error">Файлды жүктеп салу қатесі</string>
+    <string name="common_filter">Сүзгі</string>
+    <string name="common_folder_button_label">Қалталар</string>
+    <string name="common_folder_delete_dialog">\"%1$s\" қалтасын жою керек пе?</string>
+    <string name="common_folder_delete_dialog_submit">ЖОЮ</string>
+    <string name="common_folder_detail_message_move_to_parent_folder">Қалтаның барлық мазмұны келесі деңгейге жылжытылады.</string>
+    <string name="common_folder_edit_dialog_add">САҚТАУ</string>
+    <string name="common_folder_edit_dialog_cancle">БАС ТАРТУ</string>
+    <string name="common_folder_edit_dialog_edittext_hint">Қалта атын енгізіңіз</string>
+    <string name="common_folder_new_dialog_add">ЖАСАУ</string>
+    <string name="common_folder_new_dialog_title">Жаңа папка</string>
+    <string name="common_gigabyte_short">ГБ</string>
+    <string name="common_kilobyte_short">КБ</string>
+    <string name="common_load">Жүктеп алу</string>
+    <string name="common_loading_error">Жүктеу қатесі</string>
+    <string name="common_low_password_complexity">Құпия сөздің күрделілігі төмен.\nКүштілігін арттыру үшін әр түрлі әріптерді, сондай-ақ сандар мен арнайы таңбаларды пайдаланыңыз.</string>
+    <string name="common_man_last_activity_time_unknown">Белсенді болмады</string>
+    <string name="common_megabyte_short">МБ</string>
+    <string name="common_menu_share">Бөлісу</string>
+    <string name="common_motivation_segment_title">Мотивация</string>
+    <string name="common_navigation_menu_item_calendar">Күнтізбе</string>
+    <string name="common_navigation_menu_item_calendar_reduced">Күнтізбе.</string>
+    <string name="common_navigation_menu_item_calls">Қоңыраулар</string>
+    <string name="common_navigation_menu_item_channels">Арналар</string>
+    <string name="common_navigation_menu_item_cloud">Диск</string>
+    <string name="common_navigation_menu_item_contacts">Контактілер</string>
+    <string name="common_navigation_menu_item_contractors">Компаниялар</string>
+    <string name="common_navigation_menu_item_contractors_reduced">Серіктестік.</string>
+    <string name="common_navigation_menu_item_employees">Қызметкерлер</string>
+    <string name="common_navigation_menu_item_employees_reduced">Қызметкер</string>
+    <string name="common_navigation_menu_item_feature_manage">Сынақ</string>
+    <string name="common_navigation_menu_item_local_feature_toggle">Фичетогл</string>
+    <string name="common_navigation_menu_item_meetings">Кездесулер</string>
+    <string name="common_navigation_menu_item_messages">Хабарламалар</string>
+    <string name="common_navigation_menu_item_messages_reduced">Хабарлады.</string>
+    <string name="common_navigation_menu_item_motivation">Мотивация</string>
+    <string name="common_navigation_menu_item_motivation_reduced">Мотивациялар.</string>
+    <string name="common_navigation_menu_item_my_docs">Құжаттар</string>
+    <string name="common_navigation_menu_item_my_docs_reduced">Құжат-р</string>
+    <string name="common_navigation_menu_item_news">Жаңалықтар</string>
+    <string name="common_navigation_menu_item_notifications">Хабарландырулар</string>
+    <string name="common_navigation_menu_item_notifications_reduced">Хабарланд.</string>
+    <string name="common_navigation_menu_item_settings">Баптаулар</string>
+    <string name="common_navigation_menu_item_settings_reduced">Баптаулар</string>
+    <string name="common_navigation_menu_item_tasks">Тапсырмалар</string>
+    <string name="common_navigation_menu_item_tasks_approve">Мақұлдау</string>
+    <string name="common_navigation_menu_item_tasks_from_me">Меннен</string>
+    <string name="common_navigation_menu_item_tasks_incoming">Кіріс жәшігі</string>
+    <string name="common_navigation_menu_item_instructions">Нұсқаулар</string>
+    <string name="common_need_to_clear_collages_cache">коллаждарды_тазалау_керек</string>
+    <string name="common_news_segment_title">@string/common_navigation_menu_item_news</string>
+    <string name="common_no_employees_to_display">Қызметкерлер тізімі бос</string>
+    <string name="common_no_network_available_check_connection">Интернет қосылымын тексеріңіз</string>
+    <string name="common_no_permission_error">Операцияны орындауға рұқсаттар жеткіліксіз</string>
+    <string name="common_notification_segment_title">@string/common_navigation_menu_item_notifications</string>
+    <string name="common_open_link_browser_error">Сілтемені ашу үшін қолданба табылмады</string>
+    <string name="common_option_cancel_name">@string/design_cancel_item_label</string>
+    <string name="common_password_is_too_short">Құпия сөздің ең аз ұзындығы 6 таңба</string>
+    <string name="common_password_requirements_hint">Кемінде 6 таңба енгізіңіз. Сенімділікті арттыру үшін әртүрлі регистрдің әріптерін, сандарды және арнайы таңбаларды пайдаланыңыз.</string>
+    <string name="common_period_from">%s арқылы</string>
+    <string name="common_period_half_year">жарты жыл</string>
+    <string name="common_period_half_year_short">жж</string>
+    <string name="common_period_quarters">тоқсан</string>
+    <string name="common_period_quarters_short">шаршы</string>
+    <string name="common_period_today">Бүгін</string>
+    <string name="common_period_yesterday">кеше</string>
+    <string name="common_period_yesterday_from">кеше %s</string>
+    <string name="common_person_last_activity_time_denied">Жүйеге кіру мүмкін емес</string>
+    <string name="common_profile_device_has_mo_email_client">Бұл құрылғыда электрондық пошта клиенті жоқ.</string>
+    <string name="common_profile_device_has_no_call_ability">Бұл құрылғының телефон қоңырауларын шалу мүмкіндігі жоқ.</string>
+    <string name="common_profile_device_has_no_skype">Бұл құрылғыда скайп жоқ</string>
+    <string name="common_profile_device_has_no_telegram">Бұл құрылғыда телеграмма жоқ</string>
+    <string name="common_profile_has_no_email">Контактте электрондық пошта жоқ</string>
+    <string name="common_profile_has_no_phone_number">Контактінің телефон нөмірі жоқ</string>
+    <string name="common_profile_has_no_skype">Байланыста скайп жоқ</string>
+    <string name="common_profile_has_no_telegram">Байланыс телеграмда жоқ</string>
+    <string name="common_profile_moscow_timezone">«МСК»</string>
+    <string name="common_profile_segment_title">Профиль</string>
+    <string name="common_profile_social_network_open_error">Сілтемені орындау мүмкін болмады.</string>
+    <string name="common_profile_user_activity_status_man">Болды</string>
+    <string name="common_profile_user_activity_status_woman">Болды</string>
+    <string name="common_profile_user_offline_more_than_year">«бір жылдан астам бұрын»</string>
+    <string name="common_profile_user_online_work_and_home">Желіде</string>
+    <string name="common_recipients_selection_ok_description">Таңдауды растау</string>
+    <string name="common_reporting_segment_title">Есеп беру</string>
+    <string name="common_reporting_status_unknown_answer">Жауап алынды</string>
+    <string name="common_requirement_confirmation_btn_title">Растау</string>
+    <string name="common_requirement_status_rejected">Бас тартылды</string>
+    <string name="common_requirement_text_template">%1$s сұрауы</string>
+    <string name="common_reset_button_label">Қалпына келтіру</string>
+    <string name="common_select_application_to_phone_call">Қолданбаны таңдаңыз</string>
+    <string name="common_selection_window_close_icon">&#xe902;</string>
+    <string name="common_service_error">Тізімді жаңарту мүмкін болмады.\nҚызмет уақытша қолжетімсіз.</string>
+    <string name="common_settings_enable_history_recording_key">settings_enable_history_recording</string>
+    <string name="common_settings_enable_logs_recording_key">settings_enable_logs_recording_key</string>
+    <string name="common_show_document_failed">Құжат жойылған болуы мүмкін немесе сізде осы компания құжатына қол жеткізе алмауыңыз мүмкін.</string>
+    <string name="common_task_segment_title">@string/common_navigation_menu_item_tasks</string>
+    <string name="common_term_days_hours_minutes_date_format">%d д. %d ч. %d мин.</string>
+    <string name="common_term_hours_and_minutes_date_format">%d ч. %d мин.</string>
+    <string name="common_term_only_days_date_format">%d д.</string>
+    <string name="common_term_only_minutes_date_format">%d мин.</string>
+    <string name="common_time_at">"V"</string>
+    <string name="common_unknown_error">Белгісіз қате</string>
+    <string name="common_update_error">Деректерді жүктеу сәтсіз аяқталды. Интернет байланысын тексеріңіз.</string>
+    <string name="common_video_call_no_internet">Өкінішке орай, желі байланысы болмағандықтан, қоңырау шалу мүмкін болмады.\nКейінірек қайталап көруіңізге болады.</string>
+    <string name="common_video_call_segment_title">Бейне қоңырау</string>
+    <string name="common_violations_segment_title">Бұзушылықтар</string>
+    <string name="common_woman_last_activity_time_unknown">Белсенді болмады</string>
+    <string name="create_chat_button_text">Жаңа топ</string>
+    <string name="dialog_button_cancel">Болдырмау</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="file_can_not_be_open">%s файлын ашу үшін қолданба табылмады</string>
+    <string name="file_can_not_be_shared">Сәйкес қолданба жоқ</string>
+    <string name="operation_error_message">Жұмыс қатесі</string>
+    <string name="common_navigation_menu_item_tasks_outgoing">Шығыс</string>
+    <string name="common_navigation_menu_item_clients">Клиенттер</string>
+
+    <plurals name="common_year">
+        <item quantity="zero">жылдар</item>
+        <item quantity="one">жыл</item>
+        <item quantity="two">жылдың</item>
+        <item quantity="few">жылдың</item>
+        <item quantity="many">жылдар</item>
+        <item quantity="other">жылдар</item>
+    </plurals>
+    <plurals name="common_month">
+        <item quantity="zero">айлар</item>
+        <item quantity="one">ай</item>
+        <item quantity="two">айлар</item>
+        <item quantity="few">айлар</item>
+        <item quantity="many">айлар</item>
+        <item quantity="other">айлар</item>
+    </plurals>
+    <plurals name="common_day">
+        <item quantity="zero">күндер</item>
+        <item quantity="one">күні</item>
+        <item quantity="two">күндер</item>
+        <item quantity="few">күндер</item>
+        <item quantity="many">күндер</item>
+        <item quantity="other">күндер</item>
+    </plurals>
+    <string-array name="common_months">
+        <item>Қаңтар</item>
+        <item>Ақпан</item>
+        <item>Наурыз</item>
+        <item>Сәуір</item>
+        <item>Мамыр</item>
+        <item>Маусым</item>
+        <item>Шілде</item>
+        <item>Тамыз</item>
+        <item>Қыркүйек</item>
+        <item>Қазан</item>
+        <item>Қараша</item>
+        <item>Желтоқсан</item>
+    </string-array>
+    <string-array name="common_months_short">
+        <item>Қаң</item>
+        <item>Ақп</item>
+        <item>Нау</item>
+        <item>Сәу</item>
+        <item>Мам</item>
+        <item>Мау</item>
+        <item>Шіл</item>
+        <item>Там</item>
+        <item>Қыр</item>
+        <item>Қаз</item>
+        <item>Қар</item>
+        <item>Желт</item>
+    </string-array>
+    <string-array name="common_months_short_with_dot">
+        <item>қаң.</item>
+        <item>ақп.</item>
+        <item>нау.</item>
+        <item>сәу.</item>
+        <item>мам.</item>
+        <item>мау.</item>
+        <item>шіл.</item>
+        <item>там.</item>
+        <item>қыр.</item>
+        <item>қаз.</item>
+        <item>қар.</item>
+        <item>желт.</item>
+    </string-array>
+    <string-array name="common_months_short_without_dot">
+        <item>қаң</item>
+        <item>ақп</item>
+        <item>нау</item>
+        <item>сәу</item>
+        <item>мам</item>
+        <item>мау</item>
+        <item>шiл</item>
+        <item>там</item>
+        <item>қыр</item>
+        <item>қаз</item>
+        <item>қар</item>
+        <item>желт</item>
+    </string-array>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AbstractExpandableTextView">
+        <attr name="maxLinesWhenCollapsed" format="integer|reference"/>
+        <attr name="abstract_expandable_text_view_buttonType">
+            <enum name="none" value="0"/>
+            <enum name="below_text" value="1"/>
+            <enum name="replace_last" value="2"/>
+        </attr>
+        <attr name="expandOnContentClick" format="boolean"/>
+        <attr name="ellipsizeEnd" format="boolean"/>
+        <attr name="animationDuration" format="integer|reference"/>
+        <attr name="animationDurationType" format="enum">
+            <enum name="fixed" value="0"/>
+            <enum name="per100dp" value="1"/>
+        </attr>
+        <attr name="buttonExpansion" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="collapsedMaxLines" format="integer"/>
+        <attr name="ellipsisType" format="enum">
+            <enum name="normal" value="1"/>
+            <enum name="with_icon" value="2"/>
+            <enum name="normal_without_ellipsis_text" value="3"/>
+        </attr>
+        <attr name="ellipsisIconSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextViewWithPostFix">
+        <attr name="highlight_text_color" format="color|reference"/>
+        <attr name="postfix_text_color" format="color"/>
+        <attr name="postfix_text_size" format="dimension"/>
+        <attr name="space" format="string"/>
+    </declare-styleable>
+
+    <!-- Стандартный компонент полей ввода -->
+    <declare-styleable name="InputTextBox">
+        <!-- Стиль поля ввода -->
+        <attr name="inputTextBoxStyle" format="reference"/>
+
+        <!-- Наличие кнопки очистки текста в непустом поле ввода -->
+        <attr name="InputTextBox_hasClearButton" format="boolean"/>
+        <!-- Наличие у фона рамки со скруглёнными углами -->
+        <attr name="InputTextBox_hasFrame" format="boolean"/>
+
+        <!-- id layout'а, содеражащего только конкретный EditText, используемый вместо AppCompatEditText -->
+        <attr name="InputTextBox_editTextLayoutRes" format="reference"/>
+
+        <!-- Минимальная и максимальная высота непосредственно поля ввода -->
+        <attr name="InputTextBox_editTextMinHeight" format="dimension"/>
+        <attr name="InputTextBox_editTextMaxHeight" format="dimension"/>
+
+        <!-- Задаёт многострочный режим ввода текста, в котором подсказка отображается в одну строку с ellipsize, но при этом не ограничивается число вводимых строк -->
+        <attr name="InputTextBox_dynamicMultiline" format="boolean"/>
+
+        <!-- id строкового ресурса иконки слева от поля ввода -->
+        <attr name="android:icon"/>
+
+        <attr name="android:text"/>
+        <attr name="android:textColor"/>
+        <attr name="android:fontFamily"/>
+        <attr name="android:hint"/>
+        <attr name="android:imeOptions"/>
+        <attr name="android:inputType"/>
+        <attr name="android:minLines"/>
+        <attr name="android:maxLines"/>
+        <attr name="android:maxLength"/>
+        <attr name="android:gravity"/>
+    </declare-styleable>
+
+    <declare-styleable name="StaticMaskEditText">
+        <attr name="mask" format="string|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextViewWithSpannedButton">
+        <attr name="expandText" format="string|reference"/>
+        <attr name="collapseText" format="string|reference"/>
+        <attr name="buttonTextSize" format="dimension|reference"/>
+        <attr name="buttonColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SbisTitleView">
+        <attr name="SbisTitleView_theme" format="reference"/>
+        <attr name="SbisTitleView_standardTitleStyle" format="reference"/>
+        <attr name="SbisTitleView_standardSubtitleStyle" format="reference"/>
+        <attr name="SbisTitleView_documentTitleStyle" format="reference"/>
+        <attr name="SbisTitleView_documentSubtitleStyle" format="reference"/>
+        <attr name="SbisTitleView_titleWithSubtitleStyle" format="reference"/>
+        <attr name="SbisTitleView_subtitleStyle" format="reference"/>
+        <attr name="SbisTitleView_superEllipseBackgroundColor" format="color"/>
+
+        <attr name="titleInvertedBackground" format="boolean"/>
+        <attr name="imageViewType" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="superEllipse" value="1"/>
+            <enum name="personsPhotoCollection" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

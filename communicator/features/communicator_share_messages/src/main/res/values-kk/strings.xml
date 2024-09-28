@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_share_messages_confirmation_input_hint">Пікір қосу</string>
+    <string name="communicator_share_message_confirmation_title_without_files">Жіберу</string>
+    <string name="communicator_share_message_contact_name_row">Аты: </string>
+    <string name="communicator_share_message_contact_error_text">Құрылғы контактілеріне кіру мүмкін емес.</string>
+    <plurals name="communicator_share_message_confirmation_title">
+        <item quantity="one">%d файлды жіберіңіз</item>
+        <item quantity="other">%d файлды жіберіңіз</item>
+    </plurals>
+    <string name="communicator_share_message_attachments_count_restriction">Сіз ең көп дегенде 25 файл жібере аласыз</string>
+    <string name="communicator_share_message_attachment_big_size_restriction">Жіберілген файл 1 ГБ-тан аспауы керек</string>
+    <string name="communicator_share_message_popup_default_positive">Жарайды</string>
+</resources>

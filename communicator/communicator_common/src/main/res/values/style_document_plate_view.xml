@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CommunicatorDocumentPlateViewStyle"/>
+
+    <style name="CommunicatorDocumentPlateTextStyle">
+        <item name="android:textColor">?labelContrastTextColor</item>
+        <item name="android:textSize">?fontSize_xs_scaleOff</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="ellipsizeEnd">true</item>
+        <item name="maxLine">1</item>
+    </style>
+
+    <style name="CommunicatorDocumentPlateSoloTitle" parent="CommunicatorDocumentPlateTextStyle">
+        <item name="maxLine">2</item>
+    </style>
+
+    <style name="CommunicatorDocumentPlateTitle" parent="CommunicatorDocumentPlateTextStyle">
+        <item name="android:textColor">?secondaryTextColor</item>
+    </style>
+
+    <style name="CommunicatorDocumentPlateIconStyle" parent="MobileFontStyle">
+        <item name="android:textColor">?labelContrastTextColor</item>
+        <item name="android:paddingStart">?offset_s</item>
+        <item name="android:paddingEnd">?offset_s</item>
+    </style>
+
+    <style name="CommunicatorDocumentPlateLeftIconStyle" parent="CommunicatorDocumentPlateIconStyle">
+        <item name="android:textSize">?iconSize_xl</item>
+    </style>
+
+    <style name="CommunicatorDocumentPlateRightIconStyle" parent="CommunicatorDocumentPlateIconStyle">
+        <item name="android:textSize">?iconSize_s</item>
+        <item name="android:text">@string/design_mobile_icon_arrow_narrow_right</item>
+    </style>
+
+</resources>

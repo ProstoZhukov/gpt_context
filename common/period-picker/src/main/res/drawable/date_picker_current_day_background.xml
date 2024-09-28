@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="@dimen/date_picker_current_day_ring_spacing"
+        android:left="@dimen/date_picker_current_day_ring_spacing"
+        android:right="@dimen/date_picker_current_day_ring_spacing"
+        android:top="@dimen/date_picker_current_day_ring_spacing">
+        <shape android:shape="oval">
+            <solid android:color="?attr/date_picker_item_selected_marker_color"/>
+        </shape>
+    </item>
+</layer-list>

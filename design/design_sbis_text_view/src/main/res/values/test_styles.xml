@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SbisTextViewTestStyle"/>
+
+    <style name="SbisTextViewTestStyle.AllAttrs">
+        <item name="android:text">12345</item>
+        <item name="android:textSize" tools:ignore="PxUsage">100px</item>
+        <item name="android:textColor">@color/palette_color_white0</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:minLines">4</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLength">400</item>
+        <item name="android:minHeight" tools:ignore="PxUsage">200px</item>
+        <item name="android:maxHeight" tools:ignore="PxUsage">400px</item>
+        <item name="android:minWidth" tools:ignore="PxUsage">300px</item>
+        <item name="android:maxWidth" tools:ignore="PxUsage">500px</item>
+        <item name="android:enabled">false</item>
+        <item name="android:fadingEdgeLength" tools:ignore="PxUsage">9px</item>
+        <item name="android:requiresFadingEdge">horizontal</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:breakStrategy" tools:ignore="NewApi">high_quality</item>
+        <item name="android:hyphenationFrequency" tools:targetApi="m">full</item>
+    </style>
+
+    <style name="SbisTextViewTestStyle.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SbisTextViewTestStyle.SingleLine.WithEllipsize">
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <style name="SbisTextViewTestStyle.SingleLine.WithMaxMinLines">
+        <item name="android:maxLines">100</item>
+        <item name="android:minLines">100</item>
+    </style>
+
+    <style name="SbisTextViewTestStyle.TextAppearance">
+        <item name="android:textSize" tools:ignore="SpUsage">25dp</item>
+        <item name="android:textColor">@color/palette_color_black3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="SbisTextViewTestStyle.WithAppearance">
+        <item name="android:textAppearance">@style/SbisTextViewTestStyle.TextAppearance</item>
+    </style>
+
+    <style name="SbisTextViewTestStyle.WithAppearance.WithTextSize">
+        <item name="android:textSize" tools:ignore="SpUsage">100dp</item>
+    </style>
+
+    <style name="SbisTextViewTestStyle.WithAppearance.WithTextColor">
+        <item name="android:textColor">@color/palette_color_white0</item>
+    </style>
+
+    <style name="SbisTextViewTestStyle.WithLines">
+        <item name="android:lines">100</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:minLines">3</item>
+    </style>
+
+    <style name="SbisTextViewTestTheme">
+        <item name="android:textSize" tools:ignore="SpUsage">25dp</item>
+        <item name="android:textColor">@color/palette_color_black3</item>
+    </style>
+
+    <style name="SbisTextViewTestAppTheme">
+        <item name="sbisTextViewTheme">@style/SbisTextViewTestTheme</item>
+    </style>
+
+    <style name="SbisTextViewTestStyle.StyleConstructor">
+        <item name="android:text">12345</item>
+        <item name="android:textSize" tools:ignore="SpUsage">25dp</item>
+        <item name="android:textColor">@color/palette_color_black3</item>
+    </style>
+
+</resources>

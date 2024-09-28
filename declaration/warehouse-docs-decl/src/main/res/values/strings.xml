@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region doc nom filter -->
+    <string name="wrhdoc_nom_filter_confirmed">Confirmed</string>
+    <string name="wrhdoc_nom_filter_not_confirmed">Not confirmed</string>
+    <string name="wrhdoc_nom_without_filters_title">All items</string>
+    <string name="wrhdoc_nom_non_zero_balances_title">Non-zero balance</string>
+    <string name="wrhdoc_nom_zero_balances_title">Zero balance</string>
+    <string name="wrhdoc_nom_negative_balances_title">Negative balance</string>
+    <string name="wrhdoc_nom_unfilled_balances_title">No data on actual qty</string>
+    <string name="wrhdoc_nom_with_deviations_balances_title">With deviation</string>
+    <string name="wrhdoc_nom_deviation_negative_title">With shortage</string>
+    <string name="wrhdoc_nom_deviation_positive_title">With surplus</string>
+    <string name="wrhdoc_nom_in_order_on_addition_title">In order of addition</string>
+    <string name="wrhdoc_nom_alphabetically_asc_title">A to Z</string>
+    <string name="wrhdoc_nom_alphabetically_desc_title">Z to A</string>
+    <string name="wrhdoc_nom_by_number_of_deviations_title">By deviations number</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_title">By deviations amount</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_asc_title">ascending</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_desc_title">descending</string>
+    <!-- endregion -->
+</resources>

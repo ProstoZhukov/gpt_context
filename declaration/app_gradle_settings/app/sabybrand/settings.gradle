@@ -1,0 +1,41 @@
+apply from: "base_brand_settings.gradle"
+
+def appName = "sabybrand"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "barcodereader",
+        "business-components",
+        "calendar",
+        "call-history",
+        "catalog",
+        "communicator",
+        "contractors",
+        "crm",
+        "crypto",
+        "declaration",
+        "design",
+        "common",
+        "disk",
+        "deals",
+        "edo",
+        "employee",
+        "inoutdocuments",
+        "map",
+        "meeting",
+        "motivation",
+        "news",
+        "notification",
+        "personal_documents",
+        "profile",
+        "reporting",
+        "schedule",
+        "tasks",
+        "videocall",
+        "video-monitoring",
+        "warehouse-docs"
+)
+
+include ':app', ':controller'

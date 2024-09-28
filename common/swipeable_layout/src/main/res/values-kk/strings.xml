@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_swipe_menu_add_admin">Тағайындаңыз\nадмин.</string>
+    <string name="design_swipe_menu_get_url_for_attachment">Сілтеме</string>
+    <string name="design_swipe_menu_go_to_dialog">Диалогқа</string>
+    <string name="design_swipe_menu_label_call">Қоңырау шалу</string>
+    <string name="design_swipe_menu_label_hide">Жасыру</string>
+    <string name="design_swipe_menu_label_mark_read">Оқы</string>
+    <string name="design_swipe_menu_label_mark_unread">Оқымаңыз.</string>
+    <string name="design_swipe_menu_label_media">Бейне жарығы</string>
+    <string name="design_swipe_menu_label_message">Жазыңыз</string>
+    <string name="design_swipe_menu_label_move">Қалтаға</string>
+    <string name="design_swipe_menu_label_remove">Жою</string>
+    <string name="design_swipe_menu_remove_admin">Рөлді жою \nадмин.</string>
+    <string name="design_swipe_menu_share">Бөлісу</string>
+    <string name="swipeable_layout_cancel_deletion_message">Жоюдан бас тарту</string>
+    <string name="swipeable_layout_default_post_dismiss_message">Жойылған</string>
+</resources>

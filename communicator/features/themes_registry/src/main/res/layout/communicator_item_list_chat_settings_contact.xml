@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selectable_item_bg_white"
+    android:orientation="vertical">
+
+    <ru.tensor.sbis.swipeablelayout.SwipeableLayout
+        android:id="@+id/communicator_chat_settings_contact_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dragEdge="right">
+
+        <RelativeLayout
+            android:id="@+id/communicator_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectable_item_bg_white">
+
+            <ru.tensor.sbis.design.profile.person.PersonView
+                android:id="@+id/communicator_person_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="?offset_xs"
+                android:layout_marginEnd="?offset_s"
+                android:layout_marginStart="?offset_s"
+                android:layout_marginTop="?borderThickness_l"
+                app:PersonView_size="m"
+                tools:ignore="ContentDescription"
+                tools:layout_height="50dp"
+                tools:layout_width="50dp"
+                tools:src="@drawable/ellipsized_photo_placeholder"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/communicator_person_photo"
+                android:paddingEnd="?offset_m"
+                tools:ignore="RtlSymmetry">
+
+                <ru.tensor.sbis.design.text_span.TextViewWithPostfix
+                    style="@style/MessagesListItem.HeaderText"
+                    android:id="@+id/communicator_contact_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:focusable="false"
+                    android:includeFontPadding="false"
+                    android:scrollbars="none"
+                    android:textColor="?textColor"
+                    tools:text="ФИО"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    style="@style/RegularStyle"
+                    android:id="@+id/communicator_contact_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/communicator_contact_title"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:scrollbars="none"
+                    android:textColor="?readonlyTextColor"
+                    android:textSize="?fontSize_m_scaleOn"
+                    tools:text="Work position"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    style="@style/RegularStyle"
+                    android:id="@+id/communicator_contact_subtitle_second_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/communicator_contact_subtitle"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:scrollbars="none"
+                    android:textColor="?readonlyTextColor"
+                    android:textSize="?fontSize_m_scaleOn"
+                    tools:text="Department"/>
+
+            </RelativeLayout>
+
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                style="@style/RegularStyle"
+                android:id="@+id/communicator_contact_side_attribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="top"
+                android:layout_marginBottom="?offset_xs"
+                android:layout_marginEnd="?offset_m"
+                android:layout_marginStart="?offset_s"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/chat_admin"
+                android:textColor="?hintTextColor"
+                android:textSize="?fontSize_3xs_scaleOn"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            <View
+                android:id="@+id/communicator_common_contact_item_separator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_separator_size"
+                android:background="?separatorColor"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+        </RelativeLayout>
+
+    </ru.tensor.sbis.swipeablelayout.SwipeableLayout>
+
+</LinearLayout>

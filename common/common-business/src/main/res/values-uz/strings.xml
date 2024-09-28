@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_error_check_permission">Ruxsatni tekshirish xatosi</string>
+    <string name="business_error_network_header">Maʼlumotlarni yuklab boʻlmadi</string>
+    <string name="business_error_network_info">Tarmoq ulanishingizni tekshiring</string>
+    <string name="business_error_no_cashbox">Bog\'langan\nhech qanday kassa yo\'q</string>
+    <string name="business_error_no_data">Maʼlumot yoʻq</string>
+    <string name="business_error_no_data_for_filter">Filtrlash parametrlarini\noʻzgartirib koʻring</string>
+    <string name="business_error_no_data_for_period">Tanlangan davr uchun maʼlumot yoʻq</string>
+    <string name="business_error_no_data_found">Bu soʻrov uchun hech narsa topilmadi</string>
+    <string name="business_error_permission">Ushbu harakatni amalga oshirish uchun sizda yetarli huquqlar yo\'q</string>
+    <string name="business_error_receiving_data">Maʼlumotlarni olishda xatolik yuz berdi</string>
+    <string name="business_error_unknown">Noma\'lum xato</string>
+    <string name="business_no_permission_comment">Bu yerda tovar va xizmatlar bo‘yicha daromad ko‘rsatiladi</string>
+    <string name="business_try_change_period">Davrni o\'zgartirishga harakat qiling</string>
+    <string name="business_try_change_period_active">o\'zgartirish davri</string>
+    <string name="business_try_check_connection_and_update_again">Internet aloqangizni tekshiring va qaytadan urining</string>
+    <string name="business_error_popup_network_header">Tarmoqqa ulanish yo‘q</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="whats_new_fragment_title">Что нового</string>
+    <string name="whats_new_phone_image">Картинка телефона</string>
+    <string name="whats_new_logo_sbis">сбис</string>
+    <string name="whats_new_start_button_title">Начать работу</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Snackbar -->
+    <string name="design_dialogs_recipients_max_count_restriction">Вы не можете выбрать более чем %d пользователей.</string>
+    <string name="design_dialogs_recipients_single_count_restriction">Вы не можете выбрать более одного пользователя.</string>
+    <string name="design_dialogs_file_already_attached">Файл уже прикреплен</string>
+</resources>

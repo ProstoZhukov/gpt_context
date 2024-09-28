@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_init_unknown_error">Белгісіз қате</string>
+    <string name="app_init_no_memory_button_title">Жабық</string>
+    <string name="app_init_no_memory_details_msg">Қолданбаны іске қосу үшін құрылғыда орын жеткіліксіз, босатып, әрекетті қайталаңыз</string>
+    <string name="app_init_no_memory_title_msg">Жад жеткіліксіз</string>
+    <string name="app_init_no_memory_toast_msg">Жад жоқ! Босатып, әрекетті қайталаңыз</string>
+</resources>

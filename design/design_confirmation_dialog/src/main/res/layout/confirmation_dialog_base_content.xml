@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Не заменять на SbisTextView, т.к. movementMethod не поддержан -->
+    <TextView
+        android:id="@+id/design_confirmation_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="?contentPaddingConfirmation"
+        android:gravity="center"
+        android:textColor="?textColor"
+        android:textSize="?fontSize_3xl_scaleOff"
+        android:visibility="gone"
+        tool:text="Заголовок"
+        tool:visibility="visible"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/design_confirmation_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="?contentPaddingConfirmation"
+        android:layout_marginTop="?offset_s"
+        android:gravity="center"
+        android:textColor="?labelContrastTextColor"
+        android:textSize="?fontSize_l_scaleOn"
+        android:visibility="gone"
+        tool:text="Комментарий"
+        tool:visibility="visible"/>
+
+    <FrameLayout
+        android:id="@+id/design_confirmation_custom_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        tool:text="Заголовок"
+        tool:visibility="visible"/>
+
+</LinearLayout>

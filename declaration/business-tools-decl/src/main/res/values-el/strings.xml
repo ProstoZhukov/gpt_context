@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_tools_decl_requirement_status_finished">Ολοκληρώθηκε το</string>
+    <string name="business_tools_decl_requirement_confirmation_term_message">Επιβεβαιωμένος. Για την απάντηση %1$s</string>
+    <string name="business_tools_decl_requirement_mark_as_finished_btn_title">Επισήμανση ως ολοκληρωμένου</string>
+    <string name="business_tools_decl_requirement_refuse_message_file_format">Λανθασμένο αρχείο</string>
+    <string name="business_tools_decl_requirement_refuse_message_ratepayer">Απευθύνεται σε άλλο νομικό πρόσωπο.</string>
+    <string name="business_tools_decl_requirement_refuse_message_certificate">Η υπογραφή του επιθεωρητή είναι λανθασμένη</string>
+    <string name="business_tools_decl_confirmation_overdue_response_time_message">Η απάντηση είναι καθυστερημένη</string>
+</resources>

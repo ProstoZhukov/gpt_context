@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="TimeSelectionPeriodPickerDialogTheme" parent="SbisContainer" tools:ignore="ResourceName">
+        <item name="SbisContainerHeaderView_theme">@style/ContainerHeader.TimeSelectionDialog</item>
+        <item name="SbisContainerHeaderDivider_theme">@style/ContainerHeaderDivider.Transparent
+        </item>
+    </style>
+
+    <style name="TimeSelectionPeriodPickerDialogThemeOneDay" parent="SbisContainer" tools:ignore="ResourceName">
+        <item name="SbisContainerHeaderView_theme">
+            @style/ContainerHeader.TimeSelectionDialogOneDay
+        </item>
+        <item name="SbisContainerHeaderDivider_theme">@style/ContainerHeaderDivider.Transparent
+        </item>
+    </style>
+
+    <style name="ContainerHeader.TimeSelectionDialog" tools:ignore="ResourceName">
+        <item name="ToolbarTabLayout_theme">@style/HeaderTabLayoutStyle.TimeSelectionDialog</item>
+    </style>
+
+    <style name="ContainerHeader.TimeSelectionDialogOneDay" tools:ignore="ResourceName">
+        <item name="ToolbarTabLayout_theme">@style/HeaderTabLayoutStyle.TimeSelectionDialogOneDay
+        </item>
+    </style>
+
+    <style name="HeaderTabLayoutStyle.TimeSelectionDialog" tools:ignore="ResourceName">
+        <item name="ToolbarTabLayout_tabSpacing">@dimen/wheel_time_picker_header_tabs_spacing</item>
+    </style>
+
+    <style name="HeaderTabLayoutStyle.TimeSelectionDialogOneDay" parent="HeaderTabLayoutStyle.TimeSelectionDialog" tools:ignore="ResourceName">
+        <item name="ToolbarTabLayout_titleStyle">
+            @style/ContainerHeaderTabStile.TimeSelectionDialogOneDay
+        </item>
+    </style>
+
+    <style name="ContainerHeaderTabStile.TimeSelectionDialogOneDay" tools:ignore="ResourceName">
+        <item name="android:textColor">@color/text_color_accent_2</item>
+    </style>
+
+    <style name="ContainerHeaderDivider.Transparent" tools:ignore="ResourceName">
+        <item name="android:background">@color/palette_color_transparent</item>
+    </style>
+
+</resources>

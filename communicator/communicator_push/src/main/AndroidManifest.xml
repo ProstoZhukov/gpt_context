@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="false">
+
+        <activity
+            android:name="ru.tensor.sbis.communicator.QuickReplyActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@style/DialogActivityTheme"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="${applicationId}.QUICK_REPLY_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <receiver
+            android:name="ru.tensor.sbis.communicator.receiver.QuickReplyReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <receiver
+            android:name="ru.tensor.sbis.communicator.receiver.DeleteMessageReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="ru.tensor.sbis.communicator.receiver.ReadMessageReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

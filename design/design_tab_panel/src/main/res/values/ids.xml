@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="design_tab_panel_view_id" type="id"/>
+    <item name="design_tab_panel_container_view_id" type="id"/>
+    <item name="design_tab_panel_item_view_id" type="id"/>
+</resources>

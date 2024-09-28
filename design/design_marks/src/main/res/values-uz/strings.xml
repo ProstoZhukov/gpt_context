@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_marks_top_title">Izohlar</string>
+    <string name="design_marks_title_clear_label">Qayta tiklash</string>
+    <string name="design_marks_title_important">Muhim</string>
+    <string name="design_marks_title_plus">Bundan tashqari</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retail_views_client_name_hint">Client</string>
+    <string name="retail_views_client_send_receipt_text">Send receipt</string>
+    <string name="retail_views_client_phone_hint">Phone</string>
+    <string name="retail_views_client_save">Save</string>
+
+    <string name="retail_views_client_data_error_phone_length">Телефон нөміріндегі сандар саны: %s.\nЖарамды ұзындық %s пен %s аралығында</string>
+    <string name="retail_views_client_data_error_phone_zeros_only">Телефон нөмірі қате. Сіз тек нөлдері бар телефонды қоса алмайсыз</string>
+    <string name="retail_views_client_data_error_phone_zeros_starting">Телефон нөмірі қате. %s таңбадан ұзын телефондар үш немесе одан да көп нөлден басталуы мүмкін емес</string>
+    <string name="retail_views_client_data_error_email_length">Ұзындығы кемінде %s таңба болуы керек</string>
+    <string name="retail_views_client_data_error_email_format">Жарамсыз электрондық пошта пішімі</string>
+</resources>

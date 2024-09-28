@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableRegionSplit()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.hallscheme"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    testOptions.unitTests.all {
+        testLogging {
+            events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            exceptionFormat 'full'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':design_utils')
+    implementation project(':design_profile')
+    implementation project(':design_sbis_text_view')
+
+    // отображение SVG
+    implementation libs.android.view.svg
+
+    // ZoomLayout
+    // https://n.sbis.ru/news/395f7f93-0d57-4887-8e49-6dd0635f66fb
+    implementation libs.android.view.layout.zoomLayout
+
+    // test
+    testImplementation testLibs.junit
+    testImplementation testLibs.hamcrest
+}
+
+/* Регион-специфичные настройки модуля. */
+regionConfig {
+    regions {
+        ru
+        kz
+    }
+}

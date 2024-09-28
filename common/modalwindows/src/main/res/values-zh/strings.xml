@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="modalwindows_action_cant_be_done_error">无法完成此操作。</string>
+    <string name="modalwindows_read_option_read_all_text">阅读全部</string>
+    <string name="modalwindows_read_option_read_below_text">在此页面及以下</string>
+    <string name="modalwindows_read_option_delete_all_text">删除所有</string>
+</resources>

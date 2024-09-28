@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SwipeMenuItem">
+        <item name="android:background">@drawable/swipeable_layout_menu_item_background_basic</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SwipeMenuItemIconWhite" parent="SwipeMenuItemIcon">
+        <item name="android:textColor">@color/palette_color_white1</item>
+    </style>
+
+    <style name="SwipeMenuItemLabelWhite" parent="SwipeMenuItemLabel">
+        <item name="android:textColor">@color/palette_color_white1</item>
+    </style>
+
+    <style name="SwipeMenuItemLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_black_2</item>
+        <item name="android:textSize">@dimen/item_menu_font_size</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/context_menu_label_horizontal_padding</item>
+        <item name="android:layout_marginRight">@dimen/context_menu_label_horizontal_padding</item>
+        <item name="android:layout_marginTop">@dimen/context_menu_icon_margin_bottom</item>
+    </style>
+
+    <style name="SwipeMenuItemIcon" parent="MobileFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_accent_2</item>
+        <item name="android:textSize">@dimen/context_menu_icon_text_size</item>
+    </style>
+
+    <style name="SwipeMenuSeparator">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/context_menu_separator_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/context_menu_separator_vertical_margin
+        </item>
+        <item name="android:background">@color/palette_alpha_color_black2</item>
+    </style>
+    
+    <style name="SwipeMenuItemView">
+        <item name="SwipeMenuItemView_iconTextColor">@color/text_color_black_2</item>
+        <item name="SwipeMenuItemView_iconTextSize">@dimen/context_menu_icon_text_size</item>
+        <item name="SwipeMenuItemView_labelTextColor">?attr/SwipeableLayout_labelTextColor</item>
+        <item name="SwipeMenuItemView_labelTextSize">@dimen/item_menu_font_size</item>
+        <item name="SwipeMenuItemView_labelHorizontalMargin">@dimen/context_menu_label_horizontal_padding</item>
+        <item name="SwipeMenuItemView_labelTopMargin">@dimen/context_menu_icon_margin_bottom</item>
+    </style>
+    
+</resources>

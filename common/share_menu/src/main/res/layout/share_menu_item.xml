@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/share_menu_item_text"
+    style="@style/ShareMenuItemTextStyle"
+    android:layout_width="match_parent"
+    android:layout_height="?inlineHeight_m"
+    android:gravity="center_vertical|start"
+    android:background="@drawable/share_menu_item_background"
+    android:paddingStart="?offset_m"
+    tools:ignore="RtlSymmetry"
+    tools:text="Контакты"/>

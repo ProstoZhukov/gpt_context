@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="modalwindows_action_cant_be_done_error">Δεν είναι δυνατή η ολοκλήρωση αυτής της ενέργειας.</string>
+    <string name="modalwindows_read_option_read_all_text">Διαβάστε τα όλα</string>
+    <string name="modalwindows_read_option_read_below_text">Σε αυτή τη σελίδα και παρακάτω</string>
+    <string name="modalwindows_read_option_delete_all_text">Διαγραφή όλων</string>
+</resources>

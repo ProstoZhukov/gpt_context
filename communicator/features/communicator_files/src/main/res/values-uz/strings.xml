@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_files_move_success_message">Fayl papkaga ko\'chirildi</string>
+    <string name="conversation_files_item_header_from_message">Xabarga biriktirilgan</string>
+    <string name="conversation_files_item_header_pinned">Belgilangan</string>
+    <string name="conversation_files_item_header_from_theme">Dialogga biriktirilgan</string>
+    <string name="conversation_files_no_data_message">Xabarlar bilan yuborilgan fayllar shu yerda paydo bo\'ladi</string>
+</resources>

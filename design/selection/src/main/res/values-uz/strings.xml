@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selection_all_employees_selected_description">Koʻproq qabul qiluvchilarni qoʻshish uchun boshqa jildga oʻting</string>
+    <string name="selection_all_employees_selected_title">Ushbu bo\'limning barcha xodimlari tanlangan</string>
+    <string name="selection_all_items_selected">Barcha mavjud elementlar tanlandi</string>
+    <string name="selection_all_recipients_selected_title">Boshqa tanlash uchun hech kim</string>
+    <string name="selection_all_regions_selected_title">Barcha mavjud hududlar tanlandi</string>
+    <string name="selection_dialog_relevant_message_i_am_author">Men:</string>
+    <string name="selection_limit_exceeded">%d dan ortiq elementni tanlay olmaysiz</string>
+    <string name="selection_preview_total_count_format">%d ta tanlandi</string>
+    <string name="selection_suggestion_more"/>
+</resources>

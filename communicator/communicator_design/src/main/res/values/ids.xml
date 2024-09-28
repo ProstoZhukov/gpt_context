@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Conversation tabs-->
+    <item name="communicator_conversation_tab_dialogs_id" type="id"/>
+    <item name="communicator_conversation_tab_chats_id" type="id"/>
+
+    <!-- Link Decoration View ids -->
+    <item name="communicator_link_decoration_view_preview_image_id" type="id"/>
+    <item name="communicator_link_decoration_view_title_id" type="id"/>
+    <item name="communicator_link_decoration_view_subtitle_id" type="id"/>
+
+    <!-- Fab from MainActivity -->
+    <!-- Используется для совместимости анкора планшетного всплывающего dialog контейнера в курьере,
+        где пока нет возможности использовать хост master-detail со своим фабом, тк в MainActivity курьера отстуствует планшетная верстка-->
+    <item name="fab" type="id"/>
+
+</resources>

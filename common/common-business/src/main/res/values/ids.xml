@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--View.takeAllAvailableHeightInParent-->
+    <item name="initial_height_tag_key" type="id"/>
+
+    <!-- SbisTopNavigation-->
+    <item name="top_navigation_total_sum" type="id"/>
+    <item name="top_navigation_units" type="id"/>
+</resources>

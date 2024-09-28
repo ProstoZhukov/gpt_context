@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Стиль ННП -->
+    <attr name="tabNavStyle" format="reference"/>
+    <!-- Стиль кнопки меню ННП -->
+    <attr name="tabNavVerticalMenuBtnStyle" format="reference"/>
+
+    <!-- Атрибуты нижней навигационной панели -->
+    <declare-styleable name="TabNavView">
+        <attr name="tabNavViewTextTheme" format="reference"/>
+        <attr name="tabNavDividerTheme" format="reference"/>
+
+        <attr name="tabNavItemSelectedBorderTheme" format="reference"/>
+        <attr name="tabNavItemIconTheme" format="reference"/>
+        <attr name="tabNavItemCounterTheme" format="reference"/>
+        <attr name="tabNavViewHorizontalShadowTheme" format="reference"/>
+        <attr name="tabNavViewVerticalShadowTheme" format="reference"/>
+
+        <attr name="menuButtonLayout" format="reference"/>
+
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+
+        <attr name="canScroll" format="boolean"/>
+
+        <!-- Видимость кнопки меню ННП -->
+        <attr name="menuVisibility" format="enum">
+            <!-- Определяется автоматически в соответствии со стратегией ориентации экрана (значение по-умолчанию) -->
+            <enum name="auto" value="0"/>
+            <!-- Видима всегда -->
+            <enum name="visible" value="1"/>
+            <!-- Видима скрыта -->
+            <enum name="hidden" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

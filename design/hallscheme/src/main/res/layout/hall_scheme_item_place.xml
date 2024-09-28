@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/hall_scheme_place_armchair_width"
+    android:layout_height="@dimen/hall_scheme_place_armchair_height"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    tools:ignore="SpUsage"
+    tools:theme="@style/HallSchemeDarkTheme">
+
+    <ImageView
+        android:id="@+id/placeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hall_scheme_place_chair"
+        android:contentDescription="@null"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/placeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:padding="@dimen/hall_scheme_spacing_large"
+        android:textColor="?attr/hall_scheme_place_default"
+        android:textSize="@dimen/hall_scheme_text_large"
+        android:textStyle="bold"
+        tools:text="100"
+        tools:theme="@style/HallSchemeDarkTheme"/>
+
+</FrameLayout>

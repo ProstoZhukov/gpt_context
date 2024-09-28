@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/business_card_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="?offset_m"
+    app:cardCornerRadius="?borderRadius_2xs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/business_card_item_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:padding="?offset_s">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/business_card_item_title"
+                    style="@style/BoldStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="?textColor"
+                    android:textSize="?fontSize_2xl_scaleOff"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/business_card_item_icon_pinned"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_default="wrap"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/business_card_item_icon_pinned"
+                    style="@style/MobileFontStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="?offset_s"
+                    android:text="@string/design_mobile_icon_pinned"
+                    android:textColor="?unaccentedIconColor"
+                    android:textSize="?iconSize_2xl"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/business_card_item_title"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_default="wrap"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/business_card_item_button_pinned"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="?offset_m"
+                android:text="@string/design_mobile_icon_pinned"
+                android:textColor="?secondaryIconColor"
+                android:textSize="?iconSize_3xl"/>
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/business_card_item_button_link"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="?offset_m"
+                android:text="@string/design_mobile_icon_link"
+                android:textColor="?secondaryIconColor"
+                android:textSize="?iconSize_3xl"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/business_card_items_general_container"
+            android:layout_width="match_parent"
+            android:layout_height="247dp"
+            android:background="@color/palette_color_gray9"
+            android:paddingHorizontal="28dp"
+            android:paddingTop="28dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/business_card_items_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="?borderRadius_2xs"
+                android:minHeight="191dp"
+                android:paddingHorizontal="12dp"
+                tools:ignore="SpUsage"
+                android:background="@color/palette_color_white0">
+
+                <ru.tensor.sbis.fresco_view.ShapedDraweeView
+                    android:id="@+id/business_card_item_photo"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="6dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/business_card_item_name"
+                    style="@style/BoldStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="?textColor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/business_card_item_photo"
+                    tools:text="Давлатова Ольга ПетровнаПетровна ПетровнаПетровнаПетровнаПетровнаПетровнаПетровна"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/business_card_item_job_title"
+                    style="@style/RegularStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="?textColor"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/business_card_item_name"
+                    tools:text="Генеральный директорГенеральный директорГенеральный директорГенеральный директорГенеральный директорГенеральный директорГенеральный директор"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/business_card_item_contacts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="6dp"
+                    android:paddingHorizontal="12dp"
+                    app:layout_constrainedHeight="true"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:listitem="@layout/business_card_contact_item_view"
+                    app:layout_constraintTop_toBottomOf="@+id/business_card_item_job_title"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

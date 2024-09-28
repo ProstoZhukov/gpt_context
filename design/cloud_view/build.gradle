@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.cloud_view"
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    // FileInfoViewModel
+    implementation project(":controller")
+
+    implementation project(":design")
+    implementation project(':design_profile')
+    implementation project(':common')
+    implementation project(':commonviews')
+    implementation project(':attachments-ui')
+    implementation project(':attachments_models')
+    implementation project(':attachments-decl')
+    implementation project(':viewer-decl')
+    implementation project(':design_collection_view')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_list_header')
+    implementation project(':design_buttons')
+    implementation project(':design_audio_player_view')
+    implementation project(':design_video_player_view')
+    implementation project(':container')
+    implementation project(':communication-decl')
+    // ThreadMessageView
+    implementation project(':persons')
+    implementation project(':person-decl')
+    implementation project(':design_counters')
+
+    implementation libs.android.joda
+
+    implementation libs.android.lifecycle.extensions
+    implementation libs.android.view.recyclerView
+
+    testImplementation project(":testing")
+}

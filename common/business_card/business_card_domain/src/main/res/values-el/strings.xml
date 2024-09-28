@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_card_domain_service_unavailable_error">Η υπηρεσία δεν είναι διαθέσιμη προσωρινά</string>
+    <string name="business_card_domain_network_error_snackbar_message">Δεν υπάρχει σύνδεση δικτύου</string>
+    <string name="business_card_domain_unknown_error">Αγνωστο σφάλμα</string>
+    <string name="business_card_domain_no_available_specialist_error_snackbar_message">Δεν υπάρχουν διαθέσιμοι ειδικοί</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Атрибут темы ячейки-облака -->
+    <attr name="incomeCloudViewTheme" format="reference"/>
+    <attr name="outcomeCloudViewTheme" format="reference"/>
+
+    <!-- Атрибуты ячейки-облака -->
+    <declare-styleable name="CloudView">
+        <!-- Цвет фона ячейки -->
+        <attr name="CloudView_backgroundColor" format="reference" />
+        <attr name="CloudView_undeliveredBackgroundColor" format="reference" />
+        <!-- Цвет основного заголовка -->
+        <attr name="CloudView_titleColor" format="reference" />
+        <!-- Цвет подзаголовка -->
+        <attr name="CloudView_subtitleColor" format="reference" />
+        <!-- Цвет текста статуса -->
+        <attr name="CloudView_statusColor" format="reference" />
+        <!-- Цвет иконок (карандаш, часы, глаз) -->
+        <attr name="CloudView_iconColor" format="reference" />
+        <!-- Цвет даты -->
+        <attr name="CloudView_dateColor" format="reference" />
+        <!-- Цвет времени -->
+        <attr name="CloudView_timeColor" format="reference" />
+        <!-- Иконка отметки о редактировании -->
+        <attr name="CloudView_editIcon" format="string" />
+        <!-- Иконка процесса публикации сообщения -->
+        <attr name="CloudView_sendingIcon" format="string" />
+        <!-- Иконка отметки о прочтении -->
+        <attr name="CloudView_readIcon" format="string" />
+        <!-- Иконка отметки о доставке -->
+        <attr name="CloudView_deliveryIcon" format="string" />
+        <!-- Цвет иконки с информацией об ошибке -->
+        <attr name="CloudView_errorIconColor" format="reference" />
+
+        <!-- Максимальное количество отображаемых вложений. -->
+        <attr name="CloudView_maxVisibleAttachmentsCount" format="integer" />
+        <!-- Показывать прогресс загрузки вложений. -->
+        <attr name="CloudView_showAttachmentsUploadProgress" format="boolean" />
+
+        <!-- Метка о том, что сообщение является исходящим -->
+        <attr name="CloudView_outcome" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CloudTitleView">
+        <!-- Метка о том, что заголовок используется в сходящем сообщении -->
+        <attr name="CloudTitleView_outcome" format="boolean"/>
+        <!-- Стиль для текста автора сообщения -->
+        <attr name="CloudTitleView_authorStyle" format="reference"/>
+        <!-- Стиль для текста получателей сообщения -->
+        <attr name="CloudTitleView_receiverStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CloudStatusView">
+        <!-- Метка о том, что статус используется в исходящем сообщении -->
+        <attr name="CloudStatusView_outcome" format="boolean"/>
+        <!-- Размер отступов между иконками -->
+        <attr name="CloudStatusView_iconsHorizontalPadding" format="dimension"/>
+        <!-- Стиль для текста иконки отправляемого сообщения -->
+        <attr name="CloudStatusView_sendingIconStyle" format="reference"/>
+        <!-- Стиль для текста иконки отредактированного сообщения -->
+        <attr name="CloudStatusView_editedIconStyle" format="reference"/>
+        <!-- Стиль для текста иконки непрочитанного сообщения -->
+        <attr name="CloudStatusView_notReadIconStyle" format="reference"/>
+        <!-- Стиль для текста иконки недоставленного сообщения -->
+        <attr name="CloudStatusView_undeliveredIconStyle" format="reference"/>
+        <!-- Стиль для текста статуса сообщения -->
+        <attr name="CloudStatusView_messageStateStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CloudDateTimeView">
+        <!-- Метка о том, что необходимо отображать дату -->
+        <attr name="CloudDateTimeView_isDate" format="boolean" />
+    </declare-styleable>
+
+</resources>

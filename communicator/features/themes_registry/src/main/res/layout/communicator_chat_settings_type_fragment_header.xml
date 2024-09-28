@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?offset_xs"
+        android:paddingBottom="?offset_xs"
+        android:background="@drawable/base_component_selection_window_header_background">
+        
+        <View
+            android:layout_width="?inlineHeight_s"
+            android:layout_height="0dp"
+            android:background="@drawable/communicator_chat_settings_header_handle_shape"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

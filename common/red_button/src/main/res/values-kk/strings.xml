@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="red_button_cloud_alert_message">Барлық ақпарат уақытша жасырылады. Аты-жөні мен телефон нөмірлері көрсетілген \"Қызметкерлер \" ғана қалдырыңыз.</string>
+    <string name="red_button_cloud_alert_title">Деректерді жасыру керек пе?</string>
+    <string name="red_button_code_again">Кодты қайтадан алыңыз</string>
+    <string name="red_button_message_pin_close">Бұлтқа кіруді кейіннен қалпына келтіру үшін пин кодын есте сақтаңыз</string>
+    <string name="red_button_message_pin_confirmation">PIN кодын қайта енгізіңіз</string>
+    <string name="red_button_message_pin_open">PIN кодын ұмытып қалсаңыз, менеджерге хабарласыңыз</string>
+    <string name="red_button_network_error">Желі байланысы жоқ</string>
+    <string name="red_button_password_sent_on_phone_template">Код %1$s мекенжайына жіберілді</string>
+    <string name="red_button_repeat_through">%s кейін қайталаңыз</string>
+    <string name="red_button_stub_subtitle">Қолданбаны жүктеп алып, оны қайта ашыңыз.</string>
+    <string name="red_button_stub_title_close">Қолданбаны қайта іске қосқаннан кейін деректер жасырылады</string>
+    <string name="red_button_stub_title_open">Деректерге қол жеткізу қолданбаны қайта іске қосқаннан кейін қайтарылады</string>
+    <string name="red_button_stub_toolbar_text">Баптаулар</string>
+    <string name="red_button_title_close">Деректерді жабу?</string>
+    <string name="red_button_title_close_progress">Деректер жабылады</string>
+    <string name="red_button_title_open">Ашық деректер</string>
+    <string name="red_button_title_open_progress">Деректер ашық</string>
+    <string name="red_button_title_pin_confirmation">PIN кодын растаңыз</string>
+    <string name="red_button_title_pin_off">PIN кодын енгізіңіз</string>
+    <string name="red_button_title_pin_on">Пин-кодпен келіңіз</string>
+    <string name="red_button_title_sms">SMS кодын енгізіңіз</string>
+    <string name="red_button_uu_alert_message">\"Басқару есебі\" ұйымы бойынша барлық құжаттар, операциялар мен есептер уақытша жасырылады. Қарапайым заңды тұлғалардың құжаттары бойынша. беттері өзгермейді.</string>
+</resources>

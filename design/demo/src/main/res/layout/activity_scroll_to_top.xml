@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ru.tensor.sbis.design.scroll_to_top.ScrollToTop
+        android:id="@+id/scrollToTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:overlayColor="@color/palette_color_white1"
+        app:rightDrawable="@drawable/offline_indicator"
+        app:rightText="offline"
+        app:rootView="@id/coordinator_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Диалоги"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

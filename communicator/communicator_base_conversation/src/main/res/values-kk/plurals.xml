@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <plurals name="communicator_participants_count">
+        <item quantity="one">%1$d қатысушы</item>
+        <item quantity="other">%1$d қатысушылар</item>
+    </plurals>
+
+    <plurals name="communicator_typing">
+        <item quantity="one" tools:ignore="ImpliedQuantity">басып шығарады</item>
+        <item quantity="other">басып шығару</item>
+    </plurals>
+</resources>

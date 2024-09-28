@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order_message_company_description">Algunos art&#xed;culos deben colocarse en un pedido separado.</string>
+    <string name="order_message_company_title">Productos seleccionados de diferentes organizaciones.</string>
+    <string name="order_message_queue_description">Algunas posiciones deben emitirse con una entrada separada</string>
+    <string name="order_message_queue_no_specialist">No hay ning&#xfa;n especialista</string>
+    <string name="order_message_queue_title">Servicios seleccionados de diferentes especialistas.</string>
+    <string name="order_message_nomenclature_changed_price_description">Se han agregado art&#xed;culos al carrito al nuevo precio. Costo total actualizado</string>
+    <string name="order_message_nomenclature_changed_price_title">Los precios han cambiado</string>
+    <string name="order_message_nomenclature_not_published_description">Los art&#xed;culos han sido eliminados del carrito. \nCosto total actualizado</string>
+    <string name="order_message_nomenclature_not_published_title">Estos art&#xed;culos ya no est&#xe1;n disponibles para ordenar.</string>
+    <string name="order_message_salon_nomenclature_changed_price_description">Se han agregado servicios al carrito al nuevo precio. Costo total actualizado</string>
+    <string name="order_message_salon_nomenclature_not_published_title">Estos servicios ya no est&#xe1;n disponibles para ordenar.</string>
+    <string name="order_message_nomenclature_has_changes_title">Hay cambios</string>
+    <string name="order_message_nomenclature_has_changes_description">Los elementos no disponibles se han eliminado\nde la papelera. El coste final ha sido actualizado.</string>
+    <string name="order_message_nomenclature_price_has_changed_title">El precio ha cambiado</string>
+    <string name="order_message_nomenclature_not_available_for_order_title">No disponible para pedidos</string>
+    <string name="order_message_stop_list_title">Productos en la lista de parada</string>
+    <string name="order_message_stop_list_description">Los art&#xed;culos han sido eliminados de la cesta\ni su n&#xfa;mero es limitado</string>
+    <string name="order_message_stop_list_available">Disponible</string>
+    <string name="order_message_different_nom_taxes_title">Los art&#xed;culos seleccionados\nno se pueden agregar a un solo recibo</string>
+    <string name="order_message_different_nom_taxes_description">Elimina algunos art&#xed;culos del carrito de compras y col&#xf3;calos en un pedido separado.</string>
+    <string name="order_message_different_nom_taxes_order_number">Orden %d</string>
+</resources>

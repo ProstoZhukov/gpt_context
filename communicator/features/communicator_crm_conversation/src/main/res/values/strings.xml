@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_reassign_to_queue_option">Return to queue</string>
+    <string name="communicator_crm_reassign_to_group_option">Reassign</string>
+    <string name="communicator_crm_reassign_to_operator_option">Other employee</string>
+    <string name="communicator_crm_reassign_to_operator_edit_hint">Comment for operator</string>
+    <string name="communicator_crm_copy_link_option">Copy link</string>
+    <string name="communicator_crm_request_contacts_option">Ask for contact details</string>
+    <string name="communicator_crm_write_to_client_option">Write to client</string>
+    <string name="communicator_crm_complete_option">Complete</string>
+    <string name="communicator_crm_delete_option">Delete</string>
+    <string name="communicator_crm_take_button_text">Take over chat</string>
+    <string name="communicator_crm_reopen_button_text">Resume chat</string>
+    <string name="communicator_crm_brand_title">Chat</string>
+    <string name="communicator_crm_service_message_rate_request_button_title">Rate</string>
+    <string name="communicator_crm_rate_title">Rate our service</string>
+    <string name="communicator_crm_rate_comment_placeholder">Comment</string>
+    <string name="communicator_crm_rate_send_button_title">Send</string>
+    <string name="communicator_crm_rate_validation_error">Required field</string>
+    <string name="communicator_crm_quick_reply_empty_stub">Quick replies list is empty</string>
+    <string name="communicator_crm_sabyget_stub_message">Communicate</string>
+    <string name="communicator_crm_conversation_stub_subtitle">Here you\'ll find your dialogs \nwith the place and specialists</string>
+    <string name="communicator_crm_chat_cant_view_permisshion">You don\'t have permission to \naccess this chat</string>
+    <string name="communicator_crm_brand_stub_message">Write to us</string>
+</resources>

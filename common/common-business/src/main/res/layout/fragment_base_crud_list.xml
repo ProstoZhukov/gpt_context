@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.business.common.ui.base.contract.ScreenContract"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/business_app_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ru.tensor.sbis.design.topNavigation.view.SbisTopNavigationView
+            android:id="@+id/top_navigation_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationContent="@{viewModel.state}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <FrameLayout
+            android:id="@+id/toolbar_bottom_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_navigation_container"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_bottom_container">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_behavior="@string/input_view_appbar_with_dynamic_elevation_behavior"
+                app:scrollview_id="@id/content">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/palette_color_white1"
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="noScroll">
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <!--suppress AndroidDomInspection -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <!-- Область для отображения основнго контента в реестре -->
+                <ru.tensor.sbis.design.progress.SbisPullToRefresh
+                    android:id="@+id/refresh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constrainedHeight="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:setEnabled="@{safeUnbox(viewModel.isRefreshEnabled)}"
+                    app:setRefreshing="@{safeUnbox(viewModel.isRefresh)}"
+                    app:swipeAction="@{viewModel::refreshForceUpdate}">
+
+                    <include
+                        android:id="@+id/list_container"
+                        layout="@layout/list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:refreshView="@{refresh}"
+                        app:viewModel="@{viewModel}"/>
+
+                </ru.tensor.sbis.design.progress.SbisPullToRefresh>
+
+                <include
+                    android:id="@+id/progress_view"
+                    layout="@layout/business_progress_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:isInitialProgress="@{safeUnbox(viewModel.showInitialProgress)}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:visibility="visible"/>
+
+                <!-- Область для отображения опциональных элементов над реестром -->
+                <ViewStub
+                    android:id="@+id/optional_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inflatedId="@+id/optional_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout="@layout/search_input_view"
+                    tools:visibility="visible"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.navigation_service"
+}
+
+dependencies {
+    implementation project(':controller')
+    implementation project(':plugin_manager')
+    implementation project(':toolbox-decl')
+    api project(':main_screen_decl')
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.ext.kotlinxCoroutinesCoreVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+}

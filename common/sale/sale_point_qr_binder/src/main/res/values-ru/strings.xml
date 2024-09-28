@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="spqrb_bind_completed">QR-код успешно привязан к точке продаж</string>
+    <string name="spqrb_error_broken_push_format">Неверный формат пуш-уведомления %d</string>
+    <string name="spqrb_error_internal_bind_failure">Не удалось осуществить привязку QR-кода. Внутренняя ошибка приложения.</string>
+    <string name="spqrb_action_scan_again">Cканировать еще раз</string>
+</resources>

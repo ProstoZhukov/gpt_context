@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="?offset_l"
+    android:paddingVertical="?offset_l">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/communicator_crm_rate_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?textColor"
+        android:textSize="?fontSize_xl_scaleOff"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:text="@string/communicator_crm_rate_title"/>
+
+    <FrameLayout
+        android:id="@+id/communicator_crm_rate_icons_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingVertical="?offset_l"
+        android:layout_below="@+id/communicator_crm_rate_title" />
+
+    <ru.tensor.sbis.design.view.input.text.MultilineInputView
+        android:id="@+id/communicator_crm_rate_comment_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:inputView_placeholder="@string/communicator_crm_rate_comment_placeholder"
+        android:paddingBottom="?offset_l"
+        android:layout_below="@+id/communicator_crm_rate_icons_container"/>
+
+    <ru.tensor.sbis.design.buttons.SbisButton
+        android:id="@+id/communicator_crm_rate_send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:SbisButton_style="secondary"
+        app:SbisButton_title="@string/communicator_crm_rate_send_button_title"
+        app:SbisButton_backgroundType="contrast"
+        android:layout_below="@+id/communicator_crm_rate_comment_field"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

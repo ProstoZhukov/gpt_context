@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedResources">
+
+    <!-- DARK THEME -->
+    <!-- НЕ ИСПОЛЬЗОВАТЬ НАПРЯМУЮ -->
+    <!-- Для обращения к константам, использовать ссылки ?attr/<название_константы_без_префикса>, 
+    например, для обращения к dark_main_toolbar_color использовать ?attr/retail_main_toolbar_color -->
+
+    <!-- Цвет тулбара на основных экранах -->
+    <color name="retail_dark_main_toolbar_color">#283C53</color>
+    <!-- Цвет квадратных кнопок на основном тулбаре -->
+    <color name="retail_dark_main_toolbar_button_color">#304660</color>
+    <!-- Цвет текста на основном тулбаре -->
+    <color name="retail_dark_main_toolbar_text_color">#FFFFFF</color>
+    <!-- Цвет основного фона -->
+    <color name="retail_dark_main_background_color">#1D2834</color>
+    <!-- Цвет иконок на основном фоне -->
+    <color name="retail_dark_main_background_icon_color">#839EBC</color>
+    <!-- Цвет текста на основном фоне -->
+    <color name="retail_dark_main_background_text_color">#E4E4E4</color>
+    <!-- Дополнительный цвет текста на основном фоне -->
+    <color name="retail_dark_main_background_secondary_text_color">#8991A9</color>
+    <!-- Цвет недоступного текста на основном фоне -->
+    <color name="retail_dark_main_background_disabled_text_color">#4B688B</color>
+    <!--Цвет акцентного текста на основном фоне-->
+    <color name="retail_dark_main_background_accent_text_color">#FFCC99</color>
+    <!-- Цвет кнопок-ссылок на основном фоне -->
+    <color name="retail_dark_main_background_button_link_text_color">#26B8FF</color>
+    <!-- Основной цвет обводки -->
+    <color name="retail_dark_border_color">#6D8DB0</color>
+    <!-- Цвет обводки выделенной кнопки -->
+    <color name="retail_dark_selected_button_border_color">#26B8FF</color>
+    <!-- Цвет иконок, текста по ховеру -->
+    <color name="retail_dark_main_background_hover_color">#B9E9FF</color>
+    <!-- Цвет неакцентного текста -->
+    <color name="retail_dark_unaccent_text_color">@color/palette_color_dark_gray1</color>
+    <!-- Цвет неакцентной обводки -->
+    <color name="retail_dark_unaccent_border_color">#D2D6DA</color>
+    <!--Цвет иконки оборудования-->
+    <color name="retail_dark_device_icon_tint_color">#E4E4E4</color>
+    <!-- Дополнительный цвет текста -->
+    <color name="retail_dark_secondary_text_color">#B9C9F0</color>
+    <!-- Цвет текста-метки -->
+    <color name="retail_dark_additional_label_text_color">#7D8CAA</color>
+
+    <!-- Цвет тулбара на боковых выезжающих экранах -->
+    <color name="retail_dark_side_toolbar_color">#39506A</color>
+    <!-- Цвет текста на тулбаре на боковых выезжающих экранах -->
+    <color name="retail_dark_side_toolbar_text_color">#FFCC99</color>
+    <!-- Цвет кнопок на тулбаре на боковых выезжающих экранах -->
+    <color name="retail_dark_side_toolbar_button_color">#405A77</color>
+    <!-- Цвет текста на кнопках на тулбаре на боковых выезжающих экранах -->
+    <color name="retail_dark_side_toolbar_button_text_color">#8991A9</color>
+    <!-- Цвет фона боковых выезжающих экранов -->
+    <color name="retail_dark_side_background_color">#273749</color>
+
+    <!-- Цвет основной плашки -->
+    <color name="retail_dark_fragment_background_color">#1D2D3D</color>
+    <!-- Вспомогательный цвет основной плашки -->
+    <color name="retail_dark_fragment_background_secondary_color">#253a4e</color>
+    <!-- Цвет фона неакцентных кнопок-иконок  -->
+    <color name="retail_dark_fragment_background_secondary_button_color">#2d4760</color>
+    <!-- Цвет заголовка основной плашки -->
+    <color name="retail_dark_fragment_title_text_color">#8991A9</color>
+    <!-- Цвет маленьких плашек-карточек -->
+    <color name="retail_dark_fragment_card_background_color">#273749</color>
+    <!-- Цвет текста на маленьких плашках-карточках -->
+    <color name="retail_dark_fragment_card_text_color">#E4E4E4</color>
+    <!-- Цвет вспомогательного текста на маленьких плашках-карточках -->
+    <color name="retail_dark_fragment_card_hover_color">#2D3F54</color>
+    <!-- Цвет иконки для кнопки закрыть -->
+    <color name="retail_dark_fragment_btn_close_icon_color">@color/retail_dark_main_background_secondary_text_color</color>
+
+    <!-- Цвет фона шапки всплывающих диалогов -->
+    <color name="retail_dark_popup_background_header_color">#6080A4</color>
+    <!-- Цвет фона всплывающих диалогов -->
+    <color name="retail_dark_popup_background_color">#405A77</color>
+    <!-- Цвет текста всплывающих диалогов -->
+    <color name="retail_dark_popup_text_color">#E4E4E4</color>
+    <!-- Цвет текста шапки всплывающих диалогов -->
+    <color name="retail_dark_popup_text_header_color">#FFFFFF</color>
+    <!-- Цвет иконок всплывающих диалогов -->
+    <color name="retail_dark_popup_icon_color">#839EBC</color>
+    <!-- Цвет обводки всплывающих диалогов -->
+    <color name="retail_dark_popup_hover_color">#476485</color>
+    <!-- Цвет тени всплывающих диалогов -->
+    <color name="retail_dark_popup_shadow_color">#80000000</color>
+    <!-- Цвет текста на всплывающем диалоге в item c текстом еще-->
+    <color name="retail_dark_popup_more_item_text_color">#839EBC</color>
+
+    <!-- Цвет вспомогательной кнопки -->
+    <color name="retail_dark_secondary_button_background_color">#567395</color>
+    <!-- Цвет текста на вспомогательной кнопке -->
+    <color name="retail_dark_secondary_button_text_color">#FFFFFF</color>
+
+    <!--Цвет иконки узла в дереве-->
+    <color name="retail_dark_tree_icon_color">#839EBC</color>
+   <!--Цвет текста корневой папки-->
+    <color name="retail_dark_parent_folder_text_color">#FFCC99</color>
+
+    <!-- Всякие вспомогательные цвета -->
+    <color name="retail_dark_main_accent">#D94700</color>
+    <color name="retail_dark_main_red">#EF463A</color>
+    <color name="retail_dark_main_yellow">#FEC63F</color>
+    <color name="retail_dark_main_orange">#FF7033</color>
+    <color name="retail_dark_main_blue">#2D68B5</color>
+    <color name="retail_dark_main_green">#72BE44</color>
+
+    <!-- Цвет полосочек-разделителей -->
+    <color name="retail_dark_divider_color">#10000000</color>
+
+    <!-- Цвет выделения текста в найденных результатах при поиске -->
+    <color name="retail_dark_searched_text_background_color">#996D8DB0</color>
+
+    <!-- Цвет заголовка в диалоговом окне -->
+    <color name="retail_dark_dialog_toolbar_text_color">#FFCC99</color>
+
+    <!-- Цвета информационного окна -->
+    <color name="retail_dark_alert_dialog_neutral_header_color">#26B8FF</color>
+    <color name="retail_dark_alert_dialog_error_header_color">#EF463A</color>
+    <color name="retail_dark_alert_dialog_success_header_color">#72BE44</color>
+    <color name="retail_dark_alert_dialog_footer_color">#39506A</color>
+
+    <!-- Цвета хлебных крошек в настройках -->
+    <color name="retail_dark_extra_navigation_view_stroke_color">#364c65</color>
+    <color name="retail_dark_extra_navigation_view_selected_color">#2f445c</color>
+
+    <!--Tabs-->
+    <!--Цвет выделеной вкладки в таб виджете-->
+    <color name="retail_dark_fragment_tab_selected_background_color">@color/retail_dark_side_background_color</color>
+    <!--Цвет обычной вкладки в таб виджете-->
+    <color name="retail_dark_fragment_tab_background_color">#23303e</color>
+
+    <!--Цвет кнопки плюс на экране возвратов и удаления-->
+    <color name="retail_dark_refund_plus_icon_color">#FFFFFF</color>
+
+    <!--Цвет фона выбранного элемента в списке продажи-->
+    <color name="retail_dark_sale_item_selected_background_color">#2D3F54</color>
+
+    <color name="retail_dark_swipeable_background_color">#283C53</color>
+    <color name="retail_dark_disabled_button_text_color">#26FFFFFF</color>
+
+    <!-- Money View -->
+    <color name="retail_dark_money_view_kopeck_accent_color">#CEB1B1</color>
+    <color name="retail_dark_money_view_integer_color">#FFCC99</color>
+    <color name="retail_dark_money_view_decimal_color">#8991A9</color>
+
+    <!-- Цвет галки в чекбоксе -->
+    <color name="retail_dark_disabled_checkbox_color">#465b72</color>
+
+    <!-- Цвет фона окна оплаты -->
+    <color name="retail_dark_payment_background">#273749</color>
+
+    <!-- Цвета контента в задисейбленной ячейке списка -->
+    <color name="retail_dark_disabled_item_title_text_color">@color/palette_color_dark_gray1</color>
+    <color name="retail_dark_disabled_item_content_text_color">@color/palette_color_white4</color>
+</resources>

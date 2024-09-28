@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Цвет выделения текста в полях ввода. Реализация для API < 23. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        Задаем цвет и прозрачность напрямую т. к. использование атрибутов темы
+        (ими являются глобальные переменные) и атрибута android:alpha в подобных селекторах цвета
+        не поддерживается до API 23.
+        https://developer.android.com/reference/android/content/res/ColorStateList#item-attributes
+        Для API 23+ цвет выводится на основе глобальной переменной с измененем прозрачности.
+    -->
+    <item android:color="#4D316BAF"/> <!-- 30% secondaryBorderColor -->
+</selector>

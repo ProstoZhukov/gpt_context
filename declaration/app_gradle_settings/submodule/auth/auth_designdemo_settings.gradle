@@ -1,0 +1,5 @@
+include ':settings-screen-decl'
+project(':settings-screen-decl').projectDir = new File(authDir, "settings-screen-decl")
+
+include ':settings-screen-common'
+project(':settings-screen-common').projectDir = new File(authDir, "settings-screen-common")

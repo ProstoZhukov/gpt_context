@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_close">Yaqin</string>
+    <string name="onboarding_close_icon">&#xe902;</string>
+    <string name="onboarding_empty_title">""</string>
+    <string name="onboarding_start_work">Boshlash</string>
+</resources>

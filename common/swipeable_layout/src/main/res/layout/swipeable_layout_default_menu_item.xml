@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.swipeablelayout.swipeablevm.SwipeMenuItemVm"/>
+    </data>
+
+    <ru.tensor.sbis.swipeablelayout.view.SwipeMenuItemView
+        style="@style/SwipeMenuItemView"
+        android:layout_width="@dimen/operation_item_menu_button_width"
+        android:layout_height="match_parent"
+        android:backgroundColor="@{viewModel.background}"
+        android:focusable="@{viewModel.focusable}"
+        app:autotestsText="@{viewModel.autotestsText}"
+        app:enableSwipeMenuItemBackgroundTint="@{viewModel.backgroundTintEnabled}"
+        app:iconText="@{viewModel.icon}"
+        app:iconTextColor="@{viewModel.iconColor}"
+        app:isClickPostponedUntilMenuClosed="@{viewModel.isClickPostponedUntilMenuClosed}"
+        app:labelSingleLine="@{viewModel.labelSingleLine}"
+        app:labelText="@{viewModel.label}"
+        app:labelVisible="@{viewModel.labelVisible}"
+        app:swipeMenuItemClickListener="@{viewModel.clickAction}"
+        app:swipeMenuViewClickListener="@{viewModel.viewClickAction}"
+        app:symbol="@{viewModel.symbol}"/>
+</layout>

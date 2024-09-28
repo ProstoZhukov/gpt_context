@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region RU -->
+    <plurals name="currency_plural_RU">
+        <item quantity="zero">rubls</item>
+        <item quantity="one">rubl</item>
+        <item quantity="two">rubls</item>
+        <item quantity="few">rubls</item>
+        <item quantity="many">rubls</item>
+    </plurals>
+    <plurals name="subunit_plural_RU">
+        <item quantity="zero">kopecks</item>
+        <item quantity="one">kopeck</item>
+        <item quantity="two">kopecks</item>
+        <item quantity="few">kopecks</item>
+        <item quantity="many">kopecks</item>
+    </plurals>
+    <string name="short_currency_RU">rub.</string>
+    <string name="super_short_currency_RU">r.</string>
+    <string name="short_subunit_RU">kop.</string>
+    <string name="super_short_subunit_RU">k.</string>
+    <string name="symbol_RU">₽</string>
+    <!--endregion-->
+
+    <!-- region KZ -->
+    <plurals name="currency_plural_KZ">
+        <item quantity="zero">tenge</item>
+        <item quantity="one">tenge</item>
+        <item quantity="two">tenge</item>
+        <item quantity="few">tenge</item>
+        <item quantity="many">tenge</item>
+    </plurals>
+    <plurals name="subunit_plural_KZ">
+        <item quantity="zero">tiyn</item>
+        <item quantity="one">tiyn</item>
+        <item quantity="two">tiyn</item>
+        <item quantity="few">tiyn</item>
+        <item quantity="many">tiyn</item>
+    </plurals>
+    <string name="short_currency_KZ">tng.</string>
+    <string name="super_short_currency_KZ">t.</string>
+    <string name="short_subunit_KZ">tiyn</string>
+    <string name="super_short_subunit_KZ">tiyn</string>
+    <string name="symbol_KZ">₸</string>
+    <!--endregion-->
+
+    <!-- region UZ -->
+    <plurals name="currency_plural_UZ">
+        <item quantity="zero">soums</item>
+        <item quantity="one">soum</item>
+        <item quantity="two">soums</item>
+        <item quantity="few">soums</item>
+        <item quantity="many">soums</item>
+    </plurals>
+    <plurals name="subunit_plural_UZ">
+        <item quantity="zero">tiyins</item>
+        <item quantity="one">tiyin</item>
+        <item quantity="two">tiyins</item>
+        <item quantity="few">tiyins</item>
+        <item quantity="many">tiyins</item>
+    </plurals>
+    <string name="short_currency_UZ">soum</string>
+    <string name="super_short_currency_UZ">s.</string>
+    <string name="short_subunit_UZ">tiyin</string>
+    <string name="super_short_subunit_UZ">t.</string>
+    <string name="symbol_UZ">Soʻm</string>
+    <!--endregion-->
+
+    <!-- region US -->
+    <plurals name="currency_plural_US">
+        <item quantity="zero">dollars</item>
+        <item quantity="one">dollar</item>
+        <item quantity="two">dollars</item>
+        <item quantity="few">dollars</item>
+        <item quantity="many">dollars</item>
+    </plurals>
+    <plurals name="subunit_plural_US">
+        <item quantity="zero">cents</item>
+        <item quantity="one">cent</item>
+        <item quantity="two">cents</item>
+        <item quantity="few">cents</item>
+        <item quantity="many">cents</item>
+    </plurals>
+    <string name="short_currency_US">dol.</string>
+    <string name="super_short_currency_US">d.</string>
+    <string name="short_subunit_US">cent</string>
+    <string name="super_short_subunit_US">c.</string>
+    <string name="symbol_US">$</string>
+    <!--endregion-->
+
+
+</resources>

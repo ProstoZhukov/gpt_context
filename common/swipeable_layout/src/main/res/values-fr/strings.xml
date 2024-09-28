@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_swipe_menu_add_admin">Nommer en tant qu\'administrateur.</string>
+    <string name="design_swipe_menu_get_url_for_attachment">Lien</string>
+    <string name="design_swipe_menu_go_to_dialog">Pour dialoguer</string>
+    <string name="design_swipe_menu_label_call">Appel</string>
+    <string name="design_swipe_menu_label_hide">Cacher</string>
+    <string name="design_swipe_menu_label_mark_read">Lire</string>
+    <string name="design_swipe_menu_label_mark_unread">Non lu</string>
+    <string name="design_swipe_menu_label_media">Appel video</string>
+    <string name="design_swipe_menu_label_message">Message</string>
+    <string name="design_swipe_menu_label_move">Vers le dossier</string>
+    <string name="design_swipe_menu_label_remove">Supprimer</string>
+    <string name="design_swipe_menu_remove_admin">Supprimez le rôle d\'administrateur.</string>
+    <string name="design_swipe_menu_share">Partager</string>
+    <string name="swipeable_layout_cancel_deletion_message">Annuler la suppression</string>
+    <string name="swipeable_layout_default_post_dismiss_message">Supprimé</string>
+</resources>

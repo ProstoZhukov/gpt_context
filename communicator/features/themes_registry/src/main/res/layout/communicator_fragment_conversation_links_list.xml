@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?unaccentedAdaptiveBackgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ru.tensor.sbis.crud3.ListComponentView
+        android:id="@+id/communicator_conversation_links_list"
+        android:theme="@style/CommunicatorConversationLinksListTheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</RelativeLayout>

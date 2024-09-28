@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="logging_confirmation_dismiss">Annuler</string>
+    <string name="logging_confirmation_success">Confirmer</string>
+    <string name="logging_confirmation_text">J\'accepte d\'envoyer des informations depuis l\'appareil pour analyser et améliorer l\'application.</string>
+    <string name="logging_confirmation_total_size_text">%1$s modifié</string>
+    <string name="logging_copy_to_clipboard">Numéro d\'incident copié dans le presse-papiers</string>
+    <string name="logging_disable_log_stub_description">Autoriser la collecte des données de l\'appareil\npour une analyse plus approfondie.</string>
+    <string name="logging_disable_log_stub_title">Pas de données</string>
+    <string name="logging_floating_send_btn_text">Envoyer tout</string>
+    <string name="logging_force_log_delivery_launcher_label">Envoi de journaux</string>
+    <string name="logging_host_toolbar_title">Journaux</string>
+    <string name="logging_log_package_size_kilobytes">%.1f Kb</string>
+    <string name="logging_log_package_size_megabytes">%.1f Mb</string>
+    <string name="logging_mobile_icon_check">&#xe990;</string>
+    <string name="logging_mobile_icon_clock">&#xeba0;</string>
+    <string name="logging_preparing_sending_logs">Analyse du package de journalisation</string>
+    <string name="logging_sending_logs_in_progress">Envoi des journaux au serveur</string>
+    <string name="logging_settings_delay_label">Enregistrement</string>
+    <string name="logging_settings_diagnostic_settings_full">Complet</string>
+    <string name="logging_settings_diagnostic_settings_only_logs">Seuls les journaux</string>
+    <string name="logging_settings_diagnostic_settings_selective">Sélectif</string>
+    <string name="logging_settings_header_title_diagnostic_settings">Données pour le diagnostic</string>
+    <string name="logging_settings_header_title_level">Niveau de journalisation</string>
+    <string name="logging_settings_header_title_root">Paramètre de journalisation</string>
+    <string name="logging_settings_header_title_storage_interval">Durée de conservation des colis</string>
+    <string name="logging_settings_header_title_writing_mode">Enregistrement</string>
+    <string name="logging_settings_level_label">Niveau</string>
+    <string name="logging_settings_log_delay_delayed">Différé</string>
+    <string name="logging_settings_log_delay_immediate">Immédiat</string>
+    <string name="logging_settings_log_level_debug">Déboguer</string>
+    <string name="logging_settings_log_level_disabled">Désactivé</string>
+    <string name="logging_settings_log_level_extended">Avancé</string>
+    <string name="logging_settings_log_level_minimal">Le minimum</string>
+    <string name="logging_settings_log_level_standart">Standard</string>
+    <string name="logging_settings_log_query_to_db">Enregistrer le plan de requête dans la base de données</string>
+    <string name="logging_settings_log_storage_interval_day">Un jour</string>
+    <string name="logging_settings_log_storage_interval_three_days">3 jours</string>
+    <string name="logging_settings_log_storage_interval_two_days">2 jours</string>
+    <string name="logging_settings_log_storage_interval_week">1 semaine</string>
+    <string name="logging_settings_storage_interval_label">Durée de conservation</string>
+    <string name="logging_settings_wifi_label">Envoi Wi-Fi uniquement</string>
+    <string name="logging_slider_label">Activer la journalisation</string>
+    <string name="logging_waiting_inet_sending_logs">En attente de réseau</string>
+    <string name="logging_waiting_sending_logs">En attente d\'envoi</string>
+    <string name="logging_waiting_wifi_sending_logs">En attente de Wi-F</string>
+</resources>

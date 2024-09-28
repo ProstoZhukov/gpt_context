@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_tools_decl_confirmation_overdue_response_time_message">Жауап беру уақыты аяқталды</string>
+    <string name="business_tools_decl_requirement_confirmation_term_message">Расталды. %1$s жауап үшін</string>
+    <string name="business_tools_decl_requirement_mark_as_finished_btn_title">Аяқталған деп белгілеңіз</string>
+    <string name="business_tools_decl_requirement_refuse_message_certificate">Жарамсыз инспектор қолы</string>
+    <string name="business_tools_decl_requirement_refuse_message_file_format">Қате файл</string>
+    <string name="business_tools_decl_requirement_refuse_message_ratepayer">Басқа заңды тұлғаға жүгінген</string>
+    <string name="business_tools_decl_requirement_status_finished">Аяқталды</string>
+</resources>

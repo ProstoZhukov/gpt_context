@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.webviewer"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':network_native')
+    implementation project(':push-notification-utils')
+    implementation project(':base_components')
+    implementation project(':toolbar')
+    implementation project(':storage_utils')
+    implementation project(':design_view_ext')
+    implementation project(':design_utils')
+    implementation project(':design_stubview')
+    implementation project(':verification-decl')
+    implementation project(':version_checker_decl')
+    implementation project(':event_bus')
+    implementation project(':entrypoint_guard')
+    implementation project(':design_notification')
+    implementation project(':design_top_navigation')
+
+    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.ext.androidArchLifecycle"
+    api "com.github.delight-im:Android-AdvancedWebView:$rootProject.ext.advancedWebView"
+
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+}

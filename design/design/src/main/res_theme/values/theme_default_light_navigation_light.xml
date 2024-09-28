@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- http://axure.tensor.ru/MobileStandart8/#p=цвета_по_темам_оформления&g=1 -->
+    <style name="DefaultLightNavigationLight" parent="DefaultLightTheme">
+
+        <item name="globalToolbarStyle">@style/FeatureDefaultLightNavigationLight</item>
+        <item name="headerBackgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="lightStatusBar">true</item>
+
+        <!-- Цвета навигации -->
+        <item name="navigationCounterSeparatorColor">#cccccc</item>
+
+        <item name="navigationUnaccentedBackgroundColor">#C0C0C0</item>
+
+        <item name="navigationBackgroundColor">#eaeaea</item>
+        <item name="navigationSelectedBackgroundColor">#f2f2f2</item>
+        <item name="navigationBackgroundColorButton">?brandColor</item>
+        <item name="navigationActiveBackgroundColor">#F2F2F2</item>
+
+        <item name="navigationTextColor">#333333</item>
+        <item name="navigationUnaccentedTextColor">#7694b8</item>
+        <item name="navigationPrimaryTextColor">?primaryTextColor</item>
+        <item name="navigationActiveTextColor">#000000</item>
+
+        <item name="navigationIconColor">#333333</item>
+        <item name="navigationSecondaryIconColor">#aec5e0</item>
+        <item name="navigationUnaccentedIconColor">#AEC5E0</item>
+        <item name="navigationActiveIconColor">#000000</item>
+
+        <item name="navigationSeparatorColor">#d7d7d7</item>
+        <item name="navigationMarkerColor">?brandColor</item>
+
+        <item name="navigationMenuFill">#F9F9F9</item>
+
+        <item name="horizontalItemActiveBackgroundColorNavigationPanelsAccordion">#FFFFFF</item>
+        <item name="horizontalSidebarBackgroundColorNavigationPanelsSidebar">#FFFFFF</item>
+
+        <item name="horizontalItemIconColorNavigationPanelsAccordion">#546678</item>
+        <item name="horizontalItemIconActiveColorNavigationPanelsAccordion">#333333</item>
+
+        <item name="horizontalSidebarBorderColorNavigationPanelsSidebar">#E9E9E9</item>
+
+        <item name="navigationLogo">?brandColor</item>
+        <item name="navigationLogoFill">#F1F2F5</item>
+
+        <item name="navigationAccented">?primaryTextColor</item>
+        <item name="navigationUnaccented">#7694B8</item>
+
+        <item name="itemIconBackgroundColorNavigationPanelsAccordion">#F1F2F5</item>
+
+        <item name="headerTextLogoColorNavigationPanelsSidebar">?textColor</item>
+        <!-- endregion -->
+    </style>
+</resources>

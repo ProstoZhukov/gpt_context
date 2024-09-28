@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_tour_logo_sbis">萨比</string>
+    <string name="onboarding_tour_skip_title">跳过</string>
+    <string name="onboarding_tour_rationale_default_title">使用应用程序的所有功能需要权限</string>
+    <string name="onboarding_tour_terms_caption">继续即表示您同意%%服务条款%%和%%隐私政策%%</string>
+</resources>

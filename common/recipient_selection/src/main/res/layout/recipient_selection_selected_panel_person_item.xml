@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_selected_person_container"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/design_selected_panel_item_height"
+    android:layout_marginEnd="@dimen/design_selected_panel_item_margin_right"
+    android:layout_marginRight="@dimen/design_selected_panel_item_margin_right"
+    android:background="@drawable/contact_selected_item_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/contact_selected_person_photo"
+        android:layout_width="@dimen/design_selected_panel_item_person_image_size"
+        android:layout_height="@dimen/design_selected_panel_item_person_image_size"
+        android:adjustViewBounds="true"
+        fresco:placeholderImage="@drawable/design_profile_user_dummy"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundedCornerRadius="@dimen/recipients_item_border_radius"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_selected_person_last_name"
+            style="@style/RegularStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/recipients_item_person_text_margin_right"
+            android:layout_marginLeft="@dimen/recipients_item_person_text_margin_left"
+            android:layout_marginRight="@dimen/recipients_item_person_text_margin_right"
+            android:layout_marginStart="@dimen/recipients_item_person_text_margin_left"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="@dimen/recipients_item_person_text_max_width"
+            android:textColor="@color/text_color_black_1"
+            android:textSize="@dimen/size_caption1_scaleOff"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/contact_selected_person_first_name"
+            style="@style/RegularStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/recipients_item_person_text_margin_right"
+            android:layout_marginLeft="@dimen/recipients_item_person_text_margin_left"
+            android:layout_marginRight="@dimen/recipients_item_person_text_margin_right"
+            android:layout_marginStart="@dimen/recipients_item_person_text_margin_left"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="@dimen/recipients_item_person_text_max_width"
+            android:textColor="@color/text_color_black_1"
+            android:textSize="@dimen/size_caption1_scaleOff"
+            tools:ignore="SpUsage"/>
+
+    </LinearLayout>
+
+</LinearLayout>

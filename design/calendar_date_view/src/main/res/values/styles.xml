@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalendarDateViewBaseStyle">
+        <item name="calendar_date_view_color_workday_text">?calendarDateDefaultTextColor</item>
+        <item name="calendar_date_view_color_holiday_text">?calendarDateHolidayTextColor</item>
+        <item name="calendar_date_view_color_arrow_back">#2562AA</item>
+        <item name="calendar_date_view_color_date_text">?calendarDateDefaultTextColor</item>
+        <item name="calendar_date_view_color_date_text_selected">?contrastTextColor</item>
+        <item name="calendar_date_view_color_events_count_text">?unaccentedTextColor</item>
+        <item name="calendar_date_view_color_first_day_background">?backgroundColor</item>
+        <item name="calendar_date_view_color_first_day_workday_text">?calendar_date_view_color_workday_text</item>
+        <item name="calendar_date_view_color_first_day_holiday_text">?calendar_date_view_color_holiday_text</item>
+        <item name="calendar_date_view_color_first_day_text">?calendar_date_view_color_holiday_text</item>
+        <item name="calendar_date_view_color_busy_level_default">?labelContrastTextColor</item>
+        <item name="calendar_date_view_color_busy_level_report">?primaryColor</item>
+
+        <item name="calendar_date_view_color_workday_background">?backgroundColorWorkingDay</item>
+        <item name="calendar_date_view_color_day_off_background">?backgroundColorHoliday</item>
+        <item name="calendar_date_view_color_time_off_background">?backgroundColorTimeOff</item>
+        <item name="calendar_date_view_color_truancy_background">?backgroundColorAbsence</item>
+        <item name="calendar_date_view_color_business_trip_background">?backgroundColorBusinessTrip</item>
+        <item name="calendar_date_view_color_plan_vacation_background">?backgroundColorPlanVacation</item>
+        <item name="calendar_date_view_color_plan_vacation_on_agreement_background">?backgroundColorAgreeVacation</item>
+        <item name="calendar_date_view_color_plan_vacation_on_deletion_background">?backgroundColorDelVacation</item>
+        <item name="calendar_date_view_color_fact_vacation_background">?backgroundColorVacation</item>
+        <item name="calendar_date_view_color_crossed_vacation_hatch">?borderCrossVacation</item>
+        <item name="calendar_date_view_color_sick_leave_background">?backgroundColorSick</item>
+        <item name="calendar_date_view_color_report">?primaryTextColor</item>
+        <item name="calendar_date_view_color_downtime_background">?backgroundColorDowntime</item>
+        <item name="calendar_date_view_color_birthday_background">?primaryTextColor</item>
+        <item name="calendar_date_view_not_hired_background">?backgroundColorUnemployed</item>
+
+        <item name="calendar_date_view_color_current_day_border">?primaryColor</item>
+        <item name="calendar_date_view_color_current_day_circle">?primaryColor</item>
+
+        <item name="calendar_date_view_color_cross_vacation_holiday">?borderCrossVacation</item>
+        <item name="calendar_date_view_color_cross_vacation_holiday_background">?backgroundColorHoliday</item>
+        <item name="calendar_date_view_color_divider">?backgroundColor</item>
+
+        <item name="calendar_date_view_events_count_text_size">8sp</item>
+
+        <item name="calendar_date_view_legend_offset">0dp</item>
+        <item name="calendar_date_view_corner_radius">0dp</item>
+    </style>
+
+    <style name="CalendarDateViewDark" parent="CalendarDateViewBaseStyle">
+        <item name="calendar_date_view_not_hired_background">@color/calendar_date_view_work_day_background_dark</item>
+        <item name="calendar_date_view_color_workday_background">@color/calendar_date_view_work_day_background_dark</item>
+        <item name="calendar_date_view_color_day_off_background">@color/calendar_date_view_day_off_background_dark</item>
+        <item name="calendar_date_view_color_arrow_back">@color/calendar_date_view_color_arrow_back_dark</item>
+        <item name="calendar_date_view_color_divider">@color/calendar_date_view_color_divider_dark</item>
+        <item name="calendar_date_view_color_first_day_workday_text">@color/palette_color_white0</item>
+        <item name="calendar_date_view_color_date_text">@color/palette_color_white0</item>
+        <item name="calendar_date_view_color_holiday_text">@color/palette_color_white0</item>
+        <item name="calendar_date_view_color_workday_text">@color/palette_color_white0</item>
+        <item name="calendar_date_view_color_first_day_text">#FFCC99</item>
+    </style>
+
+    <style name="CalendarMonthDaysHeaderStyle" parent="RegularStyle">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_3xs_scaleOff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalendarMonthDaysHeaderStyle.Holiday">
+        <item name="android:textColor">?primaryTextColor</item>
+    </style>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order_message_company_description">有些商品需要单独订购</string>
+    <string name="order_message_company_title">来自不同组织的精选产品</string>
+    <string name="order_message_queue_description">有些职位需要单独填写</string>
+    <string name="order_message_queue_no_specialist">没有专家</string>
+    <string name="order_message_queue_title">不同专家的精选服务</string>
+    <string name="order_message_nomenclature_changed_price_description">商品已按新价格添加到购物车。更新总成本</string>
+    <string name="order_message_nomenclature_changed_price_title">价格已改变</string>
+    <string name="order_message_nomenclature_not_published_description">商品已从购物车中移除。 \n总成本已更新</string>
+    <string name="order_message_nomenclature_not_published_title">这些商品不再可供订购</string>
+    <string name="order_message_salon_nomenclature_changed_price_description">服务已按新价格添加到购物车。更新总成本</string>
+    <string name="order_message_salon_nomenclature_not_published_title">这些服务不再可供订购</string>
+    <string name="order_message_nomenclature_has_changes_title">有变化</string>
+    <string name="order_message_nomenclature_has_changes_description">不可用的项目已从\n垃圾箱中删除。最终费用已更新</string>
+    <string name="order_message_nomenclature_price_has_changed_title">价格已更改</string>
+    <string name="order_message_nomenclature_not_available_for_order_title">不可订购</string>
+    <string name="order_message_stop_list_title">停止列表中的产品</string>
+    <string name="order_message_stop_list_description">商品已从购物篮中删除\且数量也不受限制</string>
+    <string name="order_message_stop_list_available">可用的</string>
+    <string name="order_message_different_nom_taxes_title">所选项目\n无法添加到单个收据</string>
+    <string name="order_message_different_nom_taxes_description">请从购物车中删除一些商品并将其放入单独的订单中</string>
+    <string name="order_message_different_nom_taxes_order_number">订单 %d</string>
+</resources>

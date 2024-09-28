@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communication_decl_blocked_user_content_text">Gizlin &#xfd;azgy</string>
+    <string name="communication_decl_conversation_information_filter_media">Medi&#xfd;a</string>
+    <string name="communication_decl_conversation_information_filter_docs">Resminamalar</string>
+</resources>

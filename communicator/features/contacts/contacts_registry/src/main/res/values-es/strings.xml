@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_message">A&#xfa;n no tienes ning&#xfa;n contacto</string>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_details">Importe una lista de contactos desde su dispositivo para encontrar a sus amigos.</string>
+</resources>

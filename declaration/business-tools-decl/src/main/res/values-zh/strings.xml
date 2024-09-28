@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_tools_decl_requirement_status_finished">完全的</string>
+    <string name="business_tools_decl_requirement_confirmation_term_message">确认的。对于答案%1$s</string>
+    <string name="business_tools_decl_requirement_mark_as_finished_btn_title">标记为已完成</string>
+    <string name="business_tools_decl_requirement_refuse_message_file_format">文件不正确</string>
+    <string name="business_tools_decl_requirement_refuse_message_ratepayer">致另一法人实体。</string>
+    <string name="business_tools_decl_requirement_refuse_message_certificate">检验员签名不正确</string>
+    <string name="business_tools_decl_confirmation_overdue_response_time_message">回复逾期</string>
+</resources>

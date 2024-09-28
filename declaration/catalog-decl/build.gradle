@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.catalog_decl"
+}
+
+dependencies {
+    implementation project(':plugin_struct')
+    implementation project(':verification-decl')
+
+    implementation libs.android.appcompat
+    implementation libs.rx.java
+}

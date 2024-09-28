@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableKaptCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBuildConfigGeneration()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.master_detail"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    resourcePrefix 'master_detail_'
+}
+
+dependencies {
+    //api потому что пользователь модуля должен предоставить наследника класса от туда.
+    api project(':design_stubview')
+    implementation project(':android-ext-decl')
+    implementation project(':base_components')
+    implementation project(':design')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':scroll_to_top')
+    implementation project(':list')
+    implementation project(':mvvm')
+    implementation project(':toolbar')
+
+    implementation "androidx.lifecycle:lifecycle-common-java8:${rootProject.ext.androidLifecycleCommon}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.androidLifecycleExtensions}"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:${rootProject.ext.androidLifecycleReactivestreams}"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:${rootProject.ext.androidLifecycleRuntime}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:${rootProject.ext.androidLifecycleViewmodel}"
+
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+    implementation "androidx.fragment:fragment:$rootProject.ext.fragmentVersion"
+
+    testImplementation project(":testing")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$rootProject.ext.kotlinxCoroutinesCoreVersion")
+}

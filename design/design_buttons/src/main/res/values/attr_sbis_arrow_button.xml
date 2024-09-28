@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SbisArrowButton">
+
+        <!-- Режим кнопки. -->
+        <attr name="SbisArrowButton_mode" format="enum">
+            <!-- C левой стрелкой (по умолчанию). -->
+            <enum name="arrow_left" value="1"/>
+            <!-- C правой стрелкой. -->
+            <enum name="arrow_right" value="2"/>
+        </attr>
+
+        <!-- Тип кнопки. -->
+        <attr name="SbisArrowButton_type" format="enum">
+            <!-- C заливкой pale (по умолчанию) -->
+            <enum name="filled" value="1"/>
+            <!-- Без заливки -->
+            <enum name="transparent" value="2"/>
+        </attr>
+
+        <!-- Стиль кнопки пролистывания. -->
+        <attr name="SbisArrowButton_style" format="enum">
+            <!-- C заливкой pale (по умолчанию) -->
+            <enum name="pale" value="1"/>
+            <!-- C заливкой default -->
+            <enum name="default_contrast" value="2"/>
+        </attr>
+
+        <!-- Размер кнопки. -->
+        <attr name="SbisArrowButton_size" format="enum">
+            <!-- Основной -->
+            <enum name="medium" value="1"/>
+            <!-- Большой -->
+            <enum name="large" value="2"/>
+            <!-- Очень большой -->
+            <enum name="extra_large" value="3"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingStart="?offset_xl"
+    android:paddingEnd="?offset_xl">
+
+    <View
+        android:id="@+id/menu_divider_line_left"
+        android:layout_width="0dp"
+        android:layout_height="?borderThickness_s"
+        android:layout_marginStart="?offset_2xs"
+        android:layout_marginEnd="?offset_2xs"
+        android:layout_weight="1"
+        android:background="?separatorColor"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/menu_divider_text"
+        style="@style/MenuDividerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        tool:text="Заголовок"/>
+
+    <View
+        android:id="@+id/menu_divider_line_right"
+        android:layout_width="0dp"
+        android:layout_height="?borderThickness_s"
+        android:layout_marginStart="?offset_2xs"
+        android:layout_marginEnd="?offset_2xs"
+        android:layout_weight="1"
+        android:background="?separatorColor"/>
+
+</LinearLayout>
+<!--    android:layout_height="@dimen/menu_divider_height"-->
+<!--    android:layout_marginTop="@dimen/menu_divider_margin_top"-->
+<!--    android:layout_marginBottom="@dimen/menu_divider_margin_bottom"-->

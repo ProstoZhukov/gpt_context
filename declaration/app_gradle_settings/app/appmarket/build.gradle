@@ -1,0 +1,35 @@
+apply plugin: 'rootproject-cfg-plugin'
+apply plugin: 'social-integration'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableKaptSubprojectsCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableTaskFilterCfg()
+    }
+}
+
+project.ext {
+    productName = "AppMarket"
+    applicationId = "ru.tensor.sbis.appmarket"
+    accountType = AndroidAccountManager.SBIS_ACCOUNT.type
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+rootProject.ext {
+    base_app_components = [
+            navx: "OFF"
+    ]
+}
+
+socialServices {
+    yandex = yandexKeyUniversal("5c5df8e812d940fb9682049e5fb68c18")
+    VK = vkKey("51912095", "A5PcJzvQ4H3PJkrBRv0J")
+    appleEnabled = true
+    esiaEnabled = true
+    googleEnabled = true
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="UnusedResources"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Палитра для базовых макетов модуля "common-business"-->
+    <color name="business_background_color">#E9E9E9</color>
+    <color name="business_recycler_view_background_color">#FFFFFF</color>
+
+    <!-- business app THEME -->
+    <!-- Цвет фона на разводящей-->
+    <color name="business_summary_background_color">#E9E9E9</color>
+    <!-- Цвет фона блоков на разводящей-->
+    <color name="business_summary_block_background_color">#FFFFFF</color>
+    <!-- Цвет основного фоне -->
+    <color name="business_main_background_color">#FFFFFF</color>
+    <!--Цвет затемнения-->
+    <color name="business_blackout_color">#14000000</color>
+    <!-- Цвет акцентного текста на основном фоне -->
+    <color name="business_base_accent_text_color">#000000</color>
+    <!-- Акцентный цвет текста темы -->
+    <color name="business_accent_text_color">#30415D</color>
+    <!-- Базовый цвет текста -->
+    <color name="business_base_text_color">#56000000</color>
+    <!-- Дополнительный цвет текста на основном фоне -->
+    <color name="business_secondary_text_color">#56000000</color>
+    <!-- Цвет текста на заголовках -->
+    <color name="business_header_text_color">#56000000</color>
+    <!-- Цвет текста в футтере -->
+    <color name="business_footer_text_color">#638398</color>
+    <!-- Дополнительный цвет пометки -->
+    <color name="business_label_text_color">#638398</color>
+    <!-- Цвет стрелки "Назад"-->
+    <color name="business_back_arrow_color">#638398</color>
+    <!-- Цвет периода в заголовках -->
+    <color name="business_header_period_text_color">#638398</color>
+    <!-- Не акцентный цвет текста на основном фоне -->
+    <color name="business_not_accent_text_color">#B4B4B4</color>
+    <!-- Цвет заголовка -->
+    <color name="business_title_color">#D94700</color>
+    <!-- Цвет текста праздничного и выходного дня -->
+    <color name="business_color_weekend">#57F82E47</color>
+    <!-- Цвет вертикального разделителя -->
+    <color name="business_separator_color">#E9E9E9</color>
+    <!-- Цвет иконок на основном фоне -->
+    <color name="business_main_background_icon_color">#CCCCCC</color>
+    <!-- Будет использоваться для прозрачных элементов -->
+    <color name="color_transparent_0">@android:color/transparent</color>
+    <!-- Цвет полосочек-разделителей -->
+    <color name="business_divider_color">#EAEAEA</color>
+    <!-- Цвет активного индикатора -->
+    <color name="business_indicator_green">#71D354</color>
+    <!-- Цвет пассивного индикатора -->
+    <color name="business_indicator_gray">#CCCCCC</color>
+    <!-- Цвет кнопок-ссылок на основном фоне -->
+    <color name="business_link_text_color">#729EE6</color>
+    <!-- Цвет фона реестра касс -->
+    <color name="business_cashbox_bg_color">#EAEAEA</color>
+    <!-- Цвет фона недоступной камеры -->
+    <color name="business_retail_camera_preview_background">#343434</color>
+
+    <!-- Цвета строки поиска -->
+    <color name="business_search_panel_icon_color">#999999</color>
+    <color name="business_search_panel_filter_icon_color">#FF5C6C8A</color>
+
+    <!-- Цвет выделения подстроки при поиске -->
+    <color name="business_highlight_color">#344659</color>
+
+    <!-- Цвет фона всплывающих диалогов -->
+    <color name="business_popup_background_color">#F8F8F8</color>
+
+    <!--region График -->
+    <color name="business_chart_axis_label_text_color">#638398</color>
+    <color name="business_chart_axis_caption_text_color">#B4B4B4</color>
+    <color name="business_chart_axis_color">#14000000</color>
+    <color name="business_chart_highlighted_axis_label_text_color">#56F82E47</color>
+    <color name="business_chart_background_color">#FFF</color>
+    <color name="business_chart_revenue_label_text_color">#D94700</color>
+    <color name="business_chart_amount_units_text_color">#56000000</color>
+    <color name="business_chart_labels_text_color">#56000000</color>
+    <color name="business_chart_past_revenue_text_color">#000000</color>
+    <color name="business_chart_legend_previous_background_color">#AAAAAA</color>
+    <color name="business_chart_legend_current_background_color">#7CB5EC</color>
+    <color name="business_chart_previous_period_text_color">#638398</color>
+    <color name="business_chart_current_period_text_color">#30415D</color>
+    <color name="business_chart_current_revenue_text_color">#D94700</color>
+    <color name="business_chart_current_balance_text_color">#56000000</color>
+    <color name="business_chart_revenue_secondary_delta_text_color">#33000000</color>
+    <color name="business_chart_revenue_primary_delta_positive_text_color">#71D354</color>
+    <color name="business_chart_revenue_primary_delta_negative_text_color">#F82E47</color>
+    <color name="business_chart_revenue_shift_periods_text_color">#999999</color>
+    <color name="business_chart_revenue_icon_text_color">#205080</color>
+    <!--endregion -->
+
+    <color name="business_stub_main_text_color">#606060</color>
+    <color name="business_stub_comment_text_color">#B4B4B4</color>
+</resources>

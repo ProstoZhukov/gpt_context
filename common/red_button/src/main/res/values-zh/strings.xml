@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="red_button_title_open">开放数据</string>
+    <string name="red_button_title_close_progress">数据即将关闭</string>
+    <string name="red_button_title_open_progress">数据开放中</string>
+    <string name="red_button_uu_alert_message">关于组织“管理会计”的所有文档、操作和报告都将暂时隐藏。根据普通陪审员的文件。人不会发生任何改变。</string>
+    <string name="red_button_cloud_alert_message">所有信息将被暂时隐藏。只剩下有姓名和电话号码的“员工”。</string>
+    <string name="red_button_cloud_alert_title">隐藏数据？</string>
+    <string name="red_button_title_sms">输入短信代码</string>
+    <string name="red_button_title_pin_on">想想您的 PIN 码</string>
+    <string name="red_button_title_pin_off">输入 PIN 码</string>
+    <string name="red_button_message_pin_close">记住 PIN 码，以便后续恢复对云的访问</string>
+    <string name="red_button_message_pin_open">如果您忘记了 PIN 码，请联系您的经理</string>
+    <string name="red_button_repeat_through">重复%s</string>
+    <string name="red_button_code_again">再次获取代码</string>
+    <string name="red_button_network_error">无网络连接</string>
+    <string name="red_button_stub_title_close">应用程序重新加载后数据将被隐藏</string>
+    <string name="red_button_stub_title_open">应用程序重启后将返回对数据的访问权限</string>
+    <string name="red_button_stub_toolbar_text">设置</string>
+    <string name="red_button_password_sent_on_phone_template">代码已发送至号码 %1$s</string>
+    <string name="red_button_stub_subtitle">卸载应用程序并再次打开它。</string>
+    <string name="red_button_title_pin_confirmation">确认密码</string>
+    <string name="red_button_message_pin_confirmation">再次输入 PIN 码</string>
+    <string name="red_button_title_close">关闭数据？</string>
+</resources>

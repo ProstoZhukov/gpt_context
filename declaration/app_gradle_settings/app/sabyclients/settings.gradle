@@ -1,0 +1,49 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+def appName = "sabyclients"
+
+//region Будут необходимы для внедрения аддонов Календарь и Чаевые
+ext.feature_dir = "$settingsDir/feature"
+ext.map_dir = 'module/map' // из-за кривого скрипта в calendar/settings.gradle
+ext.presto_common_dir = 'module/presto_common'
+ext.schedule_dir = 'module/schedule'
+//endregion
+
+includeSubmodules(
+        settings,
+        appName,
+        "review",
+        "common-catalog-items",
+        "crm",
+        "electronic-queue",
+        "auth",
+        "barcodereader",
+        "business-components",
+        "calendar",
+        "catalog",
+        "common",
+        "communicator",
+        "crypto",
+        "declaration",
+        "design",
+        "disk",
+        "edo",
+        "employee",
+        "motivation",
+        "notification",
+        "presto-common",
+        "payment",
+        "profile",
+        "schedule",
+        "video-monitoring"
+)
+
+include ':app', ':controller'
+
+apply from: "$settingsDir/feature/settings.gradle"
+
+setupControllerModule(settings, appName)

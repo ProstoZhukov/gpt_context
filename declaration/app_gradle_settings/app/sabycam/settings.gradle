@@ -1,0 +1,29 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+def appName = "sabycam"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "barcodereader",
+        "business-components",
+        "common",
+        "communicator",
+        "declaration",
+        "design",
+        "disk",
+        "notification",
+        "profile",
+        "video-monitoring"
+)
+
+include ':app', ':controller'
+
+apply from: "$settingsDir/feature/settings.gradle"
+
+setupControllerModule(settings, appName)

@@ -1,0 +1,41 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+def appName = "sabyadmin"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "barcodereader",
+        "declaration",
+        "design",
+        "common"
+)
+
+include ':app', ':controller'
+include ':sabyadmin'
+include ':softwaremonitoring'
+
+setupControllerModule(settings, appName)
+
+splitAppByRegion(settings, appName) {
+    ru {
+        appConfig {
+            applicationId = "ru.tensor.sbis.sabyadmin"
+            archivesBaseNamePrefix = "sbis-sabyadmin"
+            accountType = AndroidAccountManager.SABY_BUNDLE_ACCOUNT.type
+
+        }
+    }
+    kz {
+        appConfig {
+            applicationId = "kz.setty.settyadmin"
+            archivesBaseNamePrefix = "setty-settyadmin-kz"
+            accountType = AndroidAccountManager.SETTY_BUNDLE_ACCOUNT.type
+        }
+    }
+}

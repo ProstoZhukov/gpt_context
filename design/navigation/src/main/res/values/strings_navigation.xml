@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="navigation_fab_behavior_with_bottom_navigation" translatable="false" tools:ignore="UnusedResources">ru.tensor.sbis.design.navigation.view.view.fab.behavior.BottomNavigationFABBehavior</string>
+    <string name="navigation_fab_slide_to_bottom_on_scroll_behavior" translatable="false" tools:ignore="UnusedResources">ru.tensor.sbis.design.navigation.view.view.fab.behavior.FabSlideToBottomOnScrollBehavior</string>
+</resources>

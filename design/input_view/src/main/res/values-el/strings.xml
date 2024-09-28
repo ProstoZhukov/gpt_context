@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="access_code_input_view_title">Εισαγάγετε τα τελευταία 4 ψηφία του αριθμού τηλεφώνου</string>
+    <string name="date_input_view_validation_min_max_date">Η τιμή πρέπει να είναι μεγαλύτερη από %s και μικρότερη από %s</string>
+    <string name="date_input_view_validation_min_date">Η τιμή πρέπει να είναι μεγαλύτερη από %s</string>
+    <string name="date_input_view_validation_max_date">Η τιμή πρέπει να είναι μικρότερη από %s</string>
+    <string name="phone_input_view_placeholder_mobile_default">Τηλεφωνικό νούμερο</string>
+    <string name="phone_input_view_ext_number">εσωτ.</string>
+</resources>

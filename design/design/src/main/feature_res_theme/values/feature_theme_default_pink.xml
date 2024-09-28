@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- https://www.figma.com/proto/aoDaE5WOM1bcQMqXhz3uIH/Тема-оформления-по-умолчанию -->
+    <style name="FeatureDefaultPinkTheme" parent="FeatureDefaultLightTheme">
+
+        <item name="globalToolbarStyle">@style/FeatureDefaultPinkTheme</item>
+        <item name="globalAuthStyle">@style/DefaultPinkTheme</item>
+        <item name="headerBackgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="lightStatusBar">true</item>
+
+        <!-- Цвета меток элементов -->
+        <item name="markerColor">#E44766</item>
+        <item name="readonlyMarkerColor">#FFCCD6</item>
+
+        <!-- Цвета текста -->
+        <item name="textColor">#000000</item>
+        <item name="linkTextColor">#656C87</item>
+
+        <!-- Цвета иконок -->
+        <item name="iconColor">#000000</item>
+        <item name="linkIconColor">#656C87</item>
+
+        <!-- region Смысловые цвета -->
+        <item name="primaryTextColor">#E44766</item>
+        <item name="primaryIconColor">#E44766</item>
+        <item name="primaryBorderColor">#E44766</item>
+        <item name="primaryBackgroundColor">#FFF5F7</item>
+        <item name="primaryActiveBackgroundColor">#FFDBE2</item>
+        <item name="primarySameBackgroundColor">#FFEBEF</item>
+        <item name="primaryActiveSameBackgroundColor">#FFCCD6</item>
+        <item name="primaryColor">#E44766</item>
+        <item name="primaryActiveColor">#DD2044</item>
+
+        <item name="secondaryIconColor">#999999</item>
+        <item name="secondaryBorderColor">#8991A9</item>
+        <item name="secondaryColor">#8991A9</item>
+        <item name="secondaryActiveColor">#7E859C</item>
+        <!-- endregion -->
+
+        <item name="brandColor">#E44766</item>
+
+        <!-- Цвета навигации -->
+        <item name="navigationCounterSeparatorColor">#CCCCCC</item>
+
+        <item name="navigationUnaccentedBackgroundColor">#C0C0C0</item>
+
+        <item name="navigationBackgroundColor">#EAEAEA</item>
+        <item name="navigationSelectedBackgroundColor">#F2F2F2</item>
+
+        <item name="navigationTextColor">#333333</item>
+        <item name="navigationUnaccentedTextColor">#7c797a</item>
+        <item name="navigationPrimaryTextColor">?primaryTextColor</item>
+        <item name="navigationActiveTextColor">#000000</item>
+
+        <item name="navigationIconColor">#333333</item>
+        <item name="navigationSecondaryIconColor">#E44766</item>
+        <item name="navigationActiveIconColor">#000000</item>
+        <item name="navigationUnaccentedIconColor">#E44766</item>
+
+        <item name="navigationSeparatorColor">#D7D7D7</item>
+        <item name="navigationMarkerColor">?brandColor</item>
+
+        <item name="navigationMenuFill">#F9F9F9</item>
+
+        <item name="horizontalItemActiveBackgroundColorNavigationPanelsAccordion">#FFFFFF</item>
+
+        <item name="horizontalItemColorNavigationPanelsAccordion">#666666</item>
+
+        <item name="horizontalItemIconColorNavigationPanelsAccordion">#666666</item>
+        <item name="horizontalItemIconActiveColorNavigationPanelsAccordion">#333333</item>
+
+        <item name="navigationLogo">?brandColor</item>
+        <item name="navigationLogoFill">#F1F2F5</item>
+
+        <item name="navigationBackgroundColorButton">?primaryColor</item>
+        <item name="navigationActiveBackgroundColor">#F2F2F2</item>
+        <item name="navigationAccented">?primaryTextColor</item>
+        <item name="navigationUnaccented">#7694B8</item>
+
+        <item name="itemIconBackgroundColorNavigationPanelsAccordion">#F1F2F5</item>
+
+        <item name="headerTextLogoColorNavigationPanelsSidebar">?textColor</item>
+        <!-- endregion -->
+
+        <!-- region Параметры сплэш-скрина -->
+        <item name="splashScreenBackgroundColor">@color/splash_screen_background_color_pink</item>
+        <item name="splashScreenGradient">@drawable/splash_gradient_light</item>
+        <item name="splashScreenLogo">@drawable/ic_sbis_artboard_white</item>
+        <!-- endregion -->
+    </style>
+</resources>

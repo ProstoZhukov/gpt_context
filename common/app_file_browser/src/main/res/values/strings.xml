@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_file_browser_stub_folder_is_empty">Folder is empty</string>
+    <string name="app_file_browser_show_size">Show size</string>
+    <string name="app_file_browser_delete">Delete</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Хост -->
+    <string name="logging_host_toolbar_title">Логи</string>
+
+    <!-- Логгирование -->
+    <string name="logging_log_package_size_megabytes">%.1f Мб</string>
+    <string name="logging_log_package_size_kilobytes">%.1f Кб</string>
+
+    <string name="logging_preparing_sending_logs">Анализ пакета логов</string>
+    <string name="logging_waiting_sending_logs">Ожидание отправки</string>
+    <string name="logging_waiting_wifi_sending_logs">Ожидание сети Wi-Fi</string>
+    <string name="logging_waiting_inet_sending_logs">Ожидание сети</string>
+    <string name="logging_sending_logs_in_progress">Отправка логов на сервер</string>
+    <string name="logging_floating_send_btn_text">Отправить все</string>
+    <string name="logging_slider_label">Включить логирование</string>
+    <string name="logging_disable_log_stub_title">Нет данных</string>
+    <string name="logging_disable_log_stub_description">Позвольте собирать данные с устройства\nдля дальнейшего анализа.</string>
+    <string name="logging_copy_to_clipboard">Номер инцидента скопирован в буфер обмена</string>
+
+    <string name="logging_confirmation_text">Я согласен отправить информацию с устройства для анализа и улучшения работы приложения.</string>
+    <string name="logging_confirmation_total_size_text">Выбрано %1$s</string>
+    <string name="logging_confirmation_success">Подтвердить</string>
+    <string name="logging_confirmation_dismiss">Отмена</string>
+
+    <!-- Настройки логгирования -->
+    <string name="logging_settings_header_title_root">Настройка логирования</string>
+    <string name="logging_settings_header_title_level">Уровень логирования</string>
+    <string name="logging_settings_header_title_writing_mode">Запись логов</string>
+    <string name="logging_settings_header_title_storage_interval">Период хранения пакетов</string>
+    <string name="logging_settings_header_title_diagnostic_settings">Данные для диагностики</string>
+
+    <string name="logging_settings_level_label">Уровень</string>
+    <string name="logging_settings_delay_label">Запись логов</string>
+    <string name="logging_settings_storage_interval_label">Период хранения</string>
+    <string name="logging_settings_wifi_label">Отправка только по Wi-Fi</string>
+    <string name="logging_settings_log_query_to_db">Логирование планов запросов в БД</string>
+
+    <string name="logging_settings_log_level_minimal">Минимальный</string>
+    <string name="logging_settings_log_level_standart">Стандартный</string>
+    <string name="logging_settings_log_level_extended">Расширенный</string>
+    <string name="logging_settings_log_level_debug">Отладочный</string>
+    <string name="logging_settings_log_level_disabled">Отключен</string>
+
+    <string name="logging_settings_log_delay_delayed">Отложенно</string>
+    <string name="logging_settings_log_delay_immediate">Немедленно</string>
+
+    <string name="logging_settings_log_storage_interval_day">День</string>
+    <string name="logging_settings_log_storage_interval_two_days">2 дня</string>
+    <string name="logging_settings_log_storage_interval_three_days">3 дня</string>
+    <string name="logging_settings_log_storage_interval_week">Неделя</string>
+
+    <string name="logging_settings_diagnostic_settings_only_logs">Только логи</string>
+    <string name="logging_settings_diagnostic_settings_full">Логи + БД</string>
+    <string name="logging_settings_diagnostic_settings_selective">Выборочные</string>
+
+    <string name="logging_mobile_icon_clock">&#xeba0;</string>
+    <string name="logging_mobile_icon_check">&#xe990;</string>
+
+    <string name="logging_force_log_delivery_launcher_label">Отправка логов</string>
+</resources>

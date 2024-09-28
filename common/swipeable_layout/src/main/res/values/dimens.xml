@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="swipeable_layout_large_separator_vertical_margin">12dp</dimen>
+    <dimen name="swipeable_layout_small_separator_vertical_margin">8dp</dimen>
+    <dimen name="swipeable_layout_dismiss_message_text_size">17dp</dimen>
+    <dimen name="swipeable_layout_item_large_width">86dp</dimen>
+    <dimen name="swipeable_layout_item_small_width">53dp</dimen>
+    <dimen name="swipeable_layout_item_min_vertical_height_with_icon_and_text">60dp</dimen>
+    <dimen name="swipeable_layout_item_min_vertical_height_with_icon_and_text_multiline">70dp</dimen>
+    <dimen name="swipeable_layout_item_min_vertical_height_with_icon">44dp</dimen>
+    <dimen name="swipeable_layout_dismiss_message_icon_margin_vertical">8dp</dimen>
+    <dimen name="swipeable_layout_dismiss_message_min_total_padding_vertical">12dp</dimen>
+    <dimen name="swipeable_layout_text_item_padding_horizontal">8dp</dimen>
+    <dimen name="swipeable_layout_text_item_max_width">224dp</dimen>
+    <dimen name="swipeable_layout_symbol_text_size">26dp</dimen>
+    <dimen name="swipeable_layout_expected_top_layout_height">26dp</dimen>
+    <dimen name="swipeable_layout_symbol_margin_bottom">2dp</dimen>
+
+    <!-- Swipe design_menu -->
+    <dimen name="item_menu_height">42dp</dimen>
+    <dimen name="operation_item_menu_button_width">@dimen/swipeable_layout_item_large_width</dimen>
+    <dimen name="operation_item_menu_button_small_width">50dp</dimen>
+    <dimen name="item_menu_small_height">30dp</dimen>
+    <dimen name="item_menu_font_size">12dp</dimen>
+    <dimen name="operation_icon_text_size">26dp</dimen>
+    <dimen name="action_swipe_menu_width_tablet">56dp</dimen>
+    <dimen name="action_swipe_menu_width_small_tablet">44dp</dimen>
+    <dimen name="swipe_sensitivity_dist_for_disallow_parent">20dp</dimen>
+</resources>

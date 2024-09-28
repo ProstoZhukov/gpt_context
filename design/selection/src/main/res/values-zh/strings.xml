@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selection_preview_total_count_format">已选择 %d</string>
+    <string name="selection_limit_exceeded">您不能选择超过 %d 个项目</string>
+    <string name="selection_all_items_selected">所有项目都被选中</string>
+    <string name="selection_all_employees_selected_title">本部门所有员工均被选拔</string>
+    <string name="selection_all_employees_selected_description">转到另一个文件夹以添加更多收件人</string>
+    <string name="selection_all_regions_selected_title">已选择所有区域</string>
+    <string name="selection_dialog_relevant_message_i_am_author">我：</string>
+    <string name="selection_all_recipients_selected_title">没有人被选中</string>
+</resources>

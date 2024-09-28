@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="complain_service_report_message_text">Envoyer le rapport au modérateur pour examen?</string>
+    <!-- TODO Перепроверить перевод, т.к. сейчас на wi конфликт -->
+    <string name="complain_service_report_hint_text">Entrez un commentaire</string>
+    <string name="complain_service_dialog_positive">OK</string>
+    <string name="complain_service_dialog_negative">ANNULER</string>
+
+</resources>

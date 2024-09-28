@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="our_org_empty_title">Ұйымдар тізімі бос</string>
+    <string name="our_org_filter_state_active">Қолданыстағы</string>
+    <string name="our_org_filter_state_all">Барлығы</string>
+    <string name="our_org_item_header_simple_title">Ұйымды таңдаңыз</string>
+    <string name="our_org_title">Біздің компаниялар</string>
+</resources>

@@ -1,0 +1,2 @@
+include ':push-history'
+project(':push-history').projectDir = new File(notificationDir, 'push-history')

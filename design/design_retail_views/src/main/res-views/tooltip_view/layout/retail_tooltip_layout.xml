@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource,ResourceName"
+    tools:theme="@style/RetailViewsTooltipStyle.Light">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/retail_views_popup_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="?offset_m"
+        android:layout_marginTop="?offset_m"
+        android:layout_marginBottom="?offset_m"
+        android:layout_weight="1"
+        android:maxWidth="@dimen/retail_views_popup_max_width"
+        android:textColor="?attr/retail_views_tooltip_text_color"
+        android:textSize="?fontSize_xs_scaleOff"
+        tools:text="Данный функционал доступен только для рабочих мест, на которых подключена ККТ с ФФД 1.05"/>
+
+    <ImageView
+        android:id="@+id/retail_views_popup_image_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="?offset_m"
+        android:layout_marginTop="?offset_m"
+        android:layout_marginBottom="?offset_m"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:ignore="ContentDescription"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/retail_views_popup_close_button"
+        android:layout_width="@dimen/retail_views_popup_menu_icon_size"
+        android:layout_height="@dimen/retail_views_popup_menu_icon_size"
+        android:layout_marginTop="?offset_s"
+        android:layout_marginEnd="?offset_s"
+        android:background="?attr/retail_views_tooltip_background_color"
+        android:text="@string/retail_views_mobile_icon_close"
+        android:fontFamily="@font/sbis_mobile_icons"
+        android:layout_marginStart="?offset_2xs"
+        android:elevation="?elevation_l"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="?iconSize_2xl"/>
+
+</LinearLayout>

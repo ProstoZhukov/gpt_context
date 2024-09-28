@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Documents Signing -->
+    <dimen name="communicator_signatures_list_title_horizontal_padding">24dp</dimen>
+    <dimen name="communicator_signatures_list_item_image_horizontal_space">24dp</dimen>
+    <dimen name="communicator_signatures_list_item_horizontal_padding">24dp</dimen>
+
+</resources>

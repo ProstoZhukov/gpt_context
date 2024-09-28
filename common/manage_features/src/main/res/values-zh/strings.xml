@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="manage_features_title">测试</string>
+    <string name="manage_features_user">用户</string>
+    <string name="manage_features_account">帐户</string>
+    <string name="manage_features_feature_id">标识符</string>
+    <string name="manage_features_state">地位</string>
+    <string name="manage_features_value">价值</string>
+    <string name="manage_features_state_enabled">启用</string>
+    <string name="manage_features_state_disabled">残疾人</string>
+</resources>

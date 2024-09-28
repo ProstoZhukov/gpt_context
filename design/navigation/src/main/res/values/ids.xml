@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="navigation_tab_nav_item_id" type="id"/>
+    <item name="navigation_nav_item_id" type="id"/>
+    <item name="navigation_nav_item_expand_arrow_id" type="id"/>
+    <item name="bottom_navigation_recycler" type="id"/>
+    <item name="bottom_navigation_recycler_vertical" type="id"/>
+    <item name="bottom_navigation_fold_button" type="id"/>
+    <item name="navigation_floating_panel_translation_id" type="id"/>
+
+</resources>

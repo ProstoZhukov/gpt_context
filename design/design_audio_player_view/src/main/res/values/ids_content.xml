@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cloud_view_message_block_audio_message_smile_view_id" type="id"/>
+    <item name="design_audio_message_view_audio_player_view_id" type="id"/>
+    <item name="design_audio_message_view_audio_play_button_id" type="id"/>
+    <item name="design_audio_message_view_audio_speed_button_id" type="id"/>
+    <item name="design_audio_message_view_audio_duration_view_id" type="id"/>
+    <item name="design_audio_message_view_audio_waveform_view_id" type="id"/>
+    <item name="design_audio_message_view_audio_container_view_id" type="id"/>
+
+    <item name="design_audio_message_view_preview_waveform_with_duration_id" type="id"/>
+    <item name="design_audio_message_view_preview_recognized_text_id" type="id"/>
+</resources>

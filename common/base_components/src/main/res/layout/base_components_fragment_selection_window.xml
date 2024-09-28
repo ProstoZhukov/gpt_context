@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:elevation="100dp"
+    android:focusable="true">
+
+    <FrameLayout
+        android:id="@+id/base_components_fading_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="?dimBackgroundColor">
+
+        <ru.tensor.sbis.design.progress.SbisLoadingIndicator
+            android:id="@+id/base_components_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <ru.tensor.sbis.base_components.fragment.selection.SelectionWindowLayout
+        android:id="@+id/base_components_window_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/base_components_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="bottom"
+            app:elevation="?elevation_xs"
+            app:layout_behavior="@string/toolbar_not_draggable_appbar_behavior">
+
+            <RelativeLayout
+                android:id="@+id/base_components_hood_container"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll">
+
+                <ru.tensor.sbis.design.buttons.SbisRoundButton
+                    android:id="@+id/base_components_close_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:SbisRoundButton_icon="@string/design_mobile_icon_close_for_nav_panel"
+                    app:SbisRoundButton_size="s"
+                    app:SbisRoundButton_style="unaccented"
+                    app:SbisRoundButton_iconSize="s"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="?offset_m"
+                    android:layout_marginBottom="?offset_st"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_component_selection_window_header_background"
+                android:gravity="center_vertical">
+
+                <FrameLayout
+                    android:id="@+id/base_components_header_container"
+                    android:layout_width="0dp"
+                    android:layout_height="?inlineHeight_m"
+                    android:layout_weight="1">
+
+                    <!-- Header inserts programmatically -->
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/base_components_header_button_accept"
+                    style="@style/SelectionWindowAcceptButton"
+                    android:contentDescription="@null"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/base_components_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?base_components_content_selection_window_background_color"
+            android:visibility="invisible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!-- Content inserts programmatically -->
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/base_components_app_bar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="?offset_s"
+            android:layout_gravity="bottom"
+            android:background="@drawable/base_components_selection_window_shadow"
+            android:visibility="invisible"
+            app:layout_anchor="@id/base_components_app_bar"
+            app:layout_anchorGravity="bottom"
+            app:layout_behavior="@string/base_components_selection_window_shadow_behavior"/>
+
+        <View
+            android:id="@+id/base_components_app_bar_divider"
+            style="@style/SelectionWindowBaseDividerStyle"
+            app:layout_anchor="@id/base_components_app_bar"
+            app:layout_anchorGravity="bottom"/>
+
+    </ru.tensor.sbis.base_components.fragment.selection.SelectionWindowLayout>
+
+</RelativeLayout>

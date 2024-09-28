@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MessagePanelEditText" parent="SbisInputFieldEditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:hint">@string/common_enter_message</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:inputType">textMultiLine|textCapSentences</item>
+        <item name="android:minHeight">?inlineHeight_2xs</item>
+        <item name="android:paddingStart">?offset_m</item>
+        <item name="android:paddingTop">@dimen/message_panel_input_text_drawable_stroke_width</item>
+        <item name="android:paddingEnd">?offset_m</item>
+        <item name="android:paddingBottom">@dimen/message_panel_input_text_drawable_stroke_width</item>
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textColorHint">?placeholderColorInputText</item>
+        <item name="android:textSize">?fontSize_m_scaleOn</item>
+        <item name="android:textCursorDrawable">@drawable/message_panel_cursor_drawable</item>
+        <item name="android:theme">@style/HighlightControlsColor</item>
+    </style>
+
+    <style name="MessagePanelTextButton" parent="MobileFontStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@color/design_message_panel_control_selectable_color</item>
+        <item name="android:paddingBottom">?offset_2xs</item>
+    </style>
+
+    <style name="MessagePanelSendButton">
+        <item name="android:layout_width">?inlineHeight_2xs</item>
+        <item name="android:layout_height">?inlineHeight_2xs</item>
+        <item name="android:layout_marginBottom">@dimen/message_panel_send_button_bottom_margin</item>
+        <item name="android:background">@null</item>
+        <item name="android:src">@drawable/ic_send</item>
+    </style>
+
+</resources>

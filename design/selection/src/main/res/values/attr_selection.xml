@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Selector">
+        <!--region Набор атрибутов для стилизации шапки компонента выбора-->
+        <!-- Тема для шапки компонента выбора -->
+        <attr name="Selector_headerTheme" format="reference"/>
+        <!-- Стиль, который будет применён к контейнеру шапки компонента выбора -->
+        <attr name="Selector_headerContainerStyle" format="reference"/>
+        <!-- Стиль кнопки "Отмена" в шапке компонента выбора -->
+        <attr name="Selector_cancelButtonStyle" format="reference"/>
+        <!-- Стиль панели поиска (см. атрибуты SearchInput) -->
+        <attr name="Selector_searchPanelStyle" format="reference"/>
+        <!-- Стиль кнопки применить в шапке компонента множественного выбора -->
+        <attr name="Selector_doneButtonStyle" format="reference"/>
+        <!-- Стиль разделителя шапки компонента выбора -->
+        <attr name="Selector_headerDividerStyle" format="reference"/>
+        <!-- Отступ иконки закрытия экрана от строки поиска -->
+        <attr name="Selector_headerIconPadding" format="dimension"/>
+        <!--endregion-->
+
+        <!--region Набор атрибутов для стилизации списка компонента выбора-->
+        <!-- Тема для списка компонента выбора -->
+        <attr name="Selector_listTheme" format="reference"/>
+
+        <!--region Темы поддерживаемых элементов множественного выбора-->
+        <attr name="Selector_regionMultiItemTheme" format="reference"/>
+        <attr name="Selector_personMultiItemTheme" format="reference"/>
+        <attr name="Selector_groupMultiItemTheme" format="reference"/>
+        <attr name="Selector_departmentMultiItemTheme" format="reference"/>
+        <attr name="Selector_chooseAllTheme" format="reference"/>
+        <!--endregion-->
+
+        <!--region Темы поддерживаемых элементов одиночного выбора-->
+        <attr name="Selector_regionSingleItemTheme" format="reference"/>
+        <!--endregion-->
+
+        <!--region Атрибуты элементов -->
+        <!-- Стиль, который будет применён к контейнеру элемента -->
+        <attr name="Selector_itemContainerStyle" format="reference"/>
+        <!-- Стиль заголовка элемента в компоненте выбора -->
+        <attr name="Selector_itemTitleStyle" format="reference"/>
+        <!-- Отступ заголовка элемента в компоненте выбора -->
+        <attr name="Selector_itemTitleMarginStart" format="dimension"/>
+        <!-- Стиль подзаголовка элемента в компоненте выбора -->
+        <attr name="Selector_itemSubtitleStyle" format="reference"/>
+        <!-- Стиль счётчика элемента в компоненте выбора -->
+        <attr name="Selector_itemCounterStyle" format="reference"/>
+        <!-- Стиль кнопки "Выбрать" элемента в компоненте множественного выбора -->
+        <attr name="Selector_itemSelectionIconStyle" format="reference"/>
+        <!-- Стиль маркера элемента в компоненте одиночного выбора -->
+        <attr name="Selector_itemMarkerStyle" format="reference"/>
+        <!-- Стиль фотографии профиля -->
+        <attr name="Selector_personPhotoStyle" format="reference"/>
+        <!-- Стиль фотографии группы (соц. сети) -->
+        <attr name="Selector_groupPhotoStyle" format="reference"/>
+        <!-- Стиль иконки рабочей группы -->
+        <attr name="Selector_departmentIconStyle" format="reference"/>
+        <!--endregion-->
+
+        <!--region Атрибуты "выбрать всё" -->
+        <!-- Стиль контейнера "выбрать всё" -->
+        <attr name="Selector_chooseAllBodyStyle" format="reference"/>
+        <!-- Стиль заголовка "выбрать всё" -->
+        <attr name="Selector_chooseAllTitleStyle" format="reference"/>
+        <!-- Стиль счётчика "выбрать всё" -->
+        <attr name="Selector_chooseAllCounterStyle" format="reference"/>
+        <!--endregion-->
+    </declare-styleable>
+
+</resources>

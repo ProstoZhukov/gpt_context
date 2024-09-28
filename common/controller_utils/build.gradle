@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableDeprecatedFieldsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+def buildDate = ""
+//Параметр используется в BuildConfig, а так как параметр динамический, то файл меняется каждый раз при сборке
+//и этим ломает инкрементальную сборку. Поэтому отключаем его для локальной сборки
+if (rootProject.ext.ciBuild) {
+    buildDate = new Date().format("dd.MM.yyyy - HH:mm:ss")
+}
+
+android {
+    namespace "ru.tensor.sbis.controller_utils"
+
+    defaultConfig {
+        buildConfigField "String", "BUILD_DATE", "\"${buildDate}\""
+        if( rootProject.ext.has( "platformCoreLibrary" ) ) {
+            buildConfigField "String", "PLATFORM_CORE_LIBRARY", "\"${rootProject.ext.platformCoreLibrary}\""
+        }
+	    else {
+            buildConfigField "String", "PLATFORM_CORE_LIBRARY", "\"sbis-app-controller\""
+        }
+    }
+}
+
+dependencies {
+    implementation project(':controller')
+    implementation project(':network_native')
+    implementation project(':common')
+    implementation project(':toolbox-decl')
+
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:${rootProject.ext.leakCanaryVersion}"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+
+    implementation "androidx.tracing:tracing-ktx:$rootProject.ext.androidTracingVersion"
+
+    implementation platform("com.google.firebase:firebase-bom:$rootProject.ext.firebaseBomVersion")
+    implementation "com.google.firebase:firebase-crashlytics"
+}

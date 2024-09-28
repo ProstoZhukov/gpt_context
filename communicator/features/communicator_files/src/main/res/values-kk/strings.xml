@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_files_move_success_message">Файл қалтаға жылжытылды</string>
+    <string name="conversation_files_item_header_from_message">Хабарламаға тіркелген</string>
+    <string name="conversation_files_item_header_pinned">Бекітілген</string>
+    <string name="conversation_files_item_header_from_theme">Диалогқа тіркелген</string>
+    <string name="conversation_files_no_data_message">Хабарлармен жіберілген файлдар осы жерде пайда болады</string>
+</resources>

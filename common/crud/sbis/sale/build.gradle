@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.crud.sbis.sale"
+}
+
+dependencies {
+
+    api project(':controller')
+
+    // Modules
+    api project(':common')
+    api project(':mvp')
+    api project(':crud_devices_settings')
+
+    implementation "com.google.dagger:dagger-android:$rootProject.ext.daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.ext.daggerVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.ext.kotlinxCoroutinesCoreVersion"
+
+    //processors
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+}

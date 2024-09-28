@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="business_card_domain_id" type="id"/>
+    <item name="business_card_domain_text_id" type="id"/>
+    <item name="business_card_domain_image_id" type="id"/>
+    <item name="business_card_domain_specialization_id" type="id"/>
+</resources>

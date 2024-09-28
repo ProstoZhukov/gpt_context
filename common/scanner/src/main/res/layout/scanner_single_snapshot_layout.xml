@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/document_scanner_bottom_content_padding"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/last_snapshot"
+            android:layout_width="@dimen/document_scanner_last_snapshot_preview_size"
+            android:layout_height="@dimen/document_scanner_last_snapshot_preview_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/document_scanner_bottom_content_padding"
+            android:layout_marginLeft="@dimen/document_scanner_bottom_content_padding"
+            android:visibility="gone"
+            app:roundedCornerRadius="@dimen/sbis_image_square_corner_radius"/>
+
+    <ru.tensor.sbis.scanner.view.SnapshotButton
+            android:id="@+id/snapshot_button"
+            style="@style/SingleSnapshotButtonStyle"
+            android:layout_gravity="center"/>
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+include ':catalog'
+project(':catalog').projectDir = new File(catalogDir, "catalog")
+
+include ':catalog_card'
+project(':catalog_card').projectDir = new File(catalogDir, "catalog_card")
+
+include ':catalog_common'
+project(':catalog_common').projectDir = new File(catalogDir, "catalog_common")
+
+include ':catalog_main_screen_addon'
+project(':catalog_main_screen_addon').projectDir = new File(catalogDir, "catalog_main_screen_addon")
+
+include ':catalog_screens'
+project(':catalog_screens').projectDir = new File(catalogDir, "catalog_screens")
+
+include ':commonstorekeeper'
+project(':commonstorekeeper').projectDir = new File(catalogDir, "commonstorekeeper")

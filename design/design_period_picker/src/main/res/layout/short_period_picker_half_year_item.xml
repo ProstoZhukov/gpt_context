@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/selection_view"
+        style="@style/ShortPeriodPickerSelectionView"
+        app:layout_constraintBottom_toBottomOf="@id/half_year_1_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/half_year_1_title"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/half_year_1_title"
+        style="@style/ShortPeriodPickerFirstColumnHalfYearSbisTextView"
+        android:text="@string/half_year_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/half_year_2_title"
+        style="@style/ShortPeriodPickerFirstColumnHalfYearSbisTextView"
+        android:text="@string/half_year_2"
+        app:layout_constraintTop_toBottomOf="@+id/half_year_1_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

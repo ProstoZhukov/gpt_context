@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="input_view_progress_stroke_width">1.5dp</dimen>
+
+    <!--SearchInput-->
+    <dimen name="input_view_filter_search_panel_height">40dp</dimen>
+    <dimen name="input_view_panel_universal_margin">10dp</dimen>
+    <dimen name="input_view_filter_search_big_padding">12dp</dimen>
+    <dimen name="input_view_filter_search_normal_padding">8dp</dimen>
+    <dimen name="input_view_filter_search_small_padding">4dp</dimen>
+    <dimen name="input_view_filter_search_hidden_filters_padding_left">5dp</dimen>
+    <dimen name="input_view_search_min_width">105dp</dimen>
+    <dimen name="input_view_filter_icon_with_no_filters_width">42dp</dimen>
+    <dimen name="input_view_filter_icon_with_hidden_filters_width">44dp</dimen>
+    <dimen name="input_view_filter_icon_with_visible_filters_width">38dp</dimen>
+    <dimen name="input_view_filters_dynamic_text_size">@dimen/size_body2_scaleOn</dimen>
+    <dimen name="input_view_filters_max_text_size">@dimen/size_title2_scaleOff</dimen>
+    <dimen name="input_view_search_text_size">16dp</dimen>
+    <dimen name="input_view_search_text_hint_size">14dp</dimen>
+    <dimen name="input_view_clear_button_size">12dp</dimen>
+    <dimen name="input_view_filter_empty_icon_size">18dp</dimen>
+    <dimen name="input_view_filter_selected_icon_size">36dp</dimen>
+    <dimen name="input_view_filter_search_panel_divider_height">28dp</dimen>
+    <dimen name="input_view_filter_search_panel_divider_width">1dp</dimen>
+    <dimen name="input_view_search_input_dynamic_text_size">@dimen/size_body1_scaleOn</dimen>
+    <dimen name="input_view_search_input_max_text_size">@dimen/size_title1_scaleOff</dimen>
+
+    <!-- Search panel -->
+    <dimen name="input_view_search_panel_separator_height">28dp</dimen>
+    <dimen name="input_view_search_panel_min_size">105dp</dimen>
+    <dimen name="input_view_search_panel_clear_touch_padding">14dp</dimen>
+
+    <dimen name="input_view_search_pane_height">28dp
+    </dimen> <!-- todo Dude from calendar overrides it and make it 36dp. THIS NEEDS REFACTORING. -->
+    <dimen name="input_view_toolbar_search_pane_height">30dp</dimen>
+    <dimen name="input_view_recipient_selection_toolbar_height">44dp</dimen>
+    <dimen name="input_view_search_padding_top">50dp</dimen>
+    <dimen name="input_view_search_panel_font_icons_size">16dp</dimen>
+    <dimen name="input_view_search_panel_text_size">14dp</dimen>
+    <dimen name="input_view_search_panel_padding_small">8dp</dimen>
+    <dimen name="input_view_search_panel_padding_large">16dp</dimen>
+    <dimen name="input_view_search_panel_toolbar_margin_vertical">8dp</dimen>
+    <dimen name="input_view_search_panel_additional_text_width">1dp</dimen>
+
+</resources>

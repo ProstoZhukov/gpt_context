@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="communicator_import_contacts_button_width">169dp</dimen>
+    <dimen name="communicator_import_contacts_button_top_padding">30dp</dimen>
+</resources>

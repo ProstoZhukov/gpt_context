@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="List">
+        <item name="list_content_dark_background">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="list_content_background">?backgroundColor</item>
+        <item name="list_item_background_color_states">@color/list_background_color_states</item>
+    </style>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SbisBottomButtonsView -->
+    <item name="toolbar_cancel_button_id" type="id"/>
+    <item name="toolbar_bottom_button_params_tag_key" type="id"/>
+
+    <!-- Toolbar -->
+    <item name="toolbar_left_icon" type="id"/>
+    <item name="toolbar_right_icon1" type="id"/>
+    <item name="toolbar_right_badge1" type="id"/>
+    <item name="toolbar_right_panel_toggle_area1" type="id"/>
+    <item name="toolbar_right_icon2" type="id"/>
+    <item name="toolbar_right_badge2" type="id"/>
+    <item name="toolbar_right_panel_toggle_area2" type="id"/>
+    <item name="toolbar_tabs" type="id"/>
+    <item name="toolbar_center_text" type="id"/>
+    <item name="toolbar_left_text" type="id"/>
+    <item name="toolbar_right_text" type="id"/>
+    <item name="toolbar_extra_left_icon" type="id"/>
+    <item name="toolbar_custom_view_container" type="id"/>
+    <item name="toolbar_spinner" type="id"/>
+    <item name="toolbar_left_panel_toggle_area" type="id"/>
+    <item name="toolbar_extra_left_icon_toggle_area" type="id"/>
+    <item name="toolbar" type="id"/>
+    <item name="toolbar_divider" type="id"/>
+    <item name="toolbar_shadow" type="id"/>
+    <item name="toolbar_right_container" type="id"/>
+    <item name="toolbar_left_container" type="id"/>
+    <item name="toolbar_left_counter" type="id"/>
+    <item name="toolbar_loading_indicator" type="id"/>
+    <item name="toolbar_sync_icon" type="id"/>
+
+</resources>

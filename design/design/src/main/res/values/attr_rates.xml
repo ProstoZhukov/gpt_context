@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Переменные для цветов оценок
+ -->
+<resources>
+    <attr name="rate2Color" format="color|reference"/>
+    <attr name="rate4Color" format="color|reference"/>
+    <attr name="rate6Color" format="color|reference"/>
+    <attr name="rate8Color" format="color|reference"/>
+    <attr name="rate10Color" format="color|reference"/>
+</resources>

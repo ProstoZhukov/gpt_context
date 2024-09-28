@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableDataBindingCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.common_filters"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+
+        resourcePrefix "common_filters_"
+    }
+}
+
+dependencies {
+    implementation project(':person-decl')
+    implementation project(':design_profile')
+    implementation project(':design_sbis_text_view')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+}

@@ -1,0 +1,1 @@
+apply from: "$reportingDir/reporting_with_card_feature_settings.gradle"

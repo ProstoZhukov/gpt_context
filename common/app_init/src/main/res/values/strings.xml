@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_init_no_memory_title_msg">No memory</string>
+    <string name="app_init_no_memory_details_msg">Not enough memory on your device, please free up space and try again</string>
+    <string name="app_init_no_memory_button_title">Close</string>
+    <string name="app_init_no_memory_toast_msg">No memory! Please free up and try again</string>
+    <string name="app_init_unknown_error">Unknown error</string>
+</resources>

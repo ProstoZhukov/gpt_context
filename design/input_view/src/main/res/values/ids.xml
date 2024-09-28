@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region SearchInput -->
+    <item type="id" name="search_input_input_field"/>
+    <item type="id" name="search_input_filter"/>
+    <item type="id" name="search_input_clear_btn"/>
+    <item type="id" name="search_input_loupe_icon"/>
+    <!-- endregion -->
+
+    <!-- region InputView -->
+    <item type="id" name="input_view_internal_field"/>
+    <item type="id" name="input_view_title"/>
+    <item type="id" name="input_view_clear"/>
+    <item type="id" name="input_view_icon"/>
+    <item type="id" name="input_view_link"/>
+    <item type="id" name="input_view_validation_status"/>
+    <!-- endregion -->
+</resources>

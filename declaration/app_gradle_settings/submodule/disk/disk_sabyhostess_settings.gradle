@@ -1,0 +1,44 @@
+include ':attachments'
+project(':attachments').projectDir = new File(diskDir, 'attachments')
+
+include ':attachments-decl'
+project(':attachments-decl').projectDir = new File(diskDir, 'attachments-decl')
+
+include ':attachments-encryption-decl'
+project(':attachments-encryption-decl').projectDir = new File(diskDir, 'attachments-encryption-decl')
+
+include ':attachments-loading'
+project(':attachments-loading').projectDir = new File(diskDir, 'attachments-loading')
+
+include ':attachments-loading-decl'
+project(':attachments-loading-decl').projectDir = new File(diskDir, 'attachments-loading-decl')
+
+include ':attachments-signing'
+project(':attachments-signing').projectDir = new File(diskDir, 'attachments-signing')
+
+include ':attachments-signing-decl'
+project(':attachments-signing-decl').projectDir = new File(diskDir, 'attachments-signing-decl')
+
+include ':attachments-ui'
+project(':attachments-ui').projectDir = new File(diskDir, 'attachments-ui')
+
+include ':attachments_models'
+project(':attachments_models').projectDir = new File(diskDir, 'attachments_models')
+
+include ':disk'
+project(':disk').projectDir = new File(diskDir, 'disk')
+
+include ':disk-decl'
+project(':disk-decl').projectDir = new File(diskDir, 'disk-decl')
+
+include ':file-loading-notification'
+project(':file-loading-notification').projectDir = new File(diskDir, 'file-loading-notification')
+
+include ':sabydoc-viewer'
+project(':sabydoc-viewer').projectDir = new File(diskDir, 'sabydoc-viewer')
+
+include ':sabydoc-viewer-decl'
+project(':sabydoc-viewer-decl').projectDir = new File(diskDir, 'sabydoc-viewer-decl')
+
+include ':viewer'
+project(':viewer').projectDir = new File(diskDir, 'viewer')

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_close_icon">&#xe902;</string>
+
+    <string name="onboarding_close">Закрыть</string>
+    <string name="onboarding_start_work">Начать работу</string>
+    <string name="onboarding_empty_title">""</string>
+</resources>

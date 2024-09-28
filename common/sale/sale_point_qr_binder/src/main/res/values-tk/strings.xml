@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="spqrb_bind_completed">QR kody satuw nokady bilen üstünlikli baglany&#x15f;&#xfd;ar</string>
+    <string name="spqrb_error_broken_push_format">Nädogry bildiri&#x15f; formaty% d</string>
+    <string name="spqrb_action_scan_again">Againene gözden geçiri&#x148;</string>
+    <string name="spqrb_error_internal_bind_failure">QR kody baglany&#x15f;dyryp bilmedi. Içerki programma &#xfd;al&#x148;y&#x15f;lygy.</string>
+</resources>

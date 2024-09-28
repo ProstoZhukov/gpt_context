@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Кнопка отмены -->
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/modalwindows_cancel_button"
+        style="@style/RegularStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_gravity="bottom"
+        android:background="@drawable/selectable_item_bg_white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/common_option_cancel_name"
+        android:textColor="@color/text_color_accent_1"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_title1_scaleOff"
+        tools:ignore="SpUsage,UnusedAttribute" />
+
+    <!-- Контент -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/modalwindows_sheet_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/list_item_height"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_separator_size"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/list_item_height"
+        android:background="@color/separator_background"/>
+
+</FrameLayout>

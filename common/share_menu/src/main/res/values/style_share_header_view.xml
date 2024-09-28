@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShareMenuHeaderViewDefaultStyle" />
+
+    <style name="ShareMenuHeaderViewBackButtonStyle" parent="MobileFontStyle">
+        <item name="android:text">@string/design_mobile_icon_arrow_back</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">?fontSize_xl_scaleOff</item>
+        <item name="android:textColor">?primaryIconColor</item>
+    </style>
+
+    <style name="ShareMenuHeaderViewTitle" parent="BoldStyle">
+        <item name="android:textSize">?fontSize_xl_scaleOff</item>
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+    <style name="ShareMenuHeaderViewBirdIcon" parent="MobileFontStyle">
+        <item name="android:background">@drawable/share_menu_header_bird</item>
+    </style>
+
+    <style name="ShareMenuHeaderViewSuccessIcon" parent="MobileFontStyle">
+        <item name="android:text">@string/design_mobile_icon_successful</item>
+        <item name="android:textSize">?fontSize_m_scaleOff</item>
+        <item name="android:textColor">?successIconColor</item>
+    </style>
+</resources>

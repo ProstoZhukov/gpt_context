@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Toolbar -->
+    <string name="business_one_line_title" translatable="false">%1$s, %2$s</string>
+
+    <!-- Errors -->
+    <string name="business_error_network_header">Failed to load data</string>
+    <string name="business_error_network_info">Check your network connection</string>
+    <string name="business_error_popup_network_header">No network connection</string>
+    <string name="business_error_receiving_data">Error receiving data</string>
+    <string name="business_error_no_data_for_period">No data for the selected period</string>
+    <string name="business_error_no_data_for_filter">Try changing the filtering parameters</string>
+    <string name="business_error_no_data">No data</string>
+    <string name="business_error_no_data_found">Nothing found for this search</string>
+    <string name="business_error_unknown">Unknown error</string>
+    <string name="business_error_permission">You have insufficient rights for this action</string>
+    <string name="business_error_check_permission">Access rights verification error</string>
+    <string name="business_error_no_cashbox">No connected cashboxes</string>
+
+    <!-- Comments -->
+    <string name="business_try_change_period">Try changing the period</string>
+    <string name="business_try_change_period_active">change the period</string>
+    <string name="business_no_permission_comment">Revenue for products and services will be displayed here</string>
+    <string name="business_try_check_connection_and_update_again">Check your Internet connection and try again</string>
+</resources>

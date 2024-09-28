@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:duration="@integer/viper_animation_fab_pressed_duration"
+                android:propertyName="translationZ"
+                android:valueTo="0dp"/>
+        </set>
+    </item>
+
+    <item>
+        <set>
+            <objectAnimator
+                android:duration="@integer/viper_animation_fab_unpressed_duration"
+                android:propertyName="translationZ"
+                android:valueTo="@dimen/viper_floating_btn_elevation"/>
+        </set>
+    </item>
+</selector>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    name="Tensor VIPER Base Module"
+    description="Создает классы для наполнения модуля">
+
+    <category value="Other"/>
+
+    <parameter
+        id="moduleName"
+        name="Название модуля"
+        type="string"
+        constraints="nonempty"
+        default="module"
+        help="Название модуля"/>
+
+    <parameter
+        id="fragmentName"
+        name="Название layout для фрагмента"
+        type="string"
+        constraints="layout|nonempty|unique"
+        default="fragment_blank"
+        suggest="fragment_${classToResource(moduleName)}"
+        help="Название layout для фрагмента, который будет создан внутри модуля"/>
+
+    <parameter
+        id="commonNamespace"
+        name="Package базового common-модуля"
+        type="string"
+        constraints="nonempty"
+        default="ru.tensor.sbis.app.appcommon"
+        help="Package базового common-модуля"/>
+
+    <parameter
+        id="commonModuleName"
+        name="Имя базового common-модуля"
+        type="string"
+        constraints="nonempty"
+        default="App"
+        help="Имя базового common-модуля (без слова common, соблюдайте регистр)"/>
+
+    <parameter
+        id="modelName"
+        name="Название data-модели"
+        type="string"
+        constraints="nonempty|unique"
+        default="Model"
+        help="Название data-модели, с которой будет работать модуль. Также участвует в названиях всех классов"/>
+
+    <parameter
+        id="includeCrud"
+        name="Будет ли модуль работать с CRUD-ом (нужны ли команды create, read, update, delete)?"
+        type="boolean"
+        default="true"
+        help="Будут созданы необходимые классы и интерфейсы для реализации команд. Фрагмент будет наследоваться от BasePresenterFragment"/>
+
+    <parameter
+        id="includeList"
+        name="Будет ли модуль работать с LIST-ом (нужны ли команды list, refresh)?"
+        type="boolean"
+        default="true"
+        help="Будут созданы необходимые классы и интерфейсы для реализации команд. Фрагмент будет наследоваться от BaseListFragmentWithTwoWayPagination. Также будут созданы адаптер и холдер."/>
+
+    <parameter
+        id="includeGen"
+        name="Нужно ли сгенерировать классы, имитирующие классы контроллера?"
+        type="boolean"
+        default="false"
+        help="Создаст 4 класса: Model, Filter, Manager и ListResultOf, использовать, если контроллер для модуля еще не содержит нужные классы."/>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

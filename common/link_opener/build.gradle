@@ -1,0 +1,206 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableKaptCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableSabyLinkFieldsCfg()
+    cfg.enableRegionSplit()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+// spareName - gradle свойство временно оставленное для обратной совместимости
+Object getProperty(String fieldName, Object defVal, String spareName = "none_name") {
+    def configField = android.defaultConfig.buildConfigFields[fieldName]
+    def property = defVal
+    if (configField != null && !configField.value.isEmpty()) {
+        property = configField.value.replace("\"", "")
+    } else if (rootProject.hasProperty(spareName)) {
+        property = rootProject.property(spareName)
+    }
+    println "link_opener: $fieldName is $property"
+    return property
+}
+
+// spareName - gradle свойство временно оставленное для обратной совместимости
+String externalScheme(String fieldName, String spareName = "none_name") {
+    def workScheme = "https"
+    def configField = android.defaultConfig.buildConfigFields[fieldName]
+    def enabled = false
+    if (configField != null) {
+        enabled = Boolean.parseBoolean(configField.value)
+    } else if (rootProject.hasProperty(spareName)) {
+        enabled = rootProject.property(spareName)
+    }
+    if (enabled) {
+        println "link_opener: specific link for $fieldName is enabled"
+        return workScheme
+    } else {
+        return "placeholder"
+    }
+}
+
+String internalScheme(String fieldName) {
+    def sabylinkScheme = "sabylink"
+    def configField = android.defaultConfig.buildConfigFields[fieldName]
+    if (configField != null && Boolean.parseBoolean(configField.value)) {
+        println "link_opener: $fieldName is enabled"
+        return sabylinkScheme
+    } else {
+        println "link_opener: $fieldName is disabled"
+        return "placeholder"
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.link_opener"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+
+        def defaultComponent = "ru.tensor.sbis.droid.MainActivity"
+        def defaultPathPattern = "/.*"
+
+        /**
+         * ВСЕ НОВЫЕ manifestPlaceholders должны добавляться только через SabyLinkCfgPlugin!
+         * Пример:
+         * rootProjectConfig { cfg ->
+         *      cfg.enableSabyLinkCfg()
+         *}* ...
+         * sabyLinks.setup { set ->
+         *      set.component = "ru.tensor.sbis.business.LaunchActivity"
+         *      set.enableLinkContractorsCard = true
+         *      set.contractorsCardFeature = true
+         *}*/
+        manifestPlaceholders = [
+                // Манифест плейсхолдеры для настройки самого компонента Activity в манифесте
+                DEEPLINK_ACTIVITY              : getProperty("LINK_COMPONENT", defaultComponent, "deepLinkHost"),
+                DEEPLINK_PATTERN               : getProperty("LINK_PATTERN", defaultPathPattern),
+
+                // Манифест плейсхолдеры для настройки активности intent-filter-ов ВНЕШНИХ http(s) ссылок
+                ONLINE_SBIS_SCHEME             : externalScheme("ENABLE_ONLINE_SBIS"),
+                GO_SABY_SCHEME                 : externalScheme("ENABLE_GO_SABY"),
+                WEBINAR_SCHEME                 : externalScheme("ENABLE_WEBINAR", "enableDeepLinkWebinar"),
+                MEETING_SCHEME                 : externalScheme("ENABLE_MEETING", "enableDeepLinkMeeting"),
+                VIDEOCONF_SCHEME               : externalScheme("ENABLE_VIDEOCONF", "enableDeepLinkVideoconf"),
+                DIALOG_SCHEME                  : externalScheme("ENABLE_DIALOG"),
+                CHAT_SCHEME                    : externalScheme("ENABLE_CHAT"),
+                PERSON_SCHEME                  : externalScheme("ENABLE_PERSON"),
+                DISK_DOC_SCHEME                : externalScheme("ENABLE_DISK_DOC"),
+                EVENT_SCHEME                   : externalScheme("ENABLE_EVENT"),
+                CALL_SCHEME                    : externalScheme("ENABLE_CALL"),
+                NEWS_SCHEME                    : externalScheme("ENABLE_NEWS", "enableDeepLinkNews"),
+                REG_NEWS_SCHEME                : externalScheme("ENABLE_REG_NEWS", "enableDeepLinkRegNews"),
+                RETAIL_DEVICE_SCHEME           : externalScheme("ENABLE_RETAIL_DEVICE", "enableDeepLinkRetailDevice"),
+                WIKI_ARTICLE_SCHEME            : externalScheme("ENABLE_WIKI_ARTICLE", "enableDeepLinkWikiArticle"),
+                WIKI_KNOWLEDGE_SCHEME          : externalScheme("ENABLE_WIKI_KNOWLEDGE"),
+                WIKI_KNOWLEDGE_FOLDER_SCHEME   : externalScheme("ENABLE_WIKI_KNOWLEDGE_FOLDER"),
+                FORUM_SCHEME                   : externalScheme("ENABLE_FORUM"),
+                OPENDOC_CARD_SCHEME            : externalScheme("ENABLE_OPENDOC"),
+                CONTRACTORS_CARD_SCHEME        : externalScheme("ENABLE_CONTRACTORS", "enableDeepLinkContractorsCard"),
+                QR_CODE_AUTH_AND_INSTALL_SCHEME: externalScheme("ENABLE_QR_AUTH_AND_INSTALL"),
+                QR_AUTH_TO_WEB_SCHEME          : externalScheme("ENABLE_QR_AUTH_TO_WEB"),
+                SBIS_PAGE_LINK_SCHEME          : externalScheme("ENABLE_SBIS_PAGE_LINK", "enableDeepLinkSbisPageLink"),
+                SABY_LITE_PAGE_LINK_SCHEME     : externalScheme("ENABLE_SABY_LITE_PAGE_LINK", "enableDeepLinkSabyLitePageLink"),
+                SABY_MY_PAGE_LINK_SCHEME       : externalScheme("ENABLE_SABY_MY_PAGE_LINK", "enableDeepLinkSabyMyPageLink"),
+                SABY_GET_BRAND_COMMON_SCHEME   : externalScheme("ENABLE_SABY_GET_BRAND_COMMON", "enableDeepLinkSabyGetBrandCommon"),
+                SABY_GET_SCHEME                : externalScheme("ENABLE_SABY_GET", "enableDeepLinkSabyGet"),
+                SABY_BRAND_SCHEME              : externalScheme("ENABLE_SABY_GET_BRAND", "enableDeepLinkSabyBrand"),
+                CERT_SUBMISSION_SCHEME         : externalScheme("ENABLE_SABY_CERTIFICATE_SUBMISSION"),
+                CERT_SETTING_PASSWORD_SCHEME   : externalScheme("ENABLE_SABY_SETTING_CERTIFICATE_PASSWORD"),
+                SABY_CLIENTS_PAGE_LINK_SCHEME  : externalScheme("ENABLE_SABY_CLIENTS_PAGE_LINK"),
+                SABY_CLIENTS_SCHEME            : externalScheme("ENABLE_SABY_CLIENTS_SCHEME"),
+
+                // Манифест плейсхолдеры для настройки схем intent-filter-ов ВНУТРЕННИХ SABYLINK (sabylink://) ссылок
+                TASK_FEATURE_SCHEME            : internalScheme("SABYLINK_TASK_FEATURE"),
+                CONTRACTORS_CARD_FEATURE_SCHEME: internalScheme("SABYLINK_CONTRACTORS_CARD_FEATURE"),
+                PERSON_CARD_FEATURE_SCHEME     : internalScheme("SABYLINK_PERSON_CARD_FEATURE"),
+                E_SIGNS_FEATURE_SCHEME         : internalScheme("SABYLINK_ESIGNS_FEATURE"),
+                VIOLATION_FEATURE_SCHEME       : internalScheme("SABYLINK_VIOLATION_FEATURE"),
+                VIDEOCALL_FEATURE_SCHEME       : internalScheme("SABYLINK_VIDEO_CALL_FEATURE"),
+                NEWS_FEATURE_SCHEME            : internalScheme("SABYLINK_NEWS_FEATURE"),
+                ATTACHMENTS_FEATURE_SCHEME     : internalScheme("SABYLINK_ATTACHMENTS_FEATURE"),
+                CALENDAR_FEATURE_SCHEME        : internalScheme("SABYLINK_CALENDAR_FEATURE"),
+                THEMES_REGISTRY_FEATURE_SCHEME : internalScheme("SABYLINK_THEMES_REGISTRY_FEATURE"),
+                DOCVIEW_FEATURE_SCHEME         : internalScheme("SABYLINK_DOC_VIEW_FEATURE"),
+                DOCWEBVIEWER_FEATURE_SCHEME    : internalScheme("SABYLINK_DOC_WEB_VIEWER_FEATURE"),
+                MEETING_FEATURE_SCHEME         : internalScheme("SABYLINK_MEETING_FEATURE"),
+                IAMHERE_FEATURE_SCHEME         : internalScheme("SABYLINK_I_AM_HERE_FEATURE"),
+                MYDOCUMENTS_FEATURE_SCHEME     : internalScheme("SABYLINK_MY_DOCUMENTS_FEATURE"),
+                PAYMENT_DOCUMENT_FEATURE_SCHEME: internalScheme("SABYLINK_PAYMENT_DOCUMENT_FEATURE"),
+                INVITE_FEATURE_SCHEME          : internalScheme("SABYLINK_INVITE_FEATURE"),
+                KNOWLEDGE_FEATURE_SCHEME       : internalScheme("SABYLINK_KNOWLEDGE_FEATURE"),
+                KNOWLEDGE_FOLDER_FEATURE_SCHEME: internalScheme("SABYLINK_KNOWLEDGE_FOLDER_FEATURE"),
+                DEVICE_LINKER_FEATURE_SCHEME   : internalScheme("SABYLINK_DEVICE_LINKER_FEATURE"),
+                SABYGET_SABY_CLIENTS_FEATURE   : internalScheme("SABYLINK_SABYGET_SABY_CLIENTS_FEATURE"),
+                BRAND_SABY_CLIENTS_FEATURE     : internalScheme("SABYLINK_BRAND_SABY_CLIENTS_FEATURE"),
+                CLIENTS_SABY_FEATURE_SCHEME    : internalScheme("SABYLINK_CLIENTS_SABY_FEATURE")
+        ]
+    }
+
+    regionConfig {
+        regions {
+            ru
+            kz
+        }
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Регистрация ссылок на тестовых стендах только для debug-сборки
+    sourceSets {
+        debug {
+            manifest.srcFile('src/debug/AndroidManifest.xml')
+        }
+    }
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+        returnDefaultValues = true
+        all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+                exceptionFormat 'full'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':controller')
+
+    api project(":android-ext-decl")
+    implementation project(":edo-decl")
+    implementation project(":toolbox-decl")
+    implementation project(':common')
+    implementation project(':base_components')
+    implementation project(':statistic')
+
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$rootProject.ext.daggerVersion"
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    implementation "com.google.dagger:dagger-android:$rootProject.ext.daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.ext.daggerVersion"
+    implementation platform("com.google.firebase:firebase-bom:$rootProject.ext.firebaseBomVersion")
+
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+    implementation "androidx.browser:browser:$rootProject.ext.browserVersion"
+    implementation "androidx.tracing:tracing-ktx:$rootProject.ext.androidTracingVersion"
+
+    testImplementation project(':testing')
+}

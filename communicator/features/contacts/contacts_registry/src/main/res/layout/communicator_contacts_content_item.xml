@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/communicator_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/communicator_contact_check"
+            android:layout_width="@dimen/design_item_checkbox_width"
+            android:layout_height="@dimen/design_item_checkbox_height"
+            android:layout_marginEnd="@dimen/communicator_contact_check_box_margin"
+            android:layout_marginLeft="@dimen/communicator_contact_check_box_margin"
+            android:layout_marginRight="@dimen/communicator_contact_check_box_margin"
+            android:layout_marginStart="@dimen/communicator_contact_check_box_margin"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_alignBottom="@+id/base_components_person_photo"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@id/base_components_person_photo"
+            android:contentDescription="@null"
+            tools:visibility="visible"/>
+
+        <!-- Не менять название @id/base_components_person_photo -->
+        <ru.tensor.sbis.design.profile.person.PersonView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@id/base_components_person_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/list_person_photo_view_margin_right"
+            android:layout_marginStart="@dimen/registry_item_icon_left_margin"
+            android:layout_alignTop="@+id/communicator_contact_body"
+            android:adjustViewBounds="true"
+            app:PersonView_size="m"
+            android:layout_toEndOf="@id/communicator_contact_check"
+            tools:layout_width="55dp"
+            tools:layout_height="55dp"
+            tools:src="@drawable/icon_skype"
+            tools:ignore="ContentDescription"/>
+
+        <RelativeLayout
+            android:id="@+id/communicator_contact_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/base_components_person_photo"
+            android:paddingEnd="@dimen/list_with_header_right_margin"
+            tools:ignore="RtlSymmetry">
+
+            <ru.tensor.sbis.common_views.HighlightedTextView
+                style="@style/MessagesListItem.HeaderText"
+                android:id="@+id/communicator_person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:scrollbars="none"
+                android:includeFontPadding="false"
+                android:layout_alignParentEnd="true"
+                android:textColor="?secondaryTextColor"
+                tools:text="Имя контакта"/>
+
+            <TextView
+                style="@style/RegularStyle"
+                android:id="@+id/communicator_person_work_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/communicator_person_name"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:scrollbars="none"
+                android:singleLine="true"
+                android:textColor="?unaccentedTextColor"
+                android:textSize="?fontSize_xs_scaleOn"
+                tools:text="Work position"/>
+
+            <TextView
+                style="@style/RegularStyle"
+                android:id="@+id/communicator_person_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/communicator_person_work_position"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:scrollbars="none"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="?unaccentedTextColor"
+                android:textSize="?fontSize_xs_scaleOn"
+                tools:text="Department"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

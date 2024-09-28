@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="base_components_common_folder_context_menu_move_up">提升</string>
+    <string name="base_components_common_folder_context_menu_move_down">下移</string>
+    <string name="base_components_common_folder_context_menu_move_edit">编辑</string>
+    <string name="base_components_common_folder_context_menu_move_remove">删除</string>
+    <string name="base_components_common_folder_context_menu_move">移动</string>
+    <string name="base_components_input_max_length_error">超过最大符号数</string>
+    <string name="base_components_operation_error_message">操作错误</string>
+    <string name="base_components_dialog_button_ok">好的</string>
+    <string name="base_components_dialog_button_cancel">取消</string>
+</resources>

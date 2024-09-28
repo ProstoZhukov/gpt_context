@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="date_picker_date_date_picker_month_icon">&#xe948;</string>
+    <string name="date_picker_date_date_picker_year_icon">&#xea29;</string>
+    <string name="date_picker_day_label">天</string>
+    <string name="date_picker_month_label">月</string>
+    <string name="date_picker_quarter_label">四分之一</string>
+    <string name="date_picker_half_year_label">半年</string>
+    <string name="date_picker_year_label">年</string>
+    <string name="date_picker_current_day_label">当前日期</string>
+    <string name="date_picker_current_month_label">这个月</string>
+    <string name="date_picker_current_quarter_label">当前季度</string>
+    <string name="date_picker_current_half_year_label">当前半年</string>
+    <string name="date_picker_current_year_label">今年</string>
+    <string name="date_picker_history">时期选择的历史：</string>
+    <string name="date_picker_history_empty_text">此处将显示之前选择的时间段。</string>
+    <string name="date_picker_period_invalid">输入的期间不正确</string>
+    <string name="date_picker_date_invalid">输入的日期不正确。</string>
+    <string name="date_picker_period_unavailable">当前时段不可选择</string>
+    <string name="date_picker_title">时期选择</string>
+    <string name="date_picker_date_picker_title">日期选择器。</string>
+    <string name="date_picker_select_current_period_title">当前的</string>
+    <string name="date_picker_reset_title">重置</string>
+</resources>

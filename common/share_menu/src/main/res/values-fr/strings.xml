@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_menu_authorization_required_message">Veuillez vous connecter à votre compte et réessayer</string>
+    <string name="share_menu_no_available_options">Aucune section disponible pour le téléchargement de fichiers</string>
+    <string name="share_menu_header_view_title_default">Envoyer%1$s</string>
+    <string name="share_menu_header_view_title_sending">Envoi en cours%1$s</string>
+    <string name="share_menu_header_view_title_completed">Expédié%1$s</string>
+    <string name="share_menu_text_restriction">Le texte augmente le nombre maximum de caractères autorisés pour un message</string>
+    <string name="share_menu_attachments_count_restriction">Vous ne pouvez pas envoyer plus de 25&#160;fichiers</string>
+    <string name="share_menu_attachment_big_size_restriction">Le fichier téléchargé ne doit pas dépasser 1 Go</string>
+</resources>

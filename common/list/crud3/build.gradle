@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableKaptCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.crud3"
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    resourcePrefix 'crud3_'
+}
+
+dependencies {
+    implementation project(':design_progress')
+    implementation project(':controller')
+    api project(':list')
+
+    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.ext.androidLifecycleCommon"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.ext.androidLifecycleRuntime"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.ext.recyclerViewVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.ext.androidArchLifecycle"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$rootProject.ext.swiperefreshlayoutVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    testImplementation project(":testing")
+}

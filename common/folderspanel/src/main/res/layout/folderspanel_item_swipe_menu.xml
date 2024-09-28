@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.folderspanel.SwipeMenuItem" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/folderspanel_swipe_menu_item"
+        style="@style/SwipeMenuItem"
+        android:layout_width="@dimen/operation_item_menu_button_width"
+        android:layout_height="match_parent"
+        app:onClick="@{viewModel.clickAction}">
+
+        <TextView
+            android:id="@+id/folderspanel_swipe_menu_item_icon"
+            style="@style/SwipeMenuItemIcon"
+            app:mobileIcon="@{viewModel.icon}"
+            app:textColorRes="@{viewModel.iconColor}"/>
+
+    </LinearLayout>
+</layout>

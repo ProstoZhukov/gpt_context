@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.communicator_crm_chat_list.filter.models.CheckableFilterItem"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/selection_window_item_height"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:onClick="@{viewModel.onClick}">
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_chat_filter_name"
+            style="@style/SelectionWindowItem_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="?offset_m"
+            android:gravity="center_vertical"
+            app:text="@{viewModel.titleRes}"
+            tools:text="фильтр"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/clients_impl_checkbox_text"
+            style="@style/MobileFontStyle"
+            android:layout_width="@dimen/design_view_ext_sbis_checkbox_size"
+            android:layout_height="@dimen/design_view_ext_sbis_checkbox_size"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="?offset_xs"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/design_mobile_icon_check"
+            android:textColor="?markerColor"
+            android:textSize="?fontSize_m_scaleOff"
+            app:visibleOrGone="@{viewModel.isSelected}"
+            tools:visibility="visible"/>
+
+    </RelativeLayout>
+</layout>

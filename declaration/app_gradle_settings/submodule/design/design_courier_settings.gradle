@@ -1,0 +1,99 @@
+ext.design_dir = 'design'
+apply from: "$designDir/settings.gradle"
+apply from: "$designDir/settings_courier.gradle"
+
+include ":design_review"
+project(":design_review").projectDir = new File(designDir, "design_review")
+
+include ":design_audio_player_view"
+project(":design_audio_player_view").projectDir = new File(designDir, "design_audio_player_view")
+
+include ":design_notification"
+project(":design_notification").projectDir = new File(designDir, "design_notification")
+
+include ":navigation"
+project(":navigation").projectDir = new File(designDir, "navigation")
+
+include ":design_message_panel_common"
+project(":design_message_panel_common").projectDir = new File(designDir, "design_message_panel_common")
+
+include ":design_switch"
+project(":design_switch").projectDir = new File(designDir, "design_switch")
+
+include ":view_factory"
+project(":view_factory").projectDir = new File(designDir, "view_factory")
+
+include ":design_retail_views"
+project(":design_retail_views").projectDir = new File(designDir, "design_retail_views")
+
+include ":selection"
+project(":selection").projectDir = new File(designDir, "selection")
+
+include ":scroll_to_top"
+project(":scroll_to_top").projectDir = new File(designDir, "scroll_to_top")
+
+include ":design_video_player_view"
+project(":design_video_player_view").projectDir = new File(designDir, "design_video_player_view")
+
+include ":design_buttons"
+project(":design_buttons").projectDir = new File(designDir, "design_buttons")
+
+include ":design_contact_data_view"
+project(":design_contact_data_view").projectDir = new File(designDir, "design_contact_data_view")
+
+include ":design_message_panel_decl"
+project(":design_message_panel_decl").projectDir = new File(designDir, "design_message_panel_decl")
+
+include ":cloud_view"
+project(":cloud_view").projectDir = new File(designDir, "cloud_view")
+
+include ':design_message_view'
+project(':design_message_view').projectDir = new File(designDir, "design_message_view")
+
+include ":design_message_panel_video_recorder"
+project(":design_message_panel_video_recorder").projectDir = new File(designDir, "design_message_panel_video_recorder")
+
+include ":design_message_panel_recorder_common"
+project(":design_message_panel_recorder_common").projectDir = new File(designDir, "design_message_panel_recorder_common")
+
+include ':design_rating'
+project(':design_rating').projectDir = new File(designDir, "design_rating")
+
+include ":design_retail"
+project(":design_retail").projectDir = new File(designDir, "design_retail")
+
+include ':design_whats_new_v2'
+project(':design_whats_new_v2').projectDir = new File(designDir, "design_whats_new_v2")
+
+include ":input_view"
+project(":input_view").projectDir = new File(designDir, "input_view")
+
+include ":design_message_panel_audio_recorder"
+project(":design_message_panel_audio_recorder").projectDir = new File(designDir, "design_message_panel_audio_recorder")
+
+include ":design_media_player"
+project(":design_media_player").projectDir = new File(designDir, "design_media_player")
+
+include ":design_message_panel"
+project(":design_message_panel").projectDir = new File(designDir, "design_message_panel")
+
+include ":design_retail_models"
+project(":design_retail_models").projectDir = new File(designDir, "design_retail_models")
+
+include ':design_decorators'
+project(':design_decorators').projectDir = new File(designDir, "design_decorators")
+
+include ':design_top_navigation'
+project(':design_top_navigation').projectDir = new File(designDir, "design_top_navigation")
+
+include ':design_tabs'
+project(':design_tabs').projectDir = new File(designDir, "design_tabs")
+
+include ':design_period_picker'
+project(':design_period_picker').projectDir = new File(designDir, "design_period_picker")
+
+include ':design_menu'
+project(':design_menu').projectDir = new File(designDir, "design_menu")
+
+include ':design_splash'
+project(':design_splash').projectDir = new File(designDir, "design_splash")

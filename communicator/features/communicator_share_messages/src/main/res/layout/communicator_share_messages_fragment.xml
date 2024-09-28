@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/communicator_channels_share_messages_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?unaccentedAdaptiveBackgroundColor">
+
+    <LinearLayout
+        android:id="@+id/communicator_share_messages_result_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/communicator_share_messages_selected_conversation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ru.tensor.sbis.design.cloud_view.CloudView
+            android:id="@+id/communicator_share_messages_sending_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:CloudView_outcome="true"/>
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/communicator_share_messages_selection_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ru.tensor.sbis.message_panel.view.MessagePanel
+        android:id="@+id/communicator_share_messages_message_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

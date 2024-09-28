@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.date_picker.current.CurrentPeriodVm"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        onClick="@{viewModel::onClick}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/default_content_padding"
+        android:paddingBottom="@dimen/default_content_padding">
+
+        <View
+            android:id="@+id/selection_mark"
+            android:layout_width="@dimen/folder_panel_selection_mark_width"
+            android:layout_height="@dimen/folder_panel_selection_mark_height"
+            android:background="@color/palette_color_orange1"
+            android:visibility="gone"
+            app:isVisible="@{viewModel.selected}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/default_content_padding"
+            android:text="@{viewModel.title}"
+            android:textColor="?textColor"
+            android:textSize="@dimen/size_title2_scaleOff"
+            app:layout_constraintEnd_toStartOf="@+id/description"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/description"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlSymmetry,SpUsage"
+            tools:text="День"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/default_content_padding"
+            android:text="@{viewModel.description}"
+            android:textColor="@color/date_picker_description_label_color"
+            android:textSize="@dimen/size_body2_scaleOff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/title"
+            app:layout_constraintBaseline_toBaselineOf="@id/title"
+            tools:ignore="RtlSymmetry,SpUsage"
+            tools:text="27 авг. '17"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

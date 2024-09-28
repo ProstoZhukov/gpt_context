@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_media_player_play_video_error">Для просмотра видеосообщения необходимо завершить звонок</string>
+    <string name="design_media_player_play_audio_error">Для прослушивания голосового сообщения необходимо завершить звонок</string>
+</resources>

@@ -1,0 +1,1 @@
+apply from: "$scheduleDir/schedule_control_feature_settings.gradle"

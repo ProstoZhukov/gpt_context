@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Не заменять на SbisTextView, т.к. movementMethod не поддержан -->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modalwindows_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/modalwindows_alert_dialog_padding_8"
+    android:textColor="@color/text_color_black_2"
+    android:textColorLink="@color/text_color_link_1"
+    android:textSize="?fontSize_m_scaleOn"
+    tools:ignore="SpUsage"/>

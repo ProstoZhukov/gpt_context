@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShareMenuItemTextStyle">
+        <item name="android:textSize">?fontSize_l_scaleOn</item>
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+    <style name="ShareMenuTabletContainerDialogStyle" parent="TabletContainerDialogStyle">
+        <item name="android:windowAnimationStyle">@style/ShareMenuDialogAnimationStyle</item>
+    </style>
+
+    <style name="ShareMenuMovablePanelTheme" parent="MovablePanelDefaultTheme">
+        <item name="MovablePanel_showing_duration">@integer/share_menu_movable_panel_showing_duration_ms</item>
+    </style>
+
+    <style name="ShareMenuDialogAnimationStyle">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+</resources>

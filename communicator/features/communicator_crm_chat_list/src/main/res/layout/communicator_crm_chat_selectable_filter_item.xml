@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.communicator_crm_chat_list.filter.models.SelectableFilterItem"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/selection_window_item_height"
+        android:background="?selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true"
+        app:onClick="@{viewModel.onClick}">
+
+        <View
+            android:id="@+id/crm_chat_filter_item_mark"
+            android:layout_width="@dimen/folder_panel_selection_mark_width"
+            android:layout_height="@dimen/folder_panel_selection_mark_height"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?markerColor"
+            app:isNotGone="@{viewModel.selected}"
+            app:onClick="@{viewModel.onClick}"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_chat_filter_name"
+            style="@style/SelectionWindowItem_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="?offset_m"
+            android:gravity="center_vertical"
+            app:text="@{viewModel.titleRes}"
+            app:onClick="@{viewModel.onClick}"
+            tools:text="фильтр"/>
+
+    </RelativeLayout>
+</layout>

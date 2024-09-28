@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_reassign_to_queue_option">Вернуть в очередь</string>
+    <string name="communicator_crm_reassign_to_group_option">Переназначить</string>
+    <string name="communicator_crm_reassign_to_operator_option">Другому сотруднику</string>
+    <string name="communicator_crm_reassign_to_operator_edit_hint">Написать комментарий сотруднику</string>
+    <string name="communicator_crm_copy_link_option">Скопировать ссылку</string>
+    <string name="communicator_crm_request_contacts_option">Запросить контакты</string>
+    <string name="communicator_crm_write_to_client_option">Написать клиенту</string>
+    <string name="communicator_crm_complete_option">Завершить</string>
+    <string name="communicator_crm_delete_option">Удалить</string>
+    <string name="communicator_crm_take_button_text">Забрать чат</string>
+    <string name="communicator_crm_reopen_button_text">Возобновить чат</string>
+    <string name="communicator_crm_brand_title">Чат</string>
+    <string name="communicator_crm_service_message_rate_request_button_title">Оценить</string>
+    <string name="communicator_crm_rate_title">Оцените нашу работу</string>
+    <string name="communicator_crm_rate_comment_placeholder">Комментарий</string>
+    <string name="communicator_crm_rate_send_button_title">Отправить</string>
+    <string name="communicator_crm_rate_validation_error">Поле обязательно для заполнения</string>
+    <string name="communicator_crm_quick_reply_empty_stub">Список быстрых ответов пуст</string>
+    <string name="communicator_crm_sabyget_stub_message">Общайтесь</string>
+    <string name="communicator_crm_conversation_stub_subtitle">Здесь будут ваши диалоги \nс заведением и специалистами</string>
+    <string name="communicator_crm_chat_cant_view_permisshion">У вас нет доступа на \nпросмотр этого чата</string>
+    <string name="communicator_crm_brand_stub_message">Напишите нам</string>
+</resources>

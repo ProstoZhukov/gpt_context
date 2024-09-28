@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communication_decl_blocked_user_content_text">Entrée masquée</string>
+    <string name="communication_decl_conversation_information_filter_media">Médias</string>
+    <string name="communication_decl_conversation_information_filter_docs">Documents</string>
+</resources>

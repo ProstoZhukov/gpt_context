@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AbstractNavView">
+        <!-- Название компонента. Используется для аналитики -->
+        <attr name="name" format="string"/>
+        <!-- Флаг определяющий шрифт выбранный для иконок ННП и аккордеона  -->
+        <attr name="isUsedNavigationIcons" format="boolean"/>
+    </declare-styleable>
+
+    <!-- Стиль аккордеона -->
+    <attr name="navStyle" format="reference"/>
+
+    <!-- Атрибуты боковой навигационной панели -->
+    <declare-styleable name="NavView">
+        <attr name="navViewTextTheme" format="reference"/>
+
+        <attr name="navItemSelectedBorderTheme" format="reference"/>
+        <attr name="navItemIconTheme" format="reference"/>
+        <attr name="navItemNewCounterTheme" format="reference"/>
+        <attr name="navItemCounterDividerTheme" format="reference"/>
+        <attr name="navItemTotalCounterTheme" format="reference"/>
+
+        <!-- Скругления кнопки справа -->
+        <attr name="navItemIconButtonCornerRadius" format="dimension"/>
+
+        <!-- Цвет фона кнопки справа -->
+        <attr name="navItemIconButtonBackgroundColor" format="color"/>
+
+        <attr name="navViewTextUsernameTheme" format="reference"/>
+        <attr name="navViewHorizontalDividerTheme" format="reference"/>
+        <attr name="navItemTheme" format="reference"/>
+
+        <!-- Ссылка на разметку "шапки" -->
+        <attr name="header" format="reference"/>
+        <!-- Ссылка на разметку "подвала" -->
+        <attr name="footer" format="reference"/>
+        <!-- Отображение аккордеона раскрытым при первом запуске приложения. По умолчанию true -->
+        <attr name="showOnInitialization" format="boolean"/>
+        <!-- Стратегия размещения элементов аккордеона -->
+        <attr name="configuration" format="enum">
+            <!-- Непоместившиеся элементы скролируются -->
+            <enum name="scroll" value="1"/>
+            <!-- Непоместившиеся элементы появляются в дополнительной секции -->
+            <enum name="section" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

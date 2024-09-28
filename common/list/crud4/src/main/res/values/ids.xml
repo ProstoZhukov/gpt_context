@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="crud4_list_container_id" type="id"/>
+    <item name="crud4_hierarchy_list_first_container_id" type="id"/>
+    <item name="crud4_hierarchy_list_second_container_id" type="id"/>
+    <item name="crud4_list_id" type="id"/>
+    <item name="crud4_progress_bar_id" type="id"/>
+    <item name="crud4_stub_id" type="id"/>
+    <item name="crud4_refresh_layout_id" type="id"/>
+    <item name="crud4_item_text" type="id"/>
+    <item name="crud4_item_count" type="id"/>
+    <item name="crud4_item_check_box" type="id"/>
+    <item name="crud4_item_marker" type="id"/>
+    <item name="crud4_item_expander" type="id"/>
+    <item name="crud4_item" type="id"/>
+</resources>

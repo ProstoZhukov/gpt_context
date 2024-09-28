@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order_message_company_description">Certains articles doivent être placés dans une commande séparée</string>
+    <string name="order_message_company_title">Produits sélectionnés de différentes organisations</string>
+    <string name="order_message_queue_description">Certains postes doivent être émis avec une entrée distincte</string>
+    <string name="order_message_queue_no_specialist">Il n\'y a pas de spécialiste</string>
+    <string name="order_message_queue_title">Services sélectionnés de différents spécialistes</string>
+    <string name="order_message_nomenclature_changed_price_description">Les articles ont été ajoutés au panier au nouveau prix. Coût total mis à jour</string>
+    <string name="order_message_nomenclature_changed_price_title">Les prix ont changé</string>
+    <string name="order_message_nomenclature_not_published_description">Les produits ont été retirés du panier. \nLe total de la commande a été mis à jour</string>
+    <string name="order_message_nomenclature_not_published_title">Ces produits ne peuvent plus être commandés</string>
+    <string name="order_message_salon_nomenclature_changed_price_description">Les services ont été ajoutés au panier au nouveau prix. Coût total mis à jour</string>
+    <string name="order_message_salon_nomenclature_not_published_title">Ces services ne sont plus disponibles à la commande</string>
+    <string name="order_message_nomenclature_has_changes_title">Modification de la commande</string>
+    <string name="order_message_nomenclature_has_changes_description">Les positions inaccessibles ont été supprimées de\nla corbeille. Coût total actualisé </string>
+    <string name="order_message_nomenclature_price_has_changed_title">Modifications des prix</string>
+    <string name="order_message_nomenclature_not_available_for_order_title">Produits non disponibles</string>
+    <string name="order_message_stop_list_title">Produits dans la liste d\'arrêt</string>
+    <string name="order_message_stop_list_description">Les articles ont été supprimés du panier\nou leur nombre est limité</string>
+    <string name="order_message_stop_list_available">Disponible</string>
+    <string name="order_message_different_nom_taxes_title">Les articles sélectionnés\nne peuvent pas être ajoutés à un seul reçu</string>
+    <string name="order_message_different_nom_taxes_description">Veuillez supprimer certains articles du panier et les placer dans une commande séparée</string>
+    <string name="order_message_different_nom_taxes_order_number">Commande %d</string>
+</resources>

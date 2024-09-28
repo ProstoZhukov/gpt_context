@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DocumentLinkDefaultTheme">
+        <item name="DocumentLink_backgroundColor">?contrastBackgroundColor</item>
+        <item name="DocumentLink_commentColor">?labelContrastTextColor</item>
+        <item name="DocumentLink_bottomBorderColor">?borderColor</item>
+        <item name="DocumentLink_titleColor">?secondaryTextColor</item>
+        <item name="DocumentLink_iconColor">?labelContrastTextColor</item>
+    </style>
+
+    <style name="DocumentLinkBaseTheme">
+        <item name="DocumentLink_commentTextSize">?fontSize_xs_scaleOn</item>
+        <item name="DocumentLink_titleTextSize">?fontSize_xs_scaleOn</item>
+        <item name="DocumentLink_arrowIconSize">?iconSize_m</item>
+        <item name="DocumentLink_iconSize">?iconSize_xl</item>
+    </style>
+</resources>

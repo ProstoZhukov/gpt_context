@@ -1,0 +1,6 @@
+ext.calendar_dir = 'module/calendar'
+
+apply from: "$calendarDir/settings_sabyclients.gradle"
+
+include ':expense_report'
+project(':expense_report').projectDir = new File(calendarDir, "expense_report")

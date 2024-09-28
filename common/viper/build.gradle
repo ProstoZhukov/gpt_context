@@ -1,0 +1,71 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.viper"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+        returnDefaultValues = true
+        all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+                exceptionFormat 'full'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':design_notification')
+    implementation project(':list_utils')
+    implementation project(':mvp')
+    implementation project(':base_components')
+    implementation project(':scroll_to_top')
+    implementation project(':toolbar')
+    implementation project(':fresco_view')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_stubview')
+    implementation project(':design_utils')
+
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "org.apache.commons:commons-lang3:$rootProject.ext.apacheCommonsVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+    implementation "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.androidLifecycleExtensions}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:${rootProject.ext.androidLifecycleViewmodel}"
+
+    implementation "androidx.fragment:fragment-ktx:$rootProject.ext.fragmentVersion"
+
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+}

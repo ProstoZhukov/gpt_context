@@ -1,0 +1,1 @@
+apply from: "$tasksDir/task_new_full.gradle"

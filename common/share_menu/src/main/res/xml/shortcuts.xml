@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <share-target android:targetClass="ru.tensor.sbis.share_menu.ShareMenuActivity">
+        <data android:mimeType="*/*"/>
+        <!-- Категорию не изменять https://online.sbis.ru/opendoc.html?guid=ba912800-52c5-43a8-92dc-bf760f77daab -->
+        <category android:name="ru.tensor.sbis.droid.experemental.category.TEXT_SHARE_TARGET"/>
+    </share-target>
+</shortcuts>

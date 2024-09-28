@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SbisChipsItemViewStyle">
+        <item name="SbisChipsItemView_iconColor">?labelIconColor</item>
+        <item name="SbisChipsItemView_titleColor">?textColor</item>
+        <item name="SbisChipsItemView_backgroundColor">?backgroundColor</item>
+        <item name="SbisChipsItemView_clickedColor">?activeBackgroundColor</item>
+    </style>
+</resources>

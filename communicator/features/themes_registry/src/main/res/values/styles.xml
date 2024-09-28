@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemesRegistryDateHeaderDateViewTheme" parent="ItemDateHeaderDateViewDefaultTheme">
+        <item name="android:textSize">?fontSize_xs_scaleOff</item>
+    </style>
+
+    <style name="CommunicatorChatSettingsCheckboxTheme" parent="SbisCheckboxDefaultsTheme"/>
+
+    <style name="CommunicatorChatSettingsTypeItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">?offset_m</item>
+        <item name="android:paddingEnd">?offset_l</item>
+        <item name="android:minHeight">?inlineHeight_s</item>
+        <item name="android:background">@drawable/selectable_item_bg_white</item>
+    </style>
+
+    <style name="CommunicatorChatSettingsTypeItemTitle" parent="RegularStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?fontSize_xl_scaleOff</item>
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+    <style name="CommunicatorChatSettingsTypeItemSubtitle" parent="RegularStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingTop">?offset_2xs</item>
+        <item name="android:paddingBottom">?offset_2xs</item>
+        <item name="android:textSize">?fontSize_s_scaleOff</item>
+        <item name="android:textColor">?unaccentedTextColor</item>
+    </style>
+
+    <style name="CommunicatorChatSettingsTypeItemIcon" parent="MobileFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">?offset_m</item>
+        <item name="android:paddingEnd">?offset_3xs</item>
+        <item name="android:textSize">?fontSize_m_scaleOff</item>
+        <item name="android:textColor">?primaryIconColor</item>
+        <item name="android:text">@string/design_mobile_icon_check</item>
+    </style>
+
+    <style name="CommunicatorChatSettingsTypeDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_separator_size</item>
+        <item name="android:background">?borderColor</item>
+    </style>
+
+    <style name="CommunicatorThemeParticipantFolderRootContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?backgroundColor</item>
+        <item name="android:paddingTop">?offset_xs</item>
+    </style>
+
+    <style name="CommunicatorThemeParticipantFolderTextContainerStyle" parent="RegularStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">?offset_m</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+
+    <style name="CommunicatorThemeParticipantFolderTitle" parent="CommunicatorThemeParticipantFolderTextContainerStyle">
+        <item name="android:textSize">?fontSize_l_scaleOn</item>
+        <item name="android:textColor">?textColor</item>
+        <item name="android:paddingBottom">?offset_xs</item>
+    </style>
+
+    <style name="CommunicatorThemeParticipantFolderSubTitleCounter" parent="CommunicatorThemeParticipantFolderTextContainerStyle">
+        <item name="android:textSize">?fontSize_xs_scaleOn</item>
+        <item name="android:textColor">?readonlyTextColor</item>
+        <item name="android:paddingBottom">?offset_xs</item>
+    </style>
+
+    <style name="CommunicatorThemeParticipantFolderBarrier">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="CommunicatorThemeParticipantFolderTitleIcon" parent="MobileFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">?offset_m</item>
+        <item name="android:paddingBottom">?offset_xs</item>
+        <item name="android:text">@string/design_mobile_icon_arrow_narrow_right</item>
+        <item name="android:textSize">?iconSize_m</item>
+        <item name="android:textColor">?linkIconColor</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="CommunicatorThemeParticipantFolderDivider" parent="CommunicatorChatSettingsTypeDivider"/>
+
+    <style name="CommunicatorConversationLinksListTheme">
+        <item name="list_theme">@style/CommunicatorConversationLinksListStyle</item>
+    </style>
+
+    <style name="CommunicatorConversationLinksListStyle" parent="List">
+        <item name="list_content_background">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="list_content_dark_background">?unaccentedAdaptiveBackgroundColor</item>
+    </style>
+
+    <style name="CommunicatorLinkAdditionHeaderStyle" parent="SbisContainer">
+        <item name="SbisContainerHeaderDividerVisibility">false</item>
+        <item name="sbisHeaderViewTheme">@style/CommunicatorLinkAdditionHeaderViewTheme</item>
+    </style>
+
+    <style name="CommunicatorLinkAdditionHeaderViewTheme" parent="SbisHeader">
+        <item name="android:background">?unaccentedBackgroundColor</item>
+        <item name="SbisHeaderTitle_theme">@style/CommunicatorLinkAdditionHeaderTitle</item>
+    </style>
+
+    <style name="CommunicatorLinkAdditionHeaderTitle" parent="HeaderTitle">
+        <item name="android:background">?unaccentedBackgroundColor</item>
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+</resources>

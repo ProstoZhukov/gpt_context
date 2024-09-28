@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="link_share_title_link">ΣΥΝΔΕΣΜΟΣ</string>
+    <string name="link_share_copy_link">Αντίγραφο</string>
+    <string name="link_share_new_tab_link">Ανοιγμα σε πρόγραμμα περιήγησης</string>
+    <string name="link_share_qr_link">QR-κωδικός</string>
+    <string name="link_share_send_link">Στείλετε</string>
+    <string name="link_share_qr_confirmation_dialog_button_ok">OK</string>
+    <string name="link_share_alert_link_copied">Ο σύνδεσμος αντιγράφηκε στο πρόχειρο</string>
+</resources>

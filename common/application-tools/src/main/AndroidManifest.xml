@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--NetworkNameProvider-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!--
+     Начиная с 30 Api, система ограничивает видимость установленных пакетов
+     на устройстве. В связи с этим необходимо явно указывать те Intent'ы,
+     которые могут потребоваться приложению в процессе работы.
+
+     https://developer.android.com/training/package-visibility?hl=ru
+    -->
+    <queries>
+        <intent>
+            <!-- UserStory: пользователь передает свои данные в сторонние приложения. -->
+            <action android:name="android.intent.action.SEND_MULTIPLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+    </queries>
+
+    <application>
+
+        <activity
+            android:name="ru.tensor.sbis.application_tools.logcrashesinfo.LogAndCrashesActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+
+        <service
+            android:name=".logsender.LogsDumpSenderProcessService"
+            android:process="@string/application_tools_logs_dump_sender_process_name"/>
+    </application>
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_message_panel_recorder_error_message">Habar &#xfd;azmakda säwlik</string>
+    <string name="design_message_panel_recorder_audio_file_name_template">Ses habary-% 1 $ s.% 2 $ s</string>
+    <string name="design_message_panel_recorder_video_file_name_template">Wideo habary-% 1 $ s.% 2 $ s</string>
+    <string name="design_message_panel_recorder_common_movement_hint">Çep - &#xfd;atyr</string>
+    <string name="design_message_panel_recorder_common_cancel_text">Elatyr</string>
+    <string name="design_message_panel_recorder_audio_record_info">Ses habaryny ibermek üçin ja&#x148;y bes etmeli</string>
+    <string name="design_message_panel_recorder_video_record_info">Wideo habaryny ibermek üçin ja&#x148;y bes etmeli</string>
+    <string name="design_message_panel_recorder_confirm_cancel_recording">Giri&#x15f;i täzeden düzmek isle&#xfd;ändigi&#x148;ize ynan&#xfd;arsy&#x148;yzmy?</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SbisLinkButtonInternalDefaultTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?secondaryTextColor</item>
+        <item name="SbisLinkButton_iconColor">?secondaryIconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonDefaultPrimaryTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?primaryTextColor</item>
+        <item name="SbisLinkButton_iconColor">?primaryIconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonDefaultSecondaryTheme" parent="SbisLinkButtonInternalDefaultTheme"/>
+
+    <style name="SbisLinkButtonDefaultSuccessTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?successTextColor</item>
+        <item name="SbisLinkButton_iconColor">?successIconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonDefaultUnaccentedTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?unaccentedTextColor</item>
+        <item name="SbisLinkButton_iconColor">?unaccentedIconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonDefaultBonusTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?bonusTextColor</item>
+        <item name="SbisLinkButton_iconColor">?bonusIconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonDefaultDangerTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?dangerTextColor</item>
+        <item name="SbisLinkButton_iconColor">?dangerIconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonDefaultWarningTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?warningTextColor</item>
+        <item name="SbisLinkButton_iconColor">?warningIconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonDefaultInfoTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?infoTextColor</item>
+        <item name="SbisLinkButton_iconColor">?infoIconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonDefaultDefaultTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?textColor</item>
+        <item name="SbisLinkButton_iconColor">?iconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonDefaultLinkTheme" parent="SbisLinkButtonBaseTheme"/>
+
+    <style name="SbisLinkButtonDefaultLabelTheme" parent="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?labelTextColor</item>
+        <item name="SbisLinkButton_iconColor">?labelIconColor</item>
+    </style>
+
+    <style name="SbisLinkButtonBaseTheme">
+        <item name="SbisLinkButton_titleColor">?linkTextColor</item>
+        <item name="SbisLinkButton_titleDisabledColor">?readonlyTextColor</item>
+        <item name="SbisLinkButton_titleDisabledColorAlpha">?sbisButtonTitleDisabledColorAlpha</item>
+
+        <item name="SbisLinkButton_iconColor">?linkIconColor</item>
+        <item name="SbisLinkButton_iconDisabledColor">?readonlyIconColor</item>
+    </style>
+</resources>

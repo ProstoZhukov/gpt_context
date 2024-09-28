@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RichTextYouTubePreviewer">
+        <attr name="playSize" format="dimension"/>
+        <attr name="quality">
+            <enum name="normal" value="0"/>
+            <enum name="medium" value="1"/>
+            <enum name="high" value="2"/>
+        </attr>
+        <attr name="aspectRatio">
+            <enum name="unspecified" value="-1"/>
+            <enum name="w16h9" value="0"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RichTextAppearance">
+        <!-- Размер текста. -->
+        <attr name="android:textSize"/>
+        <!-- Цвет текста. -->
+        <attr name="android:textColor"/>
+        <!-- Стиль текста (normal, bold, italic, bold_italic). -->
+        <attr name="android:textStyle"/>
+    </declare-styleable>
+</resources>

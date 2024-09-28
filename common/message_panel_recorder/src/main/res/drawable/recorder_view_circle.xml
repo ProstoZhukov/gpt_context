@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_activated="false">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <size android:width="@dimen/recorder_view_circle_inner"
+                          android:height="@dimen/recorder_view_circle_inner"/>
+                    <solid android:color="@color/palette_color_red1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="ring"
+                       android:thickness="@dimen/recorder_view_outer_ring_thickness"
+                       android:useLevel="false">
+                    <!-- @color/palette_color_red1 60% -->
+                    <solid android:color="#99F82E47"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <size android:width="@dimen/recorder_view_circle_inner"
+                          android:height="@dimen/recorder_view_circle_inner"/>
+                    <!-- TODO заменить на цвет из палитры после добавления
+                            https://online.sbis.ru/opendoc.html?guid=f726497f-cd76-41b3-8cac-9af1bb5cd513 -->
+                    <solid android:color="#1094EB"/>
+
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="ring"
+                       android:thickness="@dimen/recorder_view_outer_ring_thickness"
+                       android:useLevel="false">
+                    <!-- основной цвет 60% -->
+                    <solid android:color="#991094EB"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

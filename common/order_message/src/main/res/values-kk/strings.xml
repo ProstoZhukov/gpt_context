@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order_message_queue_title">Әртүрлі мамандардан таңдалған қызметтер</string>
+    <string name="order_message_queue_description">Кейбір элементтерді бөлек жазу керек.</string>
+    <string name="order_message_nomenclature_not_available_for_order_title">Тапсырыс үшін қол жетімді емес</string>
+    <string name="order_message_nomenclature_not_published_title">Бұл заттар енді тапсырыс үшін қолжетімді емес</string>
+    <string name="order_message_nomenclature_has_changes_description">Қолжетімді болмаған элементтер себеттен\nөшірілді. Жалпы құны жаңартылды</string>
+    <string name="order_message_nomenclature_not_published_description">Элементтер арбадан шығарылды. \nЖалпы құны жаңартылды</string>
+    <string name="order_message_salon_nomenclature_not_published_title">Бұл қызметтер енді тапсырыс үшін қолжетімсіз</string>
+    <string name="order_message_nomenclature_changed_price_description">Себетке заттар жаңа бағамен қосылды. Жалпы құны жаңартылды</string>
+    <string name="order_message_nomenclature_price_has_changed_title">Бағасы өзгерді</string>
+    <string name="order_message_nomenclature_has_changes_title">Өзгерістер бар</string>
+    <string name="order_message_queue_no_specialist">Маман жоқ</string>
+    <string name="order_message_salon_nomenclature_changed_price_description">Жаңа баға бойынша қызметтер себетке қосылды. Жалпы құны жаңартылды</string>
+    <string name="order_message_company_title">Әртүрлі ұйымдардың таңдаулы өнімдері</string>
+    <string name="order_message_company_description">Кейбір заттарға бөлек тапсырыс беру керек.</string>
+    <string name="order_message_nomenclature_changed_price_title">Бағалар өзгерді</string>
+    <string name="order_message_stop_list_title">Тоқтату тізіміндегі тауарлар</string>
+    <string name="order_message_stop_list_description">Позициялар себеттен алынып тасталды \ пнемесе олардың саны шектеулі</string>
+    <string name="order_message_stop_list_available">Қол жетімді</string>
+    <string name="order_message_different_nom_taxes_title">Таңдалған тауарлар\діңгек бір чекке қосылуы мүмкін</string>
+    <string name="order_message_different_nom_taxes_description">Тауарлардың бір бөлігін Себеттен алып тастап, оларды жеке тапсырыспен рәсімдеңіз</string>
+    <string name="order_message_different_nom_taxes_order_number">%D Тапсырыс</string>
+</resources>

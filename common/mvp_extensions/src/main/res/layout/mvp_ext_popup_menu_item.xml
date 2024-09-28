@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mvp_popup_item_height"
+    android:background="@drawable/selectable_item_bg_white">
+
+    <TextView
+        android:id="@+id/mvp_ext_menu_icon"
+        style="@style/MobileFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/icon_left_margin"
+        android:layout_marginLeft="@dimen/icon_left_margin"
+        android:gravity="center"
+        android:textColor="@color/mvp_default_blue_text_color"
+        android:textSize="@dimen/mvp_popup_item_icon_size"
+        tools:text="\?"
+        tools:ignore="SpUsage"/>
+
+    <TextView
+        android:id="@+id/mvp_ext_menu_item_text"
+        style="@style/RegularStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/mvp_ext_menu_icon"
+        android:layout_toRightOf="@id/mvp_ext_menu_icon"
+        android:layout_marginStart="@dimen/text_margin_left"
+        android:layout_marginLeft="@dimen/text_margin_left"
+        android:layout_marginEnd="@dimen/text_margin_right"
+        android:layout_marginRight="@dimen/text_margin_right"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/mvp_default_blue_text_color"
+        android:textSize="@dimen/mvp_popup_item_text_size"
+        tools:text="Подписать"
+        tools:ignore="SpUsage"/>
+
+</RelativeLayout>

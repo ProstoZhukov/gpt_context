@@ -1,0 +1,11 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+customizeBuildScript(settings) { bs, prjct ->
+    bs.dependencies { handler ->
+        handler.classpath prjct.deps.greendao.plugin
+    }
+}

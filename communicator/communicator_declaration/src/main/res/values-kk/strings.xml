@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_declaration_filter_sort_by_all">Барлығы</string>
+    <string name="communicator_declaration_filter_sort_by_deleted">Жойылғандар</string>
+    <string name="communicator_declaration_filter_sort_by_income">Кіріс жәшігі</string>
+    <string name="communicator_declaration_filter_sort_by_not_answered">Олар маған жауап бермеді</string>
+    <string name="communicator_declaration_filter_sort_by_unread">Оқылмаған</string>
+
+    <string name="communicator_crm_chat_filter_overdue">Кешіктіру</string>
+    <string name="communicator_crm_chat_filter_all">Барлығы</string>
+    <string name="communicator_crm_chat_filter_my">Менің</string>
+    <string name="communicator_crm_chat_filter_from_my_channels">Менің арналарымнан</string>
+    <string name="communicator_crm_chat_filter_responsible">Жауапты</string>
+    <string name="communicator_crm_chat_filter_client">Клиент</string>
+    <string name="communicator_crm_chat_filter_channel">Арна</string>
+    <string name="communicator_crm_chat_filter_source">Дереккөз</string>
+    <string name="communicator_crm_chat_operator_filter_not_chosen">Таңдалмаған</string>
+</resources>

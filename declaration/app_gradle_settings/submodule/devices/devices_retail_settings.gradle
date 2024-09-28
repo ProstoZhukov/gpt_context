@@ -1,0 +1,2 @@
+include 'devices-ui'
+project(':devices-ui').projectDir = new File(devicesDir, "devices-ui")

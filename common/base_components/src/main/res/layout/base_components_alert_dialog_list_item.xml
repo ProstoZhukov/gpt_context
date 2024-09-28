@@ -1,0 +1,13 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/base_components_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="?offset_3xs"
+        android:paddingLeft="?offset_l"
+        android:paddingRight="?offset_l"
+        android:paddingTop="?offset_3xs"
+        android:textSize="?fontSize_m_scaleOn"/>
+</layout>

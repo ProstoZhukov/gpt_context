@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="manage_features_group_margin">16dp</dimen>
+    <dimen name="manage_features_group_height">40dp</dimen>
+</resources>

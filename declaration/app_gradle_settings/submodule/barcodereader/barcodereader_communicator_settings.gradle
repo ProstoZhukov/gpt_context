@@ -1,0 +1,5 @@
+include ":common-barcodereader"
+project(":common-barcodereader").projectDir = new File(barcodereaderDir, "common-barcodereader")
+
+include 'barcodereader'
+project(':barcodereader').projectDir = new File(barcodereaderDir, "barcodereader")

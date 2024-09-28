@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="logging_host_toolbar_title">Registros</string>
+    <string name="logging_log_package_size_megabytes">%.1f MB</string>
+    <string name="logging_log_package_size_kilobytes">%.1f Kb</string>
+    <string name="logging_preparing_sending_logs">Analizando el paquete de registro</string>
+    <string name="logging_waiting_sending_logs">Esperando env&#xed;o</string>
+    <string name="logging_waiting_wifi_sending_logs">Esperando wifi</string>
+    <string name="logging_waiting_inet_sending_logs">Esperando red</string>
+    <string name="logging_sending_logs_in_progress">Env&#xed;o de registros al servidor</string>
+    <string name="logging_floating_send_btn_text">Envia todo</string>
+    <string name="logging_slider_label">Habilitar el registro</string>
+    <string name="logging_disable_log_stub_title">Sin datos</string>
+    <string name="logging_settings_header_title_root">Configuraci&#xf3;n de registro</string>
+    <string name="logging_settings_header_title_level">Nivel de registro</string>
+    <string name="logging_settings_header_title_writing_mode">Inicio sesi&#xf3;n</string>
+    <string name="logging_settings_level_label">Nivel</string>
+    <string name="logging_settings_delay_label">Inicio sesi&#xf3;n</string>
+    <string name="logging_settings_storage_interval_label">Periodo de retenci&#xf3;n</string>
+    <string name="logging_settings_wifi_label">Solo env&#xed;o por Wi-Fi</string>
+    <string name="logging_settings_log_level_minimal">M&#xed;nimo</string>
+    <string name="logging_settings_log_level_standart">Est&#xe1;ndar</string>
+    <string name="logging_settings_log_level_extended">Avanzado</string>
+    <string name="logging_settings_log_level_debug">Depurar</string>
+    <string name="logging_settings_log_delay_delayed">Demorado</string>
+    <string name="logging_settings_log_delay_immediate">Inmediato</string>
+    <string name="logging_settings_log_storage_interval_day">1 d&#xed;a</string>
+    <string name="logging_settings_log_storage_interval_two_days">2 d&#xed;as</string>
+    <string name="logging_settings_log_storage_interval_three_days">3 d&#xed;as</string>
+    <string name="logging_settings_log_storage_interval_week">1 semana</string>
+    <string name="logging_mobile_icon_clock">&#xeba0;</string>
+    <string name="logging_mobile_icon_check">&#xe990;</string>
+    <string name="logging_disable_log_stub_description">Permitir recopilar los datos del dispositivo\npara su posterior an&#xe1;lisis.</string>
+    <string name="logging_force_log_delivery_launcher_label">Enviar registros</string>
+    <string name="logging_settings_log_query_to_db">Plan de consulta de registro en la base de datos</string>
+    <string name="logging_settings_log_level_disabled">Desactivado</string>
+    <string name="logging_copy_to_clipboard">N&#xfa;mero de incidente copiado al portapapeles</string>
+    <string name="logging_settings_header_title_storage_interval">Per&#xed;odo de retenci&#xf3;n del paquete</string>
+    <string name="logging_settings_header_title_diagnostic_settings">Datos para diagn&#xf3;stico</string>
+    <string name="logging_settings_diagnostic_settings_only_logs">S&#xf3;lo registros</string>
+    <string name="logging_settings_diagnostic_settings_full">Lleno</string>
+    <string name="logging_settings_diagnostic_settings_selective">Selectivo</string>
+    <string name="logging_confirmation_text">Acepto enviar informaci&#xf3;n desde el dispositivo para analizar y mejorar la aplicaci&#xf3;n.</string>
+    <string name="logging_confirmation_total_size_text">%1$s cambiado</string>
+    <string name="logging_confirmation_success">Confirmar</string>
+    <string name="logging_confirmation_dismiss">Cancelar</string>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/crm_chat_filters_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/communicator_crm_chat_list_filters_back"
+        style="@style/MobileFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="7.5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/design_mobile_icon_arrow_back"
+        android:textColor="?primaryTextColor"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/communicator_crm_chat_list_filters_title"
+        app:layout_constraintEnd_toStartOf="@id/communicator_crm_chat_list_filters_title"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/communicator_crm_chat_list_filters_title"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/communicator_crm_chat_list_filters_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingTop="7.5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/common_filter"
+        android:textColor="?primaryTextColor"
+        android:textSize="20sp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintEnd_toStartOf="@id/communicator_crm_chat_list_filters_reset"
+        app:layout_constraintStart_toEndOf="@id/communicator_crm_chat_list_filters_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_goneMarginEnd="10dp"
+        app:layout_goneMarginStart="10dp"/>
+
+    <ru.tensor.sbis.design.buttons.SbisButton
+        android:id="@+id/communicator_crm_chat_list_filters_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:SbisButton_size="s"
+        app:SbisButton_style="unaccented"
+        app:SbisButton_title="@string/common_reset_button_label"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBaseline_toBaselineOf="@id/communicator_crm_chat_list_filters_title"
+        app:layout_constraintEnd_toStartOf="@id/communicator_crm_chat_list_filters_accept"
+        app:layout_constraintStart_toEndOf="@id/communicator_crm_chat_list_filters_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="10dp"/>
+
+    <ru.tensor.sbis.design.buttons.SbisRoundButton
+        android:id="@+id/communicator_crm_chat_list_filters_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:SbisRoundButton_icon="@string/design_mobile_icon_check"
+        app:SbisRoundButton_size="s"
+        app:SbisRoundButton_style="success"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBaseline_toBaselineOf="@id/communicator_crm_chat_list_filters_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/communicator_crm_chat_list_filters_reset"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!--
+    Нужен для того, чтобы вьюшки шапки были видны когда контента в deals_impl_filters_list
+    слишком много, связано с ContainerMovableDialogFragment.
+    -->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/communicator_crm_chat_list_filters_header_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="communicator_crm_chat_list_filters_title, communicator_crm_chat_list_filters_accept, communicator_crm_chat_list_filters_reset"/>
+
+    <View
+        android:id="@+id/communicator_crm_chat_list_filters_top_decor"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/palette_alpha_color_black1"
+        app:layout_constraintBottom_toTopOf="@id/communicator_crm_chat_list_filters_content_barrier_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/communicator_crm_chat_list_filters_header_barrier"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/communicator_crm_chat_list_filters_content_barrier_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="communicator_crm_chat_list_filters_list, communicator_crm_chat_list_filter_container_id"/>
+
+    <ru.tensor.sbis.list.view.SbisList
+        android:id="@+id/communicator_crm_chat_list_filters_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:nestedScrollingEnabled="false"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/communicator_crm_chat_list_filters_bottom_decor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/communicator_crm_chat_list_filters_top_decor"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/communicator_crm_chat_list_filter_container_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/communicator_crm_chat_list_filters_bottom_decor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/communicator_crm_chat_list_filters_top_decor"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/communicator_crm_chat_list_filters_content_barrier_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="communicator_crm_chat_list_filters_list, communicator_crm_chat_list_filter_container_id"/>
+
+    <View
+        android:id="@+id/communicator_crm_chat_list_filters_bottom_decor"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/palette_alpha_color_black1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/communicator_crm_chat_list_filters_content_barrier_bot"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

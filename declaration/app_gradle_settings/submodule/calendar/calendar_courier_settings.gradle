@@ -1,0 +1,17 @@
+ext.calendar_dir = 'calendar'
+apply from: "$calendarDir/settings_courier.gradle"
+
+include ":calendar"
+project(":calendar").projectDir = new File(calendarDir, "calendar")
+
+include ':expense_report'
+project(':expense_report').projectDir = new File(calendarDir, "expense_report")
+
+include ":usecase_vacation"
+project(":usecase_vacation").projectDir = new File(calendarDir, "usecase/vacation")
+
+include ":calendar_main_screen_addon"
+project(":calendar_main_screen_addon").projectDir = new File(calendarDir, "calendar_main_screen_addon")
+
+include ":usecase_events"
+project(":usecase_events").projectDir = new File(calendarDir, "usecase/events")

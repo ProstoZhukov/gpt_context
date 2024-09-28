@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.text.TextUtils"/>
+
+        <import
+            alias="view"
+            type="android.view.View"/>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator_support_consultation_list.mapper.ConsultationViewModelBindingModel"/>
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_xs"
+        android:layout_marginTop="?offset_s"
+        android:layout_marginEnd="?offset_xs"
+        android:minHeight="@dimen/communicator_support_consultation_item_min_height"
+        app:cardBackgroundColor="?backgroundColor"
+        app:cardCornerRadius="?borderRadius_xs"
+        app:cardElevation="0dp"
+        tools:cardCornerRadius="12dp"
+        tools:layout_marginEnd="6dp"
+        tools:layout_marginStart="6dp"
+        tools:layout_marginTop="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/communicator_support_consultation_list_guideline_start"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="?offset_m"
+                tools:layout_constraintGuide_begin="12dp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/communicator_support_consultation_list_guideline_message_bottom"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="@dimen/communicator_support_consultation_item_min_height"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/communicator_support_consultation_list_guideline_vertical_support_end"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="?offset_m"
+                tools:layout_constraintGuide_end="12dp"/>
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/communicator_support_consultation_list_channel_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="?offset_2xs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{viewModel.name}"
+                android:textColor="?textColor"
+                android:textSize="@dimen/size_title3_scaleOn"
+                app:layout_constraintBottom_toBottomOf="@id/communicator_support_consultation_list_guideline_message_bottom"
+                app:layout_constraintEnd_toStartOf="@id/communicator_support_consultation_list_channel_message_date_sent"
+                app:layout_constraintStart_toEndOf="@id/communicator_support_consultation_list_guideline_start"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_marginEnd="4dp"
+                tools:maxLines="2"
+                tools:text="@tools:sample/lorem/random"
+                tools:textColor="@color/palette_color_black1"/>
+
+            <!--
+                Отображена завершенная консультация, в которой остались непрочитанные сообщения
+                В данном случае галка у завершенной консультации не ставится
+                http://axure.tensor.ru/mobile_crm/#g=1&p=спецификация_служба_поддержки_клиента
+            -->
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/communicator_support_consultation_list_success_text"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.closedIcon}"
+                android:textSize="@{viewModel.closedIconSize}"
+                android:textColor="@{viewModel.closedIconColor}"
+                android:visibility="@{viewModel.isClosed &amp; viewModel.unreadCounter == 0 ? view.VISIBLE : view.GONE}"
+                app:layout_constraintEnd_toEndOf="@id/communicator_support_consultation_list_channel_message_date_sent"
+                app:layout_constraintTop_toBottomOf="@id/communicator_support_consultation_list_channel_message_date_sent"
+                tools:textColor="@color/palette_color_green1"
+                tools:visibility="visible"/>
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/communicator_support_consultation_list_channel_message_date_sent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@{viewModel.date}"
+                android:textColor="?unaccentedTextColor"
+                android:textSize="@dimen/size_caption1_scaleOn"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@id/communicator_support_consultation_list_guideline_vertical_support_end"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="22 янв"
+                tools:textColor="@color/palette_color_gray4"
+                tools:visibility="visible"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/communicator_support_consultation_list_channel_group"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="@{TextUtils.isEmpty(viewModel.text) ? view.GONE : view.VISIBLE}"
+                app:constraint_referenced_ids="communicator_support_consultation_list_channel_send_task_icon,communicator_support_consultation_list_channel_person_photo,communicator_support_consultation_list_person_text,communicator_support_consultation_list_unread_counter"
+                tools:visibility="visible"/>
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/communicator_support_consultation_list_channel_send_task_icon"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="?offset_m"
+                android:layout_marginBottom="@dimen/communicator_support_channel_send_task_icon_bottom_margin"
+                android:text="@string/communicator_support_consultation_list_icon_send"
+                android:textColor="?readonlyIconColor"
+                android:textSize="@dimen/size_body1_scaleOn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/communicator_support_consultation_list_guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/communicator_support_consultation_list_channel_message"
+                tools:layout_marginTop="12dp"
+                tools:textColor="@color/palette_color_gray4"/>
+
+            <ru.tensor.sbis.design.profile.person.PersonView
+                android:id="@+id/communicator_support_consultation_list_channel_person_photo"
+                android:layout_width="@dimen/communicator_support_support_person_photo_size"
+                android:layout_height="@dimen/communicator_support_support_person_photo_size"
+                android:layout_marginStart="?offset_xs"
+                app:SbisPersonView_clickablePerson="false"
+                app:dataOrGone="@{viewModel.personData}"
+                app:layout_constraintBottom_toBottomOf="@id/communicator_support_consultation_list_channel_send_task_icon"
+                app:layout_constraintStart_toEndOf="@id/communicator_support_consultation_list_channel_send_task_icon"
+                app:layout_constraintTop_toTopOf="@id/communicator_support_consultation_list_channel_send_task_icon"
+                tools:layout_marginStart="?offset_xs"/>
+
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/communicator_support_consultation_list_person_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="?offset_xs"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@{viewModel.text}"
+                android:textColor="?unaccentedTextColor"
+                android:textSize="@dimen/size_title3_scaleOn"
+                app:layout_constraintBottom_toBottomOf="@id/communicator_support_consultation_list_channel_person_photo"
+                app:layout_constraintEnd_toStartOf="@id/communicator_support_consultation_list_unread_counter"
+                app:layout_constraintStart_toEndOf="@id/communicator_support_consultation_list_channel_person_photo"
+                app:layout_constraintTop_toTopOf="@id/communicator_support_consultation_list_channel_person_photo"
+                tools:layout_marginStart="6dp"
+                tools:text="@tools:sample/lorem/random"
+                tools:textColor="@color/palette_color_black1"/>
+
+            <ru.tensor.sbis.design.counters.sbiscounter.SbisCounter
+                android:id="@+id/communicator_support_consultation_list_unread_counter"
+                style="@style/MessagesListItem.RegularText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@{viewModel.unreadCounter.toString()}"
+                android:visibility="visible"
+                app:SbisCounter_formatter="hundred"
+                app:counter="@{viewModel.unreadCounter}"
+                app:layout_constraintBottom_toBottomOf="@id/communicator_support_consultation_list_person_text"
+                app:layout_constraintEnd_toEndOf="@id/communicator_support_consultation_list_guideline_vertical_support_end"
+                app:layout_constraintTop_toTopOf="@id/communicator_support_consultation_list_person_text"
+                tools:visibility="visible"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

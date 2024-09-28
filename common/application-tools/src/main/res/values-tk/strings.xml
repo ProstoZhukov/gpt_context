@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_tools_settings_log_crashes_title">Giri&#x15f; we &#xfd;al&#x148;y&#x15f;lyklar</string>
+    <string name="application_tools_device_information">Enjam maglumatlary</string>
+    <string name="application_tools_build_config">“Config” gur</string>
+    <string name="application_tools_network_information">Arassa</string>
+    <string name="application_tools_screen_information">Ekran</string>
+    <string name="application_tools_crashes_list_title">Rorsal&#x148;y&#x15f;lyklar</string>
+    <string name="application_tools_logs_list_title">Surnallar</string>
+    <string name="application_tools_logs_crashes_clear_button_title">Arassala</string>
+    <string name="application_tools_logs_crashes_clear_dialog_title">Arassalamak isle&#xfd;än zady&#x148;yzy sa&#xfd;la&#x148;</string>
+    <string name="application_tools_clear_crashes">Näsazlyklary arassala&#x148; (&#xfd;al&#x148;y&#x15f;lyklar)</string>
+    <string name="application_tools_clear_logs">Surnallary arassala&#x148;</string>
+    <string name="application_tools_clear_all">Hemmesini arassala</string>
+    <string name="application_tools_crashes_not_exist">Rorsal&#x148;y&#x15f;lyk &#xfd;ok</string>
+    <string name="application_tools_logs_not_exist">Surnal &#xfd;ok</string>
+    <string name="application_tools_crash_info_title">Erroral&#x148;y&#x15f;lygy&#x148; be&#xfd;any</string>
+    <string name="application_tools_crash_info_about_app">Programma maglumatlary</string>
+    <string name="application_tools_crash_info_about_phone">@string/application_tools_device_information</string>
+    <string name="application_tools_crash_info_android_api_version">Android API</string>
+    <string name="application_tools_crash_info_brand">Öndüriji</string>
+    <string name="application_tools_crash_info_phone_name">Modeli&#x148; ady</string>
+    <string name="application_tools_crash_info_share">Pa&#xfd;la&#x15f;</string>
+    <string name="application_tools_crash_info_share_dialog_message">Bir näsazlyk iberi&#x148;</string>
+    <string name="application_tools_crash_info_stack_trace">Ackol yzy</string>
+    <string name="application_tools_crash_info_app_version">Wersi&#xfd;a</string>
+    <string name="application_tools_crashes_direction_name">heläkçilik</string>
+    <string name="application_tools_font_check_main_text">Günü&#x148; uzynlygy 11 sagat 59 minut. Gün &#xfd;a&#x15f;&#xfd;ança wagt 2 sagat 10 minut</string>
+    <string name="application_tools_font_check_sizeDisplay0">Adaty 30 (sizeDisplay0)</string>
+    <string name="application_tools_font_check_sizeDisplay1">Adaty 24 (sizeDisplay1)</string>
+    <string name="application_tools_font_check_sizeTitle1">Adaty 20 (sizeTitle1)</string>
+    <string name="application_tools_font_check_sizeTitle2">Adaty 18 (sizeTitle2)</string>
+    <string name="application_tools_font_check_sizeTitle3">Adaty 17 (sizeTitle3)</string>
+    <string name="application_tools_font_check_sizeBody1">Adaty 16 (sizeBody1)</string>
+    <string name="application_tools_font_check_sizeBody2">Adaty 14 (sizeBody2)</string>
+    <string name="application_tools_font_check_sizeCaption1">Adaty 12 (sizeCaption1)</string>
+    <string name="application_tools_debug_font_check_title">&#x15e;rift barlamak</string>
+</resources>

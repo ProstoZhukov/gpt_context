@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ui_module id="98b2c4f5-aedd-4ffb-80b0-609d48587ff4" kaizen_zone="05230eeb-9cb3-4297-99ae-acecdd8e95fa" name="communicator_navigation" version="1.0">
+
+    <description>Module communicator_navigation</description>
+
+    <depends/>
+
+    <load_after/>
+
+    <parameters/>
+
+    <resources/>
+
+    <preload/>
+
+</ui_module>

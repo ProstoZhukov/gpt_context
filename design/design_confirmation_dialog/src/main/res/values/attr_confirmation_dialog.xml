@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="confirmationDialogMinButtonWidth" format="dimension|reference"/>
+<!--Для диалога подтверждения есть необходимость рисовать маркер отличным от кнопок цветом в случае основного стиля окна.
+    Этот параметр отвечает за цвет маркера в основном стиле окна подтверждения. Можно переопределить в глобальной теме-->
+    <attr name="confirmationDialogMarkerPrimaryColor" format="color|reference"/>
+    <attr name="confirmationDialogOffset" format="color|reference"/>
+</resources>

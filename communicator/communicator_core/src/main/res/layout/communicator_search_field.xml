@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/communicator_search_field_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="?inlineHeight_m"
+    android:background="?backgroundColor">
+
+    <ru.tensor.sbis.design.text_span.SbisEditText
+        android:id="@+id/communicator_search_field_edit_text"
+        style="@style/CommunicatorAddNewContactEditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="?inlineHeight_m"
+        android:ellipsize="end"
+        android:hint="@string/communicator_contacts_adding_surname"
+        android:imeOptions="actionSearch|flagNoExtractUi"
+        android:inputType="textCapSentences"
+        android:paddingEnd="@dimen/communicator_add_new_contact_big_margin"
+        android:paddingLeft="@dimen/communicator_add_new_contact_big_margin"
+        android:paddingRight="@dimen/communicator_add_new_contact_big_margin"
+        android:paddingStart="@dimen/communicator_add_new_contact_big_margin"
+        android:theme="@style/HighlightControlsColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/communicator_search_field_button_cancel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:hint="hint text" />
+
+    <TextView
+        android:id="@+id/communicator_search_field_button_cancel"
+        style="@style/MobileFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/communicator_add_new_contact_big_margin"
+        android:paddingStart="0dp"
+        android:text="@string/design_mobile_icon_button_close"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="?fontSize_m_scaleOff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage"
+        tools:text="@string/design_mobile_icon_button_close" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

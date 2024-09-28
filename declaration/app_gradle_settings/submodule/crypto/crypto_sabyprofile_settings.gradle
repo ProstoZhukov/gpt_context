@@ -1,0 +1,26 @@
+include ":signature_authority_decl"
+project(":signature_authority_decl").projectDir = new File(cryptoDir, "signature_authority_decl")
+
+include ":certificate_copying_decl"
+project(":certificate_copying_decl").projectDir = new File(cryptoDir, "certificate_copying_decl")
+
+include ":certificate_activation"
+project(":certificate_activation").projectDir = new File(cryptoDir, "certificate_activation")
+
+include ":certificate_activation_decl"
+project(":certificate_activation_decl").projectDir = new File(cryptoDir, "certificate_activation_decl")
+
+include ":certificate_backup"
+project(":certificate_backup").projectDir = new File(cryptoDir, "certificate_backup")
+
+include ":certificate_backup_decl"
+project(":certificate_backup_decl").projectDir = new File(cryptoDir, "certificate_backup_decl")
+
+include ":certificate_selection_decl"
+project(":certificate_selection_decl").projectDir = new File(cryptoDir, "certificate_selection_decl")
+
+include ":certificate_selection"
+project(":certificate_selection").projectDir = new File(cryptoDir, "certificate_selection")
+
+include ':certificate_nfc_access_decl'
+project(':certificate_nfc_access_decl').projectDir = new File(cryptoDir, 'certificate_nfc_access_decl')

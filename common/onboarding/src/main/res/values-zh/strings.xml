@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_close_icon">&#xe902;</string>
+    <string name="onboarding_close">关闭</string>
+    <string name="onboarding_start_work">开始使用</string>
+    <string name="onboarding_empty_title">””</string>
+</resources>

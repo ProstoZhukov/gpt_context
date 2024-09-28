@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import
+            alias="RDesign"
+            type="ru.tensor.sbis.design.R" />
+
+        <import type="android.text.TextUtils"/>
+        <import type="androidx.core.content.ContextCompat" />
+        <import type="ru.tensor.sbis.design.utils.extentions.ColorExtensionsKt" />
+
+        <import
+            alias="view"
+            type="android.view.View"/>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.communicator_crm_chat_list.mapper.CRMChatViewModelBindingModel"/>
+    </data>
+
+    <ru.tensor.sbis.swipeablelayout.SwipeableLayout
+        android:id="@+id/crm_chat_list_swipe_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="?offset_s"
+        app:swipeableVm="@{viewModel.swipeableVm}">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="?offset_xs"
+            app:cardCornerRadius="?borderRadius_xs"
+            app:cardElevation="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_start"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="?offset_xs"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_vertical_support_end"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="?offset_m"/>
+
+                <ru.tensor.sbis.design.profile.person.PersonView
+                    android:id="@+id/crm_chat_author_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="?offset_xs"
+                    app:PersonView_size="xs"
+                    app:SbisPersonView_clickablePerson="false"
+                    app:dataOrGone="@{viewModel.authorPersonData}"
+                    app:layout_constraintStart_toEndOf="@id/guideline_start"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/crm_chat_author_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="?offset_st"
+                    android:layout_marginTop="?offset_xs"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{viewModel.authorName}"
+                    android:textColor="?textColor"
+                    android:textSize="?fontSize_l_scaleOn"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toTopOf="@id/crm_chat_message"
+                    app:layout_constraintEnd_toStartOf="@id/crm_chat_barrier"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/crm_chat_author_photo"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/crm_chat_source_icon"
+                    style="@style/MobileFontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="?offset_xs"
+                    android:layout_marginBottom="?offset_s"
+                    android:text="@{viewModel.sourceIcon}"
+                    android:textSize="?iconSize_m"
+                    android:textColor="@{viewModel.isSabyGetIcon ? ColorExtensionsKt.getColorFrom(context, RDesign.color.palette_color_red2) : ColorExtensionsKt.getColorFromAttr(context, RDesign.attr.secondaryIconColor)}"
+                    app:layout_constraintStart_toStartOf="@id/crm_chat_message"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/crm_chat_source_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="?offset_s"
+                    android:layout_marginBottom="?offset_s"
+                    android:layout_marginTop="?offset_xs"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{viewModel.sourceName}"
+                    android:textColor="?unaccentedTextColor"
+                    android:textSize="?fontSize_3xs_scaleOn"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/crm_chat_source_icon"
+                    app:layout_constraintEnd_toStartOf="@id/crm_chat_barrier_source"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/crm_chat_barrier"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:barrierDirection="start"
+                    app:constraint_referenced_ids="crm_chat_subtitle, crm_chat_barrier_operator"/>
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/crm_chat_barrier_operator"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:barrierDirection="start"
+                    app:constraint_referenced_ids="crm_chats_success, crm_chat_barrier_source"/>
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/crm_chat_barrier_source"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:barrierDirection="left"
+                    app:constraint_referenced_ids="crm_chat_date_sent, crm_chat_operator_photo"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/crm_chat_subtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="?offset_s"
+                    android:layout_marginEnd="?offset_2xs"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{viewModel.subtitle}"
+                    android:textColor="?unaccentedTextColor"
+                    android:textSize="?fontSize_3xs_scaleOn"
+                    android:visibility="@{TextUtils.isEmpty(viewModel.subtitle) ? view.GONE : view.VISIBLE}"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBaseline_toBaselineOf="@id/crm_chat_author_name"
+                    app:layout_constraintEnd_toStartOf="@id/crm_chat_barrier_operator"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/crm_chat_author_name"/>
+
+                <ru.tensor.sbis.design.profile.person.PersonView
+                    android:id="@+id/crm_chat_operator_photo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="?offset_s"
+                    android:layout_marginEnd="?offset_s"
+                    android:visibility="@{viewModel.needShowOperator ? view.VISIBLE : view.GONE}"
+                    app:SbisPersonView_clickablePerson="false"
+                    app:dataOrGone="@{viewModel.operatorPersonData}"
+                    app:layout_constraintEnd_toStartOf="@id/crm_chat_date_sent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/crm_chats_success"
+                    style="@style/MobileFontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.closedIcon}"
+                    android:textSize="@{viewModel.closedIconSize}"
+                    android:textColor="@{viewModel.closedIconColor}"
+                    android:visibility="@{viewModel.isClosed ? view.VISIBLE : view.GONE}"
+                    app:layout_constraintBaseline_toBaselineOf="@id/crm_chat_message"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_vertical_support_end"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/crm_chat_date_sent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.date}"
+                    android:textColor="@{viewModel.isExpired ? ColorExtensionsKt.getColorFromAttr(context, RDesign.attr.dangerTextColor) : ColorExtensionsKt.getColorFromAttr(context, RDesign.attr.unaccentedTextColor)}"
+                    android:textSize="@dimen/size_caption1_scaleOn"
+                    android:visibility="visible"
+                    app:layout_constraintBaseline_toBaselineOf="@id/crm_chat_author_name"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_vertical_support_end"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/crm_chat_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="?offset_xs"
+                    android:layout_marginBottom="?offset_m"
+                    android:layout_marginEnd="?offset_2xs"
+                    android:ellipsize="end"
+                    android:maxLines="@{viewModel.isClosed ? 2 : 1}"
+                    android:text="@{viewModel.name}"
+                    android:textColor="?textColor"
+                    android:textSize="?fontSize_l_scaleOn"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toTopOf="@id/crm_chat_send_task_icon"
+                    app:layout_constraintEnd_toStartOf="@id/crm_chats_success"
+                    app:layout_constraintStart_toStartOf="@id/crm_chat_author_name"
+                    app:layout_constraintTop_toBottomOf="@id/crm_chat_author_name"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/channel_group"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="@{TextUtils.isEmpty(viewModel.text) ? view.GONE : view.VISIBLE}"
+                    app:constraint_referenced_ids="crm_chat_send_task_icon,channel_messge_person_photo,channel_person_text,support_consultation_unread_counter"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/crm_chat_send_task_icon"
+                    style="@style/MobileFontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="&#xe91e;"
+                    android:textColor="?readonlyIconColor"
+                    android:textSize="@dimen/size_body1_scaleOn"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/crm_chat_message"
+                    app:layout_constraintTop_toBottomOf="@id/crm_chat_message"/>
+
+                <ru.tensor.sbis.design.profile.person.PersonView
+                    android:id="@+id/channel_messge_person_photo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="?offset_xs"
+                    app:SbisPersonView_clickablePerson="false"
+                    app:dataOrGone="@{viewModel.messagePersonData}"
+                    app:layout_constraintStart_toEndOf="@id/crm_chat_send_task_icon"
+                    app:layout_constraintTop_toTopOf="@id/crm_chat_send_task_icon"/>
+
+                <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                    android:id="@+id/channel_person_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="?offset_xs"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{viewModel.text}"
+                    android:textColor="?unaccentedTextColor"
+                    android:textSize="@dimen/size_title3_scaleOn"
+                    app:layout_constraintBottom_toBottomOf="@id/channel_messge_person_photo"
+                    app:layout_constraintEnd_toStartOf="@id/support_consultation_unread_counter"
+                    app:layout_constraintStart_toEndOf="@id/channel_messge_person_photo"
+                    app:layout_constraintTop_toTopOf="@id/channel_messge_person_photo"/>
+
+                <ru.tensor.sbis.design.counters.sbiscounter.SbisCounter
+                    android:id="@+id/support_consultation_unread_counter"
+                    style="@style/MessagesListItem.RegularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:SbisCounter_formatter="hundred"
+                    app:counter="@{viewModel.unreadCounter}"
+                    app:layout_constraintBottom_toBottomOf="@id/channel_person_text"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_vertical_support_end"
+                    app:layout_constraintTop_toTopOf="@id/channel_person_text"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ru.tensor.sbis.swipeablelayout.SwipeableLayout>
+</layout>

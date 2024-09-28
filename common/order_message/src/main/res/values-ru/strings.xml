@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order_message_company_title">Выбраны товары от разных организаций</string>
+    <string name="order_message_company_description">Некоторые позиции необходимо оформить отдельным заказом</string>
+
+    <string name="order_message_queue_title">Выбраны услуги от разных специалистов</string>
+    <string name="order_message_queue_description">Некоторые позиции необходимо оформить отдельной записью</string>
+    <string name="order_message_queue_no_specialist">Нет специалиста</string>
+
+    <string name="order_message_salon_nomenclature_not_published_title">Эти услуги больше недоступны для заказа</string>
+    <string name="order_message_nomenclature_not_published_title">Эти товары больше недоступны для заказа</string>
+    <string name="order_message_nomenclature_not_published_description">Позиции удалены из корзины. \nИтоговая стоимость обновлена</string>
+
+    <string name="order_message_nomenclature_changed_price_title">Цены изменились</string>
+    <string name="order_message_salon_nomenclature_changed_price_description">Услуги добавлены в корзину по новой цене. Итоговая стоимость обновлена</string>
+    <string name="order_message_nomenclature_changed_price_description">Товары добавлены в корзину по новой цене. Итоговая стоимость обновлена</string>
+
+    <string name="order_message_nomenclature_has_changes_title">Есть изменения</string>
+    <string name="order_message_nomenclature_has_changes_description">Недоступные позиции удалены из\nкорзины. Итоговая стоимость обновлена</string>
+    <string name="order_message_nomenclature_price_has_changed_title">Изменилась цена</string>
+    <string name="order_message_nomenclature_not_available_for_order_title">Недоступно для заказа</string>
+
+    <string name="order_message_stop_list_title">Товары в стоп-листе</string>
+    <string name="order_message_stop_list_description">Позиции удалены из корзины\nили их количество ограничено</string>
+    <string name="order_message_stop_list_available">Доступно</string>
+
+    <string name="order_message_different_nom_taxes_title">Выбранные товары\nне могут быть добавлены в один чек</string>
+    <string name="order_message_different_nom_taxes_description">Пожалуйста, удалите из корзины часть товаров и оформите их отдельным заказом</string>
+    <string name="order_message_different_nom_taxes_order_number">Заказ %d</string>
+</resources>

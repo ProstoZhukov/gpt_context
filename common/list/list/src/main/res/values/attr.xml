@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="SbisList" tools:ignore="ResourceName">
+        <!-- Должнен ли список иметь горизонтальную ориентацию, по умолчанию false -->
+        <attr name="SbisList_isHorizontal" format="boolean"/>
+    </declare-styleable>
+    <!--см.README_list.md-->
+    <attr name="list_theme" format="reference"/>
+    <attr name="list_content_background" format="reference|color"/>
+    <attr name="list_content_dark_background" format="reference|color"/>
+    <attr name="list_item_background_color_states" format="color"/>
+</resources>

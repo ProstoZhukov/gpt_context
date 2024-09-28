@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_views_document_preview_load_error">Maglumat &#xfd;üklemekde säwlik</string>
+    <string name="common_views_document_preview_offline_error_pre_clickable_text">Internet birikmä&#x148;izi barla&#x148; we synap görü&#x148;</string>
+    <string name="common_views_document_preview_offline_error_clickable_text">sahypany täzelä&#x148;</string>
+</resources>

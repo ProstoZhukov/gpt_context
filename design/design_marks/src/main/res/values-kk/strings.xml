@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_marks_top_title">Белгілер</string>
+    <string name="design_marks_title_clear_label">Қалпына келтіру</string>
+    <string name="design_marks_title_important">Маңызды</string>
+    <string name="design_marks_title_plus">Плюс</string>
+</resources>

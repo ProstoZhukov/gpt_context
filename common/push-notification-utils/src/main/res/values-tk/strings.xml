@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="push_notification_utils_file_loading_channel_name">Fa&#xfd;l &#xfd;üklemek</string>
+    <string name="push_notification_utils_settings_notification_sound_key">sazlamalar_notifikasi&#xfd;a_sound_key</string>
+    <string name="push_notification_utils_settings_notification_vibration_key">sazlamalar_notifikasi&#xfd;a_ wibrasi&#xfd;a_key</string>
+    <string name="push_notification_utils_settings_stable_push_service_key">sazlamalar_stable_push_service_key</string>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.onboarding.ui.host.OnboardingHostVM"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:theme="@style/HostTheme.Dialog">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="?attr/onboardingPagerStyle"
+            tools:layout_height="match_parent"
+            tools:layout_width="match_parent">
+
+            <!-- Placeholder с невидимым самым длинным описанием из всех фич -->
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/onboarding_placeholder_description_frame"
+                style="?attr/onboardingDescriptionStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="?offset_2xl"
+                android:layout_marginTop="?offset_l"
+                android:layout_marginEnd="?offset_2xl"
+                android:layout_marginBottom="?offset_2xl"
+                android:text="@{viewModel.longestDescription}"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/onboarding_anchor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/onboarding_banner_container"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                tools:text="Приложение почти готово к использованию, осталось выполнить пару настроек"/>
+
+            <!-- Якорь для выравнивания индикатора снизу над изображением -->
+            <View
+                android:id="@+id/onboarding_anchor"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/onboarding_indicator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/onboarding_placeholder_description_frame"/>
+
+            <!--Индикатор страницы-->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/onboarding_indicator"
+                style="?attr/onboardingIndicatorStyle"
+                android:layout_marginBottom="?offset_2xl"
+                app:layout_constraintBottom_toTopOf="@+id/onboarding_placeholder_image_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/onboarding_anchor"
+                app:tabBackground="@drawable/onboarding_page_indicator"
+                app:tabGravity="center"
+                app:tabIndicatorColor="?secondaryActiveColor"
+                app:tabIndicatorGravity="center"
+                app:tabIndicatorHeight="0dp"/>
+
+            <!-- Placeholder для выравнивания индикатора-->
+            <Space
+                android:id="@+id/onboarding_placeholder_image_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/onboarding_indicator"
+                app:layout_constraintVertical_bias="1"/>
+
+            <!--Вью-пейджер с контентом экрана приветствия-->
+            <ru.tensor.sbis.onboarding.ui.view.OnboardingViewPager
+                android:id="@+id/onboarding_view_pager"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:preventSwipeBack="@{viewModel.isPreventBack}"/>
+
+            <!--Баннер (тулбар)-->
+            <include
+                android:id="@+id/onboarding_banner_container"
+                layout="@layout/onboarding_view_banner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:viewModel="@{viewModel.bannerVm}"
+                app:visibility="@{View.VISIBLE}"/>
+
+            <!--Индикатор таймера перелистывания-->
+            <ProgressBar
+                android:id="@+id/onboarding_flip_progress_bar"
+                style="@style/OnboardingFlipProgressbar"
+                android:max="@{viewModel.maxFlipProgress}"
+                app:flipProgress="@{viewModel.flipProgress}"
+                app:isNotGone="@{viewModel.isFlipProgressShown}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:progress="50"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_file_browser_stub_folder_is_empty">Ο φάκελος είναι κενός</string>
+    <string name="app_file_browser_show_size">Εμφάνιση μεγέθους</string>
+    <string name="app_file_browser_delete">Διαγράφω</string>
+</resources>

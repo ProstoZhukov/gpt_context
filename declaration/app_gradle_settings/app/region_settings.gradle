@@ -1,0 +1,323 @@
+import groovy.transform.PackageScope
+import groovy.transform.ToString
+
+import javax.annotation.Nonnull
+import javax.annotation.Nullable
+
+class AppRegionConfigurationSet {
+    @Nonnull
+    private final String projectName
+    @PackageScope
+    final Map<String, RegionConfig> regions = new HashMap<>()
+
+    @PackageScope
+    AppRegionConfigurationSet(@Nonnull String projectName) {
+        this.projectName = projectName
+    }
+
+    void ru(@Nonnull Closure<RegionConfig> regionConfig) {
+        addRegionConfig(
+                "ru",
+                regionConfig.andThen {
+                    if (appConfig.controllerArtifact == null) {
+                        appConfig.controllerArtifact = "android-${projectName}-controller"
+                    }
+                    if (appConfig.platformCoreLibrary == null) {
+                        appConfig.platformCoreLibrary = "sbis-app-controller"
+                    }
+                    if (appConfig.archivesBaseNamePrefix == null) {
+                        appConfig.archivesBaseNamePrefix = "sbis-${projectName}"
+                    }
+                    if (appConfig.productName == null) {
+                        appConfig.productName = "${projectName.capitalize()}"
+                    }
+                }
+        )
+    }
+
+    void kz(@Nonnull Closure<RegionConfig> regionConfig) {
+        addRegionConfig(
+                "kz",
+                regionConfig.andThen {
+                    if (appConfig.controllerArtifact == null) {
+                        appConfig.controllerArtifact = "android-${projectName}-controller-kz"
+                    }
+                    if (appConfig.platformCoreLibrary == null) {
+                        appConfig.platformCoreLibrary = "sbis-app-controller-kz"
+                    }
+                    if (appConfig.archivesBaseNamePrefix == null) {
+                        appConfig.archivesBaseNamePrefix = "setty-${projectName}-kz"
+                    }
+                    if (appConfig.productName == null) {
+                        appConfig.productName = "${projectName.capitalize()}Kz"
+                    }
+                }
+        )
+    }
+
+    private void addRegionConfig(@Nonnull String regionKey,
+                                 @Nonnull Closure<RegionConfig> regionConfig) {
+        def config = new RegionConfig()
+
+        regionConfig.delegate = config
+        regionConfig.resolveStrategy = Closure.DELEGATE_FIRST
+        regionConfig()
+
+        if (config.settingsConfig.projectName == null) {
+            config.settingsConfig.projectName = "${projectName}_${regionKey}"
+        }
+        if (config.appConfig.controllerSourceModule == null) {
+            config.appConfig.controllerSourceModule = "controller-${projectName}"
+        }
+        if (config.appConfig.accountType == null) {
+            throw new IllegalStateException("accountType is not defined for ${regionKey}")
+        }
+        validateRegionConfig(regionKey, config)
+        regions.put(regionKey, config)
+    }
+
+    private void validateRegionConfig(@Nonnull String regionKey,
+                                      @Nonnull RegionConfig config) {
+        def duplicateAccountTypeRecord = regions
+                .find { it.value.appConfig.accountType == config.appConfig.accountType }
+        if (duplicateAccountTypeRecord != null) {
+            throw new IllegalStateException("Duplicate account types detected for ${regionKey} and ${duplicateAccountTypeRecord.key}!")
+        }
+    }
+
+    @ToString(excludes = "rootProjectConfig")
+    static class RegionConfig {
+        @Nonnull
+        final SettingsConfig settingsConfig = new SettingsConfig()
+        @Nonnull
+        final AppConfig appConfig = new AppConfig()
+        @Nullable
+        Closure<Project> rootProjectConfig = null
+
+        private RegionConfig() {}
+
+        void appConfig(Closure<AppConfig> block) {
+            block.delegate = appConfig
+            block.resolveStrategy = Closure.DELEGATE_FIRST
+            block()
+        }
+
+        void settingsConfig(Closure<SettingsConfig> block) {
+            block.delegate = settingsConfig
+            block.resolveStrategy = Closure.DELEGATE_FIRST
+            block()
+        }
+
+        void rootProjectConfig(Closure<Project> block) {
+            rootProjectConfig = block
+        }
+
+        @ToString(excludes = "extraModules")
+        static class SettingsConfig {
+            String projectName
+            Closure<Settings> extraModules
+
+            private SettingsConfig() {}
+
+            void extraModules(Closure<Settings> extraModules) {
+                this.extraModules = extraModules
+            }
+
+        }
+
+        @ToString
+        static class AppConfig {
+            String productName
+            String applicationId
+            String archivesBaseNamePrefix
+            @Nullable
+            String accountType
+
+            String controllerSourceModule
+            String controllerArtifact
+            String platformCoreLibrary
+
+            private AppConfig() {}
+
+        }
+    }
+}
+
+/**
+ * Разбием приложение по региональному признаку.
+ *
+ * splitAppByRegion(settings, appName) {
+ *   ru {
+ *     settingsConfig {
+ *       include ':moduleA'
+ *     }
+ *     appConfig {
+ *       applicationId = "ru.tensor.app-name"
+ *     }
+ *   }
+ *   kz {
+ *     settingsConfig {
+ *       include ':moduleB'
+ *     }
+ *     appConfig {
+ *       applicationId = "kz.setty.app-name"
+ *     }
+ *    }
+ * }
+ */
+static void splitAppByRegion(@Nonnull Settings settings,
+                             @Nonnull String appName,
+                             @Nullable String appType = null,
+                             Boolean addRegionVariantsForAppModule = true,
+                             @Nonnull Closure<AppRegionConfigurationSet> configuration) {
+    def configSet = new AppRegionConfigurationSet(appName)
+
+    def selectedRegion = settings.ext.region
+    if (selectedRegion == null || selectedRegion.isEmpty()) {
+        selectedRegion = "ru"
+    }
+    println("Selected region $selectedRegion")
+
+    configuration.delegate = configSet
+    configuration.resolveStrategy = Closure.DELEGATE_FIRST
+    configuration()
+
+    def regionConfig = configSet.regions.get(selectedRegion)
+    println("Selected region configuration $regionConfig")
+
+    settings.rootProject.name = regionConfig.settingsConfig.projectName
+
+    def extraModules = regionConfig.settingsConfig.extraModules
+    if (extraModules != null) {
+        extraModules.delegate = settings
+        extraModules.resolveStrategy = Closure.DELEGATE_FIRST
+        extraModules()
+    }
+
+    settings.gradle.rootProject { rootProject ->
+        rootProject.ext.region = settings.ext.region
+
+        rootProject.ext {
+            productName = regionConfig.appConfig.productName
+            applicationId = regionConfig.appConfig.applicationId
+            if (regionConfig.appConfig.platformCoreLibrary != null) {
+                platformCoreLibrary = regionConfig.appConfig.platformCoreLibrary
+            }
+            if (regionConfig.appConfig.accountType != null) {
+                accountType = regionConfig.appConfig.accountType
+            }
+        }
+
+        rootProject.allprojects {
+            ext.androidController = regionConfig.appConfig.controllerArtifact
+            ext.androidControllerLite = "${regionConfig.appConfig.controllerArtifact}-lite"
+        }
+
+        rootProject.afterEvaluate {
+            rootProject.ext.selectedRegion = selectedRegion
+
+            def rootConfig = regionConfig.rootProjectConfig
+            if (rootConfig != null) {
+                rootConfig.delegate = rootProject
+                rootConfig.resolveStrategy = Closure.DELEGATE_FIRST
+                rootConfig()
+            }
+
+            def configuredRegions = configSet.regions.keySet()
+            rootProject.ext.regions = configuredRegions
+
+            rootProject.afterEvaluate {
+                if (rootProject.ext.accountType != regionConfig.appConfig.accountType) {
+                    throw new IllegalStateException("Overriden accountType detected! Region accountType - ${regionConfig.appConfig.accountType}. Overriden accountType - ${rootProject.ext.accountType}")
+                }
+            }
+
+            rootProject.findProject(':app').with { project ->
+                project.ext.appType = appType
+                if (addRegionVariantsForAppModule) {
+                    project.apply plugin: 'region-app-plugin'
+
+                    project.regionConfig {
+                        configuredRegions.forEach { regionCode ->
+                            delegate.create(regionCode)
+                        }
+                    }
+
+                    project.android {
+                        defaultConfig {
+                            setProperty("archivesBaseName", "${regionConfig.appConfig.archivesBaseNamePrefix}-${project.versionName}.${project.versionCode}")
+                        }
+                    }
+                }
+            }
+
+            rootProject.findProject(':controller').with { project ->
+                afterEvaluate {
+                    project.dependencies {
+                        def controller_type = project.getControllerType(":${regionConfig.appConfig.controllerSourceModule}")
+
+                        if (controller_type == "lite") {
+                            api "ru.tensor.sbis:$androidControllerLite:$rootProject.ext.androidControllerVersion"
+                        } else if (controller_type == "build") {
+                            api project.project(":${regionConfig.appConfig.controllerSourceModule}")
+                        } else {
+                            api "ru.tensor.sbis:$androidController:$rootProject.ext.androidControllerVersion"
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+ext.splitAppByRegion = this::splitAppByRegion
+
+class SubmoduleRegionSettingsSet {
+    @PackageScope
+    final Map<String, Closure<Settings>> regions = new HashMap<>()
+
+    @PackageScope
+    SubmoduleRegionSettingsSet() {}
+
+    void ru(Closure<Settings> block) {
+        regions.put("ru", block)
+    }
+
+    void kz(Closure<Settings> block) {
+        regions.put("kz", block)
+    }
+
+}
+
+/**
+ * Разбиваем настройки по региональному признаку.
+ *
+ * splitSettingsByRegion {
+ *   ru {
+ *     include ':module1'
+ *   }
+ *   kz {
+ *     include ':module2'
+ *   }
+ * }
+ */
+void splitSettingsByRegion(Closure<SubmoduleRegionSettingsSet> configuration) {
+    def selectedRegion = settings.ext.region
+    if (selectedRegion == null || selectedRegion.isEmpty()) {
+        selectedRegion = "ru"
+    }
+    def configSet = new SubmoduleRegionSettingsSet()
+    configuration.delegate = configSet
+    configuration.resolveStrategy = Closure.DELEGATE_FIRST
+    configuration()
+
+    def block = configSet.regions.get(selectedRegion)
+    if (block != null) {
+        block.delegate = settings
+        block.resolveStrategy = Closure.DELEGATE_FIRST
+        block()
+    }
+}
+
+ext.splitSettingsByRegion = this::splitSettingsByRegion

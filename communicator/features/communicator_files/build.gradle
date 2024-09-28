@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBuildConfigGeneration()
+}
+
+android {
+    namespace "ru.tensor.sbis.communicator.communicator_files"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(':communicator_design')
+    implementation project(':communicator_common')
+    implementation project(':communicator_base_folders')
+    implementation project(':design_files_picker')
+    implementation project(':design_folders')
+    implementation project(':viewer-decl')
+    implementation project(':controller')
+    implementation project(':common')
+    implementation project(':base_components')
+    implementation project(':communicator_declaration')
+    implementation project(':communication-decl')
+    implementation project(':design_breadcrumbs')
+    implementation project(':crud3')
+    implementation project(':mvi_extension')
+    implementation project(':design_custom_view_tools')
+    implementation project(':attachments-ui')
+    implementation project(':design_message_view')
+    implementation project(':attachments-decl')
+    implementation project(':context_menu')
+    implementation project(':design_notification')
+
+    // Dagger
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$rootProject.ext.kotlinxCoroutinesCoreVersion"
+}

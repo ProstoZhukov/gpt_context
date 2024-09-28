@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Переменные для цветов купюр. -->
+<resources>
+    <!-- region RU -->
+    <attr name="rub100BackgroundColor" format="color|reference"/>
+    <attr name="rub200BackgroundColor" format="color|reference"/>
+    <attr name="rub500BackgroundColor" format="color|reference"/>
+    <attr name="rub1000BackgroundColor" format="color|reference"/>
+    <attr name="rub2000BackgroundColor" format="color|reference"/>
+    <attr name="rub5000BackgroundColor" format="color|reference"/>
+    <!-- endregion -->
+
+    <!-- region KZ -->
+    <attr name="kzt200BackgroundColor" format="color|reference"/>
+    <attr name="kzt500BackgroundColor" format="color|reference"/>
+    <attr name="kzt1000BackgroundColor" format="color|reference"/>
+    <attr name="kzt2000BackgroundColor" format="color|reference"/>
+    <attr name="kzt5000BackgroundColor" format="color|reference"/>
+    <attr name="kzt10000BackgroundColor" format="color|reference"/>
+    <!-- endregion -->
+</resources>

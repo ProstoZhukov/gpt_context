@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="versioning_settings_label">Ρυθμίσεις</string>
+    <string name="versioning_settings_update_type">Τύπος ενημέρωσης:</string>
+    <string name="versioning_settings_update_recommended">Συνιστάται</string>
+    <string name="versioning_settings_update_mandatory">Απαιτείται</string>
+    <string name="versioning_settings_app_version">Έκδοση εφαρμογής</string>
+    <string name="versioning_submodule_version_is_critical_title">Η ενότητα δεν είναι διαθέσιμη</string>
+    <string name="versioning_new_version_is_available_msg">Σας συνιστούμε να κάνετε αναβάθμιση στη σωστή έκδοση της εφαρμογής.</string>
+    <string name="versioning_accept_update">Εκσυγχρονίζω</string>
+    <string name="versioning_postpone_update">Αναβάλλω</string>
+    <string name="versioning_update_required_details">Για να συνεχίσετε να εργάζεστε με την εφαρμογή\n%1$s πρέπει να ενημερώσετε στην πιο πρόσφατη έκδοση.</string>
+    <string name="versioning_update_optional_detail">Προσθέσαμε νέες δυνατότητες και βελτιώσαμε τις υπάρχουσες</string>
+</resources>

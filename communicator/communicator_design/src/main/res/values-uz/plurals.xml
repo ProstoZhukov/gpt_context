@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="communicator_move_dialogs_success_message">
+        <item quantity="one">Muloqot papkaga ko\'chirildi</item>
+        <item quantity="other">Dialoglar papkaga ko\'chirildi</item>
+    </plurals>
+    <plurals name="communicator_contact_move_success_message">
+        <item quantity="one">Kontakt jildga ko\'chirildi</item>
+        <item quantity="other">Kontaktlar jildga ko\'chirildi</item>
+    </plurals>
+    <plurals name="communicator_contact_want_add_in_same_folder">
+        <item quantity="one">Kontakt allaqachon ushbu jildda</item>
+        <item quantity="other">Kontaktlar allaqachon ushbu jildda</item>
+    </plurals>
+    <plurals name="communicator_contact_move_error">
+        <item quantity="one">Kontaktni ko\'chirishda xatolik yuz berdi</item>
+        <item quantity="other">Kontaktlarni ko\'chirishda xatolik yuz berdi</item>
+    </plurals>
+</resources>

@@ -1,0 +1,8 @@
+include ':edo_additional_fields'
+project(':edo_additional_fields').projectDir = new File(edoDir, "edo_additional_fields")
+
+include ':edo_additional_fields_mapper'
+project(':edo_additional_fields_mapper').projectDir = new File(edoDir, "edo_additional_fields_mapper")
+
+include ':edo_faces_selection_decl'
+project(':edo_faces_selection_decl').projectDir = new File(edoDir, "edo_faces_selection_decl")

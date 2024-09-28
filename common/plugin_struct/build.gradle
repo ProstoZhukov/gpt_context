@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'module-publish-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableLintCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+modulePublishConfig {
+    publishingArtifactId = 'plugin_struct'
+    publishingVersionCode = '1.0.0'
+}
+
+android {
+    namespace "ru.tensor.sbis.plugin_struct"
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
+}

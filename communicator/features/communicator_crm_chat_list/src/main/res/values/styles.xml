@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CRMChatListHistoryListTheme">
+            <item name="list_theme">@style/CRMChatListHistoryListStyle</item>
+    </style>
+
+    <style name="CRMChatListHistoryListStyle" parent="List">
+        <item name="list_content_background">?contrastBackgroundColor</item>
+    </style>
+
+    <style name="CRMChatListDefaultListTheme">
+        <item name="list_theme">@style/CRMChatListDefaultListStyle</item>
+    </style>
+
+    <style name="CRMChatListDefaultListStyle" parent="List">
+        <item name="list_content_background">?unaccentedAdaptiveBackgroundColor</item>
+    </style>
+
+    <style name="CommunicatorCrmChatFilterSelectionTheme" parent="SelectionTheme">
+        <item name="Selection_selectionPanelStyle">@style/CommunicatorCrmChatFilterSelectionPanelStyle</item>
+    </style>
+
+    <style name="CommunicatorCrmChatFilterSelectionPanelStyle" parent="SelectionPanelStyle">
+        <item name="android:nestedScrollingEnabled">false</item>
+    </style>
+
+</resources>

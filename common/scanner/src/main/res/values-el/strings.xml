@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scanner_take_snapshot_error">Παρουσιάστηκε σφάλμα κατά τη λήψη του στιγμιότυπου</string>
+    <string name="scanner_open_camera_error">Παρουσιάστηκε σφάλμα κατά το άνοιγμα της κάμερας.</string>
+    <string name="scanner_image_processing_error">Παρουσιάστηκε σφάλμα κατά την επεξεργασία της εικόνας.</string>
+    <string name="scanner_image_deleting_error">Παρουσιάστηκε σφάλμα κατά τη διαγραφή της εικόνας.</string>
+    <string name="scanner_image_loading_error">Παρουσιάστηκε σφάλμα κατά τη φόρτωση της εικόνας.</string>
+    <string name="scanner_next_page">%d σελ.</string>
+    <string name="scanner_close_screen">Κλείσε</string>
+    <string name="scanner_multi_snapshot_button_text">Διεξοδικά</string>
+    <string name="scanner_multi_snapshot_fast_button_text">Γρήγορα</string>
+    <string name="scanner_edit_image_cancel">Ματαίωση</string>
+    <string name="scanner_edit_image_done">Εγινε</string>
+    <string name="scanner_empty_scanned_image_list">Η λίστα των σαρωμένων εικόνων είναι κενή.</string>
+    <string name="scanner_load_scanned_images_error">Η φόρτωση της λίστας των σαρωμένων εικόνων απέτυχε.</string>
+    <string name="scanner_save_scanned_images_menu_title">Αποθηκεύσετε</string>
+    <string name="scanner_input_new_pdf_file_name_dialog_title">Όνομα του νέου αρχείου PDF.</string>
+    <string name="scanner_saving_to_pdf_error">Αποτυχία αποθήκευσης σε PDF</string>
+    <string name="scanner_saving_to_gallery_error">Αποτυχία αποθήκευσης στη συλλογή</string>
+    <string name="scanner_saving_to_gallery_success">Επιτυχής αποθήκευση</string>
+    <string name="scanner_save_scanned_docs_offline_error">Η αποθήκευση σαρωμένων εγγράφων δεν είναι διαθέσιμη εκτός σύνδεσης</string>
+    <string name="scanner_flash_state_auto">Αυτο</string>
+    <string name="scanner_flash_state_on">Επί</string>
+    <string name="scanner_flash_state_off">Μακριά από</string>
+    <string name="scanner_save_as_image">Αποθήκευση ως εικόνα</string>
+    <string name="scanner_save_to_pdf">Αποθήκευση σε PDF</string>
+    <string name="scanner_save_to_gallery">Αποθήκευση στη συλλογή</string>
+    <string name="scanner_files_selection_pane_option_scan_document">Σάρωση</string>
+    <string name="scanner_permission_dialog_title">Δεν επιτρέπεται η πρόσβαση στην κάμερα</string>
+    <string name="scanner_permission_dialog_text">Ενεργοποιήστε την πρόσβαση στην κάμερα στις ρυθμίσεις</string>
+    <string name="scanner_permission_dialog_positive">Ρυθμίσεις</string>
+    <string name="scanner_no_internet_connection_message">Δεν υπάρχει σύνδεση δικτύου</string>
+    <string name="scanner_files_picker_tab_title">Σάρωση</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- region RU -->
+    <plurals name="currency_plural_RU">
+        <item quantity="one" tools:ignore="ImpliedQuantity">рубль</item>
+        <item quantity="few">рубля</item>
+        <item quantity="many">рублей</item>
+        <item quantity="other">рублей</item>
+    </plurals>
+    <plurals name="subunit_plural_RU">
+        <item quantity="one" tools:ignore="ImpliedQuantity">копейка</item>
+        <item quantity="few">копейки</item>
+        <item quantity="many">копеек</item>
+    </plurals>
+    <string name="short_currency_RU">руб.</string>
+    <string name="super_short_currency_RU">р.</string>
+    <string name="short_subunit_RU">коп.</string>
+    <string name="super_short_subunit_RU">к.</string>
+    <string name="symbol_RU">₽</string>
+    <!--endregion-->
+
+    <!-- region KZ -->
+    <plurals name="currency_plural_KZ">
+        <item quantity="one" tools:ignore="ImpliedQuantity">тенге</item>
+        <item quantity="few">тенге</item>
+        <item quantity="many">тенге</item>
+    </plurals>
+    <plurals name="subunit_plural_KZ">
+        <item quantity="one" tools:ignore="ImpliedQuantity">тиын</item>
+        <item quantity="few">тиын</item>
+        <item quantity="many">тиын</item>
+    </plurals>
+    <string name="short_currency_KZ">тнг.</string>
+    <string name="super_short_currency_KZ">т.</string>
+    <string name="short_subunit_KZ">тиын</string>
+    <string name="super_short_subunit_KZ">тиын</string>
+    <string name="symbol_KZ">₸</string>
+    <!--endregion-->
+
+    <!-- region UZ -->
+    <plurals name="currency_plural_UZ">
+        <item quantity="one" tools:ignore="ImpliedQuantity">сум</item>
+        <item quantity="few">сума</item>
+        <item quantity="many">сумов</item>
+    </plurals>
+    <plurals name="subunit_plural_UZ">
+        <item quantity="one" tools:ignore="ImpliedQuantity">тийин</item>
+        <item quantity="few">тийина</item>
+        <item quantity="many">тийинов</item>
+    </plurals>
+    <string name="short_currency_UZ">сум</string>
+    <string name="super_short_currency_UZ">с.</string>
+    <string name="short_subunit_UZ">тийин</string>
+    <string name="super_short_subunit_UZ">т.</string>
+    <string name="symbol_UZ">Soʻm</string>
+    <!--endregion-->
+
+    <!-- region US -->
+    <plurals name="currency_plural_US">
+        <item quantity="one" tools:ignore="ImpliedQuantity">доллар</item>
+        <item quantity="few">доллара</item>
+        <item quantity="many">долларов</item>
+    </plurals>
+    <plurals name="subunit_plural_US">
+        <item quantity="one" tools:ignore="ImpliedQuantity">цент</item>
+        <item quantity="few">цента</item>
+        <item quantity="many">центов</item>
+    </plurals>
+    <string name="short_currency_US">дол.</string>
+    <string name="super_short_currency_US">д.</string>
+    <string name="short_subunit_US">цент</string>
+    <string name="super_short_subunit_US">ц.</string>
+    <string name="symbol_US">$</string>
+    <!--endregion-->
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/context_menu_item_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?inlineHeight_s"
+    android:orientation="horizontal"
+    android:paddingStart="?offset_l"
+    android:paddingEnd="?offset_l">
+
+    <ru.tensor.sbis.design.context_menu.view.IconCheckBox
+        android:id="@+id/context_menu_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="?offset_xs"/>
+
+    <ImageView
+        android:id="@+id/context_menu_item_image_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="?offset_s"
+        android:visibility="gone"
+        tools:src="@drawable/arrow_right_selector"/>
+
+    <include
+        layout="@layout/context_menu_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="?offset_m"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/context_menu_item_image_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_s"
+        android:visibility="gone"
+        tools:src="@drawable/arrow_right_selector"/>
+
+</LinearLayout>

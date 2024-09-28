@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="base_components_common_folder_context_menu_move_up">Переместить вверх</string>
+    <string name="base_components_common_folder_context_menu_move_down">Переместить вниз</string>
+    <string name="base_components_common_folder_context_menu_move_edit">Отредактировать</string>
+    <string name="base_components_common_folder_context_menu_move_remove">Удалить</string>
+    <string name="base_components_common_folder_context_menu_move">Переместить</string>
+
+    <string name="base_components_input_max_length_error">Превышено максимальное количество символов</string>
+    <string name="base_components_operation_error_message">Ошибка операции</string>
+    <string name="base_components_dialog_button_ok">Ок</string>
+    <string name="base_components_dialog_button_cancel">Отмена</string>
+</resources>

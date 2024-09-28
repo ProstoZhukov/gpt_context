@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="viper_no_items_placeholder">No hay nada aqu&#xed; todav&#xed;a</string>
+    <string name="viper_no_items_found_placeholder">No hay resultados</string>
+    <string name="viper_try_another_search">Intente cambiar sus opciones de b&#xfa;squeda</string>
+    <string name="viper_network_error">No hay conexion de red</string>
+    <string name="viper_unavailable_service_error">El servicio est&#xe1; temporalmente no disponible. Intenta m&#xe1;s tarde.</string>
+</resources>

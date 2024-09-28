@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_support_channel_list_title">Қолдау қызметі</string>
+    <string name="communicator_support_channel_list_title_reduce">Қолдау қызметі</string>
+    <string name="communicator_support_channel_list_no_data">Қосылған арналар жоқ</string>
+    <string name="communicator_support_channel_list_syby_support_title">Setty қолдауы</string>
+    <string name="communicator_support_channel_sabyget_title">Чаттар</string>
+    <string name="communicator_support_channel_sabyget_message">Байланыс</string>
+    <string name="communicator_support_channel_sabyget_stub_subtitle">Мұнда сіздің диалогыңыз болады \ пс мекеме және мамандар</string>
+</resources>

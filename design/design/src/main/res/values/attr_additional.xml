@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Переменные для дополнительных цветов
+ https://www.figma.com/proto/jZROkwJV8mjBSkmt27yAtA/Палитра-с-дополнительными-цветами?page-id=5958%3A903&type=design&node-id=5958-1013&viewport=1536%2C-271%2C0.26&scaling=min-zoom&hide-ui=1
+ -->
+<resources>
+    <!-- Базовые цвета-->
+    <attr name="paletteColor1_1" format="color|reference"/>
+    <attr name="paletteColor2_1" format="color|reference"/>
+    <attr name="paletteColor3_1" format="color|reference"/>
+    <attr name="paletteColor4_1" format="color|reference"/>
+    <attr name="paletteColor5_1" format="color|reference"/>
+    <attr name="paletteColor6_1" format="color|reference"/>
+    <attr name="paletteColor7_1" format="color|reference"/>
+    <attr name="paletteColor8_1" format="color|reference"/>
+    <attr name="paletteColor9_1" format="color|reference"/>
+    <attr name="paletteColor10_1" format="color|reference"/>
+    <attr name="paletteColor11_1" format="color|reference"/>
+    <attr name="paletteColor12_1" format="color|reference"/>
+    <attr name="paletteColor13_1" format="color|reference"/>
+
+    <!-- Акцентные цвета-->
+    <attr name="paletteColor1_2" format="color|reference"/>
+    <attr name="paletteColor2_2" format="color|reference"/>
+    <attr name="paletteColor3_2" format="color|reference"/>
+    <attr name="paletteColor4_2" format="color|reference"/>
+    <attr name="paletteColor5_2" format="color|reference"/>
+    <attr name="paletteColor6_2" format="color|reference"/>
+    <attr name="paletteColor7_2" format="color|reference"/>
+    <attr name="paletteColor8_2" format="color|reference"/>
+    <attr name="paletteColor9_2" format="color|reference"/>
+    <attr name="paletteColor10_2" format="color|reference"/>
+    <attr name="paletteColor11_2" format="color|reference"/>
+    <attr name="paletteColor12_2" format="color|reference"/>
+    <attr name="paletteColor13_2" format="color|reference"/>
+
+    <!-- Базовые насыщенные цвета-->
+    <attr name="paletteColor1_3" format="color|reference"/>
+    <attr name="paletteColor2_3" format="color|reference"/>
+    <attr name="paletteColor3_3" format="color|reference"/>
+    <attr name="paletteColor4_3" format="color|reference"/>
+    <attr name="paletteColor5_3" format="color|reference"/>
+    <attr name="paletteColor6_3" format="color|reference"/>
+    <attr name="paletteColor7_3" format="color|reference"/>
+    <attr name="paletteColor8_3" format="color|reference"/>
+    <attr name="paletteColor9_3" format="color|reference"/>
+    <attr name="paletteColor10_3" format="color|reference"/>
+    <attr name="paletteColor11_3" format="color|reference"/>
+    <attr name="paletteColor12_3" format="color|reference"/>
+    <attr name="paletteColor13_3" format="color|reference"/>
+
+    <!-- Бледные насыщенные цвета-->
+    <attr name="paletteColor1_4" format="color|reference"/>
+    <attr name="paletteColor2_4" format="color|reference"/>
+    <attr name="paletteColor3_4" format="color|reference"/>
+    <attr name="paletteColor4_4" format="color|reference"/>
+    <attr name="paletteColor5_4" format="color|reference"/>
+    <attr name="paletteColor6_4" format="color|reference"/>
+    <attr name="paletteColor7_4" format="color|reference"/>
+    <attr name="paletteColor8_4" format="color|reference"/>
+    <attr name="paletteColor9_4" format="color|reference"/>
+    <attr name="paletteColor10_4" format="color|reference"/>
+    <attr name="paletteColor11_4" format="color|reference"/>
+    <attr name="paletteColor12_4" format="color|reference"/>
+    <attr name="paletteColor13_4" format="color|reference"/>
+
+    <!-- Бледные цвета-->
+    <attr name="paletteColor1_5" format="color|reference"/>
+    <attr name="paletteColor2_5" format="color|reference"/>
+    <attr name="paletteColor3_5" format="color|reference"/>
+    <attr name="paletteColor4_5" format="color|reference"/>
+    <attr name="paletteColor5_5" format="color|reference"/>
+    <attr name="paletteColor6_5" format="color|reference"/>
+    <attr name="paletteColor7_5" format="color|reference"/>
+    <attr name="paletteColor8_5" format="color|reference"/>
+    <attr name="paletteColor9_5" format="color|reference"/>
+    <attr name="paletteColor10_5" format="color|reference"/>
+    <attr name="paletteColor11_5" format="color|reference"/>
+    <attr name="paletteColor12_5" format="color|reference"/>
+    <attr name="paletteColor13_5" format="color|reference"/>
+</resources>

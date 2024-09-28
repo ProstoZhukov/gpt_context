@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payment_qr_code_button_text">Code QR</string>
+    <string name="payment_comment_button_text">Commentaire</string>
+    <string name="payment_send_invoice_button_text">Envoyer la facture</string>
+</resources>

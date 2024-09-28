@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cloud View -->
+    <dimen name="cloud_view_big_horizontal_margin">54dp</dimen>
+    <dimen name="cloud_view_attachment_max_width">300dp</dimen>
+    <dimen name="cloud_view_income_end_spacing_width">46dp</dimen>
+    <dimen name="cloud_view_signing_buttons_width">230dp</dimen>
+
+    <!-- CloudStatusView -->
+    <dimen name="cloud_view_outcome_status_min_width">21dp</dimen>
+    <dimen name="cloud_view_outcome_status_min_height">@dimen/cloud_view_icon_size</dimen>
+    <dimen name="cloud_view_icon_size">15dp</dimen>
+    <dimen name="cloud_view_icon_text_size">10dp</dimen>
+    <dimen name="cloud_view_undelivered_icon_width">14dp</dimen>
+    <dimen name="cloud_view_icon_is_delivery_text_size">11dp</dimen>
+
+</resources>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableViewBindingCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.message_panel"
+
+    testOptions.unitTests.all {
+        testLogging {
+            events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            exceptionFormat 'full'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':controller')
+
+    implementation project(':design_message_panel')
+    implementation project(':design_message_panel_common')
+    implementation project(':design_message_panel_decl')
+    implementation project(':message_panel_recorder_decl')
+    implementation project(':design_custom_view_tools')
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_swipeback')
+    implementation project(':attachments-ui')
+    implementation project(':common_attachments')
+    implementation project(':attachments-decl')
+    implementation project(':profile_service')
+    implementation project(':base_components')
+    implementation project(':persons')
+    implementation project(':design_dialogs')
+    implementation project(':design_confirmation_dialog')
+    implementation project(':design_utils')
+    implementation project(':container')
+    implementation project(':design_buttons')
+    implementation project(':verification-decl')
+    implementation project(':design_files_picker')
+    implementation project(':local_feature_toggle')
+    implementation project(':design_notification')
+    api project(':communication-decl')
+    api project(':disk-decl')
+    api project(':viewer-decl')
+
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "com.jakewharton.rxbinding2:rxbinding:$rootProject.ext.rxBindingVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+    implementation "com.google.firebase:firebase-perf"
+    implementation project(path: ':lifecycle_compat')
+
+    //test
+    testImplementation project(':testing')
+}

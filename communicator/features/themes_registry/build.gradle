@@ -1,0 +1,113 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableBuildConfigGeneration()
+}
+
+android {
+    namespace "ru.tensor.sbis.communicator.themes_registry"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+    }
+}
+
+dependencies {
+    implementation project(':controller')
+    implementation project(':communicator_common')
+    implementation project(':communicator_declaration')
+    implementation project(':communicator_core')
+    implementation project(':communicator_sbis_conversation')
+    implementation project(':communicator_files')
+    implementation project(':communicator_design')
+    implementation project(':communicator_base_folders')
+    implementation project(':contacts_declaration')
+    implementation project(':edo-decl')
+
+    implementation project(':design')
+    implementation project(':design_profile')
+    implementation project(':design_breadcrumbs')
+    implementation project(':design_buttons')
+    implementation project(':design_checkbox')
+    implementation project(':design_progress')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_stubview')
+    implementation project(':design_switch')
+    implementation project(':design_person_suggest')
+    implementation project(':design_notification')
+    implementation project(':design_confirmation_dialog')
+    implementation project(':design_files_picker')
+    implementation project(':richtext')
+    implementation project(':toolbar')
+    implementation project(':design_folders')
+    implementation project(':input_view')
+    implementation project(':mvi_extension')
+    implementation project(':navigation')
+    implementation project(':common')
+    implementation project(':common_filters')
+    implementation project(':swipeablelayout')
+    implementation project(':modalwindows')
+    implementation project(':attachments-ui')
+    implementation project(':attachments-decl')
+    implementation project(':deeplink')
+    implementation project(':profile_service')
+    implementation project(':base_components')
+    implementation project(':viewer-decl')
+    implementation project(':persons')
+    implementation project(':fresco_view')
+    implementation project(':design_dialogs')
+    implementation project(':list_utils')
+    implementation project(':tasks-feature')
+    implementation project(':text_span')
+    implementation project(':container')
+    implementation project(':context_menu')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_list_header')
+    implementation project(':push-notification')
+    implementation project(':controller_utils')
+    implementation project(':message_panel')
+    implementation project(':verification-decl')
+    implementation project(':cloud_view')
+    implementation project(':design_message_panel_decl')
+    implementation project(":design_top_navigation")
+    implementation project(':design_tabs')
+    implementation project(':main_screen_decl')
+    implementation project(':folderspanel')
+    implementation project(':local_feature_toggle')
+    api project(':counter_provider')
+
+    //other libs
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "org.apache.commons:commons-lang3:$rootProject.ext.apacheCommonsVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "androidx.tracing:tracing-ktx:$rootProject.ext.androidTracingVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$rootProject.ext.kotlinxCoroutinesCoreVersion"
+
+    //processors
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+}

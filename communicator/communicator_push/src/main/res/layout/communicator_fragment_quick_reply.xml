@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/communicator_activity_quick_reply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/SbisToolbar"
+        android:theme="?altTheme"
+        android:id="@+id/communicator_toolbar"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ru.tensor.sbis.design.profile.person.PersonView
+                android:id="@+id/communicator_recipient_icon"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/communicator_quick_reply_icon_padding"
+                app:PersonView_size="unspecified"/>
+
+            <TextView
+                style="@style/RegularStyle"
+                android:id="@+id/communicator_recipient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/communicator_quick_reply_name_right_margin"
+                android:layout_marginStart="@dimen/communicator_quick_reply_name_left_margin"
+                android:layout_toEndOf="@id/communicator_recipient_icon"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/palette_color_white1"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/communicator_scroll_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/communicator_quick_reply_scroll_message_container_height"
+        android:layout_below="@id/communicator_toolbar"
+        android:scrollbarSize="3dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            style="@style/RegularStyle"
+            android:id="@+id/communicator_target_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/palette_color_white1"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/communicator_quick_reply_scroll_message_container_height"
+            android:paddingBottom="@dimen/communicator_quick_reply_message_vertical_padding"
+            android:paddingEnd="@dimen/communicator_quick_reply_message_horizontal_padding"
+            android:paddingLeft="@dimen/communicator_quick_reply_message_horizontal_padding"
+            android:paddingRight="@dimen/communicator_quick_reply_message_horizontal_padding"
+            android:paddingStart="@dimen/communicator_quick_reply_message_horizontal_padding"
+            android:paddingTop="@dimen/communicator_quick_reply_message_vertical_padding"
+            android:textColor="@color/text_color_black_2"
+            android:textSize="15sp"/>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/communicator_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/communicator_scroll_message_container"
+        android:background="@color/text_color_black_4"/>
+
+    <RelativeLayout
+        android:id="@+id/communicator_communicator_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/communicator_separator"
+        android:background="@color/palette_color_white1"
+        android:minHeight="45dp"
+        android:paddingEnd="@dimen/communicator_quick_reply_footer_horizontal_padding"
+        android:paddingLeft="@dimen/communicator_quick_reply_footer_horizontal_padding"
+        android:paddingRight="@dimen/communicator_quick_reply_footer_horizontal_padding"
+        android:paddingStart="@dimen/communicator_quick_reply_footer_horizontal_padding">
+
+        <EditText
+            style="@style/Widget.AppCompat.EditText"
+            android:id="@+id/communicator_edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/communicator_send_message_button"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/common_enter_message"
+            android:maxLines="3"
+            android:padding="@dimen/communicator_quick_reply_edit_message_padding"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/communicator_send_message_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:contentDescription="@string/icon_send_message"
+            android:padding="6dp"
+            android:scaleType="center"
+            android:src="@drawable/communicator_send_message"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

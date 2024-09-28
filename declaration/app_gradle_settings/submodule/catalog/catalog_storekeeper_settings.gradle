@@ -1,0 +1,14 @@
+ext.catalog_dir = 'module-catalog'
+apply from: "$catalogDir/settings.gradle"
+
+include ':commonstorekeeper'
+project(':commonstorekeeper').projectDir = new File(catalogDir, "commonstorekeeper")
+
+include ':warehouse'
+project(':warehouse').projectDir = new File(catalogDir, "warehouse")
+
+include ':whreport'
+project(':whreport').projectDir = new File(catalogDir, "whreport")
+
+include ':catalog_main_screen_addon'
+project(':catalog_main_screen_addon').projectDir = new File(catalogDir, "catalog_main_screen_addon")

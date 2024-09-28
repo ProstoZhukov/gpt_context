@@ -1,0 +1,39 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/conversation_preview_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true"
+        android:focusable="true">
+
+        <!-- Контейнер для ConversationFragment -->
+        <FrameLayout
+            android:id="@+id/conversation_preview_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/conversation_preview_sbis_menu_container"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="?offset_l"
+            android:layout_marginTop="?offset_l"
+            android:layout_marginEnd="?offset_l"
+            android:background="@drawable/rounded_background"
+            android:fitsSystemWindows="true"/>
+
+        <!-- Контейнер для SbisMenu -->
+        <FrameLayout
+            android:id="@+id/conversation_preview_sbis_menu_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="?offset_l"
+            android:layout_marginEnd="?offset_l"
+            android:layout_marginBottom="?offset_l"
+            android:background="@drawable/rounded_background"
+            android:fitsSystemWindows="true"/>
+
+    </RelativeLayout>
+</layout>

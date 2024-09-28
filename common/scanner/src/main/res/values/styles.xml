@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Document Scanner -->
+    <style name="ScannerToolbarButton">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:paddingLeft">@dimen/document_scanner_toolbar_padding</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/document_scanner_toolbar_padding
+        </item>
+        <item name="android:paddingRight">@dimen/document_scanner_toolbar_padding</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/document_scanner_toolbar_padding
+        </item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ScannerToolbarButton.Text">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/toolbar_title_without_subtitle_text_size_dp</item>
+    </style>
+
+    <style name="ScannerToolbarButton.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sbis_mobile_icons</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/document_scanner_toolbar_icon_size</item>
+        <item name="android:padding">@dimen/document_scanner_bottom_button_padding</item>
+    </style>
+
+    <style name="CurrentPageTextStyle" parent="RegularStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/toolbar_title_without_subtitle_text_size_dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SingleSnapshotButtonStyle">
+        <item name="android:layout_width">@dimen/document_scanner_single_snapshot_button_size</item>
+        <item name="android:layout_height">@dimen/document_scanner_single_snapshot_button_size</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">@dimen/document_scanner_bottom_button_padding</item>
+    </style>
+
+    <style name="MultiSnapshotButtonStyle">
+        <item name="android:layout_width">@dimen/document_scanner_multi_snapshot_button_size</item>
+        <item name="android:layout_height">@dimen/document_scanner_multi_snapshot_button_size</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">@dimen/document_scanner_multi_snapshot_button_padding</item>
+    </style>
+
+</resources>

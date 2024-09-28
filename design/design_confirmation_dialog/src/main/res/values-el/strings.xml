@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_confirmation_dialog_button_yes">Ναί</string>
+    <string name="design_confirmation_dialog_button_no">Οχι</string>
+    <string name="design_confirmation_dialog_button_cancel">Ματαίωση</string>
+    <string name="design_confirmation_dialog_button_ok">OK</string>
+</resources>

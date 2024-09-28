@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/palette_alpha_color_black1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/bread_crumbs_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/current_folder_view_height"
+            android:background="@color/palette_color_white1"
+            android:layout_marginBottom="@dimen/common_separator_size">
+
+            <ru.tensor.sbis.design.breadcrumbs.breadcrumbs.BreadCrumbsView
+                android:id="@+id/bread_crumbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/bread_crumbs_view_preview_padding_horizontal"
+                android:paddingEnd="@dimen/bread_crumbs_view_preview_padding_horizontal"
+                android:layout_gravity="center_vertical"/>
+
+        </FrameLayout>
+
+        <ru.tensor.sbis.design.breadcrumbs.CurrentFolderView
+            android:id="@+id/current_folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:CurrentFolderView_title="Торговое оборудование"/>
+
+        <ru.tensor.sbis.design.breadcrumbs.folderpath.FolderPathView
+            android:id="@+id/folder_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:FolderPathView_homeIconVisible="true"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controls"
+        android:layout_below="@+id/header"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/palette_color_black5"
+        app:flexWrap="wrap">
+
+        <Button
+            android:id="@+id/btn_display_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/btn_combined_text"/>
+
+        <Button
+            android:id="@+id/btn_home_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/btn_home_enabled_text"/>
+
+        <Button
+            android:id="@+id/btn_random_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/btn_random_enabled_text"/>
+
+        <LinearLayout
+            android:id="@+id/space_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp">
+
+            <Button
+                android:id="@+id/btn_reduce_space"
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_reduce_space_text"/>
+
+            <Button
+                android:id="@+id/btn_increase_space"
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_increase_space_text"/>
+        </LinearLayout>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</RelativeLayout>

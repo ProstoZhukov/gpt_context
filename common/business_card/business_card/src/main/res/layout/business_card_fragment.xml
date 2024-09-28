@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?unaccentedAdaptiveBackgroundColor"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ru.tensor.sbis.design.topNavigation.view.SbisTopNavigationView
+        android:id="@+id/business_card_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:SbisTopNavigation_showBackButton="true"/>
+
+    <RelativeLayout
+        android:id="@+id/business_card_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/business_card_toolbar"
+        android:layout_marginTop="?offset_3xl"
+        android:gravity="center"
+        android:minHeight="@dimen/business_card_image_size">
+
+        <ru.tensor.sbis.fresco_view.ShapedDraweeView
+            android:id="@+id/business_card_image"
+            android:layout_width="@dimen/business_card_image_size"
+            android:layout_height="@dimen/business_card_image_size"
+            android:layout_centerHorizontal="true"
+            app:failureImageScaleType="centerCrop"
+            tools:srcCompat="@drawable/design_profile_person_placeholder"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/business_card_name"
+            style="@style/BoldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/business_card_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="?offset_s"
+            android:layout_marginTop="?offset_l"
+            android:layout_marginRight="?offset_s"
+            android:gravity="center_horizontal"
+            android:maxLines="3"
+            android:textColor="?textColor"
+            android:textSize="?fontSize_4xl_scaleOff"
+            tools:text="Петров Александр"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/business_card_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/business_card_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="?offset_s"
+            android:layout_marginTop="?offset_s"
+            android:layout_marginRight="?offset_s"
+            android:layout_marginBottom="?offset_3xl"
+            android:gravity="center_horizontal"
+            android:maxLines="7"
+            android:textColor="?textColor"
+            android:textSize="?fontSize_2xl_scaleOff"
+            tools:text="Ветеренарный врач-терапевт"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/business_card_qr_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/business_card_info_container"
+        android:background="@drawable/business_card_qr_background"
+        android:clipToPadding="false"/>
+
+    <ru.tensor.sbis.design.buttons.SbisFloatingButtonPanel
+        android:id="@+id/business_card_floating_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="?offset_s"
+        android:layout_marginRight="?offset_s"
+        android:layout_marginBottom="?offset_s">
+
+        <ru.tensor.sbis.design.buttons.SbisRoundButton
+            android:id="@+id/business_card_link_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:SbisRoundButton_icon="@string/design_mobile_icon_link"
+            app:SbisRoundButton_size="m"
+            app:SbisRoundButton_iconSize="x4l"
+            app:SbisRoundButton_style="secondary"/>
+    </ru.tensor.sbis.design.buttons.SbisFloatingButtonPanel>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/business_card_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

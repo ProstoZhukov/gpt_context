@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Атрибут для определения темы панели ввода в составе темы приложения -->
+    <attr name="messagePanelTheme" format="reference"/>
+
+    <declare-styleable name="MessagePanel">
+        <!-- Ссылка на drawable иконки отправки в выключенном состоянии -->
+        <attr name="MessagePanel_sendIconDisabled" format="reference"/>
+        <!-- Ссылка на drawable иконки отправки во включенном состоянии -->
+        <attr name="MessagePanel_sendIconEnabled" format="reference"/>
+        <!-- Подсказка в неактивной панели ввода -->
+        <attr name="MessagePanel_disabledHint" format="reference"/>
+        <!-- Подсказка в активной панели ввода -->
+        <attr name="MessagePanel_enabledHint" format="reference"/>
+        <!-- Ссылка на макет с прикладной компоновкой панели ввода.
+            В макете нужно использовать идентификаторы из ресурсов -->
+        <attr name="MessagePanel_customLayout" format="reference"/>
+        <!-- Отображение надписи "Всем участникам" до получения данных.
+            Если false, надпись не отображается до получения данных. По умолчанию false -->
+        <attr name="MessagePanel_hideAllRecipients" format="boolean"/>
+        <!-- Требуется ли поднимать/опускать панель ввода при получении событий показа/скрытия
+            клавиатуры. По умолчанию true -->
+        <attr name="MessagePanel_adjustPositionOnKeyboardChanges" format="boolean"/>
+        <!-- Отступ сверху. Например, для предотвращения перекытия toolbar -->
+        <attr name="android:topOffset"/>
+    </declare-styleable>
+
+</resources>

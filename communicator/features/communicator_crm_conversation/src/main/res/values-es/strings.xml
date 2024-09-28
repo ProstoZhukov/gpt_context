@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_reassign_to_queue_option">Volver a la cola</string>
+    <string name="communicator_crm_reassign_to_group_option">Reasignar</string>
+    <string name="communicator_crm_reassign_to_operator_option">Otro empleado</string>
+    <string name="communicator_crm_copy_link_option">Copiar link</string>
+    <string name="communicator_crm_request_contacts_option">Solicite datos de contacto</string>
+    <string name="communicator_crm_write_to_client_option">Escribir al cliente</string>
+    <string name="communicator_crm_complete_option">Completo</string>
+    <string name="communicator_crm_delete_option">Borrar</string>
+    <string name="communicator_crm_take_button_text">Responder</string>
+    <string name="communicator_crm_brand_title">Charlar</string>
+    <string name="communicator_crm_service_message_rate_request_button_title">Tasa</string>
+    <string name="communicator_crm_rate_title">Califica nuestro servicio</string>
+    <string name="communicator_crm_rate_comment_placeholder">Comentario</string>
+    <string name="communicator_crm_rate_send_button_title">Enviar</string>
+    <string name="communicator_crm_quick_reply_empty_stub">La lista de respuestas r&#xe1;pidas est&#xe1; vac&#xed;a</string>
+    <string name="communicator_crm_conversation_stub_subtitle">Aqu&#xed; encontrar&#xe1;s tus di&#xe1;logos \ncon el lugar y los especialistas</string>
+    <string name="communicator_crm_chat_cant_view_permisshion">No tienes permiso para \nacceder a este chat</string>
+    <string name="communicator_crm_rate_validation_error">Campo requerido</string>
+    <string name="communicator_crm_reopen_button_text">Reanudar chat</string>
+    <string name="communicator_crm_sabyget_stub_message">Comunicar</string>
+    <string name="communicator_crm_brand_stub_message">Escr&#xed;benos</string>
+    <string name="communicator_crm_reassign_to_operator_edit_hint">Comentario para el operador</string>
+</resources>

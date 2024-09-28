@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Search Recipients Panel -->
+    <dimen name="mvp_multi_selection_list_padding_top">15dp</dimen>
+    <dimen name="mvp_multi_selection_list_swipe_refresh_top_to_search_panel">80dp</dimen>
+</resources>

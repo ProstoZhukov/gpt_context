@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--         Глобальные атрибуты для изображений логотипа.  -->
+    <!--         Используются в порядке приоритета:             -->
+    <!--         1 - logoViewBrandImage                         -->
+    <!--         2 - logoViewBrandLogo                          -->
+    <!--         3 - logoViewDefaultIcon                        -->
+
+    <!-- Атрибут стандартной иконки-птицы -->
+    <attr name="logoViewDefaultIcon" format="reference"/>
+
+    <!-- Атрибут брендовой иконки -->
+    <attr name="logoViewBrandLogo" format="reference"/>
+
+    <!-- Атрибут брендовой картинки логотипа (замена компонента на изображение целиком) -->
+    <attr name="logoViewBrandImage" format="reference"/>
+
+</resources>

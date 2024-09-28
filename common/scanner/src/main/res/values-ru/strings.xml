@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Document Scanner -->
+    <string name="scanner_take_snapshot_error">Произошла ошибка при создании снимка</string>
+    <string name="scanner_open_camera_error">Произошла ошибка при открытии камеры</string>
+    <string name="scanner_image_processing_error">Произошла ошибка при обработке изображения</string>
+    <string name="scanner_image_deleting_error">Произошла ошибка при удалении изображения</string>
+    <string name="scanner_image_loading_error">Произошла ошибка при загрузке изображения</string>
+    <string name="scanner_next_page">%d стр</string>
+    <string name="scanner_close_screen">Закрыть</string>
+    <string name="scanner_multi_snapshot_button_text">Основательно</string>
+    <string name="scanner_multi_snapshot_fast_button_text">Быстро</string>
+
+    <!-- Edit Image -->
+    <string name="scanner_edit_image_cancel">Отмена</string>
+    <string name="scanner_edit_image_done">Готово</string>
+
+    <!-- Saving scanned images -->
+    <string name="scanner_empty_scanned_image_list">Список отсканированных изображений пуст</string>
+    <string name="scanner_load_scanned_images_error">Не удалось загрузить список отсканированных изображений</string>
+    <string name="scanner_save_scanned_images_menu_title">Сохранить</string>
+    <string name="scanner_save_as_image">Сохранить как изображение</string>
+    <string name="scanner_save_to_pdf">Сохранить в PDF</string>
+    <string name="scanner_save_to_gallery">Сохранить в галерею</string>
+    <string name="scanner_input_new_pdf_file_name_dialog_title">Имя нового PDF файла</string>
+    <string name="scanner_saving_to_pdf_error">Не удалось сохранить в PDF</string>
+    <string name="scanner_saving_to_gallery_error">Не удалось сохранить в галерею</string>
+    <string name="scanner_saving_to_gallery_success">Сохранение выполнено успешно</string>
+    <string name="scanner_save_scanned_docs_offline_error">Сохранение отсканированных документов недоступно в offline режиме</string>
+    <string name="scanner_no_internet_connection_message">Отсутствует подключение к сети</string>
+
+    <!-- Flash Switch View -->
+    <string name="scanner_flash_state_auto">Авто</string>
+    <string name="scanner_flash_state_on">Вкл.</string>
+    <string name="scanner_flash_state_off">Выкл.</string>
+
+    <!-- Files selection pane options -->
+    <string name="scanner_files_selection_pane_option_scan_document">Отсканировать</string>
+    <string name="scanner_files_picker_tab_title">Скан</string>
+
+    <!-- Permissions dialog -->
+    <string name="scanner_permission_dialog_title">Доступ к камере запрещен</string>
+    <string name="scanner_permission_dialog_text">Включите доступ к камере в настройках</string>
+    <string name="scanner_permission_dialog_positive">Настройки</string>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="date_picker_description_label_color">#999999</color>
+    <color name="date_picker_item_counter_text_color">#638398</color>
+
+    <!-- Default Theme-->
+    <color name="date_picker_buttons_color">#999999</color>
+    <color name="date_picker_labels_color">#999999</color>
+    <color name="date_picker_divider_color">#DBDBDB</color>
+    <color name="date_picker_edit_text_border_color_valid">#EDE7DE</color>
+    <color name="date_picker_edit_text_border_color_invalid">#F4511E</color>
+    <color name="date_picker_item_title_background">#F2F2F2</color>
+    <color name="date_picker_items_text_color">#606060</color>
+    <color name="date_picker_item_selected_background_color">#E2ECF8</color>
+    <color name="date_picker_item_selected_marker_color">#FF6600</color>
+    <color name="date_picker_item_recent_period_text_color">#003A55</color>
+    <color name="date_picker_weekend_color">#B3EF463A</color>
+    <color name="date_picker_fixed_month_color">#069922</color>
+
+</resources>

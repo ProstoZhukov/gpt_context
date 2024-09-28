@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_tools_settings_log_crashes_title">日志记录和错误。</string>
+    <string name="application_tools_device_information">设备信息</string>
+    <string name="application_tools_build_config">构建配置</string>
+    <string name="application_tools_network_information">网络</string>
+    <string name="application_tools_screen_information">屏幕</string>
+    <string name="application_tools_crashes_list_title">错误</string>
+    <string name="application_tools_logs_list_title">日志</string>
+    <string name="application_tools_logs_crashes_clear_button_title">清除</string>
+    <string name="application_tools_logs_crashes_clear_dialog_title">选择您要清除的内容</string>
+    <string name="application_tools_clear_crashes">清除错误</string>
+    <string name="application_tools_clear_logs">清除日志</string>
+    <string name="application_tools_clear_all">全部清除</string>
+    <string name="application_tools_crashes_not_exist">没有错误</string>
+    <string name="application_tools_logs_not_exist">无日志</string>
+    <string name="application_tools_crash_info_title">错误描述</string>
+    <string name="application_tools_crash_info_about_app">应用信息</string>
+    <string name="application_tools_crash_info_about_phone">@string/application_tools_device_information</string>
+    <string name="application_tools_crash_info_android_api_version">安卓API</string>
+    <string name="application_tools_crash_info_brand">制造商</string>
+    <string name="application_tools_crash_info_phone_name">型号名称</string>
+    <string name="application_tools_crash_info_share">分享</string>
+    <string name="application_tools_crash_info_share_dialog_message">发送错误</string>
+    <string name="application_tools_crash_info_stack_trace">堆栈跟踪</string>
+    <string name="application_tools_crash_info_app_version">版本</string>
+    <string name="application_tools_crashes_direction_name">崩溃</string>
+    <string name="application_tools_font_check_main_text">这一天持续 11 小时 59 分钟。日落前时间 2 小时 10 分钟</string>
+    <string name="application_tools_font_check_sizeDisplay0">常规 30 (sizeDisplay0)</string>
+    <string name="application_tools_font_check_sizeDisplay1">常规24（尺寸显示1）</string>
+    <string name="application_tools_font_check_sizeTitle1">常规 20（尺寸标题1）</string>
+    <string name="application_tools_font_check_sizeTitle2">常规 18（尺寸标题2）</string>
+    <string name="application_tools_font_check_sizeTitle3">常规 17（尺码标题3）</string>
+    <string name="application_tools_font_check_sizeBody1">常规 16（尺寸Body1）</string>
+    <string name="application_tools_font_check_sizeBody2">常规 14（尺寸Body2）</string>
+    <string name="application_tools_font_check_sizeCaption1">常规 12（尺寸标题1）</string>
+    <string name="application_tools_debug_font_check_title">验证字体</string>
+</resources>

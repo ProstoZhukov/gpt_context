@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DemoContainerCustomTheme">
+        <item name="ContainerBackground">@color/palette_colorAttention</item>
+    </style>
+</resources>

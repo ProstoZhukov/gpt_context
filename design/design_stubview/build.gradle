@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableViewBindingCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.stubview"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+    }
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':list_utils')
+    implementation project(':text_span')
+    implementation project(':design_utils')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_sbis_text_view')
+
+    // AndroidX
+    implementation libs.android.appcompat
+    implementation libs.android.annotation
+
+    implementation 'com.airbnb.android:lottie:6.4.1'
+
+    testImplementation project(':testing')
+}

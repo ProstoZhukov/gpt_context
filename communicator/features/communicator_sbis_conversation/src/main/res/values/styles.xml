@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CommunicatorConversationDateHeaderDateViewTheme"
+           parent="ItemDateHeaderDateViewDefaultTheme">
+        <item name="android:textSize">@dimen/size_body2_scaleOff</item>
+    </style>
+
+    <style name="ConversationTopNavigationStyle">
+        <item name="SbisTopNavigation_smallTitleMaxLines">1</item>
+    </style>
+
+    <style name="ConversationToolbarMoreIconStyle" parent="MobileFontStyle">
+        <item name="android:textColor">?contrastIconColor</item>
+        <item name="android:textSize">?iconSize_2xl</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ConversationPreviewTransparentDialogTheme" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:windowBackground">?dimBackgroundColor</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowElevation">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/ConversationPreviewAnimation</item>
+    </style>
+
+    <style name="ConversationPreviewAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/conversation_preview_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/conversation_preview_dialog_exit</item>
+    </style>
+
+</resources>

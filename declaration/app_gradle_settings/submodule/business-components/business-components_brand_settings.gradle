@@ -1,0 +1,7 @@
+ext.business_components_dir = 'module/business-components'
+
+include ':business-decl'
+project(':business-decl').projectDir = new File(business_components_dir, 'business-decl')
+
+include ':business-receipt'
+project(':business-receipt').projectDir = new File(business_components_dir, 'business-receipt')

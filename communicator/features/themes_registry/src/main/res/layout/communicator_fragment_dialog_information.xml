@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- Toolbar -->
+    <ru.tensor.sbis.design.topNavigation.view.SbisTopNavigationView
+        android:id="@+id/communicator_dialog_information_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="0dp"
+        app:SbisTopNavigation_smallTitleMaxLines="1"
+        app:SbisTopNavigation_showBackButton="true"/>
+
+    <ru.tensor.sbis.design.view.input.text.TextInputView
+        android:id="@+id/communicator_dialog_information_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/communicator_dialog_information_toolbar"
+        android:layout_marginBottom="?offset_s"
+        android:paddingStart="?offset_m"
+        android:paddingEnd="?offset_m"
+        app:errorEnabled="false"
+        app:inputView_placeholder="@string/communicator_dialog_name"
+        app:inputView_placeholderTextColor="?placeholderColorInputText"
+        app:inputView_titleTextSize="?fontSize_3xs_scaleOn"
+        app:inputView_titleTextSizeAccent="?fontSize_3xs_scaleOn"/>
+
+    <View
+        android:id="@+id/communicator_dialog_information_divider"
+        android:layout_width="match_parent"
+        android:layout_height="?offset_s"
+        android:layout_below="@+id/communicator_dialog_information_text_input"
+        android:background="?unaccentedAdaptiveBackgroundColor"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/communicator_dialog_information_person_list_title"
+        style="@style/MediumStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/communicator_dialog_information_participants_height"
+        android:layout_below="@+id/communicator_dialog_information_divider"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="?offset_m"
+        android:layout_marginEnd="?offset_m"
+        android:background="?backgroundColor"
+        android:gravity="center_vertical"
+        android:text="@string/communicator_chat_participants"
+        android:textColor="?primaryTextColor"
+        android:textSize="?fontSize_xl_scaleOff"
+        tools:ignore="SpUsage"/>
+
+    <ru.tensor.sbis.design.list_utils.SbisListView
+        android:id="@+id/communicator_dialog_information_participant_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/communicator_dialog_information_person_list_title"
+        android:background="?backgroundColor"
+        app:layout_constraintTop_toBottomOf="@id/communicator_dialog_information_person_list_title"/>
+
+    <View
+        android:id="@+id/communicator_dialog_information_participant_list_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/communicator_dialog_information_border_shadow_height"
+        android:layout_below="@+id/communicator_dialog_information_person_list_title"
+        android:background="@drawable/communicator_bottom_border_shadow"/>
+
+</RelativeLayout>

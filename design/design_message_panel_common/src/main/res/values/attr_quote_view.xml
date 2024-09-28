@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MessagePanelQuoteView">
+        <!-- Стиль заголовка цитаты/редакции. -->
+        <attr name="MessagePanelQuoteView_titleStyle" format="reference"/>
+        <!-- Стиль подзаголовка цитаты/редакции. -->
+        <attr name="MessagePanelQuoteView_subtitleStyle" format="reference"/>
+        <!-- Стиль кнопки закрытия цитирования/редактирования. -->
+        <attr name="MessagePanelQuoteView_closeButtonStyle" format="reference"/>
+        <!-- Цвет вертикального разделителя цитирования/редактирования. -->
+        <attr name="MessagePanelQuoteView_dividerColor" format="color"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="?offset_2xl"
+        android:paddingRight="?offset_2xl"
+        android:paddingTop="?offset_s">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/base_components_text_input_layout"
+            style="@style/AppTheme.TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.TextInputLayout">
+
+            <ru.tensor.sbis.design.text_span.SbisEditText
+                android:id="@+id/base_components_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textAutoCorrect|textAutoComplete"
+                android:scrollHorizontally="true"
+                app:theme="@style/EditText"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/base_components_progress_bar_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?backgroundColor"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ru.tensor.sbis.design.progress.SbisLoadingIndicator
+                android:id="@+id/base_components_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:SbisLoadingIndicator_progressSize="m"/>
+
+            <TextView
+                android:id="@+id/base_components_waiting_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="?offset_l"
+                android:layout_marginStart="?offset_l"
+                android:layout_toEndOf="@id/base_components_progress_bar"
+                android:layout_toRightOf="@+id/base_components_progress_bar"
+                android:text="@string/design_please_wait"
+                android:textColor="?textColor"
+                android:textSize="?fontSize_m_scaleOn"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>

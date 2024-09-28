@@ -1,0 +1,40 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'rootproject-cfg-plugin'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableTaskCounterCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableDokkaCfg()
+    cfg.enableKaptSubprojectsCfg()
+    cfg.enableSabyLinkCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableTaskFilterCfg()
+    }
+}
+
+project.ext {
+    userAgent = "SbisBusinessAndroidMobile"
+
+    if (isHmsBuild()) {
+        applicationId += ".huawei"
+    }
+
+    enableBuildStatistic = true
+
+    //:link_opener
+    sabyLinks.setup { set ->
+        set.component = "ru.tensor.sbis.business.LaunchActivity"
+        set.enableOnlineSbis = true
+        set.enableLinkOpendocCard = true
+        set.enableLinkCertificateSubmission = true
+        set.enableLinkSettingCertificatePassword = true
+        set.paymentDocumentFeature = true
+        set.docViewFeature = true
+        set.eSignFeature = true
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

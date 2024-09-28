@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communication_decl_blocked_user_content_text">条目已隐藏</string>
+    <string name="communication_decl_conversation_information_filter_media">媒体</string>
+    <string name="communication_decl_conversation_information_filter_docs">文件</string>
+</resources>

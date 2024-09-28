@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- NotificationHeaderView -->
+    <style name="common_views_NotificationHeaderViewIconStyle" parent="MobileFontStyle">
+        <item name="android:layout_width">?iconSize_6xl</item>
+        <item name="android:layout_height">?iconSize_6xl</item>
+        <item name="android:layout_marginEnd">?offset_st</item>
+    </style>
+
+    <style name="common_views_NotificationHeaderViewIconStyle.TextIcon">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?labelContrastTextColor</item>
+        <item name="android:textSize">?iconSize_5xl</item>
+    </style>
+
+    <style name="common_views_NotificationHeaderViewIconStyle.ImageIcon">
+        <item name="placeholderImageScaleType">fitCenter</item>
+    </style>
+
+    <style name="common_views_NotificationCardHeaderViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?inlineHeight_4xs</item>
+        <item name="android:paddingTop">?offset_s</item>
+        <item name="android:paddingBottom">?offset_s</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Motivation -->
+    <style name="common_views_TopDividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_views_top_divider_height</item>
+    </style>
+
+    <style name="common_views_DateDividerViewStyle">
+        <item name="CommonViewsDateDividerView_textSize">?fontSize_xl_scaleOff</item>
+        <item name="CommonViewsDateDividerView_textColor">?contrastTextColor</item>
+        <item name="CommonViewsDateDividerView_background">?infoColor</item>
+    </style>
+
+</resources>

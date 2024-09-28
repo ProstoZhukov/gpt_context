@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_chats_tab_title">Συνομιλίες</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_message">Η λίστα συνομιλιών σας είναι κενή</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_details">Όταν ένας πελάτης υποβάλλει ένα ερώτημα, θα λάβετε μια ειδοποίηση</string>
+    <string name="communicator_crm_chat_list_swipe_delete">Διαγράφω</string>
+    <string name="communicator_crm_chat_list_swipe_take">Παίρνω</string>
+    <string name="communicator_crm_chat_list_swipe_complete">Πλήρης</string>
+    <string name="communicator_crm_chat_list_screen_addon_menu_item">Συνομιλίες</string>
+    <string name="communicator_crm_chat_list_channel_group_title_support">Υποστήριξη Saby</string>
+    <string name="communicator_crm_chat_list_channel_group_title_site">Δικτυακός τόπος</string>
+    <string name="communicator_crm_chat_list_channel_group_title_sabyget">SabyGet</string>
+    <string name="communicator_crm_chat_list_channel_group_title_saby">Saby</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_app">Εφαρμογή</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_vk">Vkontakte</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_telegram">Τηλεγράφημα</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_email">ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_viber">Viber</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_ok">Odnoklassniki</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_whatsapp">WhatsApp</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_facebook">Facebook</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_yandex">Yandex</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_instagram">Ίνσταγκραμ</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_avito">Avito</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_unknown">Αγνωστος</string>
+    <string name="communicator_crm_chat_list_bad_filter_list_stub_details">Δοκιμάστε να αλλάξετε τις επιλογές αναζήτησης ή φιλτραρίσματος</string>
+    <string name="communicator_crm_chat_list_chat_no_access">Δεν έχετε άδεια πρόσβασης σε αυτήν τη συνομιλία</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Специфичные для кнопки с залипанием атрибуты-->
+    <!-- Поддерживаются все атрибуты из SbisLinkButton-->
+    <declare-styleable name="SbisToggleLinkButton">
+        <!-- Шрифтовая иконка в выбранном состоянии -->
+        <attr name="SbisLinkButton_iconSelected" format="string|reference"/>
+        <!-- Текст в кнопке в выбранном состоянии -->
+        <attr name="SbisLinkButton_titleSelected" format="string|reference"/>
+        <!-- Цвет текста кнопки для выбранного состояния-->
+        <attr name="SbisLinkButton_titleColorSelected" format="reference|color"/>
+    </declare-styleable>
+</resources>

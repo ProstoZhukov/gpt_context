@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="complain_service_report_message_text">¿Enviar informe al moderador para su revisi&#xf3;n?</string>
+    <string name="complain_service_report_hint_text">Introducir comentario</string>
+    <string name="complain_service_dialog_positive">OK</string>
+    <string name="complain_service_dialog_negative">CANCELAR</string>
+</resources>

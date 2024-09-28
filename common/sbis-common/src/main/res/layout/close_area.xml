@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/selection_window_header_height"
+    android:layout_gravity="end"
+    android:paddingStart="12dp"
+    android:paddingEnd="22dp"
+    tools:background="@color/palette_alpha_color_black6">
+
+    <TextView
+        android:id="@+id/close_icon"
+        style="@style/MobileFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/design_mobile_icon_close_for_nav_panel"
+        android:textColor="@color/text_color_black_4"
+        android:textSize="@dimen/size_body1_scaleOff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage"/>
+
+    <TextView
+        android:id="@+id/close_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:includeFontPadding="false"
+        android:text="@string/common_bottom_sheet_dialog_close"
+        android:textColor="@color/text_color_black_4"
+        android:textSize="@dimen/size_body1_scaleOff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/close_icon"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+ext.design_dir = "module/design"
+
+apply from: "$designDir/settings_retail.gradle"
+
+include ':design'
+project(':design').projectDir = new File(designDir, "design")
+
+include ':design_switch'
+project(':design_switch').projectDir = new File(designDir, "design_switch")
+
+include ':pin_code'
+project(':pin_code').projectDir = new File(designDir, "pin_code")
+
+include ':time_picker'
+project(':time_picker').projectDir = new File(designDir, "time_picker")
+
+include ':navigation'
+project(':navigation').projectDir = new File(designDir, "navigation")
+
+include ':design_collection_view'
+project(':design_collection_view').projectDir = new File(designDir, "design_collection_view")
+
+include ':design_swipeback'
+project(':design_swipeback').projectDir = new File(designDir, "design_swipeback")
+
+include ':design_profile'
+project(':design_profile').projectDir = new File(designDir, "design_profile")
+
+include ':view_factory'
+project(':view_factory').projectDir = new File(designDir, "view_factory")
+
+include ':scroll_to_top'
+project(':scroll_to_top').projectDir = new File(designDir, "scroll_to_top")
+
+include ':design_breadcrumbs'
+project(':design_breadcrumbs').projectDir = new File(designDir, "design_breadcrumbs")
+
+include ':design_dialogs'
+project(':design_dialogs').projectDir = new File(designDir, "design_dialogs")
+
+include ':design_segmented_control'
+project(':design_segmented_control').projectDir = new File(designDir, "design_segmented_control")
+
+include ':design_confirmation_dialog'
+project(':design_confirmation_dialog').projectDir = new File(designDir, "design_confirmation_dialog")
+
+include ':container'
+project(':container').projectDir = new File(designDir, "container")
+
+include ':design_stubview'
+project(':design_stubview').projectDir = new File(designDir, "design_stubview")
+
+include ':list_utils'
+project(':list_utils').projectDir = new File(designDir, "list_utils")
+
+include ':input_view'
+project(':input_view').projectDir = new File(designDir, "input_view")
+
+include ':toolbar'
+project(':toolbar').projectDir = new File(designDir, "toolbar")
+
+include ':design_moneyview'
+project(':design_moneyview').projectDir = new File(designDir, "design_moneyview")
+
+include ':text_span'
+project(':text_span').projectDir = new File(designDir, "text_span")
+
+include ':design_utils'
+project(':design_utils').projectDir = new File(designDir, "design_utils")
+
+include ':design_view_ext'
+project(':design_view_ext').projectDir = new File(designDir, "design_view_ext")
+
+include ':design_counters'
+project(':design_counters').projectDir = new File(designDir, "design_counters")
+
+include ':design_review'
+project(':design_review').projectDir = new File(designDir, "design_review")
+
+include ':design_custom_view_tools'
+project(':design_custom_view_tools').projectDir = new File(designDir, "design_custom_view_tools")
+
+include ':design_retail'
+project(':design_retail').projectDir = new File(designDir, "design_retail")
+
+include ':design_retail_views'
+project(':design_retail_views').projectDir = new File(designDir, "design_retail_views")
+
+include ':design_retail_models'
+project(':design_retail_models').projectDir = new File(designDir, "design_retail_models")
+
+include ':container'
+project(':container').projectDir = new File(designDir, "container")
+
+include ':design_whats_new'
+project(':design_whats_new').projectDir = new File(designDir, "design_whats_new")
+
+include ':design_buttons'
+project(':design_buttons').projectDir = new File(designDir, "design_buttons")
+
+include ':context_menu'
+project(':context_menu').projectDir = new File(designDir, "context_menu")
+
+include ':design_notification'
+project(':design_notification').projectDir = new File(designDir, "design_notification")
+
+include ':design_checkbox'
+project(':design_checkbox').projectDir = new File(designDir, "design_checkbox")
+
+include ':design_sbis_text_view'
+project(':design_sbis_text_view').projectDir = new File(designDir, "design_sbis_text_view")
+
+include ':hallscheme'
+project(':hallscheme').projectDir = new File(designDir, "hallscheme")
+
+include ':calendar_date_view'
+project(':calendar_date_view').projectDir = new File(designDir, "calendar_date_view")
+
+include ':design_chips'
+project(':design_chips').projectDir = new File(designDir, "design_chips")
+
+include ':design_tabs'
+project(':design_tabs').projectDir = new File(designDir, "design_tabs")
+
+include ':design_top_navigation'
+project(':design_top_navigation').projectDir = new File(designDir, "design_top_navigation")
+
+include(':pie_chart_view')
+project(':pie_chart_view').projectDir = new File(designDir, "pie_chart_view")
+
+include ':design_folders'
+project(':design_folders').projectDir = new File(designDir, "design_folders")
+
+include ':design_menu'
+project(':design_menu').projectDir = new File(designDir, "design_menu")
+
+include ':design_splash'
+project(':design_splash').projectDir = new File(designDir, "design_splash")
+
+
+

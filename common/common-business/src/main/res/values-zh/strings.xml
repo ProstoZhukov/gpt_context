@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_error_network_header">加载数据失败</string>
+    <string name="business_error_network_info">检查您的网络连接</string>
+    <string name="business_error_receiving_data">接收数据时出错</string>
+    <string name="business_error_no_data_for_period">所选期间没有数据</string>
+    <string name="business_error_no_data">没有数据</string>
+    <string name="business_error_no_data_found">本次搜索没有找到任何内容</string>
+    <string name="business_error_unknown">未知错误</string>
+    <string name="business_error_permission">您没有足够的权限执行此操作</string>
+    <string name="business_error_check_permission">访问权限验证错误</string>
+    <string name="business_try_change_period">尝试更改期间</string>
+    <string name="business_try_change_period_active">更改期间</string>
+    <string name="business_no_permission_comment">产品和服务的收入将显示在此处</string>
+    <string name="business_try_check_connection_and_update_again">检查您的互联网连接并重试</string>
+    <string name="business_error_no_data_for_filter">尝试更改过滤参数</string>
+    <string name="business_error_no_cashbox">没有连接钱箱</string>
+    <string name="business_error_popup_network_header">无网络连接</string>
+</resources>

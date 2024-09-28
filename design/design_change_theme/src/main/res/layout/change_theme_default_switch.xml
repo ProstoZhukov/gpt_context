@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selectable_item_bg_white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_l"
+        android:layout_marginTop="?offset_m"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/change_theme_default_switch_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/change_theme_default_switch_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?offset_xs"
+            android:text="@string/change_theme_default_switch_title"
+            android:textColor="?textColor"
+            android:textSize="?fontSize_xl_scaleOn"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/change_theme_default_switch_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?offset_s"
+            android:layout_marginBottom="?offset_xs"
+            android:text="@string/change_theme_default_switch_subtitle"
+            android:textColor="?unaccentedTextColor"
+            android:textSize="?fontSize_xs_scaleOn"/>
+
+    </LinearLayout>
+
+    <ru.tensor.sbis.sbis_switch.SbisSwitchView
+        android:id="@+id/change_theme_default_switch_view"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="?inlineHeight_3xs"
+        android:layout_marginStart="?offset_xl"
+        android:layout_marginTop="?offset_m"
+        android:layout_marginEnd="?offset_l"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

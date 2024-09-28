@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scanner_close_screen">Yaqin</string>
+    <string name="scanner_edit_image_cancel">Bekor qilish</string>
+    <string name="scanner_edit_image_done">Tayyor</string>
+    <string name="scanner_empty_scanned_image_list">Skanerlangan tasvirlar roʻyxati boʻsh</string>
+    <string name="scanner_files_selection_pane_option_scan_document">Skanerlash</string>
+    <string name="scanner_files_picker_tab_title">Skanerlash</string>
+    <string name="scanner_flash_state_auto">Avtomatik</string>
+    <string name="scanner_flash_state_off">Oʻchirilgan</string>
+    <string name="scanner_flash_state_on">Yoniq</string>
+    <string name="scanner_image_deleting_error">Rasmni oʻchirishda xatolik yuz berdi</string>
+    <string name="scanner_image_loading_error">Rasmni yuklashda xatolik yuz berdi</string>
+    <string name="scanner_image_processing_error">Rasmga ishlov berishda xatolik yuz berdi</string>
+    <string name="scanner_input_new_pdf_file_name_dialog_title">Yangi PDF fayl nomi</string>
+    <string name="scanner_load_scanned_images_error">Skanerlangan tasvirlar roʻyxatini yuklab boʻlmadi</string>
+    <string name="scanner_multi_snapshot_button_text">Yaxshilab</string>
+    <string name="scanner_multi_snapshot_fast_button_text">Tez</string>
+    <string name="scanner_next_page">%d стр</string>
+    <string name="scanner_no_internet_connection_message">Tarmoqqa ulanish yo‘q</string>
+    <string name="scanner_open_camera_error">Kamerani ochishda xatolik yuz berdi</string>
+    <string name="scanner_permission_dialog_positive">Sozlamalar</string>
+    <string name="scanner_permission_dialog_text">Sozlamalarda kameraga kirishni yoqing</string>
+    <string name="scanner_permission_dialog_title">Kameraga kirish taqiqlandi</string>
+    <string name="scanner_save_as_image">Rasm sifatida saqlash</string>
+    <string name="scanner_save_scanned_docs_offline_error">Skanerlangan hujjatlarni oflayn rejimda saqlash imkonsiz</string>
+    <string name="scanner_save_scanned_images_menu_title">Saqlash</string>
+    <string name="scanner_save_to_gallery">Galereyaga saqlash</string>
+    <string name="scanner_save_to_pdf">PDF formatida saqlash</string>
+    <string name="scanner_saving_to_gallery_error">Galereyaga saqlanmadi</string>
+    <string name="scanner_saving_to_gallery_success">Saqlash muvaffaqiyatli yakunlandi</string>
+    <string name="scanner_saving_to_pdf_error">PDF formatida saqlanmadi</string>
+    <string name="scanner_take_snapshot_error">Suratni yaratishda xatolik yuz berdi</string>
+</resources>

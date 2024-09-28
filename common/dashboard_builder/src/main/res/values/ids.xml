@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dashboard_screen_view_binding" type="id"/>
+    <item name="dashboard_screen_root_layout" type="id"/>
+    <item name="dashboard_screen_top_navigation" type="id"/>
+    <item name="dashboard_screen_widget_player" type="id"/>
+    <item name="dashboard_screen_overlay_navigation" type="id"/>
+</resources>

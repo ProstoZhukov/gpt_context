@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="communicator_no_dialogs_to_display">The message list is empty</string>
+    <!-- Универсальное сообщение для всех фильтров. Возможна доработка для конеретных случаев (как для чатов) -->
+    <string name="communicator_no_filter_dialogs_to_display">Message list is empty. Change the filtering options.</string>
+
+    <!-- Contacts spinner items -->
+    <string name="communicator_spinner_item_sort_by_fio">By full name</string>
+    <string name="communicator_spinner_header_sort_by_fio">By full name</string>
+    <string name="communicator_spinner_item_sort_by_date">By message date</string>
+    <string name="communicator_spinner_header_sort_by_date">By date</string>
+
+    <string name="communicator_conversation_relevant_message_i_am_author">Me:</string>
+    <string name="communicator_dialog_attachment_more_files">More %1$d</string>
+    <string name="communicator_dialog_send_comment_message">Your message will be sent to comments of the news.</string>
+    <string name="communicator_dialog_send_comment_ok_label">OK</string>
+    <string name="communicator_dialog_send_comment_cancel_label">Cancel</string>
+    <string name="communicator_theme_remove_channel_alert_title">Remove channel from list?</string>
+    <string name="communicator_conversation_attachments_placeholder">[Attachments]</string>
+
+    <!-- Треды -->
+    <string name="communicator_thread_exit_confirm_dialog_message">The dialogue will not be saved</string>
+    <string name="communicator_thread_exit_confirm_dialog_comment">To create a dialogue, send the first message</string>
+
+    <!-- Нижнии панели в темах-->
+    <string name="communicator_check_panel_read">Read</string>
+    <string name="communicator_check_panel_unread">Unread</string>
+    <string name="communicator_check_panel_move">To folder</string>
+    <string name="communicator_check_panel_delete">Delete</string>
+    <string name="communicator_check_panel_black_list">Black list</string>
+    <string name="communicator_check_panel_recover">Recover</string>
+
+    <!-- Меню в предпросмотре(которых нет в нижней панели)-->
+    <string name="communicator_preview_menu_go">Enter</string>
+    <string name="communicator_preview_menu_mark">Mark</string>
+    <string name="communicator_preview_menu_report">Report</string>
+
+    <!-- Список сообщений диалога -->
+    <string name="communicator_item_dialog_list_segment_divider_label">Dialogs</string>
+    <string name="communicator_dialog_conversation_members">Dialog participants</string>
+    <string name="communicator_I">Me</string>
+    <string name="communicator_for">for</string>
+    <string name="communicator_not_delivered">Undelivered</string>
+    <string name="communicator_dialog_invite">Invitation to dialog.</string>
+    <string name="communicator_circle_invite">Invitation to circle of contacts</string>
+    <string name="communicator_delete_dialog_forever">Permanently delete all messages in this dialog?</string>
+    <string name="communicator_delete_notifications_forever">Delete all notifications in this dialog?</string>
+    <string name="communicator_delete_selected_notifications_forever">There are notifications among the selected dialogs</string>
+    <string name="communicator_delete_dialog_positive">Delete</string>
+    <string name="communicator_delete_dialog_negative">Cancel</string>
+    <string name="communicator_alert_dialog_title_dialog_removed">Dialog was deleted</string>
+    <string name="communicator_alert_info_continue">Continue</string>
+    <string name="communicator_sync_error_message">No network connection</string>
+    <string name="communicator_share_to_not_available_channel">Sending to this channel is not available</string>
+
+    <!-- Диалоги -->
+    <string name="communicator_stub_view_dialogs_no_messages_title">Start a dialog first</string>
+    <string name="communicator_stub_view_dialogs_nothing_in_folder">No messages in this folder.</string>
+    <string name="communicator_stub_view_dialogs_no_messages">Dialogs missing</string>
+    <string name="communicator_stub_view_channels_no_messages">Channels missing</string>
+    <string name="communicator_dialog_restore">Restore</string>
+    <string name="communicator_dialog_group">Group</string>
+    <string name="communicator_restore_dialog">Restore</string>
+
+    <!-- Каналы -->
+    <string name="communicator_channel_conversation_participants">Channel participants</string>
+    <string name="communicator_chat_all_notifications_label_toast">Notify of all messages.</string>
+    <string name="communicator_chat_personal_notifications_label_toast">Notify only about private messages.</string>
+    <string name="communicator_channel_leave_confirmation_title">Leave channel?</string>
+    <string name="communicator_channel_leave_confirmation_subtitle">You will no longer be able to send or receive messages in this channel.</string>
+    <string name="communicator_channel_leave_confirmation_yes_and_remove">Leave and remove channel</string>
+    <string name="communicator_chat_leave_confirmation_yes">OK</string>
+    <string name="communicator_chat_leave_confirmation_no">Cancel</string>
+    <string name="communicator_chat_restore">Restore</string>
+    <string name="communicator_chat_members_more">, more\u0020</string>
+    <string name="communicator_chat_notification_change_failure">Failed to change notification type</string>
+    <string name="communicator_chat_remove_administrator_failure">Failed to delete admin.</string>
+    <string name="communicator_chat_remove_avatar_failure">Failed to delete avatar.</string>
+    <string name="communicator_channel_remove_participant_failure">Failed to delete channel member.</string>
+    <string name="communicator_chat_add_single_administrator_failure">Failed to add the administrator.</string>
+    <string name="communicator_channel_leave_failure">Failed to leave channel.</string>
+    <string name="communicator_channel_remove_failure">Failed to remove channel.</string>
+    <string name="communicator_channel_close_failure">Failed to close the channel.</string>
+    <string name="communicator_chat_remove_last_admin">To remove the administrator role, you need to appoint the role to another member.</string>
+    <string name="communicator_chat_swipe_hidden">Hidden</string>
+    <string name="communicator_chat_swipe_delete">Deleted</string>
+    <string name="communicator_no_channels_to_display">You have no channels</string>
+    <string name="communicator_no_hidden_channels_to_display">You have no hidden channels</string>
+    <string name="communicator_no_unread_channels_to_display">You have no unread channels</string>
+    <string name="communicator_no_messages_to_display">You have no messages</string>
+    <string name="communicator_no_messages_is_channel">No messages in this channel</string>
+    <string name="communicator_channel_settings_toolbar">Channel settings</string>
+    <string name="communicator_messages_loading_error">An error occurred while loading</string>
+    <string name="communicator_go_to_profile_action">Enter</string>
+    <string name="communicator_channel_is_hidden">Channel is hidden</string>
+    <string name="communicator_channel_settings_label">Settings</string>
+    <string name="communicator_channel_remove_label" tools:ignore="UnusedResources">Delete</string>
+    <string name="communicator_channel_replace_label" tools:ignore="UnusedResources">Replace</string>
+    <string name="communicator_convert_into_channel" tools:ignore="UnusedResources">Convert into channel</string>
+    <string name="communicator_delete_conversation" tools:ignore="UnusedResources">Delete dialog</string>
+    <string name="communicator_go_to_project" tools:ignore="UnusedResources">Open project group</string>
+    <string name="communicator_go_to_group" tools:ignore="UnusedResources">Open group</string>
+    <string name="communicator_add_recipient" tools:ignore="UnusedResources">Select recipients</string>
+    <string name="communicator_channel_restore_label" tools:ignore="UnusedResources">Restore channel</string>
+    <string name="communicator_chat_all_notifications_label" tools:ignore="UnusedResources">Notify of all \nmessages.</string>
+    <string name="communicator_chat_personal_notifications_label" tools:ignore="UnusedResources">Notify only about \nprivate messages.</string>
+    <string name="communicator_channel_leave_label" tools:ignore="UnusedResources">Leave channel</string>
+    <string name="communicator_add_chat_member" tools:ignore="UnusedResources">Add participant</string>
+    <string name="communicator_only_employees_confirmation_text">Members that are not employees of the company will be excluded from the channel.\nContinue?</string>
+    <string name="communicator_pin_chat">Pin</string>
+    <string name="communicator_unpin_chat">Unpin</string>
+    <string name="communicator_restore_chat">Restore</string>
+    <string name="communicator_create_task">Create task</string>
+
+    <!-- Selected Message Alert Dialog -->
+    <string name="communicator_selected_message_action_force_resend">Send again</string>
+    <string name="communicator_selected_message_action_edit">Edit</string>
+    <string name="communicator_selected_message_action_pin">Pin</string>
+    <string name="communicator_selected_message_action_unpin">Unpin</string>
+    <string name="communicator_selected_message_action_info">Information</string>
+    <string name="communicator_selected_message_action_delete">Delete</string>
+    <string name="communicator_selected_message_action_copy">Copy</string>
+    <string name="communicator_selected_message_action_thread">Create thread</string>
+    <string name="communicator_selected_message_action_quote">Reply</string>
+    <string name="communicator_selected_message_action_report">Report</string>
+
+    <!-- Selected Phone Number Alert Dialog -->
+    <string name="communicator_selected_phone_number_action_copy">Copy</string>
+    <string name="communicator_selected_phone_number_action_call">Call</string>
+    <string name="communicator_selected_phone_number_action_add">Add</string>
+
+    <string name="communicator_choose_action_contextual_menu_title">Select action.</string>
+
+    <!-- Delete Message Alert Dialog -->
+    <string name="communicator_delete_message_forever">Delete permanently this message?</string>
+    <string name="communicator_delete_dialog_forever_message">Restoration will not be possible</string>
+    <string name="communicator_delete_notice_forever_message">Restoring notifications will not be possible</string>
+    <string name="communicator_delete_dialog_forever_for_all">Permanently delete all messages in this dialog for all users?</string>
+    <string name="communicator_delete_message_or_dialog_negative">CANCEL</string>
+    <string name="communicator_delete_message_or_dialog">DELETE</string>
+    <string name="communicator_delete_message_or_dialog_for_me">FOR ME</string>
+    <string name="communicator_delete_message_or_dialog_for_all">FOR ALL</string>
+
+    <!-- Информация о диалоге -->
+    <string name="communicator_dialog_name">Topic of the dialogue</string>
+    <string name="communicator_dialog_information">Dialog information</string>
+    <string name="communicator_channel_information">Channel information</string>
+
+    <!-- Диалоговое окно изменения темы диалога -->
+    <string name="communicator_enter_dialog_name">Enter the dialog subject here</string>
+    <string name="communicator_enter_dialog_name_negative_btn">Cancel</string>
+    <string name="communicator_enter_dialog_name_positive_btn">Save</string>
+
+    <!-- Новый канал -->
+    <string name="communicator_warning_enter_channel_name">Enter channel name</string>
+    <string name="communicator_channel_name">Channel name</string>
+    <string name="communicator_close">Close</string>
+    <string name="communicator_conversation_activity_title">Message</string>
+
+    <!-- Добавление нового контакта -->
+    <string name="communicator_contacts_adding_surname">Full name</string>
+    <string name="communicator_contacts_adding_number">Phone</string>
+    <string name="communicator_contacts_adding_address">Email</string>
+    <string name="communicator_contacts_adding_help">The full name field is required; you need to enter there at least one of the three parameters in full form (surname, name, or patronymic). To narrow the search results, you can also specify a phone number or an email address.</string>
+    <string name="communicator_contacts_adding_toast_message">The full name field is required!</string>
+    <string name="communicator_contacts_adding_find">Find contact</string>
+    <string name="communicator_contacts_adding_search_result">Search results</string>
+    <string name="communicator_add_new_contacts_disabled_message">For Demo mode, the functions of adding and searching for a new contact are not available</string>
+    <string name="communicator_no_contacts_to_display">Contacts list is empty</string>
+
+    <!-- Алерт если не поддтверждён номер  -->
+    <string name="communicator_alert_confirmation_number_yes">Confirm</string>
+    <string name="communicator_alert_confirmation_number_no">Cancel</string>
+
+    <!-- Push notifications -->
+    <string name="communicator_push_dialog_grup_title">Messages on Dialog</string>
+    <string name="communicator_push_dialog_unread_summary_one_message">+ 1 more unread</string>
+    <string name="communicator_push_dialog_unread_summary_messages">+ %1$d unread</string>
+    <string name="communicator_push_notification_action_reply">Reply</string>
+    <string name="communicator_quick_reply_comment_hint">Enter reply on the news comment</string>
+
+    <!-- Toast -->
+    <string name="communicator_import_contacts_with_clicked_red_button">The confirmed phone number was not found for the current person</string>
+
+    <string name="communicator_link_copied">Link copied to clipboard</string>
+    <string name="communicator_message_copied">Message was copied to clipboard</string>
+    <string name="communicator_phone_number_copied">Number copied to clipboard</string>
+
+    <string name="communicator_toast_no_permission_to_import_contacts">No access to device contacts. They can be issued through the system settings of the application.</string>
+    <string name="communicator_contacts_import_failed_error">Failed to import contacts</string>
+    <string name="communicator_contacts_not_found">Contacts not found</string>
+    <string name="communicator_contacts_import_success_text">Contacts imported successfully</string>
+    <string name="communicator_contacts_adding_import_contact">Import from device</string>
+    <string name="communicator_adding_internal_employee_label">Internal contacts</string>
+    <string name="communicator_activity_add_new_contacts_label">Find new contact</string>
+    <string name="communicator_attachments_loading_to_sign">Wait for attachments to load</string>
+    <string name="communicator_attachment_is_already_signed_by_you">The file is already signed by you</string>
+    <string name="communicator_complain_success_text">Your complaint has been accepted</string>
+
+    <!-- Folders -->
+    <string name="communicator_folder_conversation_title">All messages</string>
+    <string name="communicator_folder_edit_dialog_title">Folder</string>
+    <string name="communicator_dialog_already_in_folder">Dialog is already in this folder</string>
+    <string name="communicator_folder_files_title">All files</string>
+
+    <string name="communicator_contact_list_update_error">Error loading the list</string>
+
+    <string name="communicator_contact_delete_error">Error while deleting contact</string>
+    <string name="communicator_contact_action_network_error">No network connection</string>
+    <string name="communicator_contact_delete_success_message">The contact was successfully removed from the current folder.</string>
+    <string name="communicator_contact_add_error">Error while adding contact</string>
+    
+    <string name="communicator_conversation_not_available">Dialog not available as you are not among the participants.</string>
+    <string name="communicator_failed_to_send_quick_message">Failed to send message</string>
+    <string name="communicator_failed_to_load_folders_message">Failed to load folders to move contacts</string>
+    <string name="communicator_folders_panel_empty_view_root_title">No folders</string>
+
+    <!-- Conversation -->
+    <string name="communicator_conversation_data_loading_error">Error loading correspondence data.</string>
+    <string name="communicator_signing_network_error">Failed to complete the action, check your internet connection.</string>
+    <string name="communicator_certificate_data_loading_error">Error loading of certificate data</string>
+    <string name="communicator_certificate_data_loading">Loading data of certificate</string>
+    <string name="communicator_opening_document_access_error">The document might have been deleted or you have no rights in the current account.</string>
+    <string name="communicator_link_open_error">File or directory not found</string>
+    <string name="communicator_sign_attachment_failed">Error while signing document.</string>
+    <string name="communicator_quoted_message_was_deleted">The quoted message was deleted</string>
+    <string name="communicator_no_verified_phone_number">To send messages, confirm your phone number in your profile settings.</string>
+    <string name="communicator_stub_view_dialog_conversation_no_messages">There are no messages in this conversation yet</string>
+
+    <!-- Message Information -->
+    <string name="communicator_message_information_title">Information</string>
+    <string name="communicator_message_information_read_label">Read</string>
+    <string name="communicator_message_information_delivered_label">Delivered</string>
+    <string name="communicator_message_information_filter_all">All</string>
+    <string name="communicator_message_information_filter_read">Read</string>
+    <string name="communicator_message_information_filter_unread">Unread</string>
+    <string name="communicator_message_information_empty_filter_read">Nobody read the message</string>
+    <string name="communicator_message_information_empty_filter_unread">Everyone read the message</string>
+
+    <!-- Contacts -->
+    <string name="communicator_add_contact_success">Contact added</string>
+    <string name="communicator_add_contact_failure">Contact has already been added</string>
+    <string name="communicator_item_contact_list_segment_divider_label">Found more in employees:</string>
+    <string name="communicator_account_manager_clicked_toast">Contact is your manager</string>
+    <string name="communicator_no_contacts_folder_to_display">No contacts in this folder.</string>
+
+    <!-- DialogsParticipants -->
+    <string name="communicator_no_dialog_participants_to_display">The list of participants is empty</string>
+    <string name="communicator_dialog_recipients_list_title">Recipient list</string>
+
+    <!-- Contacts tabs-->
+    <string name="communicator_contacts_title_contacts">Contacts</string>
+    <string name="communicator_contacts_tab_contacts">My contacts</string>
+    <string name="communicator_contacts_tab_employees">Employees</string>
+
+    <!-- Conversation tabs-->
+    <string name="communicator_conversation_tab_dialogs">Dialogs</string>
+    <string name="communicator_conversation_tab_channels">Channels</string>
+    <string name="communicator_conversation_tab_messages">Messages</string>
+
+    <!-- Channel settings -->
+    <string name="communicator_chat_participants">Participants</string>
+    <string name="communicator_chat_admins">Administrators</string>
+    <string name="communicator_channel_close_label">Close channel</string>
+    <string name="communicator_new_channel_title">New channel</string>
+    <string name="communicator_chat_toolbar_subtitle">Created</string>
+    <string name="communicator_chat_notifications">Notifications</string>
+    <string name="communicator_chat_notification_all_messages">All messages</string>
+    <string name="communicator_chat_notification_personal">Personal</string>
+    <string name="communicator_chat_notification_administrator">By administrator</string>
+    <string name="communicator_chat_show_all">Show all</string>
+    <string name="communicator_chat_collapse_list">Minimize</string>
+    <string name="communicator_chat_type_title">Channel type</string>
+    <string name="communicator_chat_type_open">Opened</string>
+    <string name="communicator_chat_type_open_subtitle">The channel is available to other users via the link</string>
+    <string name="communicator_chat_type_private">Private</string>
+    <string name="communicator_chat_type_private_subtitle">The channel can only be accessed by invitation</string>
+    <string name="communicator_chat_participant_type_all">For all</string>
+    <string name="communicator_chat_participant_type_only_employees">For employees only</string>
+
+    <!-- Circle info -->
+    <string name="communicator_circle_info_incoming_invitation">New invitation</string>
+    <string name="communicator_circle_info_outgoing_invitation">Invitation sent</string>
+    <string name="communicator_circle_info_in_circle">Contact in my circle</string>
+    <string name="communicator_circle_info_invitation_rejected">Invitation has been declined</string>
+    <string name="communicator_circle_info_invitation_rejected_after_accept">Invitation has been declined</string>
+
+    <!-- Push Notification -->
+    <string name="communicator_push_notification_action_delete">Delete</string>
+    <string name="communicator_push_notification_action_read">Read</string>
+
+    <!-- Поиск в реестре диалогов -->
+    <string name="communicator_search_by_text_hint">Search by text</string>
+
+    <!-- Выбор диалога для шаринга -->
+    <string name="communicator_dialog_selection_recent_contacts">Recent contacts</string>
+    <string name="communicator_dialog_selection_recent_dialogs">Recent dialogs</string>
+
+    <!-- Разрешение на импорт контактов -->
+    <string name="communicator_contacts_import_title">Permission to read the address book</string>
+    <string name="communicator_contacts_import_message">AppName will continuously upload your contacts to its heavily encrypted cloud servers to let you connect with your friends across all your devices.</string>
+    <string name="communicator_contacts_import_next">Next</string>
+    <string name="communicator_contacts_import_decline">Decline</string>
+
+    <!-- Share -->
+    <string name="communicator_share_target_title_dialogs">Dialogs</string>
+    <string name="communicator_share_target_title_contacts">Contacts</string>
+    <string name="communicator_share_target_title_channels">Channels</string>
+
+    <!-- Опции доступа к файлу -->
+    <string name="communicator_grant_access_view">View</string>
+    <string name="communicator_grant_access_change">Change</string>
+    <string name="communicator_grant_access_change_plus">Change+</string>
+
+    <!-- Аудио и видео сообщения -->
+    <string name="communicator_audio_message_text_in_dialog_registry">Audio message</string>
+    <string name="communicator_video_message_text_in_dialog_registry">Video message</string>
+    <string name="communicator_edit_message_with_attachments_subtitle">[Attachments]</string>
+    <string name="communicator_conversation_audio_message_playback_error">Playback error. Check your network connection</string>
+
+    <!-- Пункт меню для удаления аватара в настройках канала -->
+    <string name="communicator_option_delete_avatar">Delete avatar</string>
+
+    <!-- Окно с тектом ошибки доставки сообщения при клике на иконку ошибки доставки сообщения-->
+    <string name="communicator_confirmation_dialog_error_stub_text">Something went wrong</string>
+    <string name="communicator_confirmation_dialog_attachment_error_stub_text">Error sending file</string>
+    <string name="communicator_confirmation_dialog_error_send_ok">OK</string>
+    <string name="communicator_confirmation_dialog_attachment_error_yes">Yes</string>
+    <string name="communicator_confirmation_dialog_attachment_error_no">No</string>
+    <string name="communicator_confirmation_dialog_error_send_repeat">Repeat</string>
+    <string name="communicator_confirmation_dialog_repeat_title">Repeat?</string>
+
+    <!-- Экран информации о диалоге/канале -->
+    <string name="communicator_conversation_information_participants">Participants</string>
+    <string name="communicator_conversation_information_files">Files</string>
+    <string name="communicator_conversation_information_tasks">Tasks</string>
+    <string name="communicator_conversation_information_links">Links</string>
+
+    <!-- Экран списка ссылок из информации о диалоге/канале -->
+    <string name="communicator_conversation_links_list_empty_stub_title">Links list is empty</string>
+    <string name="communicator_conversation_links_list_empty_stub_subtitle">To add link\nclick the plus sign</string>
+    <string name="communicator_conversation_links_list_menu_option_open">Open</string>
+    <string name="communicator_conversation_links_list_menu_option_pin">Pin</string>
+    <string name="communicator_conversation_links_list_menu_option_unpin">Unpin</string>
+    <string name="communicator_conversation_links_list_menu_option_copy">Copy</string>
+    <string name="communicator_conversation_links_list_menu_option_go_to_message">Go to messager</string>
+    <string name="communicator_conversation_link_addition_title">Add link</string>
+    <string name="communicator_conversation_link_addition_input_placeholder">Address</string>
+
+    <!-- Экран списка файлов из информации о диалоге/канале -->
+    <string name="communicator_files_selected_file_action_move_to_folder">Move to folder</string>
+    <string name="communicator_files_selected_file_action_go_to_message">Go to messager</string>
+    <string name="communicator_files_fab_menu_option_create_folder">Create folder</string>
+    <string name="communicator_files_fab_menu_option_add_file">Add file</string>
+</resources>

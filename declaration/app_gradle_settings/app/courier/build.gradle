@@ -1,0 +1,72 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'rootproject-cfg-plugin'
+apply plugin: 'social-integration'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableTaskCounterCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableKaptSubprojectsCfg()
+    cfg.enableSabyLinkCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableTaskFilterCfg()
+    }
+}
+
+project.ext {
+    productName = "Courier"
+    String appPackageName = "ru.tensor.sbis.courier"
+    applicationId = "${appPackageName}.saby"
+
+    sabyLinks.setup { set ->
+        set.component = "${appPackageName}.presentation.launch.LaunchActivity"
+        set.enableOnlineSbis = false
+        set.enableLinkWebinar = true
+        set.enableLinkMeeting = true
+        set.enableLinkVideoconf = true
+        set.enableLinkChat = true
+        set.enableLinkDialog = true
+        set.enableLinkOpendocCard = true
+        set.enableLinkDiskDoc = true
+        set.enableLinkPerson = true
+        set.enableLinkEvent = true
+        set.enableLinkCall = true
+        set.enableLinkNews = true
+        set.newsFeature = true
+        set.enableLinkForum = true
+        set.enableLinkContractorsCard = true
+        set.enableLinkCertificateSubmission = true
+        set.enableLinkSettingCertificatePassword = true
+        set.attachmentsFeature = true
+
+        set.personCardFeature = true
+        set.eSignFeature = true
+        set.violationFeature = true
+        set.videoCallFeature = true
+        set.calendarFeature = true
+        set.contractorsCardFeature = true
+        set.docViewFeature = true
+        set.meetingFeature = true
+        set.taskFeature = true
+        set.deviceLinkerFeature = true
+        set.myDocumentsFeature = true
+        set.themesRegistryFeature = true
+        set.iAmHereFeature = true
+    }
+
+    accountType = AndroidAccountManager.SABY_BUNDLE_ACCOUNT.type
+
+    debuggableInRelease = project.properties.get("DEBUGABLE_IN_RELEASE") as Boolean ?: false
+}
+
+socialServices {
+    yandex = yandexKeyUniversal("344d4c1c0f024154a3d41d6c2bfba666")
+    VK = vkKey("51983837", "4AXzBWPiuDOBClLrXKCl")
+    appleEnabled = true
+    esiaEnabled = true
+    googleEnabled = true
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

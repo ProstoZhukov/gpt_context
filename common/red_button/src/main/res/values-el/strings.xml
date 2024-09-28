@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="red_button_title_open">Ανοίξτε δεδομένα</string>
+    <string name="red_button_title_close_progress">Τα δεδομένα κλείνουν</string>
+    <string name="red_button_title_open_progress">Τα δεδομένα ανοίγουν</string>
+    <string name="red_button_uu_alert_message">Όλα τα έγγραφα, οι λειτουργίες και οι αναφορές σχετικά με τον οργανισμό \"Λογιστική διαχείρισης\" θα είναι προσωρινά κρυφά. Σύμφωνα με τα έγγραφα της τακτικής δικαστικής. άτομα δεν θα γίνουν αλλαγές.</string>
+    <string name="red_button_cloud_alert_message">Όλες οι πληροφορίες θα είναι προσωρινά κρυφές. Θα μείνουν μόνο οι \"Εργαζόμενοι\" με ονόματα και αριθμούς τηλεφώνου.</string>
+    <string name="red_button_cloud_alert_title">Απόκρυψη δεδομένων;</string>
+    <string name="red_button_title_sms">Εισαγάγετε τον κωδικό SMS</string>
+    <string name="red_button_title_pin_on">Σκεφτείτε το PIN σας</string>
+    <string name="red_button_title_pin_off">Εισαγάγετε τον κωδικό PIN</string>
+    <string name="red_button_message_pin_close">Θυμηθείτε τον κωδικό pin, για επακόλουθη αποκατάσταση της πρόσβασης στο cloud</string>
+    <string name="red_button_message_pin_open">Εάν ξεχάσατε τον κωδικό PIN, επικοινωνήστε με τον διευθυντή σας</string>
+    <string name="red_button_repeat_through">Επαναλάβετε έως και %s</string>
+    <string name="red_button_code_again">Πάρτε ξανά τον κωδικό</string>
+    <string name="red_button_network_error">Δεν υπάρχει σύνδεση δικτύου</string>
+    <string name="red_button_stub_title_close">Τα δεδομένα θα αποκρύπτονται μετά την επαναφόρτωση της εφαρμογής</string>
+    <string name="red_button_stub_title_open">Η πρόσβαση στα δεδομένα θα επιστραφεί μετά την επανεκκίνηση της εφαρμογής</string>
+    <string name="red_button_stub_toolbar_text">Ρυθμίσεις</string>
+    <string name="red_button_password_sent_on_phone_template">Ο κωδικός στάλθηκε στον αριθμό %1$s</string>
+    <string name="red_button_stub_subtitle">Ξεφορτώστε την εφαρμογή και ανοίξτε την ξανά.</string>
+    <string name="red_button_title_pin_confirmation">Επιβεβαιώστε τον κωδικό PIN</string>
+    <string name="red_button_message_pin_confirmation">Εισαγάγετε ξανά τον κωδικό PIN</string>
+    <string name="red_button_title_close">Κλείσιμο δεδομένων;</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/selection_window_item_height"
+    android:background="@drawable/selectable_item_bg_white">
+
+    <TextView
+        android:id="@+id/department_title"
+        style="@style/SelectionWindowItem_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="30dp"
+        android:ellipsize="none"
+        android:fadingEdgeLength="30dp"
+        android:gravity="center_vertical"
+        android:requiresFadingEdge="horizontal"
+        tools:text="Подразделение Подразделение Подразделение"/>
+
+    <TextView
+        android:id="@+id/more_departments_arrow"
+        style="@style/MobileFontStyle"
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:paddingEnd="12dp"
+        android:text="@string/design_mobile_icon_arrow_right"
+        android:textColor="@color/text_color_accent_4"
+        android:textSize="@dimen/size_title1_scaleOff"
+        android:visibility="invisible"
+        tools:ignore="RtlSymmetry,SpUsage"
+        tools:visibility="visible"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="complain_service_report_message_text">Garamak üçin moderatorlara &#x15f;ika&#xfd;at iberi&#x148;mi?</string>
+    <string name="complain_service_report_hint_text">Teswir &#xfd;azy&#x148;</string>
+    <string name="complain_service_dialog_positive">OK</string>
+    <string name="complain_service_dialog_negative">ANCATMAK</string>
+</resources>

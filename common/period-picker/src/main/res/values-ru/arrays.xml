@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quarters">
+        <item>I квартал</item>
+        <item>II квартал</item>
+        <item>III квартал</item>
+        <item>IV квартал</item>
+    </string-array>
+
+    <string-array name="half_year">
+        <item>I полугодие</item>
+        <item>II полугодие</item>
+    </string-array>
+
+    <string-array name="day_of_week_labels">
+        <item>ПН</item>
+        <item>ВТ</item>
+        <item>СР</item>
+        <item>ЧТ</item>
+        <item>ПТ</item>
+        <item>СБ</item>
+        <item>ВС</item>
+    </string-array>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseCommunicatorAppTheme" parent="AppTheme">
+        <item name="swipeableLayoutTheme">@style/ColorfulSwipeableLayoutTheme</item>
+        <item name="motivationTheme">@style/MotivationCommonLight</item>
+        <item name="loginSettingsTheme">@style/LoginSettingsThemeWhite</item>
+    </style>
+
+    <!--region Временный набор стилей для коммуникатора исключающий наследование от глобальной темы, нужен пока все приложения не перейдут на общую темизацию-->
+    <style name="GlobalBaseCommunicatorAppTheme">
+        <item name="swipeableLayoutTheme">@style/ColorfulSwipeableLayoutTheme</item>
+        <item name="motivationTheme">@style/MotivationCommonLight</item>
+        <item name="Toolbar_container_style">@style/SbisCommunicatorToolbar</item>
+        <item name="loginSettingsTheme">@style/LoginSettingsThemeWhite</item>
+        <item name="android:actionBarSize">?inlineHeight_l</item>
+        <item name="actionBarSize">?inlineHeight_l</item>
+    </style>
+    <!--endregion -->
+
+    <style name="SbisCommunicatorToolbar" parent="SbisToolbar">
+        <item name="android:background">?unaccentedAdaptiveBackgroundColor</item>
+    </style>
+
+    <style name="CommunicatorDefaultLightTheme" parent="FeatureDefaultLightTheme">
+        <item name="globalToolbarStyle">@style/CommunicatorDefaultLightTheme</item>
+        <item name="headerBackgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="lightStatusBar">true</item>
+        <item name="android:actionBarSize">?inlineHeight_l</item>
+        <item name="actionBarSize">?inlineHeight_l</item>
+    </style>
+
+    <style name="CommunicatorLargeDarkTheme" parent="FeatureLargeDarkTheme">
+        <item name="globalToolbarStyle">@style/CommunicatorLargeDarkTheme</item>
+        <item name="headerBackgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="android:actionBarSize">?inlineHeight_l</item>
+        <item name="actionBarSize">?inlineHeight_l</item>
+    </style>
+
+    <style name="CommunicatorDefaultLightNavigationLight" parent="FeatureDefaultLightNavigationLight">
+        <item name="globalToolbarStyle">@style/CommunicatorDefaultLightNavigationLight</item>
+        <item name="headerBackgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="android:actionBarSize">?inlineHeight_l</item>
+        <item name="actionBarSize">?inlineHeight_l</item>
+    </style>
+
+    <style name="CommunicatorDefaultСolaTheme" parent="FeatureDefaultСolaTheme">
+        <item name="globalToolbarStyle">@style/CommunicatorDefaultСolaTheme</item>
+        <item name="headerBackgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="android:actionBarSize">?inlineHeight_l</item>
+        <item name="actionBarSize">?inlineHeight_l</item>
+    </style>
+
+    <style name="CommunicatorDefaultPinkTheme" parent="FeatureDefaultPinkTheme">
+        <item name="globalToolbarStyle">@style/CommunicatorDefaultPinkTheme</item>
+        <item name="headerBackgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="android:actionBarSize">?inlineHeight_l</item>
+        <item name="actionBarSize">?inlineHeight_l</item>
+    </style>
+
+    <style name="CommunicatorDefaultUbrrTheme" parent="FeatureDefaultUbrrTheme">
+        <item name="globalToolbarStyle">@style/CommunicatorDefaultUbrrTheme</item>
+        <item name="headerBackgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="android:actionBarSize">?inlineHeight_l</item>
+        <item name="actionBarSize">?inlineHeight_l</item>
+    </style>
+
+</resources>

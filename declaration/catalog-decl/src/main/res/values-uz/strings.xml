@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="catalog_decl_nomenclature_type_alcohol">Spirtli ichimliklar</string>
+    <string name="catalog_decl_nomenclature_type_antiseptic">Antiseptiklar</string>
+    <string name="catalog_decl_nomenclature_type_baa">Biologik faol qo\'shimchalar</string>
+    <string name="catalog_decl_nomenclature_type_beer">Pivo</string>
+    <string name="catalog_decl_nomenclature_type_beer_non_alco">Alkogolsiz pivo</string>
+    <string name="catalog_decl_nomenclature_type_bicycle">Velosipedlar</string>
+    <string name="catalog_decl_nomenclature_type_camera">Fotosurat uskunalari</string>
+    <string name="catalog_decl_nomenclature_type_furs">Mo\'ynali kiyimlar</string>
+    <string name="catalog_decl_nomenclature_type_jewellery">Zargarlik buyumlari</string>
+    <string name="catalog_decl_nomenclature_type_labeled">Belgilangan tovarlar</string>
+    <string name="catalog_decl_nomenclature_type_medical_devices">Tibbiy asboblar</string>
+    <string name="catalog_decl_nomenclature_type_medications">Dori-darmonlar</string>
+    <string name="catalog_decl_nomenclature_type_merchandise">Mahsulot</string>
+    <string name="catalog_decl_nomenclature_type_milk">Sut mahsulotlari</string>
+    <string name="catalog_decl_nomenclature_type_nicotine">Nikotin</string>
+    <string name="catalog_decl_nomenclature_type_perfume">Parfyumeriya</string>
+    <string name="catalog_decl_nomenclature_type_shoes">Oyoq kiyimlari</string>
+    <string name="catalog_decl_nomenclature_type_textile">Yengil sanoat</string>
+    <string name="catalog_decl_nomenclature_type_tires">Shinalar</string>
+    <string name="catalog_decl_nomenclature_type_tobacco">Tamaki</string>
+    <string name="catalog_decl_nomenclature_type_undefined">Noma\'lum kategoriya</string>
+    <string name="catalog_decl_nomenclature_type_water">Suv</string>
+    <string name="catalog_decl_nomenclature_type_wheelchair">Kreslolar</string>
+    <string name="catalog_decl_nomenclature_type_soft_drinks">Alkogolsiz ichimliklar</string>
+    <string name="catalog_decl_nomenclature_type_seafood">Dengiz mahsulotlari</string>
+    <string name="catalog_decl_nomenclature_type_tobacco_nicotine_raw">Tamaki xom ashyosi</string>
+    <string name="catalog_decl_nomenclature_type_conserve">Konservalar</string>
+    <string name="catalog_decl_nomenclature_type_petfood">Hayvonlar uchun oziq-ovqat</string>
+    <string name="catalog_decl_nomenclature_type_vegetable_oil">O\'simlik yog\'i</string>
+    <string name="catalog_decl_nomenclature_type_vet_pharme">Veterinariya preparatlari</string>
+    <string name="catalog_decl_nomenclature_type_optical_fiber">Optik tolalar</string>
+    <string name="catalog_decl_nomenclature_type_cable_production">catalog_decl_nomenclature_type_cable_production</string>
+    <string name="catalog_decl_nomenclature_type_heating_devices">catalog_decl_nomenclature_type_heating_devices</string>
+    <string name="catalog_decl_nomenclature_type_radio_electronics">catalog_decl_nomenclature_type_radio_electronics</string>
+</resources>

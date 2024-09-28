@@ -1,0 +1,38 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+def appName = "crm"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "barcodereader",
+        "call-history",
+        "contractors",
+        "communicator",
+        "crypto",
+        "declaration",
+        "design",
+        "common",
+        "disk",
+        "edo",
+        "employee",
+        "inoutdocuments",
+        "news",
+        "notification",
+        "profile",
+        "tasks",
+        "videocall",
+        "crm",
+        "deals",
+        "catalog",
+        "warehouse-docs"
+)
+
+include ':app', ':controller'
+
+setupControllerModule(settings, appName)

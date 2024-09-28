@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="crud3_list_container_id" type="id"/>
+    <item name="crud3_list_id" type="id"/>
+    <item name="crud3_progress_bar_id" type="id"/>
+    <item name="crud3_stub_id" type="id"/>
+    <item name="crud3_refresh_layout_id" type="id"/>
+</resources>

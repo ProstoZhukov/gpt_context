@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Document preview -->
+    <string name="common_views_document_preview_load_error">Error loading data</string>
+    <string name="common_views_document_preview_offline_error_pre_clickable_text">Check your internet connection and try</string>
+    <string name="common_views_document_preview_offline_error_clickable_text">update page</string>
+
+</resources>

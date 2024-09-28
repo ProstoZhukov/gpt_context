@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.persons"
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':design_profile')
+    implementation project(':verification-decl')
+    implementation project(':communication-decl')
+    api project(':person-decl')
+
+    implementation "org.apache.commons:commons-lang3:$rootProject.ext.apacheCommonsVersion"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+}

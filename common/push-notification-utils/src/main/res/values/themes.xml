@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="PushNotificationTheme">
+    <item name="pushNotificationColor">@color/color_primary</item>
+    <item name="pushNotificationSmallIcon">@drawable/push_notification_utils_push_icon_bird</item>
+</style>
+
+</resources>

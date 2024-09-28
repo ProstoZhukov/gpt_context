@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.modalwindows"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':base_components')
+    implementation project(':design_dialogs')
+    implementation project(':text_span')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':input_view')
+    implementation project(':design_notification')
+    api project(':mvp')
+
+    implementation "androidx.recyclerview:recyclerview:$rootProject.ext.recyclerViewVersion"
+    implementation "androidx.annotation:annotation:$rootProject.ext.annotationVersion"
+
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+}

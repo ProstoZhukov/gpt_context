@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:viewBindingIgnore="true">
+
+    <!-- Область для отображения превью выбранных элементов -->
+    <include
+        layout="@layout/selection_content_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ViewStub
+        android:id="@+id/fixedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"/>
+
+    <ru.tensor.sbis.design.breadcrumbs.CurrentFolderView
+        android:id="@+id/goBackPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!-- Область списка элементов -->
+    <include
+        layout="@layout/selection_list_content"
+        android:id="@+id/listContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

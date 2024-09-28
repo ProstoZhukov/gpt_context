@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SbisTranslucentRoundButtonDefaultLightTheme" parent="SbisTranslucentRoundButtonBaseTheme">
+        <item name="SbisRoundButton_iconColor">?iconColor</item>
+        <item name="SbisRoundButton_iconTransparentColor">?iconColor</item>
+        <item name="SbisRoundButton_iconDisabledColor">?readonlyIconColor</item>
+
+        <item name="SbisRoundButton_backgroundColorPressed">?translucentActiveBackgroundColorLightButton</item>
+        <item name="SbisRoundButton_backgroundColor">?translucentBackgroundColorLightButton</item>
+
+        <item name="SbisRoundButton_progressColor">?progressColor</item>
+    </style>
+
+    <style name="SbisTranslucentRoundButtonDefaultDarkTheme" parent="SbisTranslucentRoundButtonBaseTheme">
+        <item name="SbisRoundButton_iconColor">?contrastIconColor</item>
+        <item name="SbisRoundButton_iconTransparentColor">?contrastIconColor</item>
+        <item name="SbisRoundButton_iconDisabledColor">?readonlyIconColor</item>
+
+        <item name="SbisRoundButton_backgroundColorPressed">?translucentActiveBackgroundColorButton</item>
+        <item name="SbisRoundButton_backgroundColor">?translucentBackgroundColorButton</item>
+
+        <item name="SbisRoundButton_progressColor">?contrastProgressColor</item>
+    </style>
+
+    <style name="SbisTranslucentRoundButtonBaseTheme" parent="SbisRoundButtonBaseTheme">
+        <item name="SbisRoundButton_backgroundColorDisabled">@color/palette_color_transparent</item>
+        <item name="SbisRoundButton_borderWidthDisabled">?borderThickness_m</item>
+        <item name="SbisRoundButton_type">contrast</item>
+        <item name="backgroundColor">@color/palette_color_transparent</item>
+    </style>
+</resources>

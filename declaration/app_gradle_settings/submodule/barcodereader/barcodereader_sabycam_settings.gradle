@@ -1,0 +1,7 @@
+def barcodeReaderDir = 'module/barcodereader'
+
+include ':barcodereader'
+project(':barcodereader').projectDir = new File(settingsDir, "$barcodeReaderDir/barcodereader")
+
+include ':common-barcodereader'
+project(':common-barcodereader').projectDir = new File(settingsDir, "$barcodeReaderDir/common-barcodereader")

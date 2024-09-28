@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_message">Пока у вас нет контактов</string>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_details">Импортируйте список контактов с устройства, чтобы найти своих друзей.</string>
+</resources>

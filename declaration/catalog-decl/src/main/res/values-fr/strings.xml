@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="catalog_decl_nomenclature_type_alcohol">Alcool</string>
+    <string name="catalog_decl_nomenclature_type_antiseptic">Antiseptique</string>
+    <string name="catalog_decl_nomenclature_type_baa">Complément alimentaire</string>
+    <string name="catalog_decl_nomenclature_type_beer">Bière</string>
+    <string name="catalog_decl_nomenclature_type_beer_non_alco">Bière sans alcool</string>
+    <string name="catalog_decl_nomenclature_type_bicycle">Vélo</string>
+    <string name="catalog_decl_nomenclature_type_camera">Appareil photo</string>
+    <string name="catalog_decl_nomenclature_type_furs">Fourrures</string>
+    <string name="catalog_decl_nomenclature_type_jewellery">Bijoux</string>
+    <string name="catalog_decl_nomenclature_type_labeled">Produit marqué</string>
+    <string name="catalog_decl_nomenclature_type_medical_devices">Équipement médical</string>
+    <string name="catalog_decl_nomenclature_type_medications">Médicament</string>
+    <string name="catalog_decl_nomenclature_type_merchandise">Produit</string>
+    <string name="catalog_decl_nomenclature_type_milk">Les produits laitiers</string>
+    <string name="catalog_decl_nomenclature_type_nicotine">Nicotine</string>
+    <string name="catalog_decl_nomenclature_type_perfume">Parfum</string>
+    <string name="catalog_decl_nomenclature_type_shoes">Chaussures</string>
+    <string name="catalog_decl_nomenclature_type_textile">Textile</string>
+    <string name="catalog_decl_nomenclature_type_tires">Pneus</string>
+    <string name="catalog_decl_nomenclature_type_tobacco">Le tabac</string>
+    <string name="catalog_decl_nomenclature_type_undefined">Indéfini</string>
+    <string name="catalog_decl_nomenclature_type_water">L\'eau</string>
+    <string name="catalog_decl_nomenclature_type_wheelchair">Fauteuil roulant</string>
+    <string name="catalog_decl_nomenclature_type_soft_drinks">Boissons non alcoolisées</string>
+    <string name="catalog_decl_nomenclature_type_seafood">Fruit de mer</string>
+    <string name="catalog_decl_nomenclature_type_tobacco_nicotine_raw">Produits du tabac</string>
+    <string name="catalog_decl_nomenclature_type_conserve">Nourriture en boîte</string>
+    <string name="catalog_decl_nomenclature_type_petfood">L\'alimentation animale</string>
+    <string name="catalog_decl_nomenclature_type_vegetable_oil">Huile végétale</string>
+    <string name="catalog_decl_nomenclature_type_vet_pharme">Médicaments vétérinaires</string>
+    <string name="catalog_decl_nomenclature_type_optical_fiber">Fibre optique</string>
+    <string name="catalog_decl_nomenclature_type_cable_production">Production de câbles</string>
+    <string name="catalog_decl_nomenclature_type_heating_devices">Appareils de chauffage</string>
+    <string name="catalog_decl_nomenclature_type_radio_electronics">Électronique radio</string>
+</resources>

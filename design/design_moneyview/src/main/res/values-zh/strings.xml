@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_moneyview_suffix_thousand">总谐波失真</string>
+    <string name="design_moneyview_suffix_million">米恩</string>
+    <string name="design_moneyview_suffix_billion">十亿</string>
+    <string name="design_moneyview_suffix_trillion">t</string>
+    <string name="design_moneyview_suffix_quadrillion">问</string>
+    <string name="design_moneyview_suffix_k">k</string>
+</resources>

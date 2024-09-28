@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Размеры встраиваемого экрана item_tablet_right_container-->
+    <dimen name="business_item_tablet_right_container_width">@dimen/wrap_content</dimen>
+    <!-- Нивелирование отступа слева ?attr/offset_m = 12dp у строки поиска для нового дизайна -->
+    <dimen name="business_search_panel_margin_negative_offset_m">-12dp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+def scriptDir = file(".")
+
+include ':communicator_support_channel_list'
+project(':communicator_support_channel_list').projectDir = new File(scriptDir, "features/communicator_support_channel_list")
+
+include ':communicator_support_consultation_list'
+project(':communicator_support_consultation_list').projectDir = new File(scriptDir, "features/communicator_support_consultation_list")
+
+include ':communicator_crm_conversation'
+project(':communicator_crm_conversation').projectDir = new File(scriptDir, "features/communicator_crm_conversation")

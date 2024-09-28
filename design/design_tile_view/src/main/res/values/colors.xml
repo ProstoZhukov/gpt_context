@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Временный цвет для заглушки. Будет удалён после приведения компонента к спецификации,
+    ожидаемые сроки готовности которой неизвестны
+     -->
+    <color name="design_tile_view_image_placeholder_color">#80000000</color>
+    <!-- Чёрный с прозрачностью 35% -->
+    <color name="design_tile_view_image_tint_fill_color">#59000000</color>
+</resources>

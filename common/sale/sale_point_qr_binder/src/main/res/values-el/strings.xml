@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="spqrb_bind_completed">Ο κωδικός QR δεσμεύτηκε με επιτυχία στο σημείο πώλησης</string>
+    <string name="spqrb_error_broken_push_format">Κατεστραμμένη μορφή για τον τύπο push %d</string>
+    <string name="spqrb_action_scan_again">Σαρώστε και πάλι</string>
+    <string name="spqrb_error_internal_bind_failure">Η σύνδεση του κωδικού QR απέτυχε. Εσωτερικό σφάλμα.</string>
+</resources>

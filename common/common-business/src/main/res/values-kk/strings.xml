@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_error_check_permission">Рұқсат тексеру қатесі</string>
+    <string name="business_error_network_header">Деректерді жүктеу сәтсіз аяқталды</string>
+    <string name="business_error_network_info">Желі қосылымын тексеріңіз</string>
+    <string name="business_error_no_cashbox">Қосылған кассалар\nжоқ</string>
+    <string name="business_error_no_data">Мәлімет жоқ</string>
+    <string name="business_error_no_data_for_filter">Сүзгі опцияларын\nөзгертіп көріңіз</string>
+    <string name="business_error_no_data_for_period">Таңдалған кезең үшін деректер жоқ</string>
+    <string name="business_error_no_data_found">Бұл сұрау үшін ештеңе табылмады</string>
+    <string name="business_error_permission">Сіздің бұл әрекетті орындауға құқығыңыз жеткіліксіз</string>
+    <string name="business_error_receiving_data">Деректерді алу қатесі</string>
+    <string name="business_error_unknown">Белгісіз қате</string>
+    <string name="business_no_permission_comment">Мұнда тауарлар мен қызметтер бойынша кіріс көрсетіледі</string>
+    <string name="business_try_change_period">Мерзімді өзгертіп көріңіз</string>
+    <string name="business_try_change_period_active">өзгерту кезеңі</string>
+    <string name="business_try_check_connection_and_update_again">Интернет байланысын тексеріп, әрекетті қайталаңыз</string>
+    <string name="business_error_popup_network_header">Желі қосылымы жоқ</string>
+</resources>

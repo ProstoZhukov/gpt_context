@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+     Начиная с 30 Api, система ограничивает видимость установленных пакетов
+     на устройстве. В связи с этим необходимо явно указывать те Intent-ы,
+     которые могут потребоваться приложению в процессе работы.
+
+     https://developer.android.com/training/package-visibility?hl=ru
+    -->
+    <queries>
+        <intent>
+            <!-- UserStory: пользователь открывает GooglePlay для скачивания приложения. -->
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+
+        <!-- Для видимости и открытия маркетов для обновления приложения -->
+        <package android:name="ru.tensor.sbis.appmarket"/>
+        <package android:name="ru.tensor.sbis.appmarket.debug"/>
+        <package android:name="com.xiaomi.mipicks"/>
+        <package android:name="com.google.vending"/>
+        <package android:name="com.sec.android.app.samsungapps"/>
+        <package android:name="com.huawei.appmarket"/>
+        <package android:name="ru.vk.store"/>
+        <package android:name="com.nashstore"/>
+        <package android:name="woyou.market"/>
+        <package android:name="org.ru.armax_tps570"/>
+        <package android:name="com.whty.smartpos.appstore"/>
+        <package android:name="com.newland.opennl.appstore"/>
+    </queries>
+
+    <!-- ACCESS_NETWORK_STATE, INTERNET, WAKE_LOCK - для отправки событий FirebaseAnalytics -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".ui.mandatory.RequiredUpdateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="${applicationId}.FORCED_UPDATE_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+    </application>
+</manifest>

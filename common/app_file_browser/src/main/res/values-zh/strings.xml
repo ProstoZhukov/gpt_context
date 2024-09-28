@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_file_browser_stub_folder_is_empty">文件夹为空</string>
+    <string name="app_file_browser_show_size">显示尺寸</string>
+    <string name="app_file_browser_delete">删除</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Для атрибутов игнорируем 'resource_prefix_', т.к. при обращении к ним получаем
+        дублирование и как итог - трудноразличимое имя.
+
+        Пример для 'frescoViewMaskShape': FrescoViewShapedDraweeView_frescoViewMaskShape
+     -->
+    <declare-styleable name="FrescoViewShapedDraweeView">
+        <attr name="maskShape" format="reference" tools:ignore="ResourceName"/>
+        <attr name="shapeBackgroundColor" format="color" tools:ignore="ResourceName"/>
+    </declare-styleable>
+
+</resources>

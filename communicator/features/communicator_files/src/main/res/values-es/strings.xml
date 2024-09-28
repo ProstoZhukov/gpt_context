@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_files_move_success_message">Archivo movido a la carpeta</string>
+    <string name="conversation_files_item_header_from_message">Adjunto a la publicaci&#xf3;n</string>
+    <string name="conversation_files_item_header_pinned">Fijado</string>
+    <string name="conversation_files_item_header_from_theme">Adjunto a la conversaci&#xf3;n</string>
+    <string name="conversation_files_no_data_message">Los archivos enviados con mensajes se mostrar&#xe1;n aqu&#xed;.</string>
+</resources>

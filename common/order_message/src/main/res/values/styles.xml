@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SabyClientsDesignReceiptKopeckPurchase" parent="RegularStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/size_body2_scaleOn</item>
+        <item name="android:textColor">?attr/receiptSecondaryTextColor</item>
+    </style>
+</resources>

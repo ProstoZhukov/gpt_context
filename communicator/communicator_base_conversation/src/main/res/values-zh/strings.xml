@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_one_typing">在打字</string>
+    <string name="communicator_few_typing">正在打字</string>
+</resources>

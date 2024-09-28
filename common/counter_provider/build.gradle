@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.counter_provider"
+
+    resourcePrefix 'counter_provider_'
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions.unitTests {
+        all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+                exceptionFormat 'full'
+            }
+        }
+    }
+}
+
+dependencies {
+    api project(':toolbox-decl')
+    api project(':controller')
+
+    api "androidx.annotation:annotation:$rootProject.ext.annotationVersion"
+    api "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+
+    testImplementation project(':testing')
+}

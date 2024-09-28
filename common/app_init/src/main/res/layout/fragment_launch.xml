@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--TODO https://online.sbis.ru/opendoc.html?guid=b1ada85b-1612-4526-9620-960b94d8c673&client=3 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_init_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ru.tensor.sbis.design_splash.SplashLoadingIndicator
+        android:id="@+id/app_init_splash_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

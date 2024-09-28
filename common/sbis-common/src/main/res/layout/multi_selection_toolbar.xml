@@ -1,0 +1,67 @@
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multi_selection_toolbar"
+    style="@style/SbisToolbar"
+    android:paddingStart="0dp"
+    android:paddingEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:titleTextAppearance="@style/ToolbarTitleText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/multi_selection_toolbar_margin_right"
+        android:layout_marginLeft="@dimen/multi_selection_toolbar_margin_left"
+        android:layout_marginRight="@dimen/multi_selection_toolbar_margin_right"
+        android:layout_marginStart="@dimen/multi_selection_toolbar_margin_left">
+
+        <TextView
+            android:id="@+id/multi_selection_close"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/multi_selection_toolbar_button_padding"
+            android:paddingLeft="@dimen/multi_selection_toolbar_button_padding"
+            android:paddingRight="@dimen/multi_selection_toolbar_button_padding"
+            android:paddingStart="@dimen/multi_selection_toolbar_button_padding"
+            android:text="@string/design_mobile_icon_arrow_back_android"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/size_title1_scaleOff"
+            android:visibility="visible"
+            tools:ignore="SpUsage" />
+
+        <ru.tensor.sbis.design.view.input.searchinput.SearchInput
+            android:id="@+id/search_filter_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/input_view_search_panel_toolbar_margin_vertical"
+            android:layout_marginLeft="@dimen/input_view_search_panel_toolbar_margin_vertical"
+            android:layout_marginRight="@dimen/input_view_search_panel_toolbar_margin_vertical"
+            android:layout_marginStart="@dimen/input_view_search_panel_toolbar_margin_vertical"
+            android:layout_toEndOf="@+id/multi_selection_close"
+            android:layout_toLeftOf="@+id/multi_selection_done"
+            android:layout_toRightOf="@+id/multi_selection_close"
+            android:layout_toStartOf="@+id/multi_selection_done"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:searchInput_color="additional"
+            app:hasFilter="false"/>
+
+        <ru.tensor.sbis.design.buttons.SbisRoundButton
+            android:id="@+id/multi_selection_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:SbisRoundButton_icon="@string/design_mobile_icon_check"
+            app:SbisRoundButton_size="s"
+            app:SbisRoundButton_style="success"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/multi_selection_toolbar_button_padding" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

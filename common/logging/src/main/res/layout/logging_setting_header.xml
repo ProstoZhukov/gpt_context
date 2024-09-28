@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/logging_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?inlineHeight_s"
+        android:background="?backgroundColor"
+        android:paddingStart="?offset_xs"
+        android:paddingEnd="?offset_xs"
+        tools:theme="@style/AppGlobalTheme">
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/logging_icon"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="?offset_xs"
+            android:paddingEnd="?offset_xs"
+            android:rotation="180"
+            android:text="@string/design_mobile_icon_one_more_arrow"
+            android:textColor="?primaryIconColor"
+            android:textSize="@dimen/size_title1_scaleOff"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage"
+            tools:visibility="visible"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/logging_title"
+            style="@style/SelectionWindowHeader_Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="?offset_xs"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/logging_settings_header_title_root"
+            android:textColor="?primaryTextColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/size_title1_scaleOff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logging_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginStart="?offset_xs"
+            tools:ignore="SpUsage"
+            tools:text="@string/logging_settings_header_title_root"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

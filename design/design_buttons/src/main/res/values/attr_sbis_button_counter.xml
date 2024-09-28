@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region Стилевые атрибуты счётчиков компонента SbisButton -->
+    <!-- Атрибут для определения темы акцентного счётчика в кнопке. Тема по умолчанию -->
+    <attr name="primarySbisButtonCounterTheme" format="reference"/>
+    <!-- Атрибут для определения темы второстепенного счётчика кнопки -->
+    <attr name="secondarySbisButtonCounterTheme" format="reference"/>
+    <!--endregion-->
+
+    <!-- Цвет фона счётчика в кнопке -->
+    <attr name="SbisButton_counterBackground" format="reference|color"/>
+    <!-- Цвет текста счётчика в кнопке -->
+    <attr name="SbisButton_counterTextColor" format="reference|color"/>
+
+</resources>

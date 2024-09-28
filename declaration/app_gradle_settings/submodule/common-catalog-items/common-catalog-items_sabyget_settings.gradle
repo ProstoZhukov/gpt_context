@@ -1,0 +1,37 @@
+include ':additional_nomenclatures'
+project(':additional_nomenclatures').projectDir = new File(commonCatalogItemsDir, "additional_nomenclatures")
+
+include ':cart'
+project(':cart').projectDir = new File(commonCatalogItemsDir, "cart")
+
+include ':catalog_list'
+project(':catalog_list').projectDir = new File(commonCatalogItemsDir, "catalog_list")
+
+include ':catalog_item_details'
+project(':catalog_item_details').projectDir = new File(commonCatalogItemsDir, "catalog_item_details")
+
+include ':common_catalog_items_decl'
+project(':common_catalog_items_decl').projectDir = new File(commonCatalogItemsDir, "common_catalog_items_decl")
+
+include ':common_catalog_items_design'
+project(':common_catalog_items_design').projectDir = new File(commonCatalogItemsDir, "common_catalog_items_design")
+
+include ':modifier_list'
+project(':modifier_list').projectDir = new File(commonCatalogItemsDir, "modifier_list")
+
+include ':price_filter_decl'
+project(':price_filter_decl').projectDir = new File(commonCatalogItemsDir, "price_filter_decl")
+
+//region domain layer
+include ':cart_domain'
+project(':cart_domain').projectDir = new File(commonCatalogItemsDir, "domain_layer/cart_domain")
+
+include ':compilation_domain'
+project(':compilation_domain').projectDir = new File(commonCatalogItemsDir, "domain_layer/compilation_domain")
+
+include ':custom_catalog_data_source'
+project(':custom_catalog_data_source').projectDir = new File(commonCatalogItemsDir, "domain_layer/custom_catalog_data_source")
+
+include ':menu_domain'
+project(':menu_domain').projectDir = new File(commonCatalogItemsDir, "domain_layer/menu_domain")
+//endregion

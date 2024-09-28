@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wheel_time_picker_time_selection_date_and_time">Date et l\'heure</string>
+    <string name="wheel_time_picker_time_selection_date">Date</string>
+    <string name="wheel_time_picker_time_selection_start">Commencer</string>
+    <string name="wheel_time_picker_time_selection_duration">durée</string>
+    <string name="wheel_time_picker_time_selection_duration_picker">Durée</string>
+    <string name="wheel_time_picker_time_selection_selected_hint">Précisez l\'heure</string>
+    <string name="wheel_time_picker_time_selection_all_day">toute la journée</string>
+    <string name="wheel_time_picker_time_selection_end">Fin</string>
+    <string name="wheel_time_picker_picker_days">%1$d j</string>
+    <string name="wheel_time_picker_picker_hours">%1$d h</string>
+    <string name="wheel_time_picker_picker_minutes">%1$d min</string>
+    <plurals name="wheel_time_picker_plurals_days">
+        <item quantity="zero">jours</item>
+        <item quantity="one">%1$d&#160;jour</item>
+        <item quantity="two">%1$d&#160;jours</item>
+        <item quantity="few">%1$d&#160;jours</item>
+        <item quantity="many">%1$d&#160;jours</item>
+        <item quantity="other">%1$d&#160;jours</item>
+    </plurals>
+    <plurals name="wheel_time_picker_plurals_hours">
+        <item quantity="zero">%1$d hours</item>
+        <item quantity="one">%1$d hour</item>
+        <item quantity="two">%1$d hours</item>
+        <item quantity="few">%1$d hours</item>
+        <item quantity="many">%1$d hours</item>
+        <item quantity="other">%1$d hours</item>
+    </plurals>
+    <plurals name="wheel_time_picker_plurals_minutes">
+        <item quantity="zero">%1$d minutes</item>
+        <item quantity="one">%1$d minute</item>
+        <item quantity="two">%1$d minutes</item>
+        <item quantity="few">%1$d minutes</item>
+        <item quantity="many">%1$d minutes</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+</resources>

@@ -1,0 +1,2 @@
+include ':map'
+project(':map').projectDir = new File(mapDir, "map")

@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.app_init"
+}
+
+dependencies {
+    implementation project(':controller_utils')
+
+    implementation project(':design_buttons')
+    implementation project(':design_stubview')
+    implementation project(':design_utils')
+    implementation project(':design_splash')
+    implementation project(':common')
+    implementation project(':event_bus')
+    implementation project(':mvvm')
+
+    implementation platform("com.google.firebase:firebase-bom:$rootProject.ext.firebaseBomVersion")
+    implementation "com.google.firebase:firebase-crashlytics"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "androidx.preference:preference-ktx:$rootProject.ext.preferenceVersion"
+}

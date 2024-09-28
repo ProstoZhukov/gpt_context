@@ -1,0 +1,2 @@
+include ':notification_settings'
+project(':notification_settings').projectDir = new File(notificationDir, "notification_settings")

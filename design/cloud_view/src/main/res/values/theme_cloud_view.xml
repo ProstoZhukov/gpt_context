@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cloud View -->
+
+    <style name="DefaultCloudViewTheme">
+        <item name="CloudView_titleColor">?secondaryTextColor</item>
+        <item name="CloudView_subtitleColor">?unaccentedTextColor</item>
+        <item name="CloudView_iconColor">?unaccentedTextColor</item>
+        <item name="CloudView_dateColor">?unaccentedTextColor</item>
+        <item name="CloudView_timeColor">?unaccentedTextColor</item>
+        <item name="CloudView_editIcon">@string/design_mobile_icon_edited</item>
+        <item name="CloudView_readIcon">@string/design_mobile_icon_message_was_read_lower</item>
+    </style>
+
+    <!-- Тема исходящего сообщения ячейки-облака -->
+    <style name="DefaultCloudViewTheme.Outcome">
+        <item name="CloudView_backgroundColor">?secondarySameBackgroundColor</item>
+        <item name="CloudView_undeliveredBackgroundColor">?dangerSameBackgroundColor</item>
+        <item name="CloudView_sendingIcon">@string/design_mobile_icon_clock</item>
+        <item name="CloudView_deliveryIcon">@string/design_mobile_icon_alert_null</item>
+        <item name="CloudView_outcome">true</item>
+     </style>
+
+    <!-- Тема входящего сообщения ячейки-облака -->
+    <style name="DefaultCloudViewTheme.Income">
+        <item name="CloudView_backgroundColor">?backgroundColor</item>
+        <item name="CloudView_outcome">false</item>
+    </style>
+
+</resources>

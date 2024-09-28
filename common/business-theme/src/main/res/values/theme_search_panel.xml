@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Базовая тема для компонента панели поиска SearchInput.-->
+    <style name="BaseSearchPanelTheme" parent="SearchInputDefaultTheme">
+        <item name="baseColor">@color/palette_color_white1</item>
+        <item name="bottomDividerVisible">true</item>
+        <item name="textColor">@color/palette_color_black1</item>
+    </style>
+
+    <!--Стиль для компонента панели поиска SearchInput в тулбаре.-->
+    <style name="ToolbarSearchPanelStyle" parent="SearchInputDefaultTheme">
+        <item name="baseColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="bottomDividerVisible">false</item>
+        <item name="searchInput_size">small</item>
+        <item name="inputView_valueColor">@color/palette_color_black1</item>
+        <item name="textColor">@color/palette_color_black1</item>
+    </style>
+
+    <!--Тема с указанием атрибута темы строки поиска, напрямую не стилизовался baseColor.-->
+    <style name="ToolbarSearchPanelTheme">
+        <item name="searchInputTheme">@style/ToolbarSearchPanelStyle</item>
+        <item name="android:layout_marginStart">@dimen/business_search_panel_margin_negative_offset_m</item>
+    </style>
+</resources>

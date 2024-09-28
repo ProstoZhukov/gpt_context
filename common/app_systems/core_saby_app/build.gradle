@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.core_saby_app"
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':design_change_theme')
+    api project(':plugin_manager')
+    api project(':common')
+    api project(':application-tools')
+    api project(':logging')
+    api project(':events_tracker')
+    api project(':onboarding')
+    api project(':permission')
+    api project(':auth_common')
+}

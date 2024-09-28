@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_support_channel_list_title">Yordam</string>
+    <string name="communicator_support_channel_list_title_reduce">Yordam</string>
+    <string name="communicator_support_channel_list_no_data">Ulangan kanallar yo‘q</string>
+    <string name="communicator_support_channel_list_syby_support_title">Saby qo\'llab-quvvatlash</string>
+    <string name="communicator_support_channel_sabyget_title">Chatlar</string>
+    <string name="communicator_support_channel_sabyget_message">Muloqot qiling</string>
+    <string name="communicator_support_channel_sabyget_stub_subtitle">Bu erda sizning suhbatlaringiz \ PS muassasa va mutaxassislar bo\'ladi</string>
+</resources>

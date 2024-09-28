@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableViewBindingCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.wheel_time_picker"
+
+    resourcePrefix "wheel_time_picker_"
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':common')
+    implementation project(':base_components')
+    implementation project(':cylinder_pickers')
+    implementation project(':design_utils')
+    implementation project(':viper')
+    implementation project(':container')
+    implementation project(':toolbar')
+    implementation project(':modalwindows')
+    implementation project(':design_dialogs')
+
+    //noinspection GradleDependency
+    implementation libs.android.core.ktx
+
+    implementation libs.android.joda
+
+    implementation libs.coroutines.rx2
+}

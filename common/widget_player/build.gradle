@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.widget_player"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':base_components')
+    implementation project(':design_collection_view')
+    implementation project(':design_dialogs')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':list_utils')
+    implementation project(':text_span')
+    implementation project(':objectpool')
+    implementation project(':edo-decl')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_checkbox')
+    implementation project(':design_tabs')
+    implementation project(':mvi_extension')
+    implementation project(':viewer-decl')
+    //region Виджет аудио-видео сообщений
+    implementation project(':design_audio_player_view')
+    implementation project(':design_video_player_view')
+    // endregion
+    api project(':richtext') // TODO выделить richtext_common
+
+    implementation project(':controller')
+
+    implementation "androidx.fragment:fragment-ktx:$rootProject.ext.fragmentVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "org.apache.commons:commons-lang3:$rootProject.ext.apacheCommonsVersion"
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+}

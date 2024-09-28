@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wrhdoc_nom_in_order_on_addition_title">En orden de suma</string>
+    <string name="wrhdoc_nom_alphabetically_asc_title">De la A a la Z</string>
+    <string name="wrhdoc_nom_alphabetically_desc_title">Z a A</string>
+    <string name="wrhdoc_nom_by_number_of_deviations_title">Por n&#xfa;mero de desviaciones</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_title">Por cantidad de desviaciones</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_asc_title">ascendiendo</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_desc_title">descendiendo</string>
+    <string name="wrhdoc_nom_without_filters_title">Todos los art&#xed;culos</string>
+    <string name="wrhdoc_nom_non_zero_balances_title">Saldos distintos de cero</string>
+    <string name="wrhdoc_nom_zero_balances_title">Saldos cero</string>
+    <string name="wrhdoc_nom_negative_balances_title">Saldos negativos</string>
+    <string name="wrhdoc_nom_with_deviations_balances_title">Con desviaciones</string>
+    <string name="wrhdoc_nom_deviation_negative_title">Con escasez</string>
+    <string name="wrhdoc_nom_filter_not_confirmed">No confirmado</string>
+    <string name="wrhdoc_nom_filter_confirmed">Confirmado</string>
+    <string name="wrhdoc_nom_deviation_positive_title">Con excedente</string>
+    <string name="wrhdoc_nom_unfilled_balances_title">Sin llenar</string>
+</resources>

@@ -1,0 +1,93 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+     Начиная с 30 Api, система ограничивает видимость установленных пакетов
+     на устройстве. В связи с этим необходимо явно указывать те Intent'ы,
+     которые могут потребоваться приложению в процессе работы.
+
+     https://developer.android.com/training/package-visibility?hl=ru
+    -->
+    <queries>
+        <!--
+            Указываем пакеты, которые разработчик хотел бы иметь возможность обнаруживать на устройстве с Android >= 30 Api
+            в противном случае система сообщит, что указанный пакет отсутствует на устройстве пользователя.
+         -->
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="org.telegram.messenger.web"/>
+        <package android:name="org.thunderdog.challegram"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.viber.voip"/>
+
+        <intent>
+            <!-- UserStory: пользователь передает свои данные в сторонние приложения. -->
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: пользователь передает свои данные в сторонние приложения. -->
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="smsto"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: пользователь передает свои данные в сторонние приложения. -->
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="mailto"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: пользователь передает свои данные в сторонние приложения. -->
+            <action android:name="android.intent.action.SEND_MULTIPLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: пользователь совершает звонок по выбранному номеру. -->
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: пользователь выполняет открытие ссылки в стороннем приложении. -->
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: пользователь выполняет открытие ссылки в стороннем приложении. -->
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: пользователь выполняет открытие стороннего приложения. -->
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="skype"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: пользователь выполняет открытие файла с устройства в стороннем приложении. -->
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="file"/>
+        </intent>
+    </queries>
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="false"
+        android:supportsRtl="true">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

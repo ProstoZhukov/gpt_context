@@ -1,0 +1,1 @@
+apply from: "$notificationDir/notification_full_feature_settings.gradle"

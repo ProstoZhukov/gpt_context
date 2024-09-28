@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CommunicatorSupportConsultationStyle" parent="List">
+        <item name="list_content_background">
+            ?unaccentedAdaptiveBackgroundColor
+        </item>
+        <item name="list_content_dark_background">
+            ?unaccentedAdaptiveBackgroundColor
+        </item>
+    </style>
+</resources>

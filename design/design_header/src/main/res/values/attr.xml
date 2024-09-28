@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sbisHeaderViewTheme" format="reference"/>
+
+    <declare-styleable name="SbisHeader">
+        <attr name="SbisHeaderTitle_theme" format="reference"/>
+        <attr name="SbisHeaderTitle_height" format="integer|reference"/>
+        <attr name="SbisHeaderTitle_buttonOffset" format="integer|reference"/>
+    </declare-styleable>
+</resources>

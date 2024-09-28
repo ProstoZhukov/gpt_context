@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="match_parent"
+    tools:layout_width="match_parent"
+    tools:parentTag="android.widget.FrameLayout"
+    tools:theme="@style/LargeDarkTheme">
+
+    <!-- Иконка устанавливается в рантайме. -->
+    <ru.tensor.sbis.design.buttons.SbisRoundButton
+        android:id="@+id/retail_views_enable_mix_payment"
+        style="?retailViewsPaymentViewSecondaryRoundButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:SbisRoundButton_size="m"
+        tools:visibility="visible"/>
+
+    <ru.tensor.sbis.design.buttons.SbisButton
+        android:id="@+id/retail_views_disable_mix_payment"
+        style="?retailViewsPaymentViewSecondaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:SbisButton_icon="@string/design_mobile_icon_close_for_nav_panel"
+        app:SbisButton_iconSize="s"
+        app:SbisButton_title="@string/retail_views_payment_mix_btn_title"
+        app:SbisRoundButton_size="m"
+        tools:visibility="visible"/>
+
+</merge>

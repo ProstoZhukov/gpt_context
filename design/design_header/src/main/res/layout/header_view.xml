@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/SbisHeaderTitle_height"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:theme="?attr/sbisHeaderViewTheme"
+    tools:theme="@style/SbisHeader">
+
+    <FrameLayout
+        android:id="@+id/left_custom_content_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/header_content_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/header_content_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right_custom_content_container"
+        app:layout_constraintStart_toEndOf="@+id/left_custom_content_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="?offset_m"
+        app:layout_goneMarginStart="?offset_m">
+
+        <ru.tensor.sbis.design.toolbar.ToolbarTabLayout
+            android:id="@+id/header_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/header_title"
+            style="?attr/SbisHeaderTitle_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:visibility="gone"
+            tools:text="Заголовок"
+            tools:visibility="visible"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/right_custom_content_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingEnd="?offset_m"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/confirm_button_container"
+        app:layout_constraintStart_toEndOf="@+id/header_content_container"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/confirm_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingEnd="?SbisHeaderTitle_buttonOffset"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/close_button"
+        app:layout_constraintStart_toEndOf="@+id/right_custom_content_container"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <ru.tensor.sbis.design.buttons.SbisRoundButton
+            android:id="@+id/confirm_icon_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SbisRoundButton_icon="@string/design_mobile_icon_checked"/>
+
+        <ru.tensor.sbis.design.buttons.SbisButton
+            android:id="@+id/confirm_text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:SbisButton_backgroundType="contrast"
+            app:SbisButton_style="primary"
+            app:layout_constraintBaseline_toBottomOf="parent"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/close_button"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"/>
+    </FrameLayout>
+
+    <ru.tensor.sbis.design.buttons.SbisRoundButton
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="?SbisHeaderTitle_buttonOffset"
+        app:SbisRoundButton_elevation="0dp"
+        app:SbisRoundButton_icon="@string/design_mobile_icon_close_for_nav_panel"
+        app:SbisRoundButton_type="transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/confirm_button_container"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="?borderThickness_s"
+        android:background="?borderColor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="date_picker_guideline_left_percent" type="dimen">0.375</item>
+    <item name="date_picker_guideline_right_percent" type="dimen">0.625</item>
+    <item name="date_picker_vertical_percent" type="dimen">1.0</item>
+</resources>

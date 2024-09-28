@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="current_folder_view_title_margin_end">12dp</dimen>
+    <dimen name="current_folder_view_title_font_size">22dp</dimen>
+    <dimen name="current_folder_view_blue_arrow_padding_start">8dp</dimen>
+    <dimen name="current_folder_view_blue_arrow_padding_end">10dp</dimen>
+    <dimen name="current_folder_view_ginger_arrow_width">9dp</dimen>
+    <dimen name="current_folder_view_ginger_arrow_height">14dp</dimen>
+    <dimen name="current_folder_view_ginger_arrow_margin_end">3dp</dimen>
+
+</resources>

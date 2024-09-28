@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-kapt'
+
+submoduleConfig { cfg ->
+    cfg.enableDataBindingCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.utils"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+    }
+}
+
+dependencies {
+    implementation project(':design')
+
+    api libs.android.view.imagerCropper
+    implementation libs.android.view.fresco.animated.base
+
+    testImplementation project(':testing')
+}

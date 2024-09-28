@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="versioning_settings_label">设置</string>
+    <string name="versioning_settings_update_type">更新类型：</string>
+    <string name="versioning_settings_update_recommended">受到推崇的</string>
+    <string name="versioning_settings_update_mandatory">必需的</string>
+    <string name="versioning_settings_app_version">应用程序版本</string>
+    <string name="versioning_submodule_version_is_critical_title">部分不可用</string>
+    <string name="versioning_new_version_is_available_msg">我们建议您升级到应用程序的正确版本。</string>
+    <string name="versioning_accept_update">更新</string>
+    <string name="versioning_postpone_update">推迟</string>
+    <string name="versioning_update_required_details">要继续使用该应用程序\n%1$s，您需要更新到最新版本。</string>
+    <string name="versioning_update_optional_detail">我们添加了新功能并改进了现有功能</string>
+</resources>

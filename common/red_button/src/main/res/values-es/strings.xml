@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="red_button_title_open">Informaci&#xf3;n abierta</string>
+    <string name="red_button_title_close_progress">Los datos se estan cerrando</string>
+    <string name="red_button_title_open_progress">Los datos se est&#xe1;n abriendo.</string>
+    <string name="red_button_uu_alert_message">Todos los documentos, operaciones e informes de la organizaci&#xf3;n \"Contabilidad de gesti&#xf3;n\" se ocultar&#xe1;n temporalmente. Seg&#xfa;n los documentos del jur ordinario. personas no se producir&#xe1;n cambios.</string>
+    <string name="red_button_cloud_alert_message">Toda la informaci&#xf3;n quedar&#xe1; oculta temporalmente. S&#xf3;lo quedar&#xe1;n los \“Empleados\” con nombres y n&#xfa;meros de teléfono.</string>
+    <string name="red_button_cloud_alert_title">¿Ocultar datos?</string>
+    <string name="red_button_title_sms">Introduzca el c&#xf3;digo SMS</string>
+    <string name="red_button_title_pin_on">Piensa en tu PIN</string>
+    <string name="red_button_title_pin_off">Introduzca el c&#xf3;digo PIN</string>
+    <string name="red_button_message_pin_close">Recordar el c&#xf3;digo pin, para posterior restablecimiento del acceso a la nube</string>
+    <string name="red_button_message_pin_open">Si olvid&#xf3; el c&#xf3;digo PIN, comun&#xed;quese con su gerente</string>
+    <string name="red_button_repeat_through">Repetir hasta %s</string>
+    <string name="red_button_code_again">Obtenga el c&#xf3;digo nuevamente</string>
+    <string name="red_button_network_error">No hay conexion de red</string>
+    <string name="red_button_stub_title_close">Los datos se ocultar&#xe1;n después de recargar la aplicaci&#xf3;n.</string>
+    <string name="red_button_stub_title_open">El acceso a los datos se devolver&#xe1; después de reiniciar la aplicaci&#xf3;n.</string>
+    <string name="red_button_stub_toolbar_text">Ajustes</string>
+    <string name="red_button_password_sent_on_phone_template">El c&#xf3;digo fue enviado al n&#xfa;mero %1$s</string>
+    <string name="red_button_stub_subtitle">Descarga la aplicaci&#xf3;n y &#xe1;brela nuevamente.</string>
+    <string name="red_button_title_pin_confirmation">Confirmar c&#xf3;digo pin</string>
+    <string name="red_button_message_pin_confirmation">Ingrese el c&#xf3;digo pin nuevamente</string>
+    <string name="red_button_title_close">¿Cerrar datos?</string>
+</resources>

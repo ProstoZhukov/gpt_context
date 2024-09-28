@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="push_notification_utils_default_value_push_notification_sound">true</bool>
+    <bool name="push_notification_utils_default_value_push_notification_vibrate">true</bool>
+</resources>

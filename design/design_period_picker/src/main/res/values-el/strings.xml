@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="january">Ιανουάριος</string>
+    <string name="february">Φεβρουάριος</string>
+    <string name="march">Μάρτιος</string>
+    <string name="april">Απρίλιος</string>
+    <string name="may">Ενδέχεται</string>
+    <string name="june">Ιούνιος</string>
+    <string name="july">Ιούλιος</string>
+    <string name="august">Αύγουστος</string>
+    <string name="september">Σεπτέμβριος</string>
+    <string name="october">Οκτώβριος</string>
+    <string name="november">Νοέμβριος</string>
+    <string name="december">Δεκέμβριος</string>
+    <string name="quarter_1">Εγώ τέταρτο</string>
+    <string name="quarter_2">ΙΙ τρίμηνο</string>
+    <string name="quarter_3">ΙΙΙ τρίμηνο</string>
+    <string name="quarter_4">IV τρίμηνο</string>
+    <string name="half_year_1">Εγώ εξάμηνο</string>
+    <string name="half_year_2">II εξάμηνο</string>
+    <string name="quarter">τέταρτο</string>
+    <string name="half_year">εξάμηνο</string>
+    <string name="all_period">Όλη την περίοδο</string>
+    <string-array name="quantum_list">
+        <item>@string/quantum_1</item>
+        <item>@string/quantum_2</item>
+        <item>@string/quantum_3</item>
+        <item>@string/quantum_4</item>
+    </string-array>
+    <string-array name="short_quantum_list">
+        <item>@string/quantum_1</item>
+        <item>@string/quantum_2</item>
+    </string-array>
+</resources>

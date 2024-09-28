@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="design_message_panel_common_quote_title" type="id"/>
+    <item name="design_message_panel_common_quote_subtitle" type="id"/>
+    <item name="design_message_panel_common_quote_close_button" type="id"/>
+</resources>

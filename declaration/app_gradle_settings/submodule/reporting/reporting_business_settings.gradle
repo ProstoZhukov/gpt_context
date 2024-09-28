@@ -1,0 +1,1 @@
+apply from: "$reportingDir/reporting_full_feature_settings.gradle"

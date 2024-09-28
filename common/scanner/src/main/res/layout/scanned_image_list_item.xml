@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="ScannedImageListItem"
+            type="ru.tensor.sbis.scanner.adapter.scannedimagelist.item.ScannedImageListItem"/>
+
+        <variable
+            name="ScannedImageListItemClickHandler"
+            type="ru.tensor.sbis.scanner.adapter.scannedimagelist.clickhandler.ScannedImageListItemClickHandler"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/scanned_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> ScannedImageListItemClickHandler.onItemClick(ScannedImageListItem)}"
+            app:imageURI="@{ScannedImageListItem.getAbsoluteUri()}"
+            fresco:placeholderImage="@drawable/failure_placeholder"
+            fresco:viewAspectRatio="1"
+            tools:background="@color/color_primary"/>
+
+        <ImageView
+            android:id="@+id/scanned_image_check_state"
+            android:layout_width="@dimen/scanned_images_list_item_checkbox_size"
+            android:layout_height="@dimen/scanned_images_list_item_checkbox_size"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/scanned_images_list_item_checkbox_margin"
+            android:layout_marginRight="@dimen/scanned_images_list_item_checkbox_margin"
+            android:layout_marginTop="@dimen/scanned_images_list_item_checkbox_margin"
+            android:onClick="@{() -> ScannedImageListItemClickHandler.onCheckboxClick(ScannedImageListItem)}"
+            android:padding="@dimen/scanned_images_list_item_checkbox_padding"/>
+
+    </FrameLayout>
+
+</layout>

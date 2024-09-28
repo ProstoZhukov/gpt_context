@@ -1,0 +1,82 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+}
+
+android {
+    namespace "ru.tensor.sbis.communicator.common"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+    }
+}
+
+dependencies {
+    // communicator
+    implementation project(':communicator_design')
+    implementation project(':communicator_declaration')
+    implementation project(':contacts_declaration')
+    // controller
+    implementation project(':controller')
+    // design
+    implementation project(':cloud_view')
+    implementation project(':design')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_list_header')
+    implementation project(':design_message_panel')
+    implementation project(':design_message_panel_decl')
+    implementation project(':design_person_suggest')
+    implementation project(':design_profile') // неявная зависимость
+    implementation project(':scroll_to_top') // неявная зависимость - PaginationLayoutManager
+    implementation project(':text_span')
+    // common
+    implementation project(':base_components')
+    implementation project(':common')
+    implementation project(':common_attachments')
+    implementation project(':deeplink')
+    implementation project(':message_panel')
+    implementation project(':mvp')
+    implementation project(':persons')
+    implementation project(':push-notification')
+    implementation project(':richtext')
+    implementation project(':statistic')
+    implementation project(':swipeablelayout')
+    // declaration
+    implementation project(':edo-decl')
+    implementation project(':tasks-feature')
+    implementation project(':viewer-decl')
+    // disk
+    implementation project(':attachments-ui')
+    implementation project(':attachments-decl')
+    // profile
+    implementation project(':profile_service')
+
+    // Dagger
+    implementation libs.dagger
+    kapt libs.dagger.compiler
+    // Other
+    implementation libs.android.workmanager.runtime.ktx
+    implementation platform("com.google.firebase:firebase-bom:$rootProject.ext.firebaseBomVersion")
+    implementation libs.timber
+}

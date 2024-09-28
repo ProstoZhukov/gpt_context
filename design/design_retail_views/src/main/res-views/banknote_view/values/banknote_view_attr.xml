@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Атрибуты компонента [BanknoteViewCustomized] -->
+    <declare-styleable name="RetailViewsBanknoteViewCustomizedAttrs">
+        <attr name="retail_views_banknote_theme_customized" format="reference"/>
+
+        <!-- Стиль кнопок банкнот -->
+        <attr name="retail_views_banknote_buttons_style" format="reference"/>
+
+        <attr name="retail_views_banknote_counter_background_color" format="reference|color"/>
+        <attr name="retail_views_banknote_view_customized_text_color" format="reference|color"/>
+
+        <!--
+           Привязка к банкнотам выполняется их к месту расположения
+           в UI представлении [ №столбца / №строки ]. Это позволяет
+           абстрагировать их от номинальных значений в конкретных
+           регионах.
+
+           См. [BanknoteCountry.kt].
+         -->
+        <attr name="retail_views_banknote_country_position_value" format="enum">
+            <enum name="_1_1" value="0"/>
+            <enum name="_1_2" value="1"/>
+            <enum name="_1_3" value="2"/>
+            <enum name="_2_1" value="3"/>
+            <enum name="_2_2" value="4"/>
+            <enum name="_2_3" value="5"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

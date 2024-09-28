@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.business.common.ui.base.adapter.data.BottomStub"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_height"
+        app:isNotGone="@{viewModel.progressVisibility}">
+
+        <ru.tensor.sbis.design.view_ext.LoadingIndicator
+            style="@style/SbisProgressBarStyle"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            app:delayedShowing="true"
+            app:isVisible="@{viewModel.progressVisibility}"
+            app:showingDelay="@integer/business_progress_delay"/>
+    </FrameLayout>
+</layout>

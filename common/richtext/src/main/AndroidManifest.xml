@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Доступ к функции необходим для кратковременной вибрации при копировании текста в буфер -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+</manifest>
+

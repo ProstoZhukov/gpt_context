@@ -1,0 +1,8 @@
+﻿<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@integer/animation_activity_translate_duration"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+    <translate
+        android:fromYDelta="0"
+        android:toYDelta="100%p"/>
+</set>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.business.common.ui.viewmodel.BreadCrumbsVm"/>
+    </data>
+
+    <ru.tensor.sbis.design.breadcrumbs.breadcrumbs.BreadCrumbsView
+        android:id="@+id/video_monitoring_bread_crumbs_path"
+        android:layout_width="match_parent"
+        android:layout_height="?inlineHeight_xs"
+        android:gravity="center_vertical"
+        android:paddingStart="?offset_m"
+        android:paddingEnd="?offset_m"
+        app:BreadCrumbsView_homeIconVisible="false"
+        app:breadCrumbs="@{viewModel}"/>
+</layout>

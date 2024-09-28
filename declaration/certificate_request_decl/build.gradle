@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.certificate.request.decl"
+
+    sourceSets {
+        main {
+            java.srcDirs += 'src/main/kotlin'
+            kotlin.srcDirs += 'src/main/kotlin'
+        }
+    }
+}
+
+dependencies {
+    api project(':plugin_struct')
+    //implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="date_picker_current_day_label">Осы күн</string>
+    <string name="date_picker_current_half_year_label">ағымдағы семестр</string>
+    <string name="date_picker_current_month_label">Ағымдағы ай</string>
+    <string name="date_picker_current_quarter_label">Ағымдағы тоқсан</string>
+    <string name="date_picker_current_year_label">Ағымдағы жыл</string>
+    <string name="date_picker_date_date_picker_month_icon">&#xe948;</string>
+    <string name="date_picker_date_date_picker_year_icon">&#xea29;</string>
+    <string name="date_picker_date_invalid">Енгізілген күн жарамсыз</string>
+    <string name="date_picker_date_picker_title">Күнді таңдау құралы</string>
+    <string name="date_picker_day_label">Күн</string>
+    <string name="date_picker_half_year_label">Жарты жыл</string>
+    <string name="date_picker_history">Мерзімді таңдау тарихы:</string>
+    <string name="date_picker_history_empty_text">Мұнда бұрын таңдалған кезеңдер көрсетіледі.</string>
+    <string name="date_picker_month_label">Ай</string>
+    <string name="date_picker_period_invalid">Қате кезең енгізілді</string>
+    <string name="date_picker_period_unavailable">Ағымдағы кезең таңдау үшін қолжетімді емес</string>
+    <string name="date_picker_quarter_label">Тоқсан</string>
+    <string name="date_picker_reset_title">Қалпына келтіру</string>
+    <string name="date_picker_select_current_period_title">Ағымдағы</string>
+    <string name="date_picker_title">Мерзімді таңдау</string>
+    <string name="date_picker_year_label">Жыл</string>
+
+</resources>

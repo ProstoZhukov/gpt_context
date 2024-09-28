@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SelectionHeader">
+        <item name="leftIconText">@string/design_mobile_icon_toolbar_close</item>
+        <item name="leftIconVisibility">visible</item>
+        <item name="leftPanelVisibility">visible</item>
+    </style>
+
+    <style name="SelectionCancelButton" parent="MobileFontStyle">
+        <item name="android:text">@string/design_mobile_icon_toolbar_close</item>
+        <item name="android:textSize">@dimen/size_title1_scaleOff</item>
+        <item name="android:textColor">@color/text_color_black_1</item>
+        <item name="android:layout_marginStart">@dimen/selection_header_horizontal_spacing</item>
+    </style>
+
+    <style name="SelectionSearchPanel">
+        <item name="hasFilter">false</item>
+        <item name="searchInput_color">additional</item>
+        <item name="additionalColor">@color/palette_color_white1</item>
+        <item name="inputView_valueColor">@color/palette_color_black1</item>
+    </style>
+
+    <style name="SelectionDoneButton">
+        <!-- TODO: по стандарту кнопка - текстовая иконка с обводкой. Уточнить критичность -->
+        <item name="android:src">@drawable/button_done_green</item>
+    </style>
+
+    <style name="SelectionDivider">
+        <item name="android:background">?separatorColor</item>
+    </style>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_panel_chat_add_participants_failure">Gatna&#x15f;anlary go&#x15f;mak ba&#x15f;artmady.</string>
+    <string name="message_panel_attachment_files_size_limit">Fa&#xfd;ly&#x148; ululygy 100 MB çäkden geç&#xfd;är</string>
+    <string name="message_panel_attachment_upload_error">Go&#x15f;undylary &#xfd;üklemekde säwlik.</string>
+    <string name="message_panel_selected_message_action_delete_from_everyone">Hemmeler üçin pozu&#x148;</string>
+    <string name="message_panel_selected_message_action_delete_from_archive">Menden poz</string>
+    <string name="message_panel_delete_dialog_forever">Bu geple&#x15f;ikdäki ähli habarlary hemi&#x15f;elik pozu&#x148;?</string>
+    <string name="message_panel_document_signing_action_sign">Gol çeki&#x148;</string>
+    <string name="message_panel_document_signing_action_request">Gol sora</string>
+    <string name="message_panel_document_signing_action_sign_and_request">Gol çeki&#x148; we gol sora&#x148;</string>
+    <string name="message_panel_signatures_list_title_my_certificates">Meni&#x148; gollarym</string>
+    <string name="message_panel_action_reject_signature">Ret et</string>
+    <string name="message_panel_action_accept_signature">Gol çeki&#x148;</string>
+    <string name="message_panel_comment_edit_message">Indi habary redaktirläp bilmersi&#x148;iz</string>
+    <string name="message_panel_error_data_receive">Maglumat alany&#x148;yzda säwlik</string>
+    <string name="message_panel_error_send_message">Habar ibermekde säwlik</string>
+    <string name="message_panel_to_many_attachments">Bir habar üçin gaty köp go&#x15f;undy.</string>
+    <string name="recorder_hint_message">Recordazga al</string>
+    <string name="message_panel_editing_message_title">Redaktirlä&#x148;</string>
+    <string name="message_panel_attachment_each_file_size_limit">Her fa&#xfd;l 100 MB çäkden geç&#xfd;är</string>
+    <string name="message_panel_attachment_some_files_size_limit">Käbir fa&#xfd;llar 100 MB çäkden geç&#xfd;är</string>
+    <string name="message_panel_all_files_already_attached">Fa&#xfd;llar e&#xfd;&#xfd;äm birikdirildi</string>
+    <string name="message_panel_some_files_already_attached">Käbir fa&#xfd;llar e&#xfd;&#xfd;äm birikdirildi</string>
+    <string name="message_panel_channel_private">&#x15e;ahsy kanal</string>
+    <plurals name="message_panel_chat_participants">
+        <item quantity="zero">Gatna&#x15f;anlar &#xfd;ok</item>
+        <item quantity="one">% 1 $ d agza</item>
+        <item quantity="two">% 1 $ d agza</item>
+        <item quantity="few">% 1 $ d agza</item>
+        <item quantity="many">% 1 $ d agzalar</item>
+        <item quantity="other">% 1 $ d agzalar</item>
+    </plurals>
+</resources>

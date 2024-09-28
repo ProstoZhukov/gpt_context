@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/design_message_view_message_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="51dp"
+    android:paddingEnd="?offset_s">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/design_message_view_message_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="?offset_2xs"
+        android:singleLine="true"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="?fontSize_xs_scaleOff"
+        tools:text="3 июля"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/design_message_view_message_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:includeFontPadding="false"
+        android:layout_alignBaseline="@id/design_message_view_service_message_text"
+        android:paddingEnd="?offset_2xs"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="?fontSize_3xs_scaleOff"
+        tools:text="12:09"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/design_message_view_service_message_icon"
+        style="@style/MobileFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/design_message_view_message_item_time"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="?offset_2xs"
+        android:minHeight="20dp"
+        android:paddingBottom="?offset_3xs"
+        android:scrollbars="none"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="?fontSize_m_scaleOff"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="@string/design_mobile_icon_arrow_down"/>
+
+    <!-- Не заменять на SbisTextView, т.к. movementMethod не поддержан -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/design_message_view_service_message_text"
+        style="@style/RegularStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?offset_s"
+        android:layout_below="@id/design_message_view_message_item_date"
+        android:layout_toStartOf="@+id/design_message_view_message_item_time"
+        android:layout_toEndOf="@id/design_message_view_service_message_icon"
+        android:includeFontPadding="false"
+        android:minHeight="20dp"
+        android:paddingBottom="?offset_3xs"
+        android:scrollbars="none"
+        android:textColor="?unaccentedTextColor"
+        android:textColorLink="?linkTextColor"
+        android:textSize="?fontSize_m_scaleOff"
+        tools:text="ААААА"/>
+
+    <ru.tensor.sbis.design.buttons.SbisButton
+        android:id="@+id/design_message_view_service_rate_request_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/design_message_view_service_message_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="?offset_xs"
+        app:SbisButton_style="def"
+        app:SbisButton_title="@string/design_message_rate_request_button_title"
+        app:SbisButton_size="s"
+        app:SbisButton_iconSize="x2l"
+        app:SbisButton_iconColor="?unaccentedIconColor"/>
+
+</RelativeLayout>

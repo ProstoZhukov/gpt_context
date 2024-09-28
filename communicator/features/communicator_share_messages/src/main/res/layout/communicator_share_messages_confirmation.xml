@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/communicator_share_messages_confirmation_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/communicator_share_messages_confirmation_header"
+        android:layout_width="300dp"
+        android:layout_height="?inlineHeight_m"
+        android:background="@drawable/communicator_share_messages_confirmation_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_height="48dp">
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/communicator_share_messages_confirmation_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="?offset_xl"
+            android:layout_marginTop="?offset_st"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="?textColor"
+            android:textSize="?fontSize_xl_scaleOn"
+            tools:textColor="#000000"
+            tools:textSize="18sp"
+            tools:layout_marginStart="20dp"
+            tools:layout_marginTop="10dp"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/communicator_share_messages_confirmation_header_close_icon"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="?offset_st"
+            android:padding="?offset_st"
+            android:text="@string/design_mobile_icon_toolbar_close"
+            android:textColor="?unaccentedIconColor"
+            android:textSize="?fontSize_xl_scaleOn"
+            tools:padding="10dp"
+            tools:layout_marginEnd="10dp"
+            tools:textColor="#CCCCCC"
+            tools:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/communicator_share_messages_confirmation_input_view"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_st"
+        android:layout_marginEnd="?offset_st"
+        android:background="@drawable/communicator_share_messages_confirmation_input_background"
+        app:errorEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@id/communicator_share_messages_confirmation_send_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/communicator_share_messages_confirmation_header"
+        tools:layout_marginEnd="10dp"
+        tools:layout_marginStart="10dp"
+        tools:textColorHint="#CCCCCC">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/communicator_share_messages_confirmation_edit_text"
+            style="@style/ShareMessagesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="?offset_st"
+            android:layout_marginEnd="?offset_st"
+            android:autofillHints="@string/communicator_share_messages_confirmation_input_hint"
+            android:background="@drawable/communicator_share_messages_confirmation_input_background"
+            android:gravity="top|start"
+            android:hint="@string/communicator_share_messages_confirmation_input_hint"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:minLines="3"
+            android:paddingTop="?offset_xs"
+            android:textColorHint="?readonlyTextColor"
+            android:theme="@style/HighlightControlsColor"
+            tools:paddingTop="6dp"
+            tools:text="@string/communicator_dialog_name"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ru.tensor.sbis.design.buttons.SbisRoundButton
+        android:id="@+id/communicator_share_messages_confirmation_send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?offset_xs"
+        android:layout_marginEnd="?offset_st"
+        android:layout_marginBottom="?offset_s"
+        app:SbisRoundButton_icon="@string/design_mobile_icon_bt_arrow"
+        app:SbisRoundButton_size="s"
+        app:SbisRoundButton_style="primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/communicator_share_messages_confirmation_input_view"
+        tools:layout_marginBottom="10dp"
+        tools:layout_marginEnd="10dp"
+        tools:layout_marginTop="6dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+
+        <activity
+            android:name="ru.tensor.sbis.webviewer.DocumentViewerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
+            android:exported="false"
+            android:theme="@style/AppTheme.Swipe.Back"/>
+
+        <service
+            android:name="ru.tensor.sbis.webviewer.FileLoadingService"
+            android:exported="false"/>
+    </application>
+
+</manifest>

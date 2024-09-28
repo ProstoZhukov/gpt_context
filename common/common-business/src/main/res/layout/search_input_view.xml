@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.business.common.ui.base.contract.FilterSearchContract"/>
+    </data>
+
+    <ru.tensor.sbis.design.view.input.searchinput.SearchInput
+        android:id="@+id/search_panel_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:backgroundLevel="@{viewModel.drawableLevel}"
+        app:clearText="@{viewModel.clearText}"
+        app:elevationFilterSearch="@{viewModel.isElevated}"
+        app:filterButtonClickAction="@{viewModel.clickFilterChannel}"
+        app:hasFilter="@{viewModel.hasFilterState}"
+        app:hideKeyboardOnDetach="true"
+        app:hideKeyboardOnSearchClick="@{viewModel.hideKeyboardOnSearchClick}"
+        app:inputDelay="0"
+        app:isAnimatedFilterSearch="@{viewModel.isAnimated}"
+        app:rxCancelSearch="@{viewModel.cancelSearchChannel}"
+        app:rxSearchFieldEditor="@{viewModel.searchFieldEditorChannel}"
+        app:rxSearchFocusChanged="@{viewModel.searchFocusChangedChannel}"
+        app:rxSearchQueryChanged="@{viewModel.searchQueryChangedChannel}"
+        app:searchHint="@{viewModel.searchHintState}"
+        app:searchText="@{viewModel.inputSearchText}"
+        app:updateCurrentFiltersText="@{viewModel.currentFiltersState}"
+        app:viewActionChannel="@{viewModel.viewActionChannel}"
+        app:visibleFilterSearch="@{viewModel.isVisible}"/>
+</layout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="picker_files_tab_title">Fayllar</string>
+    <string name="picker_files_tab_storage_title">Fayllardan tanlang</string>
+    <string name="picker_files_tab_gallery_title">Qurilma galereyasi</string>
+    <string name="picker_files_tab_stub_desc">Qurilmangizdan fayllarni tanlang va biriktiring</string>
+</resources>

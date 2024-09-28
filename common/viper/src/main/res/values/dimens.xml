@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Floating Button -->
+    <dimen name="viper_floating_btn_height">48dp</dimen>
+    <dimen name="viper_floating_btn_elevation">6dp</dimen>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_message">Entek aragatna&#x15f;yk &#xfd;ok</string>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_details">Dostlary&#x148;yzy tapmak üçin aragatna&#x15f;yk sanawy&#x148;yzy enjamy&#x148;yzdan import edi&#x148;.</string>
+</resources>

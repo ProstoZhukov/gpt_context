@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.crypto_operation.decl"
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+    }
+}
+
+dependencies {
+    //https://git.sbis.ru/mobileworkspace/android-utils
+    api project(':plugin_struct')
+
+    implementation libs.timber
+}

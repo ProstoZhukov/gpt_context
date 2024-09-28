@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_files_move_success_message">Το αρχείο μετακινήθηκε στο φάκελο</string>
+    <string name="conversation_files_item_header_from_message">Επισυνάπτεται στην ανάρτηση</string>
+    <string name="conversation_files_item_header_pinned">Καρφιτσωμένο</string>
+    <string name="conversation_files_item_header_from_theme">Συνημμένο στη συνομιλία</string>
+    <string name="conversation_files_no_data_message">Τα αρχεία που αποστέλλονται με μηνύματα θα εμφανίζονται εδώ</string>
+</resources>

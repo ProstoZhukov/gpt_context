@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="complain_service_report_message_text">Send report to moderator for review?</string>
+    <string name="complain_service_report_hint_text">Enter comment</string>
+    <string name="complain_service_dialog_positive">OK</string>
+    <string name="complain_service_dialog_negative">CANCEL</string>
+
+</resources>

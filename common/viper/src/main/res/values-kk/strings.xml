@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="viper_no_items_placeholder">Бұл жерде әлі ештеңе жоқ</string>
+    <string name="viper_no_items_found_placeholder">Нәтиже жоқ</string>
+    <string name="viper_try_another_search">Іздеу опцияларын өзгертіп көріңіз</string>
+
+    <string name="viper_network_error">Желі байланысы жоқ</string>
+
+    <string name="viper_unavailable_service_error">Қызмет уақытша қолжетімсіз. Кейінірек көріңіз.</string>
+</resources>

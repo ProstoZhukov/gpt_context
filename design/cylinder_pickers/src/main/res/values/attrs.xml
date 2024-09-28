@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CylinderDateTimePicker">
+        <!-- Скорость скролла -->
+        <attr name="CylinderDateTimePicker_scrollSpeed" format="enum">
+            <!-- Стандартная скорость скролла -->
+            <enum name="defaultSpeed" value="0"/>
+            <!-- Половина стандартной скорости скролла -->
+            <enum name="halfSpeed" value="1"/>
+            <!-- Четверть стандартной скорости скролла -->
+            <enum name="quarterSpeed" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

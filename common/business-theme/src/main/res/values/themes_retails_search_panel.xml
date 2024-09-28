@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Темная тема компонента панели поиска SearchInputдля в отчетах продаж для МП Розница-->
+    <style name="RetailSearchPanelDarkTheme" parent="SearchInputDefaultTheme">
+        <item name="baseColor">@color/palette_color_blue26</item>
+        <item name="searchIconColor">@color/palette_color_dark_gray1</item>
+        <item name="bottomDividerVisible">true</item>
+        <item name="searchSeparatorColor">@color/palette_color_dark_gray1</item>
+        <item name="bottomDividerColor">?borderColor</item>
+        <item name="inputView_valueColor">@color/palette_color_white1</item>
+        <item name="inputView_placeholderTextColor">@color/palette_alpha_color_dark_gray1</item>
+    </style>
+
+    <!--Темная тема компонента панели поиска SearchInputдля в отчетах продаж для МП Розница-->
+    <style name="RetailSearchPanelLightTheme" parent="SearchInputDefaultTheme">
+        <item name="baseColor">@color/palette_color_white1</item>
+        <item name="bottomDividerVisible">true</item>
+    </style>
+</resources>

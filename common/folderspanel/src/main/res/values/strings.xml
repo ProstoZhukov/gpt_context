@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="folders_panel_create_folder_error_limit_length">The maximum limit of %1$d characters per folder name length has been exceeded.</string>
+</resources>

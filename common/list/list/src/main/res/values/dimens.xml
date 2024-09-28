@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_divider_space_size">8dp</dimen>
+    <dimen name="list_item_side_padding">12dp</dimen>
+    <dimen name="list_item_level_padding">20dp</dimen>
+    <dimen name="list_selection_mark_width">3dp</dimen>
+</resources>

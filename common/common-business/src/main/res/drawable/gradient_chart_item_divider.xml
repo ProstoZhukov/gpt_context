@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:endColor="@color/business_divider"
+                android:startColor="@color/business_divider"/>
+
+            <size
+                android:height="8dp"/>
+        </shape>
+    </item>
+</layer-list>

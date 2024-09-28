@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="swipeable_layout_default_post_dismiss_message">Deleted</string>
+    <string name="swipeable_layout_cancel_deletion_message">Cancel deletion</string>
+
+    <!-- Swipe design_menu item labels -->
+    <string name="design_swipe_menu_label_mark_read">Read</string>
+    <string name="design_swipe_menu_label_mark_unread">Unread</string>
+    <string name="design_swipe_menu_label_message">Message</string>
+    <string name="design_swipe_menu_label_move">To folder</string>
+    <string name="design_swipe_menu_label_media">Video calling</string>
+    <string name="design_swipe_menu_go_to_dialog">To dialog</string>
+    <string name="design_swipe_menu_get_url_for_attachment">Link</string>
+    <string name="design_swipe_menu_share">Share</string>
+    <string name="design_swipe_menu_label_remove">Delete</string>
+    <string name="design_swipe_menu_label_hide">Hide</string>
+    <string name="design_swipe_menu_label_call">Call</string>
+    <string name="design_swipe_menu_remove_admin">Remove the administrator role.</string>
+    <string name="design_swipe_menu_add_admin">Appoint as admin.</string>
+</resources>

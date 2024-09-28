@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retail_views_bonus_button_view_exceeded_value_error_text">La valeur dépasse le maximum autorisé</string>
+    <string name="retail_views_bonus_button_view_zero_value_error_text">Entrez une valeur supérieure à zéro</string>
+</resources>

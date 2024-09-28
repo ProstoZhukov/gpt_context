@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="red_button_cloud_alert_message">Toutes les informations seront temporairement masquées. Seuls les \"Employés\" avec noms et numéros de téléphone seront conservés.</string>
+    <string name="red_button_cloud_alert_title">Masquer les données&#160;?</string>
+    <string name="red_button_code_again">Récupérez le code</string>
+    <string name="red_button_message_pin_close">Rappelez-vous le code PIN, pour une restauration ultérieure de l\'accès au cloud</string>
+    <string name="red_button_message_pin_confirmation">Entrez à nouveau le code PIN</string>
+    <string name="red_button_message_pin_open">Si vous avez oublié le code PIN, contactez votre responsable</string>
+    <string name="red_button_network_error">Pas de connexion réseau</string>
+    <string name="red_button_password_sent_on_phone_template">Le code a été envoyé au numéro %1$s</string>
+    <string name="red_button_repeat_through">Répéter jusqu\'à %s</string>
+    <string name="red_button_stub_subtitle">Déchargez l\'application et ouvrez-la à nouveau.</string>
+    <string name="red_button_stub_title_close">Les données seront masquées après le rechargement de l\'application</string>
+    <string name="red_button_stub_title_open">L\'accès aux données sera rendu après le redémarrage de l\'application</string>
+    <string name="red_button_stub_toolbar_text">Réglages</string>
+    <string name="red_button_title_close">Fermer les données&#160;?</string>
+    <string name="red_button_title_close_progress">Les données se ferment</string>
+    <string name="red_button_title_open">Données ouvertes</string>
+    <string name="red_button_title_open_progress">Les données s\'ouvrent</string>
+    <string name="red_button_title_pin_confirmation">Confirmer le code PIN</string>
+    <string name="red_button_title_pin_off">Entrez le code PIN</string>
+    <string name="red_button_title_pin_on">Pensez à votre NIP</string>
+    <string name="red_button_title_sms">Entrez le code SMS</string>
+    <string name="red_button_uu_alert_message">Tous les documents, opérations et rapports sur l\'organisation \"Management Accounting\" seront temporairement cachés. D\'après les actes de droit commun. personnes aucun changement ne se produira.</string>
+</resources>

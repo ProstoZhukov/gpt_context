@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communication_decl_blocked_user_content_text">Η είσοδος είναι κρυφή</string>
+    <string name="communication_decl_conversation_information_filter_media">Μεσο ΜΑΖΙΚΗΣ ΕΝΗΜΕΡΩΣΗΣ</string>
+    <string name="communication_decl_conversation_information_filter_docs">Εγγραφα</string>
+</resources>

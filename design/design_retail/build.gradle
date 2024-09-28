@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.retail"
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':design_retail_views')
+}

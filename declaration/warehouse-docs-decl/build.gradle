@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.wrhdoc_decl"
+}
+
+dependencies {
+    api project(':main_screen_decl')
+    api project(':settings-screen-decl')
+    api project(':list')
+
+    implementation project(':plugin_struct')
+    implementation project(':wizard')
+
+    implementation libs.android.appcompat
+    implementation libs.rx.java
+}

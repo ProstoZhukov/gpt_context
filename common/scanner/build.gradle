@@ -1,0 +1,77 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBuildConfigGeneration()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.scanner"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions.unitTests.all {
+        testLogging {
+            events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            exceptionFormat 'full'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':communication-decl')
+    implementation project(':modalwindows')
+    implementation project(":design")
+    implementation project(":camera")
+    implementation project(":mvp")
+    implementation project(":mvp_extensions")
+    implementation project(':base_components')
+    implementation project(':commonviews')
+    implementation project(':design_dialogs')
+    implementation project(':design_files_picker')
+    implementation project(':text_span')
+    implementation project(':toolbar')
+    implementation project(':design_view_ext')
+    implementation project(':design_notification')
+    implementation project(':design_menu')
+    api project(':storage')
+    implementation project(':verification-decl')
+    implementation project(':edo-decl')
+    implementation project(':design_progress')
+
+    implementation project(':controller')
+
+    implementation "com.google.android:flexbox:$rootProject.ext.flexboxVersion"
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "me.relex:photodraweeview:$rootProject.ext.photodraweeviewVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+
+    //processors
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+}

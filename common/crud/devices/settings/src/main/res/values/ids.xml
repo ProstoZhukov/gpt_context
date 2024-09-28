@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Base item models-->
+    <item name="settings_device_type_folder_id" type="id"/>
+    <item name="settings_device_type_item_id" type="id"/>
+    <item name="settings_sales_point_folder_id" type="id"/>
+    <item name="settings_sales_point_item_id" type="id"/>
+    <item name="settings_sales_point_bread_crumb_id" type="id"/>
+    <item name="settings_sales_point_text_separator" type="id"/>
+    <item name="settings_workplace_item" type="id"/>
+    <item name="settings_workplace_stub_item" type="id"/>
+</resources>

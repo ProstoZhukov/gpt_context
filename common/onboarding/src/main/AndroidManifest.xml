@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+     Начиная с 30 Api, система ограничивает видимость установленных пакетов
+     на устройстве. В связи с этим необходимо явно указывать те Intent'ы,
+     которые могут потребоваться приложению в процессе работы.
+
+     https://developer.android.com/training/package-visibility?hl=ru
+    -->
+    <queries>
+        <intent>
+            <!-- UserStory: пользователь выполняет открытие ссылки в стороннем приложении. -->
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+
+        <intent>
+            <!-- UserStory: пользователь выполняет открытие ссылки в стороннем приложении. -->
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+
+    <application android:allowBackup="false">
+
+        <activity
+            android:name="ru.tensor.sbis.onboarding.ui.OnboardingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="${applicationId}.ONBOARDING_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

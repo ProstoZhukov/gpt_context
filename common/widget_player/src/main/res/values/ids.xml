@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="widget_player_view_position" type="id"/>
+    <item name="widget_player_view_widget" type="id"/>
+    <item name="widget_player_root_widget" type="id"/>
+    <item name="widget_player_attached_widgets" type="id"/>
+</resources>

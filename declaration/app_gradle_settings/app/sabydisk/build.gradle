@@ -1,0 +1,55 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'rootproject-cfg-plugin'
+apply plugin: 'social-integration'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableTaskCounterCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableDokkaCfg()
+    cfg.enableKaptSubprojectsCfg()
+    cfg.enableSabyLinkCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableTaskFilterCfg()
+    }
+}
+
+project.ext {
+    productName = "SabyDisk"
+    applicationId = "ru.tensor.saby.disk"
+
+    sabyLinks.setup { set ->
+        set.component = "${applicationId}.LaunchActivity"
+        set.docViewFeature = true
+        set.enableLinkDiskDoc = true
+        set.eSignFeature = true
+        set.enableLinkSbisPageLink = true
+    }
+
+    enableBuildStatistic = true
+
+    // Тип AccountManager для AppBundle приложений
+    accountType = AndroidAccountManager.SABY_BUNDLE_ACCOUNT.type
+}
+
+
+// Настройки соц. сетей
+socialServices {
+    yandex = yandexKeyUniversal("a64cb76d4ee94505aacc7d8c7e935935")
+    VK = vkKey("51983852", "L1CY8av8H46FgxppqPvP")
+    appleEnabled = true
+    esiaEnabled = true
+    googleEnabled = true
+    msal = msalConfig(
+            file("app/src/debug/res/raw/auth_msal_config.json", PathValidation.EXISTS),
+            file("app/src/release/res/raw/auth_msal_config.json", PathValidation.EXISTS)
+    )
+}
+
+rootProject.ext {
+    platformCoreLibrary = "sbis-app-controller"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

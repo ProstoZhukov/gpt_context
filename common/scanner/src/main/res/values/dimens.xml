@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Document Scanner-->
+    <dimen name="document_scanner_toolbar_padding">8dp</dimen>
+    <dimen name="document_scanner_single_snapshot_button_size">76dp</dimen>
+    <dimen name="document_scanner_multi_snapshot_button_size">56dp</dimen>
+    <dimen name="document_scanner_multi_snapshot_button_padding">3dp</dimen>
+    <dimen name="document_scanner_bottom_content_padding">@dimen/document_scanner_toolbar_padding</dimen>
+    <dimen name="document_scanner_bottom_button_padding">4dp</dimen>
+    <dimen name="document_scanner_toolbar_icon_size">30dp</dimen>
+    <dimen name="document_scanner_bottom_toolbar_icon_size">40dp</dimen>
+    <dimen name="document_snapshot_round_stroke_width">2dp</dimen>
+    <dimen name="document_scanner_last_snapshot_preview_size">52dp</dimen>
+    <dimen name="document_scanner_multi_snapshot_button_text_size">18dp</dimen>
+
+    <!-- Saving scanned images -->
+    <dimen name="scanned_images_list_spacing">14dp</dimen>
+    <dimen name="scanned_images_list_item_checkbox_size">40dp</dimen>
+    <dimen name="scanned_images_list_item_checkbox_margin">6dp</dimen>
+    <dimen name="scanned_images_list_item_checkbox_padding">4dp</dimen>
+    <dimen name="scanned_images_saving_method_menu_width">270dp</dimen>
+
+</resources>

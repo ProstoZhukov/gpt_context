@@ -1,0 +1,69 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+customizeBuildScript(settings) { bs, prjct ->
+    bs.dependencies { handler ->
+        handler.classpath prjct.deps.greendao.plugin
+    }
+}
+
+def appName = "business"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "barcodereader",
+        "business-components",
+        "calendar",
+        "catalog",
+        "communicator",
+        "crm",
+        "crypto",
+        "declaration",
+        "design",
+        "disk",
+        "common",
+        "edo",
+        "employee",
+        "map",
+        "notification",
+        "profile",
+        "reporting",
+        "videocall",
+        "video-monitoring"
+)
+
+include ':app', ':controller'
+
+includeControllerSources(settings, appName)
+
+splitAppByRegion(settings, appName) {
+    ru {
+        appConfig {
+            applicationId = "ru.tensor.sbis.business"
+            accountType = AndroidAccountManager.SBIS_ACCOUNT.type
+        }
+
+        rootProjectConfig {
+            apply plugin: 'social-integration'
+
+            // Настройки соц. сетей
+            socialServices {
+                yandex = yandexKeyUniversal("0bf7fffc56c7408895230584988f523b")
+                VK = vkKey("51983823", "jdhhIhYZ5PvHVgF2P8Kj")
+                esiaEnabled = true
+                googleEnabled = true
+            }
+        }
+    }
+    kz {
+        appConfig {
+            applicationId = "kz.setty.business"
+            accountType = AndroidAccountManager.SETTY_BUNDLE_ACCOUNT.type
+        }
+    }
+}

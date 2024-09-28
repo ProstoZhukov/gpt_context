@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ru.tensor.sbis.design.folders.FoldersView
+            android:id="@+id/folders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/move_to_folder_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Move To Folder"/>
+    </LinearLayout>
+
+    <ru.tensor.sbis.design_dialogs.movablepanel.MovablePanel
+        android:id="@+id/more_folders_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:focusable="true"
+        app:MovablePanel_contentContainerId="@+id/more_folders_container"
+        app:MovablePanel_shadowBackgroundEnabled="false"
+        tools:visibility="gone"/>
+</FrameLayout>

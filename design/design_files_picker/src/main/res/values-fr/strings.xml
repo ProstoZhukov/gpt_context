@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="files_picker_panel_header_button_title">Annuler</string>
+    <string name="files_picker_panel_footer_button_title">Ajouter</string>
+    <string name="files_picker_panel_header_title">Sélectionné %d</string>
+    <plurals name="files_picker_selection_limit_message">
+        <item quantity="one">Vous ne pouvez pas sélectionner plus %d fichier</item>
+        <item quantity="many">Vous ne pouvez pas sélectionner plus de %d fichiers</item>
+        <item quantity="other">Vous ne pouvez pas sélectionner plus de %d fichiers</item>
+    </plurals>
+</resources>

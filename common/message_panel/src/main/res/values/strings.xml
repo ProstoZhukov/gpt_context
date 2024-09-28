@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_panel_channel_private">Private channel</string>
+    <string name="message_panel_chat_add_participants_failure">Failed to add members.</string>
+    <string name="message_panel_attachment_files_size_limit">File size exceeds the limit of 1 GB</string>
+    <string name="message_panel_attachment_each_file_size_limit">Each of your files exceed the limit of 1 GB</string>
+    <string name="message_panel_attachment_some_files_size_limit">Some of your files exceed the limit of 1 GB</string>
+    <string name="message_panel_all_files_already_attached">Files are already attached</string>
+    <string name="message_panel_some_files_already_attached">Some of your files are already attached</string>
+    <string name="message_panel_attachment_upload_error">Error uploading attachments.</string>
+    <string name="message_panel_selected_message_action_delete_from_everyone">Delete for all</string>
+    <string name="message_panel_selected_message_action_delete_from_archive">Delete for me</string>
+    <string name="message_panel_delete_dialog_forever">Permanently delete all messages in this dialog?</string>
+    <string name="message_panel_editing_message_title">Edit</string>
+
+    <plurals name="message_panel_chat_participants">
+        <item quantity="zero">No participants</item>
+        <item quantity="one">%1$d participant</item>
+        <item quantity="two">%1$d participants</item>
+        <item quantity="few">%1$d participants</item>
+        <item quantity="many">%1$d participants</item>
+        <item quantity="other">%1$d participants</item>
+    </plurals>
+
+    <string name="message_panel_document_signing_action_sign">Sign</string>
+    <string name="message_panel_document_signing_action_request">Request signature</string>
+    <string name="message_panel_document_signing_action_sign_and_request">Sign and request a signature</string>
+    <string name="message_panel_signatures_list_title_my_certificates">My signatures</string>
+    <string name="message_panel_action_reject_signature">Decline</string>
+    <string name="message_panel_action_accept_signature">Sign</string>
+    <string name="message_panel_comment_edit_message">Message can no longer be edited</string>
+    <string name="message_panel_error_data_receive">Error receiving data</string>
+    <string name="message_panel_error_send_message">Error sending message</string>
+    <string name="message_panel_to_many_attachments">Too many attachments for one message.</string>
+
+    <string name="recorder_hint_message">Hold to record</string>
+</resources>

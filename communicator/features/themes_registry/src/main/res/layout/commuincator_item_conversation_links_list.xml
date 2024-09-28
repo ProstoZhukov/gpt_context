@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.themes_registry.ui.communication.conversations.information.ui.links_list.data.ConversationLinksListViewModelBindingModel"/>
+    </data>
+
+    <ru.tensor.sbis.communicator.themes_registry.ui.communication.conversations.information.ui.links_list.ui.LinkItemView
+        android:id="@+id/communicator_link_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="?offset_m"
+        android:layout_marginBottom="?offset_3xs"
+        android:text="@{viewModel.link}"
+        android:onLongClick="@{(v) -> viewModel.onLongClick(v)}"
+        app:setConvertAction="@{viewModel.convertAction}"/>
+</layout>

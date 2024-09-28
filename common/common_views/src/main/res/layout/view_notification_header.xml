@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName"
+    tools:layout_height="?inlineHeight_m"
+    tools:layout_width="match_parent"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <ViewStub
+        android:id="@+id/stub_icon"
+        style="@style/common_views_NotificationHeaderViewIconStyle"
+        android:inflatedId="@+id/header_icon_view"/>
+
+    <ru.tensor.sbis.common_views.notification.NotificationDateView
+        android:id="@+id/common_views_date_view"
+        style="@style/RegularStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/common_views_header_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="?offset_m"
+        tools:text="16 мая"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/common_views_header_text_view"
+        style="@style/RegularStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toStartOf="@id/common_views_date_view"
+        android:layout_toEndOf="@id/header_icon_view"
+        android:ellipsize="none"
+        android:fadingEdgeLength="@dimen/gradient_size"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:requiresFadingEdge="horizontal"
+        android:singleLine="true"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="?fontSize_m_scaleOff"
+        tools:ignore="SpUsage"
+        tools:layout_alignBottom="@id/header_icon_view"
+        tools:layout_alignTop="@id/header_icon_view"
+        tools:text="Ростелеком, ОАО"/>
+
+</merge>

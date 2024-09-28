@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.main_screen_decl"
+
+    lintOptions {
+        disable 'GradleDependency', 'TrustAllX509TrustManager'
+    }
+}
+
+dependencies {
+    api project(":common")
+    api project(":navigation")
+    api project(":design")
+    api project(":base_components")
+    implementation project(":design_buttons")
+    api project(":design_logo")
+    api project(":input_view")
+    api project(":design_top_navigation")
+    api project(":design_profile")
+
+    api "androidx.appcompat:appcompat:$rootProject.ext.appCompatVersion"
+    api "androidx.savedstate:savedstate:$rootProject.ext.savedStateVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$rootProject.ext.kotlinxCoroutinesCoreVersion"
+}

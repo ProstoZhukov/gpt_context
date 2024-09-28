@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_views_document_preview_load_error">加载数据时出错</string>
+    <string name="common_views_document_preview_offline_error_pre_clickable_text">检查您的互联网连接并尝试</string>
+    <string name="common_views_document_preview_offline_error_clickable_text">更新页面</string>
+</resources>

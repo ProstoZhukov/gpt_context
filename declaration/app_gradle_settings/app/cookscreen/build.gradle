@@ -1,0 +1,22 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'rootproject-cfg-plugin'
+
+/** Инициализация Root Project (не App!). */
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableKaptSubprojectsCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableTaskFilterCfg()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+rootProject.ext {
+    base_app_components = [
+            navx: "OFF"
+    ]
+}

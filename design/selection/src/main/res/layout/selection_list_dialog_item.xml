@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/selection_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selectable_item_bg_white"
+        android:paddingBottom="@dimen/date_header_separator_margin_top">
+
+        <include
+            android:id="@+id/selection_person_info_container"
+            layout="@layout/selection_list_dialog_person_info"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/selection_message_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selection_person_name_container"
+            android:layout_alignStart="@id/selection_person_name_container"
+            android:layout_marginEnd="@dimen/selection_dialog_item_content_end_padding">
+
+            <ru.tensor.sbis.design.counters.sbiscounter.SbisCounter
+                android:id="@+id/selection_unread_message_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <RelativeLayout
+                android:id="@+id/selection_document_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/selection_unread_message_count"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/selection_document_icon"
+                    style="@style/MobileFontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/selection_document_name"
+                    android:layout_alignParentStart="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingEnd="@dimen/selection_dialog_item_i_am_sender_end_margin"
+                    android:scrollbars="none"
+                    android:text="@string/design_mobile_icon_document"
+                    android:textColor="@color/text_color_accent_1"
+                    android:textSize="@dimen/size_caption1_scaleOff"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry,SpUsage"/>
+
+                <ru.tensor.sbis.common_views.HighlightedTextView
+                    android:id="@+id/selection_document_name"
+                    style="@style/RegularStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/selection_dialog_item_attachment_spacing_margin"
+                    android:layout_marginEnd="@dimen/selection_dialog_item_document_icon_end_margin"
+                    android:layout_toEndOf="@id/selection_document_icon"
+                    android:focusable="false"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:scrollbars="none"
+                    android:textColor="@color/selection_dialog_message_text_color"
+                    android:textSize="@dimen/size_body1_scaleOff"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/selection_master_message_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/selection_document_container"
+                app:layout_constraintEnd_toStartOf="@id/selection_unread_message_count"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selection_message_i_am_author"
+                    style="@style/MessagesListItem.RegularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:paddingEnd="@dimen/selection_dialog_item_i_am_sender_end_margin"
+                    android:scrollbars="none"
+                    android:text="@string/selection_dialog_relevant_message_i_am_author"
+                    android:textColor="@color/text_color_accent_1"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry"
+                    tools:visibility="visible"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/selection_message_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ru.tensor.sbis.common_views.HighlightedTextView
+                        android:id="@+id/subtitle"
+                        style="@style/MessagesListItem.RegularText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/selection_dialog_item_content_end_padding"
+                        android:focusable="false"
+                        android:scrollbars="none"
+                        android:textColor="@color/text_color_black_2"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Message text"/>
+
+                    <TextView
+                        android:id="@+id/selection_service_type"
+                        style="@style/MessagesListItem.RegularText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/selection_dialog_item_content_end_padding"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:maxLines="2"
+                        android:scrollbars="none"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subtitle"
+                        tools:text="Service message"
+                        tools:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/selection_socnet_third_line"
+                        style="@style/MessagesListItem.RegularText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/selection_dialog_item_content_end_padding"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:scrollbars="none"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/selection_service_type"
+                        tools:text="Socnet third line text"/>
+
+                    <ru.tensor.sbis.attachments.ui.view.register.AttachmentsView
+                        android:id="@+id/selection_attachment_previews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/selection_attachment_margin_top"
+                        android:layout_marginEnd="@dimen/selection_dialog_item_content_end_padding"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/selection_socnet_third_line"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</layout>

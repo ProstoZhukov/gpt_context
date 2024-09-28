@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.crm.conversation.reassing_operator.another_operator.mapper.CRMAnotherOperatorViewModelBinding"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ru.tensor.sbis.design.profile.person.PersonView
+            android:id="@+id/crm_operator_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="?offset_s"
+            android:paddingVertical="?offset_xs"
+            app:PersonView_size="m"
+            app:dataOrGone="@{viewModel.personData}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_operator_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{viewModel.name}"
+            android:textColor="?textColor"
+            android:textSize="?fontSize_2xl_scaleOn"
+            android:paddingTop="?offset_m"
+            android:paddingBottom="?offset_2xs"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/crm_operator_position"
+            app:layout_constraintStart_toEndOf="@+id/crm_operator_photo"
+            app:layout_constraintEnd_toStartOf="@+id/crm_operator_consultation_counter"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_operator_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{viewModel.position}"
+            android:textColor="?readonlyTextColor"
+            android:textSize="?fontSize_l_scaleOn"
+            android:paddingBottom="?offset_2xs"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/crm_operator_photo"
+            app:layout_constraintTop_toBottomOf="@+id/crm_operator_name"
+            app:layout_constraintEnd_toStartOf="@+id/crm_operator_consultation_counter"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/crm_operator_consultation_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.consultationsCount}"
+            android:textColor="?labelIconColor"
+            android:textSize="?iconSize_s"
+            android:paddingHorizontal="?offset_m"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

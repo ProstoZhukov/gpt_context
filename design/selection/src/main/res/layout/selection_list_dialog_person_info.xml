@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true">
+
+    <merge>
+
+        <ru.tensor.sbis.design.profile.personcollage.PersonCollageView
+            android:id="@+id/selection_photo_collage_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/selection_dialog_item_persons_photo_margin_start"
+            android:layout_marginEnd="@dimen/list_person_photo_view_margin_right"
+            android:focusable="true"
+            android:touchscreenBlocksFocus="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@id/selection_person_name_container"
+            app:PersonCollageView_size="m"
+            tools:visibility="visible"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/selection_person_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_padding_top"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/selection_photo_collage_view"
+            android:orientation="horizontal">
+
+            <ru.tensor.sbis.common_views.HighlightedTextView
+                android:id="@+id/title"
+                style="@style/MessagesListItem.HeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/selection_dialog_item_person_name_end_margin"
+                android:includeFontPadding="false"
+                android:textColor="@color/text_color_black_1"
+                android:textSize="@dimen/size_title3_scaleOn"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/selection_person_company_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Lorem ipsum"/>
+
+            <!-- Невидимый ImageView используется здесь для выравнивания иконок
+                по базовой линии с дополнительным отступом -->
+            <ImageView
+                android:id="@+id/selection_person_name_baseline"
+                android:layout_width="@dimen/selection_dialog_item_person_name_baseline_size"
+                android:layout_height="@dimen/selection_dialog_item_person_name_baseline_size"
+                android:baselineAlignBottom="true"
+                android:visibility="invisible"
+                app:layout_constraintBaseline_toBaselineOf="@+id/title"
+                app:layout_constraintStart_toEndOf="@+id/title"
+                tools:ignore="ContentDescription"/>
+
+            <Space
+                android:id="@+id/selection_person_name_baseline_with_padding"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/selection_dialog_item_person_name_baseline_space_height"
+                app:layout_constraintStart_toEndOf="@+id/title"
+                app:layout_constraintTop_toBottomOf="@+id/selection_person_name_baseline"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/selection_person_company_icon"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:scrollbars="none"
+                android:text="@string/design_mobile_icon_menu_contractors"
+                android:textColor="@color/palette_color_black3"
+                android:textSize="@dimen/size_title2_scaleOff"
+                android:visibility="gone"
+                android:layout_marginEnd="@dimen/selection_dialog_item_person_name_end_margin"
+                android:paddingBottom="@dimen/selection_dialog_item_company_icon_padding_bottom"
+                app:layout_constraintStart_toEndOf="@+id/title"
+                app:layout_constraintEnd_toStartOf="@id/selection_unread_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/selection_person_name_baseline_with_padding"
+                tools:visibility="visible"
+                tools:ignore="SpUsage"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/MobileFontStyle"
+                android:id="@+id/selection_unread_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:gravity="center"
+                android:paddingTop="@dimen/selection_dialog_item_date_icon_padding_top"
+                android:scrollbars="none"
+                android:text="@string/design_mobile_icon_message_was_read"
+                android:textSize="@dimen/size_body2_scaleOff"
+                android:visibility="gone"
+                app:layout_constraintBaseline_toBaselineOf="@+id/selection_dialog_item_date_header"
+                app:layout_constraintEnd_toStartOf="@id/selection_dialog_item_date_header"
+                tools:visibility="visible"
+                tools:ignore="SpUsage"/>
+
+            <ru.tensor.sbis.common_views.date.DateHeaderView
+                android:id="@+id/selection_dialog_item_date_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/selection_dialog_date_header_view_margin_end"
+                app:layout_constraintBaseline_toBaselineOf="@+id/selection_person_name_baseline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:wrap_vertically="true"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </merge>
+
+</layout>

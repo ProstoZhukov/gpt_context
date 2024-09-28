@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Drop Shadow Stack for ContactList -->
+    <item>
+        <shape>
+            <padding android:bottom="1dp" />
+            <solid android:color="#00CCCCCC" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="1dp" />
+            <solid android:color="#04CCCCCC" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="1dp" />
+            <solid android:color="#08CCCCCC" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="1dp" />
+            <solid android:color="#12CCCCCC" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="1dp" />
+            <solid android:color="#20CCCCCC" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="1dp" />
+            <solid android:color="#30CCCCCC" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="1dp" />
+            <solid android:color="#50CCCCCC" />
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item>
+        <shape>
+            <solid android:color="?backgroundColor" />
+        </shape>
+    </item>
+
+</layer-list>

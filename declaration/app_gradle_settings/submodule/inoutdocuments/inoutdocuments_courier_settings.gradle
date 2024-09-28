@@ -1,0 +1,2 @@
+include ":inout-decl"
+project(":inout-decl").projectDir = new File(inoutdocumentsDir, "inout-decl")

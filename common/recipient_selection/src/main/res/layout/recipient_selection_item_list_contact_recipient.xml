@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/person_contact_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/recipients_selection_person_item_height"
+    android:background="@drawable/selectable_item_bg_white">
+
+    <ru.tensor.sbis.design.profile.person.PersonView
+        android:id="@+id/person_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/recipients_selection_middle_margin"
+        android:layout_marginBottom="@dimen/recipients_selection_item_padding"
+        android:layout_marginTop="@dimen/recipients_selection_item_padding"
+        app:layout_constraintBottom_toTopOf="@+id/recipient_item_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:PersonView_size="m"
+        tools:layout_height="55dp"
+        tools:layout_width="55dp"/>
+
+    <TextView
+        android:id="@+id/contact_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/recipients_selection_title_margin"
+        android:layout_marginEnd="@dimen/recipients_selection_title_margin"
+        android:layout_marginStart="@dimen/recipients_selection_middle_margin"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_color_accent_1"
+        android:textSize="@dimen/size_title2_scaleOn"
+        app:layout_constraintBottom_toTopOf="@+id/contact_subtitle"
+        app:layout_constraintEnd_toStartOf="@+id/checkbox_container"
+        app:layout_constraintStart_toEndOf="@+id/person_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Person Surnameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"/>
+
+    <TextView
+        android:id="@+id/contact_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/recipients_selection_title_margin"
+        android:layout_marginStart="@dimen/recipients_selection_middle_margin"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_color_black_3"
+        android:textSize="@dimen/size_body2_scaleOn"
+        app:layout_constraintBottom_toTopOf="@+id/recipient_item_separator"
+        app:layout_constraintEnd_toStartOf="@+id/checkbox_container"
+        app:layout_constraintStart_toEndOf="@+id/person_photo"
+        app:layout_constraintTop_toBottomOf="@+id/contact_title"
+        tools:text="Subtitleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"/>
+
+    <FrameLayout
+        android:id="@+id/checkbox_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/recipients_selection_person_checkbox_bottom_padding"
+        android:paddingEnd="@dimen/recipients_selection_big_margin"
+        android:paddingLeft="@dimen/recipients_selection_big_margin"
+        android:paddingRight="@dimen/recipients_selection_big_margin"
+        android:paddingStart="@dimen/recipients_selection_big_margin"
+        android:paddingTop="@dimen/recipients_selection_big_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/contact_title"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1">
+
+        <ImageView
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/recipients_selection_item_checkbox_width"
+            android:layout_height="@dimen/recipients_selection_item_checkbox_height"
+            android:contentDescription="@null"
+            android:visibility="visible"
+            tools:src="@drawable/minus_checkbox_icon"/>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/recipient_item_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_separator_size"
+        android:background="@color/palette_alpha_color_black1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:background="@color/text_color_black_1"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

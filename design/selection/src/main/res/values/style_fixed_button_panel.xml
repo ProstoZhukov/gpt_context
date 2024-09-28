@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SelectionFixedButtonPanel">
+        <item name="android:background">@drawable/selectable_item_bg_white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="SelectionFixedButtonPanelIcon" parent="MobileFontStyle">
+        <item name="android:textColor">?secondaryIconColor</item>
+        <item name="android:textSize">?iconSize_6xl</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SelectionFixedButtonPanelText">
+        <item name="android:textColor">?secondaryTextColor</item>
+        <item name="android:textSize">?fontSize_xl_scaleOn</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<paths>
+    <cache-path
+        name="file_cache"
+        path="."/>
+     <!--
+    В документации этого не описано, но такой тэг позволяет FileProvider понимать путь до файлов на карте памяти
+    И не только до карты памяти, но и до всего в папке /storage/
+    Хак взят со StackOverflow и приложения Telegram
+    FileProvider.parsePathStrategy по такому тегу рассматривает корень файловой системы, к нему добавляем /storage/
+    -->
+    <!--suppress AndroidElementNotAllowed -->
+    <root-path
+        name="sd_card_files"
+        path="/storage/"/>
+    <external-path
+        name="external_files"
+        path="."/>
+    <files-path
+        name="docs"
+        path="."/>
+</paths>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="swipeable_layout_single_open_swipe_menu_on_screen_manager_tag" type="id"/>
+
+    <item name="swipeable_layout_close_menu_on_scroll_listener" type="id"/>
+    <item name="swipeable_layout_is_host_lifecycle_observer_set" type="id"/>
+    <item name="swipeable_layout_is_swipe_list_adapter_observer_set" type="id"/>
+    <item name="swipeable_layout_swipe_menu_item_view" type="id"/>
+    <item name="swipeable_layout_menu_container_view" type="id"/>
+    <item name="swipeable_layout_default_menu_item_pool" type="id"/>
+</resources>

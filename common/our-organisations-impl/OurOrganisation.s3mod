@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ui_module name="our-organisations-impl" id="ac58f3ec-25f8-416c-b40b-a2742ac85096"
+    kaizen_zone="2e0fb8a9-4ef3-4b43-8ca1-9fc9c54246aa" version="1.01">
+
+    <description>Релизация модуля наших организаций для МП СБИС Доки Android.</description>
+
+    <depends />
+
+    <load_after />
+
+    <parameters />
+
+    <resources />
+
+    <preload />
+
+</ui_module>

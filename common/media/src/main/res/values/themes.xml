@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <style name="SbisTubeActivityTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/palette_alpha_color_black7</item>
+        <item name="android:navigationBarColor">@color/palette_alpha_color_black7</item>
+        <item name="android:windowAnimationStyle">@style/SbisTubeActivityAnim</item>
+    </style>
+
+    <style name="SbisTubeActivityAnim">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/nothing</item>
+    </style>
+
+</resources>

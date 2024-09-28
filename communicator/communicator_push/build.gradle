@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+}
+
+android {
+    namespace "ru.tensor.sbis.communicator.push"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+    }
+}
+
+dependencies {
+    implementation project(':controller')
+    implementation project(':communicator_common')
+    implementation project(':communicator_design')
+    implementation project(':communicator_declaration')
+
+    // скрытая зависимость на уровне DI Component
+    implementation project(':contacts_declaration')
+
+    implementation project(':design')
+    implementation project(':design_profile')
+    implementation project(':common')
+    implementation project(':mvp')
+    implementation project(':base_components')
+    implementation project(':design_dialogs')
+
+    implementation project(':push-notification')
+    implementation project(':deeplink')
+    implementation project(':verification-decl')
+    implementation project(':calendar-decl')
+    implementation project(':edo-decl')
+    implementation project(':info-decl')
+    implementation project(':design_list_header')
+    implementation project(':cloud_view')
+    implementation project(':design_person_suggest')
+    implementation project(':attachments-decl')
+    implementation project(':design_message_panel_decl')
+    implementation project(':communication-decl')
+    implementation project(':design_notification')
+
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+}

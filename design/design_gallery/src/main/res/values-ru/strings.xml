@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_gallery_album_all_media">Все фото</string>
+    <string name="design_gallery_album_all_videos">Видео</string>
+    <string name="design_gallery_album_all_images">Изображения</string>
+    <string name="design_gallery_albums_title">Альбомы</string>
+    <string name="design_gallery_button_cancel_title">Отменить</string>
+    <string name="design_gallery_button_add_title">Добавить</string>
+    <string name="design_gallery_tab_title">Галерея</string>
+    <string name="design_gallery_camera_permission_in_settings_dialog_message">Для использования камеры необходимы разрешения.</string>
+    <string name="design_gallery_storage_permission_in_settings_dialog_message">Доступ к галерее необходим при отправке медиафайлов или при выборе фотографий и иных изображений.</string>
+    <string name="design_gallery_permission_in_settings_dialog_positive_btn">Открыть настройки</string>
+    <string name="design_gallery_camera_stub_message">Нажмите, чтобы разрешить доступ к камере</string>
+    <string name="design_gallery_storage_stub_message">Нажмите, чтобы разрешить доступ к галерее</string>
+    <string name="design_gallery_main_stub_message">Чтобы снимать и отправлять фото,\n включите доступ к камере и галерее на устройстве.</string>
+    <string name="design_gallery_main_stub_button_title">В настройки</string>
+    <string name="design_gallery_camera_open_error_message">Не удалось запустить системную камеру</string>
+    <string name="design_gallery_stub_empty_message">Галерея пуста</string>
+    <string name="design_gallery_compress_menu_item_compress">Сжимать файлы</string>
+    <string name="design_gallery_compress_menu_item_no_compress">Без сжатия</string>
+    <string name="design_gallery_size_limit_message">Размер файла превышает ограничение в %d МБ</string>
+</resources>

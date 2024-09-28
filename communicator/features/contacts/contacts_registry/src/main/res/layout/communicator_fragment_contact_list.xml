@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?backgroundColor"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ru.tensor.sbis.design.topNavigation.view.SbisTopNavigationView
+            android:id="@+id/communicator_sbis_toolbar"
+            style="@style/CommunicatorToolbarStyle"
+            android:layout_width="match_parent"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/communicator_folders_parent_fragment_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/communicator_sbis_toolbar">
+
+            <!-- scrollable content and headers -->
+            <ru.tensor.sbis.communicator.contacts_registry.ui.contactlist.ContactsListView
+                android:id="@+id/communicator_contacts_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:progressDelayMillis="@integer/progressShowingDefaultDelay"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            <ru.tensor.sbis.design.list_header.HeaderDateView
+                android:id="@+id/communicator_header_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_marginEnd="@dimen/communicator_header_date_margin_end"
+                app:HeaderDateView_dateViewMode="dateOnly"/>
+
+            <!-- folder title panel -->
+            <ru.tensor.sbis.design.breadcrumbs.CurrentFolderView
+                android:id="@+id/communicator_contact_list_folder_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:CurrentFolderView_backgroundColor="?unaccentedAdaptiveBackgroundColor"/>
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/communicator_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/input_view_appbar_with_dynamic_elevation_behavior"
+                app:scrollview_id="@id/communicator_contacts_list"
+                app:pinned_view_id="@id/communicator_contact_list_folder_title_layout">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/communicator_collapsing_toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                    <LinearLayout
+                        android:id="@+id/communicator_collapsing_toolbar_inner_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?backgroundColor"
+                        android:orientation="vertical">
+
+                        <!-- id не менять!!! -->
+                        <ru.tensor.sbis.design.view.input.searchinput.SearchInput
+                            android:id="@+id/search_filter_panel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:inputDelay="@integer/communicator_contact_list_search_input_delay"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <ru.tensor.sbis.design.toolbar.SbisButtonToolbarView
+                android:id="@+id/communicator_contact_check_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+                app:closeButtonVisible="true"
+                app:height="@dimen/bottom_actions_panel_height"
+                app:hideTextForTablet="false"
+                app:panelTheme="light"/>
+
+            <ru.tensor.sbis.design.buttons.SbisRoundButton
+                android:id="@+id/communicator_contact_navigation_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="@dimen/communicator_host_fragment_fab_margin"
+                android:layout_marginBottom="@dimen/communicator_host_fragment_fab_margin"
+                android:elevation="@dimen/fab_elevation"
+                android:visibility="invisible"
+                app:SbisRoundButton_icon="@string/design_mobile_icon_action_add"
+                app:SbisRoundButton_style="navigation"
+                app:layout_behavior="@string/navigation_fab_behavior_with_bottom_navigation"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</layout>

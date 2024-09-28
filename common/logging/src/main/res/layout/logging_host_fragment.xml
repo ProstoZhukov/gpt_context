@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/LoggingFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:theme="@style/AppGlobalTheme">
+
+        <ru.tensor.sbis.design.topNavigation.view.SbisTopNavigationView
+            android:id="@+id/logging_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:SbisTopNavigation_showBackButton="true"/>
+
+        <FrameLayout
+            android:id="@+id/logging_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</layout>

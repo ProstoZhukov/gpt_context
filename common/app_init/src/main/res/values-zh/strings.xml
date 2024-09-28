@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_init_unknown_error">未知错误</string>
+    <string name="app_init_no_memory_button_title">关闭</string>
+    <string name="app_init_no_memory_details_msg">您的设备内存不足，请释放空间并重试</string>
+    <string name="app_init_no_memory_title_msg">没有记忆</string>
+    <string name="app_init_no_memory_toast_msg">没有记忆！请释放并重试</string>
+</resources>

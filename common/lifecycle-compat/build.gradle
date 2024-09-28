@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+}
+
+android {
+    namespace "androidx.lifecycle"
+}
+
+dependencies {
+    implementation "androidx.lifecycle:lifecycle-common-java8:${rootProject.ext.androidLifecycleCommon}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.androidLifecycleExtensions}"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:${rootProject.ext.androidLifecycleReactivestreams}"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:${rootProject.ext.androidLifecycleRuntime}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:${rootProject.ext.androidLifecycleViewmodel}"
+
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+}

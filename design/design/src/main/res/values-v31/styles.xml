@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Поддержка SplashScreenApi для версий Android >= 12 (31 api).
+
+        Оф. документация по миграции:
+        https://developer.android.com/guide/topics/ui/splash-screen/migrate
+
+        Приняли решение не использовать указанную в статье библиотеку, т.к.:
+        1. на текущий момент нет стабильной версии этой библиотеки.
+        2. она изменяет поведение SplashScreen для всех версий Android < 12.
+        3. при ее использовании "баг", который описан ниже проявится на всех
+           версиях Android < 12.
+
+        Существует "баг" с отображанием иконки приложения на SplashScreen,
+        который официально объявлен "фичей". Краткая выдержка:
+        "The splash screen icon won't be shown otherwise, that includes notifications, deeplinks, start from other applications."
+        https://issuetracker.google.com/issues/205021357?pli=1
+
+        Если на ваше приложение оформили ошибку с указанием, что на Android 12 при открытии
+        приложения одним из указанных выше способов не отображается иконка "СБИС", то можно
+        закрыть ее сославшись на указанный выше официальный issue.
+    -->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowSplashScreenBackground">?splashScreenBackgroundColor</item>
+        <item name="android:windowSplashScreenAnimatedIcon">?splashScreenLogo</item>
+        <item name="android:windowBackground">@drawable/design_splash</item>
+        <item name="android:statusBarColor">?splashScreenBackgroundColor</item>
+        <item name="android:navigationBarColor">?splashScreenBackgroundColor</item>
+    </style>
+
+    <style name="SplashThemeDark" parent="AppTheme">
+        <item name="splashScreenBackgroundColor">@color/splash_screen_background_color_dark</item>
+        <item name="splashScreenGradient">@drawable/splash_gradient_dark</item>
+        <item name="splashScreenLogo">@drawable/ic_sbis_artboard_default</item>
+
+        <item name="android:windowSplashScreenBackground">?splashScreenBackgroundColor</item>
+        <item name="android:windowSplashScreenAnimatedIcon">?splashScreenLogo</item>
+        <item name="android:windowBackground">@drawable/design_splash</item>
+        <item name="android:statusBarColor">?splashScreenBackgroundColor</item>
+        <item name="android:navigationBarColor">?splashScreenBackgroundColor</item>
+    </style>
+
+</resources>

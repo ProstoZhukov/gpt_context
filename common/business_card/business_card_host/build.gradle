@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableViewBindingCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.business_card_host"
+}
+
+dependencies {
+    implementation project(':controller')
+    implementation project(':common')
+    implementation project(':base_components')
+    implementation project(':business_card')
+    implementation project(':business_card_domain')
+    implementation project(':business_card_host_decl')
+    implementation project(':business_card_list')
+    implementation project(':mvi_extension')
+    implementation project(':viper')
+
+    implementation "com.google.dagger:dagger-android:$rootProject.ext.daggerVersion"
+
+    implementation "com.google.zxing:core:$rootProject.ext.zxingVersion"
+
+    //processors
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "androidx.core:core-ktx:$rootProject.ext.appCompatVersion"
+    implementation "androidx.fragment:fragment-ktx:$rootProject.ext.fragmentVersion"
+}

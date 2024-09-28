@@ -1,0 +1,56 @@
+include 'barcode-decl'
+project(':barcode-decl').projectDir = new File(declarationDir, "barcode-decl")
+
+include ':compositions_decl'
+project(':compositions_decl').projectDir = new File(declarationDir, "compositions-decl")
+
+include ':verification-decl'
+project(':verification-decl').projectDir = new File(declarationDir, "verification-decl")
+
+include ':android-ext-decl'
+project(':android-ext-decl').projectDir = new File(declarationDir, "android-ext-decl")
+
+include ':person-decl'
+project(':person-decl').projectDir = new File(declarationDir, "person-decl")
+
+include ':motivation-decl'
+project(':motivation-decl').projectDir = new File(declarationDir, "motivation-decl")
+
+include ':communication-decl'
+project(':communication-decl').projectDir = new File(declarationDir, "communication-decl")
+
+include ':retail-decl'
+project(':retail-decl').projectDir = new File(declarationDir, "retail-decl")
+
+include ':cashboxes-lite-decl'
+project(':cashboxes-lite-decl').projectDir = new File(declarationDir, "cashboxes-lite-decl")
+
+include ':loyalty-decl'
+project(':loyalty-decl').projectDir = new File(declarationDir, "loyalty-decl")
+
+include ':edo-decl'
+project(':edo-decl').projectDir = new File(declarationDir, "edo-decl")
+
+include ':info-decl'
+project(':info-decl').projectDir = new File(declarationDir, "info-decl")
+
+include ':toolbox-decl'
+project(':toolbox-decl').projectDir = new File(declarationDir, "toolbox-decl")
+
+include ':catalog-decl'
+project(':catalog-decl').projectDir = new File(declarationDir, "catalog-decl")
+
+include ':our-organisations-decl'
+project(':our-organisations-decl').projectDir = new File(declarationDir, "our-organisations-decl/")
+
+include ':viewer-decl'
+project(':viewer-decl').projectDir = new File(declarationDir, "viewer-decl")
+
+include ':video-monitoring-decl'
+project(':video-monitoring-decl').projectDir = new File(declarationDir, "video-monitoring-decl")
+
+include ':menu_composition_decl'
+project(':menu_composition_decl').projectDir = new File(declarationDir, 'menu_composition_decl')
+
+include ':motivation-decl'
+project(':motivation-decl').projectDir = new File(declarationDir, 'motivation-decl')

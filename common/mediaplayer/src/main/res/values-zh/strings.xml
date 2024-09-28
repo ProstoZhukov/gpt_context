@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="media_sbis_tube_unknown_error">无法播放媒体文件。</string>
+    <string name="media_sbis_tube_cleartext_traffic_not_permitted_error">由于安全策略，无法播放媒体。</string>
+    <string name="media_sbis_tube_denied_reading_external_storage">要播放，需要从设备读取文件的权限。</string>
+    <string name="media_sbis_tube_data_source_error">无法从源读取媒体。</string>
+    <string name="media_sbis_tube_unrecognized_data_source_error">不支持的媒体类型。</string>
+    <string name="media_sbis_tube_network_data_source_error">无法加载媒体文件\n请检查你的 Internet 连接。</string>
+    <string name="media_sbis_tube_querying_decoders_error">无法从设备请求媒体解码器。</string>
+    <string name="media_sbis_tube_no_secure_decoder_error">无法加载媒体文件\n您的设备没有为其提供安全解码器。</string>
+    <string name="media_sbis_tube_no_decoder_error">无法加载媒体文件\n您的设备没有为其提供解码器。</string>
+    <string name="media_sbis_tube_instantiating_decoder_error">无法为媒体文件创建解码器。</string>
+</resources>

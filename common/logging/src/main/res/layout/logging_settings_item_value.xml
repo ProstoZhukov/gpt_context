@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.logging.settings.model.OptionVm"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logging_bg_ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="?offset_m"
+        android:paddingTop="?offset_s"
+        android:paddingEnd="?offset_m"
+        android:paddingBottom="?offset_s"
+        tools:theme="@style/AppGlobalTheme">
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/logging_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="?offset_xs"
+            android:text="@{viewModel.optionName}"
+            android:textColor="?textColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/size_title2_scaleOn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/logging_current"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Минимальный"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/logging_current"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/design_mobile_icon_check"
+            android:textColor="?primaryIconColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/size_body1_scaleOn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:visibilityEqualsGone="@{viewModel.current}"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

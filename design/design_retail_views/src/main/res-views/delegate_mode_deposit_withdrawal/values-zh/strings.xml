@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retail_views_deposit_withdrawal_title">现金金额</string>
+    <string name="retail_views_deposit_withdrawal_deposit_button_text">订金</string>
+    <string name="retail_views_deposit_withdrawal_withdrawal_button_text">提取</string>
+</resources>

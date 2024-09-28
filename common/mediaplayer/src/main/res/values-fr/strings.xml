@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="media_sbis_tube_cleartext_traffic_not_permitted_error">Échec de la lecture du contenu multimédia en raison de la politique de sécurité.</string>
+    <string name="media_sbis_tube_data_source_error">Impossible de lire le média à partir de la source.</string>
+    <string name="media_sbis_tube_denied_reading_external_storage">Pour jouer, l\'autorisation de lire les fichiers de l\'appareil est requise.</string>
+    <string name="media_sbis_tube_instantiating_decoder_error">Échec de la création d\'un décodeur pour le fichier multimédia.</string>
+    <string name="media_sbis_tube_network_data_source_error">Échec du chargement du fichier multimédia\nVérifiez votre connexion Internet.</string>
+    <string name="media_sbis_tube_no_decoder_error">Échec du chargement du fichier multimédia\nVotre appareil ne fournit pas de décodeur pour celui-ci.</string>
+    <string name="media_sbis_tube_no_secure_decoder_error">Échec du chargement du fichier multimédia\nVotre appareil ne fournit pas de décodeur sécurisé pour celui-ci.</string>
+    <string name="media_sbis_tube_querying_decoders_error">Échec de la demande de décodeurs multimédias à partir de l\'appareil.</string>
+    <string name="media_sbis_tube_unknown_error">Impossible de lire le fichier multimédia.</string>
+    <string name="media_sbis_tube_unrecognized_data_source_error">Type de média non pris en charge.</string>
+</resources>

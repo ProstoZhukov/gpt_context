@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.mvi_extension"
+}
+
+dependencies {
+    def mviKotlinVersion = '3.2.1'
+    def essentyVersion = '1.0.0'
+
+    // MVI arch
+    debugApi "com.arkivanov.mvikotlin:mvikotlin-android-debug:$mviKotlinVersion"
+    debugApi "com.arkivanov.mvikotlin:mvikotlin-main-android-debug:$mviKotlinVersion"
+    debugApi "com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines-android-debug:$mviKotlinVersion"
+    debugApi "com.arkivanov.mvikotlin:rx-android-debug:$mviKotlinVersion"
+    debugApi "com.arkivanov.mvikotlin:mvikotlin-timetravel-android-debug:$mviKotlinVersion"
+    debugApi "com.arkivanov.mvikotlin:mvikotlin-logging-android-debug:$mviKotlinVersion"
+    debugApi "com.arkivanov.essenty:state-keeper-android-debug:$essentyVersion"
+
+    releaseApi "com.arkivanov.mvikotlin:mvikotlin-android:$mviKotlinVersion"
+    releaseApi "com.arkivanov.mvikotlin:mvikotlin-main-android:$mviKotlinVersion"
+    releaseApi "com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines-android:$mviKotlinVersion"
+    releaseApi "com.arkivanov.mvikotlin:rx-android:$mviKotlinVersion"
+    releaseApi "com.arkivanov.mvikotlin:mvikotlin-timetravel-android:$mviKotlinVersion"
+    releaseApi "com.arkivanov.mvikotlin:mvikotlin-logging-android:$mviKotlinVersion"
+    releaseApi "com.arkivanov.essenty:state-keeper-android:$essentyVersion"
+
+    // Android components
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.appCompatVersion"
+    implementation "androidx.fragment:fragment-ktx:$rootProject.ext.fragmentVersion"
+
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.ext.androidLifecycleViewmodel"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.ext.androidLifecycleRuntime"
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.ext.kotlinxCoroutinesCoreVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$rootProject.ext.kotlinxCoroutinesCoreVersion"
+
+    //RX
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+
+    // kotlin
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$rootProject.ext.kotlinVersion"
+}

@@ -1,0 +1,20 @@
+apply plugin: 'rootproject-cfg-plugin'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableKaptSubprojectsCfg()
+}
+
+project.ext {
+    productName = "demo"
+    applicationId = "ru.tensor.demo"
+    accountType = AndroidAccountManager.SBIS_ACCOUNT.type
+    network_native = [
+            controller: "OFF"
+    ]
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}

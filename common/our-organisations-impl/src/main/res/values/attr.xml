@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="FilterSearchTextView" tools:ignore="ResourceName">
+        <attr name="strcommon_highlight_color" format="color"/>
+
+        <!--Режим поиска.-->
+        <attr name="strcommon_highlight_search_mode" format="enum">
+            <!--Поиск всех вхождений подстроки в строке.-->
+            <enum name="SUBSTRING" value="0"/>
+            <!--Поиск по словам.-->
+            <enum name="BY_WORDS" value="1"/>
+            <!--Комплексный поиск, по умолчанию-->
+            <enum name="COMPLEX" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

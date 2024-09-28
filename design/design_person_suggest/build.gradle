@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.person_suggest"
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(":design")
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_profile')
+    implementation project(':design_utils')
+    implementation project(':input_view')
+    implementation project(':persons')
+    implementation project(':person-decl')
+    implementation project(':base_components')
+}

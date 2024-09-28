@@ -1,0 +1,5 @@
+include ':commonviews'
+project(':commonviews').projectDir = new File(settingsDir, 'module/common/common_views')
+
+include ':mvp_extensions'
+project(':mvp_extensions').projectDir = new File(settingsDir, 'module/common/mvp_extensions')

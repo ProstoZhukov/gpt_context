@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- StubView  -->
+    <string name="design_stub_view_no_messages_message">Начните общение первым</string>
+    <string name="design_stub_view_no_messages_details">Просто нажмите на плюс\nи выберите собеседника</string>
+
+    <string name="design_stub_view_no_contacts_message">Добавьте контакт</string>
+    <string name="design_stub_view_no_contacts_details">Просто нажмите на плюс\nи выберите из списка</string>
+
+    <string name="design_stub_view_no_news_message">Нет новостей</string>
+    <string name="design_stub_view_no_news_details">Рекомендуем вам подписаться\nна новости ваших друзей и коллег\nили новости групп</string>
+
+    <string name="design_stub_view_no_events_message">Запланируйте события</string>
+    <string name="design_stub_view_no_events_details">Нажмите на плюс и создайте\nсовещание или видеосовещание</string>
+    <string name="design_stub_view_no_events_details_clickable_1">совещание</string>
+    <string name="design_stub_view_no_events_details_clickable_2">видеосовещание</string>
+
+    <string name="design_stub_view_no_tasks_message">Все задачи выполнены</string>
+    <string name="design_stub_view_no_tasks_details">Создавайте задачи своим коллегам.\nДля этого достаточно выбрать\nисполнителя и описать суть</string>
+
+    <string name="design_stub_view_no_files_message">Список файлов пуст</string>
+    <string name="design_stub_view_no_files_details">Для добавления файлов\nнажмите на плюс</string>
+
+    <string name="design_stub_view_no_notifications_message">Нет уведомлений</string>
+    <string name="design_stub_view_no_notifications_details">Здесь будут показываться уведомления\nот государственных организаций,\nклиентов и ваших коллег</string>
+
+    <string name="design_stub_view_no_salary_data_message">Зарплата отсутствует</string>
+    <string name="design_stub_view_no_salary_data_details">Здесь будут отображаться данные о зарплате</string>
+
+    <string name="design_stub_view_page_not_found_message">Такой страницы нет</string>
+    <string name="design_stub_view_page_not_found_details">Возможно, она была удалена, или\nвы перешли по неверной ссылке</string>
+
+    <string name="design_stub_view_no_connection_message">Нет сети</string>
+    <string name="design_stub_view_no_connection_details">Ой, кажется пропало соединение.\nПопробуйте обновить страницу</string>
+    <string name="design_stub_view_no_connection_details_clickable">обновить страницу</string>
+
+    <string name="design_stub_view_service_unavailable_message">Извините, мы на техническом обслуживании</string>
+    <string name="design_stub_view_service_unavailable_details">Пожалуйста, повторите попытку позже</string>
+
+    <string name="design_stub_view_sbis_error_message">Что-то пошло не так</string>
+    <string name="design_stub_view_sbis_error_details">Мы уже знаем об этом и пытаемся\nисправить. Обновите страницу\nчерез некоторое время</string>
+    <string name="design_stub_view_sbis_error_details_clickable">Обновите страницу</string>
+
+    <string name="design_stub_view_no_search_results_message">Нет результатов</string>
+    <string name="design_stub_view_no_search_results_details">Попробуйте изменить\nпараметры поиска</string>
+
+    <string name="design_stub_view_no_cameras_results_message">Камеры не подключены</string>
+
+    <string name="design_stub_view_no_filter_results_message">Нет результатов</string>
+    <string name="design_stub_view_no_filter_results_details">Попробуйте изменить\nпараметры фильтрации</string>
+
+    <string name="design_stub_view_auth_social_message">SSO-аутентификация</string>
+
+    <string name="design_stub_view_touch_id_message">Face ID</string>
+
+    <string name="design_stub_view_no_permissions_message">Нет прав на просмотр</string>
+
+    <string name="design_stub_view_no_employees_message">Нет сотрудников</string>
+
+    <string name="design_stub_view_no_data_message">Нет данных</string>
+    
+    <string name="design_stub_view_technical_support_chats_message">Чаты техподдержки</string>
+    
+    <string name="design_stub_view_scanning_message">Сканирование</string>
+    
+    <string name="design_stub_view_no_geodata_message">Нет геоданных</string>
+    
+    <string name="design_stub_view_empty_message">Пусто</string>
+    
+    <string name="design_stub_view_no_reservation_message">Нет броней</string>
+    
+    <string name="design_stub_view_empty_list_message">Список пуст</string>
+    
+    <string name="design_stub_view_all_done_message">Все выполнено</string>
+    
+    <string name="design_stub_view_no_ready_meals_message">Нет готовых блюд</string>
+
+    <string name="design_stub_view_restart_app_message">Перезагрузите приложение</string>
+
+    <string name="design_stub_view_split_view_container_details">Выберите элемент из списка слева</string>
+
+    <!-- DataLoadingErrorStubView  -->
+    <string name="design_stub_view_data_loading_error_message">Не удалось получить данные. Проверьте подключение к сети</string>
+</resources>

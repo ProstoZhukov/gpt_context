@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FolderPathView">
+        <!-- Для стилизации фона и разделителя используются атрибуты CurrentFolderView -->
+
+        <!-- Должна ли отображаться иконка домика (для возврата в корень). По умолчанию - false -->
+        <attr name="FolderPathView_homeIconVisible" format="boolean"/>
+        <!-- Текст заголовка -->
+        <attr name="FolderPathView_title" format="string"/>
+        <!-- Должна ли иконка домика выравниваться по вертикальному центру. По умолчанию - false (выравнивается по базовой линии) -->
+        <attr name="FolderPathView_homeIconCenteredVertically" format="boolean"/>
+    </declare-styleable>
+
+</resources>

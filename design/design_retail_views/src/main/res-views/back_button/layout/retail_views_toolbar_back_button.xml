@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="backButtonConfig"
+            type="ru.tensor.sbis.design.retail_views.back_button.BackButtonConfig"/>
+
+        <import type="ru.tensor.sbis.design.R"/>
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/design_retail_views_back_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="?inlineHeight_m"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{() -> backButtonConfig.actionOnBackNavigationButton.invoke()}"
+        android:theme="@style/LargeDarkTheme"
+        app:cardCornerRadius="?sbisButtonCornerRadius"
+        app:cardElevation="?elevation_s"
+        app:setPressedStateAttrColor="@{R.attr.secondaryActiveColor}"
+        app:setDefaultStateAttrColor="@{R.attr.secondaryContrastBackgroundColorButton}"
+        app:visibleOrGone="@{backButtonConfig.backNavigationButtonVisible}">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/design_retail_views_back_button_icon"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/design_mobile_icon_arrow_narrow_left"
+                android:textSize="?iconSize_7xl"
+                android:textColor="?primaryColor"/>
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/design_retail_views_back_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingEnd="?offset_s"
+                android:textSize="?fontSize_2xl_scaleOff"
+                android:textColor="?textColor"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:resId="@{backButtonConfig.backNavigationButtonTitleRes}"
+                app:text="@{backButtonConfig.backNavigationButtonTitle}"
+                tools:text="Назад"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

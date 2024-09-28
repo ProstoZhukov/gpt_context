@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="communicator_support_consultation_list_text_color">@color/palette_color_black7</color>
+    <color name="communicator_support_consultation_list_date_color">@color/palette_color_gray4</color>
+    <color name="communicator_support_consultation_list_separator_color">@color/communicator_support_consultation_list_date_color</color>
+</resources>

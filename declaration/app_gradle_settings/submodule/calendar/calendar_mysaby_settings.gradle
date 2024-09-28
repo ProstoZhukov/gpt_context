@@ -1,0 +1,8 @@
+ext.calendar_dir = "calendar"
+apply from: "$calendarDir/settings_sabymy.gradle"
+
+include ':calendar_main_screen_addon'
+project(':calendar_main_screen_addon').projectDir = new File(calendarDir, "calendar_main_screen_addon")
+
+include ':expense_report'
+project(':expense_report').projectDir = new File(calendarDir, "expense_report")

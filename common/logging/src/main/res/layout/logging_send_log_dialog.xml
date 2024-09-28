@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:theme="@style/DefaultLightTheme">
+
+        <ru.tensor.sbis.design.checkbox.SbisCheckboxView
+            android:id="@+id/logging_confirmation_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?offset_3xs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/logging_confirmation_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="?offset_xs"
+            android:layout_marginEnd="?offset_xs"
+            android:text="@string/logging_confirmation_text"
+            android:textColor="?textColor"
+            android:textIsSelectable="false"
+            android:textSize="?fontSize_2xl_scaleOff"
+            app:layout_constraintStart_toEndOf="@id/logging_confirmation_checkbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/logging_total_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="?offset_m"
+            android:textColor="?unaccentedTextColor"
+            android:textIsSelectable="false"
+            android:textSize="?fontSize_2xl_scaleOff"
+            app:layout_constraintStart_toStartOf="@id/logging_confirmation_text"
+            app:layout_constraintTop_toBottomOf="@id/logging_confirmation_text"
+            tools:ignore="SpUsage"
+            tools:text="Выбрано 364 МБ"/>
+
+        <ru.tensor.sbis.design.buttons.SbisButton
+            android:id="@+id/logging_success_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginVertical="?offset_m"
+            app:SbisButton_style="primary"
+            app:SbisButton_size="s"
+            app:SbisButton_backgroundType="common"
+            app:SbisButton_title="@string/logging_confirmation_success"
+            app:layout_constraintTop_toBottomOf="@id/logging_total_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/logging_dismiss_button"/>
+
+        <ru.tensor.sbis.design.buttons.SbisButton
+            android:id="@+id/logging_dismiss_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:SbisButton_style="unaccented"
+            app:SbisButton_size="s"
+            app:SbisButton_backgroundType="common"
+            app:SbisButton_title="@string/logging_confirmation_dismiss"
+            app:layout_constraintTop_toTopOf="@id/logging_success_button"
+            app:layout_constraintStart_toEndOf="@id/logging_success_button"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

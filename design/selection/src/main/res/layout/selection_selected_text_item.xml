@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tensor.sbis.design.selection.ui.view.selecteditems.viewholder.view.SelectedItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/selection_selected_item_height"
+    android:layout_marginTop="?offset_3xs"
+    android:layout_marginEnd="?offset_s"
+    android:background="@drawable/selection_rounded_item_background"
+    android:paddingStart="?offset_st"
+    tools:viewBindingIgnore="true">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/SelectedItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/close_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Москва"/>
+
+    <TextView
+        android:id="@+id/close_icon"
+        style="@style/SelectedItemCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</ru.tensor.sbis.design.selection.ui.view.selecteditems.viewholder.view.SelectedItemView>

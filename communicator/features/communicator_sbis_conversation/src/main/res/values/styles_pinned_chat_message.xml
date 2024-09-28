@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CommunicatorPinnedChatMessageClearButton" parent="MobileFontStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/design_mobile_icon_close_for_nav_panel</item>
+        <item name="android:textSize">?iconSize_s</item>
+        <item name="android:textColor">?unaccentedIconColor</item>
+    </style>
+</resources>

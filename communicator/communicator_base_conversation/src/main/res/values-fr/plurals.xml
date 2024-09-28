@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <plurals name="communicator_participants_count">
+        <item quantity="one">%1$d participant</item>
+        <item quantity="many">%1$d participants</item>
+        <item quantity="other">%1$d participants</item>
+    </plurals>
+
+    <plurals name="communicator_typing">
+        <item quantity="one" tools:ignore="ImpliedQuantity">est en train d\'écrire</item>
+        <item quantity="many">sont en train de taper</item>
+        <item quantity="other">sont en train de taper</item>
+    </plurals>
+</resources>

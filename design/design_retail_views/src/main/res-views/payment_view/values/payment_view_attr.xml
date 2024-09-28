@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Установка темы для окна оплаты -->
+    <attr name="retailViewsPaymentViewTheme" format="reference"/>
+
+    <!-- Стиль для кнопки "Закрыть" -->
+    <attr name="retailViewsPaymentViewCloseButton" format="reference"/>
+    <!-- Стиль для кнопки "Тип оплаты" -->
+    <attr name="retailViewsPaymentViewPaymentTypeButton" format="reference"/>
+    <!-- Стиль для кнопок Contrast -->
+    <attr name="retailViewsPaymentViewContrastButton" format="reference"/>
+    <!-- Стиль для кнопок Secondary -->
+    <attr name="retailViewsPaymentViewSecondaryButton" format="reference"/>
+    <!-- Стиль для Round кнопок Secondary -->
+    <attr name="retailViewsPaymentViewSecondaryRoundButton" format="reference"/>
+    <!-- Стиль для кнопок в NumericView -->
+    <attr name="retailViewsPaymentViewPaleButton" format="reference"/>
+    <!-- Стиль для кнопок Default -->
+    <attr name="retailViewsPaymentViewSbisButtonStyleDefault" format="reference"/>
+    <!-- Стиль для кнопок Primary -->
+    <attr name="retailViewsPaymentViewSbisButtonStylePrimary" format="reference"/>
+    <!-- Стиль для кнопок Unaccented -->
+    <attr name="retailViewsPaymentViewSbisButtonStyleUnaccented" format="reference"/>
+    <!-- Стиль для кнопок скидок -->
+    <attr name="retailViewsPaymentViewSbisButtonStyleDiscount" format="reference"/>
+    <!-- Стиль для Round кнопок Default -->
+    <attr name="retailViewsPaymentViewSbisRoundButtonStyleDefault" format="reference"/>
+    <!-- Стиль для Round кнопок Primary -->
+    <attr name="retailViewsPaymentViewSbisRoundButtonStylePrimary" format="reference"/>
+    <!-- Стиль кнопки "Картой". -->
+    <attr name="retailViewsDoubleButtonPinkBtnStyle" format="reference"/>
+    <!-- Стиль двойной кнопки оплаты. -->
+    <attr name="retailViewsDoubleButtonOrangeBtnStyle" format="reference"/>
+
+    <!-- Атрибуты компонента [PaymentView] -->
+    <declare-styleable name="RetailViewsPaymentViewAttrs">
+        <attr name="retail_views_payment_view_theme" format="reference"/>
+
+        <!-- Режим работы модуля Оплата. -->
+        <attr name="retail_views_payment_view_mode" format="enum">
+            <!-- Аванс. -->
+            <enum name="advance" value="0"/>
+            <!-- Оплата кредита (долги). -->
+            <enum name="debt_credit" value="1"/>
+            <!-- Внесение/Изъятие. -->
+            <enum name="deposit_with_draw" value="2"/>
+            <!-- Оплата (предоплата/в кредит/нефискальная). -->
+            <enum name="payment" value="3"/>
+            <!-- Возврат. -->
+            <enum name="refund_payment" value="4"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

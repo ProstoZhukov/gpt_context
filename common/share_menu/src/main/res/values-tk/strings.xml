@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_menu_authorization_required_message">Hasaby&#x148;yza giri&#x148; we amaly ga&#xfd;tala&#x148;</string>
+    <string name="share_menu_no_available_options">Pa&#xfd;la&#x15f;mak üçin mümkinçilik &#xfd;ok</string>
+    <string name="share_menu_header_view_title_default">% 1 $ s iberi&#x148;</string>
+    <string name="share_menu_header_view_title_sending">% 1 $ s iber&#xfd;äris</string>
+    <string name="share_menu_header_view_title_completed">Iberilen% 1 $ s</string>
+    <string name="share_menu_attachments_count_restriction">I&#x148; köp 25 fa&#xfd;l iberip bilersi&#x148;iz</string>
+    <string name="share_menu_attachment_big_size_restriction">Fileüklenen fa&#xfd;l 1 GB-dan &#xfd;okary bolup bilmez</string>
+    <string name="share_menu_text_restriction">Tekst bir habar üçin rugsat berlen ny&#x15f;anlary&#x148; i&#x148; köp sanyndan &#xfd;okarydyr</string>
+</resources>

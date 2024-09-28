@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_chat_list_screen_addon_menu_item">Suhbatlar</string>
+    <string name="communicator_crm_chats_tab_title">Suhbatlar</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_message">Chatlar ro\'yxati bo\'sh</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_details">Mijoz bilan bog\'langaningizda sizga bildirishnoma keladi</string>
+    <string name="communicator_crm_chat_list_swipe_delete">O\'chirish</string>
+    <string name="communicator_crm_chat_list_swipe_take">O\'zingizni oling</string>
+    <string name="communicator_crm_chat_list_swipe_complete">Tugatish</string>
+    <string name="communicator_crm_chat_list_channel_group_title_support">Saby-ni qo\'llab-quvvatlash</string>
+    <string name="communicator_crm_chat_list_channel_group_title_site">Sayt</string>
+    <string name="communicator_crm_chat_list_channel_group_title_sabyget">SabyGet</string>
+    <string name="communicator_crm_chat_list_channel_group_title_saby">SBIS</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_app">Ilova</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_vk">VKontakte</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_telegram">Telegram</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_email">E-mail</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_viber">Viber</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_ok">Sinfdoshlar</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_whatsapp">WhatsApp</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_facebook">Facebook</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_yandex">Yandex</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_instagram">Instagram</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_avito">Avito</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_unknown">Noma\'lum</string>
+    <string name="communicator_crm_chat_list_bad_filter_list_stub_details">Qidiruv yoki filtrlash parametrlarini o\'zgartirishga harakat qiling</string>
+    <string name="communicator_crm_chat_list_chat_no_access">Siz ushbu suhbatni ko\'rish huquqiga ega emassiz</string>
+</resources>

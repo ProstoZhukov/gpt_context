@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application android:allowBackup="false">
+
+        <service
+            android:name=".PushCloudMessagingService"
+            android:exported="false"
+            android:process="@string/push_cloud_messaging_process_name">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- region com.google.firebase:firebase-messaging -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:process="@string/push_cloud_messaging_process_name"
+            tools:replace="android:process" />
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:process="@string/push_cloud_messaging_process_name"
+            tools:replace="android:process" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:process="@string/push_cloud_messaging_process_name"
+            tools:replace="android:process" />
+        <!-- endregion -->
+
+    </application>
+
+</manifest>

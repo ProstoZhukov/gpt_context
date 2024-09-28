@@ -1,0 +1,21 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+def appName = "appmarket"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "common",
+        "declaration",
+        "design",
+        "disk"
+)
+
+include ':app', ':controller'
+
+setupControllerModule(settings, appName)

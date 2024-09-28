@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <!--
+     В данном файле будут описаны специфичные для модуля цвета, которых нет
+     в палитре: http://axure.tensor.ru/MobileAPP/#p=%D0%BF%D0%B0%D0%BB%D0%B8%D1%82%D1%80%D0%B0_%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F&g=1
+     либо
+     в стилях текста: http://axure.tensor.ru/mobileapp/%D1%81%D1%82%D0%B8%D0%BB%D0%B8_%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0__%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F_3_.html
+     ссылка на согласование цветов: https://online.sbis.ru/opendoc.html?guid=9de1788c-a418-4b74-b76e-60eca433b7c0
+    -->
+</resources>

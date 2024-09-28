@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="attach_photo_error">Suratni yuklashda xatolik yuz berdi</string>
+    <string name="chat_admin">Admin.</string>
+    <string name="common_access_error">Kirish xatosi</string>
+    <string name="common_access_error_description">Sizda joriy bo\'limga kirish huquqi yo\'q. Iltimos, tizim administratoringizga murojaat qiling</string>
+    <string name="common_another_user_call">Qo\'ng\'iroq qiling</string>
+    <string name="common_auth_segment_title">Ruxsat</string>
+    <string name="common_bottom_menu_name">NNP</string>
+    <string name="common_bottom_sheet_dialog_close">Yaqin</string>
+    <string name="common_byte_short">B</string>
+    <string name="common_calendar_segment_title">@string/common_navigation_menu_item_calendar</string>
+    <string name="common_catalog_segment_title">Katalog</string>
+    <string name="common_communicator_segment_title">Xabarlar/Kontaktlar</string>
+    <string name="common_confirmation_expiring_time_message">Tasdiqlash: %1$s</string>
+    <string name="common_confirmation_overdue_message">Tasdiqlash muddati tugadi</string>
+    <string name="common_contractors_segment_title">Kompaniyalar</string>
+    <string name="common_data_loading_error">Ma\'lumotlarni yuklashda xatolik yuz berdi!</string>
+    <string name="common_date_format_today">Bugun</string>
+    <string name="common_date_format_tomorrow">Ertaga</string>
+    <string name="common_date_format_yesterday">Kecha</string>
+    <string name="common_delete_dialog_negative">Yo\'q</string>
+    <string name="common_delete_dialog_positive">Ha</string>
+    <string name="common_dialogs_move_to_folder_cancel">Bekor qilish</string>
+    <string name="common_dialogs_move_to_folder_contextual_menu_title">Jildni tanlang</string>
+    <string name="common_disk_segment_title">@string/common_navigation_menu_item_cloud</string>
+    <string name="common_employee_segment_title">Xodimlar</string>
+    <string name="common_enter_message">Xabar</string>
+    <string name="common_failed_to_open_file">Faylni ochib bo‘lmadi</string>
+    <string name="common_feature_manage_segment_title">Sinov</string>
+    <string name="common_file_loading_error">Fayl yuklash xatosi</string>
+    <string name="common_filter">Filtr</string>
+    <string name="common_folder_button_label">Jildlar</string>
+    <string name="common_folder_delete_dialog">\"%1$s\" jildi o\'chirilsinmi?</string>
+    <string name="common_folder_delete_dialog_submit">OʻCHIRISH</string>
+    <string name="common_folder_detail_message_move_to_parent_folder">Jildning barcha mazmuni keyingi bosqichga o\'tkaziladi.</string>
+    <string name="common_folder_edit_dialog_add">SAQLASH</string>
+    <string name="common_folder_edit_dialog_cancle">BEKOR</string>
+    <string name="common_folder_edit_dialog_edittext_hint">Jild nomini kiriting</string>
+    <string name="common_folder_new_dialog_add">YARATMOQ</string>
+    <string name="common_folder_new_dialog_title">Yangi papka</string>
+    <string name="common_gigabyte_short">GB</string>
+    <string name="common_kilobyte_short">KB</string>
+    <string name="common_load">Yuklab olish</string>
+    <string name="common_loading_error">Yuklash xatosi</string>
+    <string name="common_low_password_complexity">Parolning murakkabligi past.\nKuchliligini oshirish uchun turli kattalikdagi harflar, shuningdek, raqamlar va maxsus belgilardan foydalaning.</string>
+    <string name="common_man_last_activity_time_unknown">Faol emas edi</string>
+    <string name="common_megabyte_short">MB</string>
+    <string name="common_menu_share">Ulashish</string>
+    <string name="common_motivation_segment_title">Motivatsiya</string>
+    <string name="common_navigation_menu_item_calendar">Kalendar</string>
+    <string name="common_navigation_menu_item_calendar_reduced">Kalend.</string>
+    <string name="common_navigation_menu_item_calls">Qo\'ng\'iroqlar</string>
+    <string name="common_navigation_menu_item_channels">Kanallar</string>
+    <string name="common_navigation_menu_item_cloud">Disk</string>
+    <string name="common_navigation_menu_item_contacts">Kontaktlar</string>
+    <string name="common_navigation_menu_item_contractors">Kompaniyalar</string>
+    <string name="common_navigation_menu_item_contractors_reduced">Kompaniya.</string>
+    <string name="common_navigation_menu_item_employees">Xodimlar</string>
+    <string name="common_navigation_menu_item_employees_reduced">Xodim</string>
+    <string name="common_navigation_menu_item_feature_manage">Sinov</string>
+    <string name="common_navigation_menu_item_local_feature_toggle">Fichetogle</string>
+    <string name="common_navigation_menu_item_meetings">Uchrashuvlar</string>
+    <string name="common_navigation_menu_item_messages">Xabarlar</string>
+    <string name="common_navigation_menu_item_messages_reduced">Xabar berdi.</string>
+    <string name="common_navigation_menu_item_motivation">Motivatsiya</string>
+    <string name="common_navigation_menu_item_motivation_reduced">Motivatsiyalar.</string>
+    <string name="common_navigation_menu_item_my_docs">Hujjatlar</string>
+    <string name="common_navigation_menu_item_my_docs_reduced">Hujjat.</string>
+    <string name="common_navigation_menu_item_news">Yangiliklar</string>
+    <string name="common_navigation_menu_item_notifications">Bildirishnomalar</string>
+    <string name="common_navigation_menu_item_notifications_reduced">Bildirishnoma</string>
+    <string name="common_navigation_menu_item_settings">Sozlamalar</string>
+    <string name="common_navigation_menu_item_settings_reduced">Sozlamalar</string>
+    <string name="common_navigation_menu_item_tasks">Vazifalar</string>
+    <string name="common_navigation_menu_item_tasks_approve">Tasdiqlash</string>
+    <string name="common_navigation_menu_item_tasks_from_me">Mendan</string>
+    <string name="common_navigation_menu_item_tasks_incoming">Kirish qutisi</string>
+    <string name="common_navigation_menu_item_instructions">Ko\'rsatmalar</string>
+    <string name="common_navigation_menu_item_clients">Mijozlar</string>
+
+    <string name="common_need_to_clear_collages_cache">kolllajlarni_keshni_tozalash_kerak</string>
+    <string name="common_news_segment_title">@string/common_navigation_menu_item_news</string>
+    <string name="common_no_employees_to_display">Xodimlar ro\'yxati bo\'sh</string>
+    <string name="common_no_network_available_check_connection">Internetga ulanishni tekshiring</string>
+    <string name="common_no_permission_error">Amaliyotni bajarish uchun ruxsatlar yetarli emas</string>
+    <string name="common_notification_segment_title">@string/common_navigation_menu_item_notifications</string>
+    <string name="common_open_link_browser_error">Havolani ochish uchun ilova topilmadi</string>
+    <string name="common_option_cancel_name">@string/design_cancel_item_label</string>
+    <string name="common_password_is_too_short">Minimal parol uzunligi 6 belgidan iborat</string>
+    <string name="common_password_requirements_hint">Kamida 6 ta belgi kiriting. Ishonchliligini oshirish uchun har xil harflar, raqamlar va maxsus belgilardan foydalaning.</string>
+    <string name="common_period_from">%s bilan</string>
+    <string name="common_period_half_year">yarim yil</string>
+    <string name="common_period_half_year_short">bet</string>
+    <string name="common_period_quarters">chorak</string>
+    <string name="common_period_quarters_short">kv.</string>
+    <string name="common_period_today">Bugun</string>
+    <string name="common_period_yesterday">kecha</string>
+    <string name="common_period_yesterday_from">kecha %s bilan</string>
+    <string name="common_person_last_activity_time_denied">Tizimga kirish imkoni yo\'q</string>
+    <string name="common_profile_device_has_mo_email_client">Bu qurilmada elektron pochta mijozi mavjud emas.</string>
+    <string name="common_profile_device_has_no_call_ability">Ushbu qurilma telefon qo\'ng\'iroqlarini amalga oshirish imkoniyatiga ega emas.</string>
+    <string name="common_profile_device_has_no_skype">Ushbu qurilmada skype yo\'q</string>
+    <string name="common_profile_device_has_no_telegram">Bu qurilmada telegramma yo\'q</string>
+    <string name="common_profile_has_no_email">Kontaktda elektron pochta yo\'q</string>
+    <string name="common_profile_has_no_phone_number">Kontaktda telefon raqami yo\'q</string>
+    <string name="common_profile_has_no_skype">Kontaktda skype yo\'q</string>
+    <string name="common_profile_has_no_telegram">Aloqa telegramda yo\'q</string>
+    <string name="common_profile_moscow_timezone">"MSK"</string>
+    <string name="common_profile_segment_title">Profil</string>
+    <string name="common_profile_social_network_open_error">Havolani kuzatib bo\'lmadi.</string>
+    <string name="common_profile_user_activity_status_man">Edi</string>
+    <string name="common_profile_user_activity_status_woman">Edi</string>
+    <string name="common_profile_user_offline_more_than_year">"bir yildan ko\'proq vaqt oldin"</string>
+    <string name="common_profile_user_online_work_and_home">Tarmoq</string>
+    <string name="common_recipients_selection_ok_description">Tanlovni tasdiqlang</string>
+    <string name="common_reporting_segment_title">Hisobot</string>
+    <string name="common_reporting_status_unknown_answer">Javob qabul qilindi</string>
+    <string name="common_requirement_confirmation_btn_title">Tasdiqlash</string>
+    <string name="common_requirement_status_rejected">Rad etilgan</string>
+    <string name="common_requirement_text_template">%1$s uchun soʻrov</string>
+    <string name="common_reset_button_label">Qayta o\'rnatish</string>
+    <string name="common_select_application_to_phone_call">Ilovani tanlang</string>
+    <string name="common_selection_window_close_icon">&#xe902;</string>
+    <string name="common_service_error">Roʻyxatni yangilab boʻlmadi.\nXizmat vaqtincha ishlamayapti.</string>
+    <string name="common_settings_enable_history_recording_key">settings_enable_history_recording</string>
+    <string name="common_settings_enable_logs_recording_key">settings_enable_logs_recording_key</string>
+    <string name="common_show_document_failed">Hujjat o\'chirilgan bo\'lishi mumkin yoki siz ushbu kompaniya hujjatiga kira olmaysiz.</string>
+    <string name="common_task_segment_title">@string/common_navigation_menu_item_tasks</string>
+    <string name="common_term_days_hours_minutes_date_format">%d д. %d ч. %d мин.</string>
+    <string name="common_term_hours_and_minutes_date_format">%d ч. %d мин.</string>
+    <string name="common_term_only_days_date_format">%d д.</string>
+    <string name="common_term_only_minutes_date_format">%d мин.</string>
+    <string name="common_time_at">"V"</string>
+    <string name="common_unknown_error">Noma\'lum xato</string>
+    <string name="common_update_error">Maʼlumotlarni yuklab boʻlmadi. Internet aloqangizni tekshiring.</string>
+    <string name="common_video_call_no_internet">Afsuski, qo‘ng‘iroqni amalga oshirib bo‘lmadi, chunki tarmoqqa ulanmagan.\nKeyinroq qayta urinib ko‘rishingiz mumkin.</string>
+    <string name="common_video_call_segment_title">Video qo\'ng\'iroq</string>
+    <string name="common_violations_segment_title">Qoidabuzarliklar</string>
+    <string name="common_woman_last_activity_time_unknown">Faol emas edi</string>
+    <string name="create_chat_button_text">Yangi guruh</string>
+    <string name="dialog_button_cancel">Bekor qilish</string>
+    <string name="dialog_button_ok">KELISHDIKMI</string>
+    <string name="file_can_not_be_open">%s faylini ochish uchun ilova topilmadi</string>
+    <string name="file_can_not_be_shared">Hech qanday mos dastur mavjud emas</string>
+    <string name="operation_error_message">Operatsion xato</string>
+    <string name="common_navigation_menu_item_tasks_outgoing">Chiquvchi</string>
+    <plurals name="common_year">
+        <item quantity="zero">yillar</item>
+        <item quantity="one">yil</item>
+        <item quantity="two">yilning</item>
+        <item quantity="few">yilning</item>
+        <item quantity="many">yillar</item>
+        <item quantity="other">yillar</item>
+    </plurals>
+    <plurals name="common_month">
+        <item quantity="zero">oylar</item>
+        <item quantity="one">oy</item>
+        <item quantity="two">oylar</item>
+        <item quantity="few">oylar</item>
+        <item quantity="many">oylar</item>
+        <item quantity="other">oylar</item>
+    </plurals>
+    <plurals name="common_day">
+        <item quantity="zero">kunlar</item>
+        <item quantity="one">kun</item>
+        <item quantity="two">kunlar</item>
+        <item quantity="few">kunlar</item>
+        <item quantity="many">kunlar</item>
+        <item quantity="other">kunlar</item>
+    </plurals>
+<string-array name="common_months">
+        <item>Yanvar</item>
+        <item>Fevral</item>
+        <item>Mart</item>
+        <item>Aprel</item>
+        <item>May</item>
+        <item>Iyun</item>
+        <item>Iyul</item>
+        <item>Avgust</item>
+        <item>Sentyabr</item>
+        <item>Oktyabr</item>
+        <item>Noyabr</item>
+        <item>Dekabr</item>
+    </string-array>
+    <string-array name="common_months_short">
+        <item>Yanv</item>
+        <item>Fevr</item>
+        <item>Mart</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Iyun</item>
+        <item>Iyul</item>
+        <item>Avgust</item>
+        <item>Sent</item>
+        <item>Oktyabr</item>
+        <item>Noyabr</item>
+        <item>Dek</item>
+    </string-array>
+    <string-array name="common_months_short_with_dot">
+        <item>yanvar</item>
+        <item>fevr. - qaniydi?</item>
+        <item>marta</item>
+        <item>apr.</item>
+        <item>may oyida</item>
+        <item>iyun oyida</item>
+        <item>iyul oyida</item>
+        <item>avgust</item>
+        <item>Sankt-Peterburg</item>
+        <item>oktyabr. - qaniydi?</item>
+        <item>noyabr.</item>
+        <item>qopqoq.</item>
+    </string-array>
+    <string-array name="common_months_short_without_dot">
+        <item>yanv</item>
+        <item>fevr</item>
+        <item>marta</item>
+        <item>apr</item>
+        <item>may oyida</item>
+        <item>iyun oyida</item>
+        <item>iyul oyida</item>
+        <item>avgust</item>
+        <item>sent</item>
+        <item>oktyabr</item>
+        <item>noyabr</item>
+        <item>dek</item>
+    </string-array>
+</resources>

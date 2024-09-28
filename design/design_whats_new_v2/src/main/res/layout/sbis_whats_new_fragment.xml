@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/whats_new_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor"
+    android:clickable="true"
+    tools:ignore="KeyboardInaccessibleWidget">
+
+    <View
+        android:id="@+id/whats_new_gradient"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ru.tensor.sbis.design.logo.SbisLogoView
+        android:id="@+id/whats_new_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_3xl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/whats_new_guide"
+        tools:layout_width="50dp"/>
+
+    <ru.tensor.sbis.design.buttons.SbisRoundButton
+        android:id="@+id/whats_new_button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/whats_new_logo"
+        app:layout_constraintBottom_toBottomOf="@id/whats_new_logo"
+        android:layout_marginEnd="?offset_3xl"
+        app:SbisRoundButton_type="transparent"
+        app:SbisRoundButton_icon="@string/design_mobile_icon_toolbar_close"
+        app:SbisRoundButton_style="unaccented"
+        app:SbisRoundButton_size="m"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/whats_new_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="?inlineHeight_xl"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:theme="?sbisWhatsNewTitleStyle"
+        android:id="@+id/whats_new_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:includeFontPadding="true"
+        android:textAlignment="inherit"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginHorizontal="?offset_3xl"
+        android:layout_marginTop="?offset_3xl"
+        app:layout_constraintTop_toBottomOf="@id/whats_new_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/whats_new_fragment_title"
+        tools:ignore="SpUsage" />
+
+    <ScrollView
+        android:id="@+id/whats_new_description_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="?offset_l"
+        android:layout_marginBottom="?offset_3xl"
+        android:layout_marginHorizontal="?offset_3xl"
+        app:layout_constraintTop_toBottomOf="@id/whats_new_title"
+        app:layout_constraintBottom_toTopOf="@id/whats_new_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/whats_new_description_container_inner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/whats_new_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/whats_new_button_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintDimensionRatio="1.45"
+        app:layout_constraintWidth_percent="0.7"
+        android:layout_marginBottom="?offset_3xl"
+        android:src="@drawable/whats_new_image"
+        android:contentDescription="@string/whats_new_phone_image"/>
+
+    <ru.tensor.sbis.design.buttons.SbisButton
+        android:id="@+id/whats_new_button_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?offset_3xl"
+        android:layout_marginHorizontal="?offset_3xl"
+        app:SbisButton_backgroundType="contrast"
+        app:SbisButton_title="@string/whats_new_start_button_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

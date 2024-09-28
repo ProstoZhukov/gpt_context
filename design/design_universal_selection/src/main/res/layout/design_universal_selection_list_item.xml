@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?SelectionItem_folderContainerStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="?SelectionItem_folderTheme"
+    tools:theme="@style/SelectionItemTheme.Folder">
+
+    <ru.tensor.sbis.fresco_view.SuperEllipseDraweeView
+        android:id="@+id/universal_selection_item_image"
+        style="?SelectionItem_photoStyle"
+        android:layout_marginStart="?offset_s"
+        android:visibility="gone"
+        app:placeholderImage="@drawable/ic_user_group_superellipse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universal_selection_item_icon"
+        style="?SelectionItem_folderIconStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_s"
+        android:layout_marginTop="?offset_m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/universal_selection_item_image_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="universal_selection_item_icon, universal_selection_item_image"/>
+
+    <Space
+        android:id="@+id/universal_selection_item_title_space"
+        android:layout_width="?offset_2xs"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/universal_selection_item_image_barrier"/>
+
+    <ru.tensor.sbis.common_views.HighlightedTextView
+        android:id="@+id/universal_selection_item_title"
+        style="?SelectionItem_titleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?offset_m"
+        android:layout_marginStart="?offset_s"
+        android:layout_marginEnd="?offset_m"
+        app:layout_constraintWidth="wrap_content_constrained"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/universal_selection_item_title_space"
+        app:layout_constraintEnd_toStartOf="@id/universal_selection_item_title_icon"
+        app:layout_constraintBottom_toTopOf="@id/universal_selection_item_subtitle"
+        app:layout_goneMarginBottom="?offset_m"
+        app:layout_goneMarginStart="?offset_s"
+        tools:text="Разработка мобильного приложения"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universal_selection_item_title_icon"
+        style="?SelectionItem_titleIconStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="?offset_m"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/universal_selection_item_title"
+        app:layout_constraintEnd_toStartOf="@id/universal_selection_item_selection_icon"
+        app:layout_constraintBottom_toBottomOf="@id/universal_selection_item_title"
+        app:layout_constraintBaseline_toBaselineOf="@id/universal_selection_item_title"
+        tools:visibility="visible"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universal_selection_item_subtitle"
+        style="?SelectionItem_subtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?offset_m"
+        android:layout_marginEnd="?offset_m"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/universal_selection_item_selection_icon"
+        app:layout_constraintStart_toStartOf="@id/universal_selection_item_title"
+        app:layout_constraintTop_toBottomOf="@id/universal_selection_item_title"
+        tools:text="Добро пожаловать в мир разработки и выпуска мобильного приложения СБИС!"
+        tools:visibility="visible"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universal_selection_item_selection_icon"
+        style="?SelectionItem_selectionIconStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/universal_selection_item_title"
+        app:layout_constraintBottom_toBottomOf="@id/universal_selection_item_title"
+        tools:visibility="visible"/>
+
+    <View
+        android:id="@+id/universal_selection_item_selection_icon_click_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/universal_selection_item_selection_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

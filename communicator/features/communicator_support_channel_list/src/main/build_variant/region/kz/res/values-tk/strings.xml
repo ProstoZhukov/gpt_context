@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_support_channel_list_title">Goldaw</string>
+    <string name="communicator_support_channel_list_no_data">Hiç hili kanal birikdirilmedi</string>
+    <string name="communicator_support_channel_list_syby_support_title">Setty goldawy</string>
+    <string name="communicator_support_channel_list_title_reduce">Hyzmat astynda.</string>
+    <string name="communicator_support_channel_sabyget_message">Aragatna&#x15f;yk</string>
+    <string name="communicator_support_channel_sabyget_stub_subtitle">Ine, d&#xf6;retmek we hün&#xe4;rmenler bilen geple&#x15f;ikleri&#x148;iz bolar</string>
+    <string name="communicator_support_channel_sabyget_title">S&#xf6;hbetler</string>
+</resources>

@@ -1,0 +1,2 @@
+ext.clients_dir = "module/crm/clients"
+apply from: "$crmDir/clients/settings_crm.gradle"

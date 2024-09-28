@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/multi_selection_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palette_color_white1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/recipients_selection_toolbar_for_repost"/>
+
+    <ru.tensor.sbis.design.view.input.searchinput.SearchInput
+        android:id="@+id/search_filter_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:hasFilter="false"
+        app:bottomDividerVisible="true"/>
+
+    <ru.tensor.sbis.recipient_selection.profile.ui.SelectedContactsView
+        android:id="@+id/selected_items_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/content_container"
+                    layout="@layout/multi_selection_content_container"/>
+
+                <ru.tensor.sbis.design.stubview.StubView
+                    android:id="@+id/stub_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

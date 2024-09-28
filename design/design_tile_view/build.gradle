@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableViewBindingCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design_tile_view"
+
+    resourcePrefix "design_tile_view"
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':design_custom_view_tools')
+    implementation project(':fresco_view')
+
+    testImplementation project(':testing')
+}

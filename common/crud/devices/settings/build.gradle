@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.crud.devices.settings"
+}
+
+dependencies {
+
+    api project(':controller')
+
+    // Modules
+    api project(':crud_payment_settings')
+    api project(':common')
+    api project(':mvp')
+    api project(':viper')
+
+    implementation libs.dagger.android
+    implementation libs.dagger.android.support
+    implementation libs.timber
+
+    //processors
+    kapt libs.dagger.compiler
+}

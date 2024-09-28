@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="animation_activity_translate_duration">150</integer>
+    <integer name="animation_activity_horizontal_translate_duration">@integer/animation_activity_translate_duration</integer>
+    <integer name="animation_bottom_toolbar_duration">400</integer>
+    <integer name="animation_contact_selector_duration">@integer/animation_activity_translate_duration</integer>
+    <integer name="animation_popup_fade_duration">150</integer>
+
+    <integer name="int_max_value">2147483647</integer>
+
+    <!--Задержка для сброса фокуса, связана с неоднократными вызовами onKeyboardClose(Open)Measure при смене фокусов между фрагментами -->
+    <integer name="hideCursorForTabletDelay">500</integer>
+    <!--Задержка отображения индикатора прогресса согласно требованиям правления Тензора -->
+    <integer name="progressShowingDefaultDelay">2000</integer>
+</resources>

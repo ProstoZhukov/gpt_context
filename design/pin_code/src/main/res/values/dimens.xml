@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pin_code_input_size">36dp</dimen>
+    <dimen name="pin_code_letter_width">30dp</dimen>
+    <dimen name="pin_code_bubble_radius">6dp</dimen>
+    <dimen name="pin_code_input_height">76dp</dimen>
+    <dimen name="pin_code_tablet_container_width">320dp</dimen>
+    <dimen name="pin_code_input_view_margin_horizontal">48dp</dimen>
+    <dimen name="pin_code_bubble_view_margin_horizontal">44dp</dimen>
+</resources>

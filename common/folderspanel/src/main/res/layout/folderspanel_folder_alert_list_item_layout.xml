@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.folderspanel.FolderViewModel"/>
+    </data>
+
+    <TextView
+        android:id="@+id/folderspanel_folder_name"
+        style="@style/RegularStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/modalwindows_alert_dialog_list_item_height"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical|start"
+        android:text="@{viewModel.title}"
+        android:textAlignment="gravity"
+        android:textColor="@color/text_color_black_2"
+        android:textSize="@dimen/size_body1_scaleOff"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:folderLevel="@{viewModel.level}"
+        app:onClick="@{viewModel::onClick}"
+        app:paddingForLevel="@{@dimen/folder_panel_level_padding}"
+        tools:ignore="SpUsage"
+        tools:text="Рабочая папка"/>
+</layout>

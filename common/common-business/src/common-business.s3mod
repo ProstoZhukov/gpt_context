@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ui_module id="4aea5b6c-3932-4cfc-8620-9cbcbfe5ba8b" kaizen_zone="97eb2277-4d6c-44b0-a80b-d9add7bb5876" name="common-business" version="1.0">
+
+  <description>Модуль common/common-business</description>
+
+  <depends/>
+
+  <load_after/>
+
+  <parameters/>
+
+  <resources/>
+
+  <preload/>
+
+</ui_module>

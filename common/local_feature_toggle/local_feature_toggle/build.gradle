@@ -1,0 +1,41 @@
+import ru.tensor.gradle.subconfig.ktlint.KtLintConfig
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-parcelize'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableKtLintCfg(KtLintConfig.KOTLIN_1_8_0)
+}
+
+android {
+    namespace "ru.tensor.sbis.localfeaturetoggle"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':base_components')
+    implementation project(':mvi_extension')
+    implementation project(':list')
+    implementation project(':design')
+    implementation project(':toolbar')
+
+    implementation libs.dagger
+    implementation libs.dagger.android
+    implementation libs.timber
+
+    implementation libs.android.core.ktx
+    implementation libs.android.view.recyclerView
+
+    //processors
+    kapt libs.dagger.compiler
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="communicator_conversation_fragment_tablet_toolbar_right_panel_id" type="id"/>
+    <item name="communicator_conversation_fragment_recycler_view_id" type="id"/>
+    <item name="communicator_conversation_toolbar_icon" type="id"/>
+    <item name="communicator_conversation_edit_title_done_button" type="id"/>
+    <item name="communicator_conversation_preview_fragment_container" type="id"/>
+</resources>

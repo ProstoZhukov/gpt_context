@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/toolbar_selectable_bottom_button"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/toolbar_bottom_button_bottom_margin"
+    android:paddingBottom="@dimen/toolbar_bottom_button_bottom_margin"
+    tools:viewBindingIgnore="true">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/toolbar_panel_button_icon_text"
+        style="@style/BottomPanelMobileIconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/toolbar_panel_button_text"
+        style="@style/RegularStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textSize="@dimen/toolbar_bottom_text_size"
+        tools:ignore="SpUsage"/>
+
+</LinearLayout>

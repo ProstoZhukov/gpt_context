@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_swipe_menu_add_admin">Belgilang \nadmin.</string>
+    <string name="design_swipe_menu_get_url_for_attachment">Havola</string>
+    <string name="design_swipe_menu_go_to_dialog">Dialogga</string>
+    <string name="design_swipe_menu_label_call">Qo\'ng\'iroq qiling</string>
+    <string name="design_swipe_menu_label_hide">Yashirish</string>
+    <string name="design_swipe_menu_label_mark_read">O\'qing</string>
+    <string name="design_swipe_menu_label_mark_unread">O\'qimang.</string>
+    <string name="design_swipe_menu_label_media">Video yorug\'lik</string>
+    <string name="design_swipe_menu_label_message">Yozing</string>
+    <string name="design_swipe_menu_label_move">Jildga</string>
+    <string name="design_swipe_menu_label_remove">Oʻchirish</string>
+    <string name="design_swipe_menu_remove_admin">Rolni olib tashlang \nadmin.</string>
+    <string name="design_swipe_menu_share">Ulashish</string>
+    <string name="swipeable_layout_cancel_deletion_message">Oʻchirishni bekor qilish</string>
+    <string name="swipeable_layout_default_post_dismiss_message">Oʻchirildi</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Отступы -->
+    <dimen name="business_margin_empty">0dp</dimen>
+    <dimen name="business_margin_very_small">2dp</dimen>
+    <dimen name="business_margin_very_tiny">4dp</dimen>
+    <dimen name="business_margin_tiny">5dp</dimen>
+    <dimen name="business_margin_small">6dp</dimen>
+    <dimen name="business_margin_middle">8dp</dimen>
+    <dimen name="business_margin_big">10dp</dimen>
+    <dimen name="business_margin_large">12dp</dimen>
+    <dimen name="business_margin_great">16dp</dimen>
+    <dimen name="business_margin_huge">18dp</dimen>
+    <dimen name="business_margin_double_huge">24dp</dimen>
+    <dimen name="business_margin_enormous">30dp</dimen>
+
+    <!-- Общие размеры для элементов списка -->
+    <dimen name="business_item_large_height">48dp</dimen>
+    <dimen name="business_item_big_height">40dp</dimen>
+    <dimen name="business_item_big_height_with_divider">46dp</dimen>
+
+    <dimen name="business_item_kopeck_text_size">@dimen/size_body2_scaleOff</dimen>
+    <dimen name="business_item_kopeck_text_size_large">@dimen/size_title2_scaleOff</dimen>
+
+    <dimen name="business_refresh_indicator_padding_top">50dp</dimen>
+
+    <dimen name="business_zero_dimension">0dp</dimen>
+
+    <!-- Размеры встраиваемого экрана item_tablet_right_container-->
+    <dimen name="business_item_tablet_right_container_width">@dimen/match_parent</dimen>
+</resources>

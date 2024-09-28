@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_components_popup_menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="?inlineHeight_m"
+    android:background="@drawable/selectable_popup_menu_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/base_components_popup_menu_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?fontSize_3xs_scaleOff"
+        android:layout_marginEnd="?fontSize_3xs_scaleOff"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:textColor="?successTextColor"
+        android:textSize="?fontSize_xl_scaleOff"
+        tools:text="@string/design_close"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        style="@style/MobileFontStyle"
+        android:id="@+id/base_components_popup_menu_item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="?offset_m"
+        android:text="@string/design_mobile_icon_check"
+        android:textColor="?primaryIconColor"
+        android:textSize="?fontSize_m_scaleOff"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        tools:ignore="SpUsage" />
+
+</LinearLayout>

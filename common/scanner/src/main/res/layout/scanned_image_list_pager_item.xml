@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="Rotation"
+            type="androidx.databinding.ObservableField&lt;ru.tensor.sbis.scanner.data.model.Rotation&gt;"/>
+
+        <variable
+            name="ScannedImageListItem"
+            type="ru.tensor.sbis.scanner.adapter.scannedimagelist.item.ScannedImageListItem"/>
+    </data>
+
+    <ru.tensor.sbis.scanner.view.documentfinder.DocumentImageView
+        android:id="@+id/document_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:image="@{ScannedImageListItem.absoluteUri}"
+        app:rotation="@{Rotation}"
+        app:touch_enabled="false"/>
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_declaration_filter_sort_by_all">Все</string>
+    <string name="communicator_declaration_filter_sort_by_unread">Непрочитанные</string>
+    <string name="communicator_declaration_filter_sort_by_income">Входящие</string>
+    <string name="communicator_declaration_filter_sort_by_not_answered">Мне не ответили</string>
+    <string name="communicator_declaration_filter_sort_by_deleted">Удаленные</string>
+
+    <!--Фильтр чатов оператора-->
+    <string name="communicator_crm_chat_filter_overdue">Просрочка</string>
+    <string name="communicator_crm_chat_filter_all">Все</string>
+    <string name="communicator_crm_chat_filter_my">Мои</string>
+    <string name="communicator_crm_chat_filter_from_my_channels">Из моих каналов</string>
+    <string name="communicator_crm_chat_filter_responsible">Ответственный</string>
+    <string name="communicator_crm_chat_filter_client">Клиент</string>
+    <string name="communicator_crm_chat_filter_channel">Канал</string>
+    <string name="communicator_crm_chat_filter_source">Источник</string>
+    <string name="communicator_crm_chat_operator_filter_not_chosen">Не выбрано</string>
+</resources>

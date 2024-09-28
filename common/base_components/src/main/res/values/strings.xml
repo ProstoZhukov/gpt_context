@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="base_components_common_folder_context_menu_move_up">Move up</string>
+    <string name="base_components_common_folder_context_menu_move_down">Move down</string>
+    <string name="base_components_common_folder_context_menu_move_edit">Edit</string>
+    <string name="base_components_common_folder_context_menu_move_remove">Delete</string>
+    <string name="base_components_common_folder_context_menu_move">Move</string>
+
+    <string name="base_components_input_max_length_error">The maximum number of symbols exceeded</string>
+    <string name="base_components_operation_error_message">Operation error</string>
+    <string name="base_components_dialog_button_ok" tools:ignore="ButtonCase,Typos">OK</string>
+    <string name="base_components_dialog_button_cancel">Cancel</string>
+    <!-- Coordinator layout behavior links -->
+    <string name="base_components_selection_window_shadow_behavior" translatable="false">ru.tensor.sbis.base_components.fragment.selection.shadow.SelectionWindowShadowBehavior</string>
+</resources>

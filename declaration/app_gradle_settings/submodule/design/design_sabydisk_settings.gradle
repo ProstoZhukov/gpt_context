@@ -1,0 +1,30 @@
+ext.design_dir = 'design'
+apply from: "$designDir/settings.gradle"
+apply from: "$designDir/settings_sabydisk.gradle"
+
+include ':design_decorators'
+project(':design_decorators').projectDir = new File(designDir, "design_decorators")
+
+include ':design_rating'
+project(':design_rating').projectDir = new File(designDir, "design_rating")
+
+include ':design_top_navigation'
+project(':design_top_navigation').projectDir = new File(designDir, "design_top_navigation")
+
+include ':design_tabs'
+project(':design_tabs').projectDir = new File(designDir, "design_tabs")
+
+include ':design_period_picker'
+project(':design_period_picker').projectDir = new File(designDir, "design_period_picker")
+
+include ':design_message_view'
+project(':design_message_view').projectDir = new File(designDir, "design_message_view")
+
+include ':design_whats_new_v2'
+project(':design_whats_new_v2').projectDir = new File(designDir, "design_whats_new_v2")
+
+include ':design_menu'
+project(':design_menu').projectDir = new File(designDir, "design_menu")
+
+include ':design_splash'
+project(':design_splash').projectDir = new File(designDir, "design_splash")

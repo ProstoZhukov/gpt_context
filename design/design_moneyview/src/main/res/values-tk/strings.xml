@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_moneyview_suffix_thousand">mü&#x148;</string>
+    <string name="design_moneyview_suffix_million">million</string>
+    <string name="design_moneyview_suffix_billion">milliard</string>
+    <string name="design_moneyview_suffix_trillion">trillion</string>
+    <string name="design_moneyview_suffix_quadrillion">kwdrl</string>
+    <string name="design_moneyview_suffix_k">mü&#x148;</string>
+</resources>

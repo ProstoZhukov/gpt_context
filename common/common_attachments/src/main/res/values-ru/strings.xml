@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_attachments_attach_file_error">Ошибка при добавлении вложения</string>
+    <string name="common_attachments_generating_snapshot_error">Ошибка при создании файла для фото</string>
+    <string name="common_attachments_starting_camera_error">Ошибка при запуске камеры</string>
+    <string name="common_attachments_opening_gallery_error">Ошибка при открытии галереи</string>
+    <string name="common_attachments_opening_file_explorer_error">Ошибка при запуске компонента выбора файлов</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="communicator_fast_forward_down" type="id"/>
+    <item name="communicator_fast_forward_down_container" type="id"/>
+    <item name="communicator_fast_forward_down_counter" type="id"/>
+    <item name="communicator_delete_message_or_dialog_for_all_id" type="id"/>
+    <item name="communicator_delete_message_or_dialog_for_me_id" type="id"/>
+    <item name="communicator_delete_message_or_dialog_negative_id" type="id"/>
+    <item name="communicator_title_edit_text_id" type="id"/>
+</resources>

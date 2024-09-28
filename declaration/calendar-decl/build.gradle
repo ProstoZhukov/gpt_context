@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.calendar_decl"
+}
+
+dependencies {
+    implementation project(':controller')
+    implementation project(':plugin_struct')
+    implementation project(':design_dialogs')
+
+    implementation libs.android.appcompat
+    implementation libs.rx.java
+    implementation libs.android.joda
+    implementation libs.timber
+}

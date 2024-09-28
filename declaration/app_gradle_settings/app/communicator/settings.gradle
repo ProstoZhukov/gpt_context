@@ -1,0 +1,111 @@
+def robolectricVer = "4.13"
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        testLibs {
+            version("android-robolectric", robolectricVer)
+        }
+    }
+}
+
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+gradle.rootProject {
+    rootProject.ext {
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        robolectricVersion = robolectricVer
+    }
+}
+
+customizeBuildScript(settings) { bs, prjct ->
+    if (prjct.ext.ciBuild) {
+        bs.dependencies { handler ->
+            handler.classpath prjct.deps.greendao.plugin
+        }
+    }
+}
+
+def appName = "communicator"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "barcodereader",
+        "calendar",
+        "call-history",
+        "common",
+        "communicator",
+        "contractors",
+        "crm",
+        "crypto",
+        "declaration",
+        "design",
+        "disk",
+        "edo",
+        "employee",
+        "inoutdocuments",
+        "map",
+        "meeting",
+        "motivation",
+        "news",
+        "notification",
+        "personal_documents",
+        "profile",
+        "reporting",
+        "schedule",
+        "tasks",
+        "videocall",
+        "video-monitoring"
+)
+
+include ':app', ':controller'
+
+includeControllerSources(settings, appName)
+
+splitAppByRegion(settings, appName) {
+    ru {
+        appConfig {
+            applicationId = "ru.tensor.sbis.droid.saby"
+            accountType = AndroidAccountManager.SABY_BUNDLE_ACCOUNT.type
+        }
+        rootProjectConfig {
+            apply plugin: 'social-integration'
+
+            //Константы для соц. сетей
+            socialServices {
+                yandex = yandexKeyUniversal("a64cb76d4ee94505aacc7d8c7e935935")
+                VK = vkKey("51985143", "k9RK532F25xO2UL7MPAN")
+                appleEnabled = true
+                esiaEnabled = true
+                googleEnabled = true
+                msal = msalConfig(
+                        file("app/src/debug/build_variant/region/ru/res/raw/auth_msal_config.json", PathValidation.EXISTS),
+                        file("app/src/release/build_variant/region/ru/res/raw/auth_msal_config.json", PathValidation.EXISTS)
+                )
+            }
+        }
+    }
+    kz {
+        appConfig {
+            applicationId = "kz.setty.communicator"
+            accountType = AndroidAccountManager.SETTY_BUNDLE_ACCOUNT.type
+        }
+        rootProjectConfig {
+            apply plugin: 'social-integration'
+
+            //Константы для соц. сетей
+            socialServices {
+                msal = msalConfig(
+                        file("app/src/debug/build_variant/region/kz/res/raw/auth_msal_config.json", PathValidation.EXISTS),
+                        file("app/src/release/build_variant/region/kz/res/raw/auth_msal_config.json", PathValidation.EXISTS)
+                )
+            }
+        }
+    }
+}

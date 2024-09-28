@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Базовая тема для экранов компонента версионирования. -->
+    <style name="VersioningUpdateTheme">
+        <item name="android:statusBarColor">@color/palette_color_transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">?android:navigationBarColor</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="p">true</item>
+        <item name="versioning_lock_title_text_color">?textColor</item>
+        <item name="versioning_lock_comment_text_color">?labelContrastTextColor</item>
+    </style>
+</resources>

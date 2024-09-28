@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_menu_authorization_required_message">Iltimos, hisobingizga kiring va qayta urinib ko\'ring</string>
+    <string name="share_menu_no_available_options">Fayllarni yuklash uchun bo\'limlar mavjud emas</string>
+    <string name="share_menu_header_view_title_default">Yuborish%1$s</string>
+    <string name="share_menu_header_view_title_sending">Yuboramiz%1$s</string>
+    <string name="share_menu_header_view_title_completed">Yuborildi%1$s</string>
+    <string name="share_menu_text_restriction">Matn bitta xabar uchun ruxsat etilgan belgilarning maksimal sonini oshiradi</string>
+    <string name="share_menu_attachments_count_restriction">Siz maksimal 25 ta faylni yuborishingiz mumkin</string>
+    <string name="share_menu_attachment_big_size_restriction">Yuborilgan fayl 1 GB dan oshmasligi kerak</string>
+</resources>

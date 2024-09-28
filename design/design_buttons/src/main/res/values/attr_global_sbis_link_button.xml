@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region Стилевые атрибуты компонента SbisLinkButton -->
+    <!-- Атрибут для определения темы акцентной кнопки -->
+    <attr name="primarySbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы второстепенной кнопки. Тема по умолчанию -->
+    <attr name="secondarySbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки подтверждения -->
+    <attr name="successSbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы неакцентной кнопки -->
+    <attr name="unaccentedSbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы бонусной кнопки -->
+    <attr name="bonusSbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки опасности -->
+    <attr name="dangerSbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки предупреждения -->
+    <attr name="warningSbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки по умолчанию -->
+    <attr name="defaultSbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы информационной кнопки -->
+    <attr name="infoSbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки cо стилем Link -->
+    <attr name="linkSbisLinkButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки cо стилем Label -->
+    <attr name="labelSbisLinkButtonTheme" format="reference"/>
+
+    <attr name="sbisLinkButtonUnaccentedButtonTextColor" format="color|reference"/>
+    <attr name="sbisLinkButtonTitleDisabledColorAlpha" format="float|reference"/>
+    <!--endregion-->
+</resources>

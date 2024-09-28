@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle"
+    tools:ignore="ResourceName">
+
+    <corners
+        android:topLeftRadius="?attr/retail_views_bonus_button_radius_main"
+        android:bottomLeftRadius="?attr/retail_views_bonus_button_radius_main"
+        android:topRightRadius="?attr/retail_views_bonus_button_radius_secondary"
+        android:bottomRightRadius="?attr/retail_views_bonus_button_radius_secondary"/>
+
+    <solid android:color="?attr/retail_views_bonus_button_background_btn_default"/>
+</shape>

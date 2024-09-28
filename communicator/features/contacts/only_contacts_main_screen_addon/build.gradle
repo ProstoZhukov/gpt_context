@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.contacts_main_screen_addon"
+    resourcePrefix "contacts_main_screen_addon_"
+}
+
+dependencies {
+    implementation project(':communicator_common')
+    implementation project(':communicator_declaration')
+    implementation project(':deeplink')
+    implementation project(':person_card')
+    implementation project(':main_screen_navigation_event_handle_extension')
+    implementation project(':main_screen_decl')
+    implementation project(':navigation')
+    implementation project(':contacts_declaration')
+}

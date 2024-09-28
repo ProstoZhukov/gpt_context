@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="catalog_decl_nomenclature_type_merchandise">Product</string>
+    <string name="catalog_decl_nomenclature_type_labeled">Marked product</string>
+    <string name="catalog_decl_nomenclature_type_alcohol">Alcohol</string>
+    <string name="catalog_decl_nomenclature_type_tobacco">Tobacco</string>
+    <string name="catalog_decl_nomenclature_type_medications">Pharmaceuticals</string>
+    <string name="catalog_decl_nomenclature_type_shoes">Shoes</string>
+    <string name="catalog_decl_nomenclature_type_textile">Textile</string>
+    <string name="catalog_decl_nomenclature_type_tires">Tires</string>
+    <string name="catalog_decl_nomenclature_type_perfume">Perfume</string>
+    <string name="catalog_decl_nomenclature_type_camera">Camera</string>
+    <string name="catalog_decl_nomenclature_type_jewellery">Jewellery</string>
+    <string name="catalog_decl_nomenclature_type_bicycle">Bicycle</string>
+    <string name="catalog_decl_nomenclature_type_wheelchair">Wheelchair</string>
+    <string name="catalog_decl_nomenclature_type_medical_devices">Medical devices</string>
+    <string name="catalog_decl_nomenclature_type_milk">Dairy products</string>
+    <string name="catalog_decl_nomenclature_type_nicotine">Nicotine</string>
+    <string name="catalog_decl_nomenclature_type_water">Water</string>
+    <string name="catalog_decl_nomenclature_type_beer">Beer</string>
+    <string name="catalog_decl_nomenclature_type_beer_non_alco">Nonalcoholic beer</string>
+    <string name="catalog_decl_nomenclature_type_baa">Dietary supplement</string>
+    <string name="catalog_decl_nomenclature_type_antiseptic">Antiseptic</string>
+    <string name="catalog_decl_nomenclature_type_furs">Furs</string>
+    <string name="catalog_decl_nomenclature_type_seafood">Seafood</string>
+    <string name="catalog_decl_nomenclature_type_tobacco_nicotine_raw">Tobacco products</string>
+    <string name="catalog_decl_nomenclature_type_conserve">Canned food</string>
+    <string name="catalog_decl_nomenclature_type_petfood">Animal feed</string>
+    <string name="catalog_decl_nomenclature_type_vegetable_oil">Vegetable oil</string>
+    <string name="catalog_decl_nomenclature_type_vet_pharme">Veterinary medicines</string>
+    <string name="catalog_decl_nomenclature_type_soft_drinks">Soft drinks</string>
+    <string name="catalog_decl_nomenclature_type_optical_fiber">Optical fiber</string>
+    <string name="catalog_decl_nomenclature_type_cable_production">Cable production</string>
+    <string name="catalog_decl_nomenclature_type_heating_devices">Heating devices</string>
+    <string name="catalog_decl_nomenclature_type_radio_electronics">Radio electronics</string>
+    <string name="catalog_decl_nomenclature_type_undefined">Undefined</string>
+</resources>

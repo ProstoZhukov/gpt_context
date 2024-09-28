@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_details">Do\'stlaringizni topish uchun kontaktlar ro\'yxatini qurilmangizdan import qiling.</string>
+    <string name="contacts_registry_import_enabled_no_contacts_stub_message">Sizda hech qanday aloqa yo\'q ekan</string>
+</resources>

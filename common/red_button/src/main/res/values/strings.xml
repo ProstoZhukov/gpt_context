@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Red Button -->
+    <string name="red_button_title_close">Close data?</string>
+    <string name="red_button_title_open">Open data</string>
+    <string name="red_button_title_close_progress">Data is closing</string>
+    <string name="red_button_title_open_progress">Data is opening</string>
+    <string name="red_button_uu_alert_message">All documents, operations and reports on the organization \"Management Accounting\" will be temporarily hidden. According to the documents of ordinary jur. persons no changes will happen.</string>
+    <string name="red_button_cloud_alert_message">All information will be temporarily hidden. Only \“Employees\” with names and phone numbers will be left.</string>
+    <string name="red_button_cloud_alert_title">Hide data?</string>
+    <string name="red_button_password_sent_on_phone_template">Code was sent to the number %1$s</string>
+    <string name="red_button_title_sms">Enter SMS-code</string>
+    <string name="red_button_title_pin_on">Think of your PIN</string>
+    <string name="red_button_title_pin_off">Enter PIN-code</string>
+    <string name="red_button_title_pin_confirmation">Confirm pin code</string>
+    <string name="red_button_message_pin_confirmation">Enter the pin code again</string>
+    <string name="red_button_message_pin_close">Remember the pin code, for subsequent restoration of access to the cloud</string>
+    <string name="red_button_message_pin_open">If you forgot the pin code, contact your manager</string>
+    <string name="red_button_repeat_through">Repeat through %s</string>
+    <string name="red_button_code_again">Get the code again</string>
+    <string name="red_button_network_error">No network connection</string>
+    <string name="red_button_stub_title_close">Data will be hidden after application reload</string>
+    <string name="red_button_stub_title_open">Access to the data will be returned after the application is restarted</string>
+    <string name="red_button_stub_subtitle">Unload the application and open it again.</string>
+    <string name="red_button_stub_toolbar_text">Settings</string>
+</resources>

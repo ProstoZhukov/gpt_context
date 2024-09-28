@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="calendar_date_icon_number_top_padding">3dp</dimen>
+</resources>

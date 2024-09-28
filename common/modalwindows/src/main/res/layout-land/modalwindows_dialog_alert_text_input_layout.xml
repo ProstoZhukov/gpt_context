@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!--Отступ снизу составляет 8dp вместо 16, т.к. стандартная реализация подразумевает небольшой отступ снизу для поля
+вывода ошибки, даже если она отключена-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/modalwindows_alert_dialog_padding_8">
+
+    <!-- Не заменять на SbisTextView, т.к. movementMethod не поддержан -->
+    <TextView
+        android:id="@+id/modalwindows_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="?textColor"
+        android:textStyle="bold"
+        android:textColorLink="@color/text_color_link_1"
+        android:textSize="?fontSize_m_scaleOn"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage"/>
+
+    <ru.tensor.sbis.design.view.input.text.TextInputView
+        android:id="@+id/modalwindows_alert_text_input_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:errorEnabled="false"
+        app:inputView_showPlaceholderAsTitle="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modalwindows_message"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

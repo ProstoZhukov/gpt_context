@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="push_notification_utils_file_loading_channel_name">Файлды жүктеп салу</string>
+    <string name="push_notification_utils_settings_notification_sound_key">параметрлер_хабарлама_дыбыстық_пернесі</string>
+    <string name="push_notification_utils_settings_notification_vibration_key">settings_notification_vibration_key</string>
+    <string name="push_notification_utils_settings_stable_push_service_key">settings_stable_push_service_key</string>
+</resources>

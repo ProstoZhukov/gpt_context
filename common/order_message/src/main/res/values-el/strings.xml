@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order_message_company_description">Ορισμένα στοιχεία πρέπει να τοποθετηθούν σε ξεχωριστή παραγγελία</string>
+    <string name="order_message_company_title">Επιλεγμένα προϊόντα από διαφορετικούς οργανισμούς</string>
+    <string name="order_message_queue_description">Ορισμένες θέσεις πρέπει να εκδοθούν με ξεχωριστή εγγραφή</string>
+    <string name="order_message_queue_no_specialist">Δεν υπάρχει ειδικός</string>
+    <string name="order_message_queue_title">Επιλεγμένες υπηρεσίες από διαφορετικούς ειδικούς</string>
+    <string name="order_message_nomenclature_changed_price_description">Τα προϊόντα έχουν προστεθεί στο καλάθι στη νέα τιμή. Το συνολικό κόστος ενημερώθηκε</string>
+    <string name="order_message_nomenclature_changed_price_title">Οι τιμές έχουν αλλάξει</string>
+    <string name="order_message_nomenclature_not_published_description">Τα στοιχεία έχουν αφαιρεθεί από το καλάθι. \nΤο συνολικό κόστος ενημερώθηκε</string>
+    <string name="order_message_nomenclature_not_published_title">Αυτά τα είδη δεν είναι πλέον διαθέσιμα για παραγγελία</string>
+    <string name="order_message_salon_nomenclature_changed_price_description">Οι υπηρεσίες προστέθηκαν στο καλάθι στη νέα τιμή. Το συνολικό κόστος ενημερώθηκε</string>
+    <string name="order_message_salon_nomenclature_not_published_title">Αυτές οι υπηρεσίες δεν είναι πλέον διαθέσιμες για παραγγελία</string>
+    <string name="order_message_nomenclature_has_changes_title">Υπάρχουν αλλαγές</string>
+    <string name="order_message_nomenclature_has_changes_description">Τα μη διαθέσιμα στοιχεία έχουν αφαιρεθεί από τον κάδο απορριμμάτων. Το τελικό κόστος έχει ενημερωθεί</string>
+    <string name="order_message_nomenclature_price_has_changed_title">Η τιμή έχει αλλάξει</string>
+    <string name="order_message_nomenclature_not_available_for_order_title">Δεν διατίθεται για παραγγελία</string>
+    <string name="order_message_stop_list_title">Προϊόντα στη λίστα στάσεων</string>
+    <string name="order_message_stop_list_description">Τα είδη έχουν αφαιρεθεί από το καλάθι\ ούτε ο αριθμός τους είναι περιορισμένος</string>
+    <string name="order_message_stop_list_available">Διαθέσιμος</string>
+    <string name="order_message_different_nom_taxes_title">Τα επιλεγμένα στοιχεία\nδεν μπορούν να προστεθούν σε μία μόνο απόδειξη</string>
+    <string name="order_message_different_nom_taxes_description">Αφαιρέστε ορισμένα προϊόντα από το καλάθι αγορών και τοποθετήστε τα σε ξεχωριστή παραγγελία</string>
+    <string name="order_message_different_nom_taxes_order_number">Παραγγελία %d</string>
+</resources>

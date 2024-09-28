@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="picker_files_tab_title">Fa&#xfd;llar</string>
+    <string name="picker_files_tab_storage_title">Fa&#xfd;llardan sa&#xfd;la&#x148;</string>
+    <string name="picker_files_tab_gallery_title">Enjamlar galere&#xfd;asy</string>
+    <string name="picker_files_tab_stub_desc">Enjamy&#x148;yzdan fa&#xfd;llary sa&#xfd;la&#x148; we daky&#x148;</string>
+</resources>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="retail_fragmentContainer" format="reference"/>
+    <attr name="retail_divider_color" format="reference|color"/>
+
+    <attr name="retail_extra_large_font_size" format="reference|dimension"/>
+    <attr name="retail_large_font_size" format="reference|dimension"/>
+    <attr name="retail_medium_font_size" format="reference|dimension"/>
+    <attr name="retail_small_font_size" format="reference|dimension"/>
+
+    <attr name="retail_extra_small_font_size" format="reference|dimension"/>
+    <attr name="retail_extra_small_padding" format="reference|dimension"/>
+    <attr name="retail_small_padding" format="reference|dimension"/>
+    <attr name="retail_average_padding" format="reference|dimension"/>
+    <attr name="retail_medium_padding" format="reference|dimension"/>
+    <attr name="retail_large_padding" format="reference|dimension"/>
+    <attr name="retail_extra_large_padding" format="reference|dimension"/>
+
+    <attr name="retail_small_icon_size" format="reference|dimension"/>
+    <attr name="retail_medium_icon_size" format="reference|dimension"/>
+    <attr name="retail_large_icon_size" format="reference|dimension"/>
+
+    <attr name="retail_navigation_menu_item_icon_size" format="reference|dimension"/>
+
+    <attr name="retail_navigation_menu_icon_size" format="reference|dimension"/>
+
+    <attr name="retail_medium_button_height" format="reference|dimension"/>
+    <attr name="retail_medium_button_height_with_shadow" format="reference|dimension"/>
+    <attr name="retail_large_button_height" format="reference|dimension"/>
+    <attr name="retail_close_button_width" format="reference|dimension"/>
+
+    <attr name="retail_dialog_change_merch_field_width" format="reference|dimension"/>
+    <attr name="retail_more_actions_popup_menu_width" format="reference|dimension"/>
+    <attr name="retail_sale_discounts_fragment_width" format="reference|dimension"/>
+    <attr name="retail_correction_check_fragment_width" format="reference|dimension"/>
+
+    <attr name="retail_small_text_height" format="reference|dimension"/>
+    <attr name="retail_medium_text_height" format="reference|dimension"/>
+
+    <attr name="retail_nomenclature_image_max_height" format="reference|dimension"/>
+
+    <attr name="retail_fading_edge_length" format="reference|dimension"/>
+
+    <attr name="retail_accent_button_background_color" format="reference|color"/>
+    <attr name="retail_accent_button_text_color" format="reference|color"/>
+    <attr name="retail_secondary_button_background_color" format="reference|color"/>
+    <attr name="retail_secondary_button_text_color" format="reference|color"/>
+    <attr name="retail_header_text_color" format="reference|color"/>
+    <attr name="retail_title_text_color" format="reference|color"/>
+    <attr name="retail_label_text_color" format="reference|color"/>
+    <attr name="retail_main_toolbar_color" format="reference|color"/>
+    <attr name="retail_main_toolbar_button_color" format="reference|color"/>
+    <attr name="retail_main_toolbar_text_color" format="reference|color"/>
+    <attr name="retail_input_field_background_main_color" format="reference|color"/>
+    <attr name="retail_input_field_background_main_stroke_color" format="reference|color"/>
+    <attr name="retail_background_main_stroke_color" format="reference|color"/>
+    <attr name="retail_background_bottom_stroke_color" format="reference|color"/>
+    <attr name="retail_main_background_color" format="reference|color"/>
+    <attr name="retail_main_background_icon_color" format="reference|color"/>
+    <attr name="retail_main_background_text_color" format="reference|color"/>
+    <attr name="retail_main_background_secondary_text_color" format="reference|color"/>
+    <attr name="retail_main_background_disabled_text_color" format="reference|color"/>
+    <attr name="retail_main_background_accent_text_color" format="reference|color"/>
+    <attr name="retail_main_background_button_link_text_color" format="reference|color"/>
+    <attr name="retail_secondary_text_color" format="reference|color"/>
+    <attr name="retail_border_color" format="reference|color"/>
+    <attr name="retail_selected_button_border_color" format="reference|color"/>
+    <attr name="retail_main_background_hover_color" format="reference|color"/>
+    <attr name="retail_unaccent_text_color" format="reference|color"/>
+    <attr name="retail_unaccent_border_color" format="reference|color"/>
+    <attr name="retail_device_icon_tint_color" format="reference|color"/>
+    <attr name="retail_additional_label_text_color" format="reference|color"/>
+    <attr name="retail_error_text_color" format="reference|color"/>
+
+    <attr name="retail_input_field_background_error_color" format="reference|color"/>
+    <attr name="retail_input_field_background_searchable_stroke_color" format="reference|color"/>
+
+    <attr name="retail_payment_background" format="reference|color"/>
+
+    <attr name="retail_money_card_text_color" format="reference|color"/>
+    <attr name="retail_money_decimal_color" format="reference|color"/>
+
+    <attr name="retail_disabled_item_title_text_color" format="reference|color" />
+    <attr name="retail_disabled_item_content_text_color" format="reference|color" />
+
+    <attr name="retail_side_toolbar_color" format="reference|color"/>
+    <attr name="retail_side_toolbar_text_color" format="reference|color"/>
+    <attr name="retail_side_toolbar_button_color" format="reference|color"/>
+    <attr name="retail_side_toolbar_button_text_color" format="reference|color"/>
+    <attr name="retail_side_background_color" format="reference|color"/>
+
+    <attr name="retail_fragment_background_color" format="reference|color"/>
+    <attr name="retail_fragment_background_secondary_color" format="reference|color"/>
+    <attr name="retail_fragment_background_secondary_button_color" format="reference|color"/>
+    <attr name="retail_fragment_title_text_color" format="reference|color"/>
+    <attr name="retail_fragment_card_background_color" format="reference|color"/>
+    <attr name="retail_fragment_card_text_color" format="reference|color"/>
+    <attr name="retail_fragment_card_hover_color" format="reference|color"/>
+    <attr name="retail_fragment_btn_close_icon_color" format="reference|color"/>
+
+    <attr name="retail_popup_background_header_color" format="reference|color"/>
+    <attr name="retail_popup_background_color" format="reference|color"/>
+    <attr name="retail_popup_text_color" format="reference|color"/>
+    <attr name="retail_popup_text_header_color" format="reference|color"/>
+    <attr name="retail_popup_icon_color" format="reference|color"/>
+    <attr name="retail_popup_hover_color" format="reference|color"/>
+    <attr name="retail_popup_shadow_color" format="reference|color"/>
+    <attr name="retail_popup_more_item_text_color" format="reference|color"/>
+
+    <!-- Закраска иконки "Назад" у текущей папки в хлебных крошках -->
+    <attr name="retail_current_folder_back_icon" format="reference|color"/>
+
+    <attr name="retail_tree_icon_color" format="reference|color"/>
+    <attr name="retail_parent_folder_text_color" format="reference|color"/>
+
+    <attr name="retail_main_accent" format="reference|color"/>
+    <attr name="retail_main_red" format="reference|color"/>
+    <attr name="retail_main_yellow" format="reference|color"/>
+    <attr name="retail_main_orange" format="reference|color"/>
+    <attr name="retail_main_blue" format="reference|color"/>
+    <attr name="retail_main_green" format="reference|color"/>
+
+    <attr name="retail_checkbox_selector" format="reference"/>
+    <attr name="retail_searched_text_background_color" format="reference|color"/>
+    <attr name="retail_disabled_button_text_color" format="reference|color"/>
+    <attr name="retail_disabled_checkbox_color" format="reference|color"/>
+
+    <attr name="retail_dialog_content_min_width" format="reference|dimension"/>
+    <attr name="retail_dialog_content_horizontal_padding" format="reference|dimension"/>
+    <attr name="retail_dialog_content_vertical_padding" format="reference|dimension"/>
+    <attr name="retail_marker_width" format="reference|dimension"/>
+    <attr name="retail_dialog_toolbar_text_color" format="reference|color"/>
+
+    <attr name="retail_alert_dialog_neutral_header_color" format="reference|color"/>
+    <attr name="retail_alert_dialog_error_header_color" format="reference|color"/>
+    <attr name="retail_alert_dialog_success_header_color" format="reference|color"/>
+    <attr name="retail_alert_dialog_footer_color" format="reference|color"/>
+
+    <attr name="retail_extra_navigation_view_stroke_color" format="reference|color"/>
+    <attr name="retail_extra_navigation_view_selected_color" format="reference|color"/>
+
+    <attr name="retail_extraLargeTextStyle_Toolbar_Accent" format="reference"/>
+
+    <attr name="retail_fragment_tab_selected_background_color" format="reference|color"/>
+    <attr name="retail_fragment_tab_background_color" format="reference|color"/>
+
+    <attr name="retail_cash_color_integer" format="reference|color"/>
+    <attr name="retail_cash_color_decimal" format="reference|color"/>
+
+    <attr name="retail_color_integer_selected_selector" format="reference|color"/>
+    <attr name="retail_color_integer_marked_selected_selector" format="reference|color"/>
+    <attr name="retail_color_integer_not_marked_selected_selector" format="reference|color"/>
+    <attr name="retail_color_decimal_selected_selector" format="reference|color"/>
+
+    <!--Custom items-->
+    <attr name="retail_image_size" format="reference|dimension"/>
+    <attr name="retail_device_type_image_size" format="reference|dimension"/>
+    <attr name="retail_workplace_device_image_size" format="reference|dimension"/>
+    <attr name="retail_change_history_image_size" format="reference|dimension"/>
+    <attr name="retail_catalog_retail_preview_container_size" format="reference|dimension"/>
+    <attr name="retail_dialog_merch_catalog_width" format="reference|dimension"/>
+    <attr name="retail_nomenclature_title_enlarged_text_size" format="reference|dimension"/>
+    <attr name="retail_refund_plus_icon_color" format="reference|color"/>
+    <attr name="retail_swipeable_background_color" format="reference|color"/>
+    <attr name="retail_scanned_nomenclature_dialog_content_width" format="reference|dimension"/>
+    <attr name="retail_alco_prohibition" format="reference"/>
+    <attr name="retail_settings_main_bar_height" format="reference|dimension"/>
+    <attr name="retail_sale_item_selected_background_color" format="reference|color"/>
+    <attr name="retail_serial_input_form_button_background" format="reference|color"/>
+    <attr name="retail_serial_number_selection_color" format="reference|color"/>
+
+    <!-- Discounts -->
+    <attr name="retail_discount_group_text_color" format="reference|color"/>
+    <attr name="retail_discount_card_applicant_exist_text_color" format="reference|color"/>
+    <attr name="retail_discount_card_applicant_not_exist_text_color" format="reference|color"/>
+
+    <attr name="retail_sale_mode_catalogue_drawable" format="reference"/>
+    <attr name="retail_sale_mode_quick_access_drawable" format="reference"/>
+
+    <attr name="retail_settings_view_main_fragment_more_menu_width" format="reference|dimension"/>
+    <attr name="retail_settings_sale_mode_image_height" format="reference|dimension"/>
+    <attr name="retail_settings_sale_mode_image_width" format="reference|dimension"/>
+
+    <attr name="retail_register_sale_item_title_weight" format="reference|integer"/>
+    <attr name="retail_register_sale_item_image_weight" format="reference|integer"/>
+    <attr name="retail_register_sale_item_checkbox_weight" format="reference|integer"/>
+    <attr name="retail_register_sale_item_price_weight" format="reference|integer"/>
+    <attr name="retail_register_sale_item_quantity_weight" format="reference|integer"/>
+    <attr name="retail_register_sale_item_summ_weight" format="reference|integer"/>
+
+    <!-- Money View -->
+    <attr name="retail_money_view_kopeck_accent_color" format="reference|color"/>
+    <attr name="retail_money_view_integer_color" format="reference|color"/>
+    <attr name="retail_money_view_decimal_color" format="reference|color"/>
+
+    <!-- Ситуативные цвета палитры -->
+    <attr name="item_background_color_tile" format="reference|color"/>
+    <attr name="successBackgroundColor" format="reference|color"/>
+    <attr name="dangerBackgroundColor" format="reference|color"/>
+
+    <!-- Временные цвета для случаев, когда розничная тема не соответствует глобальной палитре  -->
+    <attr name="unaccentedBackgroundColorRetail" format="reference|color"/>
+
+    <declare-styleable name="RetailOpaqueThumbAppCompatSeekBar">
+        <attr name="retailTickMarkFixed" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RetailToolbarButtonsLayout">
+        <attr name="RetailToolbarButtonsLayout_hiddenActionsButtonId" format="reference"/>
+        <attr name="RetailToolbarButtonsLayout_isHiddenActionsButtonAlwaysVisible" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="RetailOverflowLayoutTheme">
+        <attr name="retailOverflowLayoutMoreButtonStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RetailOverflowLayout_Layout">
+        <attr name="layout_overflowTitle" format="string"/>
+        <attr name="layout_overflowIcon" format="string"/>
+        <attr name="layout_alwaysCollapsed" format="boolean"/>
+        <attr name="layout_visibleItem" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RetailShadowView">
+        <attr name="retailShadowVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="retailTopShadowVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="retailLeftShadowVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="retailRightShadowVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="retailBottomShadowVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RetailToolbar">
+        <!--Start Visibility section-->
+        <attr name="retailTitleVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="retailCloseButtonVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="retailCustomViewContainerType">
+            <enum name="wrap_content" value="0"/>
+            <enum name="match_constraint" value="1"/>
+        </attr>
+        <attr name="retailCustomViewVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <!--End Visibility section-->
+
+        <!--Start Text/Icon section-->
+        <attr name="retailTitleText" format="reference|string"/>
+        <!--End Text/Icon section-->
+    </declare-styleable>
+
+    <declare-styleable name="RetailSpinnerWithArrowView">
+        <attr name="retail_spinner_text_color" format="color"/>
+    </declare-styleable>
+</resources>

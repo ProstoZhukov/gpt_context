@@ -1,0 +1,155 @@
+<resources>
+    <dimen name="communicator_dialog_item_separator_line_height">1dp</dimen>
+    <dimen name="communicator_universal_one_dip">1dp</dimen>
+
+    <dimen name="communicator_date_icon_padding_top">0.5dp</dimen>
+
+    <!-- Person Photo -->
+    <dimen name="communicator_person_photo_view_size">55dp</dimen>
+
+    <!-- Contacts -->
+    <dimen name="communicator_contact_check_box_margin">10dp</dimen>
+    <dimen name="communicator_contact_list_segment_divider_margin_left">12dp</dimen>
+    <dimen name="communicator_contact_list_segment_divider_margin_right">4dp</dimen>
+    <dimen name="communicator_contact_list_segment_top_separator_margin_top">8dp</dimen>
+    <dimen name="communicator_contact_list_item_separator_line_height">0.5dp</dimen>
+
+    <!-- Dialogs -->
+    <dimen name="communicator_attachment_margin_top">5dp</dimen>
+    <dimen name="communicator_item_time_margin_end">2dp</dimen>
+    <dimen name="communicator_item_date_view_margin_end">12dp</dimen>
+    <dimen name="communicator_document_name_icon_padding_end">7dp</dimen>
+    <dimen name="communicator_document_name_icon_padding_end_and_start">8dp</dimen>
+    <dimen name="communicator_dialog_list_item_separator_line_height">0.5dp</dimen>
+    <dimen name="communicator_dialog_item_content_end_padding">12dp</dimen>
+    <dimen name="communicator_dialog_item_separator_margin_bottom">8dp</dimen>
+    <dimen name="communicator_dialog_item_i_am_sender_end_margin">3dp</dimen>
+    <dimen name="communicator_dialog_item_attachment_spacing_margin">1dp</dimen>
+    <dimen name="communicator_dialog_item_document_icon_end_margin">4dp</dimen>
+    <dimen name="communicator_document_name_padding_top">4dp</dimen>
+    <dimen name="communicator_dialog_item_person_name_end_margin">2dp</dimen>
+    <dimen name="communicator_dialog_item_outgoing_unread_margin_top">2dp</dimen>
+    <dimen name="communicator_dialog_item_date_header_margin_top">6dp</dimen>
+    <dimen name="communicator_dialog_item_content_container_separator_height">8dp</dimen>
+    <dimen name="communicator_dialog_item_segment_divider_text_view_height">40dp</dimen>
+    <dimen name="communicator_dialog_item_segment_divider_margin_start">12dp</dimen>
+    <dimen name="communicator_toolbar_progress_bar_padding">10dp</dimen>
+    <dimen name="communicator_toolbar_progress_bar_size">26dp</dimen>
+    <dimen name="communicator_toolbar_indicator_padding_end">12dp</dimen>
+    <dimen name="communicator_toolbar_folders_icon_left_padding">8dp</dimen>
+    <dimen name="communicator_document_name_place_size">42dp</dimen>
+    <dimen name="communicator_unread_icon_margin_end">4dp</dimen>
+    <dimen name="communicator_fab_container_height">70dp</dimen>
+
+    <!-- Chat settings -->
+    <dimen name="communicator_chat_settings_left_and_right_margin">10dp</dimen>
+    <dimen name="communicator_chat_settings_top_and_bottom_margin">10dp</dimen>
+    <dimen name="communicator_chat_settings_success_button_padding">5dp</dimen>
+    <dimen name="communicator_chat_settings_success_button_end_margin">7dp</dimen>
+
+    <!-- Dialog information -->
+    <dimen name="communicator_dialog_information_action_done_margin_end">7dp</dimen>
+    <dimen name="communicator_dialog_information_participants_height">40dp</dimen>
+    <dimen name="communicator_dialog_information_border_shadow_height">7dp</dimen>
+
+    <!-- Add new contact -->
+    <dimen name="communicator_add_new_contact_button_padding">10dp</dimen>
+    <dimen name="communicator_add_new_contact_big_margin">12dp</dimen>
+    <dimen name="communicator_add_new_contact_button_height">50dp</dimen>
+    <dimen name="communicator_add_new_contact_result_header_height">30dp</dimen>
+
+    <!-- Conversation -->
+    <dimen name="communicator_messages_list_bottom_padding">10dp</dimen>
+    <dimen name="communicator_message_item_status_icon_margin_left">4dp</dimen>
+    <dimen name="communicator_message_item_status_label_margin_left">4dp</dimen>
+    <dimen name="communicator_message_item_attributes_container_margin_top">3dp</dimen>
+    <dimen name="communicator_message_item_attributes_container_margin_bottom">3dp</dimen>
+    <dimen name="communicator_message_item_body_min_height">20dp</dimen>
+    <dimen name="communicator_service_message_text_margin_top">8dp</dimen>
+    <dimen name="communicator_message_item_body_horizontal_padding">12dp</dimen>
+    <dimen name="communicator_message_item_body_padding_bottom">2dp</dimen>
+    <dimen name="communicator_message_item_body_padding_top">8dp</dimen>
+    <dimen name="communicator_message_item_margin_end">4dp</dimen>
+    <dimen name="communicator_message_item_dual_padding_horizontal">12dp</dimen>
+    <dimen name="communicator_message_item_group_padding_left">4dp</dimen>
+    <dimen name="communicator_message_item_service_time_date_padding_end">4dp</dimen>
+    <dimen name="communicator_message_item_group_padding_right">8dp</dimen>
+    <dimen name="communicator_message_item_person_photo_margin_top">3dp</dimen>
+    <dimen name="communicator_message_item_person_photo_margin_right">6dp</dimen>
+    <dimen name="communicator_dual_message_item_outgoing_body_margin_right">54dp</dimen>
+    <dimen name="communicator_dual_message_item_incoming_body_margin_left">51dp</dimen>
+    <dimen name="communicator_dual_message_item_incoming_body_margin_left_min">22dp</dimen>
+    <dimen name="communicator_group_message_item_outgoing_body_margin_left">48dp</dimen>
+    <dimen name="communicator_group_message_item_incoming_body_margin_right">48dp</dimen>
+    <dimen name="communicator_service_message_group_icon_margin_right">4dp</dimen>
+    <dimen name="communicator_service_message_group_unfolded_icon_margin_top">2dp</dimen>
+    <dimen name="communicator_fast_scroll_down_elevation">4dp</dimen>
+
+    <!-- Link Decoration View -->
+    <dimen name="communicator_link_decoration_image_side_size">40dp</dimen>
+    <dimen name="communicator_link_decoration_margin_right">8dp</dimen>
+    <dimen name="communicator_link_decoration_corner_radius">3dp</dimen>
+    <dimen name="communicator_link_decoration_image_margin_left">6dp</dimen>
+    <dimen name="communicator_link_decoration_small_margin">4dp</dimen>
+    <dimen name="communicator_link_decoration_marker_width">3dp</dimen>
+
+    <!-- QuickReplyActivity -->
+    <dimen name="communicator_quick_reply_icon_padding">6dp</dimen>
+    <dimen name="communicator_quick_reply_name_right_margin">8dp</dimen>
+    <dimen name="communicator_quick_reply_scroll_message_container_height">130dp</dimen>
+    <dimen name="communicator_quick_reply_message_horizontal_padding">15dp</dimen>
+    <dimen name="communicator_quick_reply_message_vertical_padding">7dp</dimen>
+    <dimen name="communicator_quick_reply_footer_horizontal_padding">6dp</dimen>
+    <dimen name="communicator_quick_reply_edit_message_padding">4dp</dimen>
+    <dimen name="communicator_quick_reply_name_left_margin">6dp</dimen>
+
+    <!-- Common Dimensions -->
+    <dimen name="communicator_low_rounding_radius">2dp</dimen>
+    <dimen name="communicator_middle_rounding_radius">4dp</dimen>
+
+    <!-- Message Information -->
+    <dimen name="communicator_message_info_holder_padding_bottom">6dp</dimen>
+    <dimen name="communicator_message_info_first_delimiter_height">10dp</dimen>
+    <dimen name="communicator_message_info_container_padding_vertical">10dp</dimen>
+    <dimen name="communicator_message_info_container_padding_horizontal">15dp</dimen>
+    <dimen name="communicator_message_info_container_translation_z">5dp</dimen>
+
+    <!-- StickyHeaderView -->
+    <dimen name="communicator_date_header_position_error">1dp</dimen>
+    <dimen name="communicator_sticky_header_view_elevation">4dp</dimen>
+    <dimen name="communicator_sticky_header_additional_top_and_bottom_padding">2dp</dimen>
+
+    <!-- HeaderDateView -->
+    <dimen name="communicator_header_date_margin_end">4dp</dimen>
+
+    <!-- Search field -->
+    <dimen name="communicator_search_field_height">50dp</dimen>
+    <dimen name="communicator_search_field_separator_height">1dp</dimen>
+
+    <!-- Contacts search panel -->
+    <dimen name="communicator_contact_item_vertical_padding">8dp</dimen>
+    <dimen name="communicator_contact_item_horizontal_padding">6dp</dimen>
+
+    <!-- Communicator host fragment -->
+    <dimen name="communicator_host_fragment_fab_margin">12dp</dimen>
+
+    <!-- Documents Signing -->
+    <dimen name="communicator_signatures_list_title_horizontal_padding">12dp</dimen>
+    <dimen name="communicator_signatures_list_item_image_horizontal_space">12dp</dimen>
+    <dimen name="communicator_signatures_list_item_horizontal_padding">12dp</dimen>
+    <dimen name="communicator_signatures_list_item_vertical_space">8dp</dimen>
+    <dimen name="communicator_signatures_list_item_image_top_margin">4dp</dimen>
+
+    <!-- Saby Chats -->
+    <dimen name="communicator_saby_conversation_title_horizontal_padding">8dp</dimen>
+    <dimen name="communicator_saby_conversation_unread_icon_margin_top">5dp</dimen>
+
+    <!-- Document Signing -->
+    <dimen name="communicator_document_signing_action_height">48dp</dimen>
+    <dimen name="communicator_signatures_list_item_title_text_size">16sp</dimen>
+
+    <!-- Chats -->
+    <dimen name="communicator_chats_pinned_chat_icon_size">22dp</dimen>
+    <dimen name="communicator_chats_pinned_chat_icon_corner_radius">11dp</dimen>
+
+</resources>

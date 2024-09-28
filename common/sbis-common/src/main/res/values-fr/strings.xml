@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_contractors_segment_title">Compagnies</string>
+    <string name="common_employee_segment_title">Employés</string>
+    <string name="common_folder_edit_dialog_edittext_hint">Entrez le nom du dossier</string>
+    <string name="common_navigation_menu_item_contractors">Compagnies</string>
+    <string name="common_navigation_menu_item_employees">Employés</string>
+    <string name="attach_photo_error">Erreur lors du chargement des photos</string>
+    <string name="chat_admin">Administrateur</string>
+    <string name="common_access_error">Erreur d\'accès</string>
+    <string name="common_access_error_description">Vous n\'êtes pas autorisé à accéder à la section actuelle. Veuillez contacter l\'administrateur système.</string>
+    <string name="common_another_user_call">Appel</string>
+    <string name="common_auth_segment_title">Autorisation</string>
+    <string name="common_bottom_menu_name">Impôt sur le revenu</string>
+    <string name="common_bottom_sheet_dialog_close">Fermer</string>
+    <string name="common_byte_short">B</string>
+    <string name="common_calendar_segment_title">@string/common_navigation_menu_item_calendar</string>
+    <string name="common_catalog_segment_title">Catalogue</string>
+    <string name="common_communicator_segment_title">Messagerie/Contacts</string>
+    <string name="common_confirmation_expiring_time_message">À la confirmation %1$s</string>
+    <string name="common_confirmation_overdue_message">Confirmation en retard</string>
+    <string name="common_data_loading_error">Erreur lors du chargement des données&#160;!</string>
+    <string name="common_date_format_today">Aujourd\'hui</string>
+    <string name="common_date_format_tomorrow">Demain</string>
+    <string name="common_date_format_yesterday">Hier</string>
+    <string name="common_delete_dialog_negative">Non</string>
+    <string name="common_delete_dialog_positive">Oui</string>
+    <string name="common_dialogs_move_to_folder_cancel">Annuler</string>
+    <string name="common_dialogs_move_to_folder_contextual_menu_title">Sélectionner le dossier</string>
+    <string name="common_disk_segment_title">@string/common_navigation_menu_item_cloud</string>
+    <string name="common_enter_message">Texte du message</string>
+    <string name="common_failed_to_open_file">Échec de l\'ouverture du fichier.</string>
+    <string name="common_feature_manage_segment_title">Test</string>
+    <string name="common_file_loading_error">Erreur de téléchargement de fichier</string>
+    <string name="common_filter">Filtre</string>
+    <string name="common_folder_button_label">Dossiers</string>
+    <string name="common_folder_delete_dialog">Supprimer le dossier \'%1$s\'&#160;?</string>
+    <string name="common_folder_delete_dialog_submit">EFFACER</string>
+    <string name="common_folder_detail_message_move_to_parent_folder">Tout le contenu du dossier sera déplacé vers un niveau supérieur.</string>
+    <string name="common_folder_edit_dialog_add">SAUVEGARDER</string>
+    <string name="common_folder_edit_dialog_cancle">ANNULER</string>
+    <string name="common_folder_new_dialog_add">CRÉER</string>
+    <string name="common_folder_new_dialog_title">Nouveau dossier</string>
+    <string name="common_gigabyte_short">Go</string>
+    <string name="common_kilobyte_short">Ko</string>
+    <string name="common_load">Télécharger</string>
+    <string name="common_loading_error">Erreur de chargement</string>
+    <string name="common_low_password_complexity">Faible complexité du mot de passe.\nPour augmenter la fiabilité, utilisez des lettres de différents registres, ainsi que des chiffres et des caractères spéciaux.</string>
+    <string name="common_man_last_activity_time_unknown">N\'était pas actif</string>
+    <string name="common_megabyte_short">Mo</string>
+    <string name="common_menu_share">Partager</string>
+    <string name="common_motivation_segment_title">Motivation</string>
+    <string name="common_navigation_menu_item_calendar">Calendrier</string>
+    <string name="common_navigation_menu_item_calendar_reduced">Calendrier</string>
+    <string name="common_navigation_menu_item_calls">Appels</string>
+    <string name="common_navigation_menu_item_channels">Canaux</string>
+    <string name="common_navigation_menu_item_cloud">Disque</string>
+    <string name="common_navigation_menu_item_contacts">Contacts</string>
+    <string name="common_navigation_menu_item_contractors_reduced">Co.</string>
+    <string name="common_navigation_menu_item_employees_reduced">Ees</string>
+    <string name="common_navigation_menu_item_feature_manage">Test</string>
+    <string name="common_navigation_menu_item_local_feature_toggle">Basculement de fonctionnalité</string>
+    <string name="common_navigation_menu_item_meetings">Événements</string>
+    <string name="common_navigation_menu_item_messages">Messages</string>
+    <string name="common_navigation_menu_item_messages_reduced">Messages</string>
+    <string name="common_navigation_menu_item_motivation">Motivation</string>
+    <string name="common_navigation_menu_item_motivation_reduced">Motiv.</string>
+    <string name="common_navigation_menu_item_my_docs">Documents</string>
+    <string name="common_navigation_menu_item_my_docs_reduced">Docs</string>
+    <string name="common_navigation_menu_item_news">Nouvelles</string>
+    <string name="common_navigation_menu_item_notifications">Avis</string>
+    <string name="common_navigation_menu_item_notifications_reduced">Notif.</string>
+    <string name="common_navigation_menu_item_settings">Réglages</string>
+    <string name="common_navigation_menu_item_settings_reduced">Réglages</string>
+    <string name="common_navigation_menu_item_tasks">Tâches</string>
+    <string name="common_navigation_menu_item_tasks_approve">Approuver</string>
+    <string name="common_navigation_menu_item_tasks_from_me">De moi</string>
+    <string name="common_navigation_menu_item_tasks_incoming">Entrant</string>
+    <string name="common_need_to_clear_collages_cache">need_to_clear_collages_cache</string>
+    <string name="common_news_segment_title">@string/common_navigation_menu_item_news</string>
+    <string name="common_no_employees_to_display">La liste des employés est vide</string>
+    <string name="common_no_network_available_check_connection">Vérifiez votre connection internet</string>
+    <string name="common_no_permission_error">Autorité insuffisante pour effectuer l\'opération.</string>
+    <string name="common_notification_segment_title">@string/common_navigation_menu_item_notifications</string>
+    <string name="common_open_link_browser_error">Impossible de trouver l\'application pour ouvrir le lien</string>
+    <string name="common_option_cancel_name">@string/design_cancel_item_label</string>
+    <string name="common_password_is_too_short">La longueur minimale du mot de passe est de 6 symboles</string>
+    <string name="common_password_requirements_hint">Entrez au moins 6 symboles. Pour améliorer la fiabilité, utilisez des lettres de casse différente, des chiffres et des symboles spéciaux.</string>
+    <string name="common_period_from">de %s</string>
+    <string name="common_period_half_year">semestre</string>
+    <string name="common_period_half_year_short">hy</string>
+    <string name="common_period_quarters">trimestre</string>
+    <string name="common_period_quarters_short">qtr</string>
+    <string name="common_period_today">aujourd\'hui</string>
+    <string name="common_period_yesterday">hier</string>
+    <string name="common_period_yesterday_from">hier de %s</string>
+    <string name="common_person_last_activity_time_denied">Pas d\'accès au système</string>
+    <string name="common_profile_device_has_mo_email_client">Aucun client de messagerie sur cet appareil</string>
+    <string name="common_profile_device_has_no_call_ability">Il n\'y a aucune possibilité de passer des appels téléphoniques sur cet appareil.</string>
+    <string name="common_profile_device_has_no_skype">Pas de Skype sur cet appareil</string>
+    <string name="common_profile_device_has_no_telegram">Pas de télégramme sur cet appareil</string>
+    <string name="common_profile_has_no_email">Le contact n\'a pas d\'e-mail.</string>
+    <string name="common_profile_has_no_phone_number">Le contact n\'a pas de numéro de téléphone.</string>
+    <string name="common_profile_has_no_skype">Le contact n\'a pas de Skype</string>
+    <string name="common_profile_has_no_telegram">Le contact n\'a pas de télégramme.</string>
+    <string name="common_profile_moscow_timezone">"MSK"</string>
+    <string name="common_profile_segment_title">Profil</string>
+    <string name="common_profile_social_network_open_error">Impossible de suivre le lien.</string>
+    <string name="common_profile_user_activity_status_man">Était actif</string>
+    <string name="common_profile_user_activity_status_woman">Était actif</string>
+    <string name="common_profile_user_offline_more_than_year">il y a plus d\'un an</string>
+    <string name="common_profile_user_online_work_and_home">En ligne</string>
+    <string name="common_recipients_selection_ok_description">Confirmer la sélection</string>
+    <string name="common_reporting_segment_title">Rapports</string>
+    <string name="common_reporting_status_unknown_answer">Réponse reçue</string>
+    <string name="common_requirement_confirmation_btn_title">Confirmation</string>
+    <string name="common_requirement_status_rejected">Diminué</string>
+    <string name="common_requirement_text_template">Exigence pour %1$s</string>
+    <string name="common_reset_button_label">Réinitialiser</string>
+    <string name="common_select_application_to_phone_call">Sélectionnez l\'application</string>
+    <string name="common_selection_window_close_icon">&#xe902;</string>
+    <string name="common_service_error">Échec de l\'actualisation de la liste.\nLe service est temporairement indisponible.</string>
+    <string name="common_settings_enable_history_recording_key">settings_enable_history_recording_key</string>
+    <string name="common_settings_enable_logs_recording_key">settings_enable_logs_recording_key</string>
+    <string name="common_show_document_failed">Le document a peut-être été supprimé&#160;; ou vous n\'avez pas accès à ce document d\'entreprise.</string>
+    <string name="common_task_segment_title">@string/common_navigation_menu_item_tasks</string>
+    <string name="common_term_days_hours_minutes_date_format">%d d %d h %d min</string>
+    <string name="common_term_hours_and_minutes_date_format">%d h %d min</string>
+    <string name="common_term_only_days_date_format">%d d.</string>
+    <string name="common_term_only_minutes_date_format">%d min</string>
+    <string name="common_time_at">" à "</string>
+    <string name="common_unknown_error">Erreur inconnue</string>
+    <string name="common_update_error">Échec du chargement des données. S\'il vous plait, vérifiez votre connexion internet.</string>
+    <string name="common_video_call_no_internet">Malheureusement, vous ne pouvez pas appeler car il n\'y a pas de connexion Internet.\nvous pouvez réessayer plus tard.</string>
+    <string name="common_video_call_segment_title">Appel vidéo</string>
+    <string name="common_violations_segment_title">Infractions</string>
+    <string name="common_woman_last_activity_time_unknown">N\'était pas actif</string>
+    <string name="create_chat_button_text">Nouveau groupe</string>
+    <string name="dialog_button_cancel">Annuler</string>
+    <string name="dialog_button_ok">D\'accord</string>
+    <string name="file_can_not_be_open">Impossible de trouver l\'application pour ouvrir le fichier %s</string>
+    <string name="file_can_not_be_shared">Aucune application appropriée</string>
+    <string name="operation_error_message">Erreur de fonctionnement</string>
+    <string name="common_navigation_menu_item_tasks_outgoing">Sortant</string>
+    <string name="common_navigation_menu_item_clients">Clients</string>
+
+    <plurals name="common_year">
+        <item quantity="zero">ans</item>
+        <item quantity="one">année</item>
+        <item quantity="two">ans</item>
+        <item quantity="few">ans</item>
+        <item quantity="many">ans</item>
+        <item quantity="other">ans</item>
+    </plurals>
+    <plurals name="common_month">
+        <item quantity="zero">mois</item>
+        <item quantity="one">mois</item>
+        <item quantity="two">mois</item>
+        <item quantity="few">mois</item>
+        <item quantity="many">mois</item>
+        <item quantity="other">mois</item>
+    </plurals>
+    <plurals name="common_day">
+        <item quantity="zero">journées</item>
+        <item quantity="one">journée</item>
+        <item quantity="two">journées</item>
+        <item quantity="few">journées</item>
+        <item quantity="many">journées</item>
+        <item quantity="other">journées</item>
+    </plurals>
+<string name="common_navigation_menu_item_instructions">Instructions</string>
+    <string-array name="common_months">
+        <item>Janvier</item>
+        <item>Février</item>
+        <item>Mars</item>
+        <item>Avril</item>
+        <item>Peut</item>
+        <item>Juin</item>
+        <item>Juillet</item>
+        <item>Août</item>
+        <item>Septembre</item>
+        <item>Octobre</item>
+        <item>Novembre</item>
+        <item>Décembre</item>
+    </string-array>
+    <string-array name="common_months_short">
+        <item>Jan</item>
+        <item>Fév</item>
+        <item>Mar</item>
+        <item>Avr</item>
+        <item>Peut</item>
+        <item>juin</item>
+        <item>Juillet</item>
+        <item>Août</item>
+        <item>Sep</item>
+        <item>Octobre</item>
+        <item>Nov</item>
+        <item>Déc</item>
+    </string-array>
+    <string-array name="common_months_short_with_dot">
+        <item>Jan</item>
+        <item>Fév</item>
+        <item>Mar</item>
+        <item>Avr</item>
+        <item>Peut</item>
+        <item>juin</item>
+        <item>Juillet</item>
+        <item>Août</item>
+        <item>Sep</item>
+        <item>Octobre</item>
+        <item>Nov</item>
+        <item>Déc</item>
+    </string-array>
+    <string-array name="common_months_short_without_dot">
+        <item>Jan</item>
+        <item>Fév</item>
+        <item>Mar</item>
+        <item>Avr</item>
+        <item>Peut</item>
+        <item>juin</item>
+        <item>Juillet</item>
+        <item>Août</item>
+        <item>Sep</item>
+        <item>Octobre</item>
+        <item>Nov</item>
+        <item>Déc</item>
+    </string-array>
+</resources>

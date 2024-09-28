@@ -1,0 +1,55 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(
+        settings,
+        "$settingsDir/module/android-configs/gradle_configs".toString(),
+        "presto"
+)
+
+def appName = "presto"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "crm",
+        "common-catalog-items",
+        "barcodereader",
+        "business-components",
+        "catalog",
+        "common",
+        "declaration",
+        "design",
+        "devices",
+        "disk",
+        "payment",
+        "presto-common",
+        "video-monitoring",
+        "sabyadmin-launcher"
+)
+
+include ':app', ':controller'
+
+setupControllerModule(settings, appName)
+
+splitAppByRegion(settings, appName, appName) {
+    ru {
+        settingsConfig {
+            def featureDir = "feature"
+            include ':check_correction'
+            project(':check_correction').projectDir = new File("$featureDir/check_correction")
+        }
+        appConfig {
+            applicationId = "ru.tensor.sbis.presto"
+            accountType = AndroidAccountManager.SBIS_ACCOUNT.type
+        }
+    }
+    kz {
+        appConfig {
+            applicationId = "kz.setty.presto"
+            accountType = AndroidAccountManager.SETTY_BUNDLE_ACCOUNT.type
+        }
+    }
+}

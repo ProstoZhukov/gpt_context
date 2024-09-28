@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="communicator_crm_chat_list_filter_container_id" type="id"/>
+    <item name="communicator_crm_chat_list_crud3_list_id" type="id"/>
+</resources>

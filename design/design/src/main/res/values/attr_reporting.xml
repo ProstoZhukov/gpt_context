@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Палитра иконок отчетности: http://axure.tensor.ru/ereport8/палитра_иконок_налогов_и_госорганов.html -->
+<resources>
+    <attr name="fns_icon_color" format="color|reference"/>
+    <attr name="sfr_icon_color" format="color|reference"/>
+    <attr name="stat_icon_color" format="color|reference"/>
+    <attr name="rpn_icon_color" format="color|reference"/>
+    <attr name="fsrar_icon_color" format="color|reference"/>
+    <attr name="cbrf_icon_color" format="color|reference"/>
+</resources>

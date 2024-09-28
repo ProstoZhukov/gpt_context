@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="application_tools_settings_log_crashes_title">Логирование и ошибки</string>
+
+    <!-- Экран Информации об Устройстве-->
+    <string name="application_tools_device_information">Информация об устройстве</string>
+    <string name="application_tools_build_config">Build Config</string>
+    <string name="application_tools_network_information">Сеть</string>
+    <string name="application_tools_screen_information">Экран</string>
+
+    <!-- Экран выбора логов и ошибок -->
+    <string name="application_tools_crashes_list_title">Ошибки</string>
+    <string name="application_tools_logs_list_title">Логи</string>
+    <string name="application_tools_logs_crashes_clear_button_title">Очистить</string>
+    <string name="application_tools_logs_crashes_clear_dialog_title">Выберете что именно хотите очистить</string>
+    <string name="application_tools_clear_crashes">Очистить баги (ошибки)</string>
+    <string name="application_tools_clear_logs">Очистить логи</string>
+    <string name="application_tools_clear_all">Очистить всё</string>
+    <string name="application_tools_crashes_not_exist">Ошибок нет</string>
+    <string name="application_tools_logs_not_exist">Логов нет</string>
+
+    <!--Экран описание ошибки-->
+    <string name="application_tools_crash_info_title">Описание ошибки</string>
+    <string name="application_tools_crash_info_about_app">Информация о приложения</string>
+    <string name="application_tools_crash_info_about_phone">@string/application_tools_device_information</string>
+    <string name="application_tools_crash_info_android_api_version">Android API</string>
+    <string name="application_tools_crash_info_brand">Производитель</string>
+    <string name="application_tools_crash_info_phone_name">Название модели</string>
+    <string name="application_tools_crash_info_share">Поделиться</string>
+    <string name="application_tools_crash_info_share_dialog_message">Отправить ошибку</string>
+    <string name="application_tools_crash_info_stack_trace">Stack Trace</string>
+    <string name="application_tools_crash_info_app_version">Версия</string>
+    <string name="application_tools_crashes_direction_name">crashes</string>
+
+    <!-- Страница настроек: проверка шрифтов - http://axure.tensor.ru/MobileAPP/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8_%D0%B8_%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C.html -->
+    <string name="application_tools_font_check_main_text">Продолжительность дня 11 часов 59 минут. Время до захода 2 часа 10 мин</string>
+    <string name="application_tools_font_check_sizeDisplay0">Regular 30 (sizeDisplay0)</string>
+    <string name="application_tools_font_check_sizeDisplay1">Regular 24 (sizeDisplay1)</string>
+    <string name="application_tools_font_check_sizeTitle1">Regular 20 (sizeTitle1)</string>
+    <string name="application_tools_font_check_sizeTitle2">Regular 18 (sizeTitle2)</string>
+    <string name="application_tools_font_check_sizeTitle3">Regular 17 (sizeTitle3)</string>
+    <string name="application_tools_font_check_sizeBody1">Regular 16 (sizeBody1)</string>
+    <string name="application_tools_font_check_sizeBody2">Regular 14 (sizeBody2)</string>
+    <string name="application_tools_font_check_sizeCaption1">Regular 12 (sizeCaption1)</string>
+    <string name="application_tools_debug_font_check_title">Проверка шрифтов</string>
+
+</resources>

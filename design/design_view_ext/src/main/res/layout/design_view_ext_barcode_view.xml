@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/design_view_ext_barcode_view_background"
+    android:padding="@dimen/design_view_ext_barcode_layout_padding_12">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/design_view_ext_barcode_image"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/design_view_ext_barcode_qr_code_size"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/design_view_ext_barcode_number"
+        app:layout_constraintEnd_toEndOf="@+id/design_view_ext_barcode_number"
+        app:layout_constraintStart_toStartOf="@+id/design_view_ext_barcode_number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/design_view_ext_barcode_number"
+        style="@style/BarcodeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/design_view_ext_barcode_layout_padding_8"
+        android:gravity="center_horizontal"
+        android:minWidth="@dimen/design_view_ext_barcode_qr_code_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/design_view_ext_barcode_image"
+        tools:text="1234 5678 9123 4567"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

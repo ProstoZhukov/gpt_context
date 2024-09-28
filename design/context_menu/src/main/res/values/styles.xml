@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Context Menu-->
+    <style name="ContextMenu">
+        <item name="android:background">@drawable/context_menu_background</item>
+    </style>
+
+    <style name="ContextMenuDivider">
+        <item name="android:background">?separatorColor</item>
+        <item name="android:alpha">0.8</item>
+    </style>
+
+    <style name="ContextMenuTitle">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">?labelTextColor</item>
+        <item name="android:textSize">?fontSize_m_scaleOn</item>
+    </style>
+
+    <style name="ContextMenuItemText">
+        <item name="android:maxLines">2</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_l_scaleOn</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ContextMenuDividerText">
+        <item name="android:maxLines">1</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">?labelTextColor</item>
+        <item name="android:textSize">?fontSize_m_scaleOn</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ContextMenuItemComment">
+        <item name="android:maxLines">2</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">?labelTextColor</item>
+        <item name="android:textSize">?fontSize_xs_scaleOn</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Атрибут для определения темы этого компонента в составе темы приложения -->
+    <attr name="BaseAppComponentsErrorScreen" format="reference"/>
+
+    <!-- Цвет фона экрана блокировки. По умолчанию применяется также к statusBarColor, navigationBarColor -->
+    <attr name="base_app_components_error_screen_background" format="reference|color"/>
+
+    <!-- Логотип для экрана блокировки -->
+    <attr name="base_app_components_error_screen__logo" format="reference"/>
+
+    <!-- Цвет заголовка на экране блокировки -->
+    <attr name="base_app_components_error_screen_title_text_color" format="reference|color"/>
+
+    <!-- Цвет комментария на экране блокировки -->
+    <attr name="base_app_components_error_screen_comment_text_color" format="reference|color"/>
+
+</resources>

@@ -1,0 +1,299 @@
+ext.common_dir = "common"
+ext.push_notification_dir = "$commonDir/push-notification"
+ext.versioning_dir = "$commonDir/version-checker"
+
+apply from: "$commonDir/push-notification/settings.gradle"
+apply from: "$commonDir/version-checker/settings.gradle"
+
+include ":network_native"
+project(":network_native").projectDir = new File(commonDir, "network_native")
+
+include ":application-tools"
+project(":application-tools").projectDir = new File(commonDir, "application-tools")
+
+include ":common_firebase_trace"
+project(":common_firebase_trace").projectDir = new File(commonDir, "common_firebase_trace")
+
+include ":common"
+project(":common").projectDir = new File(commonDir, "sbis-common")
+
+include ":event_bus"
+project(":event_bus").projectDir = new File(commonDir, "event_bus")
+
+include ":events_tracker"
+project(":events_tracker").projectDir = new File(commonDir, "events_tracker")
+
+include ':statistic'
+project(':statistic').projectDir = new File(commonDir, "statistic")
+
+include ":objectpool"
+project(":objectpool").projectDir = new File(commonDir, "objectpool")
+
+include ":docwebviewer"
+project(":docwebviewer").projectDir = new File(commonDir, "docwebviewer")
+
+include ":webviewer"
+project(":webviewer").projectDir = new File(commonDir, "webviewer")
+
+include ":period-picker"
+project(":period-picker").projectDir = new File(commonDir, "period-picker")
+
+include (":period-picker-default")
+project(":period-picker-default").projectDir = new File(commonDir, "period-picker-default")
+
+include ":local_feature_toggle"
+project(":local_feature_toggle").projectDir = new File(commonDir, "local_feature_toggle/local_feature_toggle")
+
+include ":local_feature_toggle_main_screen_addon"
+project(":local_feature_toggle_main_screen_addon").projectDir = new File(commonDir, "local_feature_toggle/local_feature_toggle_main_screen_addon")
+
+include ":media"
+project(":media").projectDir = new File(commonDir, "media")
+
+include ":mediaplayer"
+project(":mediaplayer").projectDir = new File(commonDir, "mediaplayer")
+
+include ":manage_features"
+project(":manage_features").projectDir = new File(commonDir, "manage_features")
+
+include ":mvi_extension"
+project(":mvi_extension").projectDir = new File(commonDir, "mvi_extension")
+
+include ":mvp"
+project(":mvp").projectDir = new File(commonDir, "mvp")
+
+include ":mvp_extensions"
+project(":mvp_extensions").projectDir = new File(commonDir, "mvp_extensions")
+
+include ":mobile-services-huawei"
+project(":mobile-services-huawei").projectDir = new File(commonDir, "mobile-services-huawei")
+
+include ":richtext"
+project(":richtext").projectDir = new File(commonDir, "richtext")
+
+include ":widget_player"
+project(":widget_player").projectDir = new File(commonDir, "widget_player")
+
+include ":dashboard_builder"
+project(":dashboard_builder").projectDir = new File(commonDir, "dashboard_builder")
+
+include ":scanner"
+project(":scanner").projectDir = new File(commonDir, "scanner")
+
+include ":message_panel"
+project(":message_panel").projectDir = new File(commonDir, "message_panel")
+
+include ":message_panel_recorder"
+project(":message_panel_recorder").projectDir = new File(commonDir, "message_panel_recorder")
+
+include ":message_panel_recorder_decl"
+project(":message_panel_recorder_decl").projectDir = new File(commonDir, "message_panel_recorder_decl")
+
+include ":shift_hours"
+project(":shift_hours").projectDir = new File(commonDir, "shift_hours")
+
+include "mvvm"
+project(":mvvm").projectDir = new File(commonDir, "mvvm")
+
+include "onboarding"
+project(":onboarding").projectDir = new File(commonDir, "onboarding")
+
+include ":testing"
+project(":testing").projectDir = new File(commonDir, "testing")
+
+include ":red_button"
+project(":red_button").projectDir = new File(commonDir, "red_button")
+
+include ":logging"
+project(":logging").projectDir = new File(commonDir, "logging")
+
+include ":app_file_browser"
+project(":app_file_browser").projectDir = new File(commonDir, "app_file_browser")
+
+include ":share_menu"
+project(":share_menu").projectDir = new File(commonDir, "share_menu")
+
+include ":list"
+project(":list").projectDir = new File(commonDir, "list/list")
+
+include ":master_detail"
+project(":master_detail").projectDir = new File(commonDir, "master_detail")
+
+include ":crud3"
+project(":crud3").projectDir = new File(commonDir, "list/crud3")
+
+include ':crud4'
+project(':crud4').projectDir = new File(commonDir, "list/crud4")
+
+include ":deeplink"
+project(":deeplink").projectDir = new File(commonDir, "deeplink")
+
+include ":complain_service"
+project(":complain_service").projectDir = new File(commonDir, "complain_service")
+
+include ":modalwindows"
+project(":modalwindows").projectDir = new File(commonDir, "modalwindows")
+
+include ":commonviews"
+project(":commonviews").projectDir = new File(commonDir, "common_views")
+
+include ":swipeablelayout"
+project(":swipeablelayout").projectDir = new File(commonDir, "swipeable_layout")
+
+include ":common_attachments"
+project(":common_attachments").projectDir = new File(commonDir, "common_attachments")
+
+include ":common_filters"
+project(":common_filters").projectDir = new File(commonDir, "common_filters")
+
+include ":folderspanel"
+project(":folderspanel").projectDir = new File(commonDir, "folderspanel")
+
+include ":controller_utils"
+project(":controller_utils").projectDir = new File(commonDir, "controller_utils")
+
+include ":timer"
+project(":timer").projectDir = new File(commonDir, "timer")
+
+include ":camera"
+project(":camera").projectDir = new File(commonDir, "camera")
+
+include ":base_components"
+project(":base_components").projectDir = new File(commonDir, "base_components")
+
+include ":storage"
+project(":storage").projectDir = new File(commonDir, "storage")
+
+include ":storage_utils"
+project(":storage_utils").projectDir = new File(commonDir, "storage_utils")
+
+include ":user_activity_track"
+project(":user_activity_track").projectDir = new File(commonDir, "user_activity_track")
+
+include ":user_activity_track_watcher"
+project(":user_activity_track_watcher").projectDir = new File(commonDir, "user_activity_track_watcher")
+
+include ":persons"
+project(":persons").projectDir = new File(commonDir, "persons")
+
+include ":fresco_utils"
+project(":fresco_utils").projectDir = new File(commonDir, "fresco_utils")
+
+include ":fresco_view"
+project(":fresco_view").projectDir = new File(commonDir, "fresco_view")
+
+include ":messages_events_wrapper"
+project(":messages_events_wrapper").projectDir = new File(commonDir, "messages_events_wrapper_decl")
+
+include ":messages_events_wrapper_real"
+project(":messages_events_wrapper_real").projectDir = new File(commonDir, "messages_events_wrapper_real")
+
+include ":platform_event_manager"
+project(":platform_event_manager").projectDir = new File(commonDir, "platform_event_manager")
+
+include ":sync_manager"
+project(":sync_manager").projectDir = new File(commonDir, "sync_manager")
+
+include ":counter_provider"
+project(":counter_provider").projectDir = new File(commonDir, "counter_provider")
+
+include ":fresco-bincontent"
+project(":fresco-bincontent").projectDir = new File(commonDir, "fresco-bincontent")
+
+include ":plugin_struct"
+project(":plugin_struct").projectDir = new File(commonDir, "plugin_struct")
+
+include ":plugin_manager"
+project(":plugin_manager").projectDir = new File(commonDir, "plugin_manager")
+
+include ":wizard"
+project(":wizard").projectDir = new File(commonDir, "wizard")
+
+include ":base_saby_app"
+project(":base_saby_app").projectDir = new File(commonDir, "app_systems/base_saby_app")
+
+include ':core_saby_app'
+project(':core_saby_app').projectDir = new File(commonDir, "app_systems/core_saby_app")
+
+include ":base_communicator_app"
+project(":base_communicator_app").projectDir = new File(commonDir, "app_systems/base_communicator_app")
+
+include ":base_app_components"
+project(":base_app_components").projectDir = new File(commonDir, "app_systems/base_app_components")
+
+include ":app_init"
+project(":app_init").projectDir = new File(commonDir, "app_init")
+
+include ":main_screen"
+project(":main_screen").projectDir = new File(commonDir, "main_screen/main_screen")
+
+include ":main_screen_decl"
+project(":main_screen_decl").projectDir = new File(commonDir, "main_screen/main_screen_decl")
+
+include ":main_screen_push_handle_extension"
+project(":main_screen_push_handle_extension").projectDir = new File(commonDir, "main_screen/main_screen_extensions/main_screen_push_handle_extension")
+
+include ":main_screen_generic_intent_handle_extension"
+project(":main_screen_generic_intent_handle_extension").projectDir = new File(commonDir, "main_screen/main_screen_extensions/main_screen_generic_intent_handle_extension")
+
+include ":main_screen_linkopen_red_button_handle_extension"
+project(":main_screen_linkopen_red_button_handle_extension").projectDir = new File(commonDir, "main_screen/main_screen_extensions/main_screen_linkopen_red_button_handle_extension")
+
+include ":main_screen_navigation_event_handle_extension"
+project(":main_screen_navigation_event_handle_extension").projectDir = new File(commonDir, "main_screen/main_screen_extensions/main_screen_navigation_event_handle_extension")
+
+include ":main_screen_deeplink_handle_extension"
+project(":main_screen_deeplink_handle_extension").projectDir = new File(commonDir, "main_screen/main_screen_extensions/main_screen_deeplink_handle_extension")
+
+include ":manage_features_test_main_screen_addon"
+project(":manage_features_test_main_screen_addon").projectDir = new File(commonDir, "manage_features_test_main_screen_addon")
+
+include ":decorated_link"
+project(":decorated_link").projectDir = new File(commonDir, "decorated_link")
+
+include ":mvi_extension"
+project(":mvi_extension").projectDir = new File(commonDir, "mvi_extension")
+
+include ":navigation_service"
+project(":navigation_service").projectDir = new File(commonDir, "navigation_service")
+
+include ":feature_ctrl"
+project(":feature_ctrl").projectDir = new File(commonDir, "feature_ctrl")
+
+include ":lifecycle_compat"
+project(":lifecycle_compat").projectDir = new File(commonDir, "lifecycle-compat")
+
+include ":entrypoint_guard"
+project(":entrypoint_guard").projectDir = new File(commonDir, "entrypoint_guard")
+
+include ":sbis_formatter"
+project(":sbis_formatter").projectDir = new File(commonDir, "sbis_formatter")
+
+include ":onboarding_tour"
+project(":onboarding_tour").projectDir = new File(commonDir, "onboarding_tour")
+
+include ":link_opener"
+project(":link_opener").projectDir = new File(commonDir, "link_opener")
+
+include ':sale_point_qr_binder'
+project(':sale_point_qr_binder').projectDir = new File(commonDir, "sale/sale_point_qr_binder")
+
+include ':our-organisations-impl'
+project(':our-organisations-impl').projectDir = new File(commonDir, 'our-organisations-impl')
+
+include ':viper'
+project(':viper').projectDir = new File(commonDir, 'viper')
+
+//BusinessCard region
+include ':business_card'
+project(':business_card').projectDir = new File(commonDir, 'business_card/business_card')
+
+include ':business_card_host'
+project(':business_card_host').projectDir = new File(commonDir, 'business_card/business_card_host')
+
+include ':business_card_domain'
+project(':business_card_domain').projectDir = new File(commonDir, 'business_card/business_card_domain')
+
+include ':business_card_list'
+project(':business_card_list').projectDir = new File(commonDir, 'business_card/business_card_list')
+//endregion

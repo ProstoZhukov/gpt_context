@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- region Стандартные стили компонента -->
+
+    <style name="CurrentFolderViewBaseTheme">
+        <item name="CurrentFolderView_dividerColor">?borderColor</item>
+        <item name="borderColor">@color/palette_alpha_color_black2</item>
+        <item name="CurrentFolderView_titleStyle">@style/DefaultCurrentFolderViewTitleStyle</item>
+        <item name="CurrentFolderView_iconStyle">@style/DefaultCurrentFolderViewBackIconStyle</item>
+    </style>
+
+    <style name="CurrentFolderViewTitle" parent="RegularStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">?fontSize_4xl_scaleOff</item>
+    </style>
+
+    <style name="DefaultCurrentFolderViewTheme" parent="CurrentFolderViewBaseTheme">
+        <item name="CurrentFolderView_backgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+    </style>
+
+    <style name="AdditionalCurrentFolderViewTheme" parent="CurrentFolderViewBaseTheme">
+        <item name="CurrentFolderView_backgroundColor">?backgroundColor</item>
+        <item name="borderColor">?borderColor</item>
+    </style>
+
+    <!-- TODO https://dev.sbis.ru/opendoc.html?guid=724b51d6-5ac1-4ea7-ae80-12c68edc1dd7 убрать использование в CRM saby, retail, catalog-->
+    <style name="CurrentFolderViewBlueTitleTheme" parent="CurrentFolderViewBaseTheme">
+        <item name="CurrentFolderView_titleStyle">@style/CurrentFolderViewTitleBlue</item>
+        <item name="CurrentFolderView_iconStyle">@style/CurrentFolderViewBackIconGinger</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- region Стили элементов -->
+    <style name="DefaultCurrentFolderViewTitleStyle" parent="CurrentFolderViewTitle">
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+    <style name="DefaultCurrentFolderViewBackIconStyle" parent="MobileFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:text">@string/design_mobile_icon_arrow_narrow_left</item>
+        <item name="android:textColor">?primaryIconColor</item>
+        <item name="android:textSize">?iconSize_2xl</item>
+        <item name="android:paddingStart">?offset_s</item>
+        <item name="android:paddingEnd">?offset_s</item>
+    </style>
+
+    <style name="CurrentFolderViewTitleGinger" parent="CurrentFolderViewTitle">
+        <item name="android:textColor">@color/text_color_accent_4</item>
+    </style>
+
+    <style name="CurrentFolderViewBackIconBlue" parent="MobileFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:text">@string/design_mobile_icon_btn_back</item>
+        <item name="android:textColor">@color/text_color_link_1</item>
+        <item name="android:textSize">@dimen/size_title1_scaleOff</item>
+        <item name="android:paddingStart">@dimen/current_folder_view_blue_arrow_padding_start</item>
+        <item name="android:paddingEnd">@dimen/current_folder_view_blue_arrow_padding_end</item>
+    </style>
+
+    <style name="CurrentFolderViewTitleBlue" parent="CurrentFolderViewTitle">
+        <item name="android:textColor">@color/text_color_accent_1</item>
+    </style>
+
+    <style name="CurrentFolderViewBackIconGinger">
+        <item name="android:background">@drawable/back_arrow_ginger</item>
+        <item name="android:layout_width">@dimen/current_folder_view_ginger_arrow_width</item>
+        <item name="android:layout_height">@dimen/current_folder_view_ginger_arrow_height</item>
+        <item name="android:layout_marginEnd">@dimen/current_folder_view_ginger_arrow_margin_end</item>
+    </style>
+    <!-- endregion -->
+
+</resources>

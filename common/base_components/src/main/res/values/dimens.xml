@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="base_components_recent_media_attachment_preview_max_width">180dp</dimen>
+
+    <dimen name="base_components_attachment_preview_size">120dp</dimen>
+
+    <dimen name="base_components_selection_window_content_top_spacing">64dp</dimen>
+
+</resources>

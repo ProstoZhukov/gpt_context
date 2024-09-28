@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SbisContactDataDefaultTheme">
+        <item name="SbisContactDataView_iconColor">?secondaryIconColor</item>
+        <item name="SbisContactDataView_iconSize">?iconSize_3xl</item>
+        <item name="SbisContactDataView_moreTextColor">?secondaryTextColor</item>
+        <item name="SbisContactDataView_phoneViewStyle">@style/SbisContactPhoneNumberDefaultTheme</item>
+    </style>
+</resources>

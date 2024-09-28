@@ -1,0 +1,8 @@
+def barcodeReaderDir = "module/barcodereader"
+ext.barcodereader_dir = barcodeReaderDir
+
+include ':barcodereader'
+project(':barcodereader').projectDir = new File(barcodereader_dir, 'barcodereader')
+
+include ':common-barcodereader'
+project(':common-barcodereader').projectDir = new File(barcodereader_dir, 'common-barcodereader')

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="logging_host_toolbar_title">日志</string>
+    <string name="logging_log_package_size_megabytes">%.1f Mb</string>
+    <string name="logging_log_package_size_kilobytes">%.1f KB</string>
+    <string name="logging_preparing_sending_logs">分析日志包</string>
+    <string name="logging_waiting_sending_logs">等待发送</string>
+    <string name="logging_waiting_wifi_sending_logs">等待 Wi-F</string>
+    <string name="logging_waiting_inet_sending_logs">等待网络</string>
+    <string name="logging_sending_logs_in_progress">发送日志到服务器</string>
+    <string name="logging_floating_send_btn_text">全部发送</string>
+    <string name="logging_slider_label">启用日志记录</string>
+    <string name="logging_disable_log_stub_title">没有数据</string>
+    <string name="logging_settings_header_title_root">记录设置</string>
+    <string name="logging_settings_header_title_level">记录级别</string>
+    <string name="logging_settings_header_title_writing_mode">记录</string>
+    <string name="logging_settings_level_label">等级</string>
+    <string name="logging_settings_delay_label">记录</string>
+    <string name="logging_settings_storage_interval_label">保留期限</string>
+    <string name="logging_settings_wifi_label">仅 Wi-Fi 发送</string>
+    <string name="logging_settings_log_level_minimal">最低限度</string>
+    <string name="logging_settings_log_level_standart">标准</string>
+    <string name="logging_settings_log_level_extended">先进的</string>
+    <string name="logging_settings_log_level_debug">调试</string>
+    <string name="logging_settings_log_delay_delayed">延迟</string>
+    <string name="logging_settings_log_delay_immediate">即时</string>
+    <string name="logging_settings_log_storage_interval_day">1天</string>
+    <string name="logging_settings_log_storage_interval_two_days">2天</string>
+    <string name="logging_settings_log_storage_interval_three_days">3天</string>
+    <string name="logging_settings_log_storage_interval_week">1周</string>
+    <string name="logging_mobile_icon_clock">&#xeba0;</string>
+    <string name="logging_mobile_icon_check">&#xe990;</string>
+    <string name="logging_disable_log_stub_description">允许收集设备数据\n以进行进一步分析。</string>
+    <string name="logging_force_log_delivery_launcher_label">发送日志</string>
+    <string name="logging_settings_log_query_to_db">将查询计划记录到数据库</string>
+    <string name="logging_settings_log_level_disabled">残疾人</string>
+    <string name="logging_copy_to_clipboard">事件编号已复制到剪贴板</string>
+    <string name="logging_settings_header_title_storage_interval">包裹保留期限</string>
+    <string name="logging_settings_header_title_diagnostic_settings">诊断数据</string>
+    <string name="logging_settings_diagnostic_settings_only_logs">仅记录</string>
+    <string name="logging_settings_diagnostic_settings_full">满的</string>
+    <string name="logging_settings_diagnostic_settings_selective">可选择的</string>
+    <string name="logging_confirmation_text">我同意从设备发送信息以分析和改进应用程序。</string>
+    <string name="logging_confirmation_total_size_text">已更改%1$s</string>
+    <string name="logging_confirmation_success">确认</string>
+    <string name="logging_confirmation_dismiss">取消</string>
+</resources>

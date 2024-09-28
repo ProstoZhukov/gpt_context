@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tensor.sbis.mediaplayer.sbistube.SbisTubePlayerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/player_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    app:keep_content_on_player_reset="true"
+    app:player_layout_id="@layout/mediaplayer_sbis_tube_player_view_content"
+    app:show_buffering="when_playing"/>

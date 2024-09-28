@@ -1,0 +1,151 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableRegionSplit()
+}
+
+android {
+    namespace "ru.tensor.sbis.base_communicator_app"
+}
+
+regionConfig {
+    regions {
+        ru {
+            main {
+                dependencies {
+                    api project(':videocall')
+                }
+            }
+        }
+        kz {
+            main {
+                dependencies {
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    api project(":base_saby_app")
+    api project(':version-checker')
+    api project(':push-notification')
+    api project(':language')
+    api project(':auth_devices')
+    api project(':auth_verify')
+    api project(':platform_event_manager')
+    api project(':period-picker')
+    api project(':barcode-decl')
+    api project(':barcodereader')
+    api project(':link_opener')
+    api project(':design_recipient_selection')
+    api project(':media')
+    api project(':employee')
+    api project(':employee_common')
+    api project(':person_card')
+    api project(':my_profile')
+    api project(':city_selector')
+    api project(':certificate_copying')
+    api project(':crypto_operation')
+    api project(':cryptopro_config')
+    api project(':certificate_master')
+    api project(':certificate_request_impl')
+    api project(':user_activity_track_watcher')
+    api project(':signature_authority')
+    api project(':share_menu')
+    api project(':scanner')
+    api project(':sync_manager')
+    api project(':clients-impl')
+    api project(':clients-contact-list')
+    api project(':clients-representative-create')
+    api project(':e_signs')
+    api project(':viewer')
+    api project(':edo-passage')
+    api project(':manage_features')
+    api project(':schedule-control')
+    api project(':reporting')
+    api project(':profile')
+    api project(':notification_settings')
+    api project(':notification_push')
+    api project(':notification_service')
+    api project(':notification_ui')
+    api project(':news')
+    api project(':motivation')
+    api project(':motivation_impl')
+    api project(':design_profile')
+    api project(':message_panel_recorder')
+    api project(':message_panel')
+    api project(':design_message_panel_audio_recorder')
+    api project(':design_message_panel_video_recorder')
+    api project(':status')
+    api project(':attachments')
+    api project(':attachments-loading')
+    api project(':attachments-signing')
+    api project(':attachments-encryption')
+    api project(':cadres')
+    api project(':calendar')
+    api project(':calendar_event_cards')
+    api project(':calendar_create_event')
+    api project(':calendar_common')
+    api project(':communicator_host')
+    api project(':communicator_navigation')
+    api project(':communicator_crud')
+    api project(':communicator_common')
+    api project(':communicator_push')
+    api project(':communicator_sbis_conversation')
+    api project(':contacts_registry')
+    api project(':employees_registry')
+    api project(':employee_register')
+    api project(':themes_registry')
+    api project(':communicator_files')
+    api project(':contractors-card')
+    api project(':disk')
+    api project(':docwebviewer')
+    api project(':webviewer')
+    api project(':meeting')
+    api project(':edo_faces_selection')
+    api project(':navigation')
+    api project(':settings-screen')
+    api project(':push-history')
+    api project(':auth_settings')
+    api project(':decorated_link')
+    api project(':richtext')
+    api project(':widget_player')
+    api project(':design_media_player')
+    api project(':design_audio_player_view')
+    api project(':design_video_player_view')
+    api project(':design_sbis_text_view')
+    api project(':communicator_share_messages')
+    api project(':communicator_send_message')
+    api project(':cloud_view')
+    api project(':certificate_selection')
+    api project(':certificate_activation')
+    api project(':certificate_backup')
+    api project(':certificate_nfc_access')
+    api project(':sabydoc-viewer')
+    api project(':design_files_picker')
+    api project(':design_gallery')
+    api project(':design_message_view')
+    api project(':calendar_activity_tracking')
+
+    implementation project(':design')
+    implementation project(':design_dialogs')
+    implementation project(':toolbar')
+    implementation project(':fresco-bincontent')
+    implementation project(':fresco_utils')
+    implementation "com.facebook.fresco:imagepipeline-okhttp3:$rootProject.ext.frescoVersion"
+    implementation "com.facebook.fresco:fresco:$rootProject.ext.frescoVersion"
+    implementation project(':list')
+    implementation project(':master_detail')
+    implementation project(':common_firebase_trace')
+    implementation project(':edo_doc_card_extension')
+    implementation project(':design_period_picker')
+
+    implementation project(':local_feature_toggle')
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="manage_features_account">Compte</string>
+    <string name="manage_features_feature_id">Identifiant</string>
+    <string name="manage_features_state">Statut</string>
+    <string name="manage_features_state_disabled">Désactivé</string>
+    <string name="manage_features_state_enabled">Activé</string>
+    <string name="manage_features_title">Test</string>
+    <string name="manage_features_user">Utilisateur</string>
+    <string name="manage_features_value">Valeur</string>
+</resources>

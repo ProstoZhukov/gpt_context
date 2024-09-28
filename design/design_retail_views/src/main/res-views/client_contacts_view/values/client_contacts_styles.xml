@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RetailViewsClientContactsViewIcon">
+        <item name="android:fontFamily">@font/sbis_mobile_icons</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?unaccentedTextColor</item>
+        <item name="android:textSize">?iconSize_2xl</item>
+    </style>
+
+    <style name="RetailViewsClientContactsViewSbisButtonStyle">
+        <item name="SbisButton_titleSize">xl</item>
+        <item name="SbisButton_style">primary</item>
+        <item name="SbisButton_elevation">0dp</item>
+        <item name="SbisButton_size">m</item>
+    </style>
+
+</resources>

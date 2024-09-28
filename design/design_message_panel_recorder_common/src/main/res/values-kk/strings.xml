@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_message_panel_recorder_error_message">Хабарлама жазу қатесі</string>
+    <string name="design_message_panel_recorder_audio_file_name_template">Аудио хабарлама-%1$s.%2$s</string>
+    <string name="design_message_panel_recorder_video_file_name_template">Бейне хабарлама-%1$s.%2$s</string>
+    <string name="design_message_panel_recorder_common_cancel_text">Болдырмау</string>
+    <string name="design_message_panel_recorder_common_movement_hint">Сол жақ – бас тарту</string>
+    <string name="design_message_panel_recorder_audio_record_info">Дауыстық хабарлама жіберу үшін қоңырауды аяқтау керек</string>
+    <string name="design_message_panel_recorder_video_record_info">Бейне хабарлама жіберу үшін қоңырауды аяқтау керек.</string>
+    <string name="design_message_panel_recorder_confirm_cancel_recording">Жазбаны қалпына келтіргіңіз келетініне сенімдісіз бе?</string>
+</resources>

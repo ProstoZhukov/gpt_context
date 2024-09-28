@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBuildConfigGeneration()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.mvp"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+
+    implementation project(':controller')
+
+    implementation project(':common')
+    api project(':commonviews')
+    implementation project(':design')
+    implementation project(':list_utils')
+    implementation project(':input_view')
+    implementation project(':base_components')
+    implementation project(':common_filters')
+    implementation project(':scroll_to_top')
+    implementation project(':design_dialogs')
+    implementation project(':text_span')
+    implementation project(':toolbar')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':design_progress')
+    implementation project(':verification-decl')
+    implementation project(':communication-decl')
+    implementation project(':design_notification')
+
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.appCompatVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.ext.recyclerViewVersion"
+    implementation "androidx.fragment:fragment:$rootProject.ext.fragmentVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+    implementation "androidx.annotation:annotation:$rootProject.ext.annotationVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+}

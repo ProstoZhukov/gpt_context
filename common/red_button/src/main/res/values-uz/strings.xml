@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="red_button_cloud_alert_message">Barcha ma\'lumotlar vaqtincha yashiriladi. Faqat ism va telefon raqamlari bilan \"Xodimlar\" qoling.</string>
+    <string name="red_button_cloud_alert_title">Maʼlumotlar yashirilsinmi?</string>
+    <string name="red_button_code_again">Kodni yana oling</string>
+    <string name="red_button_message_pin_close">Bulutga kirishni keyingi tiklash uchun pin kodini eslab qoling</string>
+    <string name="red_button_message_pin_confirmation">PIN kodingizni yana kiriting</string>
+    <string name="red_button_message_pin_open">Agar PIN kodingizni unutgan bo\'lsangiz, menejeringizga murojaat qiling</string>
+    <string name="red_button_network_error">Tarmoqqa ulanish yo‘q</string>
+    <string name="red_button_password_sent_on_phone_template">Kod %1$s manziliga yuborildi</string>
+    <string name="red_button_repeat_through">%s dan keyin takrorlang</string>
+    <string name="red_button_stub_subtitle">Ilovani yuklab oling va uni qayta oching.</string>
+    <string name="red_button_stub_title_close">Ilova qayta ishga tushirilgandan so\'ng ma\'lumotlar yashiriladi</string>
+    <string name="red_button_stub_title_open">Ilova qayta ishga tushirilgandan so\'ng ma\'lumotlarga kirish qaytariladi</string>
+    <string name="red_button_stub_toolbar_text">Sozlamalar</string>
+    <string name="red_button_title_close">Ma\'lumotlarni yopish?</string>
+    <string name="red_button_title_close_progress">Ma\'lumotlar yopiladi</string>
+    <string name="red_button_title_open">Ochiq ma\'lumotlar</string>
+    <string name="red_button_title_open_progress">Ma\'lumotlar ochiq</string>
+    <string name="red_button_title_pin_confirmation">PIN-kodni tasdiqlang</string>
+    <string name="red_button_title_pin_off">PIN kodni kiriting</string>
+    <string name="red_button_title_pin_on">PIN kod bilan keling</string>
+    <string name="red_button_title_sms">SMS kodini kiriting</string>
+    <string name="red_button_uu_alert_message">"Boshqaruv hisobi" tashkiloti bo\'yicha barcha hujjatlar, operatsiyalar va hisobotlar vaqtincha yashiriladi. Oddiy yuridik shaxslarning hujjatlariga ko\'ra. yuzlar o\'zgarmaydi.</string>
+</resources>

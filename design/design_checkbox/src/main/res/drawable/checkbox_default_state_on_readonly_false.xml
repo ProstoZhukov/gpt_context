@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+  <path
+      android:pathData="M6,0L14,0A6,6 0,0 1,20 6L20,14A6,6 0,0 1,14 20L6,20A6,6 0,0 1,0 14L0,6A6,6 0,0 1,6 0z"
+      android:fillColor="?attr/sbisCheckboxBackgroundColor"/>
+  <path
+      android:pathData="M-0,6C-0,2.5 2.5,0 6,0.004H13C13.967,0.004 13.967,1.504 13,1.504H6C3.5,1.5 1.5,3.5 1.5,6V14C1.5,16.5 3.5,18.501 6,18.501H14C16.5,18.501 18.5,16.5 18.5,14V11.5C18.5,10.533 20,10.533 20,11.5V14C20,17.5 17.5,20.001 14,20.001H6C2.5,20.001 -0,17.5 -0,14V6Z"
+      android:fillColor="?attr/sbisCheckboxBorderColor"/>
+  <path
+      android:pathData="M19.128,1.755C19.586,2.125 19.627,2.762 19.22,3.179L15.033,8.17L10.846,13.161C10.629,13.384 10.315,13.507 9.989,13.5C9.662,13.492 9.356,13.354 9.152,13.122L5.743,9.242C5.361,8.807 5.438,8.172 5.916,7.824C6.394,7.476 7.091,7.547 7.473,7.982L10.062,10.927L17.564,1.839C17.97,1.422 18.671,1.385 19.128,1.755Z"
+      android:fillColor="?attr/sbisCheckboxMarkerColor"/>
+</vector>

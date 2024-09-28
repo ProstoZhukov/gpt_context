@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Атрибуты компонента [ShadowScroll] -->
+    <declare-styleable name="RetailViewsShadowScrollViewAttrs">
+        <attr name="retail_views_content_layout_res" format="reference"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_tour_skip_title">Παραλείπω</string>
+    <string name="onboarding_tour_rationale_default_title">Απαιτούνται δικαιώματα για τη χρήση όλων των δυνατοτήτων της εφαρμογής</string>
+    <string name="onboarding_tour_terms_caption">Συνεχίζοντας, συμφωνείτε με τους %%τους όρους παροχής υπηρεσιών%% και %%πολιτική απορρήτου%%</string>
+    <string name="onboarding_tour_logo_sbis">saby</string>
+</resources>

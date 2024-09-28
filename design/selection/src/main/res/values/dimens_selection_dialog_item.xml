@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="selection_dialog_item_content_end_padding">12dp</dimen>
+    <dimen name="selection_dialog_item_i_am_sender_end_margin">3dp</dimen>
+    <dimen name="selection_attachment_margin_top">5dp</dimen>
+    <dimen name="selection_dialog_item_attachment_spacing_margin">1dp</dimen>
+    <dimen name="selection_dialog_item_document_icon_end_margin">4dp</dimen>
+    <dimen name="selection_dialog_item_outgoing_unread_margin_top">2dp</dimen>
+
+    <dimen name="selection_dialog_item_persons_photo_margin_start">8dp</dimen>
+    <dimen name="selection_dialog_item_person_name_end_margin">2dp</dimen>
+    <dimen name="selection_dialog_item_person_name_baseline_size">1dp</dimen>
+    <dimen name="selection_dialog_item_person_name_baseline_space_height">3dp</dimen>
+    <dimen name="selection_dialog_item_company_icon_padding_bottom">1dp</dimen>
+    <dimen name="selection_dialog_item_date_icon_padding_top">0.5dp</dimen>
+    <dimen name="selection_dialog_date_header_view_margin_end">7dp</dimen>
+
+</resources>

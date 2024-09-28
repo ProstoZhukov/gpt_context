@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="communicator_crm_conversation_recycler_view_id" type="id"/>
+    <item name="communicator_crm_conversation_panel_container_id" type="id"/>
+    <item name="communicator_message_cloud_rate" type="id"/>
+    <item name="communicator_crm_conversation_quick_reply_on_button_panel_container_id" type="id"/>
+    <item name="communicator_crm_conversation_quick_reply_on_search_panel_container_id" type="id"/>
+    <item name="communicator_crm_take_button" type="id"/>
+    <item name="communicator_crm_next_button" type="id"/>
+    <item name="communicator_crm_reopen_button" type="id"/>
+</resources>

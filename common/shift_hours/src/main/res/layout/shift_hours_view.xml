@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shift_hours_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingStart="@dimen/shift_hours_text_padding"
+    android:paddingEnd="@dimen/shift_hours_text_padding"
+    tools:layout_height="30dp">
+
+    <TextView
+        android:id="@+id/shift_first"
+        style="@style/ShiftLabel"
+        android:layout_gravity="center"
+        tools:text="9:00 - 18:00" />
+
+    <TextView
+        android:id="@+id/shift_second"
+        style="@style/ShiftLabel"
+        android:layout_gravity="center"
+        tools:text="9:00 - 18:00" />
+
+    <TextView
+        android:id="@+id/shift_label"
+        style="@style/ShiftLabel"
+        android:layout_gravity="center"
+        tools:text="Выходной" />
+</FrameLayout>

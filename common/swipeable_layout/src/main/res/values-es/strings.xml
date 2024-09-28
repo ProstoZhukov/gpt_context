@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="swipeable_layout_default_post_dismiss_message">Eliminado</string>
+    <string name="design_swipe_menu_label_mark_read">Leer</string>
+    <string name="design_swipe_menu_label_mark_unread">No le&#xed;do</string>
+    <string name="design_swipe_menu_label_move">A la carpeta</string>
+    <string name="design_swipe_menu_label_media">Videollamada</string>
+    <string name="design_swipe_menu_go_to_dialog">Para dialogar</string>
+    <string name="design_swipe_menu_get_url_for_attachment">Enlace</string>
+    <string name="design_swipe_menu_share">Compartir</string>
+    <string name="design_swipe_menu_label_remove">Borrar</string>
+    <string name="design_swipe_menu_label_hide">Esconder</string>
+    <string name="design_swipe_menu_label_call">Llamar</string>
+    <string name="design_swipe_menu_remove_admin">Eliminar el rol de administrador.</string>
+    <string name="design_swipe_menu_add_admin">Designar como administrador.</string>
+    <string name="design_swipe_menu_label_message">Mensaje</string>
+    <string name="swipeable_layout_cancel_deletion_message">Cancelar eliminaci&#xf3;n</string>
+</resources>

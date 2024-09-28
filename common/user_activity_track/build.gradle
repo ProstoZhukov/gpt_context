@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableFlavorsCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.user_activity_track"
+}
+
+dependencies {
+    api project(":network_native")
+
+    api "androidx.annotation:annotation:$rootProject.ext.annotationVersion"
+
+    api "androidx.lifecycle:lifecycle-runtime:${rootProject.ext.androidArchLifecycle}"
+    implementation "androidx.lifecycle:lifecycle-common-java8:${rootProject.ext.androidArchLifecycle}"
+
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+
+    api "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+}

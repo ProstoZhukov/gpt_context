@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Темы компонента [Tooltip] -->
+    <style name="RetailViewsTooltipStyle.Light" parent="RetailViewsCommonTheme.Light">
+        <item name="retail_views_tooltip_text_color">@color/retail_views_tooltip_text_color_light</item>
+        <item name="retail_views_tooltip_background_color">@color/retail_views_popup_background_color_light</item>
+
+        <item name="retail_views_tooltip_shadow_color">@color/retail_views_popup_shadow_color_light</item>
+        <item name="retail_views_tooltip_icon_color">@color/retail_views_popup_icon_color_light</item>
+    </style>
+
+    <style name="RetailViewsTooltipStyle.Dark" parent="RetailViewsCommonTheme.Dark">
+        <item name="retail_views_tooltip_text_color">@color/retail_views_tooltip_text_color_dark</item>
+        <item name="retail_views_tooltip_background_color">@color/retail_views_popup_background_color_dark</item>
+
+        <item name="retail_views_tooltip_shadow_color">@color/retail_views_popup_shadow_color_dark</item>
+        <item name="retail_views_tooltip_icon_color">@color/retail_views_popup_icon_color_dark</item>
+    </style>
+
+</resources>

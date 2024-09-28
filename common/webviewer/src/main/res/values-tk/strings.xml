@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="webviewer_notification_title">Saby</string>
+    <string name="webviewer_notification_text">Fa&#xfd;l &#xfd;üklemek</string>
+    <string name="webviewer_open_file">Fa&#xfd;l açy&#x148;</string>
+    <string name="webviewer_unable_to_load_file_error">Fa&#xfd;l &#xfd;ükläp bolma&#xfd;ar</string>
+    <string name="webviewer_loading_started">Adingüklen&#xfd;är…</string>
+    <string name="webviewer_loading_finished">\ "% S \" &#xfd;üklemek tamamlandy</string>
+    <string name="webviewer_load_file_again">\ "% S \" fa&#xfd;lyny täzeden göçürip aly&#x148;?</string>
+    <string name="webviewer_tap_again_to_exit_to_list">Sanawa dolanmak üçin &#xfd;ene bir gezek basy&#x148;</string>
+</resources>

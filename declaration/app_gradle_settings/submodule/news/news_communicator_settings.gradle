@@ -1,0 +1,7 @@
+apply from: "$newsDir/settings.gradle"
+
+include ':news_main_screen_addon'
+project(':news_main_screen_addon').projectDir = new File(newsDir, "news_main_screen_addon")
+
+include ':forum'
+project(':forum').projectDir = new File(newsDir, "forum")

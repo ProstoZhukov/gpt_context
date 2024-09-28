@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_attachments_item_offset">4dp</dimen>
+    <dimen name="common_attachments_container_item_close_button_size">28dp</dimen>
+    <dimen name="common_attachments_certificate_container_padding">2dp</dimen>
+    <dimen name="common_attachments_certificate_icon_size">@dimen/size_title2_scaleOn</dimen>
+</resources>

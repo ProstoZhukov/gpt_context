@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="verification_decl_social_network_fb">Facebook</string>
+    <string name="verification_decl_social_network_google">Google+</string>
+    <string name="verification_decl_social_network_gosuslugi">Davlat xizmatlari</string>
+    <string name="verification_decl_social_network_mail_ru">Mail.ru</string>
+    <string name="verification_decl_social_network_ok">Sinfdoshlar</string>
+    <string name="verification_decl_social_network_vk">Bilan aloqada</string>
+    <string name="verification_decl_social_network_yandex">Yandex</string>
+</resources>

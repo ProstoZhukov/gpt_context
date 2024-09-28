@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="date_picker_current_day_label">Jour actuel</string>
+    <string name="date_picker_current_half_year_label">semestre en cours</string>
+    <string name="date_picker_current_month_label">Mois en cours</string>
+    <string name="date_picker_current_quarter_label">Trimestre en cours</string>
+    <string name="date_picker_current_year_label">Année actuelle</string>
+    <string name="date_picker_date_date_picker_month_icon">&#xe948;</string>
+    <string name="date_picker_date_date_picker_year_icon">&#xea29;</string>
+    <string name="date_picker_date_invalid">Date saisie incorrecte.</string>
+    <string name="date_picker_date_picker_title">Sélecteur de date.</string>
+    <string name="date_picker_day_label">Jour</string>
+    <string name="date_picker_half_year_label">Semestre</string>
+    <string name="date_picker_history">Historique du choix des périodes :</string>
+    <string name="date_picker_history_empty_text">Les périodes précédemment sélectionnées seront affichées ici.</string>
+    <string name="date_picker_month_label">Mois</string>
+    <string name="date_picker_period_invalid">Période saisie incorrecte</string>
+    <string name="date_picker_period_unavailable">La période actuelle n\'est pas disponible pour la sélection</string>
+    <string name="date_picker_quarter_label">Trimestre</string>
+    <string name="date_picker_reset_title">Réinitialiser</string>
+    <string name="date_picker_select_current_period_title">Actuel</string>
+    <string name="date_picker_title">Sélection de la période</string>
+    <string name="date_picker_year_label">Année</string>
+</resources>

@@ -1,0 +1,55 @@
+include ':communicator_crm_conversation'
+project(':communicator_crm_conversation').projectDir = new File(settingsDir, "$communicator_dir/features/communicator_crm_conversation")
+
+include ':communicator_crm_chat_list'
+project(':communicator_crm_chat_list').projectDir = new File(settingsDir, "$communicator_dir/features/communicator_crm_chat_list")
+
+include ':communicator_design'
+project(':communicator_design').projectDir = new File(settingsDir, "$communicator_dir/communicator_design")
+
+include ':communicator_base_folders'
+project(':communicator_base_folders').projectDir = new File(settingsDir, "$communicator_dir/communicator_base_folders")
+
+include ':communicator_common'
+project(':communicator_common').projectDir = new File(settingsDir, "$communicator_dir/communicator_common")
+
+include ':communicator_push'
+project(':communicator_push').projectDir = new File(settingsDir, "$communicator_dir/communicator_push")
+
+include ':communicator_crud'
+project(':communicator_crud').projectDir = new File(settingsDir, "$communicator_dir/communicator_crud")
+
+include ':communicator_core'
+project(':communicator_core').projectDir = new File(settingsDir, "$communicator_dir/communicator_core")
+
+include ':communicator_declaration'
+project(':communicator_declaration').projectDir = new File(settingsDir, "$communicator_dir/communicator_declaration")
+
+include ':communicator_base_conversation'
+project(':communicator_base_conversation').projectDir = new File(settingsDir, "$communicator_dir/communicator_base_conversation")
+
+// Обычная переписка
+
+include ':themes_registry'
+project(':themes_registry').projectDir = new File(settingsDir, "$communicator_dir/features/themes_registry")
+
+include ':communicator_sbis_conversation'
+project(':communicator_sbis_conversation').projectDir = new File(settingsDir, "$communicator_dir/features/communicator_sbis_conversation")
+
+include ':communicator_share_messages'
+project(':communicator_share_messages').projectDir = new File(settingsDir, "$communicator_dir/features/communicator_share_messages")
+
+include ':communicator_send_message'
+project(':communicator_send_message').projectDir = new File(settingsDir, "$communicator_dir/features/communicator_send_message")
+
+include ':communicator_host'
+project(':communicator_host').projectDir = new File(settingsDir, "$communicator_dir/communicator_host")
+
+include ':communicator_navigation'
+project(':communicator_navigation').projectDir = new File(settingsDir, "$communicator_dir/communicator_navigation")
+
+include ':communicator_dialog_selection'
+project(':communicator_dialog_selection').projectDir = new File(settingsDir, "$communicator_dir/features/communicator_dialog_selection")
+
+include ':contacts_declaration'
+project(':contacts_declaration').projectDir = new File(settingsDir, "$communicator_dir/features/contacts/contacts_declaration")

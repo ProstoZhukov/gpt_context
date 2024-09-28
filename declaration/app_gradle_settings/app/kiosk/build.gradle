@@ -1,0 +1,17 @@
+apply plugin: 'rootproject-cfg-plugin'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableKaptSubprojectsCfg()
+}
+
+project.ext {
+    productName = "Kiosk"
+    applicationId = "ru.tensor.kiosk"
+    accountType = AndroidAccountManager.SBIS_ACCOUNT.type
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="crud_sale_not_supported_tax_system">Not supported</string>
+    <string name="crud_sale_general_tax_system">General</string>
+    <string name="crud_sale_patent_tax_system">Patent</string>
+    <string name="crud_sale_simplified_income_tax_system">USN income</string>
+    <string name="crud_sale_simplified_income_expenditure_tax_system">USN inc-exp</string>
+    <string name="crud_sale_unified_agricultural_tax_system">ESHN</string>
+    <string name="crud_sale_unified_on_imputed_income_tax_system" tools:ignore="UnusedResources">ENVD</string>
+</resources>

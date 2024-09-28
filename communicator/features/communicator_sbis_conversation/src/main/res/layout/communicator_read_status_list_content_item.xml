@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.sbis_conversation.ui.messageinfo.read_status_list.content.holders.vm.ReadStatusVM"/>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/communicator_read_status_list_item_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/communicator_read_status_list_item_vertical_padding"
+        android:paddingHorizontal="@dimen/communicator_read_status_list_item_horizontal_padding"
+        android:background="@drawable/selectable_item_bg_white">
+
+        <ru.tensor.sbis.design.profile.person.PersonView
+            android:id="@+id/communicator_read_status_person_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:SbisPersonView_withActivityStatus="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:uuid="@{viewModel.model.personUuid}"
+            app:photoUrl="@{viewModel.model.photoUrl}"
+            app:initialsStubData="@{viewModel.model.initialsStubData}"
+            app:PersonView_withActivityStatus="true"
+            app:PersonView_size="m"
+            tools:ignore="ContentDescription"
+            tools:layout_height="?size_m_image"
+            tools:layout_width="?size_m_image"
+            tools:src="@drawable/ellipsized_photo_placeholder"/>
+
+        <TextView
+            android:id="@+id/communicator_read_status_contact_title"
+            style="@style/MessagesListItem.HeaderText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/list_person_photo_view_margin_right"
+            android:layout_marginEnd="?offset_m"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="@color/text_color_accent_1"
+            app:layout_constraintStart_toEndOf="@id/communicator_read_status_person_photo"
+            app:layout_constraintEnd_toStartOf="@+id/communicator_read_status_barrier"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            bind:text="@{viewModel.model.fullName}"/>
+
+        <TextView
+            android:id="@+id/communicator_read_status_contact_subtitle"
+            style="@style/RegularStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/list_person_photo_view_margin_right"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_color_black_3"
+            android:textSize="@dimen/size_body1_scaleOn"
+            app:layout_constraintStart_toEndOf="@id/communicator_read_status_person_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/communicator_read_status_contact_title"
+            bind:text="@{viewModel.model.departmentOrCompany}"/>
+
+        <include
+            layout="@layout/communicator_read_status_time"
+            bind:viewModel="@{viewModel}"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

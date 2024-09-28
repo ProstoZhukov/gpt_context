@@ -1,0 +1,12 @@
+splitSettingsByRegion {
+    ru {
+        include ':consignment_list'
+        project(':consignment_list').projectDir = new File(iamhereDir, 'consignment_list')
+
+        include ':base_field_work_card'
+        project(':base_field_work_card').projectDir = new File(iamhereDir, 'base_field_work_card')
+
+        include ':consignment'
+        project(':consignment').projectDir = new File(iamhereDir, 'fieldworks/consignment')
+    }
+}

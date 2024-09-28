@@ -1,0 +1,3 @@
+include ':sabyadmin-launcher'
+project(':sabyadmin-launcher').projectDir = new File( sabyadminLauncherDir, "sabyadmin-launcher")
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_menu_authorization_required_message">Тіркелгіңізге кіріп, әрекетті қайталаңыз</string>
+    <string name="share_menu_no_available_options">Файлдарды жүктеп салуға арналған бөлімдер жоқ</string>
+    <string name="share_menu_header_view_title_default">Жіберу%1$s</string>
+    <string name="share_menu_header_view_title_sending">Жібереміз%1$s</string>
+    <string name="share_menu_header_view_title_completed">Жіберілді%1$s</string>
+    <string name="share_menu_text_restriction">Мәтін бір хабар үшін рұқсат етілген таңбалардың максималды санын көбейтеді</string>
+    <string name="share_menu_attachments_count_restriction">Сіз ең көп дегенде 25 файл жібере аласыз</string>
+    <string name="share_menu_attachment_big_size_restriction">Жіберілген файл 1 ГБ-тан аспауы керек</string>
+</resources>

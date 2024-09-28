@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Иконки !-->
+    <string name="date_picker_date_date_picker_month_icon">&#xe948;</string>
+    <string name="date_picker_date_date_picker_year_icon">&#xea29;</string>
+
+    <!-- Заголовки для текущих периодов !-->
+    <string name="date_picker_day_label">День</string>
+    <string name="date_picker_month_label">Месяц</string>
+    <string name="date_picker_quarter_label">Квартал</string>
+    <string name="date_picker_half_year_label">Полугодие</string>
+    <string name="date_picker_year_label">Год</string>
+    <string name="date_picker_current_day_label">текущий день</string>
+    <string name="date_picker_current_month_label">текущий месяц</string>
+    <string name="date_picker_current_quarter_label">текущий квартал</string>
+    <string name="date_picker_current_half_year_label">текущее полугодие</string>
+    <string name="date_picker_current_year_label">текущий год</string>
+
+    <string name="date_picker_history">История выбора периодов:</string>
+    <string name="date_picker_history_empty_text">Здесь будут выводиться ранее отобранные периоды.</string>
+    <string name="date_picker_period_invalid">Введён некорректный период</string>
+    <string name="date_picker_date_invalid">Введена некорректная дата</string>
+    <string name="date_picker_period_unavailable">Текущий период недоступен для выбора</string>
+    <string name="date_picker_title">Выбор периода</string>
+    <string name="date_picker_date_picker_title">Выбор даты</string>
+    <string name="date_picker_select_current_period_title">Текущий</string>
+    <string name="date_picker_reset_title">Сбросить</string>
+
+</resources>

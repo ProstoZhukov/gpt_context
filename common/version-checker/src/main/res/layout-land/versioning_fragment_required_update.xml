@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/versioning_required_update_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingStart="?offset_m"
+    android:paddingTop="?actionBarSize"
+    android:paddingEnd="?offset_m"
+    android:paddingBottom="?offset_3xl"
+    android:theme="?attr/versioningTheme"
+    tools:paddingBottom="28dp"
+    tools:paddingEnd="12dp"
+    tools:paddingStart="12dp"
+    tools:theme="@style/VersioningUpdateTheme">
+
+    <ru.tensor.sbis.design.stubview.StubView
+        android:id="@+id/versioning_version_stub_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="?offset_m"
+        app:StubView_backgroundColor="@color/palette_color_transparent"
+        app:StubView_detailsColor="?attr/versioning_lock_comment_text_color"
+        app:StubView_messageColor="?attr/versioning_lock_title_text_color"
+        app:StubView_mode="dens"
+        app:layout_constraintBottom_toTopOf="@id/versioning_version_btn_accept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginTop="12dp"/>
+
+    <ru.tensor.sbis.design.buttons.SbisButton
+        android:id="@+id/versioning_version_btn_accept"
+        style="?brandSbisButtonTheme"
+        android:layout_width="@dimen/versioning_update_button_width"
+        android:layout_height="wrap_content"
+        app:SbisButton_backgroundType="contrast"
+        app:SbisButton_style="brand"
+        app:SbisButton_title="@string/versioning_accept_update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+apply plugin: 'rootproject-cfg-plugin'
+apply plugin: 'social-integration'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableTaskCounterCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableDokkaCfg()
+    cfg.enableKaptSubprojectsCfg()
+    cfg.enableSabyLinkCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableTaskFilterCfg()
+    }
+}
+
+project.ext {
+    productName = "SabyLite"
+    applicationId = "ru.tensor.saby.lite"
+
+    /* :link_opener */
+    enableDeepLinkSabyLitePageLink = true
+    sabyLinks.setup { set ->
+        set.component = "${applicationId}.LaunchActivity"
+        set.personCardFeature = true
+        set.attachmentsFeature = true
+        set.themesRegistryFeature = true
+        set.eSignFeature = true
+        set.docViewFeature = true
+        set.deviceLinkerFeature = true
+        set.videoCallFeature = true
+
+        set.enableOnlineSbis = false
+        set.enableLinkChat = true
+        set.enableLinkDialog = true
+        set.enableLinkOpendocCard = true
+        set.enableLinkPerson = true
+        set.enableLinkCall = true
+        set.enableLinkSbisPageLink = true
+        set.enableLinkCertificateSubmission = true
+        set.enableLinkSettingCertificatePassword = true
+    }
+
+    enableBuildStatistic = true
+
+    accountType = AndroidAccountManager.SABY_BUNDLE_ACCOUNT.type
+
+    platformCoreLibrary = "sbis-app-controller"
+}
+
+//Константы для соц. сетей
+socialServices {
+    yandex = yandexKey("d0b0f44d3f654160967ebca40eedbeb8", "30b40054d5da4ccfa6ad07d6c77fec48")
+    VK = vkKey("51983833", "JBjsNkbbAghfNLfoORLT")
+    appleEnabled = true
+    esiaEnabled = true
+    googleEnabled = true
+    msal = msalConfig(
+            file("app/src/debug/res/raw/auth_msal_config.json", PathValidation.EXISTS),
+            file("app/src/release/res/raw/auth_msal_config.json", PathValidation.EXISTS)
+    )
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="our_org_empty_title">La liste des organisations est vide</string>
+    <string name="our_org_filter_state_active">Actif</string>
+    <string name="our_org_filter_state_all">Tous</string>
+    <string name="our_org_item_header_simple_title">Sélectionnez l\'organisation</string>
+    <string name="our_org_title">Nos entreprises</string>
+</resources>

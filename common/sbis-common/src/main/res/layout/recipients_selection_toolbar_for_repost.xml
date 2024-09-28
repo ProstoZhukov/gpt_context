@@ -1,0 +1,64 @@
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipients_selection_toolbar_for_sharing"
+    android:theme="?altTheme"
+    style="?Toolbar_theme"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/multi_selection_toolbar_margin_right"
+        android:layout_marginLeft="@dimen/multi_selection_toolbar_margin_left"
+        android:layout_marginRight="@dimen/multi_selection_toolbar_margin_right"
+        android:layout_marginStart="@dimen/multi_selection_toolbar_margin_left">
+
+        <TextView
+            android:id="@+id/multi_selection_close"
+            style="?Toolbar_iconStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/multi_selection_toolbar_button_padding"
+            android:paddingLeft="@dimen/multi_selection_toolbar_button_padding"
+            android:paddingRight="@dimen/multi_selection_toolbar_button_padding"
+            android:paddingStart="@dimen/multi_selection_toolbar_button_padding"
+            android:visibility="visible"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            style="?Toolbar_titleStyle"
+            android:id="@+id/sharing_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/multi_selection_toolbar_margin_right"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="@dimen/multi_selection_toolbar_margin_right"
+            android:layout_toEndOf="@+id/multi_selection_close"
+            android:layout_toStartOf="@+id/multi_selection_done"
+            tools:text="Получатели репоста"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:includeFontPadding="false" />
+
+        <ru.tensor.sbis.design.buttons.SbisRoundButton
+            android:id="@+id/multi_selection_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/multi_selection_toolbar_button_padding"
+            android:layout_marginTop="@dimen/multi_selection_toolbar_button_padding"
+            android:layout_marginEnd="@dimen/multi_selection_toolbar_button_padding"
+            android:layout_marginBottom="@dimen/multi_selection_toolbar_button_padding"
+            app:SbisRoundButton_icon="@string/design_mobile_icon_check"
+            app:SbisRoundButton_size="s"
+            app:SbisRoundButton_style="success"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

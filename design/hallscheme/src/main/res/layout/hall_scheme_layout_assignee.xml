@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tensor.sbis.design.sbis_text_view.SbisTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/hall_scheme_table_assignee_size"
+    android:layout_height="@dimen/hall_scheme_table_assignee_size"
+    android:background="@drawable/hall_scheme_bg_assignee"
+    android:gravity="center"
+    android:text="@string/hall_scheme_assignee_i"
+    android:textColor="@color/hall_scheme_white"
+    android:textSize="@dimen/hall_scheme_text_extra_large"
+    tools:ignore="SpUsage"/>

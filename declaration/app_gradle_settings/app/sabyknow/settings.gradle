@@ -1,0 +1,26 @@
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+def appName = "sabyknow"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "barcodereader",
+        "declaration",
+        "design",
+        "common",
+        "disk",
+        "employee",
+        "news",
+        "notification",
+        "profile"
+)
+
+include ':app', ':controller'
+
+setupControllerModule(settings, appName)

@@ -1,0 +1,83 @@
+apply plugin: 'rootproject-cfg-plugin'
+apply plugin: 'social-integration'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableTaskCounterCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableDokkaCfg()
+    cfg.enableKaptSubprojectsCfg()
+    cfg.enableSabyLinkCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableTaskFilterCfg()
+    }
+}
+
+project.ext {
+    productName = "Saby My"
+    applicationId = "ru.tensor.saby.my"
+
+    /* :link_opener */
+    sabyLinks.setup { set ->
+        set.component = "${applicationId}.LaunchActivity"
+        set.enableOnlineSbis = false
+        set.enableLinkWebinar = true
+        set.enableLinkMeeting = true
+        set.enableLinkVideoconf = true
+        set.enableLinkChat = true
+        set.enableLinkDialog = true
+        set.enableLinkOpendocCard = true
+        set.enableLinkPerson = true
+        set.enableLinkCall = true
+        set.enableLinkCertificateSubmission = true
+        set.enableLinkSettingCertificatePassword = true
+        set.enableLinkForum = true
+        set.enableLinkContractorsCard = true
+        set.enableLinkRetailDevice = true
+        set.enableLinkNews = true
+        set.enableLinkSbisPageLink = true
+        set.enableLinkSabyMyPageLink = true
+        set.enableLinkDiskDoc = true
+        set.inviteFeature = true
+        set.enableLinkWikiArticle = true
+        set.enableLinkWikiKnowledge = true
+        set.enableLinkWikiKnowledgeFolder = true
+
+        // редиректы
+        set.newsFeature = true
+        set.videoCallFeature = true
+        set.themesRegistryFeature = true
+        set.taskFeature = true
+        set.myDocumentsFeature = true
+        set.calendarFeature = true
+        set.docViewFeature = true
+        set.personCardFeature = true
+        set.attachmentsFeature = true
+        set.eSignFeature = true
+        set.meetingFeature = true
+        set.knowledgeFeature = true
+        set.knowledgeFolderFeature = true
+    }
+
+    enableBuildStatistic = true
+
+    platformCoreLibrary = "sbis-app-controller"
+    accountType = AndroidAccountManager.SABY_BUNDLE_ACCOUNT.type
+}
+
+// Константы для соц. сетей
+socialServices {
+    yandex = yandexKey("33861d45a05f4b0587d3971d24f65528", "ed5087a485494e1cb9b86deea94b212e")
+    VK = vkKey("51983844", "prI7e6d9cUcF68gWXYu2")
+    appleEnabled = true
+    esiaEnabled = true
+    googleEnabled = true
+    msal = msalConfig(
+            file("app/src/debug/res/raw/auth_msal_config.json", PathValidation.EXISTS),
+            file("app/src/release/res/raw/auth_msal_config.json", PathValidation.EXISTS)
+    )
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

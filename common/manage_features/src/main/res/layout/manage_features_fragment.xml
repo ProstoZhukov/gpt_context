@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.manage_features.presentation.ManageFeaturesViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ru.tensor.sbis.design.toolbar.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:leftTextText="@string/manage_features_title"
+            app:leftTextVisibility="visible"
+            app:rightIcon1Text="@string/design_mobile_icon_checked"
+            app:rightIcon1Visibility="visible"
+            app:rightPanel1Visibility="visible"/>
+
+        <TextView
+            android:id="@+id/userTitle"
+            style="@style/ManageFeaturesGroupTitle"
+            android:layout_marginTop="?offset_l"
+            android:text="@string/manage_features_user"
+            app:layout_constraintEnd_toStartOf="@id/userValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+
+        <TextView
+            android:id="@+id/userValue"
+            style="@style/ManageFeaturesGroupValue"
+            android:text="@{viewModel.userName}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/userTitle"
+            app:layout_constraintTop_toTopOf="@id/userTitle"
+            tools:text="Value"/>
+
+        <TextView
+            android:id="@+id/accountTitle"
+            style="@style/ManageFeaturesGroupTitle"
+            android:text="@string/manage_features_account"
+            app:layout_constraintEnd_toStartOf="@id/accountValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userTitle"/>
+
+        <TextView
+            android:id="@+id/accountValue"
+            style="@style/ManageFeaturesGroupValue"
+            android:text="@{viewModel.clientName}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accountTitle"
+            app:layout_constraintTop_toTopOf="@id/accountTitle"
+            tools:text="Value"/>
+
+        <TextView
+            android:id="@+id/idTitle"
+            style="@style/ManageFeaturesGroupTitle"
+            android:text="@string/manage_features_feature_id"
+            app:layout_constraintEnd_toStartOf="@id/idValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/accountTitle"/>
+
+        <EditText
+            android:id="@+id/idValue"
+            style="@style/ManageFeaturesGroupValue"
+            android:background="@drawable/manage_features_edit_text_bg"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:text="@={viewModel.featureName}"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/idTitle"
+            app:layout_constraintTop_toTopOf="@id/idTitle"
+            tools:ignore="LabelFor"
+            tools:text="Value"/>
+
+        <TextView
+            android:id="@+id/stateTitle"
+            style="@style/ManageFeaturesGroupTitle"
+            android:text="@string/manage_features_state"
+            app:layout_constraintEnd_toStartOf="@id/stateValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/idTitle"/>
+
+        <TextView
+            android:id="@+id/stateValue"
+            style="@style/ManageFeaturesGroupValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/stateTitle"
+            app:layout_constraintTop_toTopOf="@id/stateTitle"
+            app:textRes="@{viewModel.state}"
+            tools:text="Value"/>
+
+        <TextView
+            android:id="@+id/valueTitle"
+            style="@style/ManageFeaturesGroupTitle"
+            android:text="@string/manage_features_value"
+            app:layout_constraintEnd_toStartOf="@id/valueValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stateTitle"/>
+
+        <TextView
+            android:id="@+id/valueValue"
+            style="@style/ManageFeaturesGroupValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/valueTitle"
+            app:layout_constraintTop_toTopOf="@id/valueTitle"
+            app:text="@{viewModel.value}"
+            tools:text="Value"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

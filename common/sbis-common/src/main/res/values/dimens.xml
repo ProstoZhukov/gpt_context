@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Selected Items Panel -->
+    <dimen name="selected_panel_left_margin">4dp</dimen>
+    <dimen name="selected_panel_right_margin">12dp</dimen>
+    <dimen name="selected_panel_counter_right_margin">8dp</dimen>
+    <dimen name="selected_panel_toggle_width">26dp</dimen>
+    <dimen name="selected_panel_counter_height">30dp</dimen>
+    <dimen name="selected_panel_counter_padding">4dp</dimen>
+
+    <!-- Multi Selection component -->
+    <dimen name="multi_selection_toolbar_margin_right">4dp</dimen>
+    <dimen name="multi_selection_toolbar_margin_left">8dp</dimen>
+    <dimen name="multi_selection_toolbar_button_padding">4dp</dimen>
+    <dimen name="multi_selection_toolbar_button_size">34dp</dimen>
+
+</resources>

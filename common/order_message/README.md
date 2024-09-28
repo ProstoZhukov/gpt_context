@@ -1,0 +1,2 @@
+- [ответственный Малинский Г.А.](https://online.sbis.ru/person/0511feb3-fa27-4b74-bced-7b45e697ef51)
+- [ссылка на тех документацию](https://online.sbis.ru/shared/disk/a2c7643e-8bee-4714-87ff-15aab43894ad)

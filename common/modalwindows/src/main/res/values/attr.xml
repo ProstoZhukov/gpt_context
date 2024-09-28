@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="containerMovableDialogTheme" format="reference"/>
+
+    <attr name="optionSheetTheme" format="reference"/>
+    <attr name="optionSheet_optionItemTextColor" format="color|reference"/>
+    <attr name="optionSheet_optionItemCheckboxIconColor" format="color|reference"/>
+
+</resources>

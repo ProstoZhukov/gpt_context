@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="complain_service_report_message_text">Αποστολή αναφοράς στον συντονιστή για έλεγχο;</string>
+    <string name="complain_service_report_hint_text">Εισαγάγετε σχόλιο</string>
+    <string name="complain_service_dialog_positive">OK</string>
+    <string name="complain_service_dialog_negative">ΜΑΤΑΙΩΣΗ</string>
+</resources>

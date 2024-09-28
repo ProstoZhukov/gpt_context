@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wrhdoc_nom_in_order_on_addition_title">按添加顺序</string>
+    <string name="wrhdoc_nom_alphabetically_asc_title">从头到尾</string>
+    <string name="wrhdoc_nom_alphabetically_desc_title">Z 到 A</string>
+    <string name="wrhdoc_nom_by_number_of_deviations_title">按偏差数</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_title">按偏差量</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_asc_title">上升</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_desc_title">下降</string>
+    <string name="wrhdoc_nom_without_filters_title">所有项目</string>
+    <string name="wrhdoc_nom_non_zero_balances_title">非零余额</string>
+    <string name="wrhdoc_nom_zero_balances_title">零余额</string>
+    <string name="wrhdoc_nom_negative_balances_title">负余额</string>
+    <string name="wrhdoc_nom_with_deviations_balances_title">有偏差</string>
+    <string name="wrhdoc_nom_deviation_negative_title">有短缺</string>
+    <string name="wrhdoc_nom_filter_not_confirmed">还没有确定</string>
+    <string name="wrhdoc_nom_filter_confirmed">确认的</string>
+    <string name="wrhdoc_nom_deviation_positive_title">有盈余</string>
+    <string name="wrhdoc_nom_unfilled_balances_title">未填充</string>
+</resources>

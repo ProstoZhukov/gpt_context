@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_card_domain_service_unavailable_error">Le service est temporairement indisponible</string>
+    <string name="business_card_domain_network_error_snackbar_message">Pas de connexion réseau</string>
+    <string name="business_card_domain_unknown_error">Erreur inconnue</string>
+    <string name="business_card_domain_no_available_specialist_error_snackbar_message">Il n\'y a pas de spécialistes disponibles</string>
+</resources>

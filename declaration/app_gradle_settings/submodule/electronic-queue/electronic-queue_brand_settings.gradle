@@ -1,0 +1,8 @@
+include ':queue_list'
+project(':queue_list').projectDir = new File(electronicQueueDir, "queue_list")
+
+include ':queue_list_decl'
+project(':queue_list_decl').projectDir = new File(electronicQueueDir, "queue_list_decl")
+
+include ':queue_domain'
+project(':queue_domain').projectDir = new File(electronicQueueDir, "queue_domain")

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_reassign_to_queue_option">Nobata dolan</string>
+    <string name="communicator_crm_reassign_to_group_option">Ga&#xfd;tadan bellä&#x148;</string>
+    <string name="communicator_crm_reassign_to_operator_option">Ba&#x15f;ga bir i&#x15f;gäre</string>
+    <string name="communicator_crm_copy_link_option">Baglany&#x15f;ygy göçüri&#x148;</string>
+    <string name="communicator_crm_request_contacts_option">Aragatna&#x15f;yklary sora&#x148;</string>
+    <string name="communicator_crm_write_to_client_option">Mü&#x15f;derä &#xfd;azy&#x148;</string>
+    <string name="communicator_crm_complete_option">Doly</string>
+    <string name="communicator_crm_delete_option">Öçür</string>
+    <string name="communicator_crm_take_button_text">Jogap</string>
+    <string name="communicator_crm_brand_title">Söhbet</string>
+    <string name="communicator_crm_service_message_rate_request_button_title">Çaklama</string>
+    <string name="communicator_crm_rate_title">I&#x15f;imize baha beri&#x148;</string>
+    <string name="communicator_crm_rate_comment_placeholder">Teswir</string>
+    <string name="communicator_crm_rate_send_button_title">Iber</string>
+    <string name="communicator_crm_quick_reply_empty_stub">Çalt jogaplary&#x148; sanawy bo&#x15f;</string>
+    <string name="communicator_crm_sabyget_stub_message">Aragatna&#x15f;yk</string>
+    <string name="communicator_crm_conversation_stub_subtitle">Ine, döretmek we hünärmenler bilen geple&#x15f;ikleri&#x148;iz bolar</string>
+    <string name="communicator_crm_chat_cant_view_permisshion">Bu söhbetde&#x15f;lige \ nview girip bilmersi&#x148;iz</string>
+    <string name="communicator_crm_rate_validation_error">Gerekli me&#xfd;dan</string>
+    <string name="communicator_crm_reopen_button_text">Söhbeti dowam etdiri&#x148;</string>
+    <string name="communicator_crm_brand_stub_message">Bize &#xfd;azy&#x148;</string>
+    <string name="communicator_crm_reassign_to_operator_edit_hint">Bir i&#x15f;gäre teswir &#xfd;azy&#x148;</string>
+</resources>

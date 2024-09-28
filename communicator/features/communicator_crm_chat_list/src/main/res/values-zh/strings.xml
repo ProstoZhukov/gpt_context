@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_crm_chats_tab_title">聊天记录</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_message">您的聊天列表为空</string>
+    <string name="communicator_crm_chat_list_empty_list_stub_details">当客户提交询盘时，您将收到通知</string>
+    <string name="communicator_crm_chat_list_swipe_delete">删除</string>
+    <string name="communicator_crm_chat_list_swipe_take">拿</string>
+    <string name="communicator_crm_chat_list_swipe_complete">完全的</string>
+    <string name="communicator_crm_chat_list_screen_addon_menu_item">聊天记录</string>
+    <string name="communicator_crm_chat_list_channel_group_title_support">萨比支持</string>
+    <string name="communicator_crm_chat_list_channel_group_title_site">网站</string>
+    <string name="communicator_crm_chat_list_channel_group_title_sabyget">萨比盖特</string>
+    <string name="communicator_crm_chat_list_channel_group_title_saby">萨比</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_app">应用</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_vk">联系方式</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_telegram">电报</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_email">电子邮件</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_viber">维伯</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_ok">奥德诺克拉斯尼基</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_whatsapp">WhatsApp</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_facebook">Facebook</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_yandex">扬德克斯</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_instagram">Instagram</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_avito">阿维托</string>
+    <string name="communicator_crm_chat_list_channel_group_title_mobile_unknown">未知</string>
+    <string name="communicator_crm_chat_list_bad_filter_list_stub_details">尝试更改您的搜索或过滤选项</string>
+    <string name="communicator_crm_chat_list_chat_no_access">您无权访问此聊天</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="media_sbis_tube_unknown_error">No se pudo reproducir el archivo multimedia.</string>
+    <string name="media_sbis_tube_cleartext_traffic_not_permitted_error">No se pudo reproducir el contenido multimedia debido a la pol&#xed;tica de seguridad.</string>
+    <string name="media_sbis_tube_denied_reading_external_storage">Para jugar, se requiere permiso para leer archivos desde el dispositivo.</string>
+    <string name="media_sbis_tube_data_source_error">No se pudieron leer los medios desde la fuente.</string>
+    <string name="media_sbis_tube_unrecognized_data_source_error">Tipo de medio no admitido.</string>
+    <string name="media_sbis_tube_network_data_source_error">No se pudo cargar el archivo multimedia\nCompruebe su conexi&#xf3;n a Internet.</string>
+    <string name="media_sbis_tube_querying_decoders_error">No se pudieron solicitar decodificadores de medios desde el dispositivo.</string>
+    <string name="media_sbis_tube_no_secure_decoder_error">No se pudo cargar el archivo multimedia\nSu dispositivo no proporciona un descodificador seguro.</string>
+    <string name="media_sbis_tube_no_decoder_error">No se pudo cargar el archivo multimedia\nSu dispositivo no proporciona un descodificador.</string>
+    <string name="media_sbis_tube_instantiating_decoder_error">No se pudo crear un decodificador para el archivo multimedia.</string>
+</resources>

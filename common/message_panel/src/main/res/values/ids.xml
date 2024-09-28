@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Идентификатор поля ввода. Обязательный компонент -->
+    <item name="message_panel_edit_text_view" type="id"/>
+    <!-- Идентификатор контейнера поля ввода и вложений. Обязательный компонент -->
+    <item name="message_panel_message_container_view" type="id"/>
+
+    <!-- Идентификатор кнопки отправки -->
+    <item name="message_panel_send_button_view" type="id"/>
+    <!-- Идентификатор кнопки прикрепления вложений -->
+    <item name="message_panel_attach_button_view" type="id"/>
+    <!-- Идентификатор панели вложений -->
+    <item name="message_panel_attachments_view" type="id"/>
+    <!-- Идентификатор кнопки подписания -->
+    <item name="message_panel_sign_button" type="id"/>
+    <!-- Идентификатор панели получателе -->
+    <item name="message_panel_recipients_view" type="id"/>
+    <!-- Идентификатор панели цитаты, редактирования -->
+    <item name="message_panel_quote_view" type="id"/>
+    <!-- Идентификатор контейнера панели аудиозаписи -->
+    <item name="message_panel_recorder_view_container" type="id"/>
+</resources>

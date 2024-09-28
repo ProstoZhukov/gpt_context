@@ -1,0 +1,8 @@
+include ':kitchen'
+project(':kitchen').projectDir = new File(kitchenDir, "kitchen")
+
+include ':kitchen-addon'
+project(':kitchen-addon').projectDir = new File(kitchenDir, "kitchen-addon")
+
+include ':kitchen-decl'
+project(':kitchen-decl').projectDir = new File(kitchenDir, "kitchen-decl")

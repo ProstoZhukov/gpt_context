@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recipient_selection_employees_title">Employés</string>
+    <string name="my_contacts_recipient_selection_title">Mes contacts</string>
+    <string name="recipient_selection_all_employees_was_selected">Tous les employés de ce département sont sélectionnés. Accédez à un autre dossier pour ajouter d\'autres destinataires.</string>
+    <string name="recipient_selection_app_name">sélection_destinataire</string>
+    <string name="recipient_selection_contact_group_chief_and_count_format">%1$s (%2$d)</string>
+    <string name="recipient_selection_employees_not_found">Employés introuvables.</string>
+    <string name="recipient_selection_no_access">Vos droits sont insuffisants pour l\'action en cours.</string>
+</resources>

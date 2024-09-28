@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="context_menu_horizontal_margin">12dp</dimen>
+    <dimen name="context_menu_width">250dp</dimen>
+    <dimen name="context_menu_anchor_margin">16dp</dimen>
+    <dimen name="context_menu_comment_top_margin">2dp</dimen>
+    <dimen name="context_menu_icon_margin_start">8dp</dimen>
+    <dimen name="context_menu_divider_height">0.5dp</dimen>
+</resources>

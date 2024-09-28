@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wrhdoc_nom_in_order_on_addition_title">Go&#x15f;mak üçin</string>
+    <string name="wrhdoc_nom_alphabetically_asc_title">A-dan Z-a çenli</string>
+    <string name="wrhdoc_nom_alphabetically_desc_title">Z-den A-a çenli</string>
+    <string name="wrhdoc_nom_by_number_of_deviations_title">Gy&#x15f;armalary&#x148; sany bo&#xfd;unça</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_title">Gy&#x15f;armalary&#x148; mukdary bo&#xfd;unça</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_asc_title">Okarlanmak</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_desc_title">a&#x15f;ak dü&#x15f;&#xfd;är</string>
+    <string name="wrhdoc_nom_without_filters_title">Hli atlar</string>
+    <string name="wrhdoc_nom_non_zero_balances_title">Nol däl galyndylar</string>
+    <string name="wrhdoc_nom_zero_balances_title">Nol balanslar</string>
+    <string name="wrhdoc_nom_negative_balances_title">Ativearamaz de&#x148;agramlylyk</string>
+    <string name="wrhdoc_nom_with_deviations_balances_title">Gy&#x15f;armalar bilen</string>
+    <string name="wrhdoc_nom_deviation_negative_title">Aetmezçilik bilen</string>
+    <string name="wrhdoc_nom_filter_not_confirmed">Tassyklanmady</string>
+    <string name="wrhdoc_nom_filter_confirmed">Tassyklandy</string>
+    <string name="wrhdoc_nom_deviation_positive_title">Artykmaçlyk bilen</string>
+    <string name="wrhdoc_nom_unfilled_balances_title">Bo&#x15f;</string>
+</resources>

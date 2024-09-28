@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="match_parent"
+    tools:layout_width="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    tools:theme="@style/LargeDarkTheme">
+
+    <ru.tensor.sbis.design.buttons.SbisButton
+        android:id="@+id/retail_views_client_button"
+        style="?retailViewsPaymentViewSecondaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@+id/retail_views_payment_type_button"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_min="@dimen/retail_views_payment_view_toolbar_client_button_min_width"
+        tools:layout_height="50dp"/>
+
+    <ru.tensor.sbis.design.buttons.SbisButton
+        android:id="@+id/retail_views_payment_type_button"
+        style="?retailViewsPaymentViewSecondaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_2xs"
+        android:layout_marginEnd="?offset_2xs"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/retail_views_client_button"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_height="50dp"/>
+
+    <!-- Элемент специально оставлен в разметке, чтобы не ломать общее поведение БЛ 'PaymentView'. -->
+    <ru.tensor.sbis.design.buttons.SbisRoundButton
+        android:id="@+id/retail_views_close_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"/>
+
+</merge>

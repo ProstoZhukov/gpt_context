@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crud_sale_not_supported_tax_system">AtoN goldanok</string>
+    <string name="crud_sale_general_tax_system">Esasy</string>
+    <string name="crud_sale_patent_tax_system">PSN</string>
+    <string name="crud_sale_simplified_income_tax_system">USN D.</string>
+    <string name="crud_sale_simplified_income_expenditure_tax_system">USN DR</string>
+    <string name="crud_sale_unified_agricultural_tax_system">Bitewi oba hojalygy salgydy</string>
+    <string name="crud_sale_unified_on_imputed_income_tax_system">UTII</string>
+</resources>

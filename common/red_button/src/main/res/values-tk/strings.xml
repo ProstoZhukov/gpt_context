@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="red_button_title_open">Maglumatlary açy&#x148;</string>
+    <string name="red_button_title_close_progress">Maglumatlar &#xfd;apyk</string>
+    <string name="red_button_title_open_progress">Maglumat açyl&#xfd;ar</string>
+    <string name="red_button_uu_alert_message">"Dolandyry&#x15f; hasaby" guramasy üçin ähli resminamalar, amallar we hasabatlar wagtla&#xfd;yn gizlener. Ordinaryöneke&#xfd; edara görnü&#x15f;li taraplary&#x148; resminamalaryna la&#xfd;yklykda. hiç hili ü&#xfd;tge&#x15f;me bolmaz.</string>
+    <string name="red_button_cloud_alert_message">Elbetde, ähli maglumatlar wagtla&#xfd;ynça gizlener. Di&#x148;e atlary we telefon belgileri bolan \ "I&#x15f;gärler" galar.</string>
+    <string name="red_button_cloud_alert_title">Maglumatlary gizlä&#x148;mi?</string>
+    <string name="red_button_title_sms">SMS kod girizi&#x148;</string>
+    <string name="red_button_title_pin_on">PIN kody döredi&#x148;</string>
+    <string name="red_button_title_pin_off">PIN-i&#x148;izi girizi&#x148;</string>
+    <string name="red_button_message_pin_close">Buluda girmegi so&#x148; dikeltmek üçin PIN kodu&#x148;yzy &#xfd;ady&#x148;yzda sakla&#x148;</string>
+    <string name="red_button_message_pin_open">PIN kodu&#x148;yzy &#xfd;atdan çykaran bolsa&#x148;yz, dolandyryjy&#x148;yz bilen habarla&#x15f;y&#x148;</string>
+    <string name="red_button_repeat_through">% S-den so&#x148; ga&#xfd;tala&#x148;</string>
+    <string name="red_button_code_again">Kod aly&#x148;</string>
+    <string name="red_button_network_error">Tor birikmesi &#xfd;ok</string>
+    <string name="red_button_stub_title_close">Programma täzeden ba&#x15f;landan so&#x148; maglumatlar gizlener</string>
+    <string name="red_button_stub_title_open">Programmany täzeden açany&#x148;yzdan so&#x148; maglumatlara giri&#x15f; dikeldiler</string>
+    <string name="red_button_stub_toolbar_text">Sazlamalar</string>
+    <string name="red_button_password_sent_on_phone_template">Kod% 1 $ s iberildi</string>
+    <string name="red_button_stub_subtitle">Programmany dü&#x15f;üri&#x148; we täzeden açy&#x148;.</string>
+    <string name="red_button_title_pin_confirmation">Pin kodu&#x148;yzy tassykla&#x148;</string>
+    <string name="red_button_message_pin_confirmation">PIN-i täzeden girizi&#x148;</string>
+    <string name="red_button_title_close">Maglumatlary &#xfd;apy&#x148;?</string>
+</resources>

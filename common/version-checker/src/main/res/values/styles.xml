@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region Version update debug -->
+    <style name="VersioningSettingsUpdateText">
+        <item name="android:paddingStart">?offset_m</item>
+        <item name="android:paddingEnd">?offset_m</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+    <style name="VersioningSettingsUpdateOptionTitle" parent="VersioningSettingsUpdateText">
+        <item name="android:textSize">?fontSize_xl_scaleOn</item>
+    </style>
+
+    <style name="VersioningSettingsUpdateOptionMark" parent="MobileFontStyle">
+        <item name="android:paddingEnd">?offset_m</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/design_mobile_icon_check</item>
+        <item name="android:textSize">?fontSize_xl_scaleOff</item>
+        <item name="android:textColor">?markerColor</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region accented buttons -->
+    <!--Sabyget и Бренды-->
+    <style name="VersioningContrastSabyClientsButton" parent="SbisButtonDefaultPrimaryTheme">
+        <item name="SbisButton_backgroundType">contrast</item>
+    </style>
+    <!-- endregion -->
+</resources>

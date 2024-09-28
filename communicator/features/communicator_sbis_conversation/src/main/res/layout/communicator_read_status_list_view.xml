@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.communicator.sbis_conversation.ui.messageinfo.read_status_list.vm.ReadStatusListViewModel"/>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/communicator_read_status_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/communicator_read_status_list_delimiter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_separator_size"
+            android:background="@color/palette_alpha_color_black2"/>
+
+        <ru.tensor.sbis.design.view.input.searchinput.SearchInput
+            android:id="@+id/communicator_read_status_search_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:visibility="@{viewModel.searchInputVisibility}"
+            bind:filterSelection="@{viewModel.searchInputFilter}"
+            tools:layout_height="40dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ru.tensor.sbis.list.view.SbisList
+                android:id="@+id/communicator_read_status_sbis_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                bind:needInitialScroll="@{viewModel.needInitialScroll}"
+                bind:registerInitialDataAddListener="@{viewModel}"
+                bind:fabPadding="@{viewModel.fabPadding}"
+                bind:itemMoveCallback="@{viewModel}"
+                bind:listData="@{viewModel.listData}"
+                bind:loadMoreCallback="@{viewModel}"
+                bind:loadNextAvailability="@{viewModel.loadNextAvailability}"
+                bind:loadNextProgressIsVisible="@{viewModel.loadNextVisibility}"
+                bind:loadPreviousAvailability="@{viewModel.loadPreviousAvailability}"
+                bind:loadPreviousProgressIsVisible="@{viewModel.loadPreviousVisibility}"
+                app:visibility="@{viewModel.listVisibility}"/>
+
+            <ru.tensor.sbis.design.stubview.StubView
+                android:id="@+id/communicator_read_status_stub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:StubView_mode="block"
+                app:visibility="@{viewModel.stubViewVisibility}"
+                app:setContentFactory="@{viewModel.stubContent}"/>
+
+            <ru.tensor.sbis.design.progress.SbisLoadingIndicator
+                android:id="@+id/communicator_read_status_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:visibility="@{viewModel.progressVisibility}"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

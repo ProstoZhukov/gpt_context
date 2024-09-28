@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableBuildConfigGeneration()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.order_message"
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+
+    // common
+    implementation project(':base_components')
+    implementation project(':business-theme')
+    implementation project(':common')
+    implementation project(':viper')
+
+    // design
+    implementation project(':design_buttons')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_profile_decl')
+    implementation project(':design_profile')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_utils')
+    implementation project(':design')
+
+    // electronic-queues
+    implementation project(':queue_list_decl')
+
+    // common-catalog-items
+    implementation project(':common_catalog_items_decl')
+    implementation project(':common_catalog_items_design')
+
+    // business-components
+    implementation project(':business-decl')
+    implementation project(':business-receipt')
+}

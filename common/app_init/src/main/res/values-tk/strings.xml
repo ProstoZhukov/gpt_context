@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_init_unknown_error">Näbelli &#xfd;al&#x148;y&#x15f;lyk</string>
+    <string name="app_init_no_memory_button_title">.Akyn</string>
+    <string name="app_init_no_memory_details_msg">Programmany i&#x15f;letmek üçin enjamy&#x148;yzda &#xfd;eterlik &#xfd;er &#xfd;ok, ony bo&#x15f;ady&#x148; we ga&#xfd;tadan synany&#x15f;y&#x148;</string>
+    <string name="app_init_no_memory_title_msg">Memoryat &#xfd;eterlik däl</string>
+    <string name="app_init_no_memory_toast_msg">Memoryat &#xfd;ok! Bo&#x15f;ady&#x148; we ga&#xfd;tadan synany&#x15f;y&#x148;</string>
+</resources>

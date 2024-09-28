@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="webviewer_notification_title">Saby</string>
+    <string name="webviewer_notification_text">Φόρτωση αρχείου</string>
+    <string name="webviewer_open_file">Ανοιγμα αρχείου</string>
+    <string name="webviewer_unable_to_load_file_error">Δεν είναι δυνατή η φόρτωση του αρχείου</string>
+    <string name="webviewer_loading_started">Κατεβάστε…</string>
+    <string name="webviewer_loading_finished">Η λήψη του \"%s\" ολοκληρώθηκε</string>
+    <string name="webviewer_load_file_again">Να γίνει ξανά λήψη του αρχείου \"%s\";</string>
+    <string name="webviewer_tap_again_to_exit_to_list">Κάντε κλικ ξανά για να επιστρέψετε στη λίστα</string>
+</resources>

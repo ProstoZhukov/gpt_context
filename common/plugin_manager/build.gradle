@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'module-publish-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableLintCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+modulePublishConfig {
+    publishingArtifactId = 'plugin_manager'
+    publishingVersionCode = '1.0.0'
+}
+
+android {
+    namespace "ru.tensor.sbis.plugin_manager"
+
+    testOptions.unitTests.all {
+        testLogging {
+            events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            exceptionFormat 'full'
+        }
+    }
+}
+
+dependencies {
+    api project(':plugin_struct')
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
+
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+
+    implementation "androidx.tracing:tracing-ktx:$rootProject.ext.androidTracingVersion"
+
+    testImplementation project(':testing')
+}

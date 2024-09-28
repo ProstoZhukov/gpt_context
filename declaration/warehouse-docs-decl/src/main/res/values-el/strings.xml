@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wrhdoc_nom_in_order_on_addition_title">Με σειρά προσθήκης</string>
+    <string name="wrhdoc_nom_alphabetically_asc_title">Α έως Ω</string>
+    <string name="wrhdoc_nom_alphabetically_desc_title">Ζ σε Α</string>
+    <string name="wrhdoc_nom_by_number_of_deviations_title">Με αριθμό αποκλίσεων</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_title">Με αποκλίσεις ποσό</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_asc_title">ανερχόμενος</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_desc_title">φθίνων</string>
+    <string name="wrhdoc_nom_without_filters_title">Ολα τα αντικείμενα</string>
+    <string name="wrhdoc_nom_non_zero_balances_title">Μη μηδενικά υπόλοιπα</string>
+    <string name="wrhdoc_nom_zero_balances_title">Μηδενικά υπόλοιπα</string>
+    <string name="wrhdoc_nom_negative_balances_title">Αρνητικά υπόλοιπα</string>
+    <string name="wrhdoc_nom_with_deviations_balances_title">Με αποκλίσεις</string>
+    <string name="wrhdoc_nom_deviation_negative_title">Με έλλειψη</string>
+    <string name="wrhdoc_nom_filter_not_confirmed">Δεν έχει επιβεβαιωθεί</string>
+    <string name="wrhdoc_nom_filter_confirmed">Επιβεβαιωμένος</string>
+    <string name="wrhdoc_nom_deviation_positive_title">Με πλεόνασμα</string>
+    <string name="wrhdoc_nom_unfilled_balances_title">Απλήρωτος</string>
+</resources>

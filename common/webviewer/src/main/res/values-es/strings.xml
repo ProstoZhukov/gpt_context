@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="webviewer_notification_title">Saby</string>
+    <string name="webviewer_notification_text">Cargando archivo</string>
+    <string name="webviewer_open_file">Abrir documento</string>
+    <string name="webviewer_unable_to_load_file_error">No se puede cargar el archivo</string>
+    <string name="webviewer_loading_started">Descargar…</string>
+    <string name="webviewer_loading_finished">Descarga \"%s\" completada</string>
+    <string name="webviewer_load_file_again">¿Descargar el archivo \"%s\" nuevamente?</string>
+    <string name="webviewer_tap_again_to_exit_to_list">Haga clic nuevamente para regresar a la lista</string>
+</resources>

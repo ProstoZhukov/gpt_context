@@ -1,0 +1,29 @@
+include ':motivation'
+project(':motivation').projectDir = new File(motivationDir, 'motivation')
+
+include ':motivation_impl'
+project(':motivation_impl').projectDir = new File(motivationDir, 'motivation_impl')
+
+include ':motivation_screens'
+project(':motivation_screens').projectDir = new File(motivationDir, 'motivation_screens')
+
+include ':motivation_ui_resources'
+project(':motivation_ui_resources').projectDir = new File(motivationDir, 'motivation-common/motivation_ui_resources')
+
+include ':cadres'
+project(':cadres').projectDir = new File(motivationDir, 'cadres')
+
+include ':achievements_impl'
+project(':achievements_impl').projectDir = new File(motivationDir, 'achievements/achievements_impl')
+
+include ':achievements_dependency_on_tasks'
+project(':achievements_dependency_on_tasks').projectDir = new File(motivationDir, 'achievements/achievements_dependency_on_tasks')
+
+include ':motivation_main_screen_addon'
+project(':motivation_main_screen_addon').projectDir = new File(motivationDir, 'motivation_main_screen_addon')
+
+include ':salary_main_screen_addon'
+project(':salary_main_screen_addon').projectDir = new File(motivationDir, 'salary_main_screen_addon')
+
+include ':motivation_impl_main_screen_addon'
+project(':motivation_impl_main_screen_addon').projectDir = new File(motivationDir, 'motivation_impl_main_screen_addon')

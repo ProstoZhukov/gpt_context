@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="our_org_empty_title">Tashkilotlar ro\'yxati bo\'sh</string>
+    <string name="our_org_filter_state_active">Ishlayotgan</string>
+    <string name="our_org_filter_state_all">Hammasi</string>
+    <string name="our_org_item_header_simple_title">Tashkilotni tanlang</string>
+    <string name="our_org_title">Bizning kompaniyalarimiz</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SelectedItemBody">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/selection_selected_item_height</item>
+        <item name="android:background">@drawable/selection_rounded_item_background</item>
+        <item name="android:layout_marginEnd">?offset_s</item>
+        <item name="android:layout_marginTop">@dimen/selection_selected_item_margin_top</item>
+    </style>
+
+    <style name="SelectedItemTitle" parent="RegularStyle">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_xs_scaleOff</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SelectedItemImage">
+        <item name="shapeBackgroundColor">?backgroundColor</item>
+    </style>
+
+    <style name="SelectedItemCloseButton" parent="MobileFontStyle">
+        <item name="android:paddingEnd">?offset_st</item>
+        <item name="android:paddingStart">?offset_st</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/design_mobile_icon_toolbar_close</item>
+        <item name="android:textSize">?iconSize_s</item>
+        <item name="android:textColor">?unaccentedIconColor</item>
+    </style>
+
+    <style name="SelectorChooseAll">
+        <item name="Selector_chooseAllBodyStyle">@style/SelectionDefaultMultiItemBody.Region.ChooseAll</item>
+        <item name="Selector_chooseAllTitleStyle">@style/SelectionDefaultItemTitle.Region.ChooseAll</item>
+        <item name="Selector_chooseAllCounterStyle">@style/SelectionDefaultItemCounter.Region.ChooseAll</item>
+    </style>
+</resources>

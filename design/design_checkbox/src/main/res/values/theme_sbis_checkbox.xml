@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SbisCheckboxDefaultsTheme">
+        <item name="sbisCheckboxBackgroundColor">?backgroundColor</item>
+        <item name="sbisCheckboxMarkerColor">?markerColor</item>
+        <item name="sbisCheckboxBorderColor">?unaccentedBorderColor</item>
+        <item name="sbisCheckboxAccentMarkerColor">?primaryColor</item>
+        <item name="sbisCheckboxReadOnlyMarkerColor">?readonlyMarkerColor</item>
+        <item name="sbisCheckboxReadOnlyBorderColor">?readonlyBorderColor</item>
+        <item name="sbisCheckboxPresetBackgroundColor">?primaryActiveSameBackgroundColor</item>
+        <item name="sbisCheckboxPresetOffBackgroundColor">?paleColor</item>
+        <item name="sbisCheckboxValidationBorderColorError">?invalidBorderColor</item>
+        <item name="sbisCheckboxValidationTopMargin">?offset_s</item>
+        <item name="sbisCheckboxContentStartMargin">?offset_m</item>
+        <item name="SbisCheckbox_useVerticalOffset">false</item>
+    </style>
+
+    <style name="SbisCheckboxOutlinedTheme" parent="SbisCheckboxDefaultsTheme">
+        <item name="sbisCheckboxBackgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="SbisCheckboxDefaultsLargeTheme" parent="SbisCheckboxDefaultsTheme">
+        <item name="sbisCheckboxValidationTopMargin">?offset_st</item>
+        <item name="sbisCheckboxContentStartMargin">?offset_xs</item>
+    </style>
+
+    <style name="SbisCheckboxOutlinedLargeTheme" parent="SbisCheckboxOutlinedTheme">
+        <item name="sbisCheckboxValidationTopMargin">?offset_st</item>
+        <item name="sbisCheckboxContentStartMargin">?offset_xs</item>
+    </style>
+</resources>

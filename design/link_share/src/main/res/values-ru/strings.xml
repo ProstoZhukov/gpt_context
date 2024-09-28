@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="link_share_title_link">Ссылка/Поделиться</string>
+
+    <string name="link_share_copy_link">Скопировать</string>
+    <string name="link_share_new_tab_link">Открыть в браузере</string>
+    <string name="link_share_qr_link">QR-code</string>
+    <string name="link_share_send_link">Отправить</string>
+
+    <string name="link_share_qr_confirmation_dialog_button_ok">ОК</string>
+    <string name="link_share_alert_link_copied">Ссылка скопировано в буфер обмена</string>
+</resources>

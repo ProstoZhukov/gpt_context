@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName"
+    tools:layout_height="?inlineHeight_xs"
+    tools:parentTag="android.widget.FrameLayout"
+    tools:theme="@style/RetailViewsInputFieldViewStyle.Light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/retail_views_background_stroke_width"
+        android:orientation="horizontal">
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/retail_views_left_icon"
+            style="@style/RetailViewsInputFieldIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="?offset_s"
+            tools:text="@string/design_mobile_icon_search_left"/>
+
+        <EditText
+            android:id="@+id/retail_views_edit_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/palette_color_transparent"
+            android:ellipsize="end"
+            android:gravity="center_vertical|start"
+            android:importantForAutofill="no"
+            android:includeFontPadding="true"
+            android:inputType="textAutoComplete|textAutoCorrect|text"
+            android:paddingStart="?offset_s"
+            android:paddingTop="?offset_2xs"
+            android:paddingEnd="?offset_s"
+            android:paddingBottom="?offset_2xs"
+            android:scrollbars="none"
+            android:textColor="?attr/retail_views_main_background_text_color"
+            android:textColorHint="?attr/retail_views_main_background_disabled_text_color"
+            android:textSize="?fontSize_m_scaleOff"
+            tools:ignore="LabelFor"
+            tools:text="mobile_icon_sbis_logo"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/retail_views_right_icon2"
+            style="@style/RetailViewsInputFieldIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="?offset_s"
+            tools:text="@string/design_mobile_icon_search_left"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/retail_views_right_icon1"
+            style="@style/RetailViewsInputFieldIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="?offset_s"
+            android:textColor="?attr/retail_views_main_background_icon_color"
+            tools:text="@string/design_mobile_icon_search_left"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/retail_views_bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/retail_views_background_stroke_width"
+        android:layout_gravity="bottom"/>
+
+</merge>

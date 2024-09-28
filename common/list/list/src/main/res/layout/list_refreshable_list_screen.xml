@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedResources"
+    tools:keep="@layout/refreshable_list_screen">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.list.base.presentation.ListScreenVM"/>
+    </data>
+
+    <ru.tensor.sbis.design.progress.SbisPullToRefresh
+        android:id="@+id/status_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:onRefreshListener="@{viewModel::showRefresh}"
+        app:refreshing="@{viewModel.swipeRefreshIsVisible}"
+        app:setEnabled="@{viewModel.swipeRefreshIsEnabled}">
+
+        <include
+            android:id="@+id/list_with_progress_and_stub"
+            layout="@layout/list_with_progress_and_stub"
+            app:viewModel="@{viewModel}"/>
+    </ru.tensor.sbis.design.progress.SbisPullToRefresh>
+</layout>

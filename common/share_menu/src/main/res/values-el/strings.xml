@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_menu_authorization_required_message">Συνδεθείτε στον λογαριασμό σας και δοκιμάστε ξανά</string>
+    <string name="share_menu_no_available_options">Δεν υπάρχουν διαθέσιμες επιλογές για κοινή χρήση</string>
+    <string name="share_menu_header_view_title_default">Αποστολή%1$s</string>
+    <string name="share_menu_header_view_title_sending">Αποστολή%1$s</string>
+    <string name="share_menu_header_view_title_completed">Στάλθηκε%1$s</string>
+    <string name="share_menu_attachments_count_restriction">Δεν μπορείτε να στείλετε περισσότερα από 25 αρχεία</string>
+    <string name="share_menu_attachment_big_size_restriction">Το μεταφορτωμένο αρχείο δεν πρέπει να υπερβαίνει το 1 GB</string>
+    <string name="share_menu_text_restriction">Το κείμενο αυξάνει τον μέγιστο επιτρεπόμενο αριθμό χαρακτήρων για ένα μήνυμα</string>
+</resources>

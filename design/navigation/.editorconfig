@@ -1,0 +1,8 @@
+[*.{kt, kts}]
+max_line_length = 120
+disabled_rules = import-ordering, no-wildcard-imports, final-newline, no-blank-line-before-rbrace
+ktlint_ignore_back_ticked_identifier = true
+
+# Чтобы не нарушать структуру файла
+[IconsControllerIdParcer.kt]
+max_line_length = 200

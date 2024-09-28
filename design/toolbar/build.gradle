@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-parcelize'
+
+submoduleConfig { cfg ->
+    cfg.enableViewBindingCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.toolbar"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+        all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+                exceptionFormat 'full'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':list_utils')
+    implementation project(':design_utils')
+    implementation project(':design_profile')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_counters')
+    implementation project(':design_progress')
+    api project(':design_sbis_text_view')
+    api project(':design_view_ext')
+    implementation project(':plugin_struct')
+    implementation project(':toolbox-decl')
+
+    testImplementation project(':testing')
+}

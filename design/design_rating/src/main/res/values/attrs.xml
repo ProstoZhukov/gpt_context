@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sbisRatingViewTheme" format="reference"/>
+
+    <declare-styleable name="SbisRatingView">
+        <attr name="SbisRatingView_oneIconColor" format="color"/>
+        <attr name="SbisRatingView_twoIconColor" format="color"/>
+        <attr name="SbisRatingView_threeIconColor" format="color"/>
+        <attr name="SbisRatingView_fourIconColor" format="color"/>
+        <attr name="SbisRatingView_fiveIconColor" format="color"/>
+        <attr name="SbisRatingView_filledIconColor" format="color"/>
+        <attr name="SbisRatingView_emptyIconColor" format="color"/>
+        <attr name="SbisRatingView_goodIconColor" format="color"/>
+        <attr name="SbisRatingView_neutralIconColor" format="color"/>
+        <attr name="SbisRatingView_badIconColor" format="color"/>
+    </declare-styleable>
+</resources>

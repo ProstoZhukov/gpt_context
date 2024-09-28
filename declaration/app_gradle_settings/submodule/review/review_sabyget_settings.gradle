@@ -1,0 +1,8 @@
+include ':review_domain'
+project(':review_domain').projectDir = new File(reviewDir, "review_domain")
+
+include ':review_design'
+project(':review_design').projectDir = new File(reviewDir, "review_design")
+
+include ':review_impl'
+project(':review_impl').projectDir = new File(reviewDir, "review_impl")

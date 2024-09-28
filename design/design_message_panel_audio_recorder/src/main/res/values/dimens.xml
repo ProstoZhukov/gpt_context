@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="design_message_panel_audio_recorder_send_view_height">44dp</dimen>
+    <dimen name="design_message_panel_audio_recorder_cancel_button_padding_end">7dp</dimen>
+    <dimen name="design_message_panel_audio_recorder_smile_size">36dp</dimen>
+    <dimen name="design_message_panel_audio_recorder_smile_spacing">3dp</dimen>
+    <dimen name="design_message_panel_audio_recorder_player_min_width">114dp</dimen>
+    <dimen name="design_message_panel_audio_recorder_stop_max_amplitude_diameter">46dp</dimen>
+    <dimen name="design_message_panel_audio_recorder_stop_min_amplitude_diameter">38dp</dimen>
+    <dimen name="design_message_panel_audio_recorder_stop_pulsation_dx">1dp</dimen>
+
+</resources>

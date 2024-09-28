@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="OnboardingTourTitleStyle" parent="MediumStyle">
+        <item name="android:textSize">?fontSize_5xl_scaleOff</item>
+    </style>
+
+    <style name="OnboardingTourDescriptionStyle">
+        <item name="android:textSize">?fontSize_l_scaleOff</item>
+        <item name="android:layout_marginTop">?offset_m</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Цвет выделения текста в полях ввода. Реализация для API 23+.
+    Вынуждены иметь отдельные селекторы для светлой и темной темы для совместимости с API < 23.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:color="?secondaryBorderColor"
+        android:alpha="0.3" />
+</selector>

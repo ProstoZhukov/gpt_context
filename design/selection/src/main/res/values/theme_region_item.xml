@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region Темы для элементов выбора региона -->
+    <!-- Базовая тема (не самостоятельная) для элементов выбора региона -->
+    <style name="SelectionRegionItemTheme">
+        <item name="Selector_itemTitleStyle">@style/SelectionDefaultItemTitle.Region</item>
+        <item name="Selector_itemSubtitleStyle">@style/SelectionDefaultItemSubtitle.Region</item>
+        <item name="Selector_itemCounterStyle">@style/SelectionDefaultItemCounter.Region</item>
+        <item name="Selector_itemSelectionIconStyle">@style/SelectionDefaultItemSelectionIcon.Multi</item>
+    </style>
+
+    <style name="SelectionRegionItemTheme.Multi">
+        <item name="Selector_itemContainerStyle">@style/SelectionDefaultMultiItemBody.Region</item>
+    </style>
+
+    <style name="SelectionRegionItemTheme.Multi.Region">
+        <item name="Selector_itemSelectionIconStyle">@style/SelectionDefaultItemSelectionIcon.Multi.Region</item>
+    </style>
+
+    <style name="SelectionRegionItemTheme.Single">
+        <item name="Selector_itemContainerStyle">@style/SelectionDefaultSingleItemBody.Region</item>
+        <item name="Selector_itemMarkerStyle">@style/SelectionDefaultItemMarker.Region</item>
+        <item name="Selector_itemTitleMarginStart">@dimen/selection_item_horizontal_spacing</item>
+    </style>
+    <!--endregion-->
+
+    <style name="SelectionDefaultMultiItemBody.Region">
+        <item name="android:minHeight">@dimen/selection_item_min_height</item>
+        <item name="android:paddingStart">@dimen/selection_item_horizontal_spacing</item>
+    </style>
+
+    <style name="SelectionDefaultSingleItemBody.Region">
+        <item name="android:minHeight">@dimen/selection_item_min_height</item>
+        <item name="android:paddingEnd">@dimen/selection_item_horizontal_spacing</item>
+    </style>
+
+    <style name="SelectionDefaultItemTitle.Region">
+        <item name="android:textSize">@dimen/size_title2_scaleOn</item>
+        <item name="android:minHeight">@dimen/selection_item_title_min_height</item>
+        <item name="android:textColor">@color/text_color_black_1</item>
+    </style>
+
+    <style name="SelectionDefaultItemSubtitle.Region">
+        <item name="android:textSize">@dimen/size_body2_scaleOn</item>
+        <item name="android:minHeight">@dimen/selection_item_subtitle_min_height</item>
+        <item name="android:textColor">@color/palette_color_gray4</item>
+    </style>
+
+    <style name="SelectionDefaultItemCounter.Region" parent="SelectionDefaultItemTitle.Region">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+    </style>
+
+    <style name="SelectionDefaultItemMarker.Region">
+        <item name="android:src">@drawable/selection_default_item_marker</item>
+    </style>
+</resources>

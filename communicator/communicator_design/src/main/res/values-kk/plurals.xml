@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="communicator_move_dialogs_success_message">
+        <item quantity="one">Диалог қалтаға жылжытылды</item>
+        <item quantity="other">Диалогтар қалтаға жылжытылды</item>
+    </plurals>
+    <plurals name="communicator_contact_move_success_message">
+        <item quantity="one">Контакт қалтаға жылжытылды</item>
+        <item quantity="other">Контактілер қалтаға жылжытылды</item>
+    </plurals>
+    <plurals name="communicator_contact_want_add_in_same_folder">
+        <item quantity="one">Контакт осы қалтада бұрыннан бар</item>
+        <item quantity="other">Контактілер осы қалтада бұрыннан бар</item>
+    </plurals>
+    <plurals name="communicator_contact_move_error">
+        <item quantity="one">Контактіні жылжыту кезінде қате</item>
+        <item quantity="other">Контактілерді жылжыту кезінде қате</item>
+    </plurals>
+</resources>

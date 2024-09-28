@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="swipeable_layout_default_post_dismiss_message">已删除</string>
+    <string name="design_swipe_menu_label_mark_read">读</string>
+    <string name="design_swipe_menu_label_mark_unread">未读</string>
+    <string name="design_swipe_menu_label_move">至文件夹</string>
+    <string name="design_swipe_menu_label_media">视频通话</string>
+    <string name="design_swipe_menu_go_to_dialog">至对话框</string>
+    <string name="design_swipe_menu_get_url_for_attachment">关联</string>
+    <string name="design_swipe_menu_share">分享</string>
+    <string name="design_swipe_menu_label_remove">删除</string>
+    <string name="design_swipe_menu_label_hide">隐藏</string>
+    <string name="design_swipe_menu_label_call">称呼</string>
+    <string name="design_swipe_menu_remove_admin">删除管理员角色。</string>
+    <string name="design_swipe_menu_add_admin">指定为管理员。</string>
+    <string name="design_swipe_menu_label_message">信息</string>
+    <string name="swipeable_layout_cancel_deletion_message">取消删除</string>
+</resources>

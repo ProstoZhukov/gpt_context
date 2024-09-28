@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_views_NotificationHeaderViewIconStyle.ImageIcon"
+    tools:ignore="ResourceName"/>

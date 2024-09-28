@@ -1,0 +1,212 @@
+include ':calendar_date_icon'
+project(':calendar_date_icon').projectDir = new File(settingsDir, "$design_dir/calendar_date_icon")
+
+include ':calendar_date_view'
+project(':calendar_date_view').projectDir = new File(settingsDir, "$design_dir/calendar_date_view")
+
+include ':wheel_time_picker'
+project(':wheel_time_picker').projectDir = new File(settingsDir, "$design_dir/wheel_time_picker")
+
+include ':cylinder_pickers'
+project(':cylinder_pickers').projectDir = new File(settingsDir, "$design_dir/cylinder_pickers")
+
+include ':cloud_view'
+project(':cloud_view').projectDir = new File(design_dir, 'cloud_view')
+
+include ':cloud_view_integration'
+project(':cloud_view_integration').projectDir = new File(settingsDir, "$design_dir/cloud_view_integration")
+
+include ':container'
+project(':container').projectDir = new File(settingsDir, "$design_dir/container")
+
+include ':context_menu'
+project(':context_menu').projectDir = new File(design_dir, 'context_menu')
+
+include ':design'
+project(':design').projectDir = new File(design_dir, 'design')
+
+include ':design_audio_player_view'
+project(':design_audio_player_view').projectDir = new File(design_dir, "design_audio_player_view")
+
+include ':design_breadcrumbs'
+project(':design_breadcrumbs').projectDir = new File(design_dir, 'design_breadcrumbs')
+
+include ':design_buttons'
+project(':design_buttons').projectDir = new File(design_dir, "design_buttons")
+
+include ':design_change_theme'
+project(':design_change_theme').projectDir = new File(settingsDir, "$design_dir/design_change_theme")
+
+include ':design_checkbox'
+project(':design_checkbox').projectDir = new File(design_dir, 'design_checkbox')
+
+include ':design_chips'
+project(':design_chips').projectDir = new File(settingsDir, "$design_dir/design_chips")
+
+include ':design_collection_view'
+project(':design_collection_view').projectDir = new File(settingsDir, "$design_dir/design_collection_view")
+
+include ':design_confirmation_dialog'
+project(':design_confirmation_dialog').projectDir = new File(settingsDir, "$design_dir/design_confirmation_dialog")
+
+include ':design_counters'
+project(':design_counters').projectDir = new File(design_dir, 'design_counters')
+
+include ':design_custom_view_tools'
+project(':design_custom_view_tools').projectDir = new File(design_dir, 'design_custom_view_tools')
+
+include ':design_dialogs'
+project(':design_dialogs').projectDir = new File(design_dir, 'design_dialogs')
+
+include ':design_files_picker'
+project(':design_files_picker').projectDir = new File(settingsDir, "$design_dir/design_files_picker")
+
+include ':design_gallery'
+project(':design_gallery').projectDir = new File(settingsDir, "$design_dir/design_gallery")
+
+include ':design_folders'
+project(':design_folders').projectDir = new File(settingsDir, "$design_dir/design_folders")
+
+include ':design_header'
+project(':design_header').projectDir = new File(settingsDir, "$design_dir/design_header")
+
+include ':design_list_header'
+project(':design_list_header').projectDir = new File(settingsDir, "$design_dir/design_list_header")
+
+include ':design_logo'
+project(':design_logo').projectDir = new File(settingsDir, "$design_dir/design_logo")
+
+include ':design_marks'
+project(':design_marks').projectDir = new File(design_dir, "design_marks")
+
+include ':design_media_player'
+project(':design_media_player').projectDir = new File(design_dir, "design_media_player")
+
+include ':design_message_panel'
+project(':design_message_panel').projectDir = new File(design_dir, "design_message_panel")
+
+include ':design_message_panel_audio_recorder'
+project(':design_message_panel_audio_recorder').projectDir = new File(design_dir, "design_message_panel_audio_recorder")
+
+include ':design_message_panel_common'
+project(':design_message_panel_common').projectDir = new File(design_dir, "design_message_panel_common")
+
+include ':design_message_panel_decl'
+project(':design_message_panel_decl').projectDir = new File(design_dir, "design_message_panel_decl")
+
+include ':design_message_panel_recorder_common'
+project(':design_message_panel_recorder_common').projectDir = new File(design_dir, "design_message_panel_recorder_common")
+
+include ':design_message_panel_video_recorder'
+project(':design_message_panel_video_recorder').projectDir = new File(design_dir, "design_message_panel_video_recorder")
+
+include ':design_moneyview'
+project(':design_moneyview').projectDir = new File(design_dir, "design_moneyview")
+
+include ':design_notification'
+project(':design_notification').projectDir = new File(settingsDir, "$design_dir/design_notification")
+
+include ':design_period_picker'
+project(':design_period_picker').projectDir = new File(settingsDir, "$design_dir/design_period_picker")
+
+include ':design_person_suggest'
+project(':design_person_suggest').projectDir = new File(settingsDir, "$design_dir/design_person_suggest")
+
+include ':design_profile'
+project(':design_profile').projectDir = new File(design_dir, "design_profile")
+
+include ':design_profile_decl'
+project(':design_profile_decl').projectDir = new File(settingsDir, "$design_dir/design_profile_decl")
+
+include ':design_progress'
+project(':design_progress').projectDir = new File(settingsDir, "$design_dir/design_progress")
+
+include ":design_radio_group"
+project(":design_radio_group").projectDir = new File(designDir, "design_radio_group")
+
+include ':design_recipient_selection'
+project(':design_recipient_selection').projectDir = new File(settingsDir, "$design_dir/design_recipient_selection")
+
+include ':design_review'
+project (':design_review').projectDir = new File(settingsDir, "$design_dir/design_review")
+
+include ':design_sbis_text_view'
+project(':design_sbis_text_view').projectDir = new File(settingsDir, "$design_dir/design_sbis_text_view")
+
+include ':design_selection'
+project(':design_selection').projectDir = new File(settingsDir, "$design_dir/design_selection")
+
+include ':design_selection_common'
+project(':design_selection_common').projectDir = new File(settingsDir, "$design_dir/design_selection_common")
+
+include ':design_universal_selection'
+project(':design_universal_selection').projectDir = new File(settingsDir, "$design_dir/design_universal_selection")
+
+include ':design_stubview'
+project(':design_stubview').projectDir = new File(design_dir, "design_stubview")
+
+include ':design_swipeback'
+project(':design_swipeback').projectDir = new File(design_dir, "design_swipeback")
+
+include ':design_switch'
+project(':design_switch').projectDir = new File(settingsDir, "$design_dir/design_switch")
+
+include ':design_utils'
+project(':design_utils').projectDir = new File(design_dir, 'design_utils')
+
+include ':design_video_player_view'
+project(':design_video_player_view').projectDir = new File(design_dir, "design_video_player_view")
+
+include ':design_view_ext'
+project(':design_view_ext').projectDir = new File(design_dir, 'design_view_ext')
+
+include ':input_view'
+project(':input_view').projectDir = new File(design_dir, 'input_view')
+
+include ':list_utils'
+project(':list_utils').projectDir = new File(design_dir, 'list_utils')
+
+include ':navigation'
+project(':navigation').projectDir = new File(design_dir, 'navigation')
+
+include(':pie_chart_view')
+project(':pie_chart_view').projectDir = new File(settingsDir, "$design_dir/pie_chart_view")
+
+include ':pin_code'
+project(':pin_code').projectDir = new File(settingsDir, "$design_dir/pin_code")
+
+include ':selection'
+project(':selection').projectDir = new File(design_dir, 'selection')
+
+include ':scroll_to_top'
+project(':scroll_to_top').projectDir = new File(design_dir, 'scroll_to_top')
+
+include(':skeleton_view')
+project(':skeleton_view').projectDir = new File(settingsDir, "$design_dir/skeleton_view")
+
+include ':text_span'
+project(':text_span').projectDir = new File(design_dir, 'text_span')
+
+include ':time_picker'
+project(':time_picker').projectDir = new File(settingsDir, "$design_dir/time_picker")
+
+include ':toolbar'
+project(':toolbar').projectDir = new File(design_dir, 'toolbar')
+
+include ':view_factory'
+project(':view_factory').projectDir = new File(design_dir, "view_factory")
+
+include ':skeleton_view'
+project(':skeleton_view').projectDir = new File(settingsDir, "$design_dir/skeleton_view")
+
+include ':design_tab_panel'
+project(':design_tab_panel').projectDir = new File(settingsDir, "$design_dir/design_tab_panel")
+
+include ':design_logo'
+project(':design_logo').projectDir = new File(settingsDir, "$design_dir/design_logo")
+
+include ':design_tabs'
+project(':design_tabs').projectDir = new File(settingsDir, "$design_dir/design_tabs")
+
+include ':design_top_navigation'
+project(':design_top_navigation').projectDir = new File(settingsDir, "$design_dir/design_top_navigation")

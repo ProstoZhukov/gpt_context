@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Стиль панели поиска -->
+    <attr name="searchInputTheme" format="reference"/>
+    <attr name="filterViewTheme" format="reference"/>
+
+    <declare-styleable name="SearchInput">
+        <attr name="baseColor" format="color"/>
+        <attr name="additionalColor" format="color"/>
+        <attr name="hasFilter" format="boolean"/>
+        <attr name="hideKeyboardOnDetach" format="boolean"/>
+        <attr name="showCurrentFilters" format="boolean"/>
+        <attr name="searchHint" format="string"/>
+        <attr name="loupeIconText" format="string"/>
+        <attr name="inputDelay" format="integer"/>
+        <attr name="maxLength" format="integer"/>
+        <attr name="isVisibleLoupe" format="boolean"/>
+        <attr name="searchIconColor" format="color"/>
+        <attr name="searchSeparatorColor" format="color"/>
+        <attr name="searchIconSize" format="dimension"/>
+        <attr name="searchTextColor" format="color"/>
+        <attr name="searchHintColor" format="color"/>
+        <attr name="bottomDividerVisible" format="boolean"/>
+        <attr name="bottomDividerColor" format="color"/>
+        <!--TODO аттрибут не используется, Оставлен для совместимости. Удалить по https://online.sbis.ru/opendoc.html?guid=623f0cf0-1b8f-4913-83b4-6190c9aae7e9&client=3 -->
+        <attr name="searchFilterIconColor" format="color"/>
+        <!--TODO аттрибут не используется, Оставлен для совместимости. Удалить по https://online.sbis.ru/opendoc.html?guid=623f0cf0-1b8f-4913-83b4-6190c9aae7e9&client=3 -->
+        <attr name="searchFilterTextColor" format="color"/>
+        <attr name="searchInput_size" format="enum">
+            <enum name="medium" value="1"/>
+            <enum name="small" value="2"/>
+        </attr>
+
+        <!--Тип строки поиска        -->
+        <attr name="searchInput_color" format="enum">
+            <!--По умолчанию            -->
+            <enum name="base" value="1"/>
+            <!--Дополнитльный            -->
+            <enum name="additional" value="2"/>
+        </attr>
+
+        <!-- Радиус скругления строки поиска. -->
+        <attr name="searchInput_cornerRadius" format="dimension"/>
+
+        <!-- {@link android.view.inputmethod.EditorInfo} -->
+        <attr name="imeOptions" format="flags">
+            <flag name="normal" value="0x00000000"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_NULL}. -->
+            <flag name="actionUnspecified" value="0x00000000"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_ACTION_NONE}. -->
+            <flag name="actionNone" value="0x00000001"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_ACTION_GO}. -->
+            <flag name="actionGo" value="0x00000002"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_ACTION_SEARCH}. -->
+            <flag name="actionSearch" value="0x00000003"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_ACTION_SEND}. -->
+            <flag name="actionSend" value="0x00000004"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_ACTION_NEXT}. -->
+            <flag name="actionNext" value="0x00000005"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_ACTION_DONE}. -->
+            <flag name="actionDone" value="0x00000006"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_ACTION_PREVIOUS}. -->
+            <flag name="actionPrevious" value="0x00000007"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_PERSONALIZED_LEARNING}. -->
+            <flag name="flagNoPersonalizedLearning" value="0x1000000"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_FULLSCREEN}. -->
+            <flag name="flagNoFullscreen" value="0x2000000"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_FLAG_NAVIGATE_PREVIOUS}. -->
+            <flag name="flagNavigatePrevious" value="0x4000000"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_FLAG_NAVIGATE_NEXT}. -->
+            <flag name="flagNavigateNext" value="0x8000000"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_EXTRACT_UI}. -->
+            <flag name="flagNoExtractUi" value="0x10000000"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_ACCESSORY_ACTION}. -->
+            <flag name="flagNoAccessoryAction" value="0x20000000"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_ENTER_ACTION}. -->
+            <flag name="flagNoEnterAction" value="0x40000000"/>
+            <!-- {@link android.view.inputmethod.EditorInfo#IME_FLAG_FORCE_ASCII}. -->
+            <flag name="flagForceAscii" value="0x80000000"/>
+        </attr>
+
+        <!-- {@link android.text.InputType}. -->
+        <attr name="inputType" format="flags">
+            <flag name="none" value="0x00000000"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_NORMAL}. -->
+            <flag name="text" value="0x00000001"/>
+            <!-- {@link android.text.InputType#TYPE_TEXT_FLAG_CAP_CHARACTERS}. -->
+            <flag name="textCapCharacters" value="0x00001001"/>
+            <!-- {@link android.text.InputType#TYPE_TEXT_FLAG_CAP_WORDS}. -->
+            <flag name="textCapWords" value="0x00002001"/>
+            <!-- {@link android.text.InputType#TYPE_TEXT_FLAG_CAP_SENTENCES}. -->
+            <flag name="textCapSentences" value="0x00004001"/>
+            <!-- {@link android.text.InputType#TYPE_TEXT_FLAG_AUTO_CORRECT}. -->
+            <flag name="textAutoCorrect" value="0x00008001"/>
+            <!-- {@link android.text.InputType#TYPE_TEXT_FLAG_AUTO_COMPLETE}. -->
+            <flag name="textAutoComplete" value="0x00010001"/>
+            <!-- {@link android.text.InputType#TYPE_TEXT_FLAG_MULTI_LINE}. -->
+            <flag name="textMultiLine" value="0x00020001"/>
+            <!-- {@link android.text.InputType#TYPE_TEXT_FLAG_IME_MULTI_LINE}. -->
+            <flag name="textImeMultiLine" value="0x00040001"/>
+            <!-- {@link android.text.InputType#TYPE_TEXT_FLAG_NO_SUGGESTIONS}. -->
+            <flag name="textNoSuggestions" value="0x00080001"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_URI}. -->
+            <flag name="textUri" value="0x00000011"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_EMAIL_ADDRESS}. -->
+            <flag name="textEmailAddress" value="0x00000021"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_EMAIL_SUBJECT}. -->
+            <flag name="textEmailSubject" value="0x00000031"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_SHORT_MESSAGE}. -->
+            <flag name="textShortMessage" value="0x00000041"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_LONG_MESSAGE}. -->
+            <flag name="textLongMessage" value="0x00000051"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_PERSON_NAME}. -->
+            <flag name="textPersonName" value="0x00000061"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_POSTAL_ADDRESS}. -->
+            <flag name="textPostalAddress" value="0x00000071"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_PASSWORD}. -->
+            <flag name="textPassword" value="0x00000081"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_VISIBLE_PASSWORD}. -->
+            <flag name="textVisiblePassword" value="0x00000091"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_WEB_EDIT_TEXT}. -->
+            <flag name="textWebEditText" value="0x000000a1"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_FILTER}. -->
+            <flag name="textFilter" value="0x000000b1"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_PHONETIC}. -->
+            <flag name="textPhonetic" value="0x000000c1"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS}. -->
+            <flag name="textWebEmailAddress" value="0x000000d1"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_WEB_PASSWORD}. -->
+            <flag name="textWebPassword" value="0x000000e1"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+                 {@link android.text.InputType#TYPE_NUMBER_VARIATION_NORMAL}. -->
+            <flag name="number" value="0x00000002"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+                 {@link android.text.InputType#TYPE_NUMBER_FLAG_SIGNED}. -->
+            <flag name="numberSigned" value="0x00001002"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+                 {@link android.text.InputType#TYPE_NUMBER_FLAG_DECIMAL}. -->
+            <flag name="numberDecimal" value="0x00002002"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+                 {@link android.text.InputType#TYPE_NUMBER_VARIATION_PASSWORD}. -->
+            <flag name="numberPassword" value="0x00000012"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_PHONE}. -->
+            <flag name="phone" value="0x00000003"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_DATETIME} |
+                 {@link android.text.InputType#TYPE_DATETIME_VARIATION_NORMAL}. -->
+            <flag name="datetime" value="0x00000004"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_DATETIME} |
+                 {@link android.text.InputType#TYPE_DATETIME_VARIATION_DATE}. -->
+            <flag name="date" value="0x00000014"/>
+            <!-- {@link android.text.InputType#TYPE_CLASS_DATETIME} |
+                 {@link android.text.InputType#TYPE_DATETIME_VARIATION_TIME}. -->
+            <flag name="time" value="0x00000024"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SbisFilterView">
+        <!--Цвет иконки фильтра-->
+        <attr name="SbisFilterView_filterIconColor" format="color|reference"/>
+        <!--Цвет текста фильтра-->
+        <attr name="SbisFilterView_filterTextColor" format="color|reference"/>
+        <!--Цвет иконки фильтра в неактивном состоянии-->
+        <attr name="SbisFilterView_readonlyTextColor" format="color|reference"/>
+        <!--Цвет текста фильтра в неактивном состоянии-->
+        <attr name="SbisFilterView_readonlyIconColor" format="color|reference"/>
+        <!--Цвет иконки фильтра в нажатом состоянии-->
+        <attr name="SbisFilterView_pressedTextColor" format="color|reference"/>
+        <!--Цвет текста фильтра в нажатом состоянии-->
+        <attr name="SbisFilterView_pressedIconColor" format="color|reference"/>
+        <!--Цвет нижнего разделителя-->
+        <attr name="SbisFilterView_dividerColor" format="color|reference"/>
+        <!--Цвет фона по умолчанию-->
+        <attr name="SbisFilterView_baseBackgroundColor" format="color|reference"/>
+        <!--Цвет фона дополнительный-->
+        <attr name="SbisFilterView_additionalBackgroundColor" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="onboarding_tour_indicator_size">7dp</dimen>
+    <dimen name="onboarding_tour_indicator_bottom_margin">35dp</dimen>
+    <dimen name="onboarding_tour_button_width">167dp</dimen>
+
+    <item name="onboarding_tour_content_title_max_lines" type="integer">3</item>
+    <item name="onboarding_tour_content_description_max_lines" type="integer">7</item>
+    <item name="onboarding_tour_content_guideline_percent" type="dimen">0.45</item>
+
+    <dimen name="onboarding_tour_max_text_width">550dp</dimen>
+    <dimen name="onboarding_tour_max_image_width_tablet">250dp</dimen>
+    <dimen name="onboarding_tour_blur_shapes_margin_bottom">170dp</dimen>
+</resources>

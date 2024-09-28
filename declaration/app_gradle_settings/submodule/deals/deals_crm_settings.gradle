@@ -1,0 +1,2 @@
+ext.deals_dir = "module/deals"
+apply from: "$dealsDir/registry.gradle"

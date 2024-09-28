@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common types -->
+    <item name="regular_item_view" type="id"/>
+    <item name="first_item_view" type="id"/>
+    <item name="last_item_view" type="id"/>
+
+    <item name="imageLoader_supplier_tag" type="id"/>
+
+    <!-- LOADERS -->
+    <item name="version_checker_loader" type="id"/>
+    <item name="save_viewable_to_gallery_loader" type="id"/>
+    <item name="recipient_list_presenter_loader_id" type="id"/>
+    <item name="multi_selection_presenter_loader_id" type="id"/>
+    <item name="debug_info_presenter_loader_id" type="id"/>
+    <item name="logs_crashes_info_list_presenter_loader_id" type="id"/>
+    <item name="logs_crashes_info_base_presenter_loader_id" type="id"/>
+    <item name="logs_info_presenter_loader_id" type="id"/>
+    <item name="crashes_info_presenter_loader_id" type="id"/>
+    <item name="media_selection_pane_presenter_loader_id" type="id"/>
+    <item type="id" name="folders_presenter_loader_id" />
+    <item name="certificate_activating_presenter_loader_id" type="id"/>
+
+    <item name="folders_parent_fragment_id" type="id"/>
+
+    <!-- Attachment views ids -->
+    <item name="detailed_attachment_view_icon_id" type="id"/>
+    <item name="detailed_attachment_view_name_id" type="id"/>
+    <item name="image_attachment_view_preview_id" type="id"/>
+
+    <!-- Conversation Message Panel -->
+    <item name="conversation_message_panel_change_recipients_button_id" type="id"/>
+    <item name="conversation_message_panel_recipients_container" type="id"/>
+    <item name="conversation_message_panel_editing_message_panel" type="id"/>
+    
+    <!-- Multi Section Adapter -->
+    <item name="multi_section_adapter_content_version" type="id"/>
+    <item name="multi_section_adapter_section_index" type="id"/>
+    <item name="multi_section_adapter_section_offset" type="id"/>
+
+    <!-- Swipe Back Container Fragment -->
+    <item name="swipe_back_container" type="id"/>
+    <item name="overlay_container" type="id"/>
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recipients_selection_person_item_height">67dp</dimen>
+    <dimen name="recipients_selection_group_item_height">50dp</dimen>
+    <dimen name="recipients_selection_big_margin">12dp</dimen>
+    <dimen name="recipients_selection_checkbox_padding">15dp</dimen>
+    <dimen name="recipients_selection_item_bottom_padding">6dp</dimen>
+    <dimen name="recipients_selection_checkbox_left_padding">20dp</dimen>
+    <dimen name="recipients_selection_person_checkbox_bottom_padding">33dp</dimen>
+    <dimen name="recipients_selection_group_checkbox_top_padding">6dp</dimen>
+    <dimen name="recipients_selection_group_checkbox_bottom_padding">22dp</dimen>
+    <dimen name="recipients_selection_middle_margin">8dp</dimen>
+    <dimen name="recipients_selection_item_padding">6dp</dimen>
+    <dimen name="recipients_selection_item_photo_margin_top">3dp</dimen>
+    <dimen name="recipients_selection_person_photo_size">55dp</dimen>
+    <dimen name="recipients_selection_title_size">17sp</dimen>
+    <dimen name="recipients_selection_title_margin">4dp</dimen>
+    <dimen name="recipients_selection_subtitle_size">14sp</dimen>
+    <dimen name="recipients_selection_group_icon_size">22sp</dimen>
+    <dimen name="recipients_selection_toolbar_button_padding">4dp</dimen>
+    <dimen name="recipients_selection_group_folder_margin">18dp</dimen>
+    <dimen name="recipients_selection_item_checkbox_width">22dp</dimen>
+    <dimen name="recipients_selection_item_checkbox_height">22dp</dimen>
+
+    <!--Employees selection-->
+    <dimen name="recipients_employee_selection_department_title_container_margin_end">96dp</dimen>
+    <dimen name="recipients_employee_selection_department_arrow_margin_start">4dp</dimen>
+    <dimen name="recipients_employee_selection_department_arrow_margin_top">1dp</dimen>
+    <dimen name="recipients_employee_selection_list_item_separator_line_height">0.5dp</dimen>
+    <dimen name="recipients_employee_selection_list_vertical_item_margin">6dp</dimen>
+    <dimen name="recipients_employee_selection_list_item_margin_start">12dp</dimen>
+    <dimen name="recipients_employee_selection_list_item_margin_end">12dp</dimen>
+    <dimen name="recipients_employee_selection_list_item_margin_top">12dp</dimen>
+    <dimen name="recipients_employee_selection_path_list_item_margin_start">12dp</dimen>
+    <dimen name="recipients_employee_selection_path_list_item_margin_end">12dp</dimen>
+    <dimen name="recipients_employee_selection_folder_list_item_height">50dp</dimen>
+    <dimen name="recipients_employee_selection_path_list_item_height">40dp</dimen>
+
+    <dimen name="recipients_item_border_radius">5dp</dimen>
+    <dimen name="recipients_item_folder_icon_size">20dp</dimen>
+    <dimen name="recipients_item_folder_image_margin_left">8dp</dimen>
+    <dimen name="recipients_item_folder_image_margin_right">8dp</dimen>
+    <dimen name="recipients_item_folder_text_area_margin_right">6dp</dimen>
+    <dimen name="recipients_item_folder_text_max_width">78dp</dimen>
+    <dimen name="recipients_item_person_text_max_width">78dp</dimen>
+    <dimen name="recipients_item_person_image_size">30dp</dimen>
+
+    <dimen name="recipients_item_person_text_margin_right">6dp</dimen>
+    <dimen name="recipients_item_person_text_margin_left">6dp</dimen>
+
+    <dimen name="recipients_repost_toolbar_margin_left">26dp</dimen>
+</resources>

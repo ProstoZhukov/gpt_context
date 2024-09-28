@@ -1,0 +1,8 @@
+include ':profile'
+project(':profile').projectDir = new File(profileDir, "profile")
+
+include ':profile_service'
+project(':profile_service').projectDir = new File(profileDir, "profile_service")
+
+include ':status'
+project(':status').projectDir = new File(profileDir, "status")

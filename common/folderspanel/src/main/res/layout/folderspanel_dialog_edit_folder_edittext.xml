@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/palette_color_white1">
+
+    <RelativeLayout
+        android:id="@+id/folderspanel_edit_folder_edittextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            style="@style/MediumStyle"
+            android:id="@+id/folderspanel_edit_folder_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_black_1"
+            android:textSize="@dimen/size_title1_scaleOn"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/SbisInputFieldLayout"
+            android:id="@+id/folderspanel_edit_folder_edittext_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/folderspanel_edit_folder_title"
+            android:layout_marginTop="20dp"
+            android:clipToPadding="true"
+            android:gravity="center_vertical"
+            android:hint="@string/common_folder_edit_dialog_edittext_hint"
+            app:hintTextAppearance="@style/SbisInputFieldLayoutHint">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/SbisInputFieldEditText"
+                android:id="@+id/folderspanel_edit_folder_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:theme="@style/HighlightControlsColor"/>
+
+            <requestFocus/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/folderspanel_edit_folder_edittextContainer"
+        android:padding="8dp">
+
+        <Button
+            style="@style/SbisButton.Standard"
+            android:id="@+id/folderspanel_edit_folder_button_done"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="@string/common_folder_edit_dialog_add"/>
+
+        <Button
+            style="@style/SbisButton.Standard"
+            android:id="@+id/folderspanel_edit_folder_button_cancel"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@id/folderspanel_edit_folder_button_done"
+            android:text="@string/common_folder_edit_dialog_cancle"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scanner_close_screen">Жабық</string>
+    <string name="scanner_edit_image_cancel">Болдырмау</string>
+    <string name="scanner_edit_image_done">Дайын</string>
+    <string name="scanner_empty_scanned_image_list">Сканерленген кескіндердің тізімі бос</string>
+    <string name="scanner_files_selection_pane_option_scan_document">Сканерлеу</string>
+    <string name="scanner_files_picker_tab_title">Сканерлеу</string>
+    <string name="scanner_flash_state_auto">Авто</string>
+    <string name="scanner_flash_state_off">Өшірулі</string>
+    <string name="scanner_flash_state_on">Қосулы</string>
+    <string name="scanner_image_deleting_error">Кескінді жою кезінде қате орын алды</string>
+    <string name="scanner_image_loading_error">Кескінді жүктеу кезінде қате орын алды</string>
+    <string name="scanner_image_processing_error">Кескінді өңдеу кезінде қате орын алды</string>
+    <string name="scanner_input_new_pdf_file_name_dialog_title">Жаңа PDF файлының атауы</string>
+    <string name="scanner_load_scanned_images_error">Сканерленген кескіндер тізімі жүктелмеді</string>
+    <string name="scanner_multi_snapshot_button_text">Мұқият</string>
+    <string name="scanner_multi_snapshot_fast_button_text">Жылдам</string>
+    <string name="scanner_next_page">%d бет</string>
+    <string name="scanner_no_internet_connection_message">Желі байланысы жоқ</string>
+    <string name="scanner_open_camera_error">Камераны ашу кезінде қате орын алды</string>
+    <string name="scanner_permission_dialog_positive">Баптаулар</string>
+    <string name="scanner_permission_dialog_text">Параметрлерде камераға кіру мүмкіндігін қосыңыз</string>
+    <string name="scanner_permission_dialog_title">Камераға кіруге тыйым салынды</string>
+    <string name="scanner_save_as_image">Сурет ретінде сақтау</string>
+    <string name="scanner_save_scanned_docs_offline_error">Сканерленген құжаттарды офлайн режимде сақтау мүмкін емес</string>
+    <string name="scanner_save_scanned_images_menu_title">Сақтау</string>
+    <string name="scanner_save_to_gallery">Галереяға сақтаңыз</string>
+    <string name="scanner_save_to_pdf">PDF файлына сақтау</string>
+    <string name="scanner_saving_to_gallery_error">Галереяға сақтау мүмкін болмады</string>
+    <string name="scanner_saving_to_gallery_success">Сақтау сәтті аяқталды</string>
+    <string name="scanner_saving_to_pdf_error">PDF файлына сақтау мүмкін болмады</string>
+    <string name="scanner_take_snapshot_error">Суретті жасау кезінде қате орын алды</string>
+</resources>

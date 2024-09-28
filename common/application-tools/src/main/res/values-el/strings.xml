@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_tools_settings_log_crashes_title">Καταγραφή και λάθη.</string>
+    <string name="application_tools_device_information">Πληροφορίες συσκευής</string>
+    <string name="application_tools_build_config">Δημιουργία διαμόρφωσης</string>
+    <string name="application_tools_network_information">Δίκτυο</string>
+    <string name="application_tools_screen_information">Οθόνη</string>
+    <string name="application_tools_crashes_list_title">Σφάλματα</string>
+    <string name="application_tools_logs_list_title">Κούτσουρα</string>
+    <string name="application_tools_logs_crashes_clear_button_title">Σαφή</string>
+    <string name="application_tools_logs_crashes_clear_dialog_title">Επιλέξτε αυτό που θέλετε να διαγράψετε</string>
+    <string name="application_tools_clear_crashes">Εκκαθάριση σφαλμάτων</string>
+    <string name="application_tools_clear_logs">Εκκαθάριση αρχείων καταγραφής</string>
+    <string name="application_tools_clear_all">Τα καθαρίζω όλα</string>
+    <string name="application_tools_crashes_not_exist">Χωρίς σφάλματα</string>
+    <string name="application_tools_logs_not_exist">Χωρίς κούτσουρα</string>
+    <string name="application_tools_crash_info_title">Περιγραφή σφάλματος</string>
+    <string name="application_tools_crash_info_about_app">Πληροφορίες εφαρμογής</string>
+    <string name="application_tools_crash_info_about_phone">@string/application_tools_device_information</string>
+    <string name="application_tools_crash_info_android_api_version">Android API</string>
+    <string name="application_tools_crash_info_brand">Κατασκευαστής</string>
+    <string name="application_tools_crash_info_phone_name">Ονομα μοντέλου</string>
+    <string name="application_tools_crash_info_share">Μερίδιο</string>
+    <string name="application_tools_crash_info_share_dialog_message">Αποστολή σφάλματος</string>
+    <string name="application_tools_crash_info_stack_trace">Stack Trace</string>
+    <string name="application_tools_crash_info_app_version">Εκδοχή</string>
+    <string name="application_tools_crashes_direction_name">συντρίβεται</string>
+    <string name="application_tools_font_check_main_text">Η ημέρα διαρκεί 11 ώρες 59 λεπτά. Χρόνος πριν τη δύση του ηλίου 2 ώρες 10 λεπτά</string>
+    <string name="application_tools_font_check_sizeDisplay0">Regular 30 (sizeDisplay0)</string>
+    <string name="application_tools_font_check_sizeDisplay1">Regular 24 (sizeDisplay1)</string>
+    <string name="application_tools_font_check_sizeTitle1">Regular 20 (sizeTitle1)</string>
+    <string name="application_tools_font_check_sizeTitle2">Regular 18 (sizeTitle2)</string>
+    <string name="application_tools_font_check_sizeTitle3">Regular 17 (sizeTitle3)</string>
+    <string name="application_tools_font_check_sizeBody1">Κανονικό 16 (μέγεθοςBody1)</string>
+    <string name="application_tools_font_check_sizeBody2">Κανονικό 14 (μέγεθοςBody2)</string>
+    <string name="application_tools_font_check_sizeCaption1">Κανονικό 12 (sizeCaption1)</string>
+    <string name="application_tools_debug_font_check_title">Επικύρωση γραμματοσειρών</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region doc nom filter -->
+    <string name="wrhdoc_nom_in_order_on_addition_title">В порядке добавления</string>
+    <string name="wrhdoc_nom_alphabetically_asc_title">от А до Я</string>
+    <string name="wrhdoc_nom_alphabetically_desc_title">от Я до А</string>
+    <string name="wrhdoc_nom_by_number_of_deviations_title">По количеству отклонений</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_title">По сумме отклонений</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_asc_title">по возрастанию</string>
+    <string name="wrhdoc_nom_by_sum_of_deviations_desc_title">по убыванию</string>
+    <string name="wrhdoc_nom_without_filters_title">Все наименования</string>
+    <string name="wrhdoc_nom_non_zero_balances_title">Ненулевые остатки</string>
+    <string name="wrhdoc_nom_zero_balances_title">Нулевые остатки</string>
+    <string name="wrhdoc_nom_negative_balances_title">Отрицательные остатки</string>
+    <string name="wrhdoc_nom_unfilled_balances_title">Незаполненные</string>
+    <string name="wrhdoc_nom_with_deviations_balances_title">С отклонениями</string>
+    <string name="wrhdoc_nom_deviation_negative_title">С недостачей</string>
+    <string name="wrhdoc_nom_filter_not_confirmed">Не подтвержденные</string>
+    <string name="wrhdoc_nom_filter_confirmed">Подтвержденные</string>
+    <string name="wrhdoc_nom_deviation_positive_title">С излишками</string>
+    <!-- endregion -->
+</resources>

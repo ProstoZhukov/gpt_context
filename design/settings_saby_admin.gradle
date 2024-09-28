@@ -1,0 +1,14 @@
+include ':design_change_theme'
+project(':design_change_theme').projectDir = new File(settingsDir, "$design_dir/design_change_theme")
+
+include ':design_confirmation_dialog'
+project(':design_confirmation_dialog').projectDir = new File(settingsDir, "$design_dir/design_confirmation_dialog")
+
+include ':design_switch'
+project(':design_switch').projectDir = new File(settingsDir, "$design_dir/design_switch")
+
+include ':design_sbis_text_view'
+project(':design_sbis_text_view').projectDir = new File(settingsDir, "$design_dir/design_sbis_text_view")
+
+include ':design_logo'
+project(':design_logo').projectDir = new File(settingsDir, "$design_dir/design_logo")

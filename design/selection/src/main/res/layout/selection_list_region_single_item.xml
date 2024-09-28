@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/Selector_itemContainerStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="?attr/Selector_regionSingleItemTheme"
+    tools:theme="@style/SelectionRegionItemTheme.Single"
+    tools:viewBindingIgnore="true">
+
+    <ImageView
+        android:id="@+id/marker"
+        style="?attr/Selector_itemMarkerStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"/>
+
+    <ru.tensor.sbis.common_views.HighlightedTextView
+        android:id="@+id/title"
+        style="?attr/Selector_itemTitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?attr/Selector_itemTitleMarginStart"
+        android:layout_marginTop="@dimen/selection_item_vertical_padding"
+        app:layout_constraintBottom_toTopOf="@id/subtitle"
+        app:layout_constraintEnd_toStartOf="@id/counter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginBottom="@dimen/selection_item_vertical_padding"
+        tools:text="Иваново"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="?attr/Selector_itemSubtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/selection_item_vertical_spacing"
+        android:layout_marginBottom="@dimen/selection_item_vertical_padding"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/counter"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:text="Ивановская область"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/counter"
+        style="?attr/Selector_itemCounterStyle"
+        android:layout_width="@dimen/selection_preview_counter_width"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/title"
+        app:layout_constraintTop_toTopOf="@id/title"
+        tools:text="39 543"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

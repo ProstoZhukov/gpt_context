@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="base_components_common_folder_context_menu_move">Bouge toi</string>
+    <string name="base_components_common_folder_context_menu_move_down">Descendre</string>
+    <string name="base_components_common_folder_context_menu_move_edit">Éditer</string>
+    <string name="base_components_common_folder_context_menu_move_remove">Supprimer</string>
+    <string name="base_components_common_folder_context_menu_move_up">Déplacer vers le haut</string>
+    <string name="base_components_dialog_button_cancel">Annuler</string>
+    <string name="base_components_dialog_button_ok">D\'accord</string>
+    <string name="base_components_input_max_length_error">Le nombre maximum de symboles dépassé</string>
+    <string name="base_components_operation_error_message">Erreur de fonctionnement</string>
+</resources>

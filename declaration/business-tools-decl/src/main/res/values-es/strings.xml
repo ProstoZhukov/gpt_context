@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business_tools_decl_requirement_status_finished">Terminado</string>
+    <string name="business_tools_decl_requirement_confirmation_term_message">Confirmado. Para la respuesta %1$s</string>
+    <string name="business_tools_decl_requirement_mark_as_finished_btn_title">Marcar como completado</string>
+    <string name="business_tools_decl_requirement_refuse_message_file_format">Archivo incorrecto</string>
+    <string name="business_tools_decl_requirement_refuse_message_ratepayer">Dirigida a otra persona jur&#xed;dica.</string>
+    <string name="business_tools_decl_requirement_refuse_message_certificate">La firma del inspector es incorrecta.</string>
+    <string name="business_tools_decl_confirmation_overdue_response_time_message">La respuesta est&#xe1; atrasada</string>
+</resources>

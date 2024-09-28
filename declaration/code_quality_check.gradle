@@ -1,0 +1,48 @@
+class CodeQualityChecker {
+    private final Project project;
+
+    CodeQualityChecker(Project project) {
+        this.project = project
+    }
+
+    void setupDetektLint() {
+        applyPluginSafely(project, "io.gitlab.arturbosch.detekt") {
+            detekt {
+                toolVersion = "1.19.0"
+                config = files(file("../config/detekt/detekt.yml", PathValidation.EXISTS))
+                baseline = file("config/detekt/baseline.xml")
+            }
+
+            def detektTaskClass = project.buildscript.classLoader.loadClass("io.gitlab.arturbosch.detekt.Detekt")
+            println("Detekt task found " + detektTaskClass)
+            project.tasks.withType(detektTaskClass).configureEach {
+                jvmTarget = JavaVersion.VERSION_11
+                exclude("**/generated/**")
+            }
+
+            def detektCreateBaselineTaskClass = project.buildscript.classLoader.loadClass("io.gitlab.arturbosch.detekt.DetektCreateBaselineTask")
+            println("DetektCreateBaselineTask task found " + detektCreateBaselineTaskClass)
+            project.tasks.withType(detektCreateBaselineTaskClass).configureEach {
+                jvmTarget = JavaVersion.VERSION_11
+                exclude("**/generated/**")
+            }
+        }
+    }
+
+    static def applyPluginSafely(Project project, String pluginId, Closure<Project> configuration) {
+        try {
+            project.apply(plugin: pluginId)
+            configuration.delegate = project
+            configuration.call()
+            println(pluginId + " plugin is configured")
+        } catch (UnknownPluginException e) {
+            println(pluginId + " plugin missing in buildscript classpath")
+        }
+    }
+
+}
+
+project.afterEvaluate {
+    def checker = new CodeQualityChecker(it)
+    checker.setupDetektLint()
+}

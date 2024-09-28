@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SbisWhatsNewDefaultTheme">
+        <item name="sbisWhatsNewTitleStyle">@style/SbisWhatsNewTitleDefaultStyle</item>
+        <item name="sbisWhatsNewDescriptionStyle">@style/SbisWhatsNewDescriptionDefaultStyle</item>
+        <item name="sbisWhatsNewHideImageBeforeWidth">360</item>
+    </style>
+
+    <style name="SbisWhatsNewTitleDefaultStyle">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_5xl_scaleOn</item>
+    </style>
+
+    <style name="SbisWhatsNewDescriptionDefaultStyle">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_l_scaleOn</item>
+    </style>
+
+    <style name="SbisWhatsNewLogoStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?iconSize_5xl</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+</resources>

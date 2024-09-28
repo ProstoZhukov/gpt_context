@@ -1,0 +1,70 @@
+import ru.tensor.gradle.subconfig.ktlint.KtLintConfig
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableKaptCfg()
+    cfg.enableKtLintCfg(KtLintConfig.KOTLIN_1_8_0)
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.onboarding_tour"
+    resourcePrefix 'onboarding_tour'
+
+    buildFeatures {
+        viewBinding true
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    implementation project(':android-ext-decl')
+    implementation project(':application-tools')
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':design_buttons')
+    implementation project(':design_dialogs')
+    implementation project(':design_logo')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_stubview')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':mvi_extension')
+    implementation project(':text_span')
+    implementation project(':verification-decl')
+
+    implementation "androidx.core:core-ktx:$rootProject.ext.androidCore"
+    implementation "androidx.annotation:annotation:$rootProject.ext.annotationVersion"
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    implementation "com.google.dagger:dagger-android:$rootProject.ext.daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.ext.daggerVersion"
+    implementation "androidx.datastore:datastore-preferences:$rootProject.ext.datastoreVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$rootProject.ext.kotlinxCoroutinesCoreVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+
+    //processors
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$rootProject.ext.daggerVersion"
+
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+
+    testImplementation project(':plugin_manager')
+    testImplementation project(':testing')
+}

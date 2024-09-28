@@ -1,0 +1,143 @@
+include ':design_notification'
+project(':design_notification').projectDir = new File(designDir, "design_notification")
+
+include ':design_profile_decl'
+project(':design_profile_decl').projectDir = new File(designDir, "design_profile_decl")
+
+include ':calendar_date_icon'
+project(':calendar_date_icon').projectDir = new File(designDir, "calendar_date_icon")
+
+include ':design_confirmation_dialog'
+project(':design_confirmation_dialog').projectDir = new File(designDir, "design_confirmation_dialog")
+
+include ':container'
+project(':container').projectDir = new File(designDir, "container")
+
+include ':design_progress'
+project(':design_progress').projectDir = new File(designDir, "design_progress")
+
+include ':design_switch'
+project(':design_switch').projectDir = new File(designDir, "design_switch")
+
+include ':design_header'
+project(':design_header').projectDir = new File(designDir, "design_header")
+
+include ':design_sbis_text_view'
+project(':design_sbis_text_view').projectDir = new File(designDir, "design_sbis_text_view")
+
+include ':skeleton_view'
+project(':skeleton_view').projectDir = new File(designDir, "skeleton_view")
+
+include ':design_logo'
+project(':design_logo').projectDir = new File(designDir, "design_logo")
+
+include ':design_change_theme'
+project(':design_change_theme').projectDir = new File(designDir, "design_change_theme")
+
+include ':design'
+project(':design').projectDir = new File(designDir, "design")
+
+include ':navigation'
+project(':navigation').projectDir = new File(designDir, "navigation")
+
+include ':design_collection_view'
+project(':design_collection_view').projectDir = new File(designDir, "design_collection_view")
+
+include ':design_swipeback'
+project(':design_swipeback').projectDir = new File(designDir, "design_swipeback")
+
+include ':design_profile'
+project(':design_profile').projectDir = new File(designDir, "design_profile")
+
+include ':design_breadcrumbs'
+project(':design_breadcrumbs').projectDir = new File(designDir, "design_breadcrumbs")
+
+include ':view_factory'
+project(':view_factory').projectDir = new File(designDir, "view_factory")
+
+include ':list_utils'
+project(':list_utils').projectDir = new File(designDir, "list_utils")
+
+include ':input_view'
+project(':input_view').projectDir = new File(designDir, "input_view")
+
+include ':design_decorators'
+project(':design_decorators').projectDir = new File(designDir, "design_decorators")
+
+include ':toolbar'
+project(':toolbar').projectDir = new File(designDir, "toolbar")
+
+include ':scroll_to_top'
+project(':scroll_to_top').projectDir = new File(designDir, "scroll_to_top")
+
+include ':design_dialogs'
+project(':design_dialogs').projectDir = new File(designDir, "design_dialogs")
+
+include ':design_stubview'
+project(':design_stubview').projectDir = new File(designDir, "design_stubview")
+
+include ':time_picker'
+project(':time_picker').projectDir = new File(designDir, 'time_picker')
+
+include ':text_span'
+project(':text_span').projectDir = new File(designDir, 'text_span')
+
+include ':design_utils'
+project(':design_utils').projectDir = new File(designDir, 'design_utils')
+
+include ':design_view_ext'
+project(':design_view_ext').projectDir = new File(designDir, 'design_view_ext')
+
+include ':design_buttons'
+project(':design_buttons').projectDir = new File(designDir, 'design_buttons')
+
+include ':design_custom_view_tools'
+project(':design_custom_view_tools').projectDir = new File(designDir, "design_custom_view_tools")
+
+include ':design_counters'
+project(':design_counters').projectDir = new File(designDir, "design_counters")
+
+include ':design_notification'
+project(':design_notification').projectDir = new File(designDir, "design_notification")
+
+include ':skeleton_view'
+project(':skeleton_view').projectDir = new File(designDir, "skeleton_view")
+
+include ':design_top_navigation'
+project(':design_top_navigation').projectDir = new File(designDir, "design_top_navigation")
+
+include ':design_tabs'
+project(':design_tabs').projectDir = new File(designDir, "design_tabs")
+
+include ':design_logo'
+project(':design_logo').projectDir = new File(designDir, 'design_logo')
+
+include ':design_buttons'
+project(':design_buttons').projectDir = new File(designDir, 'design_buttons')
+
+include ':context_menu'
+project(':context_menu').projectDir = new File(designDir, 'context_menu')
+
+include ':design_confirmation_dialog'
+project(':design_confirmation_dialog').projectDir = new File(designDir, 'design_confirmation_dialog')
+
+include ':pin_code'
+project(':pin_code').projectDir = new File(designDir, "pin_code")
+
+include ':design_checkbox'
+project(':design_checkbox').projectDir = new File(designDir, "design_checkbox")
+
+include ':design_folders'
+project(':design_folders').projectDir = new File(designDir, "design_folders")
+
+include ':design_chips'
+project(':design_chips').projectDir = new File(designDir, "design_chips")
+
+include ":design_radio_group"
+project(":design_radio_group").projectDir = new File(designDir, "design_radio_group")
+
+include ':design_splash'
+project(':design_splash').projectDir = new File(designDir, "design_splash")
+
+include ':design_menu'
+project(':design_menu').projectDir = new File(designDir, "design_menu")

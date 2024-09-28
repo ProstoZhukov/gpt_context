@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Add new contact edit field -->
+    <style name="CommunicatorAddNewContactEditTextStyle">
+        <item name="android:background">?backgroundColor</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textColorHint">?readonlyTextColor</item>
+        <item name="android:textSize">?fontSize_m_scaleOn</item>
+        <item name="android:textCursorDrawable">@drawable/search_field_edit_text_cursor_drawable</item>
+    </style>
+
+    <style name="CommunicatorAddNewContactAppBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorPrimary">?unaccentedBackgroundColor</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Certificate Items -->
+    <style name="CommunicatorCertificateTitle">
+        <item name="android:textColor">@color/text_color_black_1</item>
+        <item name="android:textSize">@dimen/communicator_signatures_list_item_title_text_size</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="CommunicatorCertificateINN">
+        <item name="android:textColor">@color/text_color_black_4</item>
+        <item name="android:textSize">@dimen/communicator_signatures_list_item_title_text_size</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="CommunicatorCertificateName">
+        <item name="android:textColor">@color/text_color_black_1</item>
+        <item name="android:textSize">@dimen/communicator_signatures_list_item_title_text_size</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <!-- Messages in Messages List -->
+    <style name="CommunicatorMessagesListItemPersonName" parent="RegularStyle">
+        <item name="android:textSize">@dimen/size_title3_scaleOff</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Recipient selection -->
+    <style name="CommunicatorConversationRecipientSelectionDialogFragmentTheme">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!-- Messages Lists Styles -->
+    <style name="CommunicatorThemeItemTitle" parent="MediumStyle">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_l_scaleOn</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="SabyThemeChatTitle" parent="CommunicatorThemeItemTitle"/>
+
+    <style name="CommunicatorUnreadCounterBadge" parent="UnreadCounterBadge">
+        <item name="android:background">@drawable/communicator_scroll_down_blue_badge_counter_bg</item>
+    </style>
+
+    <style name="CommunicatorConversationOptionItemTheme">
+        <item name="android:colorBackground">?backgroundColor</item>
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+    <style name="CommunicatorToolbarStyle">
+        <item name="android:layout_height">?inlineHeight_xl</item>
+    </style>
+</resources>

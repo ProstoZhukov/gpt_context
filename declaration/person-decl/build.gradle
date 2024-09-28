@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableResValuesInjecting()
+}
+
+android {
+    namespace "ru.tensor.sbis.person_decl"
+
+    buildTypes {
+        def appId = "${rootProject.ext.applicationId}"
+
+        debug {
+            def mainAppId = "$appId${rootProject.ext.applicationDebugSuffix}"
+            buildConfigField "String", "MAIN_APP_ID", "\"${mainAppId}\""
+            resValue "string", "main_app_id", "${mainAppId}"
+        }
+
+        release {
+            def mainAppId = appId
+            buildConfigField "String", "MAIN_APP_ID", "\"${mainAppId}\""
+            resValue "string", "main_app_id", "${mainAppId}"
+        }
+    }
+}
+
+dependencies {
+    implementation project(':plugin_struct')
+    implementation project(':android-ext-decl')
+    implementation project(':motivation-decl')
+
+    implementation libs.android.appcompat
+    implementation libs.rx.java
+
+    implementation libs.coroutines.core
+}

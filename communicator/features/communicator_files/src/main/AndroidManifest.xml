@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Доступ на чтение из системного Contacts Provider при импорте контактов -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+</manifest>

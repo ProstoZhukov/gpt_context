@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scanner_close_screen">Fermer</string>
+    <string name="scanner_edit_image_cancel">Annuler</string>
+    <string name="scanner_edit_image_done">Fait</string>
+    <string name="scanner_empty_scanned_image_list">La liste des images numérisées est vide.</string>
+    <string name="scanner_files_selection_pane_option_scan_document">Analyse</string>
+    <string name="scanner_files_picker_tab_title">Analyse</string>
+    <string name="scanner_flash_state_auto">Auto</string>
+    <string name="scanner_flash_state_off">Désactivé</string>
+    <string name="scanner_flash_state_on">Au</string>
+    <string name="scanner_image_deleting_error">Une erreur s\'est produite lors de la suppression de l\'image.</string>
+    <string name="scanner_image_loading_error">Une erreur s\'est produite lors du chargement de l\'image.</string>
+    <string name="scanner_image_processing_error">Une erreur s\'est produite lors du traitement de l\'image.</string>
+    <string name="scanner_input_new_pdf_file_name_dialog_title">Nom du nouveau fichier PDF.</string>
+    <string name="scanner_load_scanned_images_error">Échec du chargement de la liste des images numérisées.</string>
+    <string name="scanner_multi_snapshot_button_text">Soigneusement</string>
+    <string name="scanner_multi_snapshot_fast_button_text">Rapidement</string>
+    <string name="scanner_next_page">%d p.</string>
+    <string name="scanner_no_internet_connection_message">Pas de connexion réseau</string>
+    <string name="scanner_open_camera_error">Une erreur s\'est produite lors de l\'ouverture de l\'appareil photo.</string>
+    <string name="scanner_permission_dialog_positive">Réglages</string>
+    <string name="scanner_permission_dialog_text">Activer l\'accès à la caméra dans les paramètres</string>
+    <string name="scanner_permission_dialog_title">L\'accès à la caméra est refusé</string>
+    <string name="scanner_save_as_image">Enregistrer en tant qu\'image</string>
+    <string name="scanner_save_scanned_docs_offline_error">L\'enregistrement des documents numérisés n\'est pas disponible hors ligne</string>
+    <string name="scanner_save_scanned_images_menu_title">Sauver</string>
+    <string name="scanner_save_to_gallery">Sauvegarder dans la gallerie</string>
+    <string name="scanner_save_to_pdf">Enregistrer au format PDF</string>
+    <string name="scanner_saving_to_gallery_error">Échec de l\'enregistrement dans la galerie</string>
+    <string name="scanner_saving_to_gallery_success">Enregistrement réussi</string>
+    <string name="scanner_saving_to_pdf_error">Échec de l\'enregistrement au format PDF</string>
+    <string name="scanner_take_snapshot_error">Une erreur s\'est produite lors de la prise de l\'instantané</string>
+</resources>

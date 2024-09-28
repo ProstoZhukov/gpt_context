@@ -1,0 +1,41 @@
+rootProject.name = "demo"
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+def appName = "demo"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "design",
+        "disk",
+        "common",
+        "declaration",
+        "crm",
+        "map"
+)
+// region Модули уровня приложения
+include ':app', ':controller'
+
+setupControllerModule(settings, appName)
+
+include ':controller:controller_profiles'
+include ':design_demo_base'
+include ':design_demo_showcase'
+include ':design_demo_contacts'
+//endregion
+
+// region Демо экраны компонентов
+include ':design_demo_showcase:design_demo_audio_player'
+include ':design_demo_showcase:design_demo_cloudview'
+include ':design_demo_showcase:design_demo_richtext'
+include ':design_demo_showcase:design_demo_widgets'
+include ':design_demo_showcase:design_demo_language'
+include ':design_demo_showcase:design_demo_files_picker'
+include ':design_demo_showcase:design_demo_gallery'
+include ':design_demo_showcase:design_demo_address_chooser'
+//endregion

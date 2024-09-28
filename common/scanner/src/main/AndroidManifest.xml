@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+
+        <activity
+            android:name="ru.tensor.sbis.scanner.ui.DocumentScannerActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity="@string/scanner_task_affinity"
+            android:theme="@style/DocumentScannerActivity"/>
+
+        <activity
+            android:name="ru.tensor.sbis.scanner.ui.editimage.EditImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity="@string/scanner_task_affinity"
+            android:theme="@style/DocumentScannerActivity"/>
+
+        <activity
+            android:name="ru.tensor.sbis.scanner.ui.viewimage.ViewImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity="@string/scanner_task_affinity"
+            android:theme="@style/DocumentScannerActivity"/>
+
+        <activity
+            android:name="ru.tensor.sbis.scanner.ui.scannedimagelist.ScannedImageListActivity"
+            android:taskAffinity="@string/scanner_task_affinity"/>
+
+    </application>
+</manifest>

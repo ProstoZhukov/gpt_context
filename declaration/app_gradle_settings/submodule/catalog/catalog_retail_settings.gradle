@@ -1,0 +1,6 @@
+ext.catalog_dir = "module/catalog"
+
+apply from: "$catalogDir/settings.gradle"
+
+include ':commonstorekeeper'
+project(':commonstorekeeper').projectDir = new File(catalogDir, "commonstorekeeper")

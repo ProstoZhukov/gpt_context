@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="entrypoint_guard_button_title">Yopish</string>
+    <string name="entrypoint_guard_unknown_error">Noma\'lum xato</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+     Специфические цвета свайп-меню, указанные в спецификации
+     http://axure.tensor.ru/MobileStandart8/#p=свайп_и_смахивание__версия_2_&g=1
+     -->
+    <color name="swipeable_layout_item_background_orange">#F19B38</color>
+    <color name="swipeable_layout_item_background_blue">#4B6FA3</color>
+    <color name="swipeable_layout_item_background_green">#07A723</color>
+    <color name="swipeable_layout_item_background_red">#D04049</color>
+    <color name="swipeable_layout_item_background_grey">#B4B4B4</color>
+    <color name="swipeable_layout_item_background_pink">#E44766</color>
+    <!-- palette_color_white1 c непрозрачностью 30% -->
+    <color name="swipeable_layout_item_pressed_tint">#4DFFFFFF</color>
+</resources>

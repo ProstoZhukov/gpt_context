@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="ModalWindowsAlertDialogButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_height">@dimen/modalwindows_alert_dialog_button_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">?fontSize_xs_scaleOn</item>
+        <item name="android:textColor">@color/modal_windows_alert_regular_button_text</item>
+        <item name="android:background">@drawable/modal_windows_alert_button_background</item>
+        <item name="android:paddingStart">@dimen/modalwindows_alert_dialog_padding_12</item>
+        <item name="android:paddingEnd">@dimen/modalwindows_alert_dialog_padding_12</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="ModalWindowsAlertDialogButtonRemoval" parent="ModalWindowsAlertDialogButton">
+        <item name="android:textColor">@color/modal_windows_alert_remove_button_text</item>
+    </style>
+
+    <style name="ModalWindowsOptionSheetTheme">
+        <item name="optionSheet_optionItemTextColor">?secondaryTextColor</item>
+        <item name="optionSheet_optionItemCheckboxIconColor">?markerColor</item>
+    </style>
+
+    <style name="ContainerMovableDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:elevation" tools:ignore="NewApi">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:navigationBarColor">@color/palette_color_black1</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+</resources>

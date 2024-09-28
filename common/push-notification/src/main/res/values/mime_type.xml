@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="push_notification_mime_type">sbis.android.mime.type/sbis.push.notification</string>
+
+</resources>

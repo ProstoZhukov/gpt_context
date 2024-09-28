@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.selection"
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    //share DialogHolder: RecipientsPhotoCollectionView
+    implementation project(":design")
+    implementation project(":design_notification")
+    implementation project(":design_profile")
+    implementation project(":design_selection")
+    implementation project(':design_swipeback')
+    implementation project(':design_breadcrumbs')
+    implementation project(':design_stubview')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':design_counters')
+    implementation project(':design_buttons')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_progress')
+    implementation project(':toolbar')
+    implementation project(":list")
+    implementation project(":common")
+    implementation project(":persons")
+    implementation project(':design_collection_view')
+    implementation project(':design_dialogs')
+    implementation project(':design_sbis_text_view')
+    implementation project(':input_view')
+    implementation project(':list_utils')
+    implementation project(':fresco_view')
+    implementation project(':view_factory')
+    //share DialogHolder: HighlightedTextView, DateHeaderView
+    implementation project(":commonviews")
+    //share DialogHolder: AttachmentsView
+    implementation project(":attachments-ui")
+    implementation project(":edo-decl")
+
+    implementation libs.android.lifecycle.extensions
+    implementation libs.android.lifecycle.viewmodel.ktx
+    implementation libs.android.view.recyclerView
+
+    //rx
+    implementation libs.rx.android
+    implementation libs.rx.java
+    //dagger
+    implementation libs.dagger.android
+    kapt libs.dagger.compiler
+
+    testImplementation project(":testing")
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="media_sbis_tube_unknown_error">Media fa&#xfd;lyny o&#xfd;namak ba&#x15f;artmady</string>
+    <string name="media_sbis_tube_cleartext_traffic_not_permitted_error">Howpsuzlyk sy&#xfd;asaty sebäpli media fa&#xfd;ly o&#xfd;nalyp bilinmedi</string>
+    <string name="media_sbis_tube_denied_reading_external_storage">A&#xfd;tdyrmak enjamdan fa&#xfd;llary okamak üçin rugsat talap ed&#xfd;är</string>
+    <string name="media_sbis_tube_data_source_error">Media fa&#xfd;ly çe&#x15f;meden okap bilmedi</string>
+    <string name="media_sbis_tube_unrecognized_data_source_error">Goldanma&#xfd;an media görnü&#x15f;i</string>
+    <string name="media_sbis_tube_network_data_source_error">Media fa&#xfd;ly &#xfd;üklenip bilmedi \ n Internet birikmä&#x148;izi barla&#x148;</string>
+    <string name="media_sbis_tube_querying_decoders_error">Enjamdan media dekoderlerini talap edip bilmedi</string>
+    <string name="media_sbis_tube_no_secure_decoder_error">Medi&#xfd;a fa&#xfd;ly çalynmady \ n Enjamy&#x148;yz munu&#x148; üçin ygtybarly kodla&#xfd;jy üpjün etme&#xfd;är</string>
+    <string name="media_sbis_tube_no_decoder_error">Medi&#xfd;a fa&#xfd;lyny o&#xfd;namak ba&#x15f;artmady \ n Enjamy&#x148;yz munu&#x148; üçin dekoder berme&#xfd;är</string>
+    <string name="media_sbis_tube_instantiating_decoder_error">Media fa&#xfd;ly üçin dekoder döredip bilmedi</string>
+</resources>

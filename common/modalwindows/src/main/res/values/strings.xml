@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="modalwindows_action_cant_be_done_error">Can\'t complete this action.</string>
+    <string name="modalwindows_read_option_read_all_text">Read all</string>
+    <string name="modalwindows_read_option_read_below_text">On this page and below</string>
+    <string name="modalwindows_read_option_delete_all_text">Delete all</string>
+</resources>

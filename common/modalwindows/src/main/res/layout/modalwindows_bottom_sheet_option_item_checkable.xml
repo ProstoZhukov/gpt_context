@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="CheckableOption"
+            type="ru.tensor.sbis.modalwindows.bottomsheet.check.CheckableBottomSheetOption"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@drawable/selectable_item_bg_white">
+
+        <!--suppress AndroidDomInspection -->
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/modalwindows_menu_icon"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/icon_left_margin"
+            android:layout_marginStart="@dimen/icon_left_margin"
+            android:gravity="center"
+            android:text="@{CheckableOption.icon}"
+            android:textColor="@{CheckableOption.iconColor}"
+            android:textSize="@dimen/text_size_icon_bottom_dialog"
+            android:visibility="@{CheckableOption.icon != null ? View.VISIBLE : View.GONE}"
+            tools:text="?"
+            tools:ignore="RtlHardcoded,SpUsage" />
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            style="@style/MobileFontStyle"
+            android:id="@+id/modalwindows_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/modalwindows_bottom_sheet_item_checkbox_margin"
+            android:layout_marginRight="@dimen/modalwindows_bottom_sheet_item_checkbox_margin"
+            android:text="@string/design_mobile_icon_checked"
+            android:textSize="@dimen/size_body1_scaleOff"
+            android:textColor="?attr/optionSheet_optionItemCheckboxIconColor"
+            android:visibility="@{CheckableOption.checked ? View.VISIBLE : View.GONE}"
+            tools:ignore="SpUsage"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/modalwindows_menu_item_text"
+            style="@style/RegularStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_marginEnd="@dimen/text_margin_right"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginRight="@dimen/text_margin_right"
+            android:layout_marginStart="@dimen/text_margin_left"
+            android:layout_toEndOf="@id/modalwindows_menu_icon"
+            android:layout_toLeftOf="@id/modalwindows_checkbox"
+            android:layout_toRightOf="@id/modalwindows_menu_icon"
+            android:layout_toStartOf="@id/modalwindows_checkbox"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@{CheckableOption.name}"
+            android:textColor="?attr/optionSheet_optionItemTextColor"
+            android:textSize="@dimen/size_title1_scaleOff"
+            tools:ignore="SpUsage"
+            tools:text="Подписать"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_separator_size"
+            android:layout_alignParentBottom="true"
+            android:background="?borderColor"/>
+
+    </RelativeLayout>
+
+</layout>

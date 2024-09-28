@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_gallery_album_all_media">所有照片</string>
+    <string name="design_gallery_album_all_videos">视频</string>
+    <string name="design_gallery_album_all_images">图片</string>
+    <string name="design_gallery_albums_title">专辑</string>
+    <string name="design_gallery_button_cancel_title">取消</string>
+    <string name="design_gallery_button_add_title">添加</string>
+    <string name="design_gallery_tab_title">画廊</string>
+    <string name="design_gallery_camera_permission_in_settings_dialog_message">使用相机需要权限。</string>
+    <string name="design_gallery_storage_permission_in_settings_dialog_message">发送媒体文件或选择照片和其他图像时需要访问图库。</string>
+    <string name="design_gallery_permission_in_settings_dialog_positive_btn">打开设置</string>
+    <string name="design_gallery_camera_stub_message">单击以允许访问相机</string>
+    <string name="design_gallery_storage_stub_message">单击以允许访问图库</string>
+    <string name="design_gallery_main_stub_message">要拍摄和共享照片，\n请启用对设备上的相机和图库的访问。</string>
+    <string name="design_gallery_main_stub_button_title">在设置中</string>
+    <string name="design_gallery_camera_open_error_message">系统摄像头启动失败</string>
+    <string name="design_gallery_stub_empty_message">画廊是空的</string>
+    <string name="design_gallery_compress_menu_item_compress">压缩文件</string>
+    <string name="design_gallery_compress_menu_item_no_compress">无压缩</string>
+    <string name="design_gallery_size_limit_message">文件大小超过 %d MB 限制</string>
+</resources>

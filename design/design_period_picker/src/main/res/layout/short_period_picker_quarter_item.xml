@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/selection_view"
+        style="@style/ShortPeriodPickerSelectionView"
+        app:layout_constraintBottom_toBottomOf="@id/quarter_1_title"
+        app:layout_constraintEnd_toStartOf="@id/half_year_1_divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/quarter_1_title"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/quarter_1_title"
+        style="@style/ShortPeriodPickerFirstColumnSbisTextView"
+        android:text="@string/quarter_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/half_year_barrier"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/quarter_2_title"
+        style="@style/ShortPeriodPickerFirstColumnSbisTextView"
+        android:text="@string/quarter_2"
+        app:layout_constraintTop_toBottomOf="@id/quarter_1_title"
+        app:layout_constraintEnd_toStartOf="@+id/half_year_barrier"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/quarter_3_title"
+        style="@style/ShortPeriodPickerFirstColumnSbisTextView"
+        android:text="@string/quarter_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quarter_2_title"
+        app:layout_constraintEnd_toStartOf="@+id/half_year_barrier"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/quarter_4_title"
+        style="@style/ShortPeriodPickerFirstColumnSbisTextView"
+        android:text="@string/quarter_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quarter_3_title"
+        app:layout_constraintEnd_toStartOf="@+id/half_year_barrier"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/half_year_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:constraint_referenced_ids="half_year_1_divider,half_year_2_divider,half_year_1_title,half_year_2_title"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/half_year_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="half_year_1_divider,half_year_2_divider,half_year_1_title,half_year_2_title"/>
+
+    <View
+        android:id="@+id/half_year_1_divider"
+        style="@style/ShortPeriodPickerDividerView"
+        app:layout_constraintBottom_toBottomOf="@id/quarter_2_title"
+        app:layout_constraintStart_toEndOf="@id/half_year_barrier"
+        app:layout_constraintTop_toTopOf="@id/quarter_1_title"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/half_year_1_title"
+        style="@style/ShortPeriodPickerSbisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/period_picker_zero_dimen"
+        android:text="@string/half_year_1"
+        android:gravity="center_vertical"
+        android:paddingStart="?offset_xl"
+        app:layout_constraintBottom_toBottomOf="@id/quarter_2_title"
+        app:layout_constraintStart_toStartOf="@id/half_year_2_title"
+        app:layout_constraintTop_toTopOf="@id/quarter_1_title"/>
+
+    <View
+        android:id="@+id/half_year_2_divider"
+        style="@style/ShortPeriodPickerDividerView"
+        app:layout_constraintBottom_toBottomOf="@id/quarter_4_title"
+        app:layout_constraintEnd_toStartOf="@id/half_year_2_title"
+        app:layout_constraintStart_toEndOf="@id/half_year_barrier"
+        app:layout_constraintTop_toTopOf="@id/quarter_3_title"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/half_year_2_title"
+        style="@style/ShortPeriodPickerSbisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/period_picker_zero_dimen"
+        android:text="@string/half_year_2"
+        android:gravity="center_vertical"
+        android:paddingStart="?offset_xl"
+        android:paddingEnd="?offset_xl"
+        app:layout_constraintBottom_toBottomOf="@id/quarter_4_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/quarter_3_title"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ui_module id="bfc7892f-1d6b-4c4d-99ef-63de8398a7cf" kaizen_zone="05230eeb-9cb3-4297-99ae-acecdd8e95fa" name="communicator_crud" version="1.0">
+
+    <description>Module communicator_crud</description>
+
+    <depends/>
+
+    <load_after/>
+
+    <parameters/>
+
+    <resources/>
+
+    <preload/>
+
+</ui_module>

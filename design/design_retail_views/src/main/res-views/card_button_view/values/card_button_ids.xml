@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="retail_views_card_view_button_left_icon" type="id"/>
+    <item name="retail_views_card_view_button_right_icon" type="id"/>
+    <item name="retail_views_card_view_button_text" type="id"/>
+</resources>

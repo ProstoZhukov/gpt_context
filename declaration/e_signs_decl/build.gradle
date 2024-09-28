@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-parcelize'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.e_signatures_decl"
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+    }
+}
+
+dependencies {
+
+    //https://git.sbis.ru/mobileworkspace/android-utils
+    implementation project(':base_components')
+    implementation project(':plugin_struct')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+}

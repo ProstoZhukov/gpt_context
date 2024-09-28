@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_profile_decl_sbis_title_view_subtitle_text_size_large">@dimen/size_body2_scaleOff</dimen>
+    <dimen name="design_profile_decl_sbis_title_view_subtitle_text_size_small">@dimen/size_caption1_scaleOff</dimen>
+</resources>

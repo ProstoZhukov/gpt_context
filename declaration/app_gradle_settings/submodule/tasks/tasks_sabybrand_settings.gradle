@@ -1,0 +1,2 @@
+apply from: "$tasksDir/task_new_full.gradle"
+apply from: "$tasksDir/inout.gradle"

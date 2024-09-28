@@ -1,0 +1,17 @@
+include ':disk-decl'
+project(':disk-decl').projectDir = new File(diskDir, "disk-decl")
+
+include ':sabydoc-viewer-decl'
+project(':sabydoc-viewer-decl').projectDir = new File(diskDir, "sabydoc-viewer-decl")
+
+include ':attachments-loading'
+project(':attachments-loading').projectDir = new File(diskDir, "attachments-loading")
+
+include ':attachments-loading-decl'
+project(':attachments-loading-decl').projectDir = new File(diskDir, "attachments-loading-decl")
+
+include ':attachments_models'
+project(':attachments_models').projectDir = new File(diskDir, "attachments_models")
+
+include ':attachments-ui'
+project(':attachments-ui').projectDir = new File(diskDir, "attachments-ui")

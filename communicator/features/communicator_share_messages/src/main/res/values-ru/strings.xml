@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_share_messages_confirmation_input_hint">Добавьте комментарий</string>
+    <string name="communicator_share_message_confirmation_title_without_files">Отправить</string>
+    <string name="communicator_share_message_contact_name_row">Имя: </string>
+    <string name="communicator_share_message_contact_error_text">Нет доступа к контактам устройства.</string>
+    <string name="communicator_share_message_attachments_count_restriction">Вы можете отправить не более 25 файлов</string>
+    <string name="communicator_share_message_attachment_big_size_restriction">Отправляемый файл не может превышать 1 ГБ</string>
+    <string name="communicator_share_message_popup_default_positive">ОК</string>
+
+    <plurals name="communicator_share_message_confirmation_title">
+        <item quantity="one">Отправить %d файл</item>
+        <item quantity="few">Отправить %d файла</item>
+        <item quantity="many">Отправить %d файлов</item>
+        <item quantity="other">Отправить %d файлов</item>
+    </plurals>
+</resources>

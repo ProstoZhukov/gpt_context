@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.tensor.sbis.communicator_support_channel_list.presentation.SupportChannelListHostFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/communicator_support_channel_list_chat_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ru.tensor.sbis.design.stubview.StubView
+        android:visibility="gone"
+        android:id="@+id/communicator_support_channel_list_stub_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

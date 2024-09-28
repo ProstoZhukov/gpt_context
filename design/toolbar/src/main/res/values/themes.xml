@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SbisTitleViewTheme">
+        <item name="SbisTitleView_standardTitleStyle">@style/StandardTitle</item>
+        <item name="SbisTitleView_standardSubtitleStyle">@style/ToolbarSubtitle</item>
+        <item name="SbisTitleView_documentTitleStyle">@style/DocumentTitle</item>
+        <item name="SbisTitleView_documentSubtitleStyle">@style/DocumentSubtitle</item>
+        <item name="SbisTitleView_titleWithSubtitleStyle">@style/ToolbarTitleWithSubtitleText</item>
+        <item name="SbisTitleView_subtitleStyle">@style/ToolbarTitleText</item>
+    </style>
+
+    <style name="SbisTitleViewTheme.White"/>
+</resources>

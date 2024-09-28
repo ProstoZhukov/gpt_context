@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="selected_items_panel" type="id"/>
+    <item name="multi_selection_root" type="id"/>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sbisChipsItemViewTheme" format="reference"/>
+
+    <!-- Атрибуты компонента чипсов -->
+    <declare-styleable name="SbisChipsItemView">
+        <!-- Цвет текста -->
+        <attr name="SbisChipsItemView_titleColor" format="color|reference"/>
+        <!-- Цвет иконки -->
+        <attr name="SbisChipsItemView_iconColor" format="color|reference"/>
+        <!-- Цвет при нажатии (берется 10% от атрибута) -->
+        <attr name="SbisChipsItemView_clickedColor" format="color|reference"/>
+        <!-- Радиус закругления -->
+        <attr name="SbisChipsItemView_cornerRadius" format="color|reference"/>
+        <!-- Цвет фона -->
+        <attr name="SbisChipsItemView_backgroundColor" format="color|reference"/>
+        <attr name="android:maxWidth"/>
+    </declare-styleable>
+</resources>

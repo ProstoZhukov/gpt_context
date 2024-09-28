@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="communicator_support_channel_list_title">Soutien</string>
+    <string name="communicator_support_channel_list_title_reduce">Soutien</string>
+    <string name="communicator_support_channel_list_no_data">Pas de données</string>
+    <string name="communicator_support_channel_list_syby_support_title">Assistance Saby</string>
+    <string name="communicator_support_channel_sabyget_title">Chats</string>
+    <string name="communicator_support_channel_sabyget_message">Communiquer</string>
+    <string name="communicator_support_channel_sabyget_stub_subtitle">Vous retrouverez ici vos dialogues \navec le lieu et les spécialistes</string>
+</resources>

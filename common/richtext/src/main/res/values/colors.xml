@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ВСЕ ПРИКЛАДНЫЕ ЦВЕТА ОБЪЯВЛЕНЫ В СООТВЕТСТВИИ СО СТИЛИЗАЦИЕЙ БТР НА ОБЛАКЕ -->
+    <color name="richtext_css_additional_title_color">?paletteColor13_3</color>
+    <color name="richtext_css_text_color">?textColor</color>
+
+    <array name="richtext_css_class_text_color_palette_1">
+        <item>?textColor</item>
+        <item>?paletteColor12_3</item>
+        <item>?secondaryTextColor</item>
+        <item>#117df3</item>
+        <item>?labelTextColor</item>
+        <item>?paletteColor13_3</item>
+        <item>?paletteColor5_3</item>
+        <item>?paletteColor2_3</item>
+        <item>?successTextColor</item>
+        <item>?dangerTextColor</item>
+        <item>?linkTextColor</item>
+        <item>?paletteColor5_3</item>
+        <item>?paletteColor13_3</item>
+        <item>?contrastTextColor</item>
+        <item>?primaryTextColor</item>
+        <item>?warningTextColor</item>
+        <item>?linkTextColor</item>
+        <item>#d9819e</item>
+        <item>?readonlyTextColor</item>
+        <item>?textColor</item>
+        <item>#FF7D05</item>
+        <item>#D4090E</item>
+        <item>?paletteColor13_3</item>
+        <item>?paletteColor8_3</item>
+        <item>#117df3</item>
+        <item>#FF3075</item>
+        <item>?paletteColor10_3</item>
+        <item>#723EFF</item>
+        <item>?paletteColor11_3</item>
+    </array>
+    <array name="richtext_css_class_background_color_palette_1"> <!-- https://online.sbis.ru/opendoc.html?guid=30f96e25-51e3-441d-995a-3995c607d641 -->
+        <item>#26a6a6a6</item>
+        <item>#40a6a6a6</item>
+        <item>?warningSameBackgroundColor</item>
+        <item>?paletteColor6_4</item>
+        <item>?paletteColor10_5</item>
+        <item>?paletteColor11_5</item>
+        <item>?paletteColor4_4</item>
+        <item>?paletteColor5_5</item>
+        <item>?dangerSameBackgroundColor</item>
+        <item>#40a6a6a6</item>
+        <item>#4014c730</item>
+        <item>#40fe2819</item>
+        <item>#40117df3</item>
+        <item>#40ffd707</item>
+        <item>#40723eff</item>
+        <item>#40ff7d05</item>
+        <item>#40f10dd6</item>
+        <item>#4011d1f3</item>
+    </array>
+
+    <color name="richtext_style1_color">@color/richtext_css_text_color</color>
+    <color name="richtext_style2_color">@color/richtext_css_additional_title_color</color>
+    <color name="richtext_style3_color">@color/richtext_css_text_color</color>
+    <color name="richtext_style4_color">@color/richtext_css_text_color</color>
+    <color name="richtext_style5_color">@color/richtext_css_text_color</color>
+    <color name="richtext_style6_color">@color/richtext_css_text_color</color>
+    <color name="richtext_style7_color">@color/richtext_css_text_color</color>
+    <color name="richtext_style8_color">@color/richtext_css_text_color</color>
+
+    <!-- Language Token Colors (Block Code) -->
+    <!-- Цвета согласно константам веба https://git.sbis.ru/sbis/engine/-/blob/rc-22.3100/client/RichEditor/_base/Viewer/_Viewer.less#L757 -->
+    <color name="richtext_language_token_color_1">#708090</color>
+    <color name="richtext_language_token_color_2">@color/palette_color_gray4</color>
+    <color name="richtext_language_token_color_3">#905</color>
+    <color name="richtext_language_token_color_4">#690</color>
+    <color name="richtext_language_token_color_5">#9a6e3a</color>
+    <color name="richtext_language_token_color_6">#07a</color>
+    <color name="richtext_language_token_color_7">#DD4A68</color>
+    <color name="richtext_language_token_color_8">#e90</color>
+    <color name="richtext_language_token_operator_background_color">#80ffffff</color> <!-- 50% alpha -->
+
+</resources>

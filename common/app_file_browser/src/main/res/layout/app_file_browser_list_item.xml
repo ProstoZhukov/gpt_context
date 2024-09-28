@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.app_file_browser.presentation.FileInfoItemViewModel"/>
+    </data>
+
+    <ru.tensor.sbis.swipeablelayout.SwipeableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:swipeableVm="@{viewModel.swipeableVM}">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="?offset_m"
+            android:onClick="@{() -> viewModel.onClickAction.invoke()}">
+
+            <ru.tensor.sbis.design.checkbox.SbisCheckboxView
+                android:id="@+id/app_file_browser_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModel.onCheckStateChanged()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:value="@{viewModel.checkboxValue}"/>
+
+            <TextView
+                android:id="@+id/app_file_browser_file_icon"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="?offset_m"
+                android:includeFontPadding="false"
+                android:text="@{viewModel.fileIcon}"
+                android:textColor="?textColor"
+                android:textSize="?iconSize_2xl"
+                app:layout_constraintBottom_toBottomOf="@id/app_file_browser_checkbox"
+                app:layout_constraintStart_toEndOf="@id/app_file_browser_checkbox"
+                app:layout_constraintTop_toTopOf="@id/app_file_browser_checkbox"/>
+
+            <ru.tensor.sbis.app_file_browser.view.CustomBaselineShiftTextView
+                android:id="@+id/logging_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="?offset_s"
+                android:layout_marginEnd="?offset_s"
+                android:baselineSource="@{appFileBrowserFileIcon}"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:text="@{viewModel.name}"
+                android:textColor="?textColor"
+                android:textSize="?fontSize_xl_scaleOn"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBaseline_toBaselineOf="@id/app_file_browser_file_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/logging_size"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/app_file_browser_file_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginEnd="0dp"
+                tools:text="ProfilesLocaleStorage_settings"/>
+
+            <TextView
+                android:id="@+id/logging_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@{viewModel.size}"
+                android:textColor="?unaccentedTextColor"
+                android:textSize="?fontSize_m_scaleOn"
+                app:isNotGone="@{viewModel.sizeVisible}"
+                app:layout_constraintBottom_toBottomOf="@id/app_file_browser_checkbox"
+                app:layout_constraintEnd_toStartOf="@id/app_file_browser_arrow_icon"
+                app:layout_constraintTop_toTopOf="@id/app_file_browser_checkbox"
+                tools:text="37 КБ"/>
+
+            <TextView
+                android:id="@+id/app_file_browser_arrow_icon"
+                style="@style/MobileFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:paddingStart="?offset_m"
+                android:text="@string/design_mobile_icon_arrow_narrow_right"
+                android:textColor="?labelIconColor"
+                android:textSize="?iconSize_m"
+                app:isNotGone="@{viewModel.arrowVisible}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginEnd="0dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ru.tensor.sbis.swipeablelayout.SwipeableLayout>
+</layout>

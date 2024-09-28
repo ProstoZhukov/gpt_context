@@ -1,0 +1,23 @@
+ext.common_dir = "module/common"
+apply from: "$commonDir/settings_sabycrm.gradle"
+
+include ':statistic'
+project(':statistic').projectDir = new File(commonDir, "statistic")
+
+include ":sbis_formatter"
+project(":sbis_formatter").projectDir = new File(commonDir, "sbis_formatter")
+
+include ":entrypoint_guard"
+project(":entrypoint_guard").projectDir = new File(commonDir, "entrypoint_guard")
+
+include ':crud4'
+project(':crud4').projectDir = new File(commonDir, "list/crud4")
+
+include ":main_screen_linkopen_handle_extension"
+project(":main_screen_linkopen_handle_extension").projectDir = new File(commonDir, "main_screen/main_screen_extensions/main_screen_linkopen_handle_extension")
+
+include ":share_menu"
+project(":share_menu").projectDir = new File(commonDir, "share_menu")
+
+include ':folderspanel'
+project(':folderspanel').projectDir = new File(commonDir, 'folderspanel')

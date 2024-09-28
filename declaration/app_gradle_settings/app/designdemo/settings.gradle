@@ -1,0 +1,78 @@
+rootProject.name = "Design Demo"
+apply from: "../global_settings.gradle"
+
+parseGitSubmodules(settings)
+
+setupGlobalSettings(settings)
+
+def appName = "designdemo"
+
+includeSubmodules(
+        settings,
+        appName,
+        "auth",
+        "design",
+        "disk",
+        "common",
+        "declaration"
+)
+// region Модули уровня приложения
+include ':app', ':controller'
+
+setupControllerModule(settings, appName)
+
+include ':controller:controller_profiles'
+include ':design_demo_base'
+include ':design_demo_showcase'
+include ':sample_coffeemaker'
+include ':sample_weekly_reviews'
+//endregion
+
+// region Демо экраны компонентов
+include ':design_demo_showcase:design_demo_breadcrumbs'
+include ':design_demo_showcase:design_demo_buttons'
+include ':design_demo_showcase:design_demo_checkbox'
+include ':design_demo_showcase:design_demo_confirmationdialog'
+include ':design_demo_showcase:design_demo_counters'
+include ':design_demo_showcase:design_demo_chips'
+include ':design_demo_showcase:design_demo_dateseparator'
+include ':design_demo_showcase:design_demo_decorators'
+include ':design_demo_showcase:design_demo_documentlink'
+include ':design_demo_showcase:design_demo_folders'
+include ':design_demo_showcase:design_demo_list'
+include ':design_demo_showcase:design_demo_logo'
+include ':design_demo_showcase:design_demo_link_share'
+include ':design_demo_showcase:design_demo_movable_panel'
+include ':design_demo_showcase:design_demo_personview'
+include ':design_demo_showcase:design_demo_pincode'
+include ':design_demo_showcase:design_demo_popupnotification'
+include ':design_demo_showcase:design_demo_review'
+include ':design_demo_showcase:design_demo_samples'
+include ':design_demo_showcase:design_demo_tabs'
+include ':design_demo_showcase:design_demo_top_navigation'
+include ':design_demo_showcase:design_demo_tileview'
+include ':design_demo_showcase:design_demo_titleview'
+include ':design_demo_showcase:design_demo_segmentedcontrol'
+include ':design_demo_showcase:design_demo_marks'
+include ':design_demo_showcase:design_demo_whatsnew'
+include ':design_demo_showcase:design_demo_whatsnew_v2'
+include ':design_demo_showcase:design_demo_stubview'
+include ':design_demo_showcase:design_demo_container'
+include ':design_demo_showcase:design_demo_menu'
+include ':design_demo_showcase:design_demo_design_menu'
+include ':design_demo_showcase:design_demo_inputview'
+include ':design_demo_showcase:design_demo_switches'
+include ':design_demo_showcase:design_demo_swipeablelayout'
+include ':design_demo_showcase:design_demo_global_values'
+include ':design_demo_showcase:design_demo_onboarding_tour'
+include ':design_demo_showcase:design_demo_version_checker'
+include ':design_demo_showcase:design_demo_gallery'
+include ':design_demo_showcase:design_demo_webview'
+include ':design_demo_showcase:design_demo_period_picker'
+include ':design_demo_showcase:design_demo_navigation'
+include ':design_demo_showcase:design_demo_progress'
+include ':design_demo_showcase:design_demo_rating'
+include ':design_demo_showcase:design_demo_splash'
+include ':design_demo_showcase:design_demo_radio_group'
+include ':design_demo_showcase:design_demo_basic_main_screen'
+//endregion

@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'rootproject-cfg-plugin'
+
+rootProjectConfig { cfg ->
+    cfg.enableResolutionStrategyCfg()
+    cfg.enableTaskCounterCfg()
+    cfg.enableMuteLintCfg()
+    cfg.enableDokkaCfg()
+    cfg.enableKaptSubprojectsCfg()
+    cfg.enableSabyLinkCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableTaskFilterCfg()
+    }
+}
+
+project.ext {
+    productName = "SabyKnow"
+    applicationId = "ru.tensor.saby.know"
+
+    // link opener
+    sabyLinks.setup { set ->
+        set.component = "${applicationId}.presentation.launch.LaunchActivity"
+
+        set.enableLinkWikiArticle = true
+        set.enableLinkWikiKnowledge = true
+        set.enableLinkWikiKnowledgeFolder = true
+        set.enableLinkForum = true
+
+        set.knowledgeFeature = true
+        set.knowledgeFolderFeature = true
+        set.attachmentsFeature = true
+        set.personCardFeature = true
+    }
+
+    enableBuildStatistic = true
+
+    accountType = AndroidAccountManager.SABY_BUNDLE_ACCOUNT.type
+
+    debuggableInRelease = project.properties.get("DEBUGABLE_IN_RELEASE") as Boolean ?: false
+
+    platformCoreLibrary = "sbis-app-controller"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NavView" parent="NavViewBase"/>
+
+    <!--    TODO Убрать после поддержания перехода на глобальные в приложениях-->
+    <style name="NavView.Dark">
+        <item name="android:background">@color/palette_color_dark_blue2</item>
+        <item name="navItemTheme">@style/NavItem.Dark</item>
+        <item name="navViewHorizontalDividerTheme">@style/NavViewHorizontalDivider.Dark</item>
+    </style>
+
+    <!-- ======================================================================================= -->
+
+    <style name="NavViewBase" parent="Theme.AppCompat">
+        <item name="android:background">@color/palette_color_transparent</item>
+        <item name="navItemTheme">@style/NavItem</item>
+        <item name="calendarDateIconStyle">@style/CalendarDateIconStyle.NavView</item>
+        <item name="navItemSelectedBorderTheme">@style/NavItemSelectedBorder</item>
+        <item name="navItemIconTheme">@style/NavItemIcon</item>
+        <item name="navItemNewCounterTheme">@style/NavItemNewCounter</item>
+        <item name="navItemCounterDividerTheme">@style/NavItemCounterDivider</item>
+        <item name="navItemTotalCounterTheme">@style/NavItemTotalCounter</item>
+        <item name="navViewTextTheme">@style/NavViewText</item>
+        <item name="navViewHorizontalDividerTheme">@style/NavViewHorizontalDivider</item>
+        <item name="navViewTextUsernameTheme">@style/NavViewText</item>
+        <item name="navItemIconButtonBackgroundColor">?navigationLogoFill</item>
+    </style>
+
+    <!--    TODO Убрать после поддержания перехода на глобальные в приложениях-->
+    <style name="NavItem" parent="Theme.AppCompat"/>
+
+    <!--    TODO Убрать после поддержания перехода на глобальные в приложениях-->
+    <style name="NavItem.Dark">
+        <item name="android:background">@drawable/navigation_menu_item_selector_dark</item>
+    </style>
+
+    <style name="NavItemSelectedBorder">
+        <item name="android:background">@drawable/navigation_marker</item>
+    </style>
+
+    <style name="NavFlatItemSelectedBorder">
+        <item name="android:background">?navigationMarkerColor</item>
+    </style>
+
+    <style name="NavItemIcon" parent="NavViewIcon">
+        <item name="android:textSize">?iconSize_3xl</item>
+    </style>
+
+    <style name="NavItemContentIcon" parent="NavViewIcon">
+        <item name="android:textSize">?iconSize_xl</item>
+    </style>
+
+    <style name="NavItemNewCounter" parent="RegularStyle">
+        <item name="android:background">@color/palette_color_transparent</item>
+        <item name="android:textColor">?navigationPrimaryTextColor</item>
+        <item name="android:textSize">?fontSize_l_scaleOff</item>
+    </style>
+
+    <!--    TODO Убрать после поддержания перехода на глобальные в приложениях-->
+    <style name="NavItemNewCounter.Dark">
+        <item name="android:textColor">@color/palette_color_dark_orange1</item>
+    </style>
+
+    <style name="NavItemCounterDivider">
+        <item name="android:background">?navigationCounterSeparatorColor</item>
+    </style>
+
+    <!--    TODO Убрать после поддержания перехода на глобальные в приложениях-->
+    <style name="NavItemCounterDivider.Dark">
+        <item name="android:background">@color/palette_color_blue1</item>
+    </style>
+
+    <style name="NavItemTotalCounter" parent="RegularStyle">
+        <item name="android:background">@color/palette_color_transparent</item>
+        <item name="android:textColor">?navigationUnaccented</item>
+        <item name="android:textSize">?fontSize_l_scaleOff</item>
+    </style>
+
+    <!--    TODO Убрать после поддержания перехода на глобальные в приложениях-->
+    <style name="NavItemTotalCounter.Dark">
+        <item name="android:textColor">@color/badge_blue_color</item>
+    </style>
+
+    <style name="NavViewHorizontalDivider">
+        <item name="android:background">?navigationSeparatorColor</item>
+    </style>
+
+    <!--    TODO Убрать после поддержания перехода на глобальные в приложениях-->
+    <style name="NavViewHorizontalDivider.Dark">
+        <item name="android:background">@color/palette_color_dark_blue4</item>
+    </style>
+
+    <!-- Navigation design_menu text style -->
+    <style name="NavViewText">
+        <item name="android:background">@color/palette_color_transparent</item>
+        <item name="android:textColor">@color/navigation_item_text_color</item>
+        <item name="android:textSize">?fontSize_xl_scaleOff</item>
+        <item name="android:textAppearance">@style/RegularStyle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <style name="NavViewIcon">
+        <item name="android:background">@color/palette_color_transparent</item>
+    </style>
+
+    <style name="WidgetIcon" parent="NavItemIcon">
+        <item name="android:background">@color/palette_color_transparent</item>
+        <item name="android:textSize">@dimen/size_display1_scaleOff</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

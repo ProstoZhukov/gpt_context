@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_content"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/toolbar_tab_min_width"
+    android:theme="?attr/ToolbarTabLayout_theme"
+    tools:background="@color/color_primary"
+    tools:layout_height="?android:attr/actionBarSize"
+    tools:theme="@style/ToolbarTabLayoutTheme"
+    tools:viewBindingIgnore="true">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/toolbar_title"
+        style="?attr/ToolbarTabLayout_iconStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/toolbar_tab_image_side_margin"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/toolbar_counter_alignment_helper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry"
+        tools:text="@string/design_mobile_icon_contour_1"/>
+
+    <View
+        android:id="@+id/toolbar_counter_alignment_helper"
+        android:layout_width="@dimen/toolbar_tab_counter_alignment_helper_size"
+        android:layout_height="@dimen/toolbar_tab_counter_alignment_helper_size"
+        app:layout_constraintEnd_toEndOf="@id/toolbar_badge"
+        app:layout_constraintStart_toStartOf="@id/toolbar_badge"
+        app:layout_constraintTop_toTopOf="@id/toolbar_title"/>
+
+    <ru.tensor.sbis.design.counters.sbiscounter.SbisCounter
+        android:id="@+id/toolbar_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/toolbar_tab_badge_height"
+        android:translationY="@dimen/toolbar_tab_badge_translation_y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar_title"/>
+
+    <View
+        android:id="@+id/toolbar_selection_indicator"
+        style="?attr/ToolbarTabLayout_indicatorStyle"
+        android:layout_width="@dimen/toolbar_tab_min_width"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_height="3dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

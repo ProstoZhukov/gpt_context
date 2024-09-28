@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/share_menu_header_view_back_button"
+        style="@style/ShareMenuHeaderViewBackButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="?offset_xs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/share_menu_header_view_center_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/share_menu_header_view_center_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="?offset_xs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/share_menu_header_view_close_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/share_menu_header_view_back_button">
+
+        <View
+            android:id="@+id/share_menu_header_view_bird_icon"
+            style="@style/ShareMenuHeaderViewBirdIcon"
+            android:layout_width="?iconSize_3xl"
+            android:layout_height="?iconSize_6xl" />
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/share_menu_header_view_title"
+            style="@style/ShareMenuHeaderViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="?offset_xs"
+            android:textAlignment="center"
+            android:text="@string/share_menu_header_view_title_default"/>
+
+        <ru.tensor.sbis.design.progress.SbisLoadingIndicator
+            android:id="@+id/share_menu_header_view_loading_indicator"
+            android:layout_width="?iconSize_2xl"
+            android:layout_height="?iconSize_2xl"
+            android:visibility="gone"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/share_menu_header_view_success_icon"
+            style="@style/ShareMenuHeaderViewSuccessIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="?iconSize_3xl"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ru.tensor.sbis.design.buttons.SbisRoundButton
+        android:id="@+id/share_menu_header_view_close_button"
+        android:layout_width="?inlineHeight_xl"
+        android:layout_height="?inlineHeight_xl"
+        android:layout_marginEnd="?offset_m"
+        android:gravity="center"
+        app:SbisRoundButton_icon="@string/design_mobile_icon_close_for_nav_panel"
+        app:SbisRoundButton_size="s"
+        app:SbisRoundButton_style="pale"
+        app:SbisRoundButton_iconColor="?labelIconColor"
+        app:SbisRoundButton_iconSize="s"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/share_menu_header_view_center_container" />
+
+</merge>
