@@ -1,1 +1,0 @@
-apply from: "$videoMonitoringDir/video_monitoring_player_feature_settings.gradle"

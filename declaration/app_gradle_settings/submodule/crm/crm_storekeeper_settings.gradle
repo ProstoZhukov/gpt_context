@@ -1,2 +1,0 @@
-ext.crm_dir = 'module/wrhdoc-components/clients'
-apply from: "$crmDir/clients/settings_storekeeper.gradle"

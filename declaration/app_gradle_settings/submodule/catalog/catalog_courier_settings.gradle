@@ -1,8 +1,0 @@
-ext.catalog_dir = 'catalog'
-apply from: "$catalogDir/settings.gradle"
-
-include ":commonstorekeeper"
-project(":commonstorekeeper").projectDir = new File(catalogDir, "commonstorekeeper")
-
-include ":warehouse"
-project(":warehouse").projectDir = new File(catalogDir, "warehouse")

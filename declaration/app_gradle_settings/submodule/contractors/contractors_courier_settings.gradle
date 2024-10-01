@@ -1,2 +1,0 @@
-include ":contractors-card"
-project(":contractors-card").projectDir = new File(contractorsDir, "contractors-card")

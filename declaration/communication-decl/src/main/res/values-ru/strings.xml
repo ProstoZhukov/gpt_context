@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="communication_decl_blocked_user_content_text">Запись скрыта</string>
-
-    <string name="communication_decl_conversation_information_filter_media">Медиа</string>
-    <string name="communication_decl_conversation_information_filter_docs">Документы</string>
-</resources>

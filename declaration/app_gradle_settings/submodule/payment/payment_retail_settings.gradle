@@ -1,8 +1,0 @@
-include ":payment_contract"
-project(":payment_contract").projectDir = new File(paymentDir, "payment_contract")
-
-include ":payment_internal"
-project(":payment_internal").projectDir = new File(paymentDir, "payment_internal")
-
-include ':payment_server'
-project(':payment_server').projectDir = new File(paymentDir, "payment_server")

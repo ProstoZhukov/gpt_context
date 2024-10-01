@@ -1,8 +1,0 @@
-include ":location_picker"
-project(":location_picker").projectDir = new File(mapDir, "location_picker")
-
-include ":address_chooser"
-project(":address_chooser").projectDir = new File(mapDir, "address_chooser")
-
-include ":map"
-project(":map").projectDir = new File(mapDir, "map")

@@ -1,5 +1,0 @@
-ext.saby_clients_common_dir = "module/saby-clients-common"
-ext.saby_clients_domain_dir = "module/saby-clients-common/domain_layer"
-
-apply from: "$sabyClientsCommonDir/settings.gradle"
-apply from: "$sabyClientsCommonDir/domain_layer/brand_domain_settings.gradle"

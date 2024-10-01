@@ -1,3 +1,0 @@
-ext.communicator_dir = "communicator"
-apply from: "$communicatorDir/settings.gradle"
-apply from: "$communicatorDir/consultations_settings.gradle"

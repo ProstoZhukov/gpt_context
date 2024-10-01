@@ -1,9 +1,0 @@
-splitSettingsByRegion {
-    ru {
-        include ":call-history"
-        project(':call-history').projectDir = new File(callHistoryDir, "call-history")
-
-        include ":call_history_main_screen_addon"
-        project(':call_history_main_screen_addon').projectDir = new File(callHistoryDir, "call_history_main_screen_addon")
-    }
-}

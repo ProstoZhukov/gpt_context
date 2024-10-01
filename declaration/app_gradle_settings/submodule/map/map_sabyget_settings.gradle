@@ -1,5 +1,0 @@
-include ':geo_location_plugin'
-project(':geo_location_plugin').projectDir = new File(mapDir, "geo_location_plugin")
-
-include ':map'
-project(':map').projectDir = new File(mapDir, 'map')

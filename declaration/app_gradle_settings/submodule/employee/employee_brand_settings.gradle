@@ -1,8 +1,0 @@
-include ':employee'
-project(':employee').projectDir = new File(employeeDir, "employee")
-
-include ':employee_common'
-project(':employee_common').projectDir = new File(employeeDir, "employee_common")
-
-include ':my_profile'
-project(':my_profile').projectDir = new File(employeeDir, "my_profile")

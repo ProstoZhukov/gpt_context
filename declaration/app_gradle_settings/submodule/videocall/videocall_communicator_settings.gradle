@@ -1,5 +1,0 @@
-splitSettingsByRegion {
-    ru {
-	apply from: "$videocallDir/videocall_feature_settings.gradle"
-    }
-}

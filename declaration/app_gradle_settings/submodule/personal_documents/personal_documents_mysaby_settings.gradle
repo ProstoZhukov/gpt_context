@@ -1,2 +1,0 @@
-apply from: "$personaldocumentsDir/personal_documents_full_feature_settings.gradle"
-apply from: "$personaldocumentsDir/instruction_card_feature_settings.gradle"

@@ -1,2 +1,0 @@
-include ':business-decl'
-project(':business-decl').projectDir = new File(businessComponentsDir, "business-decl")

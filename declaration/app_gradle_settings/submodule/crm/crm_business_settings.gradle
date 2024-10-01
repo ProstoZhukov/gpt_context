@@ -1,2 +1,0 @@
-ext.crm_dir = 'android-wrhdoc-components'
-apply from: "$crmDir/clients/settings_courier.gradle"

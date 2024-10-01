@@ -1,2 +1,0 @@
-ext.contractors_dir = 'module/contractors'
-apply from: "$contractorsDir/settings.gradle"

@@ -1,3 +1,0 @@
-ext.crm_dir = "module/android-crm"
-
-apply from: "$crmDir/clients/settings_waiter.gradle"

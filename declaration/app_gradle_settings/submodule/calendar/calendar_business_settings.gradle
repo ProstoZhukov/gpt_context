@@ -1,2 +1,0 @@
-ext.calendar_dir = 'calendar'
-apply from: "$calendarDir/settings_business.gradle"

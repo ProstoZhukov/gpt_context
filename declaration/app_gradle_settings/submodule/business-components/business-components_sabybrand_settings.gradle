@@ -1,2 +1,0 @@
-ext.business_dir = 'module/business-components'
-apply from: "$businessComponentsDir/settings.gradle"

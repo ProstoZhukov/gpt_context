@@ -1,5 +1,0 @@
-apply from: "$communicatorDir/settings.gradle"
-apply from: "$communicatorDir/consultations_settings.gradle"
-
-include ':messages_main_screen_addon'
-project(':messages_main_screen_addon').projectDir = new File(communicatorDir, 'messages_main_screen_addon')

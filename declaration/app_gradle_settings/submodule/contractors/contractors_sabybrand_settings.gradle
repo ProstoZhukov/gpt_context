@@ -1,5 +1,0 @@
-ext.contractors_dir = 'module/contractors'
-apply from: "$contractorsDir/settings.gradle"
-
-include ':contractors-card'
-project(':contractors-card').projectDir = new File(contractorsDir, 'contractors-card')

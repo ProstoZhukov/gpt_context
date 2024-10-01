@@ -1,4 +1,0 @@
-apply from: "$notificationDir/notification_full_feature_settings.gradle"
-
-include ':push-history'
-project(':push-history').projectDir = new File(notificationDir, 'push-history')
