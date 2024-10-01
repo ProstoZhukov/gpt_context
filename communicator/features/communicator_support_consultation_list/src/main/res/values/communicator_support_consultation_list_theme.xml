@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="CommunicatorSupportConsultationTheme">
-        <item name="list_theme">@style/CommunicatorSupportConsultationStyle</item>
-        <item name="separatorColor">?unaccentedAdaptiveBackgroundColor</item>
-    </style>
-
-</resources>

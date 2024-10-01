@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="contacts_registry_import_enabled_no_contacts_stub_details">Достарыңызды табу үшін контактілер тізімін құрылғыдан импорттаңыз.</string>
-    <string name="contacts_registry_import_enabled_no_contacts_stub_message">Сізде контактілер болмаған кезде</string>
-</resources>

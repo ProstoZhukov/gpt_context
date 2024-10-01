@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="communicator_crm_conversation_counter_container_width">45dp</dimen>
-    <dimen name="communicator_crm_conversation_movable_panel_init_height">211dp</dimen>
-    <dimen name="communicator_crm_conversation_movable_panel_fit_content_difference">24dp</dimen>
-    <dimen name="communicator_crm_conversation_take_button_width">230dp</dimen>
-    <dimen name="communicator_crm_conversation_start_padding_greeting_view">52dp</dimen>
-    <dimen name="communicator_crm_conversation_quick_reply_folder_arrow_margin_baseline">2dp</dimen>
-</resources>

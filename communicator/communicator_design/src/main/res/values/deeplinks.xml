@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="communicator_dialog_pref_deeplink" translatable="false" tools:ignore="UnusedResources">/open_dialog.html</string>
-    <string name="communicator_chat_pref_deeplink" translatable="false" tools:ignore="UnusedResources">/open_chat.html</string>
-    <string name="communicator_conversation_uuid_key" translatable="false" tools:ignore="UnusedResources">guid</string>
-    <string name="communicator_conversation_message_uuid_key" translatable="false" tools:ignore="UnusedResources">message</string>
-</resources>

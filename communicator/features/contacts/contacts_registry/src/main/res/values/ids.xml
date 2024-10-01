@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="communicator_contact_swipe_layout" type="id"/>
-    <item name="communicator_contact_item_container" type="id"/>
-    <item name="communicator_contacts_content" type="id"/>
-    <item name="communicator_contact_item_date_header" type="id"/>
-    <item name="communicator_contact_list_recycler_id" type="id"/>
-</resources>

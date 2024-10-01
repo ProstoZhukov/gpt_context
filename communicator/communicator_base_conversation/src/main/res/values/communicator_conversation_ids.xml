@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="communicator_conversation_messages_recycler_view_id" type="id"/>
-    <item name="communicator_message" type="id"/>
-    <item name="communicator_message_cloud" type="id"/>
-    <item name="communicator_video_message_cloud" type="id"/>
-</resources>

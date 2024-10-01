@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="contacts_registry_import_enabled_no_contacts_stub_message">Δεν έχετε επαφές ακόμα</string>
-    <string name="contacts_registry_import_enabled_no_contacts_stub_details">Εισαγάγετε μια λίστα επαφών από τη συσκευή σας για να βρείτε τους φίλους σας.</string>
-</resources>

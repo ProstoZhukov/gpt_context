@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="communicator_files_move_success_message">文件已移至文件夹</string>
-    <string name="conversation_files_item_header_from_message">附于帖子</string>
-    <string name="conversation_files_item_header_pinned">已固定</string>
-    <string name="conversation_files_item_header_from_theme">附对话</string>
-    <string name="conversation_files_no_data_message">随消息发送的文件将显示在此处</string>
-</resources>

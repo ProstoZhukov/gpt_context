@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="communicator_files_move_success_message">Fa&#xfd;l bukja geçirildi</string>
-    <string name="conversation_files_item_header_from_message">Iberen</string>
-    <string name="conversation_files_item_header_pinned">Berkidilen</string>
-    <string name="conversation_files_item_header_from_theme">Dialog bilen baglany&#x15f;ykly</string>
-    <string name="conversation_files_no_data_message">Habarlar bilen iberilen fa&#xfd;llar &#x15f;u &#xfd;erde pe&#xfd;da bolar</string>
-</resources>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="contacts_registry_import_enabled_no_contacts_stub_message">您还没有任何联系人</string>
-    <string name="contacts_registry_import_enabled_no_contacts_stub_details">从您的设备导入联系人列表以查找您的朋友。</string>
-</resources>
