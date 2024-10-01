@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/communicator_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor"
+    android:clipChildren="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <ru.tensor.sbis.design.topNavigation.view.SbisTopNavigationView
+        android:id="@+id/communicator_conversation_fragment_top_navigation"
+        style="@style/ConversationTopNavigationStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/communicator_conversation_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/communicator_conversation_fragment_top_navigation"
+        android:visibility="gone"
+        />
+
+
+
+    <ru.tensor.sbis.communicator.common.themes_registry.dialog_info.document_plate_view.DocumentPlateView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/communicator_document_name_place_size"
+        android:layout_below="@id/communicator_conversation_fragment_top_navigation"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <include
+        layout="@layout/communicator_conversation_pinned_message_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/communicator_document_name_place_size"
+        android:layout_below="@id/communicator_document_plate_view_id"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <ru.tensor.sbis.communicator.sbis_conversation.ui.list.MessageCrudListView
+        android:id="@+id/communicator_conversation_fragment_sbis_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?unaccentedAdaptiveBackgroundColor"
+        android:layout_below="@id/communicator_pinned_chat_message_holder"
+        app:withSwipe="false"/>
+
+    <ru.tensor.sbis.design.list_header.HeaderDateView
+        android:id="@+id/communicator_conversation_header_date_view"
+        style="@style/CommunicatorConversationDateHeaderDateViewTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/communicator_conversation_fragment_sbis_list_view"
+        android:layout_alignEnd="@id/communicator_conversation_fragment_sbis_list_view"
+        android:layout_marginEnd="@dimen/communicator_header_date_margin_end"
+        android:visibility="gone"
+        app:HeaderDateView_dateViewMode="dateOnly"/>
+
+    <FrameLayout
+        android:id="@+id/communicator_conversation_message_panel_movable_panel_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/communicator_pinned_chat_message_holder"
+        android:layout_alignParentBottom="true"/>
+
+    <ru.tensor.sbis.message_panel.view.MessagePanel
+        android:id="@+id/communicator_conversation_fragment_message_panel"
+        style="@style/ConversationMessagePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:topOffset="@dimen/message_panel_default_top_offset"
+        app:MessagePanel_recipientsHintText="@string/design_message_panel_recipients_add_new_for_conversations"
+        app:MessagePanel_adjustPositionOnKeyboardChanges="false"/>
+
+    <ru.tensor.sbis.design.person_suggest.suggest.PersonSuggestView
+        android:id="@+id/communicator_conversation_person_suggest_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+
+    <ru.tensor.sbis.design.message_panel.audio_recorder.view.AudioRecordView
+        android:id="@+id/communicator_conversation_audio_record_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/communicator_conversation_fragment_message_panel"
+        android:visibility="gone"/>
+
+    <ru.tensor.sbis.design.message_panel.video_recorder.view.VideoRecordView
+        android:id="@+id/communicator_conversation_video_record_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/communicator_conversation_fragment_message_panel"
+        android:visibility="gone"/>
+
+    <ru.tensor.sbis.design.message_panel.audio_recorder.view.send.emotion_picker.MessageEmotionPicker
+        android:id="@+id/communicator_conversation_emotion_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/communicator_conversation_fragment_message_panel"
+        android:layout_alignParentEnd="true"
+        android:elevation="@dimen/communicator_conversation_smile_picker_elevation"
+        android:layout_marginEnd="@dimen/communicator_conversation_smile_picker_margin_end"
+        android:layout_marginBottom="@dimen/communicator_conversation_smile_picker_margin_bottom"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/communicator_message_panel_keyboard_offset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?contrastBackgroundColor"
+        android:layout_alignParentBottom="true"/>
+
+    <FrameLayout
+        android:id="@+id/communicator_conversation_fragment_swipe_back_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationZ="@dimen/communicator_message_info_container_translation_z"/>
+
+</RelativeLayout>
