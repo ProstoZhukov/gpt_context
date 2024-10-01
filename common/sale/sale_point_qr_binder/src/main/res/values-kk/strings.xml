@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="spqrb_bind_completed">QR коды сату нүктесіне сәтті байланған</string>
-    <string name="spqrb_error_broken_push_format">Қате басып шығару хабарландыру пішімі % d</string>
-    <string name="spqrb_action_scan_again">Тағы бір рет сканерлеңіз</string>
-    <string name="spqrb_error_internal_bind_failure">QR кодын байланыстыру мүмкін болмады. Қолданбаның ішкі қатесі.</string>
-</resources>

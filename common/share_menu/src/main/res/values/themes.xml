@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="ShareMenuActivityTheme" parent="AppTheme.Transparent">
-        <item name="android:statusBarColor">@color/palette_color_transparent</item>
-    </style>
-
-</resources>

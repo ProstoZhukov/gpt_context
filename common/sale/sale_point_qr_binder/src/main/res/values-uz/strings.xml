@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="spqrb_bind_completed">QR kodi savdo nuqtasiga muvaffaqiyatli bog\'langan</string>
-    <string name="spqrb_error_broken_push_format">Noto\'g\'ri Push-bildirishnoma formati %d</string>
-    <string name="spqrb_action_scan_again">Yana skanerlash</string>
-    <string name="spqrb_error_internal_bind_failure">QR kodini bog\'lash mumkin emas edi. Ilovaning ichki xatosi.</string>
-</resources>

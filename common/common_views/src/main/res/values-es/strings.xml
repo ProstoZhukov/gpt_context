@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_views_document_preview_load_error">Error al cargar datos</string>
-    <string name="common_views_document_preview_offline_error_pre_clickable_text">Comprueba tu conexi&#xf3;n a Internet y prueba.</string>
-    <string name="common_views_document_preview_offline_error_clickable_text">actualizar p&#xe1;gina</string>
-</resources>

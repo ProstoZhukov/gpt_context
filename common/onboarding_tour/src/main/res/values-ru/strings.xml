@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="onboarding_tour_skip_title">Пропустить</string>
-    <string name="onboarding_tour_rationale_default_title">Разрешения требуются для использования всех возможностей приложения</string>
-    <string name="onboarding_tour_terms_caption">Продолжая, вы соглашаетесь с %%правилами сервиса%% и %%политикой конфиденциальности%%</string>
-</resources>

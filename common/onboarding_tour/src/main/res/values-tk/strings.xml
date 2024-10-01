@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="onboarding_tour_skip_title">Geçmek</string>
-    <string name="onboarding_tour_rationale_default_title">Apphli programma a&#xfd;ratynlyklaryny ulanmak üçin rugsatlar talap edil&#xfd;är</string>
-    <string name="onboarding_tour_terms_caption">Dowam etmek bilen, %% hyzmat düzgünleri %% we %% gizlinlik sy&#xfd;asaty %% bilen ylala&#x15f;&#xfd;arsy&#x148;yz</string>
-    <string name="onboarding_tour_logo_sbis">sbis</string>
-</resources>

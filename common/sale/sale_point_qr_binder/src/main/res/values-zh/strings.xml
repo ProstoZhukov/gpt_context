@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="spqrb_bind_completed">二维码已成功绑定销售点</string>
-    <string name="spqrb_error_broken_push_format">推送类型 %d 的格式损坏</string>
-    <string name="spqrb_action_scan_again">重新扫描</string>
-    <string name="spqrb_error_internal_bind_failure">绑定二维码失败。内部错误。</string>
-</resources>

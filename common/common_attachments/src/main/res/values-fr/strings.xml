@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_attachments_attach_file_error">Erreur lors de l\'ajout de la pièce jointe</string>
-    <string name="common_attachments_generating_snapshot_error">Erreur lors de la création du fichier photo</string>
-    <string name="common_attachments_opening_file_explorer_error">Erreur lors de l\'exécution du composant de sélection de fichiers</string>
-    <string name="common_attachments_opening_gallery_error">Erreur lors de l\'ouverture de la galerie</string>
-    <string name="common_attachments_starting_camera_error">Erreur lors de l\'exécution de la caméra</string>
-</resources>

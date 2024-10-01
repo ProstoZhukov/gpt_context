@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="business_card_domain_service_unavailable_error">Сервис временно недоступен</string>
-    <string name="business_card_domain_network_error_snackbar_message">Отсутствует подключение к сети</string>
-    <string name="business_card_domain_unknown_error">Неизвестная ошибка</string>
-    <string name="business_card_domain_no_available_specialist_error_snackbar_message">Нет доступных специалистов</string>
-</resources>

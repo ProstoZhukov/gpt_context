@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Инфоблок. Спецификация https://online.sbis.ru/shared/disk/b999456e-a2bd-4922-9f2b-aecfece0e345 -->
-    <dimen name="widget_player_info_block_emoji_size">20dp</dimen>
-    <dimen name="widget_player_info_block_emoji_padding">4dp</dimen>
-</resources>

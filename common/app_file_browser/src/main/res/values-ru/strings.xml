@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_file_browser_stub_folder_is_empty">Папка пуста</string>
-    <string name="app_file_browser_show_size">Показать размер</string>
-    <string name="app_file_browser_delete">Удалить</string>
-</resources>

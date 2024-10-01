@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="richtext_decorated_link_open_error">@string/common_open_link_browser_error</string>
-
-    <string name="richtext_table_open_fully" tools:ignore="TypographyEllipsis">fully open...</string>
-</resources>

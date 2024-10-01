@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="push_notification_utils_file_loading_channel_name">Cargando archivos</string>
-    <string name="push_notification_utils_settings_notification_sound_key">configuraci&#xf3;n_notificaci&#xf3;n_clave_sonido</string>
-    <string name="push_notification_utils_settings_notification_vibration_key">configuraci&#xf3;n_notificaci&#xf3;n_tecla_vibraci&#xf3;n</string>
-    <string name="push_notification_utils_settings_stable_push_service_key">configuraci&#xf3;n_estable_push_service_key</string>
-</resources>

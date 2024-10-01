@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.tensor.sbis.fresco_view.SuperEllipseDraweeView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="@dimen/design_profile_sbis_title_view_image_size"
-    android:layout_height="@dimen/design_profile_sbis_title_view_image_size"
-    android:scaleType="fitCenter"
-    tools:background="@drawable/design_profile_user_dummy">
-
-</ru.tensor.sbis.fresco_view.SuperEllipseDraweeView>

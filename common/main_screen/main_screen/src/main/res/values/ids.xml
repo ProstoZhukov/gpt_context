@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="fab" type="id"/>
-    <item name="today_extra_fab" type="id"/>
-    <item name="fab2" type="id"/>
-    <item name="fab3" type="id"/>
-    <item name="lazy_fab_container_order" type="id"/>
-</resources>

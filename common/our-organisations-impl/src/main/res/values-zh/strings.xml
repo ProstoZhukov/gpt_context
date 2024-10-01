@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="our_org_item_header_simple_title">选择组织</string>
-    <string name="our_org_empty_title">组织列表为空</string>
-    <string name="our_org_filter_state_active">积极的</string>
-    <string name="our_org_filter_state_all">全部</string>
-    <string name="our_org_title">我们的公司</string>
-</resources>

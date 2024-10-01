@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="versioning_required_max_width">500dp</dimen>
-    <dimen name="versioning_update_button_width">170dp</dimen>
-    <dimen name="versioning_update_type_title_height">36dp</dimen>
-</resources>

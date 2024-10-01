@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="media_recorder_starting_error">Error de grabaci&#xf3;n</string>
-    <string name="media_audio_message_file_name_template">Mensaje de audio - %1$s.mp3</string>
-</resources>

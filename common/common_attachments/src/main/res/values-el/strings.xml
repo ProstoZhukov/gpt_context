@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_attachments_attach_file_error">Σφάλμα κατά την προσθήκη συνημμένου</string>
-    <string name="common_attachments_generating_snapshot_error">Σφάλμα κατά τη δημιουργία αρχείου φωτογραφίας</string>
-    <string name="common_attachments_starting_camera_error">Σφάλμα λειτουργίας της κάμερας</string>
-    <string name="common_attachments_opening_gallery_error">Σφάλμα κατά το άνοιγμα της συλλογής</string>
-    <string name="common_attachments_opening_file_explorer_error">Σφάλμα κατά την εκτέλεση του στοιχείου επιλογής αρχείου</string>
-</resources>

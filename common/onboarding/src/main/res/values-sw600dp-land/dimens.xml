@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="onboarding_dialog_page_width">320dp</dimen>
-    <dimen name="onboarding_dialog_page_height">580dp</dimen>
-</resources>

@@ -1,8 +1,0 @@
-include ':push-cloud-messaging'
-project(':push-cloud-messaging').projectDir = new File(settingsDir, 'common/push-cloud-messaging')
-
-include ':mobile-services-decl'
-project(':mobile-services-decl').projectDir = new File(settingsDir, 'common/mobile-services-decl')
-
-include ':mobile-services-google'
-project(':mobile-services-google').projectDir = new File(settingsDir, 'common/mobile-services-google')

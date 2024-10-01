@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_attachments_attach_file_error">Error adding attachment</string>
-    <string name="common_attachments_generating_snapshot_error">Error creating photo file</string>
-    <string name="common_attachments_starting_camera_error">Error running camera</string>
-    <string name="common_attachments_opening_gallery_error">Error while opening gallery</string>
-    <string name="common_attachments_opening_file_explorer_error">Error running file selection component</string>
-
-</resources>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_init_unknown_error">Αγνωστο σφάλμα</string>
-    <string name="app_init_no_memory_button_title">Κλείσε</string>
-    <string name="app_init_no_memory_details_msg">Δεν υπάρχει αρκετή μνήμη στη συσκευή σας, ελευθερώστε χώρο και δοκιμάστε ξανά</string>
-    <string name="app_init_no_memory_title_msg">Χωρίς μνήμη</string>
-    <string name="app_init_no_memory_toast_msg">Χωρίς μνήμη! Απελευθερώστε και δοκιμάστε ξανά</string>
-</resources>

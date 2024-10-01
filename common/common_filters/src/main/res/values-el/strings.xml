@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_filters_mobile_icon_add_folder">&#xe957;</string>
-    <string name="common_filters_reset_button_label">Επαναφορά</string>
-    <string name="common_filters_filter">Φίλτρο</string>
-    <string name="common_filters_folder_button_label">Φάκελοι</string>
-</resources>

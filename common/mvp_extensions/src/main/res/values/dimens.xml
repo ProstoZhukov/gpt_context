@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Common Menu Item -->
-    <dimen name="mvp_popup_item_height">48dp</dimen>
-    <dimen name="mvp_popup_item_text_size">18dp</dimen>
-    <dimen name="mvp_popup_item_icon_size">22dp</dimen>
-</resources>

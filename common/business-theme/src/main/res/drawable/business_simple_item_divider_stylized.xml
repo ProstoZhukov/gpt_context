@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <size android:height="@dimen/common_separator_size" />
-    <solid android:color="?attr/business_simple_item_divider_drawable_color" />
-</shape>

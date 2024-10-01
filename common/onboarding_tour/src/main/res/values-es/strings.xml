@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="onboarding_tour_logo_sbis">sabia</string>
-    <string name="onboarding_tour_skip_title">Saltar</string>
-    <string name="onboarding_tour_rationale_default_title">Se requieren permisos para utilizar todas las funciones de la aplicaci&#xf3;n.</string>
-    <string name="onboarding_tour_terms_caption">Al continuar, aceptas %%los términos de servicio%% y %%pol&#xed;tica de privacidad%%</string>
-</resources>

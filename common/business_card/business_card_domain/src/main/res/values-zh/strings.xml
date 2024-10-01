@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="business_card_domain_service_unavailable_error">服务暂时不可用</string>
-    <string name="business_card_domain_network_error_snackbar_message">无网络连接</string>
-    <string name="business_card_domain_unknown_error">未知错误</string>
-    <string name="business_card_domain_no_available_specialist_error_snackbar_message">没有可用的专家</string>
-</resources>

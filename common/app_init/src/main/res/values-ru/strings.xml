@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_init_no_memory_title_msg">Недостаточно памяти</string>
-    <string name="app_init_no_memory_details_msg">На устройстве недостаточно места для работы приложения, пожалуйста освободите и попробуйте снова</string>
-    <string name="app_init_no_memory_button_title">Закрыть</string>
-    <string name="app_init_no_memory_toast_msg">Нет памяти! Пожалуйста освободите и попробуйте снова</string>
-    <string name="app_init_unknown_error">Неизвестная ошибка</string>
-</resources>

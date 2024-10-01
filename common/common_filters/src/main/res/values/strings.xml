@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_filters_mobile_icon_add_folder">&#xe957;</string>
-
-    <string name="common_filters_reset_button_label">Reset</string>
-    <string name="common_filters_filter">Filter</string>
-    <string name="common_filters_folder_button_label">Folders</string>
-</resources>

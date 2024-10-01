@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_attachments_attach_file_error">Go&#x15f;undy go&#x15f;makda säwlik</string>
-    <string name="common_attachments_generating_snapshot_error">Surat fa&#xfd;ly döredilende säwlik</string>
-    <string name="common_attachments_starting_camera_error">Kamerany i&#x15f;e girizeni&#x148;izde säwlik</string>
-    <string name="common_attachments_opening_gallery_error">Galere&#xfd;a açmakda säwlik</string>
-    <string name="common_attachments_opening_file_explorer_error">Fa&#xfd;l sa&#xfd;la&#xfd;jy komponenti ba&#x15f;landa &#xfd;al&#x148;y&#x15f;lyk</string>
-</resources>

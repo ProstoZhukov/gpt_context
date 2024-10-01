@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_views_document_preview_load_error">Деректерді жүктеу қатесі</string>
-    <string name="common_views_document_preview_offline_error_clickable_text">бетті жаңартыңыз</string>
-    <string name="common_views_document_preview_offline_error_pre_clickable_text">Интернет байланысын тексеріп, көріңіз</string>
-</resources>

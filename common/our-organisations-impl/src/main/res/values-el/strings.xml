@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="our_org_item_header_simple_title">Επιλέξτε οργανισμό</string>
-    <string name="our_org_empty_title">Η λίστα οργανισμών είναι κενή</string>
-    <string name="our_org_filter_state_active">Ενεργός</string>
-    <string name="our_org_filter_state_all">Ολα</string>
-    <string name="our_org_title">Οι εταιρείες μας</string>
-</resources>

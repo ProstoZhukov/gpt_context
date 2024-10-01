@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="media_audio_message_file_name_template">Audio xabar - %1$s.mp3</string>
-    <string name="media_recorder_starting_error">Xabar yozish xatosi</string>
-</resources>

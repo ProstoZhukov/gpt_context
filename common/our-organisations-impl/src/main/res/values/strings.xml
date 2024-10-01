@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="our_org_title">Our companies</string>
-    <string name="our_org_item_header_simple_title">Select organization</string>
-    <string name="our_org_empty_title">The organization list is empty</string>
-    <string name="our_org_filter_state_active">Active</string>
-    <string name="our_org_filter_state_all">All</string>
-</resources>

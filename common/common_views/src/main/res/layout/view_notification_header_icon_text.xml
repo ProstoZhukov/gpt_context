@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.tensor.sbis.design.sbis_text_view.SbisTextView
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/common_views_NotificationHeaderViewIconStyle.TextIcon"
-    tools:ignore="ResourceName"
-    tools:text="✓"/>

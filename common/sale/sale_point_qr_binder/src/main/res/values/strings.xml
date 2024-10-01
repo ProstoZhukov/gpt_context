@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="spqrb_bind_completed">QR-code successfully binded to the Sale Point</string>
-    <string name="spqrb_error_broken_push_format">Broken format for push type %d</string>
-    <string name="spqrb_error_internal_bind_failure">Bind QR-code failed. Internal error.</string>
-    <string name="spqrb_action_scan_again">Scan again</string>
-    <string name="spqrb_action_cancel" translatable="false">@string/dialog_button_cancel</string>
-</resources>

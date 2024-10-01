@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!--Наложение этого цвета на белый дает необходимый по постандарту цвет #EFF0F4-->
-    <color name="list_selection_mask">#10001654</color>
-</resources>

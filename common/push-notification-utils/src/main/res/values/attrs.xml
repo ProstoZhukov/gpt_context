@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <attr name="pushNotificationTheme" format="reference" />
-    <attr name="pushNotificationSmallIcon" format="reference" />
-    <attr name="pushNotificationColor" format="color|reference" />
-
-</resources>

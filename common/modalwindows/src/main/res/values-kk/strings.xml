@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="modalwindows_action_cant_be_done_error">Бұл әрекетті орындау мүмкін емес</string>
-    <string name="modalwindows_read_option_delete_all_text">Бәрін жою</string>
-    <string name="modalwindows_read_option_read_all_text">Барлығын оқы</string>
-    <string name="modalwindows_read_option_read_below_text">Ағымдағы бетте және төменде</string>
-</resources>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="modalwindows_action_cant_be_done_error">Bu amalni bajarib bo‘lmadi</string>
-    <string name="modalwindows_read_option_delete_all_text">Hamma narsani o\'chirib tashlang</string>
-    <string name="modalwindows_read_option_read_all_text">Hammasini o\'qing</string>
-    <string name="modalwindows_read_option_read_below_text">Joriy sahifada va pastda</string>
-</resources>

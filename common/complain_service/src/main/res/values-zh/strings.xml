@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="complain_service_report_message_text">将报告发送给主持人审核？</string>
-    <string name="complain_service_report_hint_text">输入评论</string>
-    <string name="complain_service_dialog_positive">OK</string>
-    <string name="complain_service_dialog_negative">取消</string>
-</resources>

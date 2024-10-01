@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Переопределение атрибута из модуля time_picker для темизации компонента
-     и устранения лишней зависимости модуля темизации
-      TODO https://online.sbis.ru/opendoc.html?guid=7fa37e0e-73b6-44e2-940a-ff83003f3178 -->
-    <attr name="time_picker_wheel_text_color" format="reference|color" />
-</resources>

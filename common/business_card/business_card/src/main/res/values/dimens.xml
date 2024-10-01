@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="business_card_image_size">96dp</dimen>
-    <dimen name="business_card_image_radius">50dp</dimen>
-    <dimen name="business_card_qr_padding">44dp</dimen>
-    <dimen name="business_card_qr_size">200dp</dimen>
-</resources>

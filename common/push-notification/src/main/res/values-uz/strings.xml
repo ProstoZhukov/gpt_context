@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="push_notification_main_channel_name">Bildirishnomalar</string>
-    <string name="push_notification_stable_notification_title">Bildirishnomani barqarorlashtirish</string>
-</resources>

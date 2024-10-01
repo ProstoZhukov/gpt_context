@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="document_scanner_presenter_loader_id" type="id"/>
-    <item name="edit_image_presenter_loader_id" type="id"/>
-    <item name="view_image_presenter_loader_id" type="id"/>
-    <item name="scanned_image_options_presenter_loader_id" type="id"/>
-</resources>

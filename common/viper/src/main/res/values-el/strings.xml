@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="viper_no_items_placeholder">Δεν υπάρχει τίποτα εδώ ακόμα</string>
-    <string name="viper_no_items_found_placeholder">Χωρίς αποτέλεσμα</string>
-    <string name="viper_try_another_search">Δοκιμάστε να αλλάξετε τις επιλογές αναζήτησής σας</string>
-    <string name="viper_network_error">Δεν υπάρχει σύνδεση δικτύου</string>
-    <string name="viper_unavailable_service_error">Η υπηρεσία δεν είναι διαθέσιμη προσωρινά. Προσπαθησε αργοτερα.</string>
-</resources>

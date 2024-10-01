@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_attachments_attach_file_error">Biriktirma qo‘shishda xatolik yuz berdi</string>
-    <string name="common_attachments_generating_snapshot_error">Foto faylni yaratishda xatolik yuz berdi</string>
-    <string name="common_attachments_opening_file_explorer_error">Fayl tanlash komponentini ishga tushirishda xatolik yuz berdi</string>
-    <string name="common_attachments_opening_gallery_error">Galereyani ochishda xatolik yuz berdi</string>
-    <string name="common_attachments_starting_camera_error">Kamerani ishga tushirishda xatolik yuz berdi</string>
-</resources>

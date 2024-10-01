@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="business_card_domain_service_unavailable_error">Xizmat vaqtincha mavjud emas</string>
-    <string name="business_card_domain_network_error_snackbar_message">Tarmoqqa ulanish yo\'q</string>
-    <string name="business_card_domain_unknown_error">Noma\'lum xato</string>
-    <string name="business_card_domain_no_available_specialist_error_snackbar_message">Mutaxassislar mavjud emas</string>
-</resources>

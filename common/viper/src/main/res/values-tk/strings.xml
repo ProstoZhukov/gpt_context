@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="viper_no_items_placeholder">Bu &#xfd;erde entek hiç zat &#xfd;ok</string>
-    <string name="viper_no_items_found_placeholder">Netije &#xfd;ok</string>
-    <string name="viper_try_another_search">Gözleg parametrleri&#x148;izi ü&#xfd;tgedip görü&#x148;</string>
-    <string name="viper_network_error">Tor birikmesi &#xfd;ok</string>
-    <string name="viper_unavailable_service_error">Hyzmat wagtla&#xfd;yn el&#xfd;eterli däl. So&#x148;rak synap görü&#x148;.</string>
-</resources>

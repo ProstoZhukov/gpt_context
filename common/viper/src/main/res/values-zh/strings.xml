@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="viper_no_items_placeholder">这里还什么都没有</string>
-    <string name="viper_no_items_found_placeholder">没有结果</string>
-    <string name="viper_try_another_search">尝试更改您的搜索选项</string>
-    <string name="viper_network_error">无网络连接</string>
-    <string name="viper_unavailable_service_error">服务暂时不可用。稍后再试。</string>
-</resources>

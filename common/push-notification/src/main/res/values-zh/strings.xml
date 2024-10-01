@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="push_notification_stable_notification_title">通知的稳定性</string>
-    <string name="push_notification_main_channel_name">通知</string>
-</resources>

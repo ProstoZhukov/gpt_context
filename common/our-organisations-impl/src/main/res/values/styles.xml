@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="OurOrgProgressBarStyleDefault" parent="@style/SbisLoadingIndicatorDefaultTheme">
-        <item name="SbisLoadingIndicator_delayedShowing">true</item>
-        <item name="SbisLoadingIndicator_appearanceDelay">@integer/our_org_progressShowingDelay</item>
-    </style>
-</resources>

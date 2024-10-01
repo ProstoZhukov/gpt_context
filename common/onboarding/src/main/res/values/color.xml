@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!-- Спецификация http://axure.tensor.ru/MobileAPP/#p=onboarding&g=1 -->
-    <color name="onboarding_flip_progress_background">@color/palette_alpha_color_gray44</color>
-    <color name="onboarding_flip_progress_tint">@color/palette_alpha_color_gray1</color>
-
-</resources>

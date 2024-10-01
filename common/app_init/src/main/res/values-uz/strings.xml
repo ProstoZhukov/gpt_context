@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_init_unknown_error">Noma\'lum xato</string>
-    <string name="app_init_no_memory_button_title">Yaqin</string>
-    <string name="app_init_no_memory_details_msg">Ilovani ishga tushirish uchun qurilmada joy yetarli emas, boʻshating va qaytadan urinib koʻring</string>
-    <string name="app_init_no_memory_title_msg">Xotira yetarli emas</string>
-    <string name="app_init_no_memory_toast_msg">Xotira yo\'q! Iltimos, qo\'yib yuboring va qayta urinib ko\'ring</string>
-</resources>

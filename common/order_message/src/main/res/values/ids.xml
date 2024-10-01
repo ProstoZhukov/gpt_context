@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="order_message_text" type="id"/>
-    <item name="order_message_queues" type="id"/>
-    <item name="order_message_nomenclature" type="id"/>
-    <item name="order_message_title" type="id"/>
-    <item name="order_message_stop_list_nomenclature" type="id"/>
-    <item name="order_message_stop_list_available" type="id"/>
-</resources>

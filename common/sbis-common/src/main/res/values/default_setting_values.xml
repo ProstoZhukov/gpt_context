@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <bool name="default_value_enable_history_recording">false</bool>
-    <bool name="default_value_enable_logs_recording">false</bool>
-</resources>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_views_document_preview_load_error">Erreur lors du chargement des données</string>
-    <string name="common_views_document_preview_offline_error_clickable_text">page de mise à jour</string>
-    <string name="common_views_document_preview_offline_error_pre_clickable_text">Vérifiez votre connexion Internet et essayez</string>
-</resources>

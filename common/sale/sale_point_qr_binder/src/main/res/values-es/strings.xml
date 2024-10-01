@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="spqrb_bind_completed">C&#xf3;digo QR vinculado exitosamente al Punto de Venta</string>
-    <string name="spqrb_error_broken_push_format">Formato roto para tipo push %d</string>
-    <string name="spqrb_action_scan_again">Escanea otra vez</string>
-    <string name="spqrb_error_internal_bind_failure">Error al vincular el c&#xf3;digo QR. Error interno.</string>
-</resources>

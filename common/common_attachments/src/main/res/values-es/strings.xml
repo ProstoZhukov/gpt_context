@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="common_attachments_attach_file_error">Error al agregar el archivo adjunto</string>
-    <string name="common_attachments_generating_snapshot_error">Error al crear el archivo de foto</string>
-    <string name="common_attachments_starting_camera_error">Error al ejecutar la c&#xe1;mara</string>
-    <string name="common_attachments_opening_gallery_error">Error al abrir la galer&#xed;a</string>
-    <string name="common_attachments_opening_file_explorer_error">Error al ejecutar el componente de selecci&#xf3;n de archivos</string>
-</resources>

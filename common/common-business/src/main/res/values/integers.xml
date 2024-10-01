@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!--базовая задержка отображения прогресса на реестре, для предотвращения возможных сайд эффектов при смене контента через size 0-->
-    <integer name="business_progress_delay">1000</integer>
-</resources>

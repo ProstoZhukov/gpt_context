@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="onboarding_tour_skip_title">Өткізіп жіберу</string>
-    <string name="onboarding_tour_rationale_default_title">Қолданбаның барлық мүмкіндіктерін пайдалану үшін рұқсаттар қажет</string>
-    <string name="onboarding_tour_terms_caption">Жалғастыру арқылы сіз %%қызмет көрсету%% шарттарымен және %%құпиялылық саясатымен%% келісесіз</string>
-    <string name="onboarding_tour_logo_sbis">saby</string>
-</resources>

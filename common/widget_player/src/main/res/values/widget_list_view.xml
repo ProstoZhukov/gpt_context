@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Виджет списков. Спецификация https://n.sbis.ru/article/5c835723-25ba-4331-a294-b7d15fd50fd6 -->
-    <dimen name="widget_player_list_view_bullet_size">6dp</dimen>
-</resources>

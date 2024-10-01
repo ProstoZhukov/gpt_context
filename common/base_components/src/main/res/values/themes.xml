@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="SelectionWindowContentTheme">
-        <item name="base_components_selection_window_content_header_text_color">?primaryTextColor</item>
-        <item name="base_components_content_selection_window_header_background_color">?backgroundColor</item>
-        <item name="base_components_content_selection_window_background_color">?backgroundColor</item>
-        <item name="base_components_content_selection_window_divider_color">?borderColor</item>
-    </style>
-</resources>
