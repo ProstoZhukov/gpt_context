@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="retail_views_money_integer_part_max_length">10</integer> <!-- максимальная длина целой части в числе формата [xx xxx xxx.xx] !-->
-</resources>

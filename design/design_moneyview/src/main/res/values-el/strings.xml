@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_moneyview_suffix_thousand">thd</string>
-    <string name="design_moneyview_suffix_million">εκατ</string>
-    <string name="design_moneyview_suffix_billion">δις</string>
-    <string name="design_moneyview_suffix_trillion">t</string>
-    <string name="design_moneyview_suffix_quadrillion">Q</string>
-    <string name="design_moneyview_suffix_k">κ</string>
-</resources>

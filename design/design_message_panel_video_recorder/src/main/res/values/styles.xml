@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="SwitchCameraButton" parent="SbisRoundButtonDefaultUnaccentedTheme">
-        <item name="SbisRoundButton_backgroundColor">@color/palette_alpha_color_black3</item>
-        <item name="SbisRoundButton_backgroundColorPressed">@color/palette_alpha_color_black5</item>
-    </style>
-
-</resources>

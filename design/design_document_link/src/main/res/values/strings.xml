@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_document_link_header_description">Header: %s</string>
-    <string name="design_document_link_comment_description">Comment: %s</string>
-    <string name="design_document_link_container_description">Footing document container.</string>
-</resources>

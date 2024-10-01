@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="change_theme_item_title">Дизайн</string>
-    <string name="change_theme_dialog_title">Тақырыпты_диалогтың_тақырыбын өзгерту</string>
-    <string name="change_theme_dialog_button_accept">Қолдану</string>
-    <string name="change_theme_dialog_button_cancel">Бас тарту</string>
-    <string name="change_theme_default_switch_title">Жүйелік тақырыпты қолданыңыз</string>
-    <string name="change_theme_default_switch_subtitle">Құрылғының жүйелік тақырыбы өзгерген кезде қолданба тақырыбы автоматты түрде ауысады</string>
-</resources>

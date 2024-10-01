@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="design_notification_icon_view_width">44dp</dimen>
-    <dimen name="design_notification_icon_margin_horizontal">12dp</dimen>
-</resources>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="picker_files_tab_title">Αρχεία</string>
-    <string name="picker_files_tab_storage_title">Επιλέξτε από αρχεία</string>
-    <string name="picker_files_tab_gallery_title">Συσκευή συλλογής</string>
-    <string name="picker_files_tab_stub_desc">Επιλέξτε και επισυνάψτε αρχεία από τη συσκευή σας</string>
-</resources>

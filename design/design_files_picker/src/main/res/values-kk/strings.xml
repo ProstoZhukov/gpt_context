@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="files_picker_panel_header_button_title">Болдырмау</string>
-    <string name="files_picker_panel_footer_button_title">Қосу</string>
-    <string name="files_picker_panel_header_title">Белгіленген %d</string>
-    <plurals name="files_picker_selection_limit_message">
-        <item quantity="one">%d файлдан артық таңдай алмайсыз</item>
-        </plurals>
-</resources>

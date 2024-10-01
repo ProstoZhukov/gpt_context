@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Модуль design добавлен только из-за этого цвета -->
-    <color name="swipe_back_dimm_background_color">@color/palette_alpha_color_black5</color>
-
-</resources>

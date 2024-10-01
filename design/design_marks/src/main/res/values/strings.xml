@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_marks_top_title">Marks</string>
-    <string name="design_marks_title_clear_label">Clear</string>
-    <string name="design_marks_title_important">Important</string>
-    <string name="design_marks_title_plus">Plus</string>
-
-</resources>

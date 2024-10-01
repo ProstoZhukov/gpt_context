@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="design_message_panel_video_recorder_progress_stroke_width">5dp</dimen>
-
-    <dimen name="design_message_panel_video_recorder_camera_view_min_size">50dp</dimen>
-</resources>

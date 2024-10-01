@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Тема для компонента ввода пин-кода-->
-    <attr name="pin_code_theme" format="reference"/>
-</resources>

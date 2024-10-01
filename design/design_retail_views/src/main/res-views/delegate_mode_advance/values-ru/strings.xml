@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="retail_views_advance_title">Аванс</string>
-
-    <string name="retail_views_advance_menu_bill">Счет</string>
-    <string name="retail_views_advance_menu_expenses">Представительские расходы</string>
-    <string name="retail_views_advance_menu_certificate">Сертификат</string>
-    <string name="retail_views_advance_menu_commentary">Комментарий</string>
-</resources>

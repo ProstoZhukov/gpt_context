@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <solid android:color="@color/button_with_state_primary_active_bg_color" />
-    <corners android:radius="@dimen/design_view_ext_button_with_state_view_radius" />
-    <stroke
-        android:width="@dimen/design_view_ext_button_with_state_view_outline_size"
-        android:color="@color/palette_color_orange8" />
-</shape>

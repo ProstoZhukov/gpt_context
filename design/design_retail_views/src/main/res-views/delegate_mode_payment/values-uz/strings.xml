@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="payment_qr_code_button_text">QR-kod</string>
-    <string name="payment_comment_button_text">Izoh</string>
-    <string name="payment_send_invoice_button_text">Hisob-fakturani yuborish</string>
-</resources>

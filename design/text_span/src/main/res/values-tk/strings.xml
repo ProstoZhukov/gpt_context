@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="text_span_expand_text">Gi&#x148;eltmek</string>
-    <string name="text_span_collapse_text">Apseykylmak</string>
-    <string name="text_span_task_text_ellipsis">...</string>
-    <string name="text_span_task_text_expand">jikme-jiklikler</string>
-    <string name="text_span_task_text_collapse">\ u0020 &#xfd;ykylmak</string>
-    <string name="text_span_dialog_title_counter">... (+% d)</string>
-</resources>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="RetailViewsClientContactsViewStyle.Light" parent="RetailViewsCommonTheme.Light">
-        <item name="retailViewsClientContactsViewSaveButton">@style/RetailViewsClientContactsViewSbisButtonStyle</item>
-    </style>
-    <style name="RetailViewsClientContactsViewStyle.Dark" parent="RetailViewsCommonTheme.Dark">
-        <item name="retailViewsClientContactsViewSaveButton">@style/RetailViewsClientContactsViewSbisButtonStyle</item>
-    </style>
-</resources>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="hall_scheme_row_number">%s жолы</string>
-    <string name="hall_scheme_assignee_i">I</string>
-    <string name="hall_scheme_table_occupied_for_user">бос емес</string>
-</resources>

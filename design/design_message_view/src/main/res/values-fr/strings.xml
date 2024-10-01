@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_message_view_chat_members_more">, plus\u0020</string>
-    <string name="design_message_view_chat_restore">Restaurer</string>
-    <string name="design_message_rate_request_button_title">Taux</string>
-</resources>

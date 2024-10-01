@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="change_theme_item_title">Θέμα σχεδίασης</string>
-    <string name="change_theme_dialog_title">Για να εφαρμόσετε ένα νέο θέμα σχεδίασης, πρέπει να επανεκκινήσετε την εφαρμογή</string>
-    <string name="change_theme_dialog_button_accept">Ισχύουν</string>
-    <string name="change_theme_dialog_button_cancel">Ματαίωση</string>
-    <string name="change_theme_default_switch_title">Χρησιμοποιήστε το θέμα συστήματος</string>
-    <string name="change_theme_default_switch_subtitle">Το θέμα της εφαρμογής θα αλλάξει αυτόματα όταν αλλάξετε το θέμα του συστήματος της συσκευής</string>
-</resources>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="oval">
-            <solid android:color="@color/recipient_selection_background_color" />
-            <stroke android:width="1dp" android:color="@color/palette_color_gray4" />
-        </shape>
-    </item>
-</selector>

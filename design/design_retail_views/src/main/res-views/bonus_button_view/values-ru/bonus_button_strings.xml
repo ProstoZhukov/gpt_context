@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="retail_views_bonus_button_view_exceeded_value_error_text">Введённое значение превышает максимально допустимое</string>
-    <string name="retail_views_bonus_button_view_zero_value_error_text">Введите значение больше нуля</string>
-</resources>

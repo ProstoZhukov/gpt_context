@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="retail_views_deposit_withdrawal_title">Montant en espèces</string>
-    <string name="retail_views_deposit_withdrawal_deposit_button_text">Dépôt</string>
-    <string name="retail_views_deposit_withdrawal_withdrawal_button_text">Retirer</string>
-</resources>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="design_profile_sbis_person_view_photo_medium_inverted_size">40dp</dimen>
-    <dimen name="design_profile_sbis_person_view_photo_medium_inverted_height">
-        @dimen/design_profile_sbis_person_view_photo_medium_inverted_size
-    </dimen>
-</resources>

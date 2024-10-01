@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- MoneyView -->
-    <dimen name="design_moneyview_currency_margin">2dp</dimen>
-    <dimen name="design_moneyview_horizontal_padding">8dp</dimen>
-    <dimen name="design_moneyview_vertical_padding">6dp</dimen>
-    <dimen name="design_moneyview_virtual_currency_icon_size">@dimen/size_display1_scaleOff</dimen>
-    <dimen name="design_moneyview_rounded_corner_radius">4dp</dimen>
-</resources>

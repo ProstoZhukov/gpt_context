@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="design_message_panel_audio_record_control_view" type="id"/>
-    <item name="design_message_panel_audio_record_send_view" type="id"/>
-    <item name="design_message_panel_audio_record_smile_button" type="id"/>
-    <item name="design_message_panel_audio_record_send_button" type="id"/>
-    <item name="design_message_panel_audio_record_stop_button" type="id"/>
-</resources>

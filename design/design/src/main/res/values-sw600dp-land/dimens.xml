@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!--http://axure.tensor.ru/MobileStandart8/#g=1&p=компоновка_под_планшет-->
-    <dimen name="design_tablet_master_width">328dp</dimen>
-</resources>

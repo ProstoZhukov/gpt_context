@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="design_tile_view_image_padding">12dp</dimen>
-    <dimen name="design_tile_view_image_gradient_height">48dp</dimen>
-    <dimen name="design_tile_view_image_tint_gradient_height">24dp</dimen>
-    <dimen name="design_tile_view_content_default_padding">12dp</dimen>
-</resources>

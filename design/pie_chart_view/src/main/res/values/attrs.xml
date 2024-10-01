@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <declare-styleable name="PieChartView">
-        <attr name="centerTextViewVisibility" format="boolean"/>
-        <attr name="holeColor" format="reference|color"/>
-        <attr name="holeRadiusPercent" format="float|reference"/>
-    </declare-styleable>
-</resources>

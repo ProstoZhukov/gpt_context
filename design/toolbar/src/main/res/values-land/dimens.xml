@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Ресурс из design_profile_sbis_title_view_image_size -->
-    <dimen name="toolbar_sbis_title_view_image_size">40dp</dimen>
-</resources>

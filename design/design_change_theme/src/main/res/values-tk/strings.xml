@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="change_theme_item_title">Mowzuk</string>
-    <string name="change_theme_dialog_title">Täze mowzugy ulanmak üçin programmany täzeden açmaly</string>
-    <string name="change_theme_dialog_button_accept">Giri&#x15f;</string>
-    <string name="change_theme_dialog_button_cancel">Elatyr</string>
-    <string name="change_theme_default_switch_title">Ulgam mowzugyny ulany&#x148;</string>
-    <string name="change_theme_default_switch_subtitle">Enjam ulgamyny&#x148; mowzugyny ü&#xfd;tgedeni&#x148;izde programma mowzugy awtomatiki geçer</string>
-</resources>

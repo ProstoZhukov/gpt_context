@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <attr name="sbisWhatsNewTheme" format="reference"/>
-    <attr name="sbisWhatsNewTitleStyle" format="reference"/>
-    <attr name="sbisWhatsNewDescriptionStyle" format="reference"/>
-    <attr name="sbisWhatsNewHideImageBeforeWidth" format="integer"/>
-</resources>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="sbis_radio_group_circle_top_padding">12dp</dimen>
-    <dimen name="sbis_radio_group_default_top_padding">13dp</dimen>
-    <dimen name="sbis_radio_group_default_bottom_padding">12dp</dimen>
-    <dimen name="sbis_radio_group_border_circle_radius">10dp</dimen>
-    <dimen name="sbis_radio_group_selected_circle_radius">6dp</dimen>
-</resources>

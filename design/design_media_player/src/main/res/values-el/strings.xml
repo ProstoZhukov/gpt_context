@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_media_player_play_video_error">Πρέπει να τερματίσετε την κλήση για να δείτε το βίντεο</string>
-    <string name="design_media_player_play_audio_error">Πρέπει να τερματίσετε την κλήση για να ακούσετε το φωνητικό μήνυμα</string>
-</resources>

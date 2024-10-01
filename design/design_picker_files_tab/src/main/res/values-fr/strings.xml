@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="picker_files_tab_title">Des dossiers</string>
-    <string name="picker_files_tab_storage_title">Sélectionnez parmi les fichiers</string>
-    <string name="picker_files_tab_gallery_title">Galerie d\'appareils</string>
-    <string name="picker_files_tab_stub_desc">Sélectionnez et joignez des fichiers depuis votre appareil</string>
-</resources>

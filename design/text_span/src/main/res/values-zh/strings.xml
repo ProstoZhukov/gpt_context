@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="text_span_expand_text">扩张</string>
-    <string name="text_span_collapse_text">最小化</string>
-    <string name="text_span_task_text_ellipsis">……</string>
-    <string name="text_span_task_text_expand">\u0020更多</string>
-    <string name="text_span_task_text_collapse">\u0020最小化</string>
-    <string name="text_span_dialog_title_counter">…（+%d）</string>
-</resources>

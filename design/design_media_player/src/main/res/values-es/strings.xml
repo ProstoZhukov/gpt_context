@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_media_player_play_video_error">Debes finalizar la llamada para ver el mensaje de video.</string>
-    <string name="design_media_player_play_audio_error">Debes finalizar la llamada para escuchar el mensaje de voz.</string>
-</resources>

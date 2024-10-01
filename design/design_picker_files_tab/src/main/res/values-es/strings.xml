@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="picker_files_tab_title">Archivos</string>
-    <string name="picker_files_tab_storage_title">Seleccionar de archivos</string>
-    <string name="picker_files_tab_gallery_title">Galer&#xed;a de dispositivos</string>
-    <string name="picker_files_tab_stub_desc">Seleccione y adjunte archivos desde su dispositivo</string>
-</resources>

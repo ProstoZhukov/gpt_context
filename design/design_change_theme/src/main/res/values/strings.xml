@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="change_theme_item_title">Design theme</string>
-    <string name="change_theme_dialog_title">To apply a new design theme, you need to restart the application</string>
-    <string name="change_theme_dialog_button_accept">Apply</string>
-    <string name="change_theme_dialog_button_cancel">Cancel</string>
-    <string name="change_theme_default_switch_title">Use system theme</string>
-    <string name="change_theme_default_switch_subtitle">The app theme will switch automatically when you change the device system theme</string>
-</resources>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="selected_items">Selected items: %s</string>
-    <string name="selection_cancelled">Selection cancelled</string>
-</resources>

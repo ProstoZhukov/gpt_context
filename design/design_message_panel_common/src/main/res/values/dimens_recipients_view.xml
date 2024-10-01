@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="design_message_panel_recipients_panel_height">30dp</dimen>
-    <dimen name="design_message_panel_recipients_clear_button_width">42dp</dimen>
-    <dimen name="design_message_panel_recipients_add_button_padding_top">7dp</dimen>
-    <dimen name="design_message_panel_recipients_text_padding_top">9dp</dimen>
-</resources>

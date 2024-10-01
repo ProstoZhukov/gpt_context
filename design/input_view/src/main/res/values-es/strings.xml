@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="access_code_input_view_title">Por favor ingrese los &#xfa;ltimos 4 d&#xed;gitos del n&#xfa;mero de teléfono</string>
-    <string name="date_input_view_validation_min_max_date">El valor debe ser mayor que %s y menor que %s</string>
-    <string name="date_input_view_validation_min_date">El valor debe ser mayor que %s</string>
-    <string name="date_input_view_validation_max_date">El valor debe ser menor que %s</string>
-    <string name="phone_input_view_placeholder_mobile_default">N&#xfa;mero de teléfono</string>
-    <string name="phone_input_view_ext_number">ext.</string>
-</resources>

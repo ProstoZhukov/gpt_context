@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <dimen name="bread_crumbs_view_home_icon_margin_end">12dp</dimen>
-    <dimen name="bread_crumbs_view_arrow_icon_padding_horizontal">3dp</dimen>
-    <dimen name="bread_crumbs_view_preview_padding_horizontal">12dp</dimen>
-    <dimen name="bread_crumbs_horizontal_margin">4dp</dimen>
-
-</resources>

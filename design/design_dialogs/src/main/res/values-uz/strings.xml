@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_dialogs_file_already_attached">Fayl allaqachon biriktirilgan</string>
-    <string name="design_dialogs_recipients_max_count_restriction">%d dan ortiq foydalanuvchini tanlay olmaysiz.</string>
-    <string name="design_dialogs_recipients_single_count_restriction">Siz bir nechta foydalanuvchini tanlay olmaysiz.</string>
-</resources>

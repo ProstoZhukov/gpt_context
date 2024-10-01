@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_media_player_play_audio_error">Дауыстық хабарламаны тыңдау үшін қоңырауды аяқтау керек</string>
-    <string name="design_media_player_play_video_error">Бейне хабарламаны көру үшін қоңырауды аяқтау керек.</string>
-</resources>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="retail_views_credit_payment_debt">债务</string>
-    <string name="retail_views_credit_payment_title">信用支付</string>
-    <string name="retail_views_credit_full_repayment_title">付清</string>
-</resources>

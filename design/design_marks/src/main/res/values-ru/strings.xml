@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_marks_top_title">Пометки</string>
-    <string name="design_marks_title_clear_label">Сбросить</string>
-    <string name="design_marks_title_important">Важно</string>
-    <string name="design_marks_title_plus">Плюс</string>
-</resources>

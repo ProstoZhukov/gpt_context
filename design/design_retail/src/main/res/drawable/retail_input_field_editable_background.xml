@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:ignore="ResourceName">
-    <solid android:color="?attr/retail_input_field_background_main_color"/>
-    <stroke
-        android:width="@dimen/retail_views_background_stroke_width"
-        android:color="?attr/retail_input_field_background_main_stroke_color"/>
-</shape>

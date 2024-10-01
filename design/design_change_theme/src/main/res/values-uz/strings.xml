@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="change_theme_item_title">Mavzu_mavzuni_sarlavhasini o\'zgartirish</string>
-    <string name="change_theme_dialog_title">Mavzuni_dialog_sarlavhasini o\'zgartirish</string>
-    <string name="change_theme_dialog_button_accept">Qo\'llash</string>
-    <string name="change_theme_dialog_button_cancel">Bekor qilish</string>
-    <string name="change_theme_default_switch_title">Tizim mavzusidan foydalaning</string>
-    <string name="change_theme_default_switch_subtitle">Qurilmaning tizim mavzusi o\'zgarganda ilova mavzusi avtomatik ravishda almashtiriladi</string>
-</resources>

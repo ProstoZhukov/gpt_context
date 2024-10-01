@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- ExpandableTextView -->
-    <color name="text_span_expandable_text_view_default_button_color">@color/palette_color_blue0</color>
-</resources>

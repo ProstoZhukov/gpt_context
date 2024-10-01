@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_dialogs_recipients_max_count_restriction">No puedes seleccionar m&#xe1;s de %d usuarios.</string>
-    <string name="design_dialogs_recipients_single_count_restriction">No puedes seleccionar m&#xe1;s de un usuario.</string>
-    <string name="design_dialogs_file_already_attached">El archivo ya est&#xe1; adjunto</string>
-</resources>

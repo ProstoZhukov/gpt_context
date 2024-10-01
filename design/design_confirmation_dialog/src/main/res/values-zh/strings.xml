@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_confirmation_dialog_button_yes">是的</string>
-    <string name="design_confirmation_dialog_button_no">不</string>
-    <string name="design_confirmation_dialog_button_cancel">取消</string>
-    <string name="design_confirmation_dialog_button_ok">OK</string>
-</resources>

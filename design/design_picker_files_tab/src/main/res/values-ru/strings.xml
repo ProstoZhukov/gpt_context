@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="picker_files_tab_title">Файлы</string>
-    <string name="picker_files_tab_storage_title">Выбрать из файлов</string>
-    <string name="picker_files_tab_gallery_title">Галерея устройства</string>
-    <string name="picker_files_tab_stub_desc">Выберите и прикрепите файлы с вашего устройства</string>
-</resources>

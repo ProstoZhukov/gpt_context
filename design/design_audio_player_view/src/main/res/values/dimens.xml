@@ -1,8 +1,0 @@
-<resources>
-
-    <!-- Аудио сообщение -->
-    <dimen name="design_audio_message_view_expand_recognized_text_click_area_size">38dp</dimen>
-    <dimen name="design_audio_message_view_smile_padding_end">3dp</dimen>
-    <dimen name="design_audio_message_view_smile_translation_x">1dp</dimen>
-
-</resources>

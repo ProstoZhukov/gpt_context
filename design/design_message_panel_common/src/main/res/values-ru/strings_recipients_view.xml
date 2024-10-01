@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_message_panel_recipients_for_all_members">Всем участникам</string>
-    <string name="design_message_panel_recipients_add_new_for_conversations">Добавьте еще адресата…</string>
-    <string name="design_message_panel_recipients_add_new_for_documents">Добавьте адресата…</string>
-    <string name="design_message_panel_recipients_add_new_for_comments">Добавьте адресата, чтобы написать лично</string>
-</resources>

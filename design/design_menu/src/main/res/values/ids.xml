@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="menu_item_root" type="id"/>
-    <item name="menu_item_marker" type="id"/>
-    <item name="menu_item_icon" type="id"/>
-    <item name="menu_item_title" type="id"/>
-    <item name="menu_item_comment" type="id"/>
-    <item name="menu_item_icon_sub_menu_arrow" type="id"/>
-</resources>

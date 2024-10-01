@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="design_person_suggest_photo_padding">4dp</dimen>
-    <dimen name="design_person_suggest_name_padding_start">4dp</dimen>
-    <dimen name="design_person_suggest_name_text_size">18dp</dimen>
-    <dimen name="design_person_suggest_clear_button_icon_size">12dp</dimen>
-    <dimen name="design_person_suggest_clear_button_padding">8dp</dimen>
-</resources>

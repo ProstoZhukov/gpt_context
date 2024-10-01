@@ -1,5 +1,0 @@
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="@color/palette_color_white1" android:state_enabled="true" android:state_pressed="true" />
-    <item android:color="@color/palette_colorHeader" android:state_enabled="true"/>
-    <item android:color="@color/palette_alpha_color_black2" />
-</selector>

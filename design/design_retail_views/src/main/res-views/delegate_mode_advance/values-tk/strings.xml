@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="retail_views_advance_title">Ö&#x148;ünden tölenen çykdajylar</string>
-    <string name="retail_views_advance_menu_bill">Barla&#x148;</string>
-    <string name="retail_views_advance_menu_expenses">Gü&#xfd;menje çykdajylary</string>
-    <string name="retail_views_advance_menu_certificate">&#x15e;ahadatnama</string>
-    <string name="retail_views_advance_menu_commentary">Teswir</string>
-</resources>

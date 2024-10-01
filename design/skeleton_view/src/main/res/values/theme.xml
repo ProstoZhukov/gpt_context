@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Тема по умолчанию (светлая) для компонента скелетной анимации -->
-    <style name="SkeletonViewDefaultTheme">
-        <item name="SkeletonView_mask_color">@color/palette_alpha_color_black1</item>
-        <item name="SkeletonView_shimmer_сolor">@color/palette_alpha_color_black2</item>
-    </style>
-</resources>

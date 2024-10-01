@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="change_theme_item_title">设计主题</string>
-    <string name="change_theme_dialog_title">要应用新的设计主题，您需要重新启动应用程序</string>
-    <string name="change_theme_dialog_button_accept">申请</string>
-    <string name="change_theme_dialog_button_cancel">取消</string>
-    <string name="change_theme_default_switch_title">使用系统主题</string>
-    <string name="change_theme_default_switch_subtitle">当您更改设备系统主题时，应用程序主题将自动切换</string>
-</resources>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="hall_scheme_row_number">第 %s 行</string>
-    <string name="hall_scheme_assignee_i">我</string>
-    <string name="hall_scheme_table_occupied_for_user">忙碌的</string>
-</resources>

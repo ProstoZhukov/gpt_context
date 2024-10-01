@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <attr name="tabPanelTheme" format="reference"/>
-    <declare-styleable name="TabPanelView">
-        <attr name="TabPanelView_itemTitleMaxWidth" format="dimension|reference"/>
-    </declare-styleable>
-</resources>

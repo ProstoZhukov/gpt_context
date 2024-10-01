@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="retail_views_advance_title">Аванс</string>
-    <string name="retail_views_advance_menu_bill">Шот</string>
-    <string name="retail_views_advance_menu_expenses">Өкілдік шығындар</string>
-    <string name="retail_views_advance_menu_certificate">Сертификат</string>
-    <string name="retail_views_advance_menu_commentary">Түсініктеме</string>
-</resources>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><!--Значения размеров были пересчитаны с помощью DimensRecalculator.kt с коэффициентом 0.6151113--><resources>
-
-    <!-- Отрицательный отступ, для View, которые должны выходить за пределы родителя.   -->
-    <dimen name="retail_views_extra_small_padding_negative">-2dp</dimen>
-    <dimen name="retail_views_context_menu_width">250dp</dimen>
-
-</resources>

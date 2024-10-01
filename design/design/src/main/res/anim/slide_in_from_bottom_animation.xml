@@ -1,7 +1,0 @@
-﻿<set xmlns:android="http://schemas.android.com/apk/res/android">
-    <translate
-        android:duration="@integer/animation_contact_selector_duration"
-        android:fromYDelta="100%p"
-        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
-        android:toYDelta="0"/>
-</set>

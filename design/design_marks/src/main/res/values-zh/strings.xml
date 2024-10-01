@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="design_marks_top_title">分数</string>
-    <string name="design_marks_title_clear_label">清除</string>
-    <string name="design_marks_title_important">重要的</string>
-    <string name="design_marks_title_plus">加</string>
-</resources>

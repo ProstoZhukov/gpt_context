@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!--  Умышленное использование не глобальной переменной.             -->
-    <!--  Логотип не должен изменяться из-за изменения линеек размеров.  -->
-    <dimen name="sbis_logo_view_default_icon_text_offset">3dp</dimen>
-
-</resources>

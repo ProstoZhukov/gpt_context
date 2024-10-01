@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="access_code_input_view_title">Telefon belgi&#x148;izi&#x148; so&#x148;ky 4 belgisini girizi&#x148;</string>
-    <string name="date_input_view_validation_min_max_date">Bahasy% s-den uly we% s-den pes bolmaly</string>
-    <string name="date_input_view_validation_min_date">Bahasy% s-den uly bolmaly</string>
-    <string name="date_input_view_validation_max_date">Bahasy% s-den pes bolmaly</string>
-    <string name="phone_input_view_placeholder_mobile_default">Phone</string>
-    <string name="phone_input_view_ext_number">ext.</string>
-</resources>

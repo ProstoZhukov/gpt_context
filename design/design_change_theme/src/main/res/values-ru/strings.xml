@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="change_theme_item_title">Тема оформления</string>
-    <string name="change_theme_dialog_title">Для применения новой темы оформления требуется перезапустить приложение</string>
-    <string name="change_theme_dialog_button_accept">Применить</string>
-    <string name="change_theme_dialog_button_cancel">Отмена</string>
-    <string name="change_theme_default_switch_title">Использовать системную тему</string>
-    <string name="change_theme_default_switch_subtitle">Тема приложения будет переключаться автоматически при изменении системной темы устройства</string>
-</resources>

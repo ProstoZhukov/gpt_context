@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.tensor.sbis.design.buttons.SbisRoundButton xmlns:android="http://schemas.android.com/apk/res/android"
-    style="?retailViewsPaymentViewSecondaryRoundButton"
-    android:layout_width="wrap_content"
-    android:layout_height="?inlineHeight_m"
-    android:layout_marginEnd="?offset_2xs"/>

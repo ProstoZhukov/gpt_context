@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="access_code_input_view_title">请输入电话号码的后4位数字</string>
-    <string name="date_input_view_validation_min_max_date">值应大于 %s 并小于 %s</string>
-    <string name="date_input_view_validation_min_date">值应大于 %s</string>
-    <string name="date_input_view_validation_max_date">值应小于 %s</string>
-    <string name="phone_input_view_placeholder_mobile_default">电话号码</string>
-    <string name="phone_input_view_ext_number">分机。</string>
-</resources>

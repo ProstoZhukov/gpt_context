@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="retail_views_advance_title">进步</string>
-    <string name="retail_views_advance_menu_bill">收据</string>
-    <string name="retail_views_advance_menu_expenses">代表费用</string>
-    <string name="retail_views_advance_menu_certificate">证书</string>
-    <string name="retail_views_advance_menu_commentary">评论</string>
-</resources>

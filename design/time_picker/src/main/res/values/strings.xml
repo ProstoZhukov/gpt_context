@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="time_picker_hour_label_pattern">%02d : 00</string>
-</resources>

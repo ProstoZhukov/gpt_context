@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Атрибут для переопределения светлого стиля прозрачности -->
-    <attr name="sbisTranslucentButtonLightTheme" format="reference"/>
-    <!-- Атрибут для переопределения темного стиля прозрачности -->
-    <attr name="sbisTranslucentButtonDarkTheme" format="reference"/>
-</resources>

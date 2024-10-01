@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/palette_colorMessage"/>
-    <stroke
-        android:width="2dp"
-        android:color="#587AB0"/>
-    <corners
-        android:radius="@dimen/design_view_ext_floating_button_corner_radius"/>
-</shape>
