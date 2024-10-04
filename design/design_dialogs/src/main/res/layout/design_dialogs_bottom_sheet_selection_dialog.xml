@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:viewBindingIgnore="true">
+
+    <LinearLayout
+        android:id="@+id/design_dialogs_close_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popup_window_min_top_offset"
+        android:clickable="true"
+        android:gravity="end|bottom"
+        tools:ignore="KeyboardInaccessibleWidget,UseCompoundDrawables">
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/design_dialogs_close_text"
+            style="@style/BoldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_marginEnd="@dimen/default_content_padding"
+            android:layout_marginRight="@dimen/default_content_padding"
+            android:gravity="center_vertical"
+            android:text="@string/design_popup_window_close_button"
+            android:textColor="@color/palette_color_white1"
+            android:textSize="@dimen/size_body1_scaleOn"/>
+
+        <ImageView
+            android:id="@+id/design_dialogs_close_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_marginEnd="@dimen/default_content_padding"
+            android:layout_marginRight="@dimen/default_content_padding"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_close_white_24dp"
+            android:textSize="@dimen/size_title2_scaleOn"/>
+
+    </LinearLayout>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/design_dialogs_title"
+        style="@style/RegularStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/palette_color_white6"
+        android:gravity="center"
+        android:textColor="@color/palette_alpha_color_black6"
+        android:textSize="@dimen/size_body1_scaleOn"
+        tools:text="Title"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/palette_color_white1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        tools:listitem="@layout/design_dialogs_bottom_sheet_selection_item"/>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Базовый стиль для BaseInputView -->
+    <style name="BaseInputViewTheme">
+        <item name="inputView_isAccent">true</item>
+        <item name="inputView_placeholderTextColor">?placeholderColorInputText</item>
+        <item name="inputView_titleTextColor">?labelTextColor</item>
+        <item name="inputView_titleTextColorAccent">?labelTextColor</item>
+        <item name="inputView_titleTextSize">?fontSize_3xs_scaleOn</item>
+        <item name="inputView_titleTextSizeAccent">?fontSize_xs_scaleOn</item>
+        <item name="inputView_valueColor">?textColor</item>
+        <item name="inputView_valueColorHighlight">?secondaryBorderColor</item>
+        <item name="inputView_valueSize">?fontSize_m_scaleOn</item>
+        <item name="inputView_validationTextSize">?fontSize_3xs_scaleOn</item>
+        <item name="inputView_validationTextSizeAccent">?fontSize_xs_scaleOn</item>
+        <item name="inputView_validationDefaultColor">?unaccentedBorderColor</item>
+        <item name="inputView_validationTextDefaultColor">?unaccentedTextColor</item>
+        <item name="inputView_validationDefaultColorReadOnly">?readonlyBorderColor</item>
+        <item name="inputView_validationErrorColor">?dangerBorderColor</item>
+        <item name="inputView_validationTextErrorColor">?dangerTextColor</item>
+        <item name="inputView_validationWarningColor">?warningBorderColor</item>
+        <item name="inputView_validationTextWarningColor">?warningTextColor</item>
+        <item name="inputView_validationSuccessColor">?successBorderColor</item>
+        <item name="inputView_validationTextSuccessColor">?successTextColor</item>
+        <item name="inputView_iconColor">?unaccentedIconColor</item>
+        <item name="inputView_iconColorAccent">?labelContrastTextColor</item>
+        <item name="inputView_clearColor">?unaccentedIconColor</item>
+        <item name="inputView_progressColor">?primaryIconColor</item>
+        <item name="inputView_bottomOffsetUnderline">?offset_s</item>
+        <item name="inputView_validationUnderlineSize">?borderThickness_s</item>
+        <item name="inputView_validationUnderlineSizeFocus">?borderThickness_m</item>
+        <!-- Цвет капелек и курсора -->
+        <item name="colorControlActivated">?secondaryBorderColor</item>
+
+    </style>
+
+    <!-- Стиль для многострочных полей MultilineInputView -->
+    <style name="MultilineInputViewTheme" parent="BaseInputViewTheme"/>
+
+    <!-- Стиль для однострочных полей TextInputView -->
+    <style name="TextInputViewTheme" parent="BaseInputViewTheme">
+        <item name="inputView_linkTextColor">?linkTextColor</item>
+    </style>
+
+    <!-- Стиль для однострочных полей ввода чисел NumberInputView -->
+    <style name="NumberInputViewTheme" parent="TextInputViewTheme"/>
+
+    <!-- Стиль для однострочных полей ввода пароля PasswordInputView -->
+    <style name="PasswordInputViewTheme" parent="TextInputViewTheme"/>
+
+    <!-- Стиль для однострочных полей выбора значения ValueSelectionInputView -->
+    <style name="ValueSelectionInputViewTheme" parent="TextInputViewTheme"/>
+
+    <!-- Стиль для однострочных полей ввода денег MoneyInputView -->
+    <style name="MoneyInputViewTheme" parent="TextInputViewTheme">
+        <item name="inputView_moneyColor">?secondaryTextColor</item>
+        <item name="inputView_moneySize">?fontSize_4xl_scaleOn</item>
+        <item name="inputView_fractionSize">?fontSize_xl_scaleOn</item>
+    </style>
+
+    <!-- Стиль для однострочных полей ввода с маской MaskInputView -->
+    <style name="MaskInputViewTheme" parent="TextInputViewTheme"/>
+
+    <!-- Стиль для однострочных полей ввода номера телефона PhoneInputView -->
+    <style name="PhoneInputViewTheme" parent="MaskInputViewTheme"/>
+
+    <!-- Стиль для однострочных полей ввода номера телефона PhoneInputView -->
+    <style name="AccessCodeInputViewTheme" parent="TextInputViewTheme"/>
+
+    <!-- Стиль для однострочных полей ввода даты-времени DateInputView -->
+    <style name="DateInputViewTheme" parent="MaskInputViewTheme"/>
+</resources>

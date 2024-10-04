@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wheel_time_picker_time_selection_date_and_time">Senesi we wagty</string>
+    <string name="wheel_time_picker_time_selection_start">Ba&#x15f;la</string>
+    <string name="wheel_time_picker_time_selection_duration">dowamlylygy</string>
+    <string name="wheel_time_picker_time_selection_duration_picker">Dowamlylygy</string>
+    <string name="wheel_time_picker_time_selection_selected_hint">Wagt görkezi&#x148;</string>
+    <string name="wheel_time_picker_time_selection_all_day">bütin gün</string>
+    <string name="wheel_time_picker_time_selection_end">Ahyry</string>
+    <string name="wheel_time_picker_picker_days">% 1 $ d gün</string>
+    <string name="wheel_time_picker_picker_hours">% 1 $ d sagat</string>
+    <string name="wheel_time_picker_picker_minutes">% 1 $ d min</string>
+    <plurals name="wheel_time_picker_plurals_days">
+        <item quantity="zero">% 1 $ d gün</item>
+        <item quantity="one">Günde% 1 $ d</item>
+        <item quantity="two">% 1 $ d gün</item>
+        <item quantity="few">% 1 $ d gün</item>
+        <item quantity="many">% 1 $ d gün</item>
+        <item quantity="other">% 1 $ d gün</item>
+    </plurals>
+    <plurals name="wheel_time_picker_plurals_hours">
+        <item quantity="zero">% 1 $ d sagat</item>
+        <item quantity="one">% 1 $ d sagat</item>
+        <item quantity="two">% 1 $ d sagat</item>
+        <item quantity="few">% 1 $ d sagat</item>
+        <item quantity="many">% 1 $ d sagat</item>
+        <item quantity="other">% 1 $ d sagat</item>
+    </plurals>
+    <plurals name="wheel_time_picker_plurals_minutes">
+        <item quantity="zero">% 1 $ d minut</item>
+        <item quantity="one">% 1 $ d minut</item>
+        <item quantity="two">% 1 $ d minut</item>
+        <item quantity="few">% 1 $ d minut</item>
+        <item quantity="many">% 1 $ d minut</item>
+        <item quantity="other">% 1 $ d minut</item>
+    </plurals>
+<string name="wheel_time_picker_time_selection_date">Senesi</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="calendarDateIconStyle" format="reference"/>
+    <!-- Атрибуты иконки календаря -->
+    <declare-styleable name="CalendarDateIcon">
+        <!-- Цвет числа -->
+        <attr name="CalendarDateIcon_textColor" format="color|reference"/>
+        <!-- Цвет выбранного числа-->
+        <attr name="CalendarDateIcon_selectedTextColor" format="color|reference"/>
+        <!-- Цвет иконки-->
+        <attr name="CalendarDateIcon_iconColor" format="color|reference"/>
+        <!-- Цвет выбранной иконки-->
+        <attr name="CalendarDateIcon_selectedIconColor" format="color|reference"/>
+    </declare-styleable>
+</resources>

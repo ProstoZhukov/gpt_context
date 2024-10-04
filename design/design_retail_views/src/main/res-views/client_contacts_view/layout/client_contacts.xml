@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="wrap_content"
+    tools:layout_width="match_parent"
+    tools:padding="16dp"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    tools:theme="@style/RetailViewsClientContactsViewStyle.Light">
+
+    <ru.tensor.sbis.design.view.input.text.TextInputView
+        android:id="@+id/retail_views_client_name_input_field"
+        android:layout_width="match_parent"
+        android:layout_height="?inlineHeight_xs"
+        app:inputView_placeholder="@string/retail_views_client_name_hint"
+        app:inputView_readOnly="true"
+        app:inputView_showPlaceholderAsTitle="true"
+        app:layout_constraintBottom_toBottomOf="@+id/retail_views_client_email_input_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retail_views_client_email_input_field"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/retail_views_send_receipt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?offset_m"
+        android:maxLines="1"
+        android:text="@string/retail_views_client_send_receipt_text"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="?fontSize_xs_scaleOff"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retail_views_client_name_input_field"
+        tools:visibility="visible"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/retail_views_client_phone_icon"
+        style="@style/RetailViewsClientContactsViewIcon"
+        android:text="@string/design_mobile_icon_mobile_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retail_views_client_phone_input_field"/>
+
+    <ru.tensor.sbis.design.view.input.mask.phone.PhoneInputView
+        android:id="@+id/retail_views_client_phone_input_field"
+        android:layout_width="0dp"
+        android:layout_height="?inlineHeight_xs"
+        android:layout_marginHorizontal="?offset_xs"
+        android:layout_marginTop="?offset_s"
+        app:inputView_placeholder="@string/retail_views_client_phone_hint"
+        app:inputView_showPlaceholderAsTitle="false"
+        app:layout_constraintEnd_toStartOf="@+id/retail_views_client_checkbox_phone_selected"
+        app:layout_constraintStart_toEndOf="@+id/retail_views_client_phone_icon"
+        app:layout_constraintTop_toBottomOf="@+id/retail_views_send_receipt_text"
+        app:layout_goneMarginEnd="0dp"/>
+
+    <ru.tensor.sbis.design.checkbox.SbisCheckboxView
+        android:id="@+id/retail_views_client_checkbox_phone_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/retail_views_client_phone_input_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retail_views_client_phone_input_field"
+        tools:visibility="visible"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/retail_views_client_email_icon"
+        style="@style/RetailViewsClientContactsViewIcon"
+        android:text="@string/design_mobile_icon_mail_filled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retail_views_client_email_input_field"/>
+
+    <ru.tensor.sbis.design.view.input.text.TextInputView
+        android:id="@+id/retail_views_client_email_input_field"
+        android:layout_width="0dp"
+        android:layout_height="?inlineHeight_xs"
+        android:layout_marginHorizontal="?offset_xs"
+        android:layout_marginTop="?offset_m"
+        app:inputView_placeholder="@string/retail_views_client_email_hint"
+        app:inputView_showPlaceholderAsTitle="false"
+        app:layout_constraintEnd_toStartOf="@+id/retail_views_client_checkbox_email_selected"
+        app:layout_constraintStart_toEndOf="@+id/retail_views_client_email_icon"
+        app:layout_constraintTop_toBottomOf="@+id/retail_views_client_phone_input_field"
+        app:layout_goneMarginEnd="0dp"/>
+
+    <ru.tensor.sbis.design.checkbox.SbisCheckboxView
+        android:id="@+id/retail_views_client_checkbox_email_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/retail_views_client_email_input_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retail_views_client_email_input_field"
+        tools:visibility="visible"/>
+
+    <ru.tensor.sbis.design.buttons.SbisButton
+        android:id="@+id/retail_views_save_button"
+        style="?retailViewsClientContactsViewSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="?inlineHeight_m"
+        android:layout_marginTop="?offset_2xl"
+        app:SbisButton_title="@string/retail_views_client_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retail_views_client_email_input_field"/>
+
+</merge>

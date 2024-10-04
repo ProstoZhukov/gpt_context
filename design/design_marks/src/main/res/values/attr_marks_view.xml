@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="marksComponentTheme" format="reference"/>
+
+    <attr name="marksComponentHeaderTheme" format="reference"/>
+
+    <attr name="marksComponentHeaderCheckBoxTheme" format="reference"/>
+
+    <attr name="marksComponentHeaderItemsHeight" format="dimension"/>
+    <attr name="marksComponentHeaderCancelButtonEndPadding" format="dimension"/>
+    <attr name="marksComponentElementHeight" format="dimension"/>
+    <attr name="marksComponentElementVerticalPadding" format="dimension"/>
+    <attr name="marksComponentIconSpaceStartPadding" format="dimension"/>
+    <attr name="marksComponentIconSpaceHeight" format="dimension"/>
+    <attr name="marksComponentIconSpaceWidth" format="dimension"/>
+    <attr name="marksComponentTitleSpaceStartPadding" format="dimension"/>
+    <attr name="marksComponentTitleSpaceEndPadding" format="dimension"/>
+    <attr name="marksComponentTitleSpaceHeight" format="dimension"/>
+    <attr name="marksComponentTitleFontSize" format="dimension"/>
+    <attr name="marksComponentTitleFontColor" format="color"/>
+    <attr name="marksComponentIconFontSize" format="dimension"/>
+    <attr name="marksComponentIconFontColor" format="color"/>
+    <attr name="marksComponentColorCircleSize" format="dimension"/>
+    <attr name="marksComponentMarkerWidth" format="dimension"/>
+    <attr name="marksComponentMarkerHeight" format="dimension"/>
+    <attr name="marksComponentMarkerBorderRadius" format="dimension"/>
+    <attr name="marksComponentMarkerColor" format="color"/>
+    <attr name="marksComponentCheckboxSpaceHeight" format="dimension"/>
+    <attr name="marksComponentCheckboxSpaceVerticalPadding" format="dimension"/>
+    <attr name="marksComponentCheckboxSpaceHorizontalPadding" format="dimension"/>
+
+</resources>

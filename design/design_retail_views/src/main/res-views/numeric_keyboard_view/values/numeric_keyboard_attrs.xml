@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Атрибуты компонента [NumericKeyboardCustomized]. -->
+    <declare-styleable name="RetailViewsNumericKeyboardCustomizedAttrs">
+        <!-- Установить тему с набором стилей для [NumericKeyboardCustomized]. -->
+        <attr name="retail_views_numeric_keyboard_theme_customized" format="reference"/>
+
+        <!-- Установить общий стиль для кнопок клавиатуры [NumericKeyboardCustomized]. -->
+        <attr name="retail_views_numeric_keyboard_button_style" format="reference"/>
+
+        <!-- Установить текст в левую нижнюю кнопку [для использования вне DataBinding'a]. -->
+        <attr name="retail_views_numeric_keyboard_extra_left_btn_title" format="reference|string"/>
+        <!-- Установить иконку в левую нижнюю кнопку [для использования вне DataBinding'a]. -->
+        <attr name="retail_views_numeric_keyboard_extra_left_btn_icon" format="reference|string"/>
+        <!-- Установить текст в правую нижнюю кнопку [для использования вне DataBinding'a]. -->
+        <attr name="retail_views_numeric_keyboard_extra_right_btn_title" format="reference|string"/>
+        <!-- Установить иконку в правую нижнюю кнопку [для использования вне DataBinding'a]. -->
+        <attr name="retail_views_numeric_keyboard_extra_right_btn_icon" format="reference|string"/>
+    </declare-styleable>
+
+</resources>

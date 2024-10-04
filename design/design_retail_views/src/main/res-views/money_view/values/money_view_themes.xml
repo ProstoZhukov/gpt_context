@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Темы компонента [MoneyView] -->
+    <style name="RetailViewsMoneyViewTheme.Light" parent="RetailViewsCommonTheme.Light">
+        <item name="retail_views_money_card_text_color">@color/retail_views_fragment_card_text_color_light</item>
+        <item name="retail_views_money_decimal_color">@color/retail_views_money_view_decimal_color_light</item>
+    </style>
+
+    <style name="RetailViewsMoneyViewTheme.Dark" parent="RetailViewsCommonTheme.Dark">
+        <item name="retail_views_money_card_text_color">@color/retail_views_fragment_card_text_color_dark</item>
+        <item name="retail_views_money_decimal_color">@color/retail_views_money_view_decimal_color_dark</item>
+    </style>
+
+</resources>

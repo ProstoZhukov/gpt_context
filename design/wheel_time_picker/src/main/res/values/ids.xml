@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="wheel_time_picker_time_selection_start_tab" type="id"/>
+    <item name="wheel_time_picker_time_selection_end_tab" type="id"/>
+    <item name="wheel_time_picker_time_selection_duration_tab" type="id"/>
+
+</resources>

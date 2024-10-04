@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_message_panel_recipients_for_all_members">To all participants</string>
+    <string name="design_message_panel_recipients_add_new_for_conversations">Add another recipient…</string>
+    <string name="design_message_panel_recipients_add_new_for_documents">Add recipient…</string>
+    <string name="design_message_panel_recipients_add_new_for_comments">Add a recipient to write in person</string>
+</resources>

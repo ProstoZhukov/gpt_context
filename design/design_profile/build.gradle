@@ -1,0 +1,53 @@
+import ru.tensor.gradle.subconfig.ktlint.KtLintConfig
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-kapt'
+
+submoduleConfig { cfg ->
+    cfg.enableDataBindingCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableKtLintCfg(KtLintConfig.KOTLIN_1_8_0)
+    cfg.enableTestCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.profile"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    resourcePrefix "design_profile_"
+}
+
+dependencies {
+    api project(':design_view_ext')
+    api project(':fresco_view')
+    api project(':plugin_struct')
+    api project(':design_custom_view_tools')
+    api project(':design_profile_decl')
+    implementation project(':design')
+    implementation project(':design_utils')
+    implementation project(':view_factory')
+    implementation project(':design_sbis_text_view')
+    implementation project(':person-decl')
+
+    implementation libs.timber
+
+    // AndroidX
+    implementation libs.android.appcompat
+    implementation libs.android.annotation
+
+    // Fresco image loading
+    implementation libs.android.view.fresco
+    implementation libs.android.view.fresco.animated.base
+
+    implementation libs.android.view.layout.constraintLayout
+
+    testImplementation project(':testing')
+}

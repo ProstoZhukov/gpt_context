@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Атрибут для определения темы компонента скелетной анимации в составе темы приложения -->
+    <attr name="skeletonViewTheme" format="reference"/>
+
+    <declare-styleable name="SkeletonViewStyle">
+        <!-- цвет маски для заполнения view (по умолчанию R.color.palette_alpha_color_black1) -->
+        <attr name="SkeletonView_mask_color" format="color"/>
+        <!-- радиус скругления углов у view маски (по умолчанию 4dp) -->
+        <attr name="SkeletonView_mask_corner_radius" format="dimension"/>
+        <!-- показывать или нет анимацию мерцания (по умолчанию - показывать) -->
+        <attr name="SkeletonView_show_shimmer" format="boolean"/>
+        <!-- цвет анимации мерцания (по умолчанию R.color.palette_alpha_color_black2) -->
+        <attr name="SkeletonView_shimmer_сolor" format="color"/>
+        <!-- длительность интервала анимации мерцания в миллисекундах (по умолчанию 2000 мс) -->
+        <attr name="SkeletonView_shimmer_duration" format="integer"/>
+        <!-- направление анимации мерцания (по умолчанию top_left_bottom_right) -->
+        <attr name="SkeletonView_shimmer_direction" format="enum">
+            <enum name="top_left_bottom_right" value="0"/>
+            <enum name="bottom_right_top_left" value="1"/>
+            <enum name="left_to_right" value="2"/>
+            <enum name="right_to_left" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

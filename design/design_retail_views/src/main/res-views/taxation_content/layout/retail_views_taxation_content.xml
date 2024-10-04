@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="ResourceName"
+    tools:theme="@style/LargeDarkTheme">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/retail_views_tax_system_name_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="?fontSize_s_scaleOff"
+        app:layout_constraintBottom_toTopOf="@+id/retail_views_tax_system_name_patent"
+        app:layout_constraintEnd_toStartOf="@+id/retail_views_total_sum_primary"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="ОСНО"
+        tools:textSize="50dp"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/retail_views_tax_system_name_patent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?offset_2xs"
+        android:text="@string/retail_views_patent_system"
+        android:textColor="?unaccentedTextColor"
+        android:textSize="?fontSize_s_scaleOff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/retail_views_tax_system_name_primary"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/retail_views_tax_system_name_primary"
+        app:layout_constraintTop_toBottomOf="@+id/retail_views_tax_system_name_primary"
+        tools:text="ПСНО"
+        tools:textSize="50dp"/>
+
+    <ru.tensor.sbis.design.retail_views.money_view.MoneyView
+        android:id="@+id/retail_views_total_sum_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_l"
+        android:ellipsize="none"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:textSize="?fontSize_s_scaleOff"
+        app:layout_constraintBaseline_toBaselineOf="@+id/retail_views_tax_system_name_primary"
+        app:layout_constraintBottom_toBottomOf="@+id/retail_views_tax_system_name_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/retail_views_tax_system_name_primary"
+        app:layout_constraintTop_toTopOf="@+id/retail_views_tax_system_name_primary"
+        app:retail_views_money_bottom_align="false"
+        app:retail_views_money_color_decimal="?retail_views_money_decimal_color"
+        app:retail_views_money_color_integer="?retail_views_title_text_color"
+        app:retail_views_money_size_decimal="?fontSize_s_scaleOff"
+        app:retail_views_money_size_integer="?fontSize_s_scaleOff"
+        tools:text="50000.90"
+        tools:textSize="50dp"/>
+
+    <ru.tensor.sbis.design.retail_views.money_view.MoneyView
+        android:id="@+id/retail_views_total_sum_patent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?offset_l"
+        android:ellipsize="none"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:textSize="?fontSize_s_scaleOff"
+        app:layout_constraintBaseline_toBaselineOf="@+id/retail_views_tax_system_name_patent"
+        app:layout_constraintBottom_toBottomOf="@+id/retail_views_tax_system_name_patent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/retail_views_tax_system_name_patent"
+        app:layout_constraintTop_toTopOf="@+id/retail_views_tax_system_name_patent"
+        app:retail_views_money_bottom_align="false"
+        app:retail_views_money_color_decimal="?retail_views_money_decimal_color"
+        app:retail_views_money_color_integer="?retail_views_title_text_color"
+        app:retail_views_money_size_decimal="?fontSize_s_scaleOff"
+        app:retail_views_money_size_integer="?fontSize_s_scaleOff"
+        tools:text="6200"
+        tools:textSize="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

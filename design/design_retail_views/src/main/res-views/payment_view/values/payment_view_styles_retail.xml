@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RetailViewsDiscountSumValue">
+        <item name="retail_views_money_size_integer">
+            ?fontSize_xs_scaleOff
+        </item>
+        <item name="retail_views_money_size_decimal">?fontSize_3xs_scaleOn</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">?fontSize_xs_scaleOff</item>
+        <item name="android:textColor">@color/palette_color_dark_green1</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="retail_views_money_color_decimal">@color/palette_color_dark_green1</item>
+        <item name="retail_views_money_color_integer">@color/palette_color_dark_green1</item>
+        <item name="retail_views_money_show_kopecka_if_zero">true</item>
+        <item name="retail_views_money_bottom_align">false</item>
+    </style>
+
+</resources>

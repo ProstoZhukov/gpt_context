@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScrollToTop">
+        <attr name="ScrollToTop_style" format="reference"/>
+        <attr name="overlayColor" format="color"/>
+        <attr name="title" format="string"/>
+        <attr name="rightText" format="string"/>
+        <attr name="rightDrawable" format="reference"/>
+        <attr name="rightTextVisible" format="boolean"/>
+        <attr name="rightDrawableVisible" format="boolean"/>
+        <attr name="rootView" format="reference"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="hasCustomView" format="boolean"/>
+        <attr name="hasElevation" format="boolean"/>
+        <attr name="arrowColor" format="color"/>
+    </declare-styleable>
+</resources>

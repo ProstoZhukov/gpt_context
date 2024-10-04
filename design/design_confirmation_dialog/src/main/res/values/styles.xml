@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ConfirmationDialog" parent="SbisContainer">
+        <item name="confirmationDialogMinButtonWidth">80dp</item>
+        <item name="confirmationDialogMarkerPrimaryColor">?brandColor</item>
+        <item name="confirmationDialogOffset">?offset_m</item>
+    </style>
+
+    <style name="ConfirmationDialogPrimaryButton" parent="SbisButtonDefaultPrimaryTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogSecondaryButton" parent="SbisButtonDefaultSecondaryTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogSuccessButton" parent="SbisButtonDefaultSuccessTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogUnaccentedButton" parent="SbisButtonDefaultUnaccentedTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogBonusButton" parent="SbisButtonDefaultBonusTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogDangerButton" parent="SbisButtonDefaultDangerTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogWarningButton" parent="SbisButtonDefaultWarningTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogInfoButton" parent="SbisButtonDefaultInfoTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogDefaultButton" parent="SbisButtonDefaultDefaultTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogNavigationButton" parent="SbisButtonDefaultNavigationTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogPaleButton" parent="SbisButtonDefaultPaleTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+    <style name="ConfirmationDialogBrandButton" parent="SbisButtonDefaultBrandTheme">
+        <item name="SbisButton_backgroundColor">?backgroundColorDialog</item>
+    </style>
+
+</resources>

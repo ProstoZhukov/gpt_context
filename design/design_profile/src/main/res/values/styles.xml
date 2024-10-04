@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Person list -->
+    <style name="DesignProfilePersonListItemStyle">
+        <item name="android:layout_width">@dimen/design_profile_person_list_item_size</item>
+        <item name="android:layout_height">@dimen/design_profile_person_list_item_size</item>
+        <item name="placeholderImage">@drawable/design_profile_user_dummy</item>
+        <item name="placeholderImageScaleType">fitCenter</item>
+    </style>
+
+    <style name="DesignProfilePersonListItemStyle.Circle">
+        <item name="android:background">@drawable/design_profile_circle_white</item>
+        <item name="roundAsCircle">true</item>
+    </style>
+
+    <style name="DesignProfilePersonListItemStyle.SuperEllipse">
+        <item name="android:background">@drawable/design_profile_super_ellipse_mask</item>
+    </style>
+
+    <style name="DesignProfilePersonViewDefaultStyle">
+        <item name="PersonView_initialsColor">?contrastTextColor</item>
+    </style>
+
+</resources>

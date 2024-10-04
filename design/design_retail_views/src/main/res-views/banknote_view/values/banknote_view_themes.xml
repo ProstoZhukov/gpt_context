@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Темы компонента [BanknoteViewCustomized] -->
+    <style name="RetailViewsBanknoteCustomizedTheme.RetailLight" parent="RetailViewsCommonTheme.Light">
+        <item name="retail_views_banknote_counter_background_color">@color/retail_views_banknote_counter_background_color_light</item>
+
+        <item name="retail_views_banknote_buttons_style">@style/RetailViewsBanknoteCustomized.Retail.Light</item>
+        <item name="retail_views_banknote_view_customized_text_color">@color/retail_views_banknote_view_customized_text_color_light</item>
+    </style>
+
+    <style name="RetailViewsBanknoteCustomizedTheme.RetailDark" parent="RetailViewsCommonTheme.Dark">
+        <item name="retail_views_banknote_buttons_style">@style/RetailViewsBanknoteCustomized.Retail.Dark</item>
+
+        <item name="retail_views_banknote_counter_background_color">@color/retail_views_banknote_counter_background_color_dark</item>
+        <item name="retail_views_banknote_view_customized_text_color">@color/retail_views_banknote_view_customized_text_color_dark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_message_panel_recorder_common_hint_animated_distance">98dp</dimen>
+    <dimen name="design_message_panel_recorder_common_hint_available_dx">4dp</dimen>
+    <dimen name="design_message_panel_recorder_common_hint_spacing_center_left">19dp</dimen>
+    <dimen name="design_message_panel_recorder_common_hint_min_spacing_start">30dp</dimen>
+    <dimen name="design_message_panel_recorder_common_hint_align_left_spacing_start">15dp</dimen>
+
+    <dimen name="design_message_panel_recorder_common_record_indicator_padding_top">14dp</dimen>
+
+    <dimen name="design_message_panel_recorder_common_record_button_first_center_x_align_end">66dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_button_second_center_x_align_end">106dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_button_center_y_align_bottom">22dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_button_size">70dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_button_horizontal_movement_distance">60dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_button_vertical_movement_distance">30dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_button_cancel_distance">30dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_button_cancel_animated_distance">40dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_button_lock_record_distance">30dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_button_lock_record_animated_distance">15dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_volume_indicator_min_size">78dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_volume_indicator_max_size">114dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_volume_pulse_radius_dx">2dp</dimen>
+
+    <dimen name="design_message_panel_recorder_common_record_lock_view_size">38dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_lock_view_elevation">3dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_lock_view_margin_horizontal">5dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_lock_view_min_spacing_bottom">86dp</dimen>
+    <dimen name="design_message_panel_recorder_common_record_lock_view_hide_distance">30dp</dimen>
+
+</resources>

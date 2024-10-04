@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Темы компонента [CardButton] -->
+    <style name="RetailViewsCardButtonTheme.Light" parent="RetailViewsCommonTheme.Light">
+        <item name="drawableSize">15dp</item>
+        <item name="drawableLeftTint">@color/palette_color_white1</item>
+        <item name="drawableRightTint">@color/palette_color_white1</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="android:textColor">@color/palette_color_white1</item>
+        <item name="android:textSize">?fontSize_2xl_scaleOff</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="cardCornerRadius">0.5dp</item>
+        <item name="cardElevation">?elevation_m</item>
+    </style>
+
+    <style name="RetailViewsCardButtonTheme.Dark" parent="RetailViewsCommonTheme.Dark">
+        <item name="drawableSize">15dp</item>
+        <item name="drawableLeftTint">@color/palette_color_white1</item>
+        <item name="drawableRightTint">@color/palette_color_white1</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="android:textColor">@color/palette_color_white1</item>
+        <item name="android:textSize">?fontSize_2xl_scaleOff</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="cardCornerRadius">0.5dp</item>
+        <item name="cardElevation">?elevation_m</item>
+    </style>
+
+</resources>

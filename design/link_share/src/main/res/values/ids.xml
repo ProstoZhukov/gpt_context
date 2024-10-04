@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sbis_link_share_base_item" type="id"/>
+    <item name="sbis_link_share_custom_block_title" type="id"/>
+    <item name="sbis_link_share_custom_block_line" type="id"/>
+</resources>

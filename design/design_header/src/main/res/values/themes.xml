@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SbisHeader">
+        <item name="ToolbarTabLayout_theme">@style/HeaderTabLayoutStyle</item>
+        <item name="SbisHeaderTitle_theme">@style/HeaderTitle</item>
+        <item name="SbisRoundButton_style">success</item>
+        <item name="SbisRoundButton_size">s</item>
+        <item name="SbisButton_size">s</item>
+        <item name="SbisHeaderTitle_height">?attr/inlineHeight_m</item>
+        <item name="SbisHeaderTitle_buttonOffset">?attr/offset_m</item>
+        <item name="android:background">?backgroundColor</item>
+    </style>
+
+    <style name="HeaderTabLayoutStyle" parent="ToolbarTabLayoutTheme">
+        <item name="ToolbarTabLayout_titleStyle">@style/ContainerHeaderTabStile</item>
+        <item name="ToolbarTabLayout_indicatorStyle">@style/ContainerHeaderIndicator</item>
+    </style>
+
+</resources>

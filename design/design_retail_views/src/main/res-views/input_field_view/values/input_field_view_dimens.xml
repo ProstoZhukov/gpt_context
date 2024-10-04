@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><!--Значения размеров были пересчитаны с помощью DimensRecalculator.kt с коэффициентом 0.6151113--><resources>
+    <dimen name="retail_views_background_stroke_width">0.5dp</dimen>
+
+    <dimen name="retail_views_fading_edge_length">20dp</dimen>
+</resources>

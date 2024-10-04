@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.design.selection.ui.view.selectionpreview.vm.SelectionSuggestionMoreItemVm"/>
+    </data>
+
+    <FrameLayout
+        style="?attr/SelectionPreviewView_itemBodyStyle"
+        android:id="@+id/selection_suggestion_more_item_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:onClick="@{viewModel.onClick}"
+        tools:theme="@style/SelectionPreviewView">
+
+        <TextView
+            android:id="@+id/title"
+            style="?attr/SelectionPreviewView_moreTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@{viewModel.title}"/>
+
+    </FrameLayout>
+</layout>

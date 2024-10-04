@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_view"
+    android:layout_width="@dimen/wheel_time_picker_dialog_width"
+    android:layout_height="@dimen/wheel_time_picker_dialog_height"
+    android:background="?backgroundColor">
+
+    <View
+        android:id="@+id/period_picker_left_oval"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/wheel_time_picker_time_select_bkg"
+        app:layout_constraintBottom_toTopOf="@id/bottom_gradient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_gradient"
+        app:layout_constraintWidth_percent=".45"/>
+    <View
+        android:id="@+id/period_picker_right_oval"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/wheel_time_picker_time_select_bkg"
+        app:layout_constraintBottom_toTopOf="@id/bottom_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_gradient"
+        app:layout_constraintWidth_percent=".45"/>
+
+    <View
+        android:id="@+id/period_picker_single_oval"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/wheel_time_picker_time_select_bkg"
+        app:layout_constraintBottom_toTopOf="@id/bottom_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_gradient"/>
+
+    <ViewFlipper
+        android:id="@+id/period_picker_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?inlineHeight_m">
+
+        <include
+            android:id="@+id/start_time_selection"
+            layout="@layout/wheel_time_picker_start_time_selection"/>
+
+        <include
+            android:id="@+id/period_selection"
+            layout="@layout/wheel_time_picker_period_selection"/>
+
+        <include
+            android:id="@+id/date_only_selection"
+            layout="@layout/wheel_time_picker_start_date_only_selection"/>
+
+    </ViewFlipper>
+
+    <View
+        android:id="@+id/top_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/wheel_time_picker_bottom_selector_gradient"
+        android:rotation="180"
+        app:layout_constraintTop_toTopOf="@id/period_picker_flipper"/>
+
+    <View
+        android:id="@+id/bottom_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/wheel_time_picker_bottom_selector_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

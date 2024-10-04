@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Не удалять! Ресурсы необходимые для инициализации шрифтов при работе с Iconics -->
+<resources>
+    <string name="define_font_CbucIcon" translatable="false">ru.tensor.sbis.design.CbucIcon</string>
+    <string name="define_font_SbisMobileIcon" translatable="false">ru.tensor.sbis.design.SbisMobileIcon</string>
+</resources>

@@ -1,0 +1,75 @@
+import ru.tensor.gradle.subconfig.ktlint.KtLintConfig
+
+apply plugin: 'com.android.library'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+
+android {
+    namespace "ru.tensor.sbis.design.retail_views"
+
+    resourcePrefix("retail_views_")
+
+    sourceSets {
+        main.res.srcDirs = [
+                'src/main/res',
+                'src/main/res-views/card_button_view',
+                'src/main/res-views/back_button',
+                'src/main/res-views/bonus_button_view',
+                'src/main/res-views/banknote_view',
+                'src/main/res-views/numeric_keyboard_view',
+                'src/main/res-views/tooltip_view',
+                'src/main/res-views/money_view',
+                'src/main/res-views/shadow_scroll_view',
+                'src/main/res-views/input_field_view',
+                'src/main/res-views/client_contacts_view',
+                'src/main/res-views/double_button',
+                'src/main/res-views/money_input_field',
+                'src/main/res-views/taxation_content',
+                'src/main/res-views/payment_view',
+                'src/main/res-views/delegate_mode_deposit_withdrawal',
+                'src/main/res-views/delegate_mode_payment',
+                'src/main/res-views/delegate_mode_advance',
+                'src/main/res-views/delegate_mode_debt_credit',
+                'src/main/res-views/delegate_mode_refund_payment'
+        ]
+    }
+}
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableRegionSplit()
+    cfg.enableViewBindingCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableKtLintCfg(KtLintConfig.KOTLIN_1_8_0)
+}
+
+dependencies {
+    /* Имеется публичное API связанное с Retail моделями. */
+    api project(':design_retail_models')
+
+    /* View элементы имеют в своем составе общий кнопки. */
+    api project(':design_buttons')
+    api project(':design_checkbox')
+    api project(':design_period_picker')
+    api project(':design_sbis_text_view')
+
+    implementation project(':design')
+    implementation project(':design_utils')
+    implementation project(':text_span')
+    implementation project(':context_menu')
+    implementation project(':input_view')
+
+    /* Набор утилит для работы с View. */
+    implementation libs.android.core.ktx
+}
+
+/* Регион-специфичные настройки модуля. */
+regionConfig {
+    regions {
+        ru
+        kz
+    }
+}

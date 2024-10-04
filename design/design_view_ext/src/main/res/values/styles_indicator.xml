@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SbisIndicatorStyle">
+        <item name="SbisIndicator_unselectedDotColor">@color/palette_color_white1</item>
+        <item name="SbisIndicator_selectedDotColor">?primaryColor</item>
+    </style>
+</resources>

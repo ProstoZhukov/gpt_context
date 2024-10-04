@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retail_views_credit_payment_debt">Deuda</string>
+    <string name="retail_views_credit_payment_title">Pago de crédito</string>
+    <string name="retail_views_credit_full_repayment_title">Saldar</string>
+</resources>

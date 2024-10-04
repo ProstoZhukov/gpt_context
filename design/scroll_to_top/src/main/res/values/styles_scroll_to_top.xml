@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ScrollToTopStyle">
+        <item name="android:background">@color/color_primary</item>
+        <item name="titleTextColor">@color/palette_color_white1</item>
+        <item name="strokeColor">@color/color_primary</item>
+        <item name="arrowColor">@color/palette_color_gray9</item>
+    </style>
+
+    <style name="ScrollToTopStyle.White">
+        <item name="android:background">@color/palette_color_white1</item>
+        <item name="titleTextColor">@color/palette_color_black1</item>
+        <item name="strokeColor">@color/palette_color_white1</item>
+    </style>
+</resources>

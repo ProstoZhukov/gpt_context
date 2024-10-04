@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_dialogs_recipients_max_count_restriction">Δεν μπορείτε να επιλέξετε περισσότερους από %d χρήστες.</string>
+    <string name="design_dialogs_recipients_single_count_restriction">Δεν μπορείτε να επιλέξετε περισσότερους από έναν χρήστες.</string>
+    <string name="design_dialogs_file_already_attached">Το αρχείο είναι ήδη συνημμένο</string>
+</resources>

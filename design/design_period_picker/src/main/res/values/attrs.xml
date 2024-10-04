@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Атрибут для определения темы компонента выбор периода в составе темы приложения -->
+    <attr name="sbisPeriodPickerViewTheme" format="reference"/>
+
+    <declare-styleable name="DayView">
+        <!-- Размер текста дня в календаре -->
+        <attr name="DayView_textSize" format="dimension|reference"/>
+        <!-- Размер текста счётчика -->
+        <attr name="DayView_counterTextSize" format="dimension|reference"/>
+        <!-- Отступ для счётчика -->
+        <attr name="DayView_counterMargin" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MonthLabel">
+        <!-- Размер текста -->
+        <attr name="MonthLabel_textSize" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="HeaderLabel">
+        <!-- Размер текста -->
+        <attr name="HeaderLabel_textSize" format="dimension|reference"/>
+        <!-- Высота для дней недели -->
+        <attr name="HeaderLabel_weekDaysHeight" format="dimension|reference"/>
+        <!-- Высота для заголовков месяцев -->
+        <attr name="HeaderLabel_monthLabelHeight" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="QuantumLabel">
+        <!-- Высота кванта квартала -->
+        <attr name="QuantumLabel_quarterHeight" format="dimension|reference"/>
+        <!-- Высота кванта полугодия -->
+        <attr name="QuantumLabel_halfYearHeight" format="dimension|reference"/>
+        <!-- Отступы -->
+        <attr name="QuantumLabel_margin" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="BackgroundDrawable">
+        <attr name="BackgroundDrawable_cornerRadius" format="dimension|reference"/>
+        <attr name="BackgroundDrawable_compactCornerRadius" format="dimension|reference"/>
+        <attr name="BackgroundDrawable_borderRadius" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SelectionView">
+        <attr name="SelectionView_margin" format="dimension|reference"/>
+    </declare-styleable>
+
+</resources>

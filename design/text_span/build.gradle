@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-kapt'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableDataBindingCfg()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.text_span"
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':design_utils')
+
+    // Test
+    testImplementation project(':testing')
+}

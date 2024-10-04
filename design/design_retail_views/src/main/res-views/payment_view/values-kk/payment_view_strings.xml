@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retail_views_payment_no_change_text">Өзгеріс жоқ</string>
+    <string name="retail_views_payment_change_text">Өзгерту</string>
+    <string name="retail_views_payment_shortfall_text">Тағы</string>
+    <string name="retail_views_payment_overpayment_text">Артық төлем</string>
+    <string name="retail_views_payment_card_btn_text">Қартамен</string>
+    <string name="retail_views_payment_input_field_hint">Қолма-қол ақша</string>
+    <string name="retail_views_payment_mix_btn_title">Аралас төлем</string>
+    <string name="retail_views_payment_mix_btn_title_short">Аралас</string>
+    <string name="retail_views_patent_system">PSNO</string>
+    <string name="retail_views_payment_check_btn_text">Чек</string>
+    <string name="retail_views_payment_dialog_mixed_payment_tooltip_text">Төлем үшін карта мен қолма-қол ақша өрісін толтырыңыз</string>
+    <string name="retail_views_payment_client_btn_text">Клиент</string>
+    <string name="retail_views_payment_comment_btn_text">Түсіндірме</string>
+    <string name="retail_views_payment_bill_btn_text">Шот</string>
+    <string name="retail_views_open_saby_retail_app">Кассаға барыңыз</string>
+    <string name="retail_views_payment_type_payment_text">Есептеу</string>
+    <string name="retail_views_payment_type_advance_text">Аванс</string>
+    <string name="retail_views_payment_type_non_fiscal">Фискалдық емес</string>
+    <string name="retail_views_payment_type_prepayment_text">Алдын ала төлем</string>
+    <string name="retail_views_payment_type_credit_text">Кредит</string>
+    <string name="retail_views_payment_type_on_credit_text">Несиеге</string>
+    <string name="retail_views_payment_type_refund_text">Қайтарым</string>
+</resources>

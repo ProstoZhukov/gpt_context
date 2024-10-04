@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName"
+    tools:layout_height="?inlineHeight_xs"
+    tools:parentTag="android.widget.FrameLayout"
+    tools:theme="@style/RetailViewsMoneyInputEditableFieldStyle.Retail">
+
+    <EditText
+        android:id="@+id/editable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/retail_views_background_stroke_width"
+        android:background="@null"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:includeFontPadding="true"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:nestedScrollingEnabled="false"
+        android:paddingVertical="?offset_2xs"
+        android:scrollbars="none"
+        android:textColor="@color/money_input_editable_field_text_color"
+        android:textColorHint="?attr/retail_views_money_input_editable_field_hintColor"
+        android:textSize="?fontSize_m_scaleOff"
+        tools:ignore="LabelFor,SpUsage"
+        tools:text="123.45"/>
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/retail_views_background_stroke_width"
+        android:layout_gravity="bottom"
+        android:background="?attr/retail_views_money_input_editable_field_bottomStrokeColor"/>
+
+</merge>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+    <style name="RetailLightTheme" parent="RetailLightAppTheme">
+        <item name="sbisContainerTheme">@style/SbisContainer.Retail</item>
+        <item name="retail_main_toolbar_color">@color/retail_light_main_toolbar_color</item>
+        <item name="retail_main_toolbar_button_color">@color/retail_light_main_toolbar_button_color</item>
+        <item name="retail_main_toolbar_text_color">@color/retail_light_main_toolbar_text_color</item>
+        <item name="retail_main_background_color">@color/retail_light_main_background_color</item>
+        <item name="retail_main_background_icon_color">@color/retail_light_main_background_icon_color</item>
+        <item name="retail_main_background_text_color">@color/retail_light_main_background_text_color</item>
+        <item name="retail_main_background_secondary_text_color">
+            @color/retail_light_main_background_secondary_text_color
+        </item>
+        <item name="retail_main_background_disabled_text_color">
+            @color/retail_light_main_background_disabled_text_color
+        </item>
+        <item name="retail_main_background_accent_text_color">
+            @color/retail_light_main_background_accent_text_color
+        </item>
+        <item name="retail_main_background_button_link_text_color">
+            @color/retail_light_main_background_button_link_text_color
+        </item>
+        <item name="retail_secondary_text_color">@color/retail_light_secondary_text_color</item>
+        <item name="retail_border_color">@color/retail_light_border_color</item>
+        <item name="retail_selected_button_border_color">
+            @color/retail_light_selected_button_border_color
+        </item>
+        <item name="retail_main_background_hover_color">
+            @color/retail_light_main_background_hover_color
+        </item>
+        <item name="retail_unaccent_text_color">@color/retail_light_unaccent_text_color</item>
+        <item name="retail_unaccent_border_color">@color/retail_light_unaccent_border_color</item>
+        <item name="retail_side_toolbar_color">@color/retail_light_side_toolbar_color</item>
+        <item name="retail_side_toolbar_text_color">@color/retail_light_side_toolbar_text_color</item>
+        <item name="retail_side_toolbar_button_color">@color/retail_light_side_toolbar_button_color</item>
+        <item name="retail_side_toolbar_button_text_color">@color/retail_light_side_toolbar_button_text_color
+        </item>
+        <item name="retail_side_background_color">@color/retail_light_side_background_color</item>
+        <item name="retail_fragment_background_color">@color/retail_light_fragment_background_color</item>
+        <item name="retail_fragment_background_secondary_color">
+            @color/retail_light_fragment_background_secondary_color
+        </item>
+        <item name="retail_fragment_background_secondary_button_color">
+            @color/retail_light_fragment_background_secondary_button_color
+        </item>
+        <item name="retail_fragment_title_text_color">@color/retail_light_fragment_title_text_color</item>
+        <item name="retail_fragment_card_background_color">@color/retail_light_fragment_card_background_color
+        </item>
+        <item name="retail_fragment_card_text_color">@color/retail_light_fragment_card_text_color</item>
+        <item name="retail_fragment_card_hover_color">@color/retail_light_fragment_card_hover_color</item>
+        <item name="retail_fragment_btn_close_icon_color">@color/retail_light_fragment_btn_close_icon_color</item>
+        <item name="retail_popup_background_header_color">@color/retail_light_popup_background_header_color</item>
+        <item name="retail_popup_background_color">@color/retail_light_popup_background_color</item>
+        <item name="retail_popup_text_color">@color/retail_light_popup_text_color</item>
+        <item name="retail_popup_text_header_color">@color/retail_light_popup_text_header_color</item>
+        <item name="retail_popup_icon_color">@color/retail_light_popup_icon_color</item>
+        <item name="retail_popup_hover_color">@color/retail_light_popup_hover_color</item>
+        <item name="retail_popup_shadow_color">@color/retail_light_popup_shadow_color</item>
+        <item name="retail_popup_more_item_text_color">@color/retail_light_popup_more_item_text_color</item>
+        <item name="retail_main_accent">@color/retail_light_main_accent</item>
+        <item name="retail_main_red">@color/retail_light_main_red</item>
+        <item name="retail_main_yellow">@color/retail_light_main_yellow</item>
+        <item name="retail_main_orange">@color/retail_light_main_orange</item>
+        <item name="retail_main_blue">@color/retail_light_main_blue</item>
+        <item name="retail_main_green">@color/retail_light_main_green</item>
+        <item name="retail_divider_color">@color/retail_light_divider_color</item>
+        <item name="retail_searched_text_background_color">
+            @color/retail_light_searched_text_background_color
+        </item>
+        <item name="retail_dialog_toolbar_text_color">@color/retail_light_dialog_toolbar_text_color</item>
+        <item name="retail_alert_dialog_neutral_header_color">@color/retail_light_alert_dialog_neutral_header_color</item>
+        <item name="retail_alert_dialog_error_header_color">@color/retail_light_alert_dialog_error_header_color</item>
+        <item name="retail_alert_dialog_success_header_color">@color/retail_light_alert_dialog_success_header_color</item>
+        <item name="retail_alert_dialog_footer_color">@color/retail_light_alert_dialog_footer_color</item>
+
+        <item name="retail_fragmentContainer">@style/RetailFragmentContainerLight</item>
+
+        <item name="retail_device_icon_tint_color">@color/retail_light_device_icon_tint_color</item>
+
+        <item name="retail_extra_navigation_view_stroke_color">@color/retail_light_extra_navigation_view_stroke_color</item>
+        <item name="retail_extra_navigation_view_selected_color">@color/retail_light_extra_navigation_view_selected_color</item>
+
+        <item name="retail_fragment_tab_selected_background_color">@color/retail_light_fragment_tab_selected_background_color</item>
+        <item name="retail_fragment_tab_background_color">@color/retail_light_fragment_tab_background_color</item>
+
+        <item name="retail_cash_color_integer">@color/retail_light_main_background_text_color</item>
+        <item name="retail_cash_color_decimal">@color/retail_light_fragment_title_text_color</item>
+
+        <item name="retail_color_integer_selected_selector">@color/retail_selector_cashbox_light_integer</item>
+        <item name="retail_color_integer_marked_selected_selector">@color/retail_selector_marked_item_light_integer</item>
+        <item name="retail_color_integer_not_marked_selected_selector">@color/retail_selector_not_marked_item_light_integer</item>
+        <item name="retail_color_decimal_selected_selector">@color/retail_selector_cashbox_light_decimal</item>
+
+        <item name="retail_refund_plus_icon_color">@color/retail_light_refund_plus_icon_color</item>
+        <item name="retail_swipeable_background_color">@color/retail_light_swipeable_background_color</item>
+
+        <item name="retail_current_folder_back_icon">@color/text_color_accent_4</item>
+
+        <item name="retail_tree_icon_color">@color/retail_light_tree_icon_color</item>
+        <item name="retail_parent_folder_text_color">@color/retail_light_parent_folder_text_color</item>
+
+        <item name="retail_alco_prohibition">@drawable/retail_alco_prohibition_light_theme</item>
+
+        <item name="retail_sale_mode_catalogue_drawable">@drawable/retail_ic_catalogue_sale_light</item>
+        <item name="retail_sale_mode_quick_access_drawable">@drawable/retail_ic_quick_access_sale_light</item>
+        <item name="retail_disabled_button_text_color">@color/retail_light_disabled_button_text_color</item>
+        <item name="retail_sale_item_selected_background_color">@color/retail_light_sale_item_selected_background_color</item>
+        <item name="retail_serial_input_form_button_background">@color/retail_light_fragment_background_secondary_button_color</item>
+        <item name="retail_serial_number_selection_color">@android:color/darker_gray</item>
+
+        <item name="retail_discount_group_text_color">@color/palette_color_blue16</item>
+        <item name="retail_discount_card_applicant_not_exist_text_color">@color/palette_color_gray1</item>
+        <item name="retail_discount_card_applicant_exist_text_color">@color/palette_color_black1</item>
+
+        <item name="retail_money_view_kopeck_accent_color">@color/retail_light_money_view_kopeck_accent_color</item>
+        <item name="retail_money_view_integer_color">@color/retail_light_money_view_integer_color</item>
+        <item name="retail_money_view_decimal_color">@color/retail_light_money_view_decimal_color</item>
+
+        <item name="retail_disabled_checkbox_color">@color/retail_light_disabled_checkbox_color</item>
+
+        <item name="retail_views_money_theme">@style/RetailViewsMoneyViewTheme.Light</item>
+        <item name="retail_views_tooltip_view_theme">@style/RetailViewsTooltipStyle.Light</item>
+        <item name="retail_views_card_button_theme">@style/RetailViewsCardButtonTheme.Light</item>
+        <item name="retail_views_payment_view_theme">@style/RetailViewsPaymentViewStyle.Light</item>
+        <item name="retail_views_bonus_button_theme">@style/RetailViewsBonusButtonStyle.Light</item>
+        <item name="retail_views_input_field_theme">@style/RetailViewsInputFieldViewStyle.Light</item>
+
+        <item name="retail_views_banknote_theme_customized">@style/RetailViewsBanknoteCustomizedTheme.RetailLight</item>
+        <item name="retail_views_numeric_keyboard_theme_customized">@style/RetailViewsNumericKeyboardCustomizedTheme.RetailLight</item>
+        <item name="retail_views_money_input_editable_field_theme">@style/RetailViewsMoneyInputEditableFieldStyle.Retail</item>
+
+        <item name="retailOverflowLayoutMoreButtonStyle">@style/RetailButtonPanel.MoreButton</item>
+
+        <item name="retail_accent_button_text_color">@color/palette_color_white1</item>
+        <item name="retail_background_bottom_stroke_color">
+            @color/retail_views_input_field_background_bottom_stroke_color_light
+        </item>
+        <item name="retail_background_main_stroke_color">
+            @color/retail_views_input_field_background_main_stroke_color_light
+        </item>
+        <item name="retail_accent_button_background_color">@color/palette_color_dark_orange1</item>
+        <item name="retail_secondary_button_background_color">@color/retail_light_secondary_button_background_color</item>
+        <item name="retail_secondary_button_text_color">@color/retail_light_secondary_button_text_color</item>
+        <item name="retail_header_text_color">@color/palette_color_blue16</item>
+        <item name="retail_title_text_color">@color/palette_color_dark_gray1</item>
+        <item name="retail_label_text_color">@color/retail_views_input_field_label_text_color_light</item>
+        <item name="retail_additional_label_text_color">@color/retail_light_additional_label_text_color</item>
+        <item name="retail_error_text_color">@color/palette_color_dark_red1</item>
+        <item name="retail_input_field_background_main_color">
+            @color/retail_views_input_field_background_main_color_light
+        </item>
+        <item name="retail_input_field_background_main_stroke_color">
+            @color/retail_views_input_field_background_main_stroke_color_light
+        </item>
+        <item name="retail_input_field_background_error_color">
+            @color/retail_views_input_field_background_error_color_light
+        </item>
+        <item name="retail_input_field_background_searchable_stroke_color">
+            @color/retail_views_input_field_background_searchable_stroke_color_light
+        </item>
+
+        <item name="retail_payment_background">@color/retail_light_payment_background</item>
+
+        <item name="retail_money_card_text_color">@color/retail_views_fragment_card_text_color_light</item>
+        <item name="retail_money_decimal_color">@color/retail_views_money_view_decimal_color_light</item>
+
+        <item name="retail_disabled_item_title_text_color">@color/retail_light_disabled_item_title_text_color</item>
+        <item name="retail_disabled_item_content_text_color">@color/retail_light_disabled_item_content_text_color</item>
+    </style>
+
+    <style name="RetailDarkTheme" parent="RetailDarkAppTheme">
+        <item name="sbisContainerTheme">@style/SbisContainer.Retail</item>
+        <item name="stubViewTheme">@style/StubViewDarkTheme</item>
+        <item name="retail_main_toolbar_color">@color/retail_dark_main_toolbar_color</item>
+        <item name="retail_main_toolbar_button_color">@color/retail_dark_main_toolbar_button_color</item>
+        <item name="retail_main_toolbar_text_color">@color/retail_dark_main_toolbar_text_color</item>
+        <item name="retail_main_background_color">@color/retail_dark_main_background_color</item>
+        <item name="retail_main_background_icon_color">@color/retail_dark_main_background_icon_color</item>
+        <item name="retail_main_background_text_color">@color/retail_dark_main_background_text_color</item>
+        <item name="retail_main_background_secondary_text_color">
+            @color/retail_dark_main_background_secondary_text_color
+        </item>
+        <item name="retail_main_background_disabled_text_color">
+            @color/retail_dark_main_background_disabled_text_color
+        </item>
+        <item name="retail_main_background_accent_text_color">
+            @color/retail_dark_main_background_accent_text_color
+        </item>
+        <item name="retail_main_background_button_link_text_color">
+            @color/retail_dark_main_background_button_link_text_color
+        </item>
+        <item name="retail_secondary_text_color">@color/retail_dark_secondary_text_color</item>
+        <item name="retail_border_color">@color/retail_dark_border_color</item>
+        <item name="retail_selected_button_border_color">
+            @color/retail_dark_selected_button_border_color
+        </item>
+        <item name="retail_main_background_hover_color">
+            @color/retail_dark_main_background_hover_color
+        </item>
+        <item name="retail_unaccent_text_color">@color/retail_dark_unaccent_text_color</item>
+        <item name="retail_unaccent_border_color">@color/retail_dark_unaccent_border_color</item>
+        <item name="retail_side_toolbar_color">@color/retail_dark_side_toolbar_color</item>
+        <item name="retail_side_toolbar_text_color">@color/retail_dark_side_toolbar_text_color</item>
+        <item name="retail_side_toolbar_button_color">@color/retail_dark_side_toolbar_button_color</item>
+        <item name="retail_side_toolbar_button_text_color">@color/retail_dark_side_toolbar_button_text_color
+        </item>
+        <item name="retail_side_background_color">@color/retail_dark_side_background_color</item>
+        <item name="retail_fragment_background_color">@color/retail_dark_fragment_background_color</item>
+        <item name="retail_fragment_background_secondary_color">
+            @color/retail_dark_fragment_background_secondary_color
+        </item>
+        <item name="retail_fragment_background_secondary_button_color">
+            @color/retail_dark_fragment_background_secondary_button_color
+        </item>
+        <item name="retail_fragment_title_text_color">@color/retail_dark_fragment_title_text_color</item>
+        <item name="retail_fragment_card_background_color">@color/retail_dark_fragment_card_background_color
+        </item>
+        <item name="retail_fragment_card_text_color">@color/retail_dark_fragment_card_text_color</item>
+        <item name="retail_fragment_card_hover_color">@color/retail_dark_fragment_card_hover_color</item>
+        <item name="retail_fragment_btn_close_icon_color">@color/retail_dark_fragment_btn_close_icon_color</item>
+        <item name="retail_popup_background_header_color">@color/retail_dark_popup_background_header_color</item>
+        <item name="retail_popup_background_color">@color/retail_dark_popup_background_color</item>
+        <item name="retail_popup_text_color">@color/retail_dark_popup_text_color</item>
+        <item name="retail_popup_text_header_color">@color/retail_dark_popup_text_header_color</item>
+        <item name="retail_popup_icon_color">@color/retail_dark_popup_icon_color</item>
+        <item name="retail_popup_hover_color">@color/retail_dark_popup_hover_color</item>
+        <item name="retail_popup_shadow_color">@color/retail_dark_popup_shadow_color</item>
+        <item name="retail_popup_more_item_text_color">@color/retail_dark_popup_more_item_text_color</item>
+        <item name="retail_main_accent">@color/retail_dark_main_accent</item>
+        <item name="retail_main_red">@color/retail_dark_main_red</item>
+        <item name="retail_main_yellow">@color/retail_dark_main_yellow</item>
+        <item name="retail_main_orange">@color/retail_dark_main_orange</item>
+        <item name="retail_main_blue">@color/retail_dark_main_blue</item>
+        <item name="retail_main_green">@color/retail_dark_main_green</item>
+        <item name="retail_divider_color">@color/retail_dark_divider_color</item>
+
+        <item name="retail_searched_text_background_color">
+            @color/retail_dark_searched_text_background_color
+        </item>
+        <item name="retail_dialog_toolbar_text_color">@color/retail_dark_dialog_toolbar_text_color</item>
+        <item name="retail_alert_dialog_neutral_header_color">@color/retail_dark_alert_dialog_neutral_header_color</item>
+        <item name="retail_alert_dialog_error_header_color">@color/retail_dark_alert_dialog_error_header_color</item>
+        <item name="retail_alert_dialog_success_header_color">@color/retail_dark_alert_dialog_success_header_color</item>
+        <item name="retail_alert_dialog_footer_color">@color/retail_dark_alert_dialog_footer_color</item>
+
+        <item name="retail_fragmentContainer">@style/RetailFragmentContainerDark</item>
+
+        <item name="retail_device_icon_tint_color">@color/retail_dark_device_icon_tint_color</item>
+
+        <item name="retail_extra_navigation_view_stroke_color">@color/retail_dark_extra_navigation_view_stroke_color</item>
+        <item name="retail_extra_navigation_view_selected_color">@color/retail_dark_extra_navigation_view_selected_color</item>
+
+        <item name="retail_fragment_tab_selected_background_color">@color/retail_dark_fragment_tab_selected_background_color</item>
+        <item name="retail_fragment_tab_background_color">@color/retail_dark_fragment_tab_background_color</item>
+
+        <item name="retail_cash_color_integer">@color/retail_dark_fragment_card_text_color</item>
+        <item name="retail_cash_color_decimal">@color/retail_dark_fragment_title_text_color</item>
+
+        <item name="retail_color_integer_selected_selector">@color/retail_selector_cashbox_dark_integer</item>
+        <item name="retail_color_integer_marked_selected_selector">@color/retail_selector_marked_item_light_integer</item>
+        <item name="retail_color_integer_not_marked_selected_selector">@color/retail_selector_not_marked_item_light_integer</item>
+        <item name="retail_color_decimal_selected_selector">@color/retail_selector_cashbox_dark_decimal</item>
+
+        <item name="retail_refund_plus_icon_color">@color/retail_dark_refund_plus_icon_color</item>
+
+        <item name="retail_swipeable_background_color">@color/retail_dark_swipeable_background_color</item>
+
+        <item name="retail_current_folder_back_icon">@color/palette_color_dark_blue6</item>
+
+        <item name="retail_tree_icon_color">@color/retail_dark_tree_icon_color</item>
+        <item name="retail_parent_folder_text_color">@color/retail_dark_parent_folder_text_color</item>
+
+        <item name="retail_alco_prohibition">@drawable/retail_alco_prohibition_dark_theme</item>
+
+        <item name="retail_sale_mode_catalogue_drawable">@drawable/retail_ic_catalogue_sale_dark</item>
+        <item name="retail_sale_mode_quick_access_drawable">@drawable/retail_ic_quick_access_sale_dark</item>
+        <item name="retail_disabled_button_text_color">@color/retail_dark_disabled_button_text_color</item>
+        <item name="retail_sale_item_selected_background_color">@color/retail_dark_sale_item_selected_background_color</item>
+        <item name="retail_serial_input_form_button_background">@color/retail_dark_fragment_background_secondary_button_color</item>
+        <item name="retail_serial_number_selection_color">@android:color/white</item>
+
+        <item name="retail_discount_group_text_color">@color/palette_color_yellow2</item>
+        <item name="retail_discount_card_applicant_not_exist_text_color">@color/palette_color_gray1</item>
+        <item name="retail_discount_card_applicant_exist_text_color">@color/palette_color_white1</item>
+
+        <item name="retail_money_view_kopeck_accent_color">@color/retail_dark_money_view_kopeck_accent_color</item>
+        <item name="retail_money_view_integer_color">@color/retail_dark_money_view_integer_color</item>
+        <item name="retail_money_view_decimal_color">@color/retail_dark_money_view_decimal_color</item>
+        <item name="retail_disabled_checkbox_color">@color/retail_dark_disabled_checkbox_color</item>
+
+        <item name="retail_views_money_theme">@style/RetailViewsMoneyViewTheme.Dark</item>
+        <item name="retail_views_tooltip_view_theme">@style/RetailViewsTooltipStyle.Dark</item>
+        <item name="retail_views_card_button_theme">@style/RetailViewsCardButtonTheme.Dark</item>
+        <item name="retail_views_payment_view_theme">@style/RetailViewsPaymentViewStyle.Dark</item>
+        <item name="retail_views_bonus_button_theme">@style/RetailViewsBonusButtonStyle.Dark</item>
+        <item name="retail_views_input_field_theme">@style/RetailViewsInputFieldViewStyle.Dark</item>
+
+        <item name="retail_views_banknote_theme_customized">@style/RetailViewsBanknoteCustomizedTheme.RetailDark</item>
+        <item name="retail_views_numeric_keyboard_theme_customized">@style/RetailViewsNumericKeyboardCustomizedTheme.RetailDark</item>
+        <item name="retail_views_money_input_editable_field_theme">@style/RetailViewsMoneyInputEditableFieldStyle.Retail</item>
+
+        <item name="retailOverflowLayoutMoreButtonStyle">@style/RetailButtonPanel.MoreButton</item>
+
+        <item name="retail_accent_button_text_color">@color/palette_color_white1</item>
+        <item name="retail_background_bottom_stroke_color">
+            @color/retail_views_input_field_background_bottom_stroke_color_dark
+        </item>
+        <item name="retail_background_main_stroke_color">
+            @color/retail_views_input_field_background_main_stroke_color_dark
+        </item>
+        <item name="retail_accent_button_background_color">@color/palette_color_dark_orange1</item>
+        <item name="retail_secondary_button_background_color">@color/retail_dark_secondary_button_background_color</item>
+        <item name="retail_secondary_button_text_color">@color/retail_dark_secondary_button_text_color</item>
+        <item name="retail_header_text_color">@color/palette_color_white1</item>
+        <item name="retail_title_text_color">@color/palette_color_blue4</item>
+        <item name="retail_label_text_color">@color/retail_views_input_field_label_text_color_dark</item>
+        <item name="retail_additional_label_text_color">@color/retail_dark_additional_label_text_color</item>
+        <item name="retail_error_text_color">@color/palette_color_dark_red1</item>
+        <item name="retail_input_field_background_main_color">
+            @color/retail_views_input_field_background_main_color_dark
+        </item>
+        <item name="retail_input_field_background_main_stroke_color">
+            @color/retail_views_input_field_background_main_stroke_color_dark
+        </item>
+        <item name="retail_input_field_background_error_color">
+            @color/retail_views_input_field_background_error_color_dark
+        </item>
+        <item name="retail_input_field_background_searchable_stroke_color">
+            @color/retail_views_input_field_background_searchable_stroke_color_dark
+        </item>
+
+        <item name="retail_payment_background">@color/retail_dark_payment_background</item>
+
+        <item name="retail_money_card_text_color">@color/retail_views_fragment_card_text_color_dark</item>
+        <item name="retail_money_decimal_color">@color/retail_views_money_view_decimal_color_dark</item>
+
+        <item name="retail_disabled_item_title_text_color">@color/retail_dark_disabled_item_title_text_color</item>
+        <item name="retail_disabled_item_content_text_color">@color/retail_dark_disabled_item_content_text_color</item>
+    </style>
+
+</resources>

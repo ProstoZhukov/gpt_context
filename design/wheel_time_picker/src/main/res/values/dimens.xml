@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wheel_time_picker_dialog_width">350dp</dimen>
+    <dimen name="wheel_time_picker_dialog_height">248dp</dimen>
+    <dimen name="wheel_time_picker_selection_height">200dp</dimen>
+    <dimen name="wheel_time_picker_padding_horizontal">12dp</dimen>
+    <dimen name="wheel_time_picker_header_tabs_spacing">128dp</dimen>
+    <dimen name="wheel_time_picker_date_only_month_width">110dp</dimen>
+    <dimen name="wheel_time_picker_date_only_day_width">40dp</dimen>
+</resources>

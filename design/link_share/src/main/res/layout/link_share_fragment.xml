@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="?offset_m"
+        android:paddingTop="?offset_l">
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/sbis_link_share_left_icon"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingEnd="?offset_m"
+            android:text="@string/design_mobile_icon_arrow_narrow_left"
+            android:textSize="?fontSize_4xl_scaleOff"
+            android:visibility="gone"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/sbis_link_share_title"
+            style="@style/MobileFontStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="?textColor"
+            android:textSize="?fontSize_4xl_scaleOff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ru.tensor.sbis.design.tabs.view.SbisTabsView
+        android:id="@+id/sbis_link_share_tabs_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sbis_link_share_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

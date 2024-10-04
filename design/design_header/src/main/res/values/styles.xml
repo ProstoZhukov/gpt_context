@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ContainerHeaderTabStile" parent="ToolbarTitleText">
+        <item name="android:textColor">@drawable/header_toolbar_tab_title_selector</item>
+    </style>
+
+    <style name="ContainerHeaderIndicator" parent="ToolbarTabIndicatorStyle">
+        <item name="android:background">@drawable/header_toolbar_tab_indicator_selector</item>
+        <item name="android:layout_height">?borderThickness_m</item>
+    </style>
+
+    <style name="HeaderTitle">
+        <item name="android:textColor">?primaryTextColor</item>
+        <!-- @font-size_2xl (20 pt) medium scaleOn -->
+        <item name="android:textSize">?fontSize_2xl_scaleOn</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+</resources>

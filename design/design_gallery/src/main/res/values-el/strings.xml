@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_gallery_album_all_media">Όλες οι φωτογραφίες</string>
+    <string name="design_gallery_album_all_videos">Βίντεο</string>
+    <string name="design_gallery_album_all_images">Εικόνες</string>
+    <string name="design_gallery_albums_title">Άλμπουμ</string>
+    <string name="design_gallery_button_cancel_title">Ματαίωση</string>
+    <string name="design_gallery_button_add_title">Προσθήκη</string>
+    <string name="design_gallery_tab_title">Εκθεσιακός χώρος</string>
+    <string name="design_gallery_camera_permission_in_settings_dialog_message">Απαιτούνται άδειες για τη χρήση της κάμερας.</string>
+    <string name="design_gallery_storage_permission_in_settings_dialog_message">Απαιτείται πρόσβαση στη συλλογή κατά την αποστολή αρχείων πολυμέσων ή κατά την επιλογή φωτογραφιών και άλλων εικόνων.</string>
+    <string name="design_gallery_permission_in_settings_dialog_positive_btn">Ανοίξτε τις ρυθμίσεις</string>
+    <string name="design_gallery_camera_stub_message">Κάντε κλικ για να επιτρέψετε την πρόσβαση στην κάμερα</string>
+    <string name="design_gallery_storage_stub_message">Κάντε κλικ για να επιτρέψετε την πρόσβαση στη συλλογή</string>
+    <string name="design_gallery_main_stub_message">Για να τραβήξετε και να μοιραστείτε φωτογραφίες,\n ενεργοποιήστε την πρόσβαση στην κάμερα και τη συλλογή στη συσκευή σας.</string>
+    <string name="design_gallery_main_stub_button_title">Στις ρυθμίσεις</string>
+    <string name="design_gallery_camera_open_error_message">Αποτυχία εκκίνησης της κάμερας συστήματος</string>
+    <string name="design_gallery_stub_empty_message">Η γκαλερί είναι άδεια</string>
+    <string name="design_gallery_compress_menu_item_compress">Συμπίεση αρχείων</string>
+    <string name="design_gallery_compress_menu_item_no_compress">Χωρίς συμπίεση</string>
+    <string name="design_gallery_size_limit_message">Το μέγεθος του αρχείου υπερβαίνει το όριο %d MB</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Общие атрибуты для всех компонентов в модуле 'retail_views' -->
+
+    <attr name="retail_views_default_retail_font" format="reference"/>
+    <attr name="retail_views_mobile_icon_font" format="reference"/>
+
+    <attr name="retail_views_accent_button_background_color" format="reference|color"/>
+    <attr name="retail_views_accent_button_text_color" format="reference|color"/>
+
+    <attr name="retail_views_secondary_button_text_color" format="reference|color"/>
+
+    <attr name="retail_views_header_text_color" format="reference|color"/>
+    <attr name="retail_views_title_text_color" format="reference|color"/>
+    <attr name="retail_views_secondary_text_color" format="reference|color"/>
+
+    <attr name="retail_views_main_green" format="reference|color"/>
+    <attr name="retail_views_main_red" format="reference|color"/>
+
+    <declare-styleable name="RetailViewsDynamicButtonsLayout">
+        <attr name="retail_views_hiddenActionsButtonId" format="reference"/>
+        <attr name="retail_views_isHiddenActionsButtonAlwaysVisible" format="boolean"/>
+        <attr name="retail_views_maxVisibleChildren" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RetailViewsDynamicButtonsLayout_Layout">
+        <attr name="retail_views_hideLast" format="boolean"/>
+    </declare-styleable>
+
+</resources>

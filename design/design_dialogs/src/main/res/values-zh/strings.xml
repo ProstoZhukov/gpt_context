@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_dialogs_recipients_max_count_restriction">您不能选择超过 %d 个用户。</string>
+    <string name="design_dialogs_recipients_single_count_restriction">您不能选择多个用户。</string>
+    <string name="design_dialogs_file_already_attached">文件已附上</string>
+</resources>

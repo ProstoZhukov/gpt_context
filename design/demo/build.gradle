@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'application-cfg-plugin'
+
+applicationConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':design')
+    implementation project(path: ':design_profile')
+    implementation project(path: ':design_breadcrumbs')
+    implementation project(path: ':design_sbis_text_view')
+    implementation project(path: ':design_stubview')
+    implementation project(path: ':design_folders')
+    implementation project(path: ':design_dialogs')
+    implementation project(path: ':navigation')
+    implementation project(path: ':context_menu')
+    implementation project(path: ':container')
+    implementation project(path: ':hallscheme')
+    implementation project(path: ':selection')
+    implementation project(path: ':list')
+    implementation project(path: ':cloud_view')
+    // TODO: 6/19/2020 https://online.sbis.ru/opendoc.html?guid=096ff7b6-2001-4301-bc8c-d4f7f83d1d96
+    implementation project(path: ':common')
+    implementation project(path: ':richtext')
+    implementation project(path: ':commonviews')
+    implementation project(path: ':pin_code')
+    implementation project(path: ':skeleton_view')
+    implementation project(path: ':attachments-ui')
+    implementation project(path: ':design_collection_view')
+    implementation project(path: ':scroll_to_top')
+    implementation project(path: ':input_view')
+    implementation project(path: ':text_span')
+    implementation project(path: ':toolbar')
+    implementation project(path: ':design_list_header')
+
+    implementation libs.android.joda
+    implementation libs.android.fragment.ktx
+    implementation libs.android.navigation.ui.ktx
+
+    implementation libs.android.appcompat
+    implementation libs.android.view.material
+    implementation libs.android.view.layout.constraintLayout
+
+    //tests
+    testImplementation testLibs.junit
+
+    // leaks detector
+    debugImplementation libs.android.leakcanary
+}

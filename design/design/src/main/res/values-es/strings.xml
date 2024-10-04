@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_close">Cerca</string>
+    <string name="design_empty_search_error_string">No se encontr&#xf3; nada para esta b&#xfa;squeda.</string>
+    <string name="design_undo">Cancelar</string>
+    <string name="design_edit_photo_from_gallery">Cargar desde la galer&#xed;a</string>
+    <string name="design_edit_photo_delete">Eliminar avatar</string>
+    <string name="design_menu_item_save_to_device">Guardar en el dispositivo</string>
+    <string name="design_menu_item_subscribe">Suscribir</string>
+    <string name="design_menu_item_unsubscribe">Darse de baja</string>
+    <string name="design_menu_item_copy_link">Copiar link</string>
+    <string name="design_cancel_item_label">@string/design_undo</string>
+    <string name="design_please_wait">Espere por favor</string>
+    <string name="design_action_edit_done">Hecho</string>
+    <string name="design_title_template">Nombre: %1$s</string>
+    <string name="design_date_template">Enviado: %1$s</string>
+    <string name="design_size_template">Tamaño: %1$s</string>
+    <string name="design_contacts_not_found">Contactos no encontrados.</string>
+    <string name="design_all_contacts_was_selected">Se seleccionan todos los contactos recientes. Si desea agregar m&#xe1;s destinatarios, utilice la b&#xfa;squeda.</string>
+    <string name="design_all_participants_was_selected">Se seleccionan todos los contactos recientes.</string>
+    <string name="design_search_panel_hint">Buscar</string>
+    <string name="design_search_panel_cancel">Cancelar</string>
+    <string name="design_spinner_mass_operations_item">Marca</string>
+    <string name="design_spinner_separator_item">*</string>
+    <string name="design_mobile_icon_mobile_phone">&#xeb97;</string>
+    <string name="design_monday_short">Lun</string>
+    <string name="design_tuesday_short">Mar</string>
+    <string name="design_wednesday_short">Casarse</string>
+    <string name="design_thursday_short">Jue</string>
+    <string name="design_friday_short">Vie</string>
+    <string name="design_saturday_short">Se sent&#xf3;</string>
+    <string name="design_sunday_short">Sol</string>
+    <string name="calendar_title">Calendario</string>
+    <string name="calendar_monday">LUN</string>
+    <string name="calendar_tuesday">MAR</string>
+    <string name="calendar_wednesday">CASARSE</string>
+    <string name="calendar_thursday">JUE</string>
+    <string name="calendar_friday">VIE</string>
+    <string name="calendar_saturday">SE SENT&#xd3;</string>
+    <string name="calendar_sunday">SOL</string>
+    <string name="design_popup_window_close_button">Cerca</string>
+    <string name="design_close_date_dialog_button_text">Cerca</string>
+    <string name="design_apply_date_dialog_button_text">Aplicar</string>
+    <string name="design_open_outside_text">Abrir en el portal SABY</string>
+    <string name="design_version_label">%1$s (%2$s)</string>
+    <string name="design_version_toast">La versi&#xf3;n de la aplicaci&#xf3;n se copia al portapapeles.</string>
+    <string name="design_account_changing_failed_message">No se pudo cambiar a otra cuenta.</string>
+    <string name="design_drawer_open">Abre el men&#xfa; lateral</string>
+    <string name="design_drawer_close">Cerrar el men&#xfa; lateral</string>
+    <string name="design_menu">Men&#xfa;</string>
+    <string name="design_attachments_registry_remain_counter_format">+%d</string>
+    <string name="design_cloud_view_me">A m&#xed;</string>
+    <string name="design_opinion_rating_like">Como</string>
+    <string name="design_opinion_rating_dislike">Disgusto</string>
+    <string name="design_cloud_view_for">para</string>
+    <string name="design_mobile_icon_bonus">&#xec06;</string>
+    <string name="design_date_today">Hoy</string>
+    <string name="design_mobile_icon_bonus_null">&#xec0a;</string>
+    <string name="design_hide_shared_tasks_confirmation">¿Est&#xe1;s seguro de que deseas ocultar las tareas del empleado %1$s?</string>
+    <string name="design_edit_photo_camera">Toma una foto</string>
+    <string name="design_menu_item_piv">Incentivos y sanciones</string>
+    <string name="design_menu_report_or_block">Reportar/bloquear</string>
+    <string name="design_menu_report_user">Reportar usuario</string>
+    <string name="design_menu_block_user">Bloquear usuario</string>
+    <string name="design_menu_unblock_user">Desbloquear usuario</string>
+    <string name="design_january_short">Ene</string>
+    <string name="design_february_short">Feb</string>
+    <string name="design_march_short">Mar</string>
+    <string name="design_april_short">Abr</string>
+    <string name="design_may_short">Puede</string>
+    <string name="design_june_short">Junio</string>
+    <string name="design_july_short">Julio</string>
+    <string name="design_august_short">Ago</string>
+    <string name="design_september_short">Septiembre</string>
+    <string name="design_october_short">Oct</string>
+    <string name="design_november_short">Nov</string>
+    <string name="design_december_short">Dic</string>
+    <string name="design_nav_icon_bonus_en">&#xe98b;</string>
+    <string-array name="design_months_short">
+        <item>@string/design_january_short</item>
+        <item>@string/design_february_short</item>
+        <item>@string/design_march_short</item>
+        <item>@string/design_april_short</item>
+        <item>@string/design_may_short</item>
+        <item>@string/design_june_short</item>
+        <item>@string/design_july_short</item>
+        <item>@string/design_august_short</item>
+        <item>@string/design_september_short</item>
+        <item>@string/design_october_short</item>
+        <item>@string/design_november_short</item>
+        <item>@string/design_december_short</item>
+    </string-array>
+    <string-array name="design_months_short_names_calendar">
+        <item>@string/design_january_short</item>
+        <item>@string/design_february_short</item>
+        <item>@string/design_march_short</item>
+        <item>@string/design_april_short</item>
+        <item>@string/design_may_short</item>
+        <item>@string/design_june_short</item>
+        <item>@string/design_july_short</item>
+        <item>@string/design_august_short</item>
+        <item>@string/design_september_short</item>
+        <item>@string/design_october_short</item>
+        <item>@string/design_november_short</item>
+        <item>@string/design_december_short</item>
+    </string-array>
+    <string-array name="design_months_short_names_lower_case">
+        <item>Ene</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Puede</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dic</item>
+    </string-array>
+    <string-array name="design_months_list_in_parental_deaths_short">
+        <item>Ene</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Puede</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dic</item>
+    </string-array>
+    <string-array name="design_months_short_standard_without_dot">
+        <item>Ene</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Puede</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dic</item>
+    </string-array>
+    <string-array name="design_months_short_names_lower_case_without_dot">
+        <item>Ene</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Puede</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dic</item>
+    </string-array>
+    <string-array name="design_months_names">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Puede</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+    <string-array name="day_of_week_short">
+        <item>@string/design_monday_short</item>
+        <item>@string/design_tuesday_short</item>
+        <item>@string/design_wednesday_short</item>
+        <item>@string/design_thursday_short</item>
+        <item>@string/design_friday_short</item>
+        <item>@string/design_saturday_short</item>
+        <item>@string/design_sunday_short</item>
+    </string-array>
+    <string-array name="design_months">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Puede</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+    <string-array name="design_months_short_names_lower_case_without_dot_with_declension">
+        <item>ene</item>
+        <item>feb</item>
+        <item>mar</item>
+        <item>abr</item>
+        <item>puede</item>
+        <item>jun</item>
+        <item>jul</item>
+        <item>ago</item>
+        <item>sep</item>
+        <item>oct</item>
+        <item>nov</item>
+        <item>dic</item>
+    </string-array>
+</resources>

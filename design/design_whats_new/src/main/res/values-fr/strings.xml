@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="whats_new_fragment_title">Quoi de neuf dans cette version</string>
+    <string name="whats_new_phone_image">Photo du téléphone</string>
+</resources>

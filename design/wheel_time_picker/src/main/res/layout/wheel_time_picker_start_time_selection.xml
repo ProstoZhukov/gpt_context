@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/wheel_time_picker_selection_height">
+
+    <ru.tensor.sbis.design.cylinder.picker.time.CylinderDateTimePicker
+        android:id="@+id/start_date_picker"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/start_time_selection_center_guideline"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_time_selection_center_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <ru.tensor.sbis.design.cylinder.picker.time.CylinderDateTimePicker
+        android:id="@+id/start_hours_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:paddingEnd="@dimen/wheel_time_picker_padding_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/start_time_selection_center_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry"/>
+
+    <ru.tensor.sbis.design.cylinder.picker.time.CylinderDateTimePicker
+        android:id="@+id/start_minute_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/wheel_time_picker_padding_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/start_hours_picker"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

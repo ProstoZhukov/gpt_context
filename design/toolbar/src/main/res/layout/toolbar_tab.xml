@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_content"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:theme="?attr/ToolbarTabLayout_theme"
+    tools:background="@color/color_primary"
+    tools:layout_height="?android:attr/actionBarSize"
+    tools:theme="@style/ToolbarTabLayoutTheme"
+    tools:viewBindingIgnore="true">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/toolbar_title"
+        style="?attr/ToolbarTabLayout_titleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tab"/>
+
+    <ru.tensor.sbis.design.counters.textcounter.SbisTextCounter
+        android:id="@+id/toolbar_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/toolbar_tab_secondary_counter_left_padding"
+        app:layout_constraintBaseline_toBaselineOf="@id/toolbar_title"
+        app:layout_constraintStart_toEndOf="@id/toolbar_title"/>
+
+    <View
+        android:id="@+id/toolbar_selection_indicator"
+        style="?attr/ToolbarTabLayout_indicatorStyle"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_height="3dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

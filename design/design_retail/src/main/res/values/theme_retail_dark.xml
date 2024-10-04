@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- http://axure.tensor.ru/MobileStandart8/#p=цвета_по_темам_оформления&g=1 -->
+    <style name="RetailDarkAppTheme" parent="LargeDarkTheme">
+        <item name="android:statusBarColor">?rtlHeaderBackground</item>
+        <item name="android:windowBackground">@drawable/design_splash</item>
+
+        <!-- region Фикс чтения атрибутов TextAppearance -->
+        <!--
+            При попытке TextView прочитать значения атрибутов из TextAppearance при неопределенных обстоятельствах
+            возникает исключение https://online.sbis.ru/opendoc.html?guid=afaa80fc-57ca-47ff-a7a1-ebc7bf1680b7
+            из-за того, что они по каким-то причинам оказываются незаданными.
+            Определяем их наверняка, на всех уровнях.
+         -->
+        <item name="android:textAppearance">@style/RetailTextAppearance.ExplicitAttrDefaults</item>
+        <item name="android:textAppearanceButton">@style/RetailTextAppearance.ExplicitAttrDefaults.Button</item>
+        <!-- Стандартные стили (defStyleAttr) указывают свой TextAppearance, по этому переопределяем и их. -->
+        <item name="android:textViewStyle">@style/RetailExplicitTextAppearanceStyle.TextView</item>
+        <item name="buttonStyle">@style/RetailExplicitTextAppearanceStyle.Button</item>
+        <!--
+            Задаем `android:textColor*` в теме для сценария их разбора из стиля, где они определены неявно (через другие атрибуты).
+            Например при применениии стиля `<TextView style="@android:style/TextAppearance" />` или его наследников.
+         -->
+        <item name="android:textColor">@color/textColorAndroidBase</item>
+        <item name="android:textColorHint">@color/textColorHintAndroidBase</item>
+        <item name="android:textColorLink">@color/text_color_link_1</item>
+        <item name="android:textColorHighlight">@color/retail_text_color_highlight_dark</item>
+        <item name="android:colorAccent">@color/color_accent</item>
+        <!-- endregion -->
+
+        <item name="android:textCursorDrawable">@drawable/retail_text_cursor</item>
+
+        <!-- Окрашенные капельки выделения текста и каретки -->
+        <item name="android:textSelectHandle">@drawable/retail_text_select_handle</item>
+        <item name="android:textSelectHandleLeft">@drawable/retail_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/retail_text_select_handle_right</item>
+
+        <!-- region Кнопки -->
+        <item name="sbisButtonBackgroundType">contrast</item>
+        <item name="sbisButtonCornerRadius">?borderRadius_3xs</item>
+        <item name="sbisButtonContrastBackgroundColorDisabled">?readonlyBackgroundColor</item>
+        <item name="sbisRoundButtonBackgroundColorDisabled">?readonlyBackgroundColor</item>
+        <item name="sbisButtonTitleDisabledColorAlpha">0.6</item>
+        <item name="sbisLinkButtonTitleDisabledColorAlpha">0.6</item>
+        <item name="sbisRoundButtonIconDisabledColorAlpha">0.6</item>
+
+        <item name="primarySbisButtonTheme">@style/SbisButtonPrimaryThemeRetail</item>
+        <item name="secondarySbisButtonTheme">@style/SbisButtonSecondaryThemeRetail</item>
+        <item name="successSbisButtonTheme">@style/SbisButtonSuccessThemeRetail</item>
+        <item name="unaccentedSbisButtonTheme">@style/SbisButtonUnaccentedThemeRetail</item>
+        <item name="dangerSbisButtonTheme">@style/SbisButtonDangerThemeRetail</item>
+        <item name="warningSbisButtonTheme">@style/SbisButtonWarningThemeRetail</item>
+        <item name="infoSbisButtonTheme">@style/SbisButtonInfoThemeRetail</item>
+        <item name="navigationSbisButtonTheme">@style/SbisButtonNavigationThemeRetail</item>
+        <item name="defaultSbisButtonTheme">@style/SbisButtonSecondaryThemeRetail</item>
+        <item name="sbisTranslucentButtonLightTheme">@style/SbisTranslucentButtonThemeRetailLight</item>
+        <item name="sbisTranslucentButtonDarkTheme">@style/SbisTranslucentButtonThemeRetailDark</item>
+
+        <item name="primarySbisRoundButtonTheme">@style/SbisRoundButtonPrimaryThemeRetailDark</item>
+        <item name="secondarySbisRoundButtonTheme">@style/SbisRoundButtonSecondaryThemeRetail</item>
+        <item name="successSbisRoundButtonTheme">@style/SbisRoundButtonSuccessThemeRetailDark</item>
+        <item name="unaccentedSbisRoundButtonTheme">@style/SbisRoundButtonUnaccentedThemeRetail</item>
+        <item name="dangerSbisRoundButtonTheme">@style/SbisRoundButtonDangerThemeRetailDark</item>
+        <item name="warningSbisRoundButtonTheme">@style/SbisRoundButtonWarningThemeRetailDark</item>
+        <item name="infoSbisRoundButtonTheme">@style/SbisRoundButtonInfoThemeRetailDark</item>
+        <item name="navigationSbisRoundButtonTheme">@style/SbisRoundButtonNavigationThemeRetailDark</item>
+        <item name="defaultSbisRoundButtonTheme">@style/SbisRoundButtonSecondaryThemeRetail</item>
+        <item name="sbisTranslucentRoundButtonLightTheme">@style/SbisTranslucentRoundButtonThemeRetailLight</item>
+        <item name="sbisTranslucentRoundButtonDarkTheme">@style/SbisTranslucentRoundButtonThemeRetailDark</item>
+        <!-- endregion -->
+
+        <item name="SbisCheckbox_backgroundType">outlined</item>
+
+        <item name="sbisPeriodPickerViewTheme">@style/SbisPeriodPickerViewLargeTheme</item>
+
+        <item name="android:fontFamily">@font/retail_tensor_font_family</item>
+        <item name="tabStyle">@style/RetailToolbar_TabLayout</item>
+        <item name="retail_dialog_content_horizontal_padding">@dimen/retail_small_padding</item>
+
+        <item name="retail_extra_large_font_size">@dimen/retail_extra_large_font_size</item>
+        <item name="retail_large_font_size">@dimen/retail_large_font_size</item>
+        <item name="retail_medium_font_size">@dimen/retail_medium_font_size</item>
+        <item name="retail_small_font_size">@dimen/retail_small_font_size</item>
+        <item name="retail_extra_small_font_size">@dimen/retail_extra_small_font_size</item>
+        <item name="retail_extra_small_padding">@dimen/retail_extra_small_padding</item>
+        <item name="retail_small_padding">@dimen/retail_small_padding</item>
+        <item name="retail_average_padding">@dimen/retail_average_padding</item>
+        <item name="retail_medium_padding">@dimen/retail_medium_padding</item>
+        <item name="retail_large_padding">@dimen/retail_large_padding</item>
+        <item name="retail_extra_large_padding">@dimen/retail_extra_large_padding</item>
+        <item name="retail_small_icon_size">@dimen/retail_small_icon_size</item>
+        <item name="retail_medium_icon_size">@dimen/retail_medium_icon_size</item>
+        <item name="retail_large_icon_size">@dimen/retail_large_icon_size</item>
+        <item name="retail_navigation_menu_item_icon_size">@dimen/retail_navigation_menu_item_icon_size</item>
+        <item name="retail_navigation_menu_icon_size">@dimen/retail_navigation_menu_icon_size</item>
+        <item name="retail_medium_button_height">@dimen/retail_medium_button_height</item>
+        <item name="retail_medium_button_height_with_shadow">@dimen/retail_medium_button_height_with_shadow</item>
+        <item name="retail_large_button_height">@dimen/retail_large_button_height</item>
+        <item name="retail_close_button_width">@dimen/retail_close_button_width</item>
+
+        <item name="retail_small_text_height">@dimen/retail_small_text_height</item>
+        <item name="retail_medium_text_height">@dimen/retail_medium_text_height</item>
+
+        <item name="retail_image_size">@dimen/retail_image_size</item>
+        <item name="retail_checkbox_selector">@drawable/retail_checkbox_selector_large</item>
+        <item name="retail_nomenclature_image_max_height">@dimen/retail_nomenclature_image_max_height</item>
+        <item name="retail_fading_edge_length">@dimen/retail_fading_edge_length</item>
+
+        <item name="retail_device_type_image_size">@dimen/retail_device_type_image_size</item>
+        <item name="retail_workplace_device_image_size">@dimen/retail_workplace_device_image_size</item>
+        <item name="retail_change_history_image_size">@dimen/retail_change_history_image_size</item>
+        <item name="retail_dialog_content_min_width">@dimen/retail_dialog_content_min_width</item>
+        <item name="retail_dialog_content_vertical_padding">@dimen/retail_dialog_content_vertical_padding</item>
+        <item name="retail_marker_width">@dimen/retail_marker_width</item>
+        <item name="retail_dialog_change_merch_field_width">@dimen/retail_dialog_change_merch_field_width</item>
+        <item name="retail_more_actions_popup_menu_width">@dimen/retail_more_actions_popup_menu_width</item>
+        <item name="retail_sale_discounts_fragment_width">@dimen/retail_sale_discounts_fragment_width</item>
+        <item name="retail_catalog_retail_preview_container_size">@dimen/retail_catalog_retail_preview_container_size
+        </item>
+        <item name="retail_dialog_merch_catalog_width">@dimen/retail_dialog_merch_catalog_width</item>
+        <item name="retail_nomenclature_title_enlarged_text_size">@dimen/retail_nomenclature_title_enlarged_text_size
+        </item>
+        <!--        <item name="retail_input_field_two_signs_menu_width">@dimen/retail_input_field_two_signs_menu_width</item>-->
+        <item name="retail_scanned_nomenclature_dialog_content_width">
+            @dimen/retail_scanned_nomenclature_dialog_content_width
+        </item>
+
+        <item name="retail_settings_view_main_fragment_more_menu_width">
+            @dimen/retail_settings_view_main_fragment_more_menu_width
+        </item>
+
+        <item name="retail_register_sale_item_title_weight">@dimen/retail_register_sale_item_title_weight</item>
+        <item name="retail_register_sale_item_image_weight">@dimen/retail_register_sale_item_image_weight</item>
+        <item name="retail_register_sale_item_checkbox_weight">@dimen/retail_register_sale_item_checkbox_weight</item>
+        <item name="retail_register_sale_item_price_weight">@dimen/retail_register_sale_item_price_weight</item>
+        <item name="retail_register_sale_item_quantity_weight">@dimen/retail_register_sale_item_quantity_weight</item>
+        <item name="retail_register_sale_item_summ_weight">@dimen/retail_register_sale_item_summ_weight</item>
+
+        <item name="retail_settings_main_bar_height">@dimen/retail_settings_main_bar_height</item>
+        <item name="retail_correction_check_fragment_width">@dimen/retail_correction_check_fragment_width</item>
+
+        <item name="retail_settings_sale_mode_image_height">@dimen/retail_settings_sale_mode_image_height</item>
+        <item name="retail_settings_sale_mode_image_width">@dimen/retail_settings_sale_mode_image_width</item>
+
+        <item name="selectableItemBackgroundBorderless">@drawable/retail_selectable_item_background_borderless</item>
+
+        <!--#region RetailViewsAttrs-->
+        <item name="retail_views_default_retail_font">@font/retail_tensor_font_family</item>
+        <item name="retail_views_mobile_icon_font">@font/sbis_mobile_icons</item>
+        <!--#endregion-->
+
+        <!-- Ситуативные цвета палитры -->
+        <item name="item_background_color_tile">#293849</item>
+
+        <!-- Временные цвета для случаев, когда розничная тема не соответствует глобальной палитре  -->
+        <item name="unaccentedBackgroundColorRetail">#23303E</item>
+        <item name="colorAccent">@color/color_accent</item>
+
+        <!-- Navigation -->
+        <item name="navigationCounterSeparatorColor">@color/palette_color_blue12</item>
+
+        <item name="navigationBackgroundColor">#242F3E</item>
+        <item name="navigationSelectedBackgroundColor">#2D3848</item>
+
+        <item name="navigationTextColor">@color/palette_color_white1</item>
+        <item name="navigationUnaccentedTextColor">@color/palette_color_dark_blue5</item>
+        <item name="navigationPrimaryTextColor">@color/palette_color_orange9</item>
+        <item name="navigationActiveTextColor">@color/palette_color_white1</item>
+
+        <item name="navigationIconColor">#9CB1C7</item>
+        <item name="navigationSecondaryIconColor">@color/palette_color_dark_gray1</item>
+        <item name="navigationActiveIconColor">@color/palette_color_white1</item>
+
+        <item name="navigationSeparatorColor">@color/palette_alpha_color_black2</item>
+        <item name="navigationMarkerColor">@color/palette_color_dark_orange1</item>
+
+        <item name="navigationBackgroundColorButton">?primaryColor</item>
+
+        <item name="horizontalItemActiveBackgroundColorNavigationPanelsAccordion">@color/palette_color_dark_blue1</item>
+        <item name="horizontalSidebarBackgroundColorNavigationPanelsSidebar">@color/palette_color_dark_blue2</item>
+        <item name="navStyle">@style/RetailNavView</item>
+        <item name="logoViewDefaultIcon">@drawable/saby_bird</item>
+    </style>
+</resources>

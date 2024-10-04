@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?unaccentedBackgroundColor">
+
+    <ru.tensor.sbis.design.buttons.SbisToggleRoundButton
+        android:id="@+id/mode_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:SbisRoundButton_icon="@string/design_mobile_icon_menu"
+        app:SbisRoundButton_iconSelected="@string/design_mobile_icon_arrange_preview"
+        app:SbisRoundButton_size="m"
+        app:SbisRoundButton_style="def"
+        app:SbisRoundButton_type="transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/period_picker_period_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?brandColor"
+        android:textSize="?fontSize_2xl_scaleOff"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/mode_button"
+        app:layout_constraintStart_toEndOf="@+id/mode_button"
+        app:layout_constraintTop_toTopOf="@+id/mode_button"
+        tools:text="Весь период"
+        tools:visibility="visible"/>
+
+    <ru.tensor.sbis.design.view.input.mask.date.DateInputView
+        android:id="@+id/start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:inputView_format="date"
+        app:inputView_showPlaceholderAsTitle="false"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dash_text_view"
+        app:layout_constraintStart_toEndOf="@+id/mode_button"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/dash_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start_date"
+        android:text="@string/symbol_dash"
+        android:textColor="?textColor"
+        app:layout_constraintBottom_toBottomOf="@+id/mode_button"
+        app:layout_constraintStart_toEndOf="@+id/start_date"
+        app:layout_constraintTop_toTopOf="@+id/mode_button"/>
+
+    <ru.tensor.sbis.design.view.input.mask.date.DateInputView
+        android:id="@+id/end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:inputView_format="date"
+        app:inputView_showPlaceholderAsTitle="false"
+        app:layout_constraintBaseline_toBaselineOf="@+id/start_date"
+        app:layout_constraintStart_toEndOf="@+id/dash_text_view"/>
+
+    <ru.tensor.sbis.design.buttons.SbisRoundButton
+        android:id="@+id/current_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:SbisRoundButton_size="m"
+        app:SbisRoundButton_style="brand"
+        app:SbisRoundButton_type="transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/complete_button"
+        app:layout_constraintEnd_toStartOf="@+id/complete_button"
+        app:layout_constraintTop_toTopOf="@+id/complete_button"/>
+
+    <ru.tensor.sbis.design.buttons.SbisRoundButton
+        android:id="@+id/complete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:SbisRoundButton_icon="@string/design_mobile_icon_checked"
+        app:SbisRoundButton_size="m"
+        app:SbisRoundButton_style="success"
+        app:SbisRoundButton_type="transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/calendar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/period_picker_zero_dimen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mode_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

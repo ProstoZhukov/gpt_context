@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Цвета из стандарта https://www.figma.com/file/1VP0zre5UrAwduCM8RGEXQ/%D0%A2%D0%B5%D0%BC%D1%8B-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-Retail-%26-Presto?node-id=12404%3A32074 -->
+    <color name="retail_views_numeric_keyboard_button_extra_background_color_dark">@color/retail_views_unaccented_button_background_color_dark</color>
+    <color name="retail_views_numeric_keyboard_button_extra_disabled_background_color_dark">@color/retail_views_unaccented_button_background_inactive_color_dark</color>
+
+    <color name="retail_views_numeric_keyboard_button_extra_text_color_dark">#82929F</color>
+    <color name="retail_views_numeric_keyboard_button_extra_disabled_text_color_dark">#82929F</color>
+
+</resources>

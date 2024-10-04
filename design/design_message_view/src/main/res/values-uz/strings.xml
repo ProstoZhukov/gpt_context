@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_message_view_chat_members_more">, koʻproq\u0020</string>
+    <string name="design_message_view_chat_restore">Qayta tiklash</string>
+    <string name="design_message_rate_request_button_title">Baholash</string>
+</resources>

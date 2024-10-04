@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:theme="?globalToolbarStyle"
+    style="?attr/tabNavVerticalMenuBtnStyle"
+    tools:theme="@style/TabNavView"
+    tools:viewBindingIgnore="true">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/tab_icon_text"
+        android:theme="?attr/tabNavVerticalMenuBtnStyle"
+        style="?attr/tabNavItemIconTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/design_mobile_icon_menu"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

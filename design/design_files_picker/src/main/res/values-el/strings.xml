@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="files_picker_panel_header_button_title">Ματαίωση</string>
+    <string name="files_picker_panel_footer_button_title">Προσθήκη</string>
+    <string name="files_picker_panel_header_title">Επιλέχθηκε %s</string>
+    <plurals name="files_picker_selection_limit_message">
+        <item quantity="zero">Δεν μπορείτε να επιλέξετε περισσότερα από %d αρχεία</item>
+        <item quantity="one">Δεν μπορείτε να επιλέξετε περισσότερα από %d αρχεία</item>
+        <item quantity="two">Δεν μπορείτε να επιλέξετε περισσότερα από %d αρχεία</item>
+        <item quantity="few">Δεν μπορείτε να επιλέξετε περισσότερα από %d αρχεία</item>
+        <item quantity="many">Δεν μπορείτε να επιλέξετε περισσότερα από %d αρχεία</item>
+        <item quantity="other">Δεν μπορείτε να επιλέξετε περισσότερα από %d αρχεία</item>
+    </plurals>
+</resources>

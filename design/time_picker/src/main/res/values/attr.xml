@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Для атрибутов игнорируем 'resource_prefix_', т.к. при обращении к ним получаем
+        дублирование и как итог - трудноразличимое имя.
+
+        Пример для 'timePickerWheelBackground': TimePickerWheelsTimePicker_timePickerWheelBackground
+     -->
+    <declare-styleable name="TimePickerWheelsTimePicker">
+        <attr name="wheelBackground" format="color" tools:ignore="ResourceName"/>
+        <attr name="midnightAsZero" format="boolean" tools:ignore="ResourceName"/>
+        <attr name="disableMinutes" format="boolean" tools:ignore="ResourceName"/>
+    </declare-styleable>
+
+    <declare-styleable name="TimePickerWheelsHourPicker">
+        <attr name="midnightHourAsZero" format="boolean" tools:ignore="ResourceName"/>
+        <attr name="labelPattern" format="string|reference" tools:ignore="ResourceName"/>
+    </declare-styleable>
+
+    <declare-styleable name="TimePickerFromToWheelsPicker">
+        <attr name="dividerBackgroundColor" format="color" tools:ignore="ResourceName"/>
+        <attr name="dividerColor" format="color" tools:ignore="ResourceName"/>
+    </declare-styleable>
+
+    <!--Цвет времени в выборе часов-->
+    <attr name="time_picker_wheel_text_color" format="reference|color" />
+</resources>

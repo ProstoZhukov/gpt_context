@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="ru.tensor.sbis.design.gallery.impl.ui.GalleryClickHandler"/>
+
+    </data>
+
+    <ru.tensor.sbis.design.gallery.impl.ui.GalleryItemContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/gallery_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/design_gallery_small_stub_bg"
+            android:onClick="@{() -> clickHandler.onCameraStubClick()}">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/gallery_camera_stub_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="?unaccentedTextColor"
+                app:layout_constraintBottom_toTopOf="@id/gallery_camera_stub_desc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:srcCompat="@drawable/design_gallery_camera_stub"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/design_gallery_camera_stub_offset"
+                android:tint="?dangerIconColor"
+                app:layout_constraintBottom_toBottomOf="@id/gallery_camera_stub_main"
+                app:layout_constraintEnd_toEndOf="@id/gallery_camera_stub_main"
+                app:srcCompat="@drawable/design_gallery_exclamation_point_stub"/>
+
+            <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+                android:id="@+id/gallery_camera_stub_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="?offset_xs"
+                android:layout_marginTop="?offset_s"
+                android:gravity="center"
+                android:text="@string/design_gallery_camera_stub_message"
+                android:textColor="?unaccentedTextColor"
+                android:textSize="?fontSize_2xs_scaleOff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gallery_camera_stub_main"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ru.tensor.sbis.design.gallery.impl.ui.GalleryItemContainer>
+</layout>

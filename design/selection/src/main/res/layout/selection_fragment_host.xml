@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectionRootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/palette_color_white1">
+
+    <!-- Шапка (строка поиска, кнопки завершения, отмены и др.) -->
+    <include
+        android:id="@+id/headerContent"
+        layout="@layout/selection_header"/>
+
+    <!-- Область, которая изменяется при переходах по иерархии -->
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Дубль темы BlackBlueTheme, которая не наследуется от ConfigurableBaseAppTheme-->
+    <style name="FeatureBlackBlueTheme" parent="FeatureDefaultLightTheme">
+
+        <item name="headerBackgroundColor">?backgroundColor</item>
+        <item name="globalToolbarStyle">@style/FeatureBlackBlueTheme</item>
+        <item name="globalAuthStyle">@style/LargeDarkTheme</item>
+        <item name="toolbarBackIconColor">?primaryIconColor</item>
+        <item name="lightStatusBar">false</item>
+        <item name="isDark">false</item>
+        <!-- region Цвета -->
+
+        <!-- region Цвета текста -->
+        <item name="labelTextColor">#90A1A3</item>
+        <!-- endregion -->
+
+        <!-- region Цвета иконок -->
+        <item name="iconColor">#405E61</item>
+        <!-- endregion -->
+
+        <!-- region Смысловые цвета -->
+        <item name="primaryTextColor">#00282C</item>
+        <item name="primaryColor">?primaryTextColor</item>
+        <item name="primaryActiveColor">#405E61</item>
+
+        <item name="unaccentedBorderColor">#DCE1E2</item>
+        <item name="unaccentedBackgroundColor">#EBEDED</item>
+        <item name="unaccentedAdaptiveBackgroundColor">?unaccentedBackgroundColor</item>
+        <item name="unaccentedActiveBackgroundColor">#DFE3E4</item>
+        <item name="unaccentedActiveContrastBackgroundColor">#CCCCCC</item>
+
+        <item name="paleBorderColor">#D4D4D4</item>
+
+        <item name="brandColor">?primaryTextColor</item>
+        <!-- endregion -->
+
+        <!-- region Цвета навигации -->
+        <item name="navigationLogo">?brandColor</item>
+        <item name="navigationLogoFill">#D8E1E2</item>
+
+        <item name="navigationCounterSeparatorColor">#CCCCCC</item>
+
+        <item name="navigationUnaccentedBackgroundColor">#C3CBCC</item>
+
+        <item name="navigationBackgroundColor">#D8E1E2</item>
+        <item name="navigationActiveBackgroundColor">#E6ECEE</item>
+
+        <item name="navigationTextColor">#00282C</item>
+        <item name="navigationUnaccentedTextColor">#8991A9</item>
+        <item name="navigationPrimaryTextColor">?primaryTextColor</item>
+        <item name="navigationActiveTextColor">#00282C</item>
+
+        <item name="navigationIconColor">#00282C</item>
+        <item name="navigationActiveIconColor">#00282C</item>
+        <item name="navigationUnaccentedIconColor">#AEC5E0</item>
+
+        <item name="navigationSeparatorColor">#E6ECEE</item>
+        <item name="navigationMarkerColor">?brandColor</item>
+
+        <item name="navigationMenuFill">#F0F1F4</item>
+
+        <item name="horizontalItemActiveBackgroundColorNavigationPanelsAccordion">#E6ECEE</item>
+
+        <item name="horizontalSidebarBackgroundColorNavigationPanelsSidebar">#E6ECEE</item>
+
+        <item name="horizontalItemColorNavigationPanelsAccordion">#5A7B7F</item>
+        <item name="horizontalItemActiveColorNavigationPanelsAccordion">#00282C</item>
+
+        <item name="horizontalItemIconColorNavigationPanelsAccordion">#5A7B7F</item>
+        <item name="horizontalItemIconActiveColorNavigationPanelsAccordion">#00282C</item>
+
+        <item name="horizontalSidebarBorderColorNavigationPanelsSidebar">#E2E7E9</item>
+
+        <item name="itemIconBackgroundColorNavigationPanelsAccordion">#F1F2F5</item>
+        <!-- endregion -->
+
+        <!-- region Дополнительные цвета -->
+        <item name="placeholderColorInputText">#9990A1A3</item>
+        <!-- endregion -->
+
+        <!-- region Параметры сплэш-скрина -->
+        <item name="splashScreenBackgroundColor">#00282C</item>
+        <!-- endregion -->
+    <!-- endregion -->
+    </style>
+</resources>

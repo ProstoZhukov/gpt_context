@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selection_preview_total_count_format">Sa&#xfd;lanan% d</string>
+    <string name="selection_limit_exceeded">% D-den köp element sa&#xfd;lap bilmersi&#x148;iz</string>
+    <string name="selection_all_items_selected">Bar bolan elementler sa&#xfd;landy</string>
+    <string name="selection_all_employees_selected_title">Bu bölümi&#x148; ähli i&#x15f;gärleri sa&#xfd;lan&#xfd;ar</string>
+    <string name="selection_all_employees_selected_description">Has köp alyjy go&#x15f;mak üçin ba&#x15f;ga bir bukja geçi&#x148;</string>
+    <string name="selection_all_regions_selected_title">Bar bolan sebitler sa&#xfd;landy</string>
+    <string name="selection_dialog_relevant_message_i_am_author">Men:</string>
+    <string name="selection_all_recipients_selected_title">Ba&#x15f;ga birini sa&#xfd;lamaly däl</string>
+</resources>

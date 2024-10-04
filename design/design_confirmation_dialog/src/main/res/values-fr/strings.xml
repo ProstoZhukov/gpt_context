@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_confirmation_dialog_button_cancel">Annuler</string>
+    <string name="design_confirmation_dialog_button_no">Non</string>
+    <string name="design_confirmation_dialog_button_yes">Oui</string>
+    <string name="design_confirmation_dialog_button_ok">OK</string>
+</resources>

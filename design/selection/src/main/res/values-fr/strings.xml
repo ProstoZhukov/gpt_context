@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selection_preview_total_count_format">Sélectionné %d</string>
+    <string name="selection_limit_exceeded">Vous ne pouvez pas sélectionner plus de %d éléments</string>
+    <string name="selection_all_items_selected">Tous les articles sont sélectionnés</string>
+    <string name="selection_all_employees_selected_title">Tous les employés de ce département sont sélectionnés</string>
+    <string name="selection_all_employees_selected_description">Allez dans un autre dossier pour ajouter plus de destinataires</string>
+    <string name="selection_all_regions_selected_title">Toutes les régions sont sélectionnées</string>
+    <string name="selection_dialog_relevant_message_i_am_author">Moi:</string>
+    <string name="selection_all_recipients_selected_title">Personne à sélectionner</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pin_code_confirmation_code_hint">Code de confirmation</string>
+    <string name="pin_code_confirm_signature_header">Confirmation de signature</string>
+    <string name="pin_code_create_pin_header">Pensez à votre NIP</string>
+    <string name="pin_code_creation_confirmation_alert">Le code ne correspond pas. Trouvez et entrez à nouveau le code PIN.</string>
+    <string name="pin_code_do_not_request">Ne demande pas</string>
+    <string name="pin_code_enter_code_header">Entrez un code</string>
+    <string name="pin_code_enter_pin_header">Entrez le code PIN</string>
+    <string name="pin_code_enter_sms_code_header">Entrez le code SMS</string>
+    <string name="pin_code_period_field_half_hour">pendant 30 minutes</string>
+    <string name="pin_code_period_field_hour">Pour 1 heure</string>
+    <string name="pin_code_period_field_quarter_hour">Pour 15 minutes</string>
+    <string name="pin_code_period_field_session">jusqu\'à la fin de la session</string>
+    <string name="pin_code_period_picker_half_hour_option">30 minutes</string>
+    <string name="pin_code_period_picker_hour_option">1 heure</string>
+    <string name="pin_code_period_picker_quarter_hour_option">15 minutes</string>
+    <string name="pin_code_period_picker_session_option">Jusqu\'à la fin de la session</string>
+    <string name="pin_code_recovery_code_header">Code de récupération</string>
+    <string name="pin_code_retry_label">Récupérez le code</string>
+    <string name="pin_code_timer_label">Réessayer après %s</string>
+    <string name="pin_code_we_are_calling_you_header">Nous vous appelons…</string>
+    <string name="pin_code_we_are_calling_you_body">Les 4 derniers chiffres du numéro de téléphone entrant</string>
+    <string name="pin_code_error_title">Erreur</string>
+    <string name="pin_code_error_confirmation_button">OK</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="demo_container_header_tab_red" type="id"/>
+    <item name="demo_container_header_tab_green" type="id"/>
+    <item name="demo_container_header_tab_blue" type="id"/>
+</resources>

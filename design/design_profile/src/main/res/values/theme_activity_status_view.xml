@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DesignProfileActivityStatusStyleWhite"/>
+
+    <style name="DesignProfileActivityStatusStyleBlue"/>
+
+    <style name="DesignProfileActivityStatusStyleBlueTheme">
+        <item name="activityStatusViewTheme">@style/DesignProfileActivityStatusStyleBlue</item>
+    </style>
+
+</resources>

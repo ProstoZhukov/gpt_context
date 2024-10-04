@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Стиль индикатора -->
+    <attr name="sbisIndicatorTheme" format="reference"/>
+
+    <declare-styleable name="SbisIndicator">
+
+        <!-- Размер точек, по умолчанию 8dp -->
+        <attr name="SbisIndicator_dotSize" format="dimension|reference"/>
+
+        <!-- Размер отступов между точками, по умолчанию 4dp -->
+        <attr name="SbisIndicator_dotSpace" format="dimension|reference"/>
+
+        <!-- Нужна ли обводка для точек, по умолчанию false -->
+        <attr name="SbisIndicator_withBorder" format="boolean"/>
+
+        <!-- Максимальное количество видимых точек, по умолчанию 6 -->
+        <attr name="SbisIndicator_maxVisibleDotsCount" format="integer"/>
+
+        <!--region Набор цветов точек -->
+        <!-- Цвет выделенной точки -->
+        <attr name="SbisIndicator_selectedDotColor" format="color|reference"/>
+        <!-- Цвет точки -->
+        <attr name="SbisIndicator_unselectedDotColor" format="color|reference"/>
+        <!-- Цвет обводки выделенной точки -->
+        <attr name="SbisIndicator_selectedDotBorderColor" format="color|reference"/>
+        <!-- Цвет обводки -->
+        <attr name="SbisIndicator_unselectedDotBorderColor" format="color|reference"/>
+        <!--endregion-->
+
+    </declare-styleable>
+</resources>

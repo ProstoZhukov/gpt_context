@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Атрибут для определения темы панели ввода в составе темы приложения -->
+    <attr name="messagePanelTheme" format="reference"/>
+
+    <declare-styleable name="MessagePanel">
+        <!-- Стиль панели цитирования/редактирования QuoteView.-->
+        <attr name="MessagePanel_quoteViewStyle" format="reference"/>
+
+        <!-- Стиль панели получателей RecipientsView. -->
+        <attr name="MessagePanel_recipientsViewStyle" format="reference"/>
+        <!-- Текст подсказки для отображения при пустом списке получателей. -->
+        <attr name="MessagePanel_recipientsHintText" format="string|reference"/>
+        <!-- Текст, который будет отображаться в панели получателей, когда выбраны все участники переписки. -->
+        <attr name="MessagePanel_recipientsAllChosenText" format="string|reference"/>
+        <!-- Отображение панели получателей. По умолчанию true. -->
+        <attr name="MessagePanel_showRecipients" format="boolean"/>
+
+        <!-- Ссылка на drawable иконки отправки в выключенном состоянии. -->
+        <attr name="MessagePanel_sendIconDisabled" format="reference"/>
+        <!-- Ссылка на drawable иконки отправки во включенном состоянии. -->
+        <attr name="MessagePanel_sendIconEnabled" format="reference"/>
+
+        <!-- Подсказка в панели ввода. -->
+        <attr name="MessagePanel_input_hint" format="reference"/>
+
+        <!-- Отступ сверху. Например, для предотвращения перекытия toolbar. -->
+        <attr name="MessagePanel_topOffset" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MessagePanel_Layout">
+        <!-- Стиль дочерних элементов внутри MessagePanel. -->
+        <attr name="MessagePanel_gravity" format="enum">
+            <!-- Добавляет дочерний элемент над корневой view панели сообщений. -->
+            <enum name="top" value="0"/>
+            <!-- Добавляет дочерний элемент под корневой view панели сообщений. -->
+            <enum name="bottom" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

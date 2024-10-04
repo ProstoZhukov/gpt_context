@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LargeLightTheme" parent="DefaultLightTheme">
+
+        <item name="headerBackgroundColor">?rtlHeaderBackground</item>
+        <item name="globalToolbarStyle">@style/FeatureLargeDarkTheme</item>
+        <!-- region Цвета -->
+        <!-- region Общие цвета -->
+
+        <!-- Цвета фона -->
+        <item name="backgroundColor">#FFFFFF</item>
+        <item name="contrastBackgroundColor">#F3F5F7</item>
+        <item name="readonlyBackgroundColor">#DCE1E4</item>
+        <item name="activeBackgroundColor">#E6E7EB</item>
+        <item name="itemBackgroundColorTile">#FFFFFF</item>
+        <item name="imageBackgroundColor">#F8F8F8</item>
+
+        <item name="backgroundColorStack">#FFFFFF</item>
+        <item name="backgroundColorDialog">#FFFFFF</item>
+        <item name="backgroundColorInfobox">#F7F8FA</item>
+        <item name="backgroundColorSticky">#F4F7FB</item>
+
+        <!-- Цвета обводки -->
+        <item name="borderColor">#EAEAEA</item>
+        <item name="readonlyBorderColor">#E4E4E4</item>
+
+        <!-- Цвета меток элементов -->
+        <item name="markerColor">#CC3D00</item>
+        <item name="readonlyMarkerColor">#FFDBCC</item>
+        <item name="itemSelectedColor">#3F5975</item>
+        <item name="itemSelectedTextColor">#FFFFFF</item>
+        <item name="secondaryMarkerSelectedItemColor">#5C6C8A</item>
+
+        <!-- Цвета индикаторов прогресса -->
+        <item name="progressColor">#FF7033</item>
+        <item name="contrastProgressColor">#FFFFFF</item>
+
+        <!-- Цвета разделителей -->
+        <item name="separatorColor">#0A000000</item> <!-- 4% -->
+        <item name="unaccentedSeparatorColor">#14000000</item> <!-- 8% -->
+
+        <!-- Цвета текста -->
+        <item name="textColor">#000000</item>
+        <item name="contrastTextColor">#FFFFFF</item>
+        <item name="linkTextColor">#2562AA</item>
+        <item name="labelTextColor">#82929F</item>
+        <item name="readonlyTextColor">#82929F</item>
+        <item name="hintTextColor">#82929F</item>
+
+        <!-- Цвета иконок -->
+        <item name="iconColor">#000000</item>
+        <item name="contrastIconColor">#FFFFFF</item>
+        <item name="labelIconColor">#82929F</item>
+        <item name="linkIconColor">#2562AA</item>
+        <item name="readonlyIconColor">#9982929F</item>
+        <item name="itemSelectedIconColor">#FFFFFF</item>
+        <!-- endregion -->
+
+        <!-- region Смысловые цвета -->
+        <item name="primaryTextColor">#CC3D00</item>
+        <item name="primaryIconColor">#F47843</item>
+        <item name="primaryBorderColor">#FF621F</item>
+        <item name="primaryBackgroundColor">#FFF8F5</item>
+        <item name="primaryActiveBackgroundColor">#FFE6DB</item>
+        <item name="primarySameBackgroundColor">#FFF1EB</item>
+        <item name="primaryActiveSameBackgroundColor">#FFDBCC</item>
+        <item name="primaryColor">#FA6519</item>
+        <item name="primaryActiveColor">#F85210</item>
+
+        <item name="secondaryTextColor">#313E78</item>
+        <item name="secondaryIconColor">#656C87</item>
+        <item name="secondaryBorderColor">#1B579D</item>
+        <item name="secondaryBackgroundColor">#F5FAFF</item>
+        <item name="secondaryActiveBackgroundColor">#DBECFF</item>
+        <item name="secondarySameBackgroundColor">#F3F6FA</item>
+        <item name="secondaryActiveSameBackgroundColor">#CCE4FF</item>
+        <item name="secondaryActiveColor">#F9FBFD</item>
+
+        <item name="dangerTextColor">#CC4036</item>
+        <item name="dangerIconColor">#CC4036</item>
+        <item name="dangerBorderColor">#E50C00</item>
+        <item name="dangerBackgroundColor">#FFF7F7</item>
+        <item name="dangerActiveBackgroundColor">#FFDDDB</item>
+        <item name="dangerSameBackgroundColor">#FFECEB</item>
+        <item name="dangerActiveSameBackgroundColor">#FFCFCC</item>
+        <item name="dangerColor">#DC2219</item>
+        <item name="dangerActiveColor">#AA2018</item>
+
+        <item name="successTextColor">#298E3C</item>
+        <item name="successIconColor">#298E3C</item>
+        <item name="successBorderColor">#00A31F</item>
+        <item name="successBackgroundColor">#F7FFF8</item>
+        <item name="successActiveBackgroundColor">#DBFFE2</item>
+        <item name="successSameBackgroundColor">#ECF9EC</item>
+        <item name="successActiveSameBackgroundColor">#D5F1D5</item>
+        <item name="successColor">#12A12C</item>
+        <item name="successActiveColor">#127D26</item>
+
+        <item name="warningBorderColor">#FFB92E</item>
+        <item name="warningBackgroundColor">#FFFCF7</item>
+        <item name="warningActiveBackgroundColor">#FFF3DB</item>
+        <item name="warningSameBackgroundColor">#FFF8EB</item>
+        <item name="warningActiveSameBackgroundColor">#FFEECC</item>
+        <item name="warningColor">#ECB956</item>
+        <item name="warningActiveColor">#DF9F20</item>
+
+        <item name="infoTextColor">#5A49AB</item>
+        <item name="infoIconColor">#5A49AB</item>
+        <item name="infoBorderColor">#F8F7FF</item>
+        <item name="infoBackgroundColor">#F9F6FA</item>
+        <item name="infoActiveBackgroundColor">#E1DBFF</item>
+        <item name="infoSameBackgroundColor">#EEEBFF</item>
+        <item name="infoActiveSameBackgroundColor">#D4CCFF</item>
+        <item name="infoColor">#6757B7</item>
+        <item name="infoActiveColor">#504294</item>
+
+        <item name="unaccentedTextColor">#9FA7B2</item>
+        <item name="unaccentedIconColor">#B4BEC5</item>
+        <item name="unaccentedBorderColor">#D2D6DA</item>
+        <item name="unaccentedBackgroundColor">#F2F2F2</item>
+        <item name="unaccentedAdaptiveBackgroundColor">#F2F2F2</item>
+        <item name="unaccentedActiveBackgroundColor">#DBDBDC</item>
+        <item name="unaccentedContrastBackgroundColor">#DBDBDB</item>
+        <item name="unaccentedActiveContrastBackgroundColor">#D4D4D4</item>
+
+        <item name="paleBorderColor">#E5E5EB</item>
+        <item name="paleColor">#0D2A3C54</item>
+        <item name="paleActiveColor">#262A3C54</item>
+
+        <item name="bonusTextColor">#4A00E0</item>
+        <item name="bonusIconColor">#4A00E0</item>
+        <item name="bonusBorderColor">#835AE9</item>
+        <item name="bonusSameBackgroundColor">#F5F2FD</item>
+        <item name="bonusActiveSameBackgroundColor">#DACEF8</item>
+        <item name="bonusContrastBackgroundColor">#835AE9</item>
+        <item name="bonusActiveContrastBackgroundColor">#4A00E0</item>
+        <!-- endregion -->
+
+        <item name="shadowColor">#73000000</item>
+        <!-- endregion -->
+
+        <item name="brandColor">#0085F2</item>
+
+        <!-- region Прозрачные цвета -->
+        <item name="translucentBackgroundColor">#CCCDCDCD</item>
+        <item name="translucentActiveBackgroundColor">#CCBDBDBD</item>
+        <item name="translucentBackgroundColorLight">#4DFFFFFF</item>
+        <item name="translucentActiveBackgroundColorLight">#B3FFFFFF</item>
+        <!-- endregion -->
+
+        <!-- region Размеры меню -->
+        <item name="popupMaxWidthMenuPopup">600dp</item>
+        <!-- endregion -->
+
+        <!-- region Размеры Информационных окон -->
+        <item name="markerWidthPopup">53dp</item>
+        <item name="markerHeightPopup">4dp</item>
+        <item name="contentPaddingConfirmation">?offset_2xl</item>
+        <!-- endregion -->
+
+        <!-- region Дополнительные цвета кнопок -->
+        <item name="defaultActiveBackgroundColorButton">?secondaryActiveColor</item>
+        <item name="defaultContrastBackgroundColorButton">?secondaryContrastBackgroundColorButton</item>
+        <item name="primaryContrastBackgroundColorButton">#F85F20</item>
+        <item name="secondaryContrastBackgroundColorButton">#F3F6FA</item>
+        <!-- endregion -->
+
+        <!-- region Large global attrs -->
+        <item name="rtlHeaderBackground">#283C53</item>
+        <item name="rtlKeyboardPanelBackground">#D8DBDE</item>
+        <item name="rtlListActiveBackground">#0D000000</item>
+
+        <item name="salaryBorderColorButton">#8F54A9</item>
+        <item name="salarySameBackgroundColorButton">#F4E9F5</item>
+        <item name="salaryContrastBackgroundColorButton">#7F4A95</item>
+        <item name="salaryActiveContrastBackgroundColorButton">#6B3F7D</item>
+
+        <item name="cardBorderColorButton">#C95F94</item>
+        <item name="cardSameBackgroundColorButton">#FBEEF7</item>
+        <item name="cardContrastBackgroundColorButton">#BC4D85</item>
+        <item name="cardActiveContrastBackgroundColorButton">#AA3A72</item>
+        <item name="bonusContrastBackgroundColorButton">#6931E4</item>
+        <item name="bonusActiveContrastBackgroundColorButton">#571CD8</item>
+        <!-- endregion -->
+
+        <!-- region Large navigation -->
+        <item name="navigationLogo">#0085F2</item>
+        <!-- endregion -->
+
+        <!-- region Цвета виртуальной клавиатуры -->
+        <item name="defaultBackgroundColorKeyboardView">#99FFFFFF</item>
+        <item name="defaultActiveBackgroundColorKeyboardView">#E6FFFFFF</item>
+        <item name="actionTextColorKeyboardView">#B4BEC5</item>
+        <item name="actionBackgroundColorKeyboardView">#4DFFFFFF</item>
+        <item name="actionActiveBackgroundColorKeyboardView">#B3FFFFFF</item>
+        <!-- endregion -->
+
+        <!-- region Параметры сплэш-скрина -->
+        <item name="splashScreenBackgroundColor">@color/splash_screen_background_color_dark</item>
+        <item name="splashScreenGradient">@drawable/splash_gradient_dark</item>
+        <item name="splashScreenLogo">@drawable/ic_sbis_artboard_default</item>
+        <!-- endregion -->
+
+        <!-- region Цвета графиков отличные от Default Light-->
+        <item name="graphs_base_color_0">#D9D9D9</item>
+        <item name="graphs_base_color_1">#7CB5EC</item>
+
+        <item name="graphs_base_color_0_opacity_50">#80D9D9D9</item>
+        <item name="graphs_base_color_0_opacity_20">#33D9D9D9</item>
+        <item name="graphs_base_color_1_opacity_50">#807CB5EC</item>
+        <item name="graphs_base_color_1_opacity_20">#337CB5EC</item>
+
+        <item name="graphs_extra_color_0">#EEEEEE</item>
+        <item name="graphs_extra_color_1">#ECF4FC</item>
+        <item name="graphs_extra_color_3">#FEF2E6</item>
+        <!-- endregion -->
+
+    </style>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_person_suggest_find_by_text_hint">Search by text</string>
+    <string name="design_person_suggest_person_input_close_button_icon" translatable="false">&#xe902;</string>
+</resources>

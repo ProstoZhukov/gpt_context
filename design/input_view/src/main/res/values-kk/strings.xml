@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="access_code_input_view_title">Телефонның соңғы 4 санын енгізіңіз</string>
+    <string name="date_input_view_validation_min_max_date">Мән %s мәнінен үлкен және %s мәнінен аз болуы керек</string>
+    <string name="date_input_view_validation_min_date">Мән %s мәнінен үлкен болуы керек</string>
+    <string name="date_input_view_validation_max_date">Мән %s мәнінен аз болуы керек</string>
+    <string name="phone_input_view_placeholder_mobile_default">Телефон</string>
+    <string name="phone_input_view_ext_number">ішкі.</string>
+</resources>

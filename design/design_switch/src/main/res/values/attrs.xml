@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sbisSwitchTheme" format="reference"/>
+
+    <declare-styleable name="SbisSwitchView">
+        <!--Цвет маркера-->
+        <attr name="SbisSwitchView_thumbCheckedColor" format="color|reference"/>
+        <attr name="SbisSwitchView_thumbUncheckedColor" format="color|reference"/>
+        <attr name="SbisSwitchView_thumbDisabledCheckedColor" format="color|reference"/>
+        <attr name="SbisSwitchView_thumbDisabledUncheckedColor" format="color|reference"/>
+        <attr name="SbisSwitchView_trackCheckedColor" format="color|reference"/>
+        <attr name="SbisSwitchView_trackUncheckedColor" format="color|reference"/>
+        <attr name="SbisSwitchView_trackDisabledCheckedColor" format="color|reference"/>
+        <attr name="SbisSwitchView_trackDisabledUncheckedColor" format="color|reference"/>
+
+    </declare-styleable>
+</resources>

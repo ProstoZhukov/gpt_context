@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="design_message_cloud" type="id"/>
+    <item name="design_video_message_cloud" type="id"/>
+    <item name="design_message_view_message_cloud_rate" type="id"/>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PersonSuggestViewDefaultStyle">
+        <item name="PersonSuggestView_backgroundColor">?unaccentedContrastBackgroundColor</item>
+        <item name="PersonSuggestView_listHorizontalPadding">?offset_xs</item>
+        <item name="PersonSuggestView_personHorizontalPadding">?offset_xs</item>
+        <item name="PersonSuggestView_personVerticalPadding">?offset_s</item>
+        <item name="PersonSuggestView_photoSize">m</item>
+    </style>
+
+</resources>

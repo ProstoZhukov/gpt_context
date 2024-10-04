@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="stub_view_min_height_portrait">200dp</dimen>
+    <dimen name="stub_view_min_height_landscape">100dp</dimen>
+    <dimen name="stub_view_padding">12dp</dimen>
+
+    <dimen name="stub_view_icon_size_max">250dp</dimen>
+    <dimen name="stub_view_icon_size_min">100dp</dimen>
+    <dimen name="stub_view_icon_bottom_padding">20dp</dimen>
+    <dimen name="stub_view_icon_right_padding">12dp</dimen>
+
+    <dimen name="stub_view_message_bottom_padding">8dp</dimen>
+
+    <dimen name="stub_view_outer_margin">12dp</dimen>
+    <dimen name="stub_view_icon_bottom_margin">20dp</dimen>
+    <dimen name="stub_view_icon_default_size">52dp</dimen>
+    <dimen name="stub_view_icon_max_size">250dp</dimen>
+    <dimen name="stub_view_title_bottom_margin">8dp</dimen>
+    <dimen name="stub_view_no_icon_padding">30dp</dimen>
+    <dimen name="stub_view_with_icon_padding">100dp</dimen>
+</resources>

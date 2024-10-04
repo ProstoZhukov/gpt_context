@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_notification__content_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/design_notification_snackbar_date_top_padding"
+    android:paddingBottom="@dimen/design_notification_snackbar_date_top_padding"
+    tools:viewBindingIgnore="true">
+
+    <ImageView
+        android:id="@+id/design_notification_snackbar_icon_view"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/design_notification_snackbar_image_top_padding"
+        tools:ignore="ContentDescription"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/design_notification_snackbar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/design_notification_snackbar_header_horizontal_padding"
+        android:layout_marginStart="@dimen/design_notification_snackbar_header_horizontal_padding"
+        android:layout_toEndOf="@+id/design_notification_snackbar_icon_view"
+        android:layout_toLeftOf="@+id/design_notification_dismiss"
+        android:layout_toRightOf="@+id/design_notification_snackbar_icon_view"
+        android:layout_toStartOf="@+id/design_notification_dismiss"
+        android:ellipsize="end"
+        android:gravity="top"
+        android:maxLines="2"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/design_notification_snackbar_name_text_size"/>
+
+    <Button
+        android:id="@+id/design_notification_dismiss"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_close_normal"
+        android:visibility="gone"/>
+
+</RelativeLayout>

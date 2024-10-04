@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="tablet_selection_window_width_percent" type="integer" format="float" tools:ignore="MissingDefaultResource">0.68</item>
+</resources>

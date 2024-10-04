@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/Selector_chooseAllBodyStyle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/selection_item_min_height"
+    android:theme="?attr/Selector_chooseAllTheme"
+    tools:theme="@style/SelectorChooseAll">
+
+    <TextView
+        android:id="@+id/title"
+        style="?attr/Selector_chooseAllTitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="Выбрать все"/>
+
+    <TextView
+        android:id="@+id/counter"
+        style="?attr/Selector_chooseAllCounterStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/selection_item_selection_button_width"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        tools:text="1 039 543"
+        tools:visibility="visible"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="date_picker_day_item" type="id"/>
+    <item name="date_picker_month_label_item" type="id"/>
+    <item name="date_picker_year_label_item" type="id"/>
+    <item name="date_picker_empty_item" type="id"/>
+
+    <item name="date_picker_day_item_type_id" type="id"/>
+    <item name="date_picker_month_label_item_type_id" type="id"/>
+    <item name="date_picker_month_item_type_id" type="id"/>
+    <item name="date_picker_quarter_item_type_id" type="id"/>
+    <item name="date_picker_half_year_item_type_id" type="id"/>
+    <item name="date_picker_year_item_type_id" type="id"/>
+    <item name="date_picker_year_label_item_type_id" type="id"/>
+    <item name="date_picker_empty_item_type_id" type="id"/>
+</resources>

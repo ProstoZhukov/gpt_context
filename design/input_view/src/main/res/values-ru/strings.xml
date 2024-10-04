@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="access_code_input_view_title">Введите 4 последние цифры телефона</string>
+
+    <string name="date_input_view_validation_min_max_date">Значение должно быть больше %s и меньше %s</string>
+    <string name="date_input_view_validation_min_date">Значение должно быть больше %s</string>
+    <string name="date_input_view_validation_max_date">Значение должно быть меньше %s</string>
+
+    <string name="phone_input_view_placeholder_mobile_default">Телефон</string>
+    <string name="phone_input_view_ext_number">доб.</string>
+</resources>

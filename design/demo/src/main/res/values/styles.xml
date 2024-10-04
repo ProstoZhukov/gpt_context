@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_accent</item>
+
+        <item name="navStyle">@style/NavView</item>
+        <item name="tabNavStyle">@style/TabNavView</item>
+        <item name="primarySbisCounterTheme">@style/SbisCounterDefaultPrimaryTheme</item>
+        <item name="skeletonViewTheme">@style/SkeletonViewDefaultTheme</item>
+    </style>
+
+    <style name="AppTheme.Dark">
+        <item name="skeletonViewTheme">@style/SkeletonViewDarkTheme</item>
+    </style>
+
+    <style name="SkeletonViewDarkTheme" parent="SkeletonViewDefaultTheme">
+        <item name="SkeletonView_mask_color">@color/palette_color_blue7</item>
+        <item name="SkeletonView_shimmer_сolor">@color/palette_color_blue8</item>
+    </style>
+
+    <!-- PopupMenus -->
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/text_color_accent_1</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Animation">
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="HeaderTextStyle" parent="RegularStyle">
+        <item name="android:paddingTop">@dimen/header_view_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/header_view_vertical_padding</item>
+        <item name="android:textSize">@dimen/header_view_text_size</item>
+        <item name="android:textColor">@color/hall_scheme_red</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">@dimen/header_view_min_height</item>
+    </style>
+</resources>

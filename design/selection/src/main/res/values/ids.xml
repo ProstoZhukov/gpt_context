@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="selection_person_photo" type="id"/>
+    <item name="selection_icon_click_area" type="id"/>
+    <item name="selection_person_item_view" type="id"/>
+    <item name="selection_title" type="id"/>
+    <item name="selection_subtitle" type="id"/>
+</resources>
+

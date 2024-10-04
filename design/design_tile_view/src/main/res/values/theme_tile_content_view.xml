@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SbisTileContentViewTheme" tools:ignore="ResourceName">
+        <item name="SbisTileContentView_titleAppearance">@style/TileContentTitleAppearance</item>
+        <item name="SbisTileContentView_descriptionAppearance">
+            @style/TileContentDescriptionAppearance
+        </item>
+    </style>
+
+    <style name="TileContentTitleAppearance" parent="RegularStyle" tools:ignore="ResourceName">
+        <item name="android:textSize">@dimen/size_title2_scaleOn</item>
+    </style>
+
+    <style name="TileContentDescriptionAppearance" parent="RegularStyle" tools:ignore="ResourceName">
+        <item name="android:textSize">@dimen/size_body1_scaleOn</item>
+    </style>
+
+</resources>

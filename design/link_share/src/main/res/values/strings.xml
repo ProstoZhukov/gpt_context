@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="link_share_title_link">Link/Share</string>
+
+    <string name="link_share_copy_link">Copy</string>
+    <string name="link_share_new_tab_link">Open in browser</string>
+    <string name="link_share_qr_link">QR-code</string>
+    <string name="link_share_send_link">Send</string>
+
+    <string name="link_share_qr_confirmation_dialog_button_ok">OK</string>
+    <string name="link_share_alert_link_copied">Link copied to clipboard</string>
+</resources>

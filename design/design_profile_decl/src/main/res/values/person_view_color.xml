@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="design_profile_decl_person_view_initials_background_color_1">#C5DFE0</color>
+    <color name="design_profile_decl_person_view_initials_background_color_2">#ECDDC5</color>
+    <color name="design_profile_decl_person_view_initials_background_color_3">#D9D9C1</color>
+    <color name="design_profile_decl_person_view_initials_background_color_4">#DCD0E7</color>
+    <color name="design_profile_decl_person_view_initials_background_color_5">#E3C3CF</color>
+</resources>

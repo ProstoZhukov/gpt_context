@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.message_panel.recorder_common"
+}
+
+dependencies {
+    implementation project(":design")
+    implementation project(":common")
+    implementation project(':communication-decl')
+    implementation project(':message_panel')
+    implementation project(':modalwindows')
+
+    implementation project(':design_message_panel_common')
+    implementation project(':design_message_panel_decl')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_utils')
+    implementation project(':design_profile')
+    implementation project(':design_buttons')
+    implementation project(':design_notification')
+
+    implementation project(':persons')
+    implementation project(':person-decl')
+}

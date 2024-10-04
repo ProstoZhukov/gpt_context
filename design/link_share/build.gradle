@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'submodule-cfg-plugin'
+}
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableKtLintCfg()
+    cfg.enableViewBindingCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.link_share"
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':common')
+    implementation project(':design_utils')
+    implementation project(':base_components')
+    implementation project(':design_swipeback')
+    implementation project(':design_top_navigation')
+    implementation project(':design_view_ext')
+
+    implementation project(':application-tools')
+    implementation project(':design_buttons')
+    implementation project(':design_utils')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_tabs')
+    implementation project(':modalwindows')
+    implementation project(':mvi_extension')
+    implementation project(':design_dialogs')
+    implementation project(':link_share_decl')
+    implementation project(':design_confirmation_dialog')
+    implementation project(':design_notification')
+
+    implementation libs.zxing.core
+
+    //processors
+    kapt libs.dagger.compiler
+    kapt libs.dagger.android.processor
+    implementation libs.dagger.android
+    implementation libs.dagger.android.support
+
+    // androidx
+    implementation libs.android.core.ktx
+    implementation libs.android.fragment.ktx
+
+    // other
+    implementation libs.timber
+}

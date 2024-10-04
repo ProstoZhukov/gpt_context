@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_media_player_play_video_error">You must end the call to view the video message</string>
+    <string name="design_media_player_play_audio_error">You must end the call to listen the voice message</string>
+</resources>

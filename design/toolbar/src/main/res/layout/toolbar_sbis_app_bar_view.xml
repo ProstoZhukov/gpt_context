@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tensor.sbis.design.toolbar.multilinecollapsingtoolbar.CollapsingToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_collapsingToolbar"
+    style="?collapsingToolbarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:statusBarScrim="@android:color/transparent"
+    app:toolbarId="@id/toolbar_sbisToolbar"
+    tools:viewBindingIgnore="true">
+
+    <!-- Используется реализация с возможностью отображения заглушки. Стиль указан явно -->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/toolbar_mainImage"
+        style="?imageViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"/>
+
+    <View
+        android:id="@+id/toolbar_gradient_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_sbisToolbar"
+        style="?android:attr/toolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="false"
+        app:layout_collapseMode="pin"/>
+
+</ru.tensor.sbis.design.toolbar.multilinecollapsingtoolbar.CollapsingToolbarLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pin_code_retry_label">Get the code again</string>
+    <string name="pin_code_timer_label">Retry after %s</string>
+    <string name="pin_code_create_pin_header">Think of your PIN</string>
+    <string name="pin_code_enter_pin_header">Enter PIN-code</string>
+    <string name="pin_code_enter_sms_code_header">Enter SMS-code</string>
+    <string name="pin_code_we_are_calling_you_header">We are calling you…</string>
+    <string name="pin_code_recovery_code_header">Recovery code</string>
+    <string name="pin_code_enter_code_header">Enter a code</string>
+    <string name="pin_code_confirm_signature_header">Signature confirmation</string>
+    <string name="pin_code_confirmation_code_hint">Confirmation code</string>
+    <string name="pin_code_creation_confirmation_alert">The code does not match. Come up with and enter the pin code again.</string>
+    <string name="pin_code_do_not_request">Do not request</string>
+    <string name="pin_code_period_field_session">until the end of session</string>
+    <string name="pin_code_period_field_hour">for 1 hour</string>
+    <string name="pin_code_period_field_half_hour">for 30 minutes</string>
+    <string name="pin_code_period_field_quarter_hour">for 15 minutes</string>
+    <string name="pin_code_period_picker_session_option">until the end of session</string>
+    <string name="pin_code_period_picker_hour_option">1 hour</string>
+    <string name="pin_code_period_picker_half_hour_option">30 minutes</string>
+    <string name="pin_code_period_picker_quarter_hour_option">15 minutes</string>
+
+    <string name="pin_code_we_are_calling_you_body">The last 4 digits of the incoming phone number</string>
+    <string name="pin_code_error_title">Error</string>
+    <string name="pin_code_error_confirmation_button">OK</string>
+</resources>

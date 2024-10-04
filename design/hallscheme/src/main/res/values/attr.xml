@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="hallSchemeTheme" format="reference"/>
+
+    <declare-styleable name="HallScheme">
+        <attr name="maxZoom" format="float"/>
+    </declare-styleable>
+
+</resources>

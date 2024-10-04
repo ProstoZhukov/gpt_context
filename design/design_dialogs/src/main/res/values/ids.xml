@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="design_dialogs_movable_panel_grip_id" type="id"/>
+    <item name="design_dialogs_movable_panel_content_root_container_id" type="id"/>
+    <item name="design_dialogs_movable_panel_close_button_id" type="id"/>
+    <item name="design_dialogs_movable_panel_shadow_id" type="id"/>
+    <item name="design_dialogs_movable_panel_coordinador_id" type="id"/>
+    <item name="design_dialogs_movable_panel_inset_id" type="id"/>
+    <item name="design_dialogs_movable_panel_single_content_background_container_id" type="id"/>
+</resources>

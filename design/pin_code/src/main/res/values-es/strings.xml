@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pin_code_retry_label">Obtenga el c&#xf3;digo nuevamente</string>
+    <string name="pin_code_timer_label">Reintentar después de %s</string>
+    <string name="pin_code_create_pin_header">Piensa en tu PIN</string>
+    <string name="pin_code_enter_pin_header">Introduzca el c&#xf3;digo PIN</string>
+    <string name="pin_code_enter_sms_code_header">Introduzca el c&#xf3;digo SMS</string>
+    <string name="pin_code_we_are_calling_you_header">Te estamos llamando…</string>
+    <string name="pin_code_recovery_code_header">C&#xf3;digo de recuperaci&#xf3;n</string>
+    <string name="pin_code_enter_code_header">Introduce un c&#xf3;digo</string>
+    <string name="pin_code_confirm_signature_header">Confirmaci&#xf3;n de firma</string>
+    <string name="pin_code_confirmation_code_hint">C&#xf3;digo de confirmaci&#xf3;n</string>
+    <string name="pin_code_creation_confirmation_alert">El c&#xf3;digo no coincide. Ingrese e ingrese el c&#xf3;digo PIN nuevamente.</string>
+    <string name="pin_code_do_not_request">No solicitar</string>
+    <string name="pin_code_period_field_session">hasta el final de la sesi&#xf3;n</string>
+    <string name="pin_code_period_field_hour">durante 1 hora</string>
+    <string name="pin_code_period_field_half_hour">por 30 minutos</string>
+    <string name="pin_code_period_field_quarter_hour">durante 15 minutos</string>
+    <string name="pin_code_period_picker_session_option">Hasta el final de la sesi&#xf3;n</string>
+    <string name="pin_code_period_picker_hour_option">1 hora</string>
+    <string name="pin_code_period_picker_half_hour_option">30 minutos</string>
+    <string name="pin_code_period_picker_quarter_hour_option">15 minutos</string>
+    <string name="pin_code_we_are_calling_you_body">Los &#xfa;ltimos 4 d&#xed;gitos del n&#xfa;mero de teléfono entrante</string>
+    <string name="pin_code_error_title">Error</string>
+    <string name="pin_code_error_confirmation_button">OK</string>
+</resources>

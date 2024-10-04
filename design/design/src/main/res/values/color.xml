@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== |START| ====================== -->
+
+    <!--        ОСНОВНЫЕ ЦВЕТА ПАЛИТРЫ, ИСПОЛЬЗУЕМ ТОЛЬКО ИХ (ЗА ИСКЛЮЧЕНИЕМ ПРИКЛАДНЫХ ЦВЕТОВ, КОТОРЫЕ
+                НУЖНО ОТДЕЛЬНО СОГЛАСОВЫВАТЬ С ПРОЕКТИРОВЩИКОМ). В ДАЛЬНЕЙШЕМ БУДУТ ПЕРЕИМЕНОВАНЫ В
+                СООТВЕТСТВИИ СО СТАНДАРТОМ (ПОСЛЕ УДАЛЕНИЯ УСТАРЕВШИХ ЦВЕТОВ ИЗ ВСЕХ МОДУЛЕЙ, В
+                ПРОТИВНОМ СЛУЧАЕ ВОЗНИКАЕТ КОНФЛИКТ НАЗВАНИЙ)-->
+
+    <!--Text colors version 3-->
+    <!--http://axure.tensor.ru/MobileStandart8/#g=1&p=%D1%81%D1%82%D0%B8%D0%BB%D0%B8_%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0__%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F_3_-->
+    <color name="text_color_black_1">@color/palette_color_black1</color>  <!--text_color_black_0-->
+    <color name="text_color_black_2">@color/palette_color_black2</color> <!--text_color_main-->
+    <color name="text_color_black_3">@color/palette_color_black3</color> <!--text_color_additional-->
+    <color name="text_color_black_4">@color/palette_color_gray9</color>
+    <color name="text_color_accent_1">@color/palette_color_blue11</color>
+    <color name="text_color_accent_2">@color/palette_color_blue12</color>
+    <color name="text_color_accent_3">@color/palette_color_dark_orange1</color>
+    <color name="text_color_accent_4">@color/palette_color_orange1</color>
+    <color name="text_color_blue_icon">@color/palette_color_blue3</color>
+    <color name="text_color_link_1">@color/palette_color_blue13</color>
+    <color name="text_color_link_2">@color/palette_color_blue6</color>
+    <color name="text_color_attention">@color/palette_color_yellow1</color>
+    <color name="text_color_success">@color/palette_color_green2</color>
+    <color name="text_color_forgiven">@color/palette_color_green3</color>
+    <color name="text_color_error">@color/palette_color_red1</color>
+    <!-- Dark background -->
+    <color name="text_color_white">@color/palette_color_white1</color>
+    <color name="text_color_gray">@color/palette_color_gray17</color>
+    <color name="text_color_gray_4">@color/palette_color_dark_gray1</color>
+    <color name="text_color_counter">@color/palette_color_gray18</color>
+    <color name="text_color_accent_5">@color/palette_color_orange9</color>
+
+    <!--http://axure.tensor.ru/MobileStandart8/#g=1&p=%D0%BF%D0%B0%D0%BB%D0%B8%D1%82%D1%80%D0%B0_%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F-->
+    <color name="palette_colorShadow">@color/palette_alpha_color_black3</color>
+    <color name="palette_colorMessage">@color/palette_color_white25</color>
+    <color name="palette_colorButton1">@color/palette_color_white1</color>
+    <color name="palette_colorError2">@color/palette_color_white19</color>
+    <color name="palette_colorNavigation">@color/palette_color_white2</color>
+    <color name="palette_colorNavigationDivider">@color/palette_color_gray12</color>
+    <color name="palette_colorSidebar1">@color/palette_color_blue11</color>
+    <color name="palette_colorSidebar2">@color/palette_color_blue15</color>
+    <color name="palette_colorHeader">@color/palette_color_blue11</color>
+    <color name="palette_colorButton2">@color/palette_alpha_color_brown33</color>
+    <color name="palette_colorSuccess">@color/palette_color_green2</color>
+    <color name="palette_colorAttention">@color/palette_color_yellow1</color>
+    <color name="palette_colorView">@color/palette_color_white2</color>
+
+    <!--НЕ ВХОДИТ В ОСНОВНУЮ ПАЛИТРУ, ОДНАКО БУДЕТ ИСПОЛЬЗОВАТЬСЯ ДЛЯ ФОНА НАЖАТЫХ КНОПОК В ТУЛБАРЕ (НАЗАД И Т.П.)-->
+    <color name="palette_colorHeaderPressed">@color/palette_alpha_color_blue70</color>
+
+    <!--КОНЕЦ ОСНОВНОЙ ПАЛИТРЫ  -->
+
+    <color name="peach_light1">@color/palette_color_white20</color>
+    <color name="peach_light2">@color/palette_color_white21</color>
+    <color name="peach_light3">@color/palette_color_yellow2</color>
+
+    <color name="text_search_highlight_color">@color/palette_color_yellow3</color>  <!-- Используется для подсветки совпадений при поиске -->
+
+    <!-- ========= Base Palette for all 'Sbis' Apps ========= -->
+
+    <color name="color_primary">@color/palette_color_blue11</color>
+    <color name="color_primary_dark">@color/palette_color_blue2</color>
+    <color name="color_accent">@color/palette_color_dark_orange1</color>
+
+    <!-- Colors from axure. -->
+
+    <!-- http://axure.tensor.ru/MobileAPP/#p=%D1%82%D0%B8%D0%BF%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0_%D0%B2_%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC_%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B8 -->
+    <color name="color_accent_3">@color/palette_color_dark_orange1</color>
+    <color name="color_accent_4">@color/palette_color_orange1</color>
+
+    <color name="colorLink1">@color/palette_color_blue8</color>
+    <color name="colorLink2">@color/palette_color_blue6</color>
+    <color name="colorLink3">@color/palette_color_blue6</color>
+
+    <color name="colorSuccess">@color/palette_color_green2</color>
+    <color name="colorNeutral">@color/palette_color_gray4</color>
+    <color name="colorError">@color/palette_color_red1</color>
+
+    <!-- ========= Base Palette for all 'Sbis' Apps ========= -->
+    <!-- ====================== |END| ======================= -->
+
+    <!-- =========== Notifications color palette ============ -->
+    <!-- http://axure.tensor.ru/MobileAPP/#p=%D1%82%D0%B8%D0%BF%D1%8B_%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9&g=1 -->
+    <color name="dark_blue_color">@color/palette_color_blue16</color>
+    <!-- ====================== |END| ======================= -->
+
+    <color name="text_highlight_color">@color/palette_color_white2</color>
+
+    <color name="sbis_black">@color/palette_color_black6</color>
+    <color name="sbis_gray">@color/palette_color_gray19</color>
+    <color name="date_header_color">@color/palette_color_black3</color>
+    <color name="list_selection_gray">@color/palette_alpha_color_black1</color>
+    <color name="badge_blue_color">@color/palette_color_blue17</color>
+    <color name="sbis_orange_dark">@color/palette_color_orange2</color>
+    <color name="text_orange_color">@color/palette_color_dark_orange1</color>
+
+    <color name="text_default_color">@color/palette_color_black1</color>
+    <color name="blue_text_color">@color/palette_color_blue2</color>
+
+    <color name="preference_category_divider_color">@color/palette_color_white12</color>
+    // 200
+    <color name="preference_list_divider_color">@color/palette_color_white10</color>
+    // 300
+
+    <color name="button_orange_default_bg_color">@color/palette_color_dark_orange1</color>
+    <color name="button_orange_disable_bg_color">@color/palette_alpha_color_brown50</color>
+    <color name="button_orange_pressed_bg_color">@color/palette_color_orange2</color>
+
+    <color name="input_field_text_color">@color/palette_color_white1</color>
+    <color name="input_field_line_focused_color">@color/palette_color_blue18</color>
+
+    <color name="input_field_unfocused_color">@color/palette_color_blue3</color>
+
+    <!-- InputTextBox -->
+    <color name="input_text_box_right_icon_text_color">@color/palette_alpha_color_black4</color>
+    <color name="input_text_box_background_color_normal">@color/palette_color_white1</color>
+    <color name="input_text_box_background_color_error">@color/palette_color_white19</color>
+
+    <color name="auth_background">@color/palette_color_blue1</color>
+
+
+    <color name="bottom_toolbar_items_text_disabled_color">@color/palette_color_gray1</color>
+    <color name="bottom_toolbar_items_text_enabled_color">@color/palette_color_blue2</color>
+
+    <color name="edit_text_color_hint">@color/palette_color_gray19</color>
+
+    <color name="list_separator_profile_view">@color/palette_alpha_color_black1</color>
+
+    <color name="text_color_secondary">@color/palette_color_brown5</color>
+    <color name="color_disabled_state">@color/palette_color_gray7</color>
+
+    <color name="ic_launcher_background_color">@color/palette_color_blue20</color>
+
+    <!-- EmptyView -->
+    <color name="empty_view_text_color">@color/palette_color_black3</color>
+
+    <!-- Image viewer -->
+    <color name="control_text_color">@color/palette_color_gray20</color>
+    <color name="control_background_color">@color/palette_alpha_color_black80</color>
+    <color name="viewpager_background">@color/palette_color_black1</color>
+
+    <color name="sbis_light_gray_background">@color/palette_color_gray6</color>
+
+    <color name="interactive_view_pressed_dark_blue">@color/palette_color_blue21</color>
+    <color name="interactive_view_pressed_white">@color/palette_alpha_color_white50</color>
+
+    <!-- Swipe item design_menu -->
+    <color name="item_menu_background">@color/palette_color_white2</color>
+    <color name="item_menu_delimiter">@color/palette_alpha_color_black2</color>
+    <color name="item_menu_background_pressed">@color/palette_color_white2</color>
+    <color name="separator_color">@color/palette_color_yellow4</color>
+    <color name="red_color_for_delete_icon">@color/palette_color_red1</color>
+    <color name="item_menu_icon_color">@color/palette_color_blue12</color>
+    <color name="default_swipe_menu_smooth_edge_selected_color">@color/palette_alpha_color_black2</color>
+    <color name="default_swipe_menu_smooth_edge_color">@color/palette_alpha_color_black2</color>
+
+    <!-- BottomToolbar button -->
+    <color name="sbis_bottom_toolbar_button_pressed_color">@color/palette_color_blue22</color>
+
+    <!-- Separator -->
+    <color name="separator_border">@color/palette_color_gray6</color>
+    <color name="separator_background">@color/palette_alpha_color_black1</color>
+
+    <!-- Dialog Document Toolbar Item -->
+    <color name="dialog_document_item_text_color_pressed">@color/palette_alpha_color_gray40</color>
+
+    <!-- Spinner -->
+    <color name="spinner_separator">@color/palette_color_blue14</color>
+    <color name="spinner_item_pale_foreground">@color/palette_alpha_color_gray44</color>
+
+    <!-- BaseHeaderView -->
+    <color name="header_view_accent_color">@color/palette_color_white1</color>
+
+
+    <!-- Calendar Picker -->
+    <color name="calendar_working_day">@color/palette_color_white16</color>
+    <color name="vacation_font">@color/palette_color_blue2</color>
+
+    <!-- ConversationView&Controls -->
+    <color name="message_panel_control_default_state_color">@color/palette_color_blue1</color>
+    <color name="message_panel_control_pressed_state_color">@color/palette_alpha_color_blue60</color>
+    <color name="message_panel_control_disable_bg_color">@color/palette_color_brown5</color>
+    <color name="message_panel_send_control_bg_color">@color/palette_color_orange1</color>
+    <!--Прикладной цвет, для обработки нажатий на оранжевую кнопку-->
+    <color name="message_panel_send_control_pressed_bg_color">@color/palette_alpha_color_orange60</color>
+
+    <!-- File Type Icon -->
+    <color name="file_type_pdf">@color/palette_color_red1</color>
+    <color name="file_type_xml">@color/palette_color_gray9</color>
+    <color name="file_type_archive">@color/palette_color_black3</color>
+    <color name="file_type_html">@color/palette_color_gray9</color>
+    <color name="file_type_audio">@color/palette_color_dark_green1</color>
+    <color name="file_type_video">@color/palette_color_dark_green1</color>
+    <color name="file_type_doc">@color/palette_color_blue11</color>
+    <color name="file_type_image">@color/palette_color_black3</color>
+    <color name="file_type_ppt">@color/palette_color_red1</color>
+    <color name="file_type_txt">@color/palette_color_blue11</color>
+    <color name="file_type_xls">@color/palette_color_dark_green1</color>
+    <color name="file_type_url">@color/palette_color_black3</color>
+    <color name="file_type_folder">@color/palette_color_black3</color>
+    <color name="file_type_encrypted">@color/palette_color_black3</color>
+    <color name="file_type_unknown">@color/palette_color_black3</color>
+
+    <!-- SearchPanel -->
+    <color name="search_panel_background_color">@color/palette_color_white1</color>
+    <color name="search_panel_text_primary">@color/palette_color_black1</color>
+    <color name="search_panel_text_secondary">@color/palette_color_gray4</color>
+    <color name="search_panel_separator_color">@color/palette_color_gray6</color>
+
+    <!--SbisButtonToolbarView-->
+    <color name="toolbar_selected_text_color">@color/palette_color_white1</color>
+    <color name="toolbar_not_selected_text_color">@color/palette_color_gray1</color>
+
+    <!--Milestone Icons-->
+    <color name="milestone_state_icon_blue">@color/palette_color_blue12</color>
+    <color name="milestone_state_icon_red">@color/palette_color_red1</color>
+
+    <!-- Document Attachment icons colors-->
+    <color name="attachment_pdf_icon_color">@color/palette_color_red1</color>
+    <color name="attachment_excel_icon_color">@color/palette_color_dark_green1</color>
+    <color name="attachment_word_icon_color">@color/palette_color_blue7</color>
+    <color name="attachment_xml_icon_color">@color/palette_color_brown5</color>
+    <color name="attachment_ppt_icon_color">@color/palette_color_orange1</color>
+    <color name="attachment_archive_icon_color">@color/palette_color_yellow1</color>
+    <color name="attachment_default_icon_color">@color/palette_color_gray7</color>
+    <color name="attachment_audio_video_icon_color">@color/palette_color_blue7</color>
+    <color name="attachment_container_close_button_item_color">@color/palette_color_brown5</color>
+
+    <color name="attachment_container_item_color">@color/palette_color_white2</color>
+    <color name="attachment_container_item_color_selected">@color/palette_color_white2</color>
+
+    <color name="preference_item_background_color_normal">@color/palette_color_white8</color>
+    <color name="color_control_disabled">@color/palette_color_gray7</color>
+
+    <!-- SubFolderTitle -->
+    <color name="folder_title_background_color">@color/palette_color_gray3</color>
+
+    <!--Contacts -->
+    <color name="contact_title_text_color">@color/palette_color_blue11</color>
+    <color name="selected_contacts_panel_item_folder_icon_clr">@color/palette_color_brown5</color>
+    <color name="selected_contacts_panel_counter_clr">@color/palette_color_brown5</color>
+    <color name="contact_subtitle_text_clr">@color/palette_color_brown5</color>
+
+    <!-- Attachments View -->
+    <color name="item_full_attachment_info_name_color">@color/palette_color_blue1</color>
+    <color name="item_full_attachment_info_info_color">@color/palette_color_black2</color>
+    <color name="item_full_attachment_info_signatures_count_color">@color/palette_color_dark_orange1</color>
+
+    <!-- Loading progressbar -->
+    <color name="loading_progressbar_bg">@color/palette_color_gray4</color>
+    <color name="loading_progressbar_progress">@color/palette_color_white1</color>
+    <color name="loading_placeholder_bg">@color/palette_color_gray21</color>
+
+    <!--SwipeBack-->
+    <color name="swipe_back_dimm_background_color">@color/palette_alpha_color_black5</color>
+
+    <!--Version Dialog-->
+    <color name="accept_update_button_text_color">@color/palette_color_blue1</color>
+
+    <!--Folder Title-->
+    <color name="folder_title_background_gray">@color/palette_color_gray2</color>
+    <color name="folder_title_text_color_gray">@color/palette_color_black2</color>
+    <color name="folder_back_icon_color_gray">@color/palette_color_black2</color>
+
+    <!-- Filters Fragment -->
+    <color name="button_panel_background">@color/palette_color_gray2</color>
+    <color name="filter_header_text_color">@color/palette_color_blue6</color>
+    <color name="tasks_filter_default_background_color">@color/palette_alpha_color_black7</color>
+    <color name="item_tablet_filter_default_background">@color/palette_color_white1</color>
+    <color name="item_tablet_filter_header_background">@color/palette_color_white1</color>
+
+    <!-- ButtonWithStateView -->
+    <color name="button_with_state_default_active_bg_color">@color/palette_alpha_color_black1</color>
+    <color name="button_with_state_primary_active_bg_color">@color/palette_alpha_color_brown33</color>
+    <color name="button_with_state_default_bg_color">@color/palette_color_gray2</color>
+    <color name="button_with_state_outline_color">@color/palette_color_dark_orange1</color>
+    <color name="button_with_state_primary_bg_color">@color/palette_color_white1</color>
+
+    <color name="divider_color">@color/palette_color_gray12</color>
+
+    <!-- Calendar View -->
+    <color name="calendar_current_day">@color/palette_color_orange1</color>
+    <color name="calendar_selected_day">@color/palette_color_dark_orange1</color>
+    <color name="calendar_current_day_selected_background">@color/palette_color_yellow5</color>
+    <color name="calendar_usual_day_background">@color/palette_color_gray2</color>
+    <color name="calendar_usual_day_selected_background">@color/palette_color_white16</color>
+    <color name="calendar_day_of_week_color">@color/palette_color_gray21</color>
+    <color name="calendar_day_of_week_current_month_color">@color/palette_color_black1</color>
+    <color name="calendar_day_of_week_another_month_color">@color/palette_color_gray9</color>
+    <color name="calendar_day_of_week_holiday_color">@color/palette_color_red1</color>
+    <color name="calendar_day_of_week_holiday_another_month_color">@color/palette_color_pink1</color>
+    <color name="calendar_arrow_color">@color/palette_color_gray22</color>
+    <color name="calendar_month_day_color_workday">@color/palette_color_white13</color>
+    <color name="calendar_day_off_background">@color/palette_color_white1</color>
+    <color name="calendar_truancy_background">@color/palette_color_pink2</color>
+    <color name="calendar_business_trip_background">@color/palette_color_white14</color>
+    <color name="calendar_plan_vacation_actual_background">@color/palette_color_white15</color>
+    <color name="calendar_plan_vacation_on_agreement_background">@color/palette_color_yellow6</color>
+    <color name="calendar_plan_vacation_on_deletion_background">@color/palette_color_white20</color>
+    <color name="calendar_fact_vacation_background">@color/palette_color_green4</color>
+    <color name="calendar_month_day_color_crossed_vacation">@color/palette_color_green5</color>
+    <color name="calendar_sick_leave_background">@color/palette_color_white17</color>
+    <color name="calendar_downtime_background">@color/palette_color_white22</color>
+    <color name="calendar_lunch_background">@color/palette_color_gray24</color>
+    <color name="calendar_report_background">@color/palette_color_orange10</color>
+    <color name="calendar_month_day_color_birthday">@color/palette_color_pink3</color>
+    <color name="calendar_month_day_color_not_hired">@color/palette_color_gray2</color>
+    <color name="calendar_selected_day_default">@color/palette_color_blue23</color>
+    <color name="calendar_current_day_border_color">@color/palette_color_orange11</color>
+    <color name="calendar_current_day_circle_color">@color/palette_color_dark_orange1</color>
+    <color name="calendar_arrow_back_color">@color/palette_color_blue24</color>
+    <color name="calendar_list_header_color">@color/palette_color_orange1</color>
+
+
+    <color name="calendar_month_day_color_day_off">@color/palette_color_white1</color>
+    <color name="calendar_month_day_color_truancy">@color/palette_color_pink2</color>
+    <color name="calendar_month_day_color_business_trip">@color/palette_color_white14</color>
+    <color name="calendar_month_day_color_plan_vacation">@color/palette_color_white15</color>
+    <color name="calendar_month_day_color_plan_vacation_on_agreement">@color/palette_color_yellow6</color>
+    <color name="calendar_month_day_color_plan_vacation_on_deletion">@color/palette_color_white10</color>
+    <color name="calendar_month_day_color_fact_vacation">@color/palette_color_green4</color>
+    <color name="calendar_month_day_color_sick_leave">@color/palette_color_white17</color>
+    <color name="calendar_month_day_color_downtime">@color/palette_color_white22</color>
+    <color name="calendar_month_day_color_report">@color/palette_color_orange10</color>
+    <color name="calendar_month_day_black_color">@color/palette_color_black1</color>
+    <color name="calendar_day_view_cross_vacation_holiday">#ACCF99</color>
+    <color name="calendar_day_view_cross_vacation_holiday_background">#FFEAEA</color>
+
+    <!-- Floating btns -->
+    <color name="floating_btn_text_color">@color/palette_color_black2</color>
+    <color name="primary_floating_btn_bg_color">@color/palette_color_white1</color>
+    <color name="primary_floating_btn_pressed_bg_color">@color/palette_color_orange12</color>
+    <color name="primary_floating_btn_border_color">@color/palette_color_dark_orange1</color>
+    <color name="standard_floating_btn_bg_color">@color/palette_color_white23</color>
+    <color name="standard_floating_btn_pressed_bg_color">@color/palette_color_white24</color>
+    <color name="standard_floating_btn_border_color">@color/palette_color_blue3</color>
+
+    <!-- Chat settings -->
+    <color name="chat_settings_divider_color">@color/palette_color_white9</color>
+
+    <!--Filter screen bottom panel-->
+    <color name="filter_screen_bottom_pane_background_color">@color/palette_color_brown5</color>
+
+    <!--Communicator-->
+    <color name="dialog_name_clr">@color/palette_color_blue2</color>
+    <color name="contact_list_segment_divider_text_clr">@color/palette_color_black2</color>
+    <color name="messages_screen_recipient_clr">@color/palette_color_brown5</color>
+    <color name="new_contacts_extended_search_description_text_clr">@color/palette_color_brown5</color>
+
+    <!-- Recipient Selection -->
+    <color name="recipient_selection_background_color">@color/palette_color_white2</color>
+
+
+    <!-- Shadow colors -->
+    <color name="image_shadow_color">@color/palette_alpha_color_black53</color>
+    <color name="list_item_shadow_start_color">@color/palette_alpha_color_black9</color>
+    <color name="list_item_shadow_end_color">@color/palette_color_transparent</color>
+
+    <!-- фикс сборки, будет заменено корректными значениями после доброски по задаче https://online.sbis.ru/opendoc.html?guid=2f3b9e2f-a4c6-4c2c-b9d7-6a02d489e947  -->
+    <color name="milestone_list_item_state_icon_blue">@color/palette_color_blue25</color>
+    <color name="colorAdditional">@color/palette_color_orange13</color>
+    <color name="milestone_state_title_blue">@color/palette_color_gray23</color>
+
+    <!--Reaction icon colors-->
+    <color name="like_button_color">@color/palette_color_blue11</color>
+    <color name="like_green_button_color">@color/palette_color_green3</color>
+    <color name="dislike_button_color">@color/palette_color_red1</color>
+    <color name="angry_button_color">@color/palette_color_red1</color>
+    <color name="shocked_button_color">@color/palette_color_dark_orange1</color>
+    <color name="laugh_button_color">@color/palette_color_green3</color>
+
+    <!-- Common Motivation colors -->
+    <color name="design_motivation_toolbar_background_color_positive">@color/palette_color_white11</color>
+    <color name="design_motivation_toolbar_title_color">@color/palette_color_blue11</color>
+    <color name="design_motivation_toolbar_control_color">@color/palette_color_black2</color>
+
+    <!-- Folders -->
+    <color name="design_folders_full_folder_text_color">@color/palette_color_black1</color>
+    <color name="design_folders_additional_command_text_color">@color/palette_color_blue12</color>
+    <color name="design_folders_additional_command_icon_color_blue">@color/palette_color_blue12</color>
+    <color name="design_folders_additional_command_icon_color_grey">@color/palette_color_gray9</color>
+
+    <!-- Сигнальный цвет для отладки, в качестве заглушки и для ситуаций, когда не удалось получить цвет из темы -->
+    <color name="undefined_color">#F0F</color>
+
+    <!-- Splash Screen -->
+    <color name="splash_screen_background_color_dark">#2C3E50</color>
+    <color name="splash_screen_background_color_light">#0085F2</color>
+    <color name="splash_screen_background_color_pink">@color/palette_color_red2</color>
+
+</resources>

@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableOptimizeCodeCfg()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.view_factory"
+
+    resourcePrefix "view_factory_"
+}
+
+dependencies {
+    // AndroidX
+    implementation libs.android.appcompat
+    implementation libs.android.annotation
+}

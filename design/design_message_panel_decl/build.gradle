@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'submodule-cfg-plugin'
+}
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.design.message_panel.decl"
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':plugin_struct')
+    implementation project(':disk-decl')
+    implementation project(':persons')
+    implementation project(':controller')
+
+    implementation libs.coroutines.core
+    implementation libs.timber
+}

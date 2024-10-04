@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Прикладные цвета, указанные в спецификации
+    http://axure.tensor.ru/MobileStandart8/#p=%D0%B7%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B8_ver2&g=1
+    -->
+    <color name="stub_view_message_color_presto">#99AEBF</color>
+    <color name="stub_view_details_color_presto">#9999AEBF</color>
+</resources>

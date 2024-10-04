@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-kapt'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableDataBindingCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.sbis_text_view"
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+    }
+}
+
+dependencies {
+    // Для корректной работы превью xml на Hedgehog+
+    api project(':design_custom_view_tools')
+    api project(':design')
+    implementation project(':design_utils')
+
+    implementation libs.android.view.asyncLayoutInflater
+
+    testImplementation project(':testing')
+}

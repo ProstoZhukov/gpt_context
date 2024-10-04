@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.video_message_view"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "boolean", "MOCK_FUNCTIONS_ENABLED", "false"
+        }
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    api project(':container')
+    api project(':communication-decl')
+
+    // Для FileInfoViewModel
+    implementation project(':controller')
+
+    implementation project(':common')
+    implementation project(':design')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_utils')
+    implementation project(':design_media_player')
+    implementation project(':design_profile')
+    implementation project(':design_list_header')
+    implementation project(':attachments-ui')
+    implementation project(':attachments-decl')
+
+    testImplementation project(':testing')
+}

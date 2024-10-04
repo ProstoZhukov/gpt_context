@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="change_theme_item_title">Thème de conception</string>
+    <string name="change_theme_dialog_title">Pour appliquer un nouveau thème de conception, vous devez redémarrer l\'application</string>
+    <string name="change_theme_dialog_button_accept">Appliquer</string>
+    <string name="change_theme_dialog_button_cancel">Annuler</string>
+    <string name="change_theme_default_switch_title">Utiliser le thème système</string>
+    <string name="change_theme_default_switch_subtitle">Le thème de l\'application changera automatiquement lorsque vous modifierez le thème du système de l\'appareil</string>
+</resources>

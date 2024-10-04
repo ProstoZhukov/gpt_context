@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Атрибут для определения темы компонента заглушки в составе темы приложения -->
+    <attr name="dataLoadingErrorStubViewTheme" format="reference"/>
+
+    <!-- Атрибуты компонента заглушки -->
+    <declare-styleable name="DataLoadingErrorStubView">
+        <!-- Стиль сообщения об ошибке в заглушке -->
+        <attr name="DataLoadingErrorStubView_messageStyle" format="reference"/>
+        <!-- Стиль иконки в заглушке-->
+        <attr name="DataLoadingErrorStubView_iconStyle" format="reference"/>
+    </declare-styleable>
+</resources>

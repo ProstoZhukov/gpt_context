@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_media_player_play_video_error">您必须结束通话才能查看视频消息</string>
+    <string name="design_media_player_play_audio_error">您必须结束通话才能收听语音留言</string>
+</resources>

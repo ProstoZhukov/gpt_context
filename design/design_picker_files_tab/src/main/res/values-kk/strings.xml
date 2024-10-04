@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="picker_files_tab_title">Файлдар</string>
+    <string name="picker_files_tab_storage_title">Файлдардан таңдаңыз</string>
+    <string name="picker_files_tab_gallery_title">Құрылғы галереясы</string>
+    <string name="picker_files_tab_stub_desc">Құрылғыдан файлдарды таңдап, тіркеңіз</string>
+</resources>

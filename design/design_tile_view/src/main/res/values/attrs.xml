@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Стилевой атрибут компонента "Плитка" -->
+    <attr name="sbisTileViewTheme" format="reference"/>
+
+    <declare-styleable name="SbisTileView">
+        <!--
+        Заглушка, которая устанавливается при отсутствии изображения - drawable или строка со
+        шрифтовой иконкой
+        -->
+        <attr name="SbisTileView_placeholder" format="reference"/>
+        <!-- Опциональный цвет фона под шрифтовой иконкой -->
+        <attr name="SbisTileView_placeholderBackground" format="color|reference"/>
+        <!-- Идентификатор дочернего элемента плитки в разметке, используемого как содержимое -->
+        <attr name="SbisTileView_contentId" format="reference"/>
+        <!-- Размер шрифта заглушки при отсутствии изображения -->
+        <attr name="SbisTileView_placeholderSize" format="dimension|reference"/>
+        <!--
+        Идентификаторы дочерних элементов плитки в разметке, используемых как прикладной контент
+        поверх изображения, располагаемый сверху, либо снизу соответственно
+        -->
+        <attr name="SbisTileView_topViewId" format="reference"/>
+        <attr name="SbisTileView_bottomViewId" format="reference"/>
+        <!--
+        Размер изображения в плитке. Если задан, то определяет ширину либо высоту плитки, в
+        зависимости от расположения изображения
+        -->
+        <attr name="SbisTileView_imageSize" format="dimension|reference"/>
+        <!--
+        Отступ от краёв плитки до изображения, применяемый при использовании формы изображения
+        (SbisTileViewImageShape), отличной от Rectangle
+        -->
+        <attr name="SbisTileView_imagePadding" format="dimension|reference"/>
+        <!--
+        Должна ли присутствовать обводка у изображения. Обводка применяется только для форм
+        изображения, для которых предусмотрен отступ от краёв плитки. По умолчанию - false.
+        -->
+        <attr name="SbisTileView_enableImageBorder" format="boolean"/>
+        <!--
+        Требуется ли рисовать обводку у изображения (если включена), до отрисовки прикладного
+        содержимого, чтобы избежать его перекрытия. По умолчанию - false, обводка рисуется поверх
+        области прикладного содержимого.
+        -->
+        <attr name="SbisTileView_drawImageBorderUnderContent" format="boolean"/>
+    </declare-styleable>
+
+</resources>

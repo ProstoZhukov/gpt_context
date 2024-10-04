@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="UniversalSelectionActivityTheme" parent="AppTheme.Swipe.Back"/>
+
+    <style name="UniversalSelectionDefaultTheme" parent="SelectionTheme">
+        <item name="Selection_selectedItemsTheme">@style/UniversalSelectedItemsTheme</item>
+        <item name="Selection_selectionItemsTheme">@style/UniversalSelectionItemsTheme</item>
+    </style>
+
+</resources>

@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.message_panel"
+}
+
+dependencies {
+    implementation project(":design")
+    api project(":design_message_panel_decl")
+    implementation project(":design_message_panel_common")
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_utils')
+    implementation project(':design_buttons')
+    implementation project(':design_profile')
+    implementation project(':container')
+    implementation project(':design_files_picker')
+
+    implementation project(':attachments-decl')
+    implementation project(':attachments-ui')
+
+    implementation project(':verification-decl')
+    implementation project(':common')
+    implementation project(':commonviews')
+    implementation project(':person-decl')
+    implementation project(':persons')
+    implementation project(':attachments')
+
+    implementation project(':controller')
+
+    // DI
+    implementation libs.dagger
+    kapt libs.dagger.compiler
+}

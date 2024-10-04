@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="RetailViewsCardViewButtonAttrs" tools:ignore="ResourceName">
+        <attr name="retail_views_card_button_theme" format="reference"/>
+
+        <attr name="android:background"/>
+        <attr name="android:padding"/>
+        <attr name="android:paddingLeft"/>
+        <attr name="android:paddingStart"/>
+        <attr name="android:paddingTop"/>
+        <attr name="android:paddingRight"/>
+        <attr name="android:paddingEnd"/>
+        <attr name="android:paddingBottom"/>
+
+        <attr name="drawableLeft" format="string"/>
+        <attr name="drawableRight" format="string"/>
+        <attr name="drawableLeftTint" format="color"/>
+        <attr name="drawableLeftTextColor" format="color"/>
+        <attr name="drawableRightTint" format="color"/>
+        <attr name="drawableSize" format="dimension"/>
+        <attr name="drawableFontFamily" format="reference"/>
+
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="android:text"/>
+        <attr name="android:includeFontPadding"/>
+        <attr name="android:singleLine"/>
+        <attr name="android:ellipsize"/>
+        <attr name="android:lineSpacingMultiplier"/>
+        <attr name="android:lineSpacingExtra"/>
+    </declare-styleable>
+
+</resources>

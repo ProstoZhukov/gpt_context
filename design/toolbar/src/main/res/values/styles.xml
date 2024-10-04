@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomPanelMobileIconButton" parent="MobileFontStyle">
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">?iconSize_5xl</item>
+    </style>
+
+    <style name="ToolbarIconStyle" parent="MobileFontStyle">
+        <item name="android:layout_width">?iconSize_2xl</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">?toolbarBackIconColor</item>
+        <item name="android:textSize">?iconSize_2xl</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ToolbarTabIndicatorStyle">
+        <item name="android:background">@drawable/toolbar_tab_indicator_selector</item>
+        <item name="android:layout_height">?offset_2xs</item>
+        <item name="android:layout_marginTop">?offset_st</item>
+    </style>
+
+    <style name="ToolbarTitleText" parent="@style/RegularStyle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_xl_scaleOff</item>
+    </style>
+
+    <style name="ToolbarTitleTextMobileIcon" parent="@style/MobileFontStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">?iconSize_6xl</item>
+        <item name="android:textColor">?iconColor</item>
+    </style>
+
+    <style name="ToolbarTitleWithSubtitleText" parent="@style/ToolbarTitleText">
+        <item name="android:textSize">?fontSize_l_scaleOn</item>
+    </style>
+
+    <style name="ToolbarSubtitle" parent="@style/RegularStyle">
+        <item name="android:textColor">?unaccentedTextColor</item>
+        <item name="android:textSize">?fontSize_xs_scaleOn</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:freezesText">true</item>
+    </style>
+
+    <style name="ToolbarSpinnerStyle" parent="SbisSpinner">
+        <item name="popupTheme">@style/SbisSpinnerPopupTheme</item>
+    </style>
+
+    <style name="CommonToolbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LeftButtonWithText" parent="CommonToolbarStyle">
+        <item name="leftIconVisibility">visible</item>
+        <item name="leftTextVisibility">visible</item>
+        <item name="leftPanelVisibility">visible</item>
+    </style>
+
+    <style name="LeftButtonWithText.IconArrow">
+        <item name="leftIconText">@string/design_mobile_icon_arrow_back</item>
+    </style>
+
+    <style name="ToolbarDividerStyle">
+        <item name="android:background">?borderColor</item>
+    </style>
+
+</resources>

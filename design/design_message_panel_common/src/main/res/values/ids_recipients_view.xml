@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="design_message_panel_recipients_names" type="id"/>
+    <item name="design_message_panel_recipients_hint" type="id"/>
+    <item name="design_message_panel_recipients_more_counter" type="id"/>
+    <item name="design_message_panel_recipients_clear_button" type="id"/>
+    <item name="design_message_panel_recipients_add_button" type="id"/>
+</resources>

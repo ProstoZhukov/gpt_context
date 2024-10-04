@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Атрибуты компонента [MoneyView] -->
+
+    <declare-styleable name="RetailMoneyViewAttrs" tools:ignore="ResourceName">
+        <attr name="retail_views_money_theme" format="reference"/>
+
+        <attr name="retail_views_money_card_text_color" format="reference|color"/>
+        <attr name="retail_views_money_decimal_color" format="reference|color"/>
+
+        <attr name="retail_views_money_color_integer_state" format="reference"/>
+        <attr name="retail_views_money_color_decimal_state" format="reference"/>
+        <attr name="retail_views_money_color_integer" format="color"/>
+        <attr name="retail_views_money_color_decimal" format="color"/>
+        <attr name="retail_views_money_alpha_decimal" format="float"/>
+        <attr name="retail_views_money_size_integer" format="dimension"/>
+        <attr name="retail_views_money_size_decimal" format="dimension"/>
+        <attr name="retail_views_money_bold_integer" format="boolean"/>
+        <attr name="retail_views_money_bottom_align" format="boolean"/>
+        <attr name="retail_views_money_show_kopecka_if_zero" format="boolean"/>
+        <!-- Флаг необходимости слитного отображения единиц измерения с количеством. true - отображение слитно -->
+        <attr name="retail_views_money_split_unit" format="boolean"/>
+        <attr name="retail_views_money" format="float"/>
+    </declare-styleable>
+
+</resources>

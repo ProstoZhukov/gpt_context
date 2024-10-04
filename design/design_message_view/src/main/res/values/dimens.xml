@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_message_view_start_padding_greeting_view">52dp</dimen>
+    <dimen name="design_message_view_dual_message_item_incoming_body_margin_left_min">22dp</dimen>
+    <dimen name="design_message_view_dual_message_item_incoming_body_margin_left">51dp</dimen>
+    <dimen name="design_message_view_message_item_group_padding_right">8dp</dimen>
+</resources>

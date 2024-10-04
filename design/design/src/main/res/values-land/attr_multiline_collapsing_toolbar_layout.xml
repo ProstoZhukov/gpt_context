@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CollapsingToolbarLayoutExtension">
+        <attr name="maxLines" format="integer" />
+        <attr name="lineSpacingExtra" format="float"/>
+        <attr name="lineSpacingMultiplier" format="float"/>
+
+        <!-- Стиль текста правого подзаголовка (комментария) -->
+        <attr name="rightSubtitle" format="string"/>
+
+        <!-- Стиль текста основного (левого) подзаголовка -->
+        <attr name="subtitleTextAppearance" format="reference"/>
+
+        <!-- Стиль текста правого подзаголовка -->
+        <attr name="rightSubtitleTextAppearance" format="reference"/>
+
+        <!--
+        Определяет, должен ли верхний inset учитываться при вычислении в минимальной высоты
+        view. По умолчанию - true.
+        Не нужно учитывать значение top inset в минимальной высоте, если известно, что в частном
+        случае, при вычислении scroll range, AppBarLayout может самостоятельно отнять это значение.
+        -->
+        <attr name="isTopInsetIncludedInMinHeight" format="boolean"/>
+    </declare-styleable>
+
+</resources>

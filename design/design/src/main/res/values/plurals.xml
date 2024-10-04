@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="design_attachments_max_count_restriction">
+        <item quantity="zero">You can only select a maximum of %d files</item>
+        <item quantity="one">You can only select a maximum of %d file</item>
+        <item quantity="two">You can only select a maximum of %d files</item>
+        <item quantity="few">You can only select a maximum of %d files</item>
+        <item quantity="many">You can only select a maximum of %d files</item>
+        <item quantity="other">You can only select a maximum of %d files</item>
+    </plurals>
+
+</resources>

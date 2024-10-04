@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MessagePanelRecipientsView">
+        <!-- Стиль кнопки добавления получателей. -->
+        <attr name="MessagePanelRecipientsView_addButtonStyle" format="reference"/>
+        <!-- Стиль имен получателей. -->
+        <attr name="MessagePanelRecipientsView_recipientsStyle" format="reference"/>
+        <!-- Стиль подсказки, которая отображается при пустом списке получателей. -->
+        <attr name="MessagePanelRecipientsView_hintStyle" format="reference"/>
+        <!-- Стиль счетчика скрытых получателей, которые не поместились в панель цитирования. -->
+        <attr name="MessagePanelRecipientsView_moreCounterStyle" format="reference"/>
+        <!-- Стиль кнопки очистки получателей -->
+        <attr name="MessagePanelRecipientsView_clearButtonStyle" format="reference"/>
+
+        <!-- Текст, который будет отображаться, когда все получатели полностью совпадают со списком участников переписки. -->
+        <attr name="MessagePanelRecipientsView_allChosenText" format="string|reference"/>
+        <!-- Текст подсказки, который будет отображаться, когда получатели не выбраны. -->
+        <attr name="MessagePanelRecipientsView_hintText" format="string|reference"/>
+    </declare-styleable>
+
+</resources>

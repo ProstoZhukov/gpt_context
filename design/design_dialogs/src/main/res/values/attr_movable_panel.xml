@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="movable_panel_content_container_id" type="id" />
+
+    <declare-styleable name="MovablePanelStyle">
+
+        <!-- Бэкграунд панели (по умолчанию #FFFFFF), также можно задать ссылкой на drawable-->
+        <attr name="MovablePanel_background" format="color|reference" />
+
+        <!--Является ли отображение верхним
+        Если значение == true, значения:
+         - MovablePanel_topOffset
+        будут игнорироваться-->
+        <attr name="MovablePanel_topDownDirection" format="boolean" />
+
+        <!--Высота безопасной области над/под панелью-->
+        <attr name="MovablePanel_topOffset" format="dimension" />
+
+        <!--Идентификатор контейнера сингл контента-->
+        <attr name="MovablePanel_contentContainerId" format="reference" />
+
+        <!--Отображать ли тень фоном (по умолчанию нет)-->
+        <attr name="MovablePanel_shadowBackgroundEnabled" format="boolean"/>
+
+        <!--Цвет тени (по умолчанию #66000000)-->
+        <attr name="MovablePanel_shadowBackgroundColor" format="color|reference"/>
+
+        <!-- Цвет контроллера (по умолчанию E9E9E9)-->
+        <attr name="MovablePanel_gripColor" format="color|reference"/>
+
+        <!-- Используется ли дефолтный отступ под вью контроллера (по умолочанию true)-->
+        <attr name="MovablePanel_defaultHeaderPaddingEnabled" format="boolean"/>
+
+        <!-- Видимость тени под шторкой (по умолчанию true)-->
+        <attr name="MovablePanel_gripShadowVisible" format="boolean"/>
+
+        <!-- Сохранение состояния скрола контента при полном сворачивании (по умолчанию false)-->
+        <attr name="MovablePanel_saveScrollState" format="boolean"/>
+
+        <!-- Продолжительность анимации показа панели при вызове startShowingAnimation -->
+        <attr name="MovablePanel_showing_duration" format="integer|reference"/>
+
+        <!-- Ширина и расположение панели -->
+        <attr name="MovablePanel_panelWidth" format="enum">
+            <!--На всю ширину родительской вью-->
+            <enum name="MATCH_PARENT" value="0" /> <!--Используется по умолчанию-->
+            <!--Половина ширины родителя - располагается в начале экрана-->
+            <enum name="START_HALF" value="1" />
+            <!--Половина ширины родителя - располагается в середине экрана-->
+            <enum name="CENTER_HALF" value="2" />
+            <!--Половина ширины родителя - располагается в конце экрана-->
+            <enum name="END_HALF" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

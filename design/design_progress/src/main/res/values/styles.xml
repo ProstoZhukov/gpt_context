@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SbisLoadingIndicatorDefaultTheme" parent="Widget.AppCompat.ProgressBar">
+        <item name="SbisLoadingIndicator_progressColor">?primaryIconColor</item>
+        <item name="SbisLoadingIndicator_delayedShowing">false</item>
+        <item name="SbisLoadingIndicator_appearanceDelay">@integer/progressShowingDefaultDelay</item>
+        <item name="SbisLoadingIndicator_strictlyUseProgressDrawable">false</item>
+        <item name="SbisLoadingIndicator_progressSize">xs</item>
+    </style>
+
+    <style name="SbisPullToRefreshDefaultTheme">
+        <item name="SbisPullToRefresh_progressColor">?primaryIconColor</item>
+        <item name="SbisPullToRefresh_progressBackground">?backgroundColor</item>
+    </style>
+
+</resources>

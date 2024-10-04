@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tensor.sbis.swipeablelayout.SwipeableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_folders_swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/design_folders_container"
+        android:layout_width="match_parent"
+        android:layout_height="?inlineHeight_m"
+        tools:theme="@style/FoldersDefaultTheme">
+
+        <View
+            android:id="@+id/design_folders_marker"
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:background="?FoldersView_folderMarkerColor"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/design_folders_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/design_folders_title"
+            tools:visibility="visible"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/design_folders_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?FoldersView_folderTitleColor"
+            android:textSize="?fontSize_xl_scaleOff"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/design_folders_state_icon"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginEnd="?offset_m"
+            tools:ignore="SpUsage"
+            tools:paddingStart="@dimen/design_folders_full_list_left_padding_first"
+            tools:text="Folder Title"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/design_folders_state_icon"
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="?offset_2xs"
+            android:layout_marginEnd="?offset_m"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/design_mobile_icon_enter"
+            android:textColor="?FoldersView_folderIconColor"
+            android:textSize="?iconSize_m"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/design_folders_text_counter"
+            app:layout_constraintStart_toEndOf="@+id/design_folders_title"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage"/>
+
+        <ru.tensor.sbis.design.counters.textcounter.SbisTextCounter
+            android:id="@+id/design_folders_text_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="?offset_m"
+            app:layout_constraintBaseline_toBaselineOf="@id/design_folders_title"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ru.tensor.sbis.swipeablelayout.SwipeableLayout>

@@ -1,0 +1,33 @@
+import ru.tensor.gradle.subconfig.ktlint.KtLintConfig
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableKaptCfg()
+    cfg.enableLintCfg()
+    cfg.enableKtLintCfg(KtLintConfig.KOTLIN_1_8_0)
+    cfg.enableTestCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.view.input"
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':toolbar')
+    implementation project(':text_span')
+    implementation project(':design_utils')
+    implementation project(':design_custom_view_tools')
+    implementation project(':plugin_struct')
+    implementation project(':design_decorators')
+    implementation project(':android-ext-decl')
+
+    testImplementation project(':testing')
+}

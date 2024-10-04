@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sbis_tabs_view_item_height">56dp</dimen>
+    <dimen name="sbis_tabs_view_shadow_width">32dp</dimen>
+    <dimen name="sbis_tabs_view_tab_baseline">39dp</dimen>
+    <dimen name="sbis_tabs_view_main_tab_marker_width">60dp</dimen>
+    <dimen name="sbis_tabs_view_fade_edge">34dp</dimen>
+</resources>

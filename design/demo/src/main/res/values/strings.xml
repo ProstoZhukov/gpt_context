@@ -1,0 +1,308 @@
+<resources>
+    <string name="app_name">SBIS Design</string>
+
+    <string name="sandbox">Sandbox</string>
+    <string name="scroll_to_top">Scroll To The Top</string>
+    <string name="context_menu">Context menu</string>
+    <string name="sbis_container">Sbis container</string>
+    <string name="hall_scheme">Hall Scheme</string>
+    <string name="input_text_box">InputTextBox</string>
+    <string name="single_selection">Single selection</string>
+    <string name="multi_selection">Multi selection</string>
+    <string name="single_recipient_selection">Single recipient selection</string>
+    <string name="multi_recipient_selection">Multi recipient selection</string>
+    <string name="multi_recipient_selection_common_api">Multi recipient selection (common API)</string>
+    <string name="selection_preview">Selection Preview</string>
+    <string name="navigation">Navigation</string>
+    <string name="app_bar">App bar</string>
+    <string name="folders_view">Folders</string>
+    <string name="folders_viewmodel">Folders ViewModel</string>
+    <string name="current_folder_view">Current folder view</string>
+    <string name="cloud_view">Cloud view</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="skeleton_view">Skeleton view</string>
+    <string name="combined_multiselection">Combined Multiselection</string>
+    <string name="title_view">Title view</string>
+    <string name="title_date_header">Date Header</string>
+
+    <!-- Bottom navigation -->
+    <string name="bottom_navigation_news">Новости</string>
+    <string name="bottom_navigation_contacts">Контакты</string>
+    <string name="bottom_navigation_messages">Сообщения</string>
+    <string name="bottom_navigation_notifications">События</string>
+    <string name="bottom_navigation_persons">Сотрудники</string>
+    <string name="bottom_navigation_random_badge_count">Random badge count</string>
+    <string name="bottom_navigation_clear_badge_count">Clear badge count</string>
+    <string name="bottom_navigation_auto_hide">Auto hide bottom navigation</string>
+    <string name="bottom_navigation_one_or_three_buttons">One/three floating buttons</string>
+
+    <!-- Floating buttons -->
+    <string name="floating_button_cancel">Отказ</string>
+    <string name="floating_button_payment">Оплата</string>
+
+    <!-- Hall scheme -->
+    <string name="scheme_refresh">Refresh</string>
+    <string name="text_with_icon_hint">С рамкой, иконкой и очисткой</string>
+    <string name="text_with_frame_hint">С рамкой</string>
+    <string name="text_with_clear_hint">С очисткой</string>
+    <string name="disabled">Disabled</string>
+    <string name="error">Error</string>
+    <string name="text">Text</string>
+    <string name="multiline_cap_sentences">Multiline + Cap</string>
+    <string name="number">Number</string>
+    <string name="min_lines">Мин. строк</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="max_lines">Макс. строк</string>
+
+    <!-- Navigation -->
+    <string name="navigation_notifications">События</string>
+    <string name="navigation_notifications_reduced">Событ.</string>
+    <string name="navigation_messages">Сообщения</string>
+    <string name="navigation_calendar">Календарь</string>
+    <string name="navigation_disk">Диск</string>
+    <string name="navigation_address">Адрес</string>
+    <string name="navigation_info">Информация</string>
+    <string name="navigation_info_short">Инфор.</string>
+    <string name="navigation_task">Задачи на мне</string>
+    <string name="navigation_task_long">Задачи на мне задачи на мне задачи на мне</string>
+    <string name="navigation_task_vertical">Задачи</string>
+    <string name="navigation_task_horizontal">Задач.</string>
+    <string name="navigation_favorites">Избранные</string>
+    <string name="navigation_call">Звонок</string>
+    <string name="navigation_kassa">Касса</string>
+    <string name="navigation_news">Новости</string>
+    <string name="navigation_statistics">Статистика</string>
+    <string name="navigation_contacts">Контакты</string>
+    <string name="navigation_settings">Настройки</string>
+    <string name="navigation_contractors">Контракты</string>
+    <string name="navigation_current_date">Сегодня</string>
+    <string name="navigation_tasks_from_me">от меня</string>
+    <string name="navigation_tasks_from_me_long">от меня от меня от меня от меня от меня</string>
+    <string name="accordion_name">Аккордеон</string>
+    <string name="bottom_menu_name">ННП</string>
+    <string name="navigation_username">Хурма А.Р.</string>
+    <string name="navigation_click_accordion_header_text">Клик на заголовок аккордеона</string>
+    <string name="navigation_click_accordion_username_text">Клик на название пользователя в подвале аккордеона</string>
+    <string name="navigation_click_menu_btn_text">Клик по кнопке меню</string>
+    <string name="navigation_menu_click_btn">Самому обробатывать клик по кнопке Меню</string>
+    <string name="navigation_add_tab">Добавить таб Сообщения</string>
+    <string name="navigation_remove_tab">Удалить таб Сообщения</string>
+    <string name="navigation_show_tab">Показать таб События</string>
+    <string name="navigation_hide_tab">Скрыть таб События</string>
+    <string name="navigation_change_tab_icon">Изменить иконку таба Календарь</string>
+    <string name="navigation_randomize_counters">Обновить счетчики</string>
+    <string name="navigation_pin_tab_nav_view">Зафиксировать ННП</string>
+    <string name="navigation_switch_counter">Включить счетчик у меню Диск</string>
+    <string name="navigation_switch_dark_theme">Включить темную тему</string>
+    <string name="navigation_set_long_title">Задать длинный заголовок</string>
+    <string name="navigation_set_long_subitem_title">Задать длинный заголовок подпункта</string>
+    <string name="navigation_content_counter_start">Старт</string>
+    <string name="navigation_content_counter_stop">Стоп</string>
+    <string name="navigation_content_counter_default_value">0</string>
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <string name="categories_title">Категории</string>
+
+    <!-- Current Folder view -->
+    <string name="btn_combined_text">Вместе</string>
+    <string name="btn_separated_text">Раздельно</string>
+    <string name="btn_home_enabled_text">Домик</string>
+    <string name="btn_random_enabled_text">Случайные эл-ты</string>
+    <string name="btn_reduce_space_text">&lt;</string>
+    <string name="btn_increase_space_text">&gt;</string>
+
+    <!-- SkeletonView -->
+    <string name="user_0_name">Иванов Иван</string>
+    <string name="user_0_statement">какое-то описание первого пользователя</string>
+    <string name="user_0_icon">@string/design_mobile_icon_auto</string>
+    <string name="user_1_name">Петров Петр</string>
+    <string name="user_1_statement">какое-то описание второго пользователя</string>
+    <string name="user_1_icon">@string/design_mobile_icon_walker</string>
+    <string name="user_2_name">Сидоров Сидор</string>
+    <string name="user_2_statement">какое-то описание третьего пользователя</string>
+    <string name="user_2_icon">@string/design_mobile_icon_plus_skinny</string>
+    <string name="skeleton_view_button_text">Переключить отображение</string>
+    <string name="skeleton_view_button_theme_text">Изменить тему</string>
+
+    <!-- StubView -->
+    <string name="stub_view_long_title">Длинный заголовок Длинный заголовок Длинный заголовок Длинный заголовок Длинный заголовок Длинный заголовок Длинный заголовок</string>
+    <string name="stub_view_long_description">Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание Длинное описание</string>
+
+    <!-- ContextMenu -->
+    <string name="context_menu_demo_top_left">Верх лево</string>
+    <string name="context_menu_demo_top_right">Верх право</string>
+    <string name="context_menu_demo_bottom_left">Низ лево</string>
+    <string name="context_menu_demo_bottom_right">Низ право</string>
+    <string name="context_menu_demo_center">Середина</string>
+
+    <!-- CloudView -->
+    <string name="cloud_view_switch_data">Сменить данные</string>
+
+    <!-- SbisContainer -->
+    <string name="demo_container_left">Лево</string>
+    <string name="demo_container_center">Центр</string>
+    <string name="demo_container_right">Право</string>
+    <string name="demo_container_top">Верх</string>
+    <string name="demo_container_bottom">Низ</string>
+    <string name="demo_container_is_inner_position">По внутренней стороне элемента</string>
+    <string name="demo_container_force_location">Строгая привязка</string>
+    <string name="demo_container_offset">Смещение</string>
+    <string name="demo_container_use_bounds">Ограничить</string>
+
+    <string name="demo_container_header_red">Красный</string>
+    <string name="demo_container_header_green">Зеленый</string>
+    <string name="demo_container_header_blue">Синий Синий Синий</string>
+
+    <!--    date header-->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_news">Новости</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="dateTime">Отображается дата и время</string>
+    <string name="timeOnly">Отображается только время</string>
+    <string name="dateTimeWithToday">«Сегодня»</string>
+    <string name="dateWithMonth">Месяц для текущего года</string>
+    <string name="dateTimeSeparate">Дата и время отдельно</string>
+
+    <string-array name="locators">
+        <item>Anchor</item>
+        <item>Screen</item>
+    </string-array>
+
+    <string-array name="dim_type">
+        <item>NONE</item>
+        <item>SOLID</item>
+        <item>CUTOUT</item>
+    </string-array>
+
+    <!-- InputView -->
+    <string name="title_input_view" translatable="false">Input View</string>
+    <string name="input_view_single_line_simple_title" translatable="false">Single line simple text</string>
+    <string name="input_view_single_line_simple_placeholder" translatable="false">Input single line simple text</string>
+    <string name="input_view_single_line_simple_read_only" translatable="false">Read only</string>
+    <string name="input_view_single_line_simple_clear" translatable="false">Clear button</string>
+    <string name="input_view_single_line_simple_length_title" translatable="false">Single line simple text length</string>
+    <string name="input_view_single_line_simple_length_link" translatable="false">Apply</string>
+    <string name="input_view_single_line_simple_action_go" translatable="false">IME action GO was handled</string>
+    <string name="input_view_password_title" translatable="false">Password</string>
+    <string name="input_view_password_placeholder" translatable="false">Input password</string>
+    <string name="input_view_password_link" translatable="false">Forgot?</string>
+    <string name="input_view_password_link_toast" translatable="false">It\'s a problem for you!</string>
+    <string name="input_view_password_validation_default_title" translatable="false">No validation</string>
+    <string name="input_view_password_validation_error_title" translatable="false">Error</string>
+    <string name="input_view_password_validation_warning_title" translatable="false">Warning</string>
+    <string name="input_view_password_validation_success_title" translatable="false">Success</string>
+    <string name="input_view_password_validation_error_message" translatable="false">Wrong password.</string>
+    <string name="input_view_password_validation_warning_message" translatable="false">Unsafe password.</string>
+    <string name="input_view_password_validation_success_message" translatable="false">OK.</string>
+    <string name="input_view_money_title" translatable="false">Money</string>
+    <string name="input_view_money_placeholder" translatable="false">Input money</string>
+    <string name="input_view_money_decorated" translatable="false">Decorated</string>
+    <string name="input_view_money_zero_fraction_title" translatable="false">0</string>
+    <string name="input_view_money_one_fraction_title" translatable="false">1</string>
+    <string name="input_view_money_two_fraction_title" translatable="false">2</string>
+    <string name="input_view_date_and_time_title" translatable="false">Date/Time</string>
+    <string name="input_view_date_only_title" translatable="false">Date</string>
+    <string name="input_view_time_only_title" translatable="false">Time</string>
+    <string name="input_view_phone_title" translatable="false">Phone</string>
+    <string name="input_view_phone_placeholder" translatable="false">Input phone</string>
+    <string name="input_view_number_title" translatable="false">Number</string>
+    <string name="input_view_number_placeholder" translatable="false">Input number</string>
+    <string name="input_view_mask_title" translatable="false">Strange mask</string>
+    <string name="input_view_mask_mask" translatable="false">!6E(***)-(000)+AAA</string>
+    <string name="input_view_value_selection_title" translatable="false">Value selection</string>
+    <string name="input_view_value_selection_toast" translatable="false">Value selection implements 3-rd party developer</string>
+    <string name="input_view_multiline_title" translatable="false">Multiline text</string>
+    <string name="input_view_multiline_placeholder" translatable="false">Input multiline text</string>
+</resources>

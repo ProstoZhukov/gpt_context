@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MessagePanelDefaultTheme">
+        <item name="MessagePanel_sendIconDisabled">@drawable/design_message_panel_ic_send_disabled</item>
+        <item name="MessagePanel_sendIconEnabled">@drawable/design_message_panel_ic_send_enabled</item>
+        <item name="MessagePanel_quoteViewStyle">@style/QuiteViewDefaultStyle</item>
+        <item name="MessagePanel_recipientsViewStyle">@style/RecipientsViewDefaultStyle</item>
+        <item name="MessagePanel_recipientsHintText">@string/design_message_panel_recipients_add_new_for_conversations</item>
+        <item name="MessagePanel_recipientsAllChosenText">@string/design_message_panel_recipients_for_all_members</item>
+    </style>
+
+</resources>

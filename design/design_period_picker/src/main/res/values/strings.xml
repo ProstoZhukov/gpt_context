@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <string name="quantum_1" translatable="false">I</string>
+    <string name="quantum_2" translatable="false">II</string>
+    <string name="quantum_3" translatable="false">III</string>
+    <string name="quantum_4" translatable="false">IV</string>
+
+    <string-array name="quantum_list">
+        <item>@string/quantum_1</item>
+        <item>@string/quantum_2</item>
+        <item>@string/quantum_3</item>
+        <item>@string/quantum_4</item>
+    </string-array>
+
+    <string-array name="short_quantum_list">
+        <item>@string/quantum_1</item>
+        <item>@string/quantum_2</item>
+    </string-array>
+
+    <string name="quarter_1">Quarter 1</string>
+    <string name="quarter_2">Quarter 2</string>
+    <string name="quarter_3">Quarter 3</string>
+    <string name="quarter_4">Quarter 4</string>
+    <string name="quarter">quarter</string>
+
+    <string name="half_year_1">I half year</string>
+    <string name="half_year_2">II half year</string>
+    <string name="half_year">half year</string>
+
+    <string name="symbol_dash" translatable="false">&#160;-&#160;</string>
+
+    <string name="accessibility_text" translatable="false">"Day.%1$d.%2$s.%3$s"</string>
+
+    <string name="all_period">The whole period</string>
+</resources>

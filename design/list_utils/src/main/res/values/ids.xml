@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AbstractListView -->
+    <item name="list_view_information_view_id"
+          type="id"/>
+    <item name="list_view_progress_view_id"
+          type="id"/>
+    <item name="list_view_recycler_view_id"
+        type="id"/>
+</resources>

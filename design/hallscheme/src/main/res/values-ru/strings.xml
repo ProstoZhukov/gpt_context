@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hall_scheme_row_number">Ряд %s</string>
+    <string name="hall_scheme_table_occupied_for_user">занят</string>
+    <string name="hall_scheme_assignee_i">Я</string>
+</resources>

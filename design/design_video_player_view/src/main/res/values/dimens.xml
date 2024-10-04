@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="video_message_duration_time_left_padding">1dp</dimen>
+    <dimen name="video_message_duration_width">42dp</dimen>
+    <dimen name="video_message_time_bar_radius">126dp</dimen>
+    <dimen name="video_message_small_width">168dp</dimen>
+    <dimen name="video_message_recognized_view_right_space">11dp</dimen>
+    <dimen name="video_message_max_size">260dp</dimen>
+    <dimen name="video_message_collapsed_size">168dp</dimen>
+    <dimen name="video_message_duration_view_width">41dp</dimen>
+    <dimen name="video_message_duration_view_height">15dp</dimen>
+    <dimen name="video_message_recognized_view_width">28dp</dimen>
+    <dimen name="video_message_recognized_view_height">24dp</dimen>
+</resources>

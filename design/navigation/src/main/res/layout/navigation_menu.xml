@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?navigationBackgroundColor"
+    android:theme="?attr/navStyle"
+    tools:theme="@style/NavView"
+    tools:viewBindingIgnore="true">
+
+    <ViewStub
+        android:id="@+id/navigation_header_stub"
+        android:layout_width="@dimen/navigation_menu_width"
+        android:layout_height="?inlineHeight_s"
+        android:inflatedId="@+id/navigation_header_stub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/navigation_menu_header"
+        tools:visibility="visible"/>
+
+    <ScrollView
+        android:id="@+id/navigation_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_footer_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigation_header_stub"/>
+
+    <View
+        android:id="@+id/navigation_footer_separator"
+        android:layout_width="match_parent"
+        android:layout_height="?borderThickness_s"
+        android:layout_marginBottom="?offset_s"
+        android:background="?navigationSeparatorColor"
+        app:layout_constraintBottom_toTopOf="@id/navigation_footer_stub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ViewStub
+        android:id="@+id/navigation_footer_stub"
+        android:layout_width="@dimen/navigation_menu_width"
+        android:layout_height="44dp"
+        android:layout_marginBottom="?offset_s"
+        android:inflatedId="@+id/navigation_footer_stub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

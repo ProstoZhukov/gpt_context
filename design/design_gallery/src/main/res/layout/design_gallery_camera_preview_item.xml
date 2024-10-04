@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ru.tensor.sbis.design.gallery.impl.ui.primitives.GalleryCameraPreviewItemVM"/>
+
+        <variable
+            name="clickHandler"
+            type="ru.tensor.sbis.design.gallery.impl.ui.GalleryClickHandler"/>
+
+    </data>
+
+    <ru.tensor.sbis.design.gallery.impl.ui.GalleryCameraPreviewContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:small="@{viewModel.small}">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/gallery_preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="@{() -> clickHandler.onCameraPreviewClick()}"
+            app:implementationMode="compatible"
+            app:scaleType="fillCenter"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            style="@style/MobileFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="?offset_2xs"
+            android:layout_marginEnd="?offset_xs"
+            android:text="@string/design_mobile_icon_camera"
+            android:textColor="?contrastTextColor"
+            android:textSize="?fontSize_3xl_scaleOff"
+            tools:ignore="RelativeOverlap"/>
+
+    </ru.tensor.sbis.design.gallery.impl.ui.GalleryCameraPreviewContainer>
+
+</layout>

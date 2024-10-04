@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Атрибут темы компонента выбора. -->
+    <attr name="selectionTheme"/>
+
+    <!-- Атрибут темы меню компонента выбора. -->
+    <attr name="selectionMenuTheme"/>
+
+    <declare-styleable name="Selection">
+
+        <!-- Стиль для шапки компонента выбора. -->
+        <attr name="Selection_topNavigationStyle" format="reference"/>
+
+        <!-- Стиль панели выбранных элементов. -->
+        <attr name="Selection_selectionPanelStyle" format="reference"/>
+
+        <!-- Тема для ячеек выбранных элементов списка. -->
+        <attr name="Selection_selectedItemsTheme" format="reference"/>
+
+        <!-- Тема для ячеек невыбранных элементов списка. -->
+        <attr name="Selection_selectionItemsTheme" format="reference"/>
+
+        <!-- Необходимость показа разделителя под тулбаром. -->
+        <attr name="Selection_showTopNavDivider" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>

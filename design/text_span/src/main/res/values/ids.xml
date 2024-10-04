@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SimpleInformationView -->
+    <item name="header"
+          type="id"/>
+    <item name="base_info"
+          type="id"/>
+    <item name="details"
+          type="id"/>
+
+</resources>

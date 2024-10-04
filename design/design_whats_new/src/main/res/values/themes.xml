@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO удалить после выполнения задачи https://dev.sbis.ru/opendoc.html?guid=6391f00e-cfe3-41e5-930b-6db15fa34fbe&client=3 -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <style name="FeatureTheme.WhatsNew">
+        <item name="onboardingFeatureContainerStyle">@style/FeatureContainerStyle.WhatsNew</item>
+        <item name="onboardingTitleStyle">@style/OnboardingTitleStyle.WhatsNew</item>
+        <item name="onboardingDescriptionStyle">@style/OnboardingDescriptionStyle.WhatsNew</item>
+        <item name="whats_new_hide_image_before_width">360</item>
+    </style>
+
+    <style name="FeatureContainerStyle.WhatsNew">
+        <item name="android:background">?backgroundColor</item>
+    </style>
+
+    <style name="OnboardingTitleStyle.WhatsNew">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_5xl_scaleOn</item>
+    </style>
+
+    <style name="OnboardingDescriptionStyle.WhatsNew">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_l_scaleOn</item>
+    </style>
+</resources>

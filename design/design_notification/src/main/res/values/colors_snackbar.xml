@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="design_notification_snackbar_background_color">@color/palette_color_orange1</color>
+    <color name="design_notification_snackbar_action_color">#ffffffff</color>
+    <color name="design_notification_snackbar_background_color_failure">
+        @color/palette_color_dark_red1
+    </color>
+    <color name="design_notification_snackbar_background_color_success">
+        @color/palette_color_dark_green1
+    </color>
+</resources>

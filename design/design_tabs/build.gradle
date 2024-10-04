@@ -1,0 +1,36 @@
+import ru.tensor.gradle.subconfig.ktlint.KtLintConfig
+
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'submodule-cfg-plugin'
+}
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableKtLintCfg(KtLintConfig.KOTLIN_1_8_0)
+}
+
+android {
+    namespace "ru.tensor.sbis.design.tabs"
+
+    resourcePrefix 'sbis_tabs_view'
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    api project(':design')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_utils')
+    implementation project(':design_counters')
+    implementation project(':toolbox-decl')
+
+    testImplementation project(':testing')
+}

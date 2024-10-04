@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RecorderMovementHintDefaultStyle">
+        <item name="android:textColor">?infoTextColor</item>
+        <item name="android:textSize">?fontSize_3xs_scaleOn</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="RecorderCancelTextDefaultStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:text">@string/design_message_panel_recorder_common_cancel_text</item>
+        <item name="android:textColor">?infoTextColor</item>
+        <item name="android:textSize">?fontSize_xs_scaleOn</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>

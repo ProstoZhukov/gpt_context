@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calendar_date_view_cross_vacation_holiday">#ACCF99</color>
+    <color name="calendar_date_view_cross_vacation_holiday_background">#FFEAEA</color>
+    <color name="calendar_date_view_color_day_off_background">#FFF5F5</color>
+    <color name="calendar_date_view_color_time_off_background">#F7EEFA</color>
+    <color name="calendar_date_view_unwanted_vacation_day_hatch">#FBE4E4</color>
+    <color name="calendar_date_view_unwanted_vacation_day_border">#EAAFAF</color>
+
+    <color name="calendar_date_view_unwanted_vacation_day_fill">#F3D3D3</color>
+    <color name="calendar_date_view_unwanted_vacation_day_line">#66D04D4D</color>
+
+    <color name="calendar_date_view_work_day_background_dark">#344E68</color>
+    <color name="calendar_date_view_day_off_background_dark">#3F1A1F</color>
+    <color name="calendar_date_view_color_arrow_back_dark">#B9C9F0</color>
+    <color name="calendar_date_view_color_divider_dark">#283c53</color>
+</resources>

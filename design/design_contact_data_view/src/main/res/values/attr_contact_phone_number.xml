@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="SbisContactPhoneNumberDefaultTheme" format="reference" />
+
+    <declare-styleable name="SbisContactPhoneNumberView">
+
+        <!-- Бэкграунд -->
+        <attr name="SbisContactPhoneNumberView_backgroundColor" format="reference|color" />
+        <!-- Бэкграунд нажатый -->
+        <attr name="SbisContactPhoneNumberView_backgroundColorPressed" format="reference|color" />
+        <!-- Бэкграунд неактивный -->
+        <attr name="SbisContactPhoneNumberView_backgroundColorDisabled" format="reference|color" />
+        <!-- Цвет текста -->
+        <attr name="SbisContactPhoneNumberView_textColor" format="color|reference" />
+        <!-- Размер текста -->
+        <attr name="SbisContactPhoneNumberView_textSize" format="dimension|reference" />
+    </declare-styleable>
+</resources>

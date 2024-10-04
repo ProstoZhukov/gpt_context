@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pin_code_retry_label">Πάρτε ξανά τον κωδικό</string>
+    <string name="pin_code_timer_label">Δοκιμάστε ξανά μετά από %s</string>
+    <string name="pin_code_create_pin_header">Σκεφτείτε το PIN σας</string>
+    <string name="pin_code_enter_pin_header">Εισαγάγετε τον κωδικό PIN</string>
+    <string name="pin_code_enter_sms_code_header">Εισαγάγετε τον κωδικό SMS</string>
+    <string name="pin_code_we_are_calling_you_header">Σας καλούμε…</string>
+    <string name="pin_code_recovery_code_header">Κωδικός ανάκτησης</string>
+    <string name="pin_code_enter_code_header">Εισαγάγετε έναν κωδικό</string>
+    <string name="pin_code_confirm_signature_header">Επιβεβαίωση υπογραφής</string>
+    <string name="pin_code_confirmation_code_hint">Κωδικός επιβεβαίωσης</string>
+    <string name="pin_code_creation_confirmation_alert">Ο κωδικός δεν ταιριάζει. Κατανοήστε και πληκτρολογήστε ξανά τον κωδικό PIN.</string>
+    <string name="pin_code_do_not_request">Μην ζητήσετε</string>
+    <string name="pin_code_period_field_session">μέχρι το τέλος της συνεδρίας</string>
+    <string name="pin_code_period_field_hour">για 1 ώρα</string>
+    <string name="pin_code_period_field_half_hour">για 30 λεπτά</string>
+    <string name="pin_code_period_field_quarter_hour">για 15 λεπτά</string>
+    <string name="pin_code_period_picker_session_option">Μέχρι το τέλος της συνεδρίας</string>
+    <string name="pin_code_period_picker_hour_option">1 ώρα</string>
+    <string name="pin_code_period_picker_half_hour_option">30 λεπτά</string>
+    <string name="pin_code_period_picker_quarter_hour_option">15 λεπτά</string>
+    <string name="pin_code_we_are_calling_you_body">Τα τελευταία 4 ψηφία του εισερχόμενου αριθμού τηλεφώνου</string>
+    <string name="pin_code_error_title">Λάθος</string>
+    <string name="pin_code_error_confirmation_button">OK</string>
+</resources>

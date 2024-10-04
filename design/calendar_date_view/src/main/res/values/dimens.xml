@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Smiles-->
+    <dimen name="smiles_padding">5dp</dimen>
+
+    <!--WeekLegendView-->
+    <dimen name="legend_layout_height">56sp</dimen>
+    <dimen name="legend_layout_first_item_min_width">93dp</dimen>
+    <dimen name="legend_layout_first_item_width_another_year">102dp</dimen>
+    <dimen name="legend_layout_item_width">46sp</dimen>
+    <dimen name="legend_date_margin_top">5sp</dimen>
+    <dimen name="legend_back_icon_height">14dp</dimen>
+    <dimen name="legend_back_icon_width">12dp</dimen>
+    <dimen name="legend_day_margin_bottom">3.5dp</dimen>
+    <dimen name="legend_day_of_week_margin_top">48sp</dimen>
+    <dimen name="legend_day_margin_bottom_2">6sp</dimen>
+    <dimen name="legend_day_date_top_offset">26sp</dimen>
+    <dimen name="legend_day_margin_end">12dp</dimen>
+    <dimen name="legend_day_margin_end_scale_on">12sp</dimen>
+    <dimen name="legend_day_first_day_text_margin">4dp</dimen>
+    <dimen name="legend_day_header_day_of_the_month_padding_start">6dp</dimen>
+    <dimen name="calendar_year_month_month_height">46dp</dimen>
+    <dimen name="calendar_event_fragment_current_day_margin">1sp</dimen>
+    <dimen name="calendar_day_padding">6dp</dimen>
+    <dimen name="calendar_day_text_size">25dp</dimen>
+    <dimen name="calendar_busy_text_size">15dp</dimen>
+
+    <dimen name="legend_preference_item_height">44dp</dimen>
+    <dimen name="legend_week_days_font_size">10sp</dimen>
+    <dimen name="legend_week_days_events_font_size">8sp</dimen>
+
+    <dimen name="legend_divider_height">1dp</dimen>
+    <dimen name="legend_header_view_date_margin_start">6dp</dimen>
+
+    <dimen name="legend_standard_padding">12dp</dimen>
+    <dimen name="legend_standard_padding_medium_increased">10dp</dimen>
+    <dimen name="legend_standard_padding_medium">8dp</dimen>
+    <dimen name="legend_standard_padding_middle">6dp</dimen>
+    <dimen name="legend_standard_padding_small">4dp</dimen>
+    <dimen name="legend_standard_padding_small_scale_on">4sp</dimen>
+    <dimen name="legend_standard_padding_smaller_scale_on">2sp</dimen>
+    <dimen name="legend_date_text_margin_end">6sp</dimen>
+
+    <dimen name="calendar_day_view_lines_width">2dp</dimen>
+    <dimen name="calendar_day_select_line_width">2dp</dimen>
+
+    <dimen name="design_standard_padding_minimum">1dp</dimen>
+    <dimen name="design_month_picker_horizontal_margin">36dp</dimen>
+    <dimen name="design_month_picker_text_start_margin">44dp</dimen>
+
+    <dimen name="calendar_year_picker_day_text_size">15dp</dimen>
+
+    <dimen name="design_hatch_day_border_dash_width">3dp</dimen>
+    <dimen name="design_hatch_day_border_dash_gap">1dp</dimen>
+    <dimen name="design_hatch_day_unwanted_vacation_width">1dp</dimen>
+    <dimen name="design_hatch_day_unwanted_vacation_border_width">2dp</dimen>
+    <dimen name="design_marker_stroke_depth">2dp</dimen>
+
+    <dimen name="tablet_margin">36dp</dimen>
+    <dimen name="top_bar_tablet_height">40dp</dimen>
+    <dimen name="top_bar_phone_height">20dp</dimen>
+    <dimen name="design_hatch_standard_padding_minimum_half">0.5dp</dimen>
+</resources>

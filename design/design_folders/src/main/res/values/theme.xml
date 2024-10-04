@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FoldersDefaultTheme">
+        <item name="FoldersView_backgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="FoldersView_borderColor">?borderColor</item>
+        <item name="FoldersView_folderButtonColor">?labelIconColor</item>
+        <item name="FoldersView_moreButtonColor">?labelTextColor</item>
+        <item name="FoldersView_folderTitleColor">?textColor</item>
+       <item name="FoldersView_folderMarkerColor">?markerColor</item>
+        <item name="FoldersView_additionalCommandColor">?labelTextColor</item>
+        <item name="FoldersView_folderIconColor">?labelIconColor</item>
+        <item name="FoldersView_pressedItemColor">?activeBackgroundColor</item>
+    </style>
+</resources>

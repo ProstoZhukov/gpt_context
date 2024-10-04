@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Копия стилей
+        The resource `@styleable/BottomSheetBehavior_Layout_behavior_peekHeight` is marked as private
+        in com.google.android.material:material:1.4.0
+        The resource `@styleable/BottomSheetBehavior_Layout_behavior_hideable` is marked as private
+        in com.google.android.material:material:1.4.0
+        The resource `@styleable/BottomSheetBehavior_Layout_behavior_skipCollapsed` is marked as private
+        in com.google.android.material:material:1.4.0
+    -->
+    <declare-styleable name="CustomBottomSheetBehavior_Layout">
+        <!-- The height of the bottom sheet when it is collapsed. -->
+        <attr name="behavior_peekHeight"/>
+        <!-- Whether this bottom sheet can be hidden by dragging it further downwards -->
+        <attr name="behavior_hideable"/>
+        <!-- Skip the collapsed state once expanded; no effect unless it is hideable -->
+        <attr name="behavior_skipCollapsed"/>
+        <!-- Whether height of expanded sheet wraps content or not -->
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ToggleCheckbox">
+        <attr name="checkIconColor" format="color|reference"/>
+        <attr name="isChecked" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SbisProgressBar">
+        <attr name="progressColor" format="color"/>
+        <attr name="delayedShowing" format="boolean"/>
+        <attr name="showingDelay" format="integer"/>
+        <attr name="strictlyUseProgressDrawable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressButton">
+        <attr name="customButtonStyle" format="reference"/>
+        <attr name="progressBarStyle" format="reference"/>
+        <attr name="progressBarColor" format="reference|color"/>
+        <attr name="progressVisible" format="boolean"/>
+        <attr name="progressSize" format="reference|dimension"/>
+        <attr name="android:text" format="reference|string"/>
+        <attr name="android:textSize" format="reference|string"/>
+        <attr name="android:textColor" format="reference|string"/>
+        <attr name="android:src" format="reference|string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AutoScrollSingleLineTextView">
+        <attr name="fullyTouchable" format="boolean"/>
+    </declare-styleable>
+
+    <!-- Swipe Reveal Layout -->
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1"/>
+            <flag name="right" value="2"/>
+            <flag name="top" value="4"/>
+            <flag name="bottom" value="8"/>
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0"/>
+            <enum name="same_level" value="1"/>
+        </attr>
+
+        <attr name="flingVelocity" format="integer"/>
+
+        <attr name="minDistRequestDisallowParent" format="dimension"/>
+    </declare-styleable>
+    <!-- end region -->
+
+    <declare-styleable name="HorizontalPatchTextView">
+        <attr name="shapeColor" format="color"/>
+        <attr name="leftPatch" format="reference"/>
+        <attr name="rightPatch" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CollageView">
+        <attr name="desiredAspectRatio" format="string"/>
+        <attr name="dividerWidth" format="dimension"/>
+        <attr name="maxHeight" format="dimension"/>
+        <attr name="gravity" format="enum">
+            <enum name="start" value="-1"/>
+            <enum name="middle" value="0"/>
+            <enum name="end" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonWithStateView">
+        <attr name="compoundIcon" format="string"/>
+        <attr name="compoundIconColor" format="color"/>
+        <attr name="buttonStateType" format="enum">
+            <enum name="regular" value="1"/>
+            <enum name="primary" value="2"/>
+            <enum name="compound" value="3"/>
+            <enum name="disabled" value="4"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableDataBindingCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.checkbox"
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':design_utils')
+    implementation project(':common')
+    implementation project(':design_custom_view_tools')
+
+    // AndroidX
+    implementation libs.android.appcompat
+    implementation libs.android.core.ktx
+
+    testImplementation project(':testing')
+}

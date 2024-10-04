@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SbisRatingViewDefaultTheme">
+        <item name="SbisRatingView_oneIconColor">?rate2Color</item>
+        <item name="SbisRatingView_twoIconColor">?rate4Color</item>
+        <item name="SbisRatingView_threeIconColor">?rate6Color</item>
+        <item name="SbisRatingView_fourIconColor">?rate8Color</item>
+        <item name="SbisRatingView_fiveIconColor">?rate10Color</item>
+        <item name="SbisRatingView_filledIconColor">?rateIconColor</item>
+        <item name="SbisRatingView_emptyIconColor">?unaccentedIconColor</item>
+        <item name="SbisRatingView_goodIconColor">?successIconColor</item>
+        <item name="SbisRatingView_neutralIconColor">?warningIconColor</item>
+        <item name="SbisRatingView_badIconColor">?dangerIconColor</item>
+    </style>
+</resources>

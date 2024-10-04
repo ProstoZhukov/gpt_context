@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-kapt'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableBuildConfigGeneration()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.design.additional_fields_views"
+}
+
+dependencies {
+    // common
+    implementation project(':base_components')
+    implementation project(':common')
+    implementation project(':list')
+
+    implementation project(':design')
+    implementation project(':design_view_ext')
+    implementation project(':design_custom_view_tools')
+}

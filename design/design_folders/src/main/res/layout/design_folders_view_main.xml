@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_folders_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_height="50dp"
+    tools:parentTag="ru.tensor.sbis.design.folders.FoldersView">
+
+    <ru.tensor.sbis.design.folders.view.compact.FoldersCompactView
+        android:id="@+id/design_folders_compact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?FoldersView_backgroundColor"
+        tools:layout_height="50dp"/>
+
+    <ru.tensor.sbis.design.folders.view.full.FolderListView
+        android:id="@+id/design_folders_full"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?FoldersView_backgroundColor"
+        android:visibility="gone"
+        app:FolderListView_viewMode="nested"
+        tools:layout_height="300dp"/>
+
+    <ru.tensor.sbis.design.breadcrumbs.CurrentFolderView
+        android:id="@+id/design_folders_current_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/bottom_border"
+        android:layout_width="match_parent"
+        android:layout_height="?borderThickness_s"
+        android:layout_gravity="bottom"
+        android:background="?FoldersView_borderColor" />
+</merge>

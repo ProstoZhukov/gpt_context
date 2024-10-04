@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SbisKeyboardButton">
+
+        <attr name="SbisKeyboardButton_need_setup_shadow" format="boolean"/>
+
+        <attr name="SbisKeyboardButton_item_type" format="enum">
+            <!-- Основная кнопка -->
+            <enum name="input" value="1"/>
+            <!-- Дополнительная кнопка действия -->
+            <enum name="action" value="2"/>
+            <!-- Основная кнопка действия -->
+            <enum name="action_main" value="3"/>
+        </attr>
+
+        <!-- Шрифтовая иконка -->
+        <attr name="SbisKeyboardButton_icon" format="string|reference"/>
+
+        <!-- ColorStateList или обычный color для иконки -->
+        <attr name="SbisKeyboardButton_icon_color" format="color"/>
+
+        <!-- Размер иконки -->
+        <attr name="SbisKeyboardButton_icon_size" format="enum">
+            <enum name="l" value="1"/>
+        </attr>
+
+        <!-- Размер кнопки -->
+        <attr name="SbisKeyboardButton_size" format="enum">
+            <enum name="s" value="1"/>
+            <enum name="m" value="2"/>
+            <enum name="l" value="3"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

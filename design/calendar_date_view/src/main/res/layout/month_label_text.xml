@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/month_text"
+        style="@style/RegularStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?offset_s"
+        android:layout_marginBottom="@dimen/legend_standard_padding_middle"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom"
+        android:textColor="?textColor"
+        android:textSize="?fontSize_2xl_scaleOff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Январь'21"/>
+</FrameLayout>

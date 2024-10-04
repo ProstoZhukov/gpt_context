@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Стиль для корректного предпросмотра делегатов оплаты. Применяется вручную в 'PaymentView'. -->
+    <style name="RetailViewsPaymentRootViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:padding">?offset_xs</item>
+        <item name="android:clipChildren">false</item>
+    </style>
+
+    <!-- Стиль текста для комментария в окне оплаты. -->
+    <style name="RetailViewsPaymentViewCommentTextStyle">
+        <!--
+            'maxLines' == 1, для планшетов:
+             https://online.sbis.ru/opendoc.html?guid=a4de6ca5-3421-4cdc-af70-2f5f56cacfd6&client=3
+         -->
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">end</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">?fontSize_m_scaleOn</item>
+        <item name="android:textColor">?unaccentedTextColor</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewCommonButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Общие стили кнопок Sbis(Round)Button -->
+
+    <style name="RetailViewsPaymentViewSbisButtonStyle" parent="RetailViewsPaymentViewCommonButtonStyle">
+        <!--
+            В DefaultLight, Secondary - синяя, поэтому используем Default.
+            Обсуждали здесь: https://online.sbis.ru/opendoc.html?guid=761771e3-7adc-4e82-80ce-9502c6b2a738&client=3
+         -->
+        <item name="SbisButton_style">def</item>
+        <item name="SbisButton_size">m</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewSbisRoundButtonStyle" parent="RetailViewsPaymentViewCommonButtonStyle">
+        <!--
+            В DefaultLight, Secondary - синяя, поэтому используем Default.
+            Обсуждали здесь: https://online.sbis.ru/opendoc.html?guid=761771e3-7adc-4e82-80ce-9502c6b2a738&client=3
+         -->
+        <item name="SbisRoundButton_style">def</item>
+        <item name="SbisRoundButton_size">m</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewControlSbisButtonStyle" parent="RetailViewsPaymentViewSbisButtonStyle">
+        <item name="SbisButton_iconSize">x4l</item>
+        <item name="SbisButton_titleSize">xl</item>
+        <item name="SbisButton_elevation">0dp</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewControlSbisRoundButtonStyle" parent="RetailViewsPaymentViewSbisRoundButtonStyle">
+        <item name="SbisRoundButton_iconSize">x4l</item>
+        <item name="SbisRoundButton_elevation">0dp</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewSbisButtonStyle.Primary">
+        <item name="SbisButton_style">primary</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewSbisRoundButtonStyle.Primary">
+        <item name="SbisRoundButton_style">primary</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewSbisButtonStyle.Discount">
+        <item name="SbisButton_elevation">0dp</item>
+        <item name="SbisButton_icon">@string/design_mobile_icon_discount1</item>
+        <item name="SbisButton_iconColor">?bonusIconColor</item>
+        <item name="SbisButton_titleColor">?bonusTextColor</item>
+        <item name="SbisButton_backgroundColor">?unaccentedBackgroundColor</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewSbisRoundButtonStyle.Contrast">
+        <item name="android:elevation">?elevation_m</item>
+        <item name="SbisRoundButton_type">contrast</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewControlSbisButtonStyle.Contrast">
+        <!--
+            Согласно макету, размер текста должен быть еще больше. Ждем платформу:
+            TODO: https://online.sbis.ru/opendoc.html?guid=7772bf27-81f3-4611-ac05-1738a2fc0e1e&client=3
+         -->
+        <item name="SbisButton_titleSize">x3l</item>
+        <item name="SbisButton_style">primary</item>
+        <item name="SbisButton_elevation">?elevation_m</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewControlSbisRoundButtonStyle.Close">
+        <item name="SbisRoundButton_iconSize">xl</item>
+        <item name="SbisRoundButton_iconColor">?secondaryIconColor</item>
+    </style>
+
+    <style name="RetailViewsPaymentViewControlSbisButtonStyle.PaymentType">
+        <item name="SbisButton_titleColor">?unaccentedTextColor</item>
+        <item name="SbisButton_titleContrastColor">?unaccentedTextColor</item>
+    </style>
+
+</resources>

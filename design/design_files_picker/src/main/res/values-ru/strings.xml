@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="files_picker_panel_header_button_title">Отмена</string>
+    <string name="files_picker_panel_footer_button_title">Добавить</string>
+    <string name="files_picker_panel_header_title">Выбрано %d</string>
+    <plurals name="files_picker_selection_limit_message">
+        <item quantity="one">Вы не можете выбрать более %d файла</item>
+        <item quantity="few">Вы не можете выбрать более %d файлов</item>
+        <item quantity="many">Вы не можете выбрать более %d файлов</item>
+        <item quantity="other">Вы не можете выбрать более %d файлов</item>
+    </plurals>
+</resources>

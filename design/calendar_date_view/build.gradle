@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-parcelize'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableViewBindingCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.calendar.date"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation project(':design')
+    implementation project(':design_utils')
+    implementation project(':design_custom_view_tools')
+
+    // api, чтобы в целевых модулях не приходилось подключать библиотеку
+    api libs.android.joda
+
+    implementation libs.android.core.ktx
+
+    testImplementation project(':testing')
+    testImplementation testLibs.android.joda
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SearchInputDefaultTheme">
+        <item name="searchIconColor">?placeholderColorInputText</item>
+        <item name="searchIconSize">?iconSize_m</item>
+        <item name="bottomDividerColor">?borderColor</item>
+        <item name="searchSeparatorColor">?unaccentedSeparatorColor</item>
+        <item name="baseColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="additionalColor">?backgroundColor</item>
+        <item name="searchTextColor">?textColor</item>
+        <item name="textInputViewTheme">@style/SearchInputDefaultInputViewTheme</item>
+    </style>
+
+    <style name="SearchInputDefaultInputViewTheme" parent="TextInputViewTheme">
+        <item name="inputView_validationDefaultColor">@color/palette_color_transparent</item>
+    </style>
+
+</resources>

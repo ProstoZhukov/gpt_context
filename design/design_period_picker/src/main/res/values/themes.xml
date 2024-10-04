@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SbisPeriodPickerViewTheme">
+        <item name="HeaderLabel_monthLabelHeight">?inlineHeight_m</item>
+        <item name="HeaderLabel_weekDaysHeight">?inlineHeight_m</item>
+        <item name="HeaderLabel_textSize">?fontSize_2xl_scaleOff</item>
+        <item name="DayView_textSize">?fontSize_3xl_scaleOff</item>
+        <item name="DayView_counterTextSize">?fontSize_3xs_scaleOff</item>
+        <item name="DayView_counterMargin">?offset_xs</item>
+        <item name="MonthLabel_textSize">?fontSize_4xl_scaleOff</item>
+        <item name="QuantumLabel_quarterHeight">80dp</item>
+        <item name="QuantumLabel_halfYearHeight">160dp</item>
+        <item name="QuantumLabel_margin">?offset_s</item>
+        <item name="BackgroundDrawable_cornerRadius">?borderRadius_3xs</item>
+        <item name="BackgroundDrawable_compactCornerRadius">?borderRadius_2xs</item>
+        <item name="BackgroundDrawable_borderRadius">?borderRadius_s</item>
+        <item name="SelectionView_margin">?offset_2xs</item>
+    </style>
+
+    <style name="SbisPeriodPickerViewLargeTheme" parent="SbisPeriodPickerViewTheme">
+        <item name="HeaderLabel_monthLabelHeight">?inlineHeight_l</item>
+        <item name="HeaderLabel_weekDaysHeight">?inlineHeight_l</item>
+        <item name="HeaderLabel_textSize">?fontSize_3xl_scaleOff</item>
+        <item name="DayView_textSize">?fontSize_5xl_scaleOff</item>
+        <item name="DayView_counterTextSize">?fontSize_s_scaleOff</item>
+        <item name="DayView_counterMargin">?offset_xs</item>
+        <item name="MonthLabel_textSize">?fontSize_6xl_scaleOff</item>
+        <item name="QuantumLabel_quarterHeight">100dp</item>
+        <item name="QuantumLabel_halfYearHeight">200dp</item>
+        <item name="QuantumLabel_margin">?offset_m</item>
+        <item name="BackgroundDrawable_cornerRadius">?borderRadius_2xs</item>
+        <item name="BackgroundDrawable_compactCornerRadius">?borderRadius_m</item>
+        <item name="BackgroundDrawable_borderRadius">?borderRadius_l</item>
+        <item name="SelectionView_margin">?offset_3xs</item>
+    </style>
+</resources>

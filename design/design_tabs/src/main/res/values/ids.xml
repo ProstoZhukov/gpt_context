@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sbis_tabs_view_main_tab" type="id"/>
+    <item name="sbis_tabs_view_tab_1" type="id"/>
+    <item name="sbis_tabs_view_tab_2" type="id"/>
+    <item name="sbis_tabs_view_tab_3" type="id"/>
+    <item name="sbis_tabs_view_tab_4" type="id"/>
+    <item name="sbis_tabs_view_tab_5" type="id"/>
+    <item name="sbis_tabs_view_tab_6" type="id"/>
+    <item name="sbis_tabs_view_tab_7" type="id"/>
+</resources>

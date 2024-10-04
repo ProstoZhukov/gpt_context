@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Атрибуты компонента [InputFieldView] -->
+    <declare-styleable name="RetailViewsInputFieldViewAttrs">
+        <attr name="retail_views_input_field_theme" format="reference"/>
+
+        <attr name="retail_views_input_field_background_main_color" format="reference|color"/>
+        <attr name="retail_views_input_field_background_error_color" format="reference|color"/>
+        <attr name="retail_views_input_field_background_main_stroke_color" format="reference|color"/>
+        <attr name="retail_views_input_field_background_bottom_stroke_color" format="reference|color"/>
+        <attr name="retail_views_input_field_background_searchable_stroke_color" format="reference|color"/>
+        <attr name="retail_views_input_field_label_text_color" format="reference|color"/>
+
+        <attr name="retail_views_main_background_text_color" format="reference|color"/>
+        <attr name="retail_views_main_background_disabled_text_color" format="reference|color"/>
+        <attr name="retail_views_main_background_icon_color" format="reference|color"/>
+        <attr name="retail_views_main_background_color" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RetailViewsInputFieldSettings" tools:ignore="ResourceName">
+        <!--Start State section-->
+        <attr name="retailInputFieldType">
+            <enum name="custom" value="-1"/>
+            <enum name="edit" value="0"/>
+            <enum name="autocomplete" value="1"/>
+            <enum name="search" value="2"/>
+            <enum name="editWithLeftIcon" value="3"/>
+            <enum name="menu" value="4"/>
+            <enum name="read" value="5"/>
+            <enum name="date" value="6"/>
+            <enum name="money" value="7"/>
+            <enum name="clearableMenu" value="8"/>
+            <enum name="quantity" value="9"/>
+            <enum name="editLarge" value="10"/>
+            <enum name="numberDecimal" value="11"/>
+            <enum name="number" value="12"/>
+            <enum name="editWithRightIcon" value="13"/>
+            <enum name="password" value="14"/>
+            <enum name="edit_no_background" value="15"/>
+        </attr>
+        <!--End State section-->
+
+        <!--Start Text/Icon section-->
+        <attr name="retail_leftIconText" format="reference|string"/>
+        <attr name="retail_rightIcon2Text" format="reference|string"/>
+        <attr name="retail_rightIcon1Text" format="reference|string"/>
+
+        <attr name="retail_editableViewText" format="reference|string"/>
+        <attr name="retail_editableViewHint" format="reference|string"/>
+        <attr name="retail_editableMinLines" format="reference|integer"/>
+        <attr name="retail_editableMaxLines" format="reference|integer"/>
+
+        <attr name="retail_inputFieldSingleLine" format="reference|boolean"/>
+        <attr name="retail_isHorizontalFadingEdgeEnabled" format="reference|boolean"/>
+        <attr name="retail_integerPartMaxLength" format="reference|integer"/>
+
+        <attr name="retail_inputFieldGravity">
+            <enum name="start" value="0"/>
+            <enum name="end" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+
+        <attr name="retail_iconsSize" format="reference|dimension"/>
+
+        <attr name="android:inputType"/>
+        <attr name="android:maxLength"/>
+        <attr name="android:textSize"/>
+        <attr name="android:ellipsize"/>
+        <attr name="android:selectAllOnFocus"/>
+        <attr name="android:privateImeOptions"/>
+        <!--End Text/Icon section-->
+    </declare-styleable>
+
+</resources>

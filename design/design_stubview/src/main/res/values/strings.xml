@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- StubView  -->
+    <string name="design_stub_view_no_messages_message">Start a conversation</string>
+    <string name="design_stub_view_no_messages_details">Just tap the plus button and select\na person to interact with</string>
+
+    <string name="design_stub_view_no_contacts_message">Add a contact first</string>
+    <string name="design_stub_view_no_contacts_details">Just click plus and select from the list</string>
+
+    <string name="design_stub_view_no_news_message">No news</string>
+    <string name="design_stub_view_no_news_details">We recommend that you follow\nthe news of your friends and colleagues\nor the group news</string>
+
+    <string name="design_stub_view_no_events_message">Schedule your events</string>
+    <string name="design_stub_view_no_events_details">Tap on the plus button to create\na new meeting or video conference</string>
+    <string name="design_stub_view_no_events_details_clickable_1">meeting</string>
+    <string name="design_stub_view_no_events_details_clickable_2">video conference</string>
+
+    <string name="design_stub_view_no_tasks_message">All tasks are performed</string>
+    <string name="design_stub_view_no_tasks_details">Create tasks for your colleagues.\nAll you need to do is select the person\nto complete the task and describe it in detail</string>
+
+    <string name="design_stub_view_no_files_message">The file list is empty</string>
+    <string name="design_stub_view_no_files_details">To add files,\nclick the plus sign</string>
+
+    <string name="design_stub_view_no_notifications_message">No notifications</string>
+    <string name="design_stub_view_no_notifications_details">Here you will see notifications from\ngovernment authorities, clients,\nand your colleagues</string>
+
+    <string name="design_stub_view_no_salary_data_message">No salary info yet</string>
+    <string name="design_stub_view_no_salary_data_details">Your salary data will appear here</string>
+
+    <string name="design_stub_view_page_not_found_message">Page is not found</string>
+    <string name="design_stub_view_page_not_found_details">It may have been deleted, or\nyou followed the wrong link</string>
+
+    <string name="design_stub_view_no_connection_message">No network connection</string>
+    <string name="design_stub_view_no_connection_details">Oops, looks like we lost connection.\nTry refreshing the page</string>
+    <string name="design_stub_view_no_connection_details_clickable">refresh the page</string>
+
+    <string name="design_stub_view_service_unavailable_message">Sorry, we are on maintenance</string>
+    <string name="design_stub_view_service_unavailable_details">Please try again later</string>
+
+    <string name="design_stub_view_sbis_error_message">Something went wrong</string>
+    <string name="design_stub_view_sbis_error_details">We are already informed and\nare working on it. Please refresh\nthe page after some time</string>
+    <string name="design_stub_view_sbis_error_details_clickable">Refresh the page</string>
+
+    <string name="design_stub_view_no_search_results_message">No results</string>
+    <string name="design_stub_view_no_search_results_details">Try changing\nyour search options</string>
+
+    <string name="design_stub_view_no_cameras_results_message">Cameras are not connected</string>
+
+    <string name="design_stub_view_no_filter_results_message">No results</string>
+    <string name="design_stub_view_no_filter_results_details">Try changing\nthe filtering options</string>
+
+    <string name="design_stub_view_auth_social_message">SSO authentication</string>
+
+    <string name="design_stub_view_touch_id_message">Face ID</string>
+
+    <string name="design_stub_view_no_permissions_message">You don\'t have access to this document</string>
+
+    <string name="design_stub_view_no_employees_message">No employees</string>
+
+    <string name="design_stub_view_no_data_message">No data</string>
+
+    <string name="design_stub_view_technical_support_chats_message">Technical support chats</string>
+
+    <string name="design_stub_view_scanning_message">Scanning</string>
+
+    <string name="design_stub_view_no_geodata_message">No geodata</string>
+
+    <string name="design_stub_view_empty_message">Empty</string>
+
+    <string name="design_stub_view_no_reservation_message">No reservation</string>
+
+    <string name="design_stub_view_empty_list_message">Empty list</string>
+
+    <string name="design_stub_view_all_done_message">All done</string>
+
+    <string name="design_stub_view_no_ready_meals_message">No ready meals</string>
+
+    <string name="design_stub_view_restart_app_message">Restart app</string>
+
+    <string name="design_stub_view_split_view_container_details">Select an item from the list on the left</string>
+
+    <!-- DataLoadingErrorStubView  -->
+    <string name="design_stub_view_data_loading_error_message">Failed to get data. Check network connection</string>
+</resources>

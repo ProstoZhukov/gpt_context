@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_dialogs_recipients_max_count_restriction">You can\'t select more than %d users.</string>
+    <string name="design_dialogs_recipients_single_count_restriction">You can\'t select more than one user.</string>
+    <string name="design_dialogs_file_already_attached">File is already attached</string>
+</resources>

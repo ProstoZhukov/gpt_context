@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+
+    <!--
+         clipChildren="false" - отключаем обрезание счетчика банкнот,
+         когда он выходит за пределы родительского контейнера.
+     -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        tools:showIn="@layout/retail_views_payment_layout"
+        tools:theme="@style/RetailViewsBanknoteCustomizedTheme.RetailLight"
+        tools:viewBindingIgnore="true">
+
+        <!-- 1 столбец банкнот. Выравнивание выполняется по первой банкноте в столбце. -->
+        <ru.tensor.sbis.design.retail_views.banknote.BanknoteView
+            android:id="@+id/retail_views_banknote_1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:retail_views_banknote_country_position_value="_1_1"/>
+
+        <ru.tensor.sbis.design.retail_views.banknote.BanknoteView
+            android:id="@+id/retail_views_banknote_1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?offset_2xs"
+            app:layout_constraintEnd_toEndOf="@+id/retail_views_banknote_1_1"
+            app:layout_constraintStart_toStartOf="@+id/retail_views_banknote_1_1"
+            app:layout_constraintTop_toBottomOf="@+id/retail_views_banknote_1_1"
+            app:retail_views_banknote_country_position_value="_1_2"/>
+
+        <ru.tensor.sbis.design.retail_views.banknote.BanknoteView
+            android:id="@+id/retail_views_banknote_1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?offset_2xs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/retail_views_banknote_1_1"
+            app:layout_constraintStart_toStartOf="@+id/retail_views_banknote_1_1"
+            app:layout_constraintTop_toBottomOf="@+id/retail_views_banknote_1_2"
+            app:retail_views_banknote_country_position_value="_1_3"/>
+
+        <!-- 2 столбец банкнот. Выравнивание выполняется по первой банкноте в столбце. -->
+        <ru.tensor.sbis.design.retail_views.banknote.BanknoteView
+            android:id="@+id/retail_views_banknote_2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="?offset_2xs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/retail_views_banknote_1_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:retail_views_banknote_country_position_value="_2_1"/>
+
+        <ru.tensor.sbis.design.retail_views.banknote.BanknoteView
+            android:id="@+id/retail_views_banknote_2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?offset_2xs"
+            app:layout_constraintEnd_toEndOf="@+id/retail_views_banknote_2_1"
+            app:layout_constraintStart_toStartOf="@+id/retail_views_banknote_2_1"
+            app:layout_constraintTop_toBottomOf="@+id/retail_views_banknote_2_1"
+            app:retail_views_banknote_country_position_value="_2_2"/>
+
+        <ru.tensor.sbis.design.retail_views.banknote.BanknoteView
+            android:id="@+id/retail_views_banknote_2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?offset_2xs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/retail_views_banknote_2_1"
+            app:layout_constraintStart_toStartOf="@+id/retail_views_banknote_2_1"
+            app:layout_constraintTop_toBottomOf="@+id/retail_views_banknote_2_2"
+            app:retail_views_banknote_country_position_value="_2_3"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

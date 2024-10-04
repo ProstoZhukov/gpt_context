@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SbisSwitchPrimaryContrastTheme" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="SbisSwitchView_thumbCheckedColor">?primaryColor</item>
+        <item name="SbisSwitchView_trackCheckedColor">?primaryActiveSameBackgroundColor</item>
+
+        <item name="SbisSwitchView_thumbUncheckedColor">?markerContrastColorSwitcher</item>
+        <item name="SbisSwitchView_trackUncheckedColor">?unaccentedContrastBackgroundColor</item>
+
+        <item name="SbisSwitchView_thumbDisabledCheckedColor">?readonlyMarkerColor</item>
+        <item name="SbisSwitchView_trackDisabledCheckedColor">?readonlyMarkerColor</item>
+
+        <item name="SbisSwitchView_thumbDisabledUncheckedColor">?readonlyBackgroundColor</item>
+        <item name="SbisSwitchView_trackDisabledUncheckedColor">?readonlyBackgroundColor</item>
+    </style>
+</resources>

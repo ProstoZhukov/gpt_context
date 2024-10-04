@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="picker_files_tab_title">文件</string>
+    <string name="picker_files_tab_storage_title">从文件中选择</string>
+    <string name="picker_files_tab_gallery_title">设备图库</string>
+    <string name="picker_files_tab_stub_desc">从您的设备中选择并附加文件</string>
+</resources>

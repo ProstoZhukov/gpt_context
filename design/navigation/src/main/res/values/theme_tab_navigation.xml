@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TabNavView" parent="TabNavViewBase"/>
+
+    <style name="TabNavViewBase" parent="Theme.AppCompat">
+        <item name="android:background">?horizontalSidebarBackgroundColorNavigationPanelsSidebar</item>
+        <item name="tabNavItemIconTheme">@style/TabNavItemIcon</item>
+        <item name="tabNavViewTextTheme">@style/TabNavViewText</item>
+        <item name="calendarDateIconStyle">@style/CalendarDateIconStyle.TabNavView</item>
+        <item name="tabNavItemSelectedBorderTheme">@style/TabNavItemSelectedItemBorder</item>
+        <item name="tabNavDividerTheme">@style/TabNavDivider</item>
+        <item name="tabNavVerticalMenuBtnStyle">@style/VerticalMenuBtn</item>
+        <item name="tabNavViewHorizontalShadowTheme">@style/NavViewHorizontalShadow</item>
+        <item name="tabNavViewVerticalShadowTheme">@style/NavViewVerticalShadow</item>
+    </style>
+
+    <style name="TabNavItemSelectedItemBorder" parent="Theme.AppCompat">
+        <item name="android:background">?navigationMarkerColor</item>
+    </style>
+
+    <style name="TabNavItemIcon">
+        <item name="android:textSize">?iconSize_7xl</item>
+        <item name="android:textColor">?horizontalItemColorNavigationPanelsAccordion</item>
+        <item name="android:background">@color/palette_color_transparent</item>
+    </style>
+
+    <style name="TabNavViewText" parent="Theme.AppCompat">
+        <item name="android:textColor">?horizontalItemColorNavigationPanelsAccordion</item>
+        <item name="android:textSize">?fontSize_3xs_scaleOff</item>
+        <item name="android:textAppearance">@style/RegularStyle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <style name="TabNavDivider" parent="Theme.AppCompat">
+        <item name="android:background">?horizontalSidebarBorderColorNavigationPanelsSidebar</item>
+    </style>
+
+    <!--    TODO Перенести кнопку в ВНП, чтобы тема была одинаковая-->
+    <style name="VerticalMenuBtnIcon" parent="TabNavItemIcon">
+        <item name="android:background">?headerBackgroundColor</item>
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+
+    <style name="VerticalMenuBtn">
+        <item name="android:background">?headerBackgroundColor</item>
+        <item name="tabNavItemIconTheme">@style/VerticalMenuBtnIcon</item>
+    </style>
+
+    <style name="NavViewHorizontalShadow">
+        <item name="android:background">@drawable/tab_horizontal_nav_view_shadow</item>
+    </style>
+
+    <style name="NavViewVerticalShadow">
+        <item name="android:background">@drawable/tab_vertical_nav_view_shadow</item>
+    </style>
+
+    <!--    TODO Убрать после поддержания перехода на глобальные в приложениях-->
+    <!-- ======================================================================================= -->
+    <style name="TabNavView.Dark">
+        <item name="android:background">@color/palette_color_dark_blue2</item>
+        <item name="tabNavItemIconTheme">@style/TabNavItemIcon.Dark</item>
+        <item name="tabNavViewTextTheme">@style/TabNavViewText.Dark</item>
+        <item name="tabNavDividerTheme">@style/TabNavDivider.Dark</item>
+        <item name="tabNavVerticalMenuBtnStyle">@style/VerticalMenuBtn.Dark</item>
+    </style>
+
+    <style name="TabNavItemIcon.Dark">
+        <item name="android:textSize">?iconSize_7xl</item>
+        <item name="android:textColor">@drawable/tab_navigation_menu_selection_tint_selector_dark
+        </item>
+    </style>
+
+    <style name="VerticalMenuBtnIcon.Dark">
+        <item name="android:textColor">@color/palette_color_dark_gray1</item>
+    </style>
+
+    <style name="TabNavViewText.Dark">
+        <item name="android:textColor">@drawable/tab_navigation_menu_selection_tint_selector_dark
+        </item>
+    </style>
+
+    <style name="TabNavDivider.Dark">
+        <item name="android:background">@color/palette_color_dark_blue4</item>
+    </style>
+
+    <style name="VerticalMenuBtn.Dark">
+        <item name="android:background">@color/palette_color_dark_blue2</item>
+        <item name="tabNavItemIconTheme">@style/VerticalMenuBtnIcon.Dark</item>
+    </style>
+
+    <!-- ======================================================================================= -->
+
+</resources>

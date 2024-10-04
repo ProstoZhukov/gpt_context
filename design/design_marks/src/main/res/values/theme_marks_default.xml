@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    стиль с default темой БЕЗ чекбоксов     -->
+    <style name="MarksComponentDefaultHeaderTheme" parent="MarksComponentDefaultThemeParams">
+        <item name="sbisHeaderViewTheme">@style/MarksComponentHeaderDefaultTheme</item>
+    </style>
+
+    <style name="MarksComponentHeaderDefaultTheme" parent="SbisHeader">
+        <item name="SbisHeaderTitle_theme">@style/MarksComponentHeaderTitleDefault</item>
+        <item name="SbisHeaderTitle_buttonOffset">?offset_m</item>
+        <item name="SbisHeaderTitle_height">?inlineHeight_s</item>
+        <item name="SbisRoundButton_size">s</item>
+    </style>
+
+    <style name="MarksComponentHeaderTitleDefault" parent="HeaderTitle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?textColor</item>
+        <item name="android:textSize">?fontSize_3xl_scaleOff</item>
+        <item name="android:layout_marginStart">?offset_l</item>
+    </style>
+
+
+    <!--    стиль с default темой С чекбоксами     -->
+    <style name="MarksComponentDefaultHeaderThemeCheckBox" parent="MarksComponentDefaultThemeParams">
+        <item name="sbisHeaderViewTheme">@style/MarksComponentHeaderDefaultThemeCheckbox</item>
+    </style>
+
+    <style name="MarksComponentHeaderDefaultThemeCheckbox" parent="MarksComponentHeaderDefaultTheme">
+        <item name="SbisHeaderTitle_theme">@style/MarksComponentHeaderTitleDefaultCheckbox</item>
+    </style>
+
+    <style name="MarksComponentHeaderTitleDefaultCheckbox" parent="MarksComponentHeaderTitleDefault">
+        <item name="android:layout_marginStart">?offset_2xl</item>
+    </style>
+
+    <!--    параметры default темы    -->
+    <style name="MarksComponentDefaultThemeParams">
+        <item name="marksComponentHeaderItemsHeight">?inlineHeight_3xs</item>
+        <item name="marksComponentHeaderCancelButtonEndPadding">?offset_m</item>
+        <item name="marksComponentElementHeight">?inlineHeight_s</item>
+        <item name="marksComponentElementVerticalPadding">?offset_xs</item>
+        <item name="marksComponentIconSpaceStartPadding">?offset_xs</item>
+        <item name="marksComponentIconSpaceHeight">?inlineHeight_3xs</item>
+        <item name="marksComponentIconSpaceWidth">?inlineHeight_3xs</item>
+        <item name="marksComponentTitleSpaceStartPadding">?offset_xs</item>
+        <item name="marksComponentTitleSpaceEndPadding">?offset_3xs</item>
+        <item name="marksComponentTitleSpaceHeight">?inlineHeight_3xs</item>
+        <item name="marksComponentTitleFontSize">?fontSize_l_scaleOff</item>
+        <item name="marksComponentTitleFontColor">?textColor</item>
+        <item name="marksComponentIconFontSize">?iconSize_3xl</item>
+        <item name="marksComponentIconFontColor">?primaryIconColor</item>
+        <item name="marksComponentColorCircleSize">?iconSize_xs</item>
+        <item name="marksComponentMarkerWidth">3dp</item>
+        <item name="marksComponentMarkerHeight">?inlineHeight_6xs</item>
+        <item name="marksComponentMarkerBorderRadius">?borderRadius_2xs</item>
+        <item name="marksComponentMarkerColor">?markerColor</item>
+        <item name="marksComponentCheckboxSpaceHeight">?inlineHeight_s</item>
+        <item name="marksComponentCheckboxSpaceVerticalPadding">0px</item>
+        <item name="marksComponentCheckboxSpaceHorizontalPadding">?offset_s</item>
+    </style>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="change_theme_item_title">Tema de diseño</string>
+    <string name="change_theme_dialog_title">Para aplicar un nuevo tema de diseño, debe reiniciar la aplicaci&#xf3;n.</string>
+    <string name="change_theme_dialog_button_accept">Aplicar</string>
+    <string name="change_theme_dialog_button_cancel">Cancelar</string>
+    <string name="change_theme_default_switch_title">Usar tema del sistema</string>
+    <string name="change_theme_default_switch_subtitle">El tema de la aplicaci&#xf3;n cambiar&#xe1; autom&#xe1;ticamente cuando cambie el tema del sistema del dispositivo</string>
+</resources>

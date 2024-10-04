@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tensor.sbis.design.toolbar.multilinecollapsingtoolbar.CollapsingToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_collapsingToolbar"
+    style="?collapsingToolbarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:collapsedTitleGravity="start|top"
+    app:statusBarScrim="@android:color/transparent"
+    tools:viewBindingIgnore="true">
+
+    <!-- Используется реализация с возможностью отображения заглушки. Стиль указан явно -->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/toolbar_mainImage"
+        style="?imageViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"/>
+
+    <View
+        android:id="@+id/toolbar_gradient_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ru.tensor.sbis.design.toolbar.Toolbar
+        android:id="@+id/toolbar_sbisToolbar"
+        style="?toolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="false"
+        app:centerTextVisibility="visible"
+        app:customViewContainerVisibility="visible"
+        app:leftIconText="@string/design_mobile_icon_arrow_back"
+        app:leftIconVisibility="visible"
+        app:leftPanelVisibility="visible">
+
+        <ru.tensor.sbis.design.profile.titleview.SbisTitleView
+            android:id="@+id/toolbar_titleView"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingEnd="@dimen/toolbar_app_bar_horizontal_margin"/>
+
+    </ru.tensor.sbis.design.toolbar.Toolbar>
+
+</ru.tensor.sbis.design.toolbar.multilinecollapsingtoolbar.CollapsingToolbarLayout>

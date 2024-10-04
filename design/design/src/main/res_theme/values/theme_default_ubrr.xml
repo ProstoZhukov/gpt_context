@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DefaultUbrrTheme" parent="DefaultLightTheme">
+
+        <item name="globalToolbarStyle">@style/FeatureDefaultUbrrTheme</item>
+        <item name="headerBackgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="lightStatusBar">true</item>
+
+        <!-- Цвета меток элементов -->
+        <item name="markerColor">#A21148</item>
+        <item name="readonlyMarkerColor">#FFCCE0</item>
+
+        <!-- Цвета текста -->
+        <item name="textColor">#323232</item>
+        <item name="linkTextColor">#1464CC</item>
+
+        <!-- Цвета иконок -->
+        <item name="iconColor">#323232</item>
+        <item name="linkIconColor">#1464CC</item>
+
+        <!-- region Смысловые цвета -->
+        <item name="primaryTextColor">#A21148</item>
+        <item name="primaryIconColor">#A21148</item>
+        <item name="primaryBorderColor">#A21148</item>
+        <item name="primaryBackgroundColor">#FFF5F9</item>
+        <item name="primaryActiveBackgroundColor">#FFDBE9</item>
+        <item name="primarySameBackgroundColor">#FFEBF2</item>
+        <item name="primaryActiveSameBackgroundColor">#FFCCE0</item>
+        <item name="primaryColor">#E00056</item>
+        <item name="primaryActiveColor">#EB005A</item>
+
+        <item name="secondaryTextColor">#757D89</item>
+        <item name="secondaryIconColor">#757D89</item>
+        <item name="secondaryBorderColor">#757D89</item>
+        <item name="secondaryColor">#959EAC</item>
+        <item name="secondaryActiveColor">#9BA6B5</item>
+
+        <item name="dangerTextColor">#EE2C35</item>
+        <item name="dangerIconColor">#EE2C35</item>
+        <item name="dangerBorderColor">#EE2C35</item>
+
+        <item name="successTextColor">#27AE60</item>
+        <item name="successIconColor">#27AE60</item>
+        <item name="successBorderColor">#27AE60</item>
+
+        <item name="readonlyIconColor">#BCBCBC</item>
+        <!-- endregion -->
+
+        <item name="brandColor">#A21148</item>
+
+        <!-- Цвета навигации -->
+        <item name="navigationLogo">#BE0E51</item>
+        <item name="navigationLogoFill">#2B2B2B</item>
+
+        <item name="navigationCounterSeparatorColor">#454545</item>
+
+        <item name="navigationUnaccentedBackgroundColor">#757D89</item>
+
+        <item name="navigationBackgroundColor">#323232</item>
+        <item name="navigationSelectedBackgroundColor">#222222</item>
+        <item name="navigationBackgroundColorButton">?primaryColor</item>
+        <item name="navigationActiveBackgroundColor">#222222</item>
+
+        <item name="navigationTextColor">#f2f2f2</item>
+        <item name="navigationUnaccentedTextColor">#8C8C8C</item>
+        <item name="navigationPrimaryTextColor">?primaryTextColor</item>
+        <item name="navigationActiveTextColor">#FFFFFF</item>
+
+        <item name="navigationIconColor">#9C9C9C</item>
+        <item name="navigationSecondaryIconColor">#525252</item>
+        <item name="navigationUnaccentedIconColor">#525252</item>
+        <item name="navigationActiveIconColor">#FFFFFF</item>
+
+        <item name="navigationSeparatorColor">#454545</item>
+        <item name="navigationMarkerColor">#BE0E51</item>
+
+        <item name="navigationMenuFill">#454545</item>
+
+        <item name="horizontalItemActiveBackgroundColorNavigationPanelsAccordion">#FFFFFF</item>
+
+        <item name="horizontalItemColorNavigationPanelsAccordion">#666666</item>
+
+        <item name="horizontalItemIconColorNavigationPanelsAccordion">#666666</item>
+        <item name="horizontalItemIconActiveColorNavigationPanelsAccordion">#333333</item>
+
+        <item name="itemIconBackgroundColorNavigationPanelsAccordion">#F1F2F5</item>
+
+        <item name="navigationAccented">?primaryTextColor</item>
+        <item name="navigationUnaccented">#8C8C8C</item>
+        <!-- endregion -->
+    </style>
+</resources>

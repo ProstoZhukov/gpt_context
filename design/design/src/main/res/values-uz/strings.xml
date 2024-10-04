@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_friday">Juma</string>
+    <string name="calendar_monday">Dus</string>
+    <string name="calendar_saturday">Shanba</string>
+    <string name="calendar_sunday">Quyosh</string>
+    <string name="calendar_thursday">Pays</string>
+    <string name="calendar_title">Kalendar</string>
+    <string name="calendar_tuesday">WT</string>
+    <string name="calendar_wednesday">SR</string>
+    <string name="design_account_changing_failed_message">Boshqa hisobga o‘tib bo‘lmadi.</string>
+    <string name="design_action_edit_done">Tayyor</string>
+    <string name="design_all_contacts_was_selected">Barcha so\'nggi kontaktlar tanlangan. Agar siz ko\'proq qabul qiluvchilarni qo\'shmoqchi bo\'lsangiz, qidiruvdan foydalaning.</string>
+    <string name="design_all_participants_was_selected">Barcha so\'nggi kontaktlar tanlangan.</string>
+    <string name="design_apply_date_dialog_button_text">Murojaat qiling</string>
+    <string name="design_attachments_registry_remain_counter_format">+%d</string>
+    <string name="design_cancel_item_label">@string/design_undo</string>
+    <string name="design_close">Yaqin</string>
+    <string name="design_close_date_dialog_button_text">Yaqin</string>
+    <string name="design_cloud_view_for">Uchun</string>
+    <string name="design_cloud_view_me">I</string>
+    <string name="design_contacts_not_found">Kontaktlar topilmadi</string>
+    <string name="design_date_template">Yuborildi: %1$s</string>
+    <string name="design_date_today">Bugun</string>
+    <string name="design_drawer_close">Yon menyuni yoping</string>
+    <string name="design_drawer_open">Yon menyuni oching</string>
+    <string name="design_edit_photo_camera">Surat qilish uchun</string>
+    <string name="design_edit_photo_delete">Avatarni olib tashlang</string>
+    <string name="design_edit_photo_from_gallery">Galereyadan yuklab olish</string>
+    <string name="design_empty_search_error_string">Bu soʻrov uchun hech narsa topilmadi</string>
+    <string name="design_friday_short">Juma</string>
+    <string name="design_hide_shared_tasks_confirmation">Haqiqatan ham %1$s xodimi uchun vazifalarni berkitmoqchimisiz?</string>
+    <string name="design_menu">Menyu</string>
+    <string name="design_menu_block_user">Foydalanuvchini bloklash</string>
+    <string name="design_menu_item_copy_link">Havolani nusxalash</string>
+    <string name="design_menu_item_piv">Rag\'batlantirish va jarimalar</string>
+    <string name="design_menu_item_save_to_device">Qurilmaga saqlang</string>
+    <string name="design_menu_item_subscribe">Obuna boʻling</string>
+    <string name="design_menu_item_unsubscribe">Obunani bekor qilish</string>
+    <string name="design_menu_report_or_block">Shikoyat qilish/bloklash</string>
+    <string name="design_menu_report_user">Foydalanuvchi haqida shikoyat qilish</string>
+    <string name="design_menu_unblock_user">Foydalanuvchini blokdan chiqarish</string>
+    <string name="design_mobile_icon_mobile_phone">&#xe9c3;</string>
+    <string name="design_monday_short">Dus</string>
+    <string name="design_open_outside_text">Portalda oching</string>
+    <string name="design_opinion_rating_dislike">Yoqmayapti</string>
+    <string name="design_opinion_rating_like">Kabi</string>
+    <string name="design_please_wait">Iltimos kuting</string>
+    <string name="design_popup_window_close_button">Yaqin</string>
+    <string name="design_saturday_short">Shanba</string>
+    <string name="design_search_panel_cancel">Bekor qilish</string>
+    <string name="design_search_panel_hint">Qidirmoq</string>
+    <string name="design_size_template">Hajmi: %1$s</string>
+    <string name="design_spinner_mass_operations_item">Mark</string>
+    <string name="design_spinner_separator_item">*</string>
+    <string name="design_sunday_short">Quyosh</string>
+    <string name="design_thursday_short">Pays</string>
+    <string name="design_title_template">Nomi: %1$s</string>
+    <string name="design_tuesday_short">Seshanba</string>
+    <string name="design_undo">Bekor qilish</string>
+    <string name="design_version_label">%1$s (%2$s)</string>
+    <string name="design_version_toast">Ilova versiyasi vaqtinchalik xotiraga nusxalandi</string>
+    <string name="design_wednesday_short">Chorshanba</string>
+    <string name="design_january_short">Yanv</string>
+    <string name="design_february_short">Fev</string>
+    <string name="design_march_short">Mar</string>
+    <string name="design_april_short">Apr</string>
+    <string name="design_may_short">May</string>
+    <string name="design_june_short">Iyun</string>
+    <string name="design_july_short">Iyul</string>
+    <string name="design_august_short">Avgust</string>
+    <string name="design_september_short">Sen</string>
+    <string name="design_october_short">Oktyabr</string>
+    <string name="design_november_short">Nuh</string>
+    <string name="design_december_short">Dek</string>
+    <string name="design_mobile_icon_bonus">&#xec06;</string>
+    <string name="design_mobile_icon_bonus_null">&#xec0a;</string>
+    <string name="design_nav_icon_bonus_en">&#xe900;</string>
+    <string-array name="design_months_short">
+        <item>Yanv</item>
+        <item>Fevr</item>
+        <item>Mart</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Iyun</item>
+        <item>Iyul</item>
+        <item>Avgust</item>
+        <item>Sent</item>
+        <item>Oktyabr</item>
+        <item>Noyabr</item>
+        <item>Dek</item>
+    </string-array>
+    <string-array name="design_months_short_names_calendar">
+        <item>Yanv</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Iyun</item>
+        <item>Iyul</item>
+        <item>Avgust</item>
+        <item>Sen</item>
+        <item>Oktyabr</item>
+        <item>Nuh</item>
+        <item>Dek</item>
+    </string-array>
+    <string-array name="design_months_short_names_lower_case">
+        <item>yanvar</item>
+        <item>Fev. - qaniydi?</item>
+        <item>Mar.</item>
+        <item>apr.</item>
+        <item>may oyi.</item>
+        <item>iyun.</item>
+        <item>iyul.</item>
+        <item>avgust</item>
+        <item>sen. - qaniydi?</item>
+        <item>oktyabr. - qaniydi?</item>
+        <item>Nuh. - qaniydi?</item>
+        <item>qopqoq.</item>
+    </string-array>
+    <string-array name="design_months_list_in_parental_deaths_short">
+        <item>yanvar</item>
+        <item>fevr. - qaniydi?</item>
+        <item>marta</item>
+        <item>apr.</item>
+        <item>may oyida</item>
+        <item>iyun oyida</item>
+        <item>iyul oyida</item>
+        <item>avgust</item>
+        <item>Sankt-Peterburg</item>
+        <item>oktyabr. - qaniydi?</item>
+        <item>noyabr.</item>
+        <item>qopqoq.</item>
+    </string-array>
+    <string-array name="design_months_short_standard_without_dot">
+        <item>yanv</item>
+        <item>fevr</item>
+        <item>marta</item>
+        <item>apr</item>
+        <item>may oyida</item>
+        <item>iyun oyida</item>
+        <item>iyul oyida</item>
+        <item>avgust</item>
+        <item>sent</item>
+        <item>oktyabr</item>
+        <item>noyabr</item>
+        <item>dek</item>
+    </string-array>
+    <string-array name="design_months_short_names_lower_case_without_dot">
+        <item>yanv</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>apr</item>
+        <item>may</item>
+        <item>iyun</item>
+        <item>iyul</item>
+        <item>avgust</item>
+        <item>sen</item>
+        <item>oktyabr</item>
+        <item>Nuh</item>
+        <item>dek</item>
+    </string-array>
+    <string-array name="design_months_names">
+        <item>Yanvar oyida</item>
+        <item>Fevral</item>
+        <item>Marta</item>
+        <item>Aprel oyida</item>
+        <item>May oyida</item>
+        <item>Iyun oyida</item>
+        <item>Iyul oyida</item>
+        <item>Avgust</item>
+        <item>Sentyabr</item>
+        <item>Oktyabr</item>
+        <item>Noyabr oyida</item>
+        <item>Dekabr</item>
+    </string-array>
+    <string-array name="day_of_week_short">
+        <item>@string/design_monday_short</item>
+        <item>@string/design_tuesday_short</item>
+        <item>@string/design_wednesday_short</item>
+        <item>@string/design_thursday_short</item>
+        <item>@string/design_friday_short</item>
+        <item>@string/design_saturday_short</item>
+        <item>@string/design_sunday_short</item>
+    </string-array>
+    <string-array name="design_months">
+        <item>Yanvar</item>
+        <item>Fevral</item>
+        <item>Mart</item>
+        <item>Aprel</item>
+        <item>May</item>
+        <item>Iyun</item>
+        <item>Iyul</item>
+        <item>Avgust</item>
+        <item>Sentyabr</item>
+        <item>Oktyabr</item>
+        <item>Noyabr</item>
+        <item>Dekabr</item>
+    </string-array>
+    <string-array name="design_months_short_names_lower_case_without_dot_with_declension">
+        <item>yanv</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>apr</item>
+        <item>may oyida</item>
+        <item>iyun</item>
+        <item>iyul</item>
+        <item>avgust</item>
+        <item>sen</item>
+        <item>oktyabr</item>
+        <item>Nuh</item>
+        <item>dek</item>
+    </string-array>
+</resources>

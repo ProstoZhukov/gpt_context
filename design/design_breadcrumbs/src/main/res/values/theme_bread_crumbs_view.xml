@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Стандартный стиль компонента  -->
+    <style name="BreadCrumbsViewDefaultTheme">
+        <item name="BreadCrumbsView_homeIconStyle">@style/BreadCrumbsViewHomeIcon</item>
+        <item name="BreadCrumbsView_arrowIconStyle">@style/BreadCrumbsViewArrowIcon</item>
+        <item name="BreadCrumbsView_textStyle">@style/BreadCrumbsViewText</item>
+    </style>
+
+    <!-- region Стили элементов -->
+    <style name="BreadCrumbsViewHomeIcon" parent="MobileFontStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?iconSize_m</item>
+        <item name="android:textColor">?infoIconColor</item>
+        <item name="android:paddingEnd">?offset_s</item>
+        <item name="android:text">@string/design_mobile_icon_home_second</item>
+    </style>
+
+    <style name="BreadCrumbsViewArrowIcon" parent="MobileFontStyle">
+        <item name="android:textSize">?iconSize_m</item>
+        <item name="android:textColor">?labelContrastTextColor</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/design_mobile_icon_arrow_day_forward</item>
+    </style>
+
+    <style name="BreadCrumbsViewText" parent="RegularStyle">
+        <item name="android:textSize">?fontSize_xs_scaleOn</item>
+        <item name="android:textColor">?labelContrastTextColor</item>
+        <item name="android:textColorHighlight">@color/text_search_highlight_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+    </style>
+    <!-- endregion -->
+
+</resources>

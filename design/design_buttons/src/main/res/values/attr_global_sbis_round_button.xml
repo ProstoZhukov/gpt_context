@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region Стилевые атрибуты компонента SbisRoundButton -->
+    <!-- Атрибут для определения темы акцентной кнопки -->
+    <attr name="primarySbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы второстепенной кнопки. Тема по умолчанию -->
+    <attr name="secondarySbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки подтверждения -->
+    <attr name="successSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы неакцентной кнопки -->
+    <attr name="unaccentedSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы бонусной кнопки -->
+    <attr name="bonusSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки опасности -->
+    <attr name="dangerSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки предупреждения -->
+    <attr name="warningSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы информационной кнопки -->
+    <attr name="infoSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки по умолчанию -->
+    <attr name="defaultSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки навигации -->
+    <attr name="navigationSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы полупрозрачной кнопки -->
+    <attr name="paleSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы брендовой кнопки -->
+    <attr name="brandSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки cо стилем Link -->
+    <attr name="linkSbisRoundButtonTheme" format="reference"/>
+    <!-- Атрибут для определения темы кнопки cо стилем Label -->
+    <attr name="labelSbisRoundButtonTheme" format="reference"/>
+    <!--endregion-->
+
+    <attr name="sbisRoundButtonUnaccentedButtonIconColor" format="color|reference"/>
+    <attr name="sbisRoundButtonBackgroundColorDisabled" format="color|reference"/>
+    <attr name="sbisRoundButtonIconDisabledColorAlpha" format="float|reference"/>
+
+</resources>

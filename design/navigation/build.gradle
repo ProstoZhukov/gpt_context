@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableViewBindingCfg()
+    cfg.enableKtLintCfg()
+    if (rootProject.ext.ciBuild) {
+        cfg.enableJacocoCfg()
+    }
+}
+
+android {
+    namespace "ru.tensor.sbis.design.navigation"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+        all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+                exceptionFormat 'full'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':calendar_date_icon')
+    implementation project(':design')
+    implementation project(':design_buttons')
+    implementation project(':design_counters')
+    implementation project(':design_custom_view_tools')
+    implementation project(':design_logo')
+    implementation project(':design_sbis_text_view')
+    implementation project(':design_utils')
+    implementation project(':design_view_ext')
+    implementation project(':toolbox-decl')
+    implementation project(':verification-decl')
+
+    //noinspection KtxExtensionAvailable
+    implementation libs.android.lifecycle.reactivestreams
+    implementation libs.android.view.asyncLayoutInflater
+
+    testImplementation project(':testing')
+}

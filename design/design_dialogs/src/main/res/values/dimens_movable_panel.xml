@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="movable_panel_inset_view_default_height">2dp</dimen>
+
+    <dimen name="movable_panel_default_header_height">18dp</dimen>
+    <dimen name="movable_panel_grip_height">4dp</dimen>
+    <dimen name="movable_panel_grip_width">40dp</dimen>
+    <dimen name="movable_panel_grip_radius">4dp</dimen>
+
+    <dimen name="movable_panel_page_counter_container_height">37dp</dimen>
+    <dimen name="movable_panel_page_counter_gradient_height">8dp</dimen>
+    <dimen name="movable_panel_page_counter_background_height">1dp</dimen>
+    <dimen name="movable_panel_page_counter_height">3dp</dimen>
+    <dimen name="movable_panel_page_counter_selected_tab_height">3dp</dimen>
+    <dimen name="movable_panel_page_counter_selected_tab_radius">4dp</dimen>
+    <dimen name="movable_panel_page_counter_text_size">14dp</dimen>
+
+    <dimen name="movable_panel_layout_offset_1">1dp</dimen>
+    <dimen name="movable_panel_layout_offset_6">6dp</dimen>
+    <dimen name="movable_panel_layout_offset_8">8dp</dimen>
+    <dimen name="movable_panel_layout_offset_10">10dp</dimen>
+    <dimen name="movable_panel_layout_offset_12">12dp</dimen>
+
+    <dimen name="movable_panel_radius_14">14dp</dimen>
+</resources>

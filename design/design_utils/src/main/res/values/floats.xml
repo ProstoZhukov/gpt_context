@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Предотвращает возможный краш Resources.NotFoundException.
+     Сценарий в МП Розница на устройстве ATOL Strike с разрешением 600x960 px. Изменить density экрана, устройство по layout, bool
+     ресурсам соответствует планшету (> sw600) по dimen нет (< sw600) -->
+    <item name="tablet_selection_window_width_percent" type="integer" format="float" tools:ignore="MissingDefaultResource">0.68</item>
+</resources>

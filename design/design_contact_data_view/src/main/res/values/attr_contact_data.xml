@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="SbisContactDataDefaultTheme" format="reference" />
+
+    <declare-styleable name="SbisContactDataView">
+
+        <!--Цвет иконки телефона-->
+        <attr name="SbisContactDataView_iconColor" format="reference|color" />
+        <!--Размер иконки телефона-->
+        <attr name="SbisContactDataView_iconSize" format="reference|dimension" />
+        <!--Цвет кнопки еще-->
+        <attr name="SbisContactDataView_moreTextColor" format="reference|color" />
+        <!--Стиль элементов(телефонных номеров)-->
+        <attr name="SbisContactDataView_phoneViewStyle" format="reference" />
+
+    </declare-styleable>
+</resources>

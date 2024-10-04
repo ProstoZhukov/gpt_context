@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="ru.tensor.sbis.design.SbisMobileIcon.Icon"/>
+
+    </data>
+
+    <!-- Необходима единая настройка родительского контейнера, см. 'RetailViewsPaymentRootViewStyle'. -->
+    <merge
+        tools:ignore="MissingDefaultResource,ResourceName"
+        tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+        tools:style="@style/RetailViewsPaymentRootViewStyle"
+        tools:theme="@style/RetailViewsCommonTheme.Dark">
+
+        <!-- Добавляем контейнер, чтобы обойти ограничения DataBinding'a связанного с <merge> и <include>. -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/include_toolbar_buttons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/include_cash_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:background="?backgroundColor"
+            tools:layout_height="?inlineHeight_m"
+            tools:layout_width="0dp">
+
+            <include
+                android:id="@+id/retail_views_toolbar_buttons"
+                layout="@layout/retail_views_toolbar_buttons"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Добавляем контейнер, чтобы обойти ограничения DataBinding'a связанного с <merge> и <include>. -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/include_cash_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?offset_xl"
+            android:layout_marginBottom="?offset_s"
+            android:clipChildren="false"
+            app:layout_constraintBottom_toTopOf="@+id/retail_views_txt_debt_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/retail_views_close_button"
+            app:layout_constraintVertical_bias="1">
+
+            <include
+                android:id="@+id/retail_views_cash_input_include"
+                layout="@layout/retail_views_cash_input_views"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/retail_views_txt_debt_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?offset_s"
+            android:textColor="?successTextColor"
+            android:textSize="?fontSize_2xl_scaleOn"
+            app:layout_constraintBottom_toTopOf="@+id/include_mix_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="56 200.00"/>
+
+        <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+            android:id="@+id/retail_views_txt_debt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="?offset_s"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/retail_views_credit_payment_debt"
+            android:textColor="?labelContrastTextColor"
+            android:textSize="?fontSize_2xl_scaleOn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/retail_views_txt_debt_value"
+            app:layout_constraintEnd_toStartOf="@+id/retail_views_txt_debt_value"/>
+
+        <ru.tensor.sbis.design.buttons.SbisButton
+            android:id="@+id/retail_views_check_button"
+            style="?retailViewsPaymentViewContrastButton"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/retail_views_check_double_button"
+            app:layout_constraintStart_toStartOf="@+id/retail_views_check_double_button"
+            tools:layout_height="74dp"/>
+
+        <ru.tensor.sbis.design.retail_views.double_button.DoubleButton
+            android:id="@+id/retail_views_check_double_button"
+            style="?retailViewsDoubleButtonOrangeBtnStyle"
+            android:layout_width="0dp"
+            android:layout_height="?inlineHeight_m"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/retail_views_card_payment_double_button"
+            app:retail_views_double_button_icon="@{Icon.smi_PriceNull}"
+            app:retail_views_double_button_initial_mode="edit_mode_locked"
+            app:retail_views_double_button_style="?retailViewsDoubleButtonOrangeBtnStyle"
+            tools:background="?primaryColor"
+            tools:layout_height="74dp"/>
+
+        <ru.tensor.sbis.design.retail_views.double_button.DoubleButton
+            android:id="@+id/retail_views_card_payment_double_button"
+            android:layout_width="0dp"
+            android:layout_height="?inlineHeight_m"
+            android:layout_marginEnd="?offset_2xs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/retail_views_check_double_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:retail_views_double_button_icon="@{Icon.smi_DiscountCard}"
+            app:retail_views_double_button_style="?retailViewsDoubleButtonPinkBtnStyle"
+            app:retail_views_double_button_title="@string/retail_views_payment_card_btn_text"
+            tools:background="?salaryContrastBackgroundColorButton"
+            tools:layout_height="74dp"/>
+
+        <!-- Добавляем контейнер, чтобы обойти ограничения DataBinding'a связанного с <merge> и <include>. -->
+        <FrameLayout
+            android:id="@+id/include_mix_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="?offset_2xs"
+            app:layout_constraintBottom_toTopOf="@+id/retail_views_card_payment_double_button"
+            app:layout_constraintStart_toStartOf="@+id/retail_views_card_payment_double_button"
+            tools:background="?backgroundColor"
+            tools:layout_height="?inlineHeight_s"
+            tools:layout_width="150dp">
+
+            <include
+                android:id="@+id/retail_views_mix_buttons"
+                layout="@layout/retail_views_mix_payment_views"/>
+
+        </FrameLayout>
+
+    </merge>
+
+</layout>

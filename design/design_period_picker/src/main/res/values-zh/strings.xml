@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="january">一月</string>
+    <string name="february">二月</string>
+    <string name="march">行进</string>
+    <string name="april">四月</string>
+    <string name="may">可能</string>
+    <string name="june">六月</string>
+    <string name="july">七月</string>
+    <string name="august">八月</string>
+    <string name="september">九月</string>
+    <string name="october">十月</string>
+    <string name="november">十一月</string>
+    <string name="december">十二月</string>
+    <string name="quarter_1">我四分之一</string>
+    <string name="quarter_2">第二季度</string>
+    <string name="quarter_3">第三季度</string>
+    <string name="quarter_4">第四季度</string>
+    <string name="half_year_1">我半年</string>
+    <string name="half_year_2">二半年</string>
+    <string name="quarter">四分之一</string>
+    <string name="half_year">半年</string>
+    <string name="all_period">整个时期</string>
+    <string-array name="quantum_list">
+        <item>@string/quantum_1</item>
+        <item>@string/quantum_2</item>
+        <item>@string/quantum_3</item>
+        <item>@string/quantum_4</item>
+    </string-array>
+    <string-array name="short_quantum_list">
+        <item>@string/quantum_1</item>
+        <item>@string/quantum_2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Глобальные переменные темы оформления, которые нужно использовать при разработке экранов и
+ комопнентов.
+ Помимо перечисленных в файле, к глобальным переменным относятся следующие атрибуты из android:
+ backgroundColor, fontWeight, fontFamily
+ -->
+<resources>
+    <attr name="altTheme" format="reference"/>
+    <attr name="globalToolbarStyle" format="reference"/>
+    <attr name="globalAuthStyle" format="reference"/>
+    <attr name="lightStatusBar" format="boolean|reference"/>
+
+    <!--  TODO https://dev.sbis.ru/opendoc.html?guid=1baa99b6-3ece-48c5-bbfb-1ab1336ccc70&client=3 -->
+    <attr name="toolbarBackIconColor" format="reference|color"/>
+
+    <!--
+    Данный атрибут определяет является ли тема "темной", нужно для понимания выбора некоторых
+    ресурсов, например png заглушек в прикладных модулях
+    -->
+    <attr name="isDark" format="boolean|reference"/>
+
+    <!-- region Цвета -->
+    <!-- region Общие цвета -->
+
+    <!-- Цвета фона -->
+    <attr name="activeBackgroundColor" format="color|reference"/>
+    <attr name="contrastBackgroundColor" format="color|reference"/>
+    <attr name="readonlyBackgroundColor" format="color|reference"/>
+    <attr name="dimBackgroundColor" format="color|reference"/>
+    <attr name="itemBackgroundColorTile" format="color|reference"/>
+    <attr name="headerBackgroundColor" format="color|reference"/>
+    <attr name="imageBackgroundColor" format="color|reference"/>
+
+    <attr name="backgroundColorStack" format="color|reference"/>
+    <attr name="headerBackgroundColorStack" format="color|reference"/>
+    <attr name="backgroundColorDialog" format="color|reference"/>
+    <attr name="backgroundColorInfobox" format="color|reference"/>
+    <attr name="backgroundColorSticky" format="color|reference"/>
+
+    <!-- Цвета обводки -->
+    <attr name="borderColor" format="color|reference"/>
+    <attr name="readonlyBorderColor" format="color|reference"/>
+
+    <!-- Цвета меток элементов -->
+    <attr name="markerColor" format="color|reference"/>
+    <attr name="readonlyMarkerColor" format="color|reference"/>
+    <attr name="itemSelectedColor" format="color|reference"/>
+    <attr name="secondaryMarkerSelectedItemColor" format="color|reference"/>
+
+    <!-- Цвета индикаторов прогресса -->
+    <attr name="progressColor" format="color|reference"/>
+    <attr name="contrastProgressColor" format="color|reference"/>
+
+    <!-- Цвета разделителей -->
+    <attr name="separatorColor" format="color|reference"/>
+    <attr name="unaccentedSeparatorColor" format="color|reference"/>
+
+    <!-- Цвета текста -->
+    <attr name="textColor" format="color|reference"/>
+    <attr name="contrastTextColor" format="color|reference"/>
+    <attr name="linkTextColor" format="color|reference"/>
+    <attr name="labelTextColor" format="color|reference"/>
+    <attr name="readonlyTextColor" format="color|reference"/>
+    <attr name="labelContrastTextColor" format="color|reference"/>
+    <attr name="itemSelectedTextColor" format="color|reference"/>
+    <attr name="placeholderTextColorList" format="color|reference"/>
+    <attr name="unreadTextColor" format="color|reference"/>
+
+    <!-- Цвета иконок -->
+    <attr name="iconColor" format="color|reference"/>
+    <attr name="contrastIconColor" format="color|reference"/>
+    <attr name="labelIconColor" format="color|reference"/>
+    <attr name="linkIconColor" format="color|reference"/>
+    <attr name="readonlyIconColor" format="color|reference"/>
+    <attr name="itemSelectedIconColor" format="color|reference"/>
+    <!-- endregion -->
+
+    <!-- region Смысловые цвета -->
+    <attr name="primaryColor" format="color|reference"/>
+    <attr name="primaryActiveColor" format="color|reference"/>
+    <attr name="primaryTextColor" format="color|reference"/>
+    <attr name="primaryIconColor" format="color|reference"/>
+    <attr name="primaryBorderColor" format="color|reference"/>
+    <attr name="primaryBackgroundColor" format="color|reference"/>
+    <attr name="primaryActiveBackgroundColor" format="color|reference"/>
+    <attr name="primarySameBackgroundColor" format="color|reference"/>
+    <attr name="primaryActiveSameBackgroundColor" format="color|reference"/>
+
+    <attr name="secondaryColor" format="color|reference"/>
+    <attr name="secondaryActiveColor" format="color|reference"/>
+    <attr name="secondaryTextColor" format="color|reference"/>
+    <attr name="secondaryIconColor" format="color|reference"/>
+    <attr name="secondaryBorderColor" format="color|reference"/>
+    <attr name="secondaryBackgroundColor" format="color|reference"/>
+    <attr name="secondaryActiveBackgroundColor" format="color|reference"/>
+    <attr name="secondarySameBackgroundColor" format="color|reference"/>
+    <attr name="secondaryActiveSameBackgroundColor" format="color|reference"/>
+    <attr name="secondaryBackgroundColorConfirmation" format="color|reference"/>
+
+    <attr name="dangerColor" format="color|reference"/>
+    <attr name="dangerActiveColor" format="color|reference"/>
+    <attr name="dangerTextColor" format="color|reference"/>
+    <attr name="dangerIconColor" format="color|reference"/>
+    <attr name="dangerBorderColor" format="color|reference"/>
+    <attr name="dangerBackgroundColor" format="color|reference"/>
+    <attr name="dangerActiveBackgroundColor" format="color|reference"/>
+    <attr name="dangerSameBackgroundColor" format="color|reference"/>
+    <attr name="dangerActiveSameBackgroundColor" format="color|reference"/>
+    <attr name="dangerBackgroundColorConfirmation" format="color|reference"/>
+
+    <attr name="successColor" format="color|reference"/>
+    <attr name="successActiveColor" format="color|reference"/>
+    <attr name="successTextColor" format="color|reference"/>
+    <attr name="successIconColor" format="color|reference"/>
+    <attr name="successBorderColor" format="color|reference"/>
+    <attr name="successBackgroundColor" format="color|reference"/>
+    <attr name="successActiveBackgroundColor" format="color|reference"/>
+    <attr name="successSameBackgroundColor" format="color|reference"/>
+    <attr name="successActiveSameBackgroundColor" format="color|reference"/>
+    <attr name="successBackgroundColorConfirmation" format="color|reference"/>
+
+    <attr name="warningColor" format="color|reference"/>
+    <attr name="warningActiveColor" format="color|reference"/>
+    <attr name="warningTextColor" format="color|reference"/>
+    <attr name="warningIconColor" format="color|reference"/>
+    <attr name="warningBorderColor" format="color|reference"/>
+    <attr name="warningBackgroundColor" format="color|reference"/>
+    <attr name="warningActiveBackgroundColor" format="color|reference"/>
+    <attr name="warningSameBackgroundColor" format="color|reference"/>
+    <attr name="warningActiveSameBackgroundColor" format="color|reference"/>
+    <attr name="warningBackgroundColorConfirmation" format="color|reference"/>
+
+    <attr name="infoColor" format="color|reference"/>
+    <attr name="infoActiveColor" format="color|reference"/>
+    <attr name="infoTextColor" format="color|reference"/>
+    <attr name="infoIconColor" format="color|reference"/>
+    <attr name="infoBorderColor" format="color|reference"/>
+    <attr name="infoBackgroundColor" format="color|reference"/>
+    <attr name="infoActiveBackgroundColor" format="color|reference"/>
+    <attr name="infoSameBackgroundColor" format="color|reference"/>
+    <attr name="infoActiveSameBackgroundColor" format="color|reference"/>
+
+    <attr name="unaccentedTextColor" format="color|reference"/>
+    <attr name="unaccentedIconColor" format="color|reference"/>
+    <attr name="unaccentedBorderColor" format="color|reference"/>
+    <attr name="unaccentedBackgroundColor" format="color|reference"/>
+    <attr name="unaccentedAdaptiveBackgroundColor" format="color|reference"/>
+    <attr name="unaccentedActiveBackgroundColor" format="color|reference"/>
+    <attr name="unaccentedSameBackgroundColor" format="color|reference"/>
+    <attr name="unaccentedActiveSameBackgroundColor" format="color|reference"/>
+    <attr name="unaccentedContrastBackgroundColor" format="color|reference"/>
+    <attr name="unaccentedActiveContrastBackgroundColor" format="color|reference"/>
+
+    <attr name="paleBorderColor" format="color|reference"/>
+
+    <attr name="bonusTextColor" format="color|reference"/>
+    <attr name="bonusIconColor" format="color|reference"/>
+    <attr name="bonusBorderColor" format="color|reference"/>
+    <attr name="bonusSameBackgroundColor" format="color|reference"/>
+    <attr name="bonusActiveSameBackgroundColor" format="color|reference"/>
+    <attr name="bonusContrastBackgroundColor" format="color|reference"/>
+    <attr name="bonusActiveContrastBackgroundColor" format="color|reference"/>
+    <!-- endregion -->
+
+    <attr name="shadowColor" format="color|reference"/>
+
+    <attr name="brandColor" format="color|reference"/>
+
+    <!-- region Дополнительные цвета текста и иконок -->
+    <attr name="hintTextColor" format="color|reference"/>
+    <attr name="hintIconColor" format="color|reference"/>
+    <attr name="paleTextColor" format="color|reference"/>
+    <attr name="paleIconColor" format="color|reference"/>
+    <attr name="paleBackgroundColor" format="color|reference"/>
+    <attr name="paleColor" format="color|reference"/>
+    <attr name="paleActiveColor" format="color|reference"/>
+    <attr name="headerTextColor" format="color|reference"/>
+    <attr name="headerIconColor" format="color|reference"/>
+    <attr name="invalidBorderColor" format="color|reference"/>
+    <attr name="invalidFocusBackgroundColor" format="color|reference"/>
+    <attr name="selectedItemColor" format="color|reference"/>
+    <!-- endregion -->
+
+    <!-- region Прозрачные цвета -->
+    <attr name="translucentBackgroundColor" format="color|reference"/>
+    <attr name="translucentActiveBackgroundColor" format="color|reference"/>
+    <attr name="translucentBackgroundColorLight" format="color|reference"/>
+    <attr name="translucentActiveBackgroundColorLight" format="color|reference"/>
+    <attr name="translucentBackgroundColorLightButton" format="color|reference"/>
+    <attr name="translucentActiveBackgroundColorLightButton" format="color|reference"/>
+    <!-- endregion -->
+
+    <!-- region Шрифты -->
+    <!-- Сверхмалый размер шрифта -->
+    <attr name="fontSize_3xs_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_3xs_scaleOn" format="dimension|reference"/>
+    <!-- Малый размер шрифта -->
+    <attr name="fontSize_2xs_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_2xs_scaleOn" format="dimension|reference"/>
+    <!-- Общие размеры шрифтов -->
+    <attr name="fontSize_xs_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_xs_scaleOn" format="dimension|reference"/>
+    <!-- Размер шрифта элементов, отображающих дополнительную, поясняющую информацию -->
+    <attr name="fontSize_s_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_s_scaleOn" format="dimension|reference"/>
+    <!-- Дополнительный размер шрифта для большинства элементов на странице -->
+    <attr name="fontSize_m_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_m_scaleOn" format="dimension|reference"/>
+    <!-- Основной шрифт для большинства элементов на странице -->
+    <attr name="fontSize_l_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_l_scaleOn" format="dimension|reference"/>
+    <!-- Увеличенный шрифт в отдельных реестрах -->
+    <attr name="fontSize_xl_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_xl_scaleOn" format="dimension|reference"/>
+    <!-- Увеличенный шрифт в отдельных реестрах, шрифи заголовков -->
+    <attr name="fontSize_2xl_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_2xl_scaleOn" format="dimension|reference"/>
+    <!-- Шрифт заголовков в разделах -->
+    <attr name="fontSize_3xl_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_3xl_scaleOn" format="dimension|reference"/>
+    <!-- Пример: шрифт заголовков 1 уровня в разделах -->
+    <attr name="fontSize_4xl_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_4xl_scaleOn" format="dimension|reference"/>
+    <!-- Шрифт для акцентных элементов, на экране сумм, числовых значений -->
+    <attr name="fontSize_5xl_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_5xl_scaleOn" format="dimension|reference"/>
+    <attr name="fontSize_6xl_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_6xl_scaleOn" format="dimension|reference"/>
+    <attr name="fontSize_7xl_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_7xl_scaleOn" format="dimension|reference"/>
+    <attr name="fontSize_8xl_scaleOff" format="dimension|reference"/>
+    <attr name="fontSize_8xl_scaleOn" format="dimension|reference"/>
+    <attr name="fontSizeDefault_scaleOff" format="dimension|reference"/>
+    <attr name="fontSizeDefault_scaleOn" format="dimension|reference"/>
+
+    <!-- region Высоты элементов -->
+    <!-- Высоты строчных контролов (кнопок, полей ввода).
+         Применяются ко всем контролам, которые могут располагаться в одну строку.
+         При изменении любого параметра высоты, поменяется соотвествующая высота всех контролов.
+         -->
+    <attr name="inlineHeight_8xs" format="dimension|reference"/>
+    <attr name="inlineHeight_7xs" format="dimension|reference"/>
+    <attr name="inlineHeight_6xs" format="dimension|reference"/>
+    <attr name="inlineHeight_5xs" format="dimension|reference"/>
+    <attr name="inlineHeight_4xs" format="dimension|reference"/>
+    <attr name="inlineHeight_3xs" format="dimension|reference"/>
+    <!-- Пример: сегмент-контрол в шапке -->
+    <attr name="inlineHeight_2xs" format="dimension|reference"/>
+    <!-- Пример: текстовые кнопки в контексте -->
+    <attr name="inlineHeight_xs" format="dimension|reference"/>
+    <!-- Пример: круглые кнопки в контексте, сегмент-контрол -->
+    <attr name="inlineHeight_s" format="dimension|reference"/>
+    <!-- Пример: большинство круглых и текстовых кнопок -->
+    <attr name="inlineHeight_m" format="dimension|reference"/>
+    <!-- Пример: круглые плавающие кнопки -->
+    <attr name="inlineHeight_l" format="dimension|reference"/>
+    <!-- Пример: Круглая контекстная кнопка в видеозвонках -->
+    <attr name="inlineHeight_xl" format="dimension|reference"/>
+    <attr name="inlineHeight_2xl" format="dimension|reference"/>
+    <attr name="inlineHeight_3xl" format="dimension|reference"/>
+    <attr name="inlineHeightDefault" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Высоты для кнопок виртуальной клавиатуры -->
+    <attr name="itemSizeKeyboardViewS" format="dimension|reference"/>
+    <attr name="itemSizeKeyboardViewM" format="dimension|reference"/>
+    <attr name="itemSizeKeyboardViewL" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Иконки -->
+    <!-- Шрифты для иконок -->
+    <attr name="iconFontFamily" format="string"/>
+
+    <!-- Размеры иконок -->
+    <attr name="iconSize_2xs" format="dimension|reference"/>
+    <attr name="iconSize_xs" format="dimension|reference"/>
+    <attr name="iconSize_s" format="dimension|reference"/>
+    <attr name="iconSize_st" format="dimension|reference"/>
+    <attr name="iconSize_m" format="dimension|reference"/>
+    <attr name="iconSize_l" format="dimension|reference"/>
+    <attr name="iconSize_xl" format="dimension|reference"/>
+    <attr name="iconSize_2xl" format="dimension|reference"/>
+    <attr name="iconSize_3xl" format="dimension|reference"/>
+    <attr name="iconSize_4xl" format="dimension|reference"/>
+    <attr name="iconSize_5xl" format="dimension|reference"/>
+    <attr name="iconSize_6xl" format="dimension|reference"/>
+    <attr name="iconSize_7xl" format="dimension|reference"/>
+    <attr name="iconSizeDefault" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- Скалируемые размеры иконок -->
+    <attr name="iconSize_2xs_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_xs_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_s_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_st_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_m_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_l_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_xl_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_2xl_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_3xl_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_4xl_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_5xl_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_6xl_scaleOn" format="dimension|reference"/>
+    <attr name="iconSize_7xl_scaleOn" format="dimension|reference"/>
+    <attr name="iconSizeDefault_scaleOn" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Линейка стандартных отступов -->
+    <attr name="offset_3xs" format="dimension|reference"/>
+    <attr name="offset_2xs" format="dimension|reference"/>
+    <attr name="offset_xs" format="dimension|reference"/>
+    <attr name="offset_s" format="dimension|reference"/>
+    <attr name="offset_st" format="dimension|reference"/>
+    <attr name="offset_m" format="dimension|reference"/>
+    <attr name="offset_l" format="dimension|reference"/>
+    <attr name="offset_xl" format="dimension|reference"/>
+    <attr name="offset_2xl" format="dimension|reference"/>
+    <attr name="offset_3xl" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Линейка стандартных скруглений -->
+    <attr name="borderRadius_3xs" format="dimension|reference"/>
+    <attr name="borderRadius_2xs" format="dimension|reference"/>
+    <attr name="borderRadius_xs" format="dimension|reference"/>
+    <attr name="borderRadius_s" format="dimension|reference"/>
+    <attr name="borderRadius_m" format="dimension|reference"/>
+    <attr name="borderRadius_l" format="dimension|reference"/>
+    <attr name="borderRadius_xl" format="dimension|reference"/>
+    <attr name="borderRadius_2xl" format="dimension|reference"/>
+    <attr name="borderRadius_3xl" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Толщина обводки -->
+    <attr name="borderThickness_s" format="dimension|reference"/>
+    <attr name="borderThickness_m" format="dimension|reference"/>
+    <attr name="borderThickness_l" format="dimension|reference"/>
+    <attr name="borderThickness_3xl" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Подёмы (тени) -->
+    <attr name="elevation_xs" format="dimension|reference"/>
+    <attr name="elevation_s" format="dimension|reference"/>
+    <attr name="elevation_m" format="dimension|reference"/>
+    <attr name="elevation_l" format="dimension|reference"/>
+    <attr name="elevation_xl" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Размеры изображений -->
+    <attr name="size_2xs_image" format="dimension|reference"/>
+    <attr name="size_xs_image" format="dimension|reference"/>
+    <attr name="size_s_image" format="dimension|reference"/>
+    <attr name="size_m_image" format="dimension|reference"/>
+    <attr name="size_l_image" format="dimension|reference"/>
+    <attr name="size_xl_image" format="dimension|reference"/>
+    <attr name="size_2xl_image" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Дополнительные размеры -->
+    <attr name="height_l_bigSeparator" format="dimension|reference"/>
+    <attr name="width_l_bigSeparator" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Дополнительные цвета -->
+    <attr name="placeholderColorInputText" format="color|reference"/>
+    <attr name="rateIconColor" format="color|reference"/>
+    <attr name="textBackgroundColorDecoratorHighlight" format="color|reference"/>
+    <!-- endregion -->
+
+    <!-- region Размеры меню -->
+    <!--Максимальный размер меню (название с веба).-->
+    <attr name="popupMaxWidthMenuPopup" format="dimension|reference"/>
+    <!-- endregion -->
+
+    <!-- region Размеры Информационных окон -->
+    <!--Максимальный размер меню (название с веба).-->
+    <attr name="messageFontSizeConfirmation" format="dimension|reference"/>
+    <attr name="markerWidthPopup" format="dimension|reference"/>
+    <attr name="markerHeightPopup" format="dimension|reference"/>
+    <attr name="contentPaddingConfirmation" format="dimension|reference"/>
+    <attr name="footerContentPaddingConfirmation" format="dimension|reference"/>
+    <!-- endregion -->
+
+
+    <!-- region Дополнительные цвета кнопок -->
+    <attr name="defaultActiveBackgroundColorButton" format="color|reference"/>
+    <attr name="defaultContrastBackgroundColorButton" format="color|reference"/>
+    <attr name="primaryContrastBackgroundColorButton" format="color|reference"/>
+    <attr name="secondaryContrastBackgroundColorButton" format="color|reference"/>
+    <attr name="translucentBackgroundColorButton" format="color|reference"/>
+    <attr name="translucentActiveBackgroundColorButton" format="color|reference"/>
+    <!-- endregion -->
+
+    <!-- region Цвета виртуальной клавиатуры -->
+    <attr name="defaultBackgroundColorKeyboardView" format="color|reference"/>
+    <attr name="defaultActiveBackgroundColorKeyboardView" format="color|reference"/>
+    <attr name="actionTextColorKeyboardView" format="color|reference"/>
+    <attr name="actionBackgroundColorKeyboardView" format="color|reference"/>
+    <attr name="actionActiveBackgroundColorKeyboardView" format="color|reference"/>
+    <!-- endregion -->
+
+    <!-- region Параметры сплэш-скрина -->
+    <attr name="splashScreenBackgroundColor" format="color|reference"/>
+    <attr name="splashScreenGradient" format="reference"/>
+    <attr name="splashScreenLogo" format="reference"/>
+    <!-- endregion -->
+
+    <!-- region Цвета переключателей -->
+    <attr name="markerContrastColorSwitcher" format="color|reference"/>
+    <attr name="textColorSwitcher" format="color|reference"/>
+    <attr name="selectedTextColorSwitcher" format="color|reference"/>
+    <!-- endregion-->
+
+    <!-- region Цвета заглушек -->
+    <attr name="placeholderBorderColor" format="color|reference"/>
+    <attr name="placeholderSkinColor" format="color|reference"/>
+    <attr name="placeholderHairColor" format="color|reference"/>
+    <attr name="placeholderDressColor" format="color|reference"/>
+    <!-- endregion-->
+
+    <!-- region Цвета, используемые в свайпе в МП -->
+    <attr name="swipe1BackgroundColor" format="color|reference"/>
+    <attr name="swipe2BackgroundColor" format="color|reference"/>
+    <attr name="swipe3BackgroundColor" format="color|reference"/>
+    <attr name="swipe4BackgroundColor" format="color|reference"/>
+    <attr name="swipe5BackgroundColor" format="color|reference"/>
+    <attr name="swipe6BackgroundColor" format="color|reference"/>
+    <!-- endregion-->
+
+    <!-- region Цвета, FlatIndicatorView -->
+    <attr name="flatIndicatorColor" format="color|reference"/>
+    <attr name="flatIndicatorActiveColor" format="color|reference"/>
+    <!-- endregion-->
+</resources>

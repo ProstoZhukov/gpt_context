@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_moneyview_suffix_billion">milliards</string>
+    <string name="design_moneyview_suffix_k">k</string>
+    <string name="design_moneyview_suffix_million">millions</string>
+    <string name="design_moneyview_suffix_none"/>
+    <string name="design_moneyview_suffix_quadrillion">Q</string>
+    <string name="design_moneyview_suffix_thousand">thd</string>
+    <string name="design_moneyview_suffix_trillion">t</string>
+</resources>

@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableDataBindingCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableKtLintCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.media_player"
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+    }
+}
+
+dependencies {
+    implementation project(':network_native')
+    implementation project(':plugin_struct')
+    implementation project(':mediaplayer')
+    implementation project(':verification-decl')
+    implementation project(':communication-decl')
+
+    implementation libs.android.core.ktx
+    implementation libs.timber
+    implementation libs.rx.android
+    implementation libs.android.view.recyclerView
+
+    api libs.media3.exoplayer
+    api libs.media3.ui
+
+    testImplementation project(':testing')
+}

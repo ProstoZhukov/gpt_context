@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!--Значения размеров были пересчитаны с помощью DimensRecalculator.kt с коэффициентом 0.6151113--><resources>
+
+    <!-- Значения размеров были пересчитаны с помощью DimensRecalculator.kt с коэффициентом 0.81286097 (Вынесено из 'retail-common')-->
+    <dimen name="retail_views_card_view_btn_text_size">26dp</dimen>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SbisTopNavigationDefaultStyle">
+        <item name="SbisTopNavigation_showBackButton">false</item>
+        <item name="SbisTopNavigation_isEditingEnabled">false</item>
+        <item name="SbisTopNavigation_smallTitleMaxLines">5</item>
+        <item name="SbisTopNavigation_leftIconSize">?iconSize_6xl</item>
+
+        <item name="SbisTopNavigation_backgroundColor">?unaccentedAdaptiveBackgroundColor</item>
+        <item name="SbisTopNavigation_titleColor">?textColor</item>
+        <item name="SbisTopNavigation_subtitleColor">?unaccentedTextColor</item>
+        <item name="SbisTopNavigation_backBtnColor">?primaryIconColor</item>
+    </style>
+
+    <style name="SbisTopNavigationHeaderColorStyle" parent="SbisTopNavigationDefaultStyle">
+        <item name="SbisTopNavigation_backgroundColor">?headerBackgroundColor</item>
+    </style>
+
+    <style name="SbisTopNavigationRightBackBtnStyle">
+        <item name="SbisRoundButton_icon">@string/design_mobile_icon_clear_cross</item>
+        <item name="SbisRoundButton_size">s</item>
+        <item name="SbisRoundButton_style">pale</item>
+
+    </style>
+
+    <style name="SbisTopNavigationLeftBackBtnStyle">
+        <item name="android:fontFamily">@font/sbis_mobile_icons</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/design_mobile_icon_arrow_back</item>
+        <item name="android:textColor">?SbisTopNavigation_backBtnColor</item>
+        <item name="android:textSize">?iconSize_2xl</item>
+    </style>
+
+
+    <style name="SbisTopNavigationTitleRightIconStyle">
+        <item name="android:fontFamily">@font/sbis_mobile_icons</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/design_mobile_icon_menu</item>
+        <item name="android:textColor">?unaccentedIconColor</item>
+        <item name="android:textSize">?iconSize_3xl</item>
+    </style>
+
+    <style name="SbisTopNavigationRightBtnContainerStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SbisTopNavigationLeftIconStyle" parent="MobileFontStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?iconColor</item>
+        <item name="android:textSize">?iconSize_6xl</item>
+    </style>
+
+    <style name="InputViewDefaultStyle" parent="BoldStyle">
+        <item name="inputView_bottomOffsetUnderline">0dp</item>
+        <item name="inputView_onHideKeyboard">true</item>
+        <item name="inputView_valueColor">?SbisTopNavigation_titleColor</item>
+        <item name="inputView_clearFocusOnBackPressed">true</item>
+        <item name="inputView_showPlaceholderAsTitle">false</item>
+        <item name="inputView_validationDefaultColor">@android:color/transparent</item>
+        <item name="inputView_validationDefaultColorReadOnly">@android:color/transparent</item>
+    </style>
+
+    <style name="InputViewDefaultStyle.Large">
+        <item name="inputView_valueSize">?fontSize_5xl_scaleOff</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="InputViewDefaultStyle.Small">
+        <item name="inputView_valueSize">?fontSize_xl_scaleOff</item>
+        <item name="inputView_maxLines">5</item>
+    </style>
+
+    <style name="SbisTopNavigationSubtitleStyle" parent="RegularStyle">
+        <item name="android:textColor">?SbisTopNavigation_subtitleColor</item>
+        <item name="android:textSize">?fontSize_xs_scaleOff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">5</item>
+    </style>
+
+    <style name="SbisTopNavigationLargeSubtitleStyle" parent="RegularStyle">
+        <item name="android:textColor">?secondaryTextColor</item>
+        <item name="android:textSize">?fontSize_xl_scaleOff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="SbisTopNavigationNoNetworkIcon" parent="MobileFontStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?secondaryIconColor</item>
+        <item name="android:text">@string/design_mobile_icon_wifi_none</item>
+        <item name="android:textSize">?iconSize_2xl</item>
+    </style>
+
+    <style name="SearchInputTheme">
+        <item name="searchInput_color">additional</item>
+        <item name="searchInput_size">small</item>
+        <item name="hasFilter">false</item>
+    </style>
+
+    <style name="SbisTopNavigationIconButtonStyle" parent="SbisRoundButtonDefaultSecondaryTheme">
+        <item name="SbisRoundButton_backgroundColor">?translucentBackgroundColorLight</item>
+        <item name="SbisRoundButton_backgroundColorPressed">?translucentActiveBackgroundColorLight
+        </item>
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retail_views_deposit_withdrawal_title">Cantidad de efectivo</string>
+    <string name="retail_views_deposit_withdrawal_deposit_button_text">Dep&#xf3;sito</string>
+    <string name="retail_views_deposit_withdrawal_withdrawal_button_text">Retirar</string>
+</resources>

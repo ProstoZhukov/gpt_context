@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Common strings-->
+    <string name="design_close">Закрыть</string>
+    <string name="design_empty_search_error_string">По данному запросу ничего не найдено</string>
+    <string name="design_undo">Отменить</string>
+
+
+
+    <string name="design_edit_photo_from_gallery">Загрузить из галереи</string>
+    <string name="design_edit_photo_camera">Сделать фото</string>
+    <string name="design_edit_photo_delete">Удалить аватар</string>
+
+    <string name="design_menu_item_save_to_device">Сохранить на устройство</string>
+    <string name="design_menu_item_subscribe">Подписаться</string>
+    <string name="design_menu_item_unsubscribe">Отписаться</string>
+    <string name="design_menu_item_copy_link">Скопировать ссылку</string>
+    <string name="design_menu_item_piv">Поощрения и взыскания</string>
+    <string name="design_menu_report_or_block">Пожаловаться/заблокировать</string>
+    <string name="design_menu_report_user">Пожаловаться на пользователя</string>
+    <string name="design_menu_block_user">Заблокировать пользователя</string>
+    <string name="design_menu_unblock_user">Разблокировать пользователя</string>
+
+    <string name="design_cancel_item_label">@string/design_undo</string>
+    <string name="design_please_wait">Пожалуйста, подождите</string>
+    <string name="design_action_edit_done">Готово</string>
+
+    <!-- Image viewer -->
+    <string name="design_title_template">Название: %1$s</string>
+    <string name="design_date_template">Отправлен: %1$s</string>
+    <string name="design_size_template">Размер: %1$s</string>
+
+    <!-- Empty View -->
+    <string name="design_contacts_not_found">Контакты не найдены</string>
+    <string name="design_all_contacts_was_selected">Выбраны все последние контакты. Если вы хотите добавить еще получателей, воспользуйтесь поиском.</string>
+    <string name="design_all_participants_was_selected">Выбраны все последние контакты.</string>
+
+    <!-- SearchPanel -->
+    <string name="design_search_panel_hint">Поиск</string>
+    <string name="design_search_panel_cancel">Отмена</string>
+
+    <!-- SbisSpinnerAdapter -->
+    <string name="design_spinner_mass_operations_item">Отметить</string>
+    <string name="design_spinner_separator_item">*</string>
+
+    <!--MobileFontIcons
+        Please present icons in a Unicode (Hex NCRs) format and in lexicographical order to avoid repetitions! -->
+
+
+    <!-- repeated icons -->
+
+    <string name="design_mobile_icon_mobile_phone">&#xe9c3;</string>
+
+    <!-- File Format Icons -->
+
+    <!-- Sabyget icons -->
+    <string name="design_mobile_icon_bonus">&#xec06;</string>
+    <string name="design_mobile_icon_bonus_null">&#xec0a;</string>
+
+    <!-- Navigation icons-->
+    <string name="design_nav_icon_bonus_en">&#xe900;</string>
+
+    <!-- Table scheme icons -->
+
+    <!-- Calendar date icons -->
+
+    <!-- Short day names -->
+    <string name="design_monday_short">Пн</string>
+    <string name="design_tuesday_short">Вт</string>
+    <string name="design_wednesday_short">Ср</string>
+    <string name="design_thursday_short">Чт</string>
+    <string name="design_friday_short">Пт</string>
+    <string name="design_saturday_short">Сб</string>
+    <string name="design_sunday_short">Вс</string>
+
+    <!-- Short month names -->
+    <string name="design_january_short">Янв</string>
+    <string name="design_february_short">Фев</string>
+    <string name="design_march_short">Мар</string>
+    <string name="design_april_short">Апр</string>
+    <string name="design_may_short">Май</string>
+    <string name="design_june_short">Июн</string>
+    <string name="design_july_short">Июл</string>
+    <string name="design_august_short">Авг</string>
+    <string name="design_september_short">Сен</string>
+    <string name="design_october_short">Окт</string>
+    <string name="design_november_short">Ноя</string>
+    <string name="design_december_short">Дек</string>
+
+    <string-array name="design_months_short_names_lower_case">
+        <item>янв.</item>
+        <item>фев.</item>
+        <item>мар.</item>
+        <item>апр.</item>
+        <item>май.</item>
+        <item>июн.</item>
+        <item>июл.</item>
+        <item>авг.</item>
+        <item>сен.</item>
+        <item>окт.</item>
+        <item>ноя.</item>
+        <item>дек.</item>
+    </string-array>
+
+    <!-- http://axure.tensor.ru/MobileAPP/#p=Формат_даты_и_времени -->
+    <string-array name="design_months_list_in_parental_deaths_short">
+        <item>янв.</item>
+        <item>февр.</item>
+        <item>марта</item>
+        <item>апр.</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>авг.</item>
+        <item>сент.</item>
+        <item>окт.</item>
+        <item>нояб.</item>
+        <item>дек.</item>
+    </string-array>
+
+    <string-array name="design_months_short_standard_without_dot">
+        <item>янв</item>
+        <item>февр</item>
+        <item>марта</item>
+        <item>апр</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>авг</item>
+        <item>сент</item>
+        <item>окт</item>
+        <item>нояб</item>
+        <item>дек</item>
+    </string-array>
+
+    <string-array name="design_months_short_names_lower_case_without_dot">
+        <item>янв</item>
+        <item>фев</item>
+        <item>мар</item>
+        <item>апр</item>
+        <item>май</item>
+        <item>июн</item>
+        <item>июл</item>
+        <item>авг</item>
+        <item>сен</item>
+        <item>окт</item>
+        <item>ноя</item>
+        <item>дек</item>
+    </string-array>
+
+    <string-array name="design_months_short_names_lower_case_without_dot_with_declension">
+        <item>янв</item>
+        <item>фев</item>
+        <item>мар</item>
+        <item>апр</item>
+        <item>мая</item>
+        <item>июн</item>
+        <item>июл</item>
+        <item>авг</item>
+        <item>сен</item>
+        <item>окт</item>
+        <item>ноя</item>
+        <item>дек</item>
+    </string-array>
+
+    <string-array name="design_months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+
+    <string-array name="design_months_names">
+        <item>Января</item>
+        <item>Февраля</item>
+        <item>Марта</item>
+        <item>Апреля</item>
+        <item>Мая</item>
+        <item>Июня</item>
+        <item>Июля</item>
+        <item>Августа</item>
+        <item>Сентября</item>
+        <item>Октября</item>
+        <item>Ноября</item>
+        <item>Декабря</item>
+    </string-array>
+
+    <string name="calendar_title">Календарь</string>
+
+    <string name="calendar_monday">ПН</string>
+    <string name="calendar_tuesday">ВТ</string>
+    <string name="calendar_wednesday">СР</string>
+    <string name="calendar_thursday">ЧТ</string>
+    <string name="calendar_friday">ПТ</string>
+    <string name="calendar_saturday">СБ</string>
+    <string name="calendar_sunday">ВС</string>
+
+    <string name="design_popup_window_close_button">Закрыть</string>
+
+    <!--BoundedDateWheelsPickerFragment-->
+    <string name="design_close_date_dialog_button_text">Закрыть</string>
+    <string name="design_apply_date_dialog_button_text">Применить</string>
+
+    <string name="design_open_outside_text">Открыть на портале</string>
+
+    <!-- moved from communicator -->
+    <string name="design_version_label">%1$s (%2$s)</string>
+    <string name="design_version_toast">Версия приложения скопирована в буфер обмена</string>
+    <string name="design_account_changing_failed_message">Не удалось перейти в другой аккаунт.</string>
+    <string name="design_drawer_open">Открыть боковое меню</string>
+    <string name="design_drawer_close">Закрыть боковое меню</string>
+    <string name="design_menu">Меню</string>
+
+    <!--Emotions-->
+
+    <!-- AttachmentsView -->
+    <string name="design_attachments_registry_remain_counter_format" formatted="true">+%d</string>
+
+    <!-- Cloud cell -->
+    <string name="design_cloud_view_me">Я</string>
+    <string name="design_cloud_view_for">для </string>
+
+    <!-- Opinion-Rating -->
+    <string name="design_opinion_rating_like">Нравится</string>
+    <string name="design_opinion_rating_dislike">Не нравится</string>
+
+    <string name="design_date_today">Сегодня</string>
+
+    <!-- Folders -->
+    <string name="design_hide_shared_tasks_confirmation">Вы действительно хотите скрыть задачи сотрудника %1$s?</string>
+</resources>

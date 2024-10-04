@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sbis_top_navigation_button_min_width">44dp</dimen>
+    <dimen name="sbis_top_navigation_button_min_height">42dp</dimen>
+    <dimen name="sbis_top_navigation_title_min_top_margin">7dp</dimen>
+    <dimen name="sbis_top_navigation_space_width">8dp</dimen>
+    <dimen name="sbis_top_navigation_divider_height">1dp</dimen>
+    <dimen name="sbis_top_navigation_counter_right_padding">14dp</dimen>
+    <dimen name="sbis_top_navigation_back_btn_padding">6dp</dimen>
+    <dimen name="sbis_top_navigation_back_btn_padding_clickable_content">30dp</dimen>
+    <dimen name="sbis_top_navigation_back_btn_width_with_counter">20dp</dimen>
+
+    <dimen name="sbis_top_navigation_progress_view_rect_width">7dp</dimen>
+    <dimen name="sbis_top_navigation_progress_view_rect_height">2dp</dimen>
+    <dimen name="sbis_top_navigation_progress_view_rect_padding">3dp</dimen>
+    <dimen name="sbis_top_navigation_progress_view_rect_corner_radius">1dp</dimen>
+    <dimen name="sbis_top_navigation_progress_view_start_margin">14dp</dimen>
+</resources>

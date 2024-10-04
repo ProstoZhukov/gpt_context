@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="files_picker_panel_header_button_title">取消</string>
+    <string name="files_picker_panel_footer_button_title">添加</string>
+    <string name="files_picker_panel_header_title">已选择 %s</string>
+    <plurals name="files_picker_selection_limit_message">
+        <item quantity="zero">您不能选择超过 %d 个文件</item>
+        <item quantity="one">您不能选择超过 %d 个文件</item>
+        <item quantity="two">您不能选择超过 %d 个文件</item>
+        <item quantity="few">您不能选择超过 %d 个文件</item>
+        <item quantity="many">您不能选择超过 %d 个文件</item>
+        <item quantity="other">您不能选择超过 %d 个文件</item>
+    </plurals>
+</resources>

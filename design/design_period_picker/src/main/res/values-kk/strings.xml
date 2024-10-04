@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="january">Қаңтар</string>
+    <string name="february">Ақпан</string>
+    <string name="march">Наурыз</string>
+    <string name="april">Сәуір</string>
+    <string name="may">Мамыр</string>
+    <string name="june">Маусым</string>
+    <string name="july">Шілде</string>
+    <string name="august">Тамыз</string>
+    <string name="september">Қыркүйек</string>
+    <string name="october">Қазан</string>
+    <string name="november">Қараша</string>
+    <string name="december">Желтоқсан</string>
+    <string name="quarter_1">I тоқсан</string>
+    <string name="quarter_2">II тоқсан</string>
+    <string name="quarter_3">III тоқсан</string>
+    <string name="quarter_4">IV тоқсан</string>
+    <string name="half_year_1">I жартыжылдық</string>
+    <string name="half_year_2">II жартыжылдық</string>
+    <string name="quarter">тоқсан</string>
+    <string name="half_year">жартыжылдық</string>
+    <string name="all_period">Барлық кезең</string>
+    <string-array name="quantum_list">
+        <item>@string/quantum_1</item>
+        <item>@string/quantum_2</item>
+        <item>@string/quantum_3</item>
+        <item>@string/quantum_4</item>
+    </string-array>
+    <string-array name="short_quantum_list">
+        <item>@string/quantum_1</item>
+        <item>@string/quantum_2</item>
+    </string-array>
+</resources>

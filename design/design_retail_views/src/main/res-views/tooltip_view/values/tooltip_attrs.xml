@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Атрибуты компонента [Tooltip] -->
+    <declare-styleable name="RetailViewsTooltipAttrs">
+        <attr name="retail_views_tooltip_view_theme" format="reference"/>
+
+        <attr name="retail_views_tooltip_text_color" format="reference|color"/>
+        <attr name="retail_views_tooltip_background_color" format="reference|color"/>
+
+        <attr name="retail_views_tooltip_shadow_color" format="reference|color"/>
+        <attr name="retail_views_tooltip_icon_color" format="reference|color"/>
+    </declare-styleable>
+
+</resources>

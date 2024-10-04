@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Темы компонента [NumericKeyboardCustomized] -->
+    <style name="RetailViewsNumericKeyboardCustomizedTheme.RetailLight" parent="RetailViewsCommonTheme.Light">
+        <item name="retail_views_numeric_keyboard_button_style">@style/RetailViewsKeyboardButtonStyle</item>
+    </style>
+
+    <style name="RetailViewsNumericKeyboardCustomizedTheme.RetailDark" parent="RetailViewsCommonTheme.Dark">
+        <item name="retail_views_numeric_keyboard_button_style">@style/RetailViewsKeyboardButtonStyle</item>
+    </style>
+
+</resources>

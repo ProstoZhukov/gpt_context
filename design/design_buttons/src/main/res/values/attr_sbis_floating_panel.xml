@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Выравнивание понтента внутри плавающей панели -->
+    <declare-styleable name="SbisFloatingButtonPanel">
+
+        <!-- Выравнивание контента внутри плавающей панели -->
+        <attr name="SbisFloatingButtonPanel_content_align" format="enum">
+            <!-- Размещение контента слева -->
+            <enum name="left" value="1"/>
+            <!-- Размещение контента по горизонтальному центру -->
+            <enum name="center_horizontal" value="2"/>
+            <!-- Размещение контента справа (значение по умолчанию) -->
+            <enum name="right" value="3"/>
+        </attr>
+
+    </declare-styleable>
+
+</resources>

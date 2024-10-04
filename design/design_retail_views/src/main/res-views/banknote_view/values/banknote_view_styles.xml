@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="RetailViewsBanknoteCustomized" parent="SbisButtonBaseTheme"/>
+
+    <style name="RetailViewsBanknoteCustomized.Retail">
+        <item name="android:layout_width">?inlineHeight_m</item>
+    </style>
+
+    <style name="RetailViewsBanknoteCustomized.Retail.Light" tools:ignore="UnusedResources"/>
+    <style name="RetailViewsBanknoteCustomized.Retail.Dark" tools:ignore="UnusedResources"/>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke
+                android:width="2dp"
+                android:color="?attr/hall_scheme_place_default"/>
+            <corners
+                android:bottomLeftRadius="8dp"
+                android:bottomRightRadius="8dp"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:background="@color/palette_color_white1"
+       tools:minHeight="48dp"
+       tools:paddingEnd="12dp"
+       tools:paddingStart="12dp"
+       tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <TextView
+        android:id="@+id/text_span_icon"
+        style="@style/MobileFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_accent_2"
+        android:textSize="@dimen/input_text_box_icon_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage"
+        tools:text="@string/design_mobile_icon_mobile_phone"/>
+
+    <View
+        android:id="@+id/text_span_text_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_span_edit_text_stub"
+        app:layout_constraintEnd_toEndOf="@+id/text_span_clear_button"
+        app:layout_constraintStart_toStartOf="@+id/text_span_edit_text_stub"
+        app:layout_constraintTop_toTopOf="@+id/text_span_edit_text_stub"
+        tools:background="@color/palette_color_gray12"/>
+
+    <ViewStub
+        android:id="@+id/text_span_edit_text_stub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/input_text_box_edit_text_margin_start"
+        android:inflatedId="@+id/text_span_edit_text_stub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_span_clear_button"
+        app:layout_constraintStart_toEndOf="@+id/text_span_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="0dp"/>
+
+    <TextView
+        android:id="@+id/text_span_clear_button"
+        style="@style/MobileFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:paddingStart="@dimen/input_text_box_right_icon_padding_start"
+        android:text="@string/design_mobile_icon_toolbar_close"
+        tools:visibility="gone"
+        android:textColor="@color/input_text_box_right_icon_text_color"
+        android:textSize="@dimen/input_text_box_right_icon_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/text_span_edit_text_stub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_span_edit_text_stub"
+        tools:ignore="RtlSymmetry,SpUsage"/>
+
+</merge>

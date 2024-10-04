@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="?offset_m">
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/link_share_base_holder_image"
+        style="@style/MobileFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="?labelTextColor"
+        android:textSize="?fontSize_4xl_scaleOff"/>
+
+    <ru.tensor.sbis.design.sbis_text_view.SbisTextView
+        android:id="@+id/link_share_base_holder_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:paddingStart="?offset_s"
+        android:textColor="?textColor"
+        android:textSize="?fontSize_l_scaleOff"/>
+
+</LinearLayout>

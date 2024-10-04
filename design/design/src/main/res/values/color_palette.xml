@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+     Файл содержит стандартную палитру цветов, которые являются общими для всех моб. приложений SBIS.
+     В файле должна содержаться ТОЛЬКО СТАНДАРТНАЯ ПАЛИТРА, подобные вхождения "navigation_primary_color",
+     "text_color_black_1" и т.д. ЗАПРЕЩЕНЫ!
+
+     Нестандартыне цветовые константы необходимо объявлять в файле 'color_<widget_name>.xml'
+     с префиксом 'widget_name_' и ссылкой на цвет из стандартной палитры.
+     Пример: <color name="navigation_primary_color">@color/palette_color_black1</color>
+     -->
+
+    <color name="palette_color_transparent">@android:color/transparent</color>
+
+    <color name="palette_color_white0">@android:color/white</color>
+    <color name="palette_color_white1">#FFFFFF</color>
+    <color name="palette_color_white2">#EFEFF4</color>
+    <color name="palette_color_white4">#CCCCCC</color>
+    <color name="palette_color_white5">#F6F3EE</color>
+    <color name="palette_color_white6">#F2F2F2</color>
+    <color name="palette_color_white7">#FCFCFC</color>
+    <color name="palette_color_white8">#FAFAFA</color>
+    <color name="palette_color_white9">#E6E6E6</color>
+    <color name="palette_color_white10">#E9E9E9</color>
+    <color name="palette_color_white11">#F7F7F7</color>
+    <color name="palette_color_white12">#EEEEEE</color>
+    <color name="palette_color_white13">#EDF4FC</color>
+    <color name="palette_color_white14">#F2E7E4</color>
+    <color name="palette_color_white15">#EEF7E9</color>
+    <color name="palette_color_white16">#F5F5F5</color>
+    <color name="palette_color_white17">#E7E8FE</color>
+    <color name="palette_color_white18">#FBECDA</color>
+    <color name="palette_color_white19">#FEEBED</color>
+    <color name="palette_color_white20">#F1F1F1</color>
+    <color name="palette_color_white21">#FFF8F4</color>
+    <color name="palette_color_white22">#FEF2E6</color>
+    <color name="palette_color_white23">#F0F5FB</color>
+    <color name="palette_color_white24">#E1ECF6</color>
+    <color name="palette_color_white25">#E4EAF8</color>
+
+    <color name="palette_color_black1">#000000</color>
+    <color name="palette_color_black2">#606060</color>
+    <color name="palette_color_black3">#B4B4B4</color>
+    <color name="palette_color_black4">#292929</color>
+    <color name="palette_color_black5">#E9E9E9</color>
+    <color name="palette_color_black6">#303030</color>
+    <color name="palette_color_black7">#333333</color>
+
+    <color name="palette_color_gray1">#90ABB9</color>
+    <color name="palette_color_gray2">#FBFBFB</color>
+    <color name="palette_color_gray3">#F2F2F2</color>
+    <color name="palette_color_gray4">#999999</color>
+    <color name="palette_color_gray6">#EDE7DE</color>
+    <color name="palette_color_gray7">#DED6C8</color>
+    <color name="palette_color_gray8">#D9D9D9</color>
+    <color name="palette_color_gray9">#CCCCCC</color>
+    <color name="palette_color_gray10">#A9A9A9</color>
+    <color name="palette_color_gray11">#A0A0A0</color>
+    <color name="palette_color_gray12">#E4E4E4</color>
+    <color name="palette_color_gray13">#ADADAD</color>
+    <color name="palette_color_gray14">#5C5C5C</color>
+    <color name="palette_color_gray15">#9EA4AD</color>
+    <color name="palette_color_gray16">#585858</color>
+    <color name="palette_color_gray17">#A8AFBB</color>
+    <color name="palette_color_gray18">#98B2CA</color>
+    <color name="palette_color_gray19">#C8C8C8</color>
+    <color name="palette_color_gray20">#666666</color>
+    <color name="palette_color_gray21">#858585</color>
+    <color name="palette_color_gray22">#BCBCC5</color>
+    <color name="palette_color_gray23">#9DA4B7</color>
+    <color name="palette_color_gray24">#EBEBEB</color>
+    <color name="palette_color_gray25">#656C87</color>
+
+    <color name="palette_color_blue0">#0000FF</color>
+    <color name="palette_color_blue1">#205080</color>
+    <color name="palette_color_blue2">#003A55</color>
+    <color name="palette_color_blue3">#587AB0</color>
+    <color name="palette_color_blue4">#8991A9</color>
+    <color name="palette_color_blue5">#93ABB9</color>
+    <color name="palette_color_blue6">#638398</color>
+    <color name="palette_color_blue7">#2166A9</color>
+    <color name="palette_color_blue8">#1094EB</color>
+    <color name="palette_color_blue9">#1B2F3A</color>
+    <color name="palette_color_blue10">#125B83</color>
+    <color name="palette_color_blue11">#30415D</color>
+    <color name="palette_color_blue12">#5C6C8A</color>
+    <color name="palette_color_blue13">#729EE6</color>
+    <color name="palette_color_blue14">#405373</color>
+    <color name="palette_color_blue15">#2B3B54</color>
+    <color name="palette_color_blue16">#313E78</color>
+    <color name="palette_color_blue17">#61B1EE</color>
+    <color name="palette_color_blue18">#0099CC</color>
+    <color name="palette_color_blue19">#1F2938</color>
+    <color name="palette_color_blue20">#00476B</color>
+    <color name="palette_color_blue21">#00283B</color>
+    <color name="palette_color_blue22">#244F66</color>
+    <color name="palette_color_blue23">#C1D1F6</color>
+    <color name="palette_color_blue24">#0055BB</color>
+    <color name="palette_color_blue25">#26B8FF</color>
+    <color name="palette_color_blue26">#1D2834</color>
+    <color name="palette_color_blue27">#587C94</color>
+    <color name="palette_color_blue28">#26576E</color>
+
+    <color name="palette_color_yellow1">#FEC63F</color>
+    <color name="palette_color_yellow2">#FAD3BF</color>
+    <color name="palette_color_yellow3">#FFFDA6</color>
+    <color name="palette_color_yellow4">#EAE3D7</color>
+    <color name="palette_color_yellow5">#F5E1D7</color>
+    <color name="palette_color_yellow6">#FFF0CE</color>
+
+    <color name="palette_color_orange1">#D94700</color>
+    <color name="palette_color_orange2">#F35C18</color>
+    <color name="palette_color_orange3">#FF7030</color>
+    <color name="palette_color_orange4">#FF6E3A</color>
+    <color name="palette_color_orange5">#F25A3A</color>
+    <color name="palette_color_orange6">#FF6E3C</color>
+    <color name="palette_color_orange7">#F36B31</color>
+    <color name="palette_color_orange8">#FF5B15</color>
+    <color name="palette_color_orange9">#FF8A5A</color>
+    <color name="palette_color_orange10">#FFE2D6</color>
+    <color name="palette_color_orange11">#FF6600</color>
+    <color name="palette_color_orange12">#FDD2C0</color>
+    <color name="palette_color_orange13">#DA8036</color>
+
+    <color name="palette_color_green1">#84BE44</color>
+    <color name="palette_color_green2">#71D354</color>
+    <color name="palette_color_green3">#069922</color>
+    <color name="palette_color_green4">#DFF2D5</color>
+    <color name="palette_color_green5">#E2F1DA</color>
+
+    <color name="palette_color_pink1">#FBBAC2</color>
+    <color name="palette_color_pink2">#FDE8ED</color>
+    <color name="palette_color_pink3">#E953BE</color>
+
+    <color name="palette_color_red1">#E33036</color>
+    <color name="palette_color_red2">#E44766</color>
+    <color name="palette_color_red3">#DD2044</color>
+
+    <color name="palette_color_purple1">#3F51B5</color>
+    <color name="palette_color_purple2">#303F9F</color>
+
+    <color name="palette_color_brown1">#EEE9E0</color>
+    <color name="palette_color_brown2">#BEB0A0</color>
+    <color name="palette_color_brown3">#CAB2A0</color>
+    <color name="palette_color_brown4">#F9D6AE</color>
+    <color name="palette_color_brown5">#B8B0A0</color>
+
+    <!--#region PALETTE COLORS WITH ALPHA-->
+    <color name="palette_alpha_color_white50">#80FFFFFF</color><!--50%-->
+    <color name="palette_alpha_color_white1">#B2FFFFFF</color><!--70%--> <!-- TODO: Требуется переименование в "palette_alpha_color_white70" -->
+    <color name="palette_alpha_color_white40">#66FFFFFF</color><!--40%-->
+
+    <color name="palette_alpha_color_black0">#00000000</color><!--0%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black0" -->
+    <color name="palette_alpha_color_black9">#08000000</color><!--3%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black3" -->
+    <color name="palette_alpha_color_black1">#0A000000</color><!--4%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black4" -->
+    <color name="palette_alpha_color_black2">#14000000</color><!--8%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black8" -->
+    <color name="palette_alpha_color_black12">#1F000000</color><!--12%-->
+    <color name="palette_alpha_color_black3">#33000000</color><!--20%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black20" -->
+    <color name="palette_alpha_color_black4">#56000000</color><!--34%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black34" -->
+    <color name="palette_alpha_color_black45">#73000000</color><!--45%-->
+    <color name="palette_alpha_color_black5">#7F000000</color><!--50%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black50" -->
+    <color name="palette_alpha_color_black53">#88000000</color><!--53%-->
+    <color name="palette_alpha_color_black6">#A3000000</color><!--64%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black64" -->
+    <color name="palette_alpha_color_black65">#A6000000</color><!--65%-->
+    <color name="palette_alpha_color_black7">#B3000000</color><!--70%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black70" -->
+    <color name="palette_alpha_color_black80">#CC000000</color><!--80%-->
+    <color name="palette_alpha_color_black8">#D6000000</color><!--84%--> <!-- TODO: Требуется переименование в "palette_alpha_color_black84" -->
+
+    <color name="palette_alpha_color_gray40">#66D9D9D9</color><!--40%-->
+    <color name="palette_alpha_color_gray44">#7030415D</color><!--44%-->
+    <color name="palette_alpha_color_gray1">#CC7E8789</color><!--80%--> <!-- TODO: Требуется переименование в "palette_alpha_color_gray80" -->
+
+    <color name="palette_alpha_color_orange60">#99FF7033</color><!--60%-->
+    <color name="palette_alpha_color_orange1">#A3D94700</color><!--64%--> <!-- TODO: Требуется переименование в "palette_alpha_color_orange64" -->
+
+    <color name="palette_alpha_color_blue27">#4400324A</color><!--27%-->
+    <color name="palette_alpha_color_blue50">#7F002335</color><!--50%-->
+    <color name="palette_alpha_color_blue60">#99205080</color><!--60%-->
+    <color name="palette_alpha_color_blue65">#A6205080</color><!--65%-->
+    <color name="palette_alpha_color_blue70">#B230415D</color><!--70%-->
+
+    <color name="palette_alpha_color_blue_12_40">#665C6C8A</color><!--40%-->
+
+    <color name="palette_alpha_color_brown33">#55FF7033</color><!--33%-->
+    <color name="palette_alpha_color_brown50">#80FF712F</color><!--50%-->
+    <!--#endregion-->
+
+</resources>

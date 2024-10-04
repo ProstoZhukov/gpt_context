@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_marks_top_title">Marcas</string>
+    <string name="design_marks_title_clear_label">Claro</string>
+    <string name="design_marks_title_important">Importante</string>
+    <string name="design_marks_title_plus">M&#xe1;s</string>
+</resources>

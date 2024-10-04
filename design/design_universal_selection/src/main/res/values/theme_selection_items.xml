@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="UniversalSelectionItemsTheme" parent="SelectionItemsTheme">
+        <item name="SelectionItem_folderContainerStyle">@style/UniversalSelectionItemContainer.BaseItem</item>
+    </style>
+
+    <style name="UniversalSelectionItemContainer.BaseItem" parent="SelectionItemContainerStyle.Folder">
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+</resources>

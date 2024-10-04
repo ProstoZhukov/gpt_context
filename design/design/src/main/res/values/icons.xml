@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="icon_send_message" translatable="false"></string>
+    <string name="icon_delete_message" translatable="false"></string>
+    <string name="icon_attachment" translatable="false"></string>
+
+    <string name="option_snapshot_icon" translatable="false">&#xe98b;</string>
+    <string name="option_make_video_icon" translatable="false">&#xe942;</string>
+    <string name="option_create_folder_icon" translatable="false">&#xe969;</string>
+    <string name="option_photo_from_galery_icon" translatable="false">&#xe98a;</string>
+    <string name="option_video_from_galery_icon" translatable="false">&#xe918;</string>
+    <string name="option_send_icon" translatable="false">&#xe98c;</string>
+    <string name="option_media_message_icon" translatable="false">&#xe988;</string>
+    <string name="option_sign_icon" translatable="false">&#xe99a;</string>
+    <string name="option_delete_dialog_icon" translatable="false">&#xe979;</string>
+    <string name="option_create_manually_icon" translatable="false">&#xe968;</string>
+    <string name="option_file_from_store_icon" translatable="false">&#xe9a4;</string>
+    <string name="option_document_from_disk_icon" translatable="false">&#xe933;</string>
+    <string name="option_add_recipient_icon" translatable="false">&#xe98c;</string>
+    <string name="option_scan_icon" translatable="false">&#xe9fa;</string>
+    <string name="filter_filled_icon" translatable="false">&#xea19;</string>
+    <string name="filter_filled_selected_icon" translatable="false">&#xea24;</string>
+
+    <string name="icon_day_forward" translatable="false">&#xE666;</string>
+    <string name="icon_read" translatable="false">&#xe907;</string>
+
+    <string name="icon_smile" translatable="false"></string>
+</resources>

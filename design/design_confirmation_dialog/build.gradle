@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'submodule-cfg-plugin'
+apply plugin: 'kotlin-parcelize'
+
+submoduleConfig { cfg ->
+    cfg.enableBaseModuleCfg()
+    cfg.enableFlavorsCfg()
+    cfg.enableBuildConfigGeneration()
+    cfg.enableKtLintCfg()
+    cfg.enableViewBindingCfg()
+}
+
+android {
+    namespace "ru.tensor.sbis.design.design_confirmation"
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    api project(":container")
+    api project(":design_view_ext")
+    implementation project(":design")
+    implementation project(":design_utils")
+    api project(":design_buttons")
+    implementation project(":design_custom_view_tools")
+    implementation project(":input_view")
+    implementation project(":design_progress")
+    implementation project(":design_sbis_text_view")
+    
+    implementation libs.android.view.recyclerView
+
+    testImplementation project(":testing")
+}

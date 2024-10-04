@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recorder_hint_message">Maintenez pour enregistrer</string>
+    <string name="design_message_panel_channel_private">Chaîne privée</string>
+    <string name="design_message_panel_chat_add_participants_failure">Impossible d\'ajouter des membres.</string>
+    <string name="design_message_panel_attachment_files_size_limit">La taille du fichier dépasse la limite de 1 Go</string>
+    <string name="design_message_panel_attachment_each_file_size_limit">Chacun de vos fichiers dépasse la limite de 1 Go</string>
+    <string name="design_message_panel_attachment_some_files_size_limit">Certains de vos fichiers dépassent la limite de 1 Go</string>
+    <string name="design_message_panel_all_files_already_attached">Les fichiers sont déjà joints</string>
+    <string name="design_message_panel_some_files_already_attached">Certains de vos fichiers sont déjà joints</string>
+    <string name="design_message_panel_attachment_upload_error">Erreur lors du téléchargement des pièces jointes.</string>
+    <string name="design_message_panel_selected_message_action_delete_from_everyone">Supprimer pour tous</string>
+    <string name="design_message_panel_selected_message_action_delete_from_archive">Supprimer pour moi</string>
+    <string name="design_message_panel_delete_dialog_forever">Supprimer définitivement tous les messages de cette boîte de dialogue&#160;?</string>
+    <string name="design_message_panel_editing_message_title">Éditer</string>
+    <string name="design_message_panel_document_signing_action_sign">Pancarte</string>
+    <string name="design_message_panel_document_signing_action_request">Demande de signature</string>
+    <string name="design_message_panel_document_signing_action_sign_and_request">Signer et demander une signature</string>
+    <string name="design_message_panel_signatures_list_title_my_certificates">Mes signatures</string>
+    <string name="design_message_panel_action_reject_signature">Déclin</string>
+    <string name="design_message_panel_action_accept_signature">Pancarte</string>
+    <string name="design_message_panel_comment_edit_message">Le message ne peut plus être modifié</string>
+    <string name="design_message_panel_error_data_receive">Erreur lors de la réception des données</string>
+    <string name="design_message_panel_error_send_message">Erreur lors de l\'envoi du message</string>
+    <string name="design_message_panel_to_many_attachments">Trop de pièces jointes pour un seul message.</string>
+    <string name="design_message_panel_file_already_attached">Le fichier est déjà joint</string>
+    <string name="design_message_panel_enter_message_hint">Texte du message</string>
+    <plurals name="design_message_panel_chat_participants">
+        <item quantity="zero">Aucun participant</item>
+        <item quantity="one">%1$d participant</item>
+        <item quantity="two">%1$d participants</item>
+        <item quantity="few">%1$d participants</item>
+        <item quantity="many">%1$d participants</item>
+        <item quantity="other">%1$d participants</item>
+    </plurals>
+</resources>

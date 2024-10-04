@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- переменные для палитры календаря -->
+<resources>
+    <!-- region palette colors http://axure.tensor.ru/CalendarMobile/#g=1&p=%D1%86%D0%B2%D0%B5%D1%82%D0%B0_%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8F_%D0%B8_%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%B2_%D1%80%D0%B0%D0%B1%D0%BE%D1%82 -->
+    <attr name="backgroundColorWorkingDay" format="color|reference"/>
+    <attr name="textColorStyleWorkingDay" format="color|reference"/>
+
+    <attr name="backgroundColorWorkingTimeCalendar" format="color|reference"/>
+    <attr name="textColorStyleWorkingTimeCalendar" format="color|reference"/>
+
+    <attr name="backgroundColorHoliday" format="color|reference"/>
+    <attr name="textColorStyleHoliday" format="color|reference"/>
+
+    <attr name="backgroundColorSick" format="color|reference"/>
+    <attr name="textColorStyleSick" format="color|reference"/>
+
+    <attr name="backgroundColorVacation" format="color|reference"/>
+    <attr name="textColorStyleVacation" format="color|reference"/>
+
+    <attr name="backgroundColorPlanVacation" format="color|reference"/>
+    <attr name="textColorStylePlanVacation" format="color|reference"/>
+
+    <attr name="backgroundColorAgreeVacation" format="color|reference"/>
+    <attr name="textColorStyleAgreeVacation" format="color|reference"/>
+
+    <attr name="backgroundColorDelVacation" format="color|reference"/>
+    <attr name="textColorStyleDelVacation" format="color|reference"/>
+
+    <attr name="backgroundColorTimeOff" format="color|reference"/>
+    <attr name="textColorStyleTimeOff" format="color|reference"/>
+
+    <attr name="backgroundColorAbsence" format="color|reference"/>
+    <attr name="textColorStyleAbsence" format="color|reference"/>
+
+    <attr name="backgroundColorDowntime" format="color|reference"/>
+    <attr name="textColorStyleDowntime" format="color|reference"/>
+
+    <attr name="backgroundColorBusinessTrip" format="color|reference"/>
+    <attr name="textColorStyleBusinessTrip" format="color|reference"/>
+
+    <attr name="backgroundColorOvertime" format="color|reference"/>
+    <attr name="textColorStyleOvertime" format="color|reference"/>
+
+    <attr name="backgroundColorLunch" format="color|reference"/>
+    <attr name="textColorStyleLunch" format="color|reference"/>
+
+    <attr name="backgroundColorPermit" format="color|reference"/>
+    <attr name="textColorStylePermit" format="color|reference"/>
+
+    <attr name="backgroundColorReport" format="color|reference"/>
+    <attr name="textColorStyleReport" format="color|reference"/>
+
+    <attr name="backgroundColorWorkShift" format="color|reference"/>
+
+    <attr name="backgroundColorEmptyDay" format="color|reference"/>
+    <attr name="backgroundColorUnemployed" format="color|reference"/>
+    <attr name="backgroundAnotherOrganization" format="color|reference"/>
+
+    <attr name="borderCrossVacation" format="color|reference"/>
+    <attr name="borderLastVacation" format="color|reference"/>
+    <!-- endregion -->
+
+    <attr name="calendarScheduleEventTextColor" format="color|reference"/>
+    <attr name="calendarScheduleNameTextColorContrast" format="color|reference"/>
+
+    <attr name="calendarActivityWorkTimeBlock" format="color|reference"/>
+    <attr name="calendarActivityMainTextColor" format="color|reference"/>
+    <attr name="calendarActivityCommonTextColor" format="color|reference"/>
+
+    <attr name="calendarDateHolidayTextColor" format="color|reference"/>
+    <attr name="calendarDateDefaultTextColor" format="color|reference"/>
+
+    <attr name="calendarEventTitle" format="color|reference"/>
+    <attr name="calendarEventSubtitle" format="color|reference"/>
+    <attr name="calendarEventTypeIcon" format="color|reference"/>
+    <attr name="calendarMonthEventsCount" format="color|reference"/>
+    <attr name="calendarMonthEventsCountReporting" format="color|reference"/>
+    <attr name="calendarMonthEventsMarkReporting" format="color|reference"/>
+</resources>

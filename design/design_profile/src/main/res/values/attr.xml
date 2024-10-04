@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="PersonListView" tools:ignore="ResourceName">
+        <attr name="overlapPart" format="float"/>
+        <attr name="maxPersonsCount" format="integer"/>
+        <attr name="personItemSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RecipientsPhotoCollectionView" tools:ignore="ResourceName">
+        <attr name="personPhotoSize"/>
+    </declare-styleable>
+
+    <!-- Размер фото используется в нескольких View. Нельзя отнести к какой-то одной -->
+    <attr name="personPhotoSize" format="enum" tools:ignore="ResourceName">
+        <enum name="match_parent" value="-2"/>
+        <enum name="small" value="0"/>
+        <enum name="medium" value="1"/>
+        <enum name="large" value="2"/>
+        <enum name="medium_toolbar" value="3"/>
+        <enum name="medium_increased" value="4"/>
+    </attr>
+</resources>

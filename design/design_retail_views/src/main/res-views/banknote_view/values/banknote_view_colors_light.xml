@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="retail_views_banknote_counter_background_color_light">#0055BB</color>
+
+    <!-- Цвета взяты из стандарта: https://www.figma.com/file/1VP0zre5UrAwduCM8RGEXQ/%D0%A2%D0%B5%D0%BC%D1%8B-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-Retail-%26-Presto?node-id=684%3A9962 -->
+    <color name="retail_views_banknote_view_customized_text_color_light">#2A3C54</color>
+
+</resources>

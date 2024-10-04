@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retail_views_advance_title">Avance</string>
+    <string name="retail_views_advance_menu_bill">Reçu</string>
+    <string name="retail_views_advance_menu_expenses">Frais de représentation</string>
+    <string name="retail_views_advance_menu_certificate">Certificat</string>
+    <string name="retail_views_advance_menu_commentary">Commentaire</string>
+</resources>

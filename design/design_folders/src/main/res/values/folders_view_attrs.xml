@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Атрибут для определения темы компонента папок в составе темы приложения -->
+    <attr name="foldersViewTheme" format="reference"/>
+
+    <!-- Атрибуты компонента папок -->
+    <declare-styleable name="FoldersView">
+        <!-- Можно ли развернуть панель папок, если в есть папки только первого уровня и нет
+        дополнительной команды. По умоланию разворачивание доступно независимо от папок и
+        дополнительной команды -->
+        <attr name="FoldersView_isExpandable" format="boolean"/>
+        <!-- Цвет фона компонента -->
+        <attr name="FoldersView_backgroundColor" format="color"/>
+        <!-- Цвет нижней границы панели папок-->
+        <attr name="FoldersView_borderColor" format="color"/>
+        <!-- Цвет кнопки в виде папки для сворачивания\разворачивания -->
+        <attr name="FoldersView_folderButtonColor" format="color"/>
+        <!-- Цвет кнопки "ещё" -->
+        <attr name="FoldersView_moreButtonColor" format="color"/>
+        <!-- Цвет названия папки -->
+        <attr name="FoldersView_folderTitleColor" format="color"/>
+        <!-- Цвет маркера папки -->
+        <attr name="FoldersView_folderMarkerColor" format="color"/>
+        <!-- Цвет названия дополнительной команды -->
+        <attr name="FoldersView_additionalCommandColor" format="color"/>
+        <!-- Цвет иконки папки -->
+        <attr name="FoldersView_folderIconColor" format="color"/>
+        <!-- Флаг наличия нижней границы у панели папок-->
+        <attr name="FoldersView_isBorderHidden" format="boolean"/>
+        <!-- Включено ли отображение проваливания в папку-->
+        <attr name="FoldersView_isShownCurrentFolder" format="boolean"/>
+        <!-- Цвет нажатого элемента-->
+        <attr name="FoldersView_pressedItemColor" format="color|reference"/>
+        <!-- Флаг принудительного скрытия иконки показа компактной/полной панели папок. -->
+        <attr name="FoldersView_isShownLeftFolderIcon" format="boolean"/>
+    </declare-styleable>
+
+</resources>

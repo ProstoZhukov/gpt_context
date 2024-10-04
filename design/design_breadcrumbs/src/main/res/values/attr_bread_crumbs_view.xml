@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Стиль View хлебных крошек -->
+    <attr name="breadCrumbsViewTheme" format="reference"/>
+
+    <declare-styleable name="BreadCrumbsView">
+        <!-- Должна ли отображаться иконка домика (для возврата в корень). По умолчанию - true -->
+        <attr name="BreadCrumbsView_homeIconVisible" format="boolean"/>
+        <!-- Стиль иконки домика -->
+        <attr name="BreadCrumbsView_homeIconStyle" format="reference"/>
+        <!-- Стиль иконки стрелки -->
+        <attr name="BreadCrumbsView_arrowIconStyle" format="reference"/>
+        <!-- Стиль текста элементов -->
+        <attr name="BreadCrumbsView_textStyle" format="reference"/>
+    </declare-styleable>
+
+</resources>

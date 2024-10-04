@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hall_scheme_row_number">Σειρά %s</string>
+    <string name="hall_scheme_assignee_i">Εγώ</string>
+    <string name="hall_scheme_table_occupied_for_user">απασχολημένος</string>
+</resources>

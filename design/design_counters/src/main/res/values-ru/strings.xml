@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="design_counters_thousand_formatter_reduction" translatable="false">к</string>
+    <string name="design_counters_million_formatter_reduction" translatable="false">м</string>
+    <string name="design_counters_billion_formatter_reduction" translatable="false">г</string>
+    <string name="design_counters_trillion_formatter_reduction" translatable="false">т</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AbstractListView">
+        <attr name="withSwipe" format="boolean"/>
+        <attr name="matchScreen" format="boolean"/>
+        <attr name="withProgress" format="boolean"/>
+        <!-- Нужно ли измненять цвет пргрессбара на color_accent. По-умолчанию "true" -->
+        <attr name="applyProgressColor" format="boolean"/>
+        <attr name="progressDelayMillis" format="integer"/>
+        <!-- Цвет фона RecyclerView. Не влияет на фон заглушки и индикатора прогресса -->
+        <attr name="recyclerViewBackgroundColor" format="color"/>
+        <!-- Нужно ли показывать фон RecyclerView с fade-in анимацией при отображении содержимого. По умолчанию "true" -->
+        <attr name="fadeInRecyclerViewBackground" format="boolean"/>
+        <!--Нужно ли использовать флаг fitsSystemWindows-->
+        <attr name="recyclerViewFitsSystemWindows" format="boolean"/>
+        <attr name="placeholderTopGravity" format="boolean"/>
+    </declare-styleable>
+
+    <attr format="color" name="colorAccent"/>
+</resources>

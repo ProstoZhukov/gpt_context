@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_profile_sbis_title_view_collage_size">48dp</dimen>
+
+    <!-- SbisTitleView -->
+    <dimen name="design_profile_sbis_title_view_image_padding_end">8dp</dimen>
+
+    <dimen name="design_profile_sbis_title_view_title_text_size_large">@dimen/size_title2_scaleOff
+    </dimen>
+    <dimen name="design_profile_sbis_title_view_title_text_size_medium">
+        @dimen/size_title3_scaleOff
+    </dimen>
+    <dimen name="design_profile_sbis_title_view_title_text_size_small">@dimen/size_body2_scaleOff
+    </dimen>
+</resources>

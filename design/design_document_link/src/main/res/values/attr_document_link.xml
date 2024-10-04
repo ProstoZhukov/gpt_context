@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Стиль документа -->
+    <attr name="documentLinkDefaultTheme" format="reference"/>
+
+    <declare-styleable name="DocumentLink">
+
+        <!--region Набор цветов элементов виджета -->
+        <!-- Цвет заголовка -->
+        <attr name="DocumentLink_titleColor" format="color|reference"/>
+        <!-- Цвет комментария -->
+        <attr name="DocumentLink_commentColor" format="color|reference"/>
+        <!-- Цвет иконки документа -->
+        <attr name="DocumentLink_iconColor" format="color|reference"/>
+        <!-- Цвет разделителя -->
+        <attr name="DocumentLink_bottomBorderColor" format="color|reference"/>
+        <!-- Цвет фона виджета -->
+        <attr name="DocumentLink_backgroundColor" format="color|reference"/>
+        <!--endregion-->
+
+        <!--region Набор размеров элементов виджета -->
+        <!-- Размер текста заголовка -->
+        <attr name="DocumentLink_titleTextSize" format="dimension|reference"/>
+        <!-- Размер текста комментария -->
+        <attr name="DocumentLink_commentTextSize" format="dimension|reference"/>
+        <!-- Размер иконки стрелки -->
+        <attr name="DocumentLink_arrowIconSize" format="dimension|reference"/>
+        <!-- Размер иконки документа -->
+        <attr name="DocumentLink_iconSize" format="dimension|reference"/>
+        <!--endregion-->
+    </declare-styleable>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ Переменные для цветов навигации
+ -->
+<resources>
+    <attr name="navigationCounterSeparatorColor" format="color|reference"/>
+
+    <attr name="navigationPrimaryBackgroundColor" format="color|reference"/>
+    <attr name="navigationUnaccentedBackgroundColor" format="color|reference"/>
+    <attr name="navigationActiveBackgroundColor" format="color|reference"/>
+
+    <attr name="navigationLogoFill" format="color|reference"/>
+    <attr name="navigationBackgroundColor" format="color|reference"/>
+    <attr name="navigationSelectedBackgroundColor" format="color|reference"/>
+
+    <attr name="navigationTextColor" format="color|reference"/>
+    <attr name="navigationUnaccentedTextColor" format="color|reference"/>
+    <attr name="navigationPrimaryTextColor" format="color|reference"/>
+    <attr name="navigationActiveTextColor" format="color|reference"/>
+
+
+    <attr name="navigationLogo" format="color|reference"/>
+    <attr name="navigationIconColor" format="color|reference"/>
+    <attr name="navigationSecondaryIconColor" format="color|reference"/>
+    <attr name="navigationActiveIconColor" format="color|reference"/>
+    <attr name="navigationUnaccentedIconColor" format="color|reference"/>
+
+    <attr name="navigationSeparatorColor" format="color|reference"/>
+    <attr name="navigationMarkerColor" format="color|reference"/>
+
+    <attr name="navigationMenuFill" format="color|reference"/>
+
+    <attr name="navigationAccented" format="color|reference"/>
+    <attr name="navigationUnaccented" format="color|reference"/>
+
+    <!--Цвет фона ННП, название как на вебе -->
+    <attr name="horizontalSidebarBackgroundColorNavigationPanelsSidebar" format="color|reference"/>
+
+    <!--Цвет активного фона ННП, название как на вебе -->
+    <attr name="horizontalItemActiveBackgroundColorNavigationPanelsAccordion" format="color|reference"/>
+
+    <attr name="horizontalItemColorNavigationPanelsAccordion" format="color|reference"/>
+    <attr name="horizontalItemActiveColorNavigationPanelsAccordion" format="color|reference"/>
+
+    <attr name="horizontalItemIconColorNavigationPanelsAccordion" format="color|reference"/>
+    <attr name="horizontalItemIconActiveColorNavigationPanelsAccordion" format="color|reference"/>
+
+    <attr name="navigationBackgroundColorButton" format="color|reference"/>
+
+    <attr name="itemIconBackgroundColorNavigationPanelsAccordion" format="color|reference"/>
+
+    <attr name="horizontalSidebarBorderColorNavigationPanelsSidebar" format="color|reference"/>
+
+    <attr name="headerTextLogoColorNavigationPanelsSidebar" format="color|reference"/>
+</resources>
+

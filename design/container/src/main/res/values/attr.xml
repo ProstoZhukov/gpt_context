@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="sbisContainerTheme" format="reference"/>
+
+    <!-- Радиус скругления углов поверхности затенения под контейнером.                          -->
+    <!-- Атрибут используется при отрисовки контейнера на DialogActivity со скруглёнными углами. -->
+    <!-- Предотвращает наложение тени контейнера на тень DialogActivity на скруглённых углах.    -->
+    <attr name="containerDimCornerRadius" format="dimension"/>
+
+    <declare-styleable name="SbisContainer">
+        <attr name="SbisContainerHeaderView_theme" format="reference"/>
+        <attr name="SbisContainerHeaderDivider_theme" format="reference"/>
+        <attr name="SbisContainerHeaderDividerVisibility" format="boolean"/>
+        <attr name="ContainerBackground" format="color"/>
+    </declare-styleable>
+</resources>
